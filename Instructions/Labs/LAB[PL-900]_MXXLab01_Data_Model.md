@@ -11,26 +11,20 @@ lab:
 Scenario
 ========
 
-Bellows College is a large educational organization with facilities spread across multiple regions. College staff, students, and visitors need to access buildings on various campuses depending on their scheduled meetings and allocated workstations. 
+Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently and there are no means to collect and analyze data about the visits across the entire campus. 
 
-Throughout this course you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the facilities across campuses and buildings. 
+Campus administration would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
 
-In this lab, you will set up an environment and create a solution to track your changes. You will also create a data model to support the following requirements:
+Throughout this course we will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
 
--   R1 – Track the status of permits issued for new buildings and existing
-    building modifications
+In this lab, we will set up an environment, create Common Data Service database, and create a solution to track our changes. We will also create a data model to support the following requirements:
 
--   R2 – Associate permits with a Build Site, which represents the building
-    or land being modified
-
--   R3 – Track permit type to indicate the type of permit, any inspections, or other data
-    that might be required on a permit
-
--   R4 – Track inspections completed on the permit for the
-    entire process (i.e., from request of inspection to the pass or fail of the
-    inspection)
-
--   R5 – Track the permit requestor 
+-   R1 – Track the locations (buildings) of the campus visits
+    
+-   R2 – Record basic information to identify and track the visitors 
+    
+-   R3 – Schedule, record, and manage visits 
+    
 
 High-level lab steps
 ======================
@@ -39,13 +33,16 @@ To prepare your learning environments you will create a solution and publisher, 
 
 -   Contact
 -   Building
--   Appointment
--   User
+-   Visit
+
+## Prerequisites
+
+
 
 Things to consider before you begin
 -----------------------------------
 
-* 
+
 
 Exercise \#1: Create Environment and Solution
 ==================================================
@@ -137,21 +134,8 @@ Task \#3: Add Existing Entity
 8.  Select the **Forms** tab and select the **Contact** form.
 9.  Click **Add**.
 10. You should have **1 View** and **1 Form** selected. Click **Add** again.
-    This will add the Contact entity to the newly created solution. Next, we
-    will add the Appointment entity.
-11.  Click **Add Existing** and select **Entity**.
-12.  Search for **Appointment** and select it.
-13.  Select the **Forms** tab and select the **Appointment** form.
-14.  Click **Add**.
-15.  You should have **1 Form** selected. Click **Add** again.
-     This will add the Appointment entity to the newly created solution. Next, we
-     will add the User entity.
-16.  Click **Add Existing** and select **Entity**.
-17.  Click **Select Components**.
-18.  Search for **User** and select it.
-19.  Click **Next**.
-20.  **DO NOT** select any components. Click **Add**.
-21.  Your solution should now have three entities: Appointment, Contact and User.
+    This will add the Contact entity to the newly created solution. 
+21.  Your solution should now have one entity: Contact.
 
 Exercise \#2: Create Entities and Relationships
 ========================================
@@ -164,35 +148,91 @@ Task #1: Create Building Entity and Fields
 
 1.  Continuing in your development environment, open the Campus Management
     solution
--   Sign in to <https://make.powerapps.com> (if you are not already signed in)
-    
--   Select **Solutions** and click to open the **Permit Management**
-        solution you just created (if you are not already in this Solution)
+    * Sign in to <https://make.powerapps.com> (if you are not already signed in)
+    * Select **Solutions** and click to open the **Campus Management**
+          solution you just created (if you are not already in this Solution)
 2.  Create Building entity
 
     -   Click **New** and select **Entity**.
--   Enter **Building** for **Display Name** and click **Create**. This will
-        start provisioning the entity in background while you can start adding
-        other fields.
-3.  Click **Relationships**
-4.  Click  **Add relationship** then select **One-to-many**
-5.  Select Appointment as the entity in **Related (Many)** section
-6.  Click **Done**
-7.  Click **Save Entity**
+    -   Enter **Building** for **Display Name** and click **Create**. This will
+            start provisioning the entity in background while you can start adding
+            other entities and fields.
 
-Task #2: Create Relationships
+## Task #2: Create Visit Entity and Fields
+
+**Visit** entity will contain information about the campus visits including the building, visitor, scheduled and actual time of each visit. 
+
+We would like to assign each visit a unique number that can be easily entered and interpreted by a visitor when asked during the visit check-in process.
+
+> [!NOTE]
+> We use **Time zone independent** behavior to record date and time information because time of a visit is *always* local to the location of the building and should not change when viewed from a different time zone. 
+
+1.  Select **Campus Management** solution
+2. Create Visit entity
+
+   * Click **New** and select **Entity**.
+   * Enter **Visit** for **Display Name** and click **Create**. This will start provisioning the entity in background while you can start adding other fields.
+
+3. Create Scheduled Start field
+
+   * Make sure you have the **Fields** tab selected and click **Add Field**.
+   * Enter **Scheduled Start** for **Display Name**.
+   * Select **Date and Time** for **Data Type**.
+   * Check the **Required** checkbox.
+   * Expand **Advanced** section.
+   * Select **Time zone independent** for **Behavior**.
+   * Click **Done**.
+
+4.  Create Scheduled End field
+
+    * Click **Add Field**.
+    * Enter **Scheduled End** for **Display Name**.
+    * Select **Date and Time** for **Data Type**.
+    * Check the **Required** checkbox.
+    * Expand **Advanced** section.
+    * Select **Time zone independent** for **Behavior**.
+    * Click **Done**.
+6.  Create Actual Start field
+    * Click **Add Field**.
+    * Enter **Actual Start** for **Display Name**.
+    * Select **Date and Time** for **Data Type**.
+    * Expand **Advanced** section.
+    * Select **Time zone independent** for **Behavior**.
+    * Click **Done**.
+7.  Create Actual End field
+    * Click **Add Field**.
+    * Enter **Actual End** for **Display Name**.
+    * Select **Date and Time** for **Data Type**.
+    * Expand **Advanced** section.
+    * Select **Time zone independent** for **Behavior**.
+    * Click **Done**.
+7.  Create Code field
+    * Click **Add Field**.
+    * Enter **Code** for **Display Name**.
+    * Select **Autonumber** for **Data Type**.
+    * Select **Date prefixed number** for **Autonumber type**.
+    * Click **Done**.
+8.  Click **Save Entity**
+
+Task #3: Create Relationships
 ------------------------------
 
-1.  Sign in to <https://make.powerapps.com> if you are not already signed in.
-2.  Select **Solutions**.
-3.  Open the **Campus Management** solution.
-4.  Create Appointment to Building relationship
-    * Click to open the **Building** entity.
+1.  Select the **Campus Management** solution.
+4.  Create Visit to Contact relationship
+    * Click to open the **Visit** entity.
     * Select the **Relationships** tab.
-    * Click **Add Relationship** and select **One-to-many**
-    * Select Appointment for **Related (Many)** and click **Done**.
-5. Click **Save Entity**.
-6. Select **Solutions** from the top menu and click **Publish All
+    * Click **Add Relationship** and select **Many-to-one**
+    * Select Contact for **Related (One)** 
+    * Enter **Visitor** for **Lookup field display name** 
+    * Click **Done**.
+3.  Create Visit to Building relationship
+    * Click to open the **Visit** entity.
+    * Select the **Relationships** tab.
+    * Click **Add Relationship** and select **Many-to-one**
+    * Select Building for **Related (One)** 
+    * Click **Done**.
+4.  Click **Save Entity**.
+5.  Select **Solutions** from the top menu and click **Publish All
     Customizations.**
 
 # Exercise \#3: Import Data
