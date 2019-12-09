@@ -15,9 +15,9 @@ Bellows College is an educational organization with multiple buildings on campus
 
 Campus administration would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
 
-Throughout this course we will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
+Throughout this course you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
 
-In this lab, we will set up an environment, create Common Data Service database, and create a solution to track our changes. We will also create a data model to support the following requirements:
+In this lab, you will set up an environment, create Common Data Service database, and create a solution to track your changes. You will also create a data model to support the following requirements:
 
 -   R1 – Track the locations (buildings) of the campus visits
     
@@ -63,9 +63,8 @@ Task \#1: Create Environment
 
 5.  Select your **Region**
 
-6.  Enter the **Purpose** for creating this environment (Optional). Now, either
-    follow (g) or (h) to configure the environment.
-
+6.  Enter the **Purpose** for creating this environment (Optional). 
+    
 7.  Turn on the **toggle** to **create a database for this environment** if you
     wish to create the database along with this, otherwise this can be done once
     the environment is configured.
@@ -239,5 +238,5 @@ Task #3: Create Relationships
 
 In this exercise you will import sample data into the Common Data Service
 
-
+TBC
 
