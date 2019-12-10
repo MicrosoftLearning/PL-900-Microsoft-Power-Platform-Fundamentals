@@ -16,7 +16,7 @@ Campus administration would like to modernize their visitor registration system 
 
 Throughout this course you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus.  
 
-In this lab, you will create we will now design a PowerApps canvas app that college staff can use to manage visits for their guests.
+In this lab, you will design a PowerApps canvas app that college staff can use to manage visits for their guests.
 
 High-level lab steps
 ======================
@@ -206,3 +206,10 @@ Task \#1: Test App
 2. Select **Add existing | App | Canvas app**
 3. Select **Outside solutions** tab
 4. Select **Campus Staff** app, press **Add**
+
+# Challenges
+
+* Calendar view of all visits
+* Filtering by date range
+* Would you consider using *appointment* activity as part of the solution? What would it change?
+* How to display multiple meetings during a single visit

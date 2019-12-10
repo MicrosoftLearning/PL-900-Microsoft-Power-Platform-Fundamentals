@@ -240,3 +240,10 @@ In this exercise you will import sample data into the Common Data Service
 
 TBC
 
+# Challenges
+
+* Would you consider using *appointment* activity as part of the solution? What would it change?
+* Add support for multiple meetings during a single visit.
+* Secure the building access not only for external contacts but for internal staff member as well.
+* Visits to certain buildings require management approval. What would the approval process change in the data model?
+

@@ -16,7 +16,7 @@ Campus administration would like to modernize their visitor registration system 
 
 Throughout this course you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
 
-In this lab, you will create we will now design and build a Power Apps canvas app that the security personnel will use at the building entrances to quickly confirm and register the visitors.
+In this lab, you will create design and build a Power Apps canvas app that the security personnel will use at the building entrances to quickly confirm and register the visitors.
 
 High-level lab steps
 ======================
@@ -267,3 +267,11 @@ Usability of a mobile app significantly improves when, in addition to the text i
 6. Press **F5** to run the app. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. Verify the icon displays a frown emoji.
 7. Find a different code value that has not been used before. You can run **Campus Staff** app created previously to create new visit records. Verify the icon displays a smile emoji.
 8. Press **ESC** to exit the running app.
+
+# Challenges
+
+* How to avoid manual entry of the visit code?
+* Add building validation for the visit
+* Add validation of the visit actual time vs visit scheduled time (too early, too late, etc)
+* Add detailed status of the visit, e.g. email display and validation for the visitor, reason for denying building access, etc
+* How would you handle the requirement of multiple buildings/meetings/checkings during the single campus visit. For example, someone may visit campus for a day and during that day they will meet staff members in multiple buildings at different time of the day. Would you consider bringing *appointment* entity into the soluton?
