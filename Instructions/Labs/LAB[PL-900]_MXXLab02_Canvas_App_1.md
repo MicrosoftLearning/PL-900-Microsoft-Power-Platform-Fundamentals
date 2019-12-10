@@ -10,11 +10,11 @@ lab:
 Scenario
 ========
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently and there are no means to collect and analyze data about the visits across the entire campus. 
+Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently and there are no means to collect and analyze data about the visits across the entire campus. 
 
 Campus administration would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
 
-Throughout this course you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
+Throughout this course you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus.  
 
 In this lab, you will create we will now design a PowerApps canvas app that college staff can use to manage visits for their guests.
 
@@ -39,7 +39,7 @@ Things to consider before you begin
 -   
 
 
-Exercise \#1: Create Canvas App
+Exercise \#1: Create Staff Canvas App
 ===============================
 
 **Objective:** In this exercise, you will create a canvas app from a template and then modify it to include required data
@@ -138,32 +138,36 @@ Because number of visits continuously grows, users need a feature to filter the 
 
 3. Using either keyboard or mouse, position control below search box.
 
-4. Select **BrowseGallery1** in the tree
+4. Select **BrowseGallery1** 
 
-5. Select **Y** property in the dropdown and modify the expression to include height of the date picker control: `TextSearchBox1.Y + TextSearchBox1.Height + DatePicker1.Height`
+5. Resize and move the gallery control so that it's located under the date picker and covers the screen.
 
 6. Select **Items** property
 
-7. In the expression, locate `[@Visits]` and replace them with `Filter(Visits,'Scheduled End' >= DatePicker1.SelectedDate)`. Full expression should look like the following
+7. In the expression, locate `[@Visits]` and replace them with `Filter(Visits,'Scheduled End' >= DatePicker1.SelectedDate)`. Full expression should look like the following:
 
-   ```visual basic
+   ```
    SortByColumns(
    	Search(
         Filter(
         	Visits,
-            'Scheduled End' >= DatePicker2.SelectedDate
+            'Scheduled End' >= DatePicker1.SelectedDate
            ),
            TextSearchBox1.Text,
        	"bc_code","bc_name"
        ),
      "bc_code",
-     If(SortDescending1, Descending, Asc
-         
-         ending)
-   )To preserve work in progress, click **File | Save** then press **Save** 
+     If(SortDescending1, Descending, Ascending)
+   )
    ```
+   
+8. To preserve work in progress, click **File | Save** then press **Save**
 
-Task \#6: Test Application
+# Exercise #2: Complete the App
+
+In this exercise you will test the application and, once successful, you will add it to your solution.
+
+Task \#1: Test App
 --------------------------
 
 1.  Start the application
@@ -174,7 +178,7 @@ Task \#6: Test Application
     -   Select a visit and verify that display form is working properly
     -   Return to the gallery and press + to create a new visit. Verify that edit form contains required fields including visitor, building, and scheduled start and end dates.
     -   Fill in the information and submit. Verify that the new record appears in the gallery.
-    -   Close the app
+    -   Press **ESC** key to close the app
 
 2.  Save and publish the application
 
@@ -192,3 +196,13 @@ Task \#6: Test Application
 
     -   Navigate back to the previous window and Click **Done**.
 
+## Task #2: Add App to Solution
+
+1. Open the Campus Management solution.
+   * Sign in to <https://make.powerapps.com>
+   * Select your **environment.**
+   * Select **Solutions**.
+   * Click to open the **Campus Management** solution.
+2. Select **Add existing | App | Canvas app**
+3. Select **Outside solutions** tab
+4. Select **Campus Staff** app, press **Add**
