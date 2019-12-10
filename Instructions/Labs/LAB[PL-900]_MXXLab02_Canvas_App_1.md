@@ -59,7 +59,7 @@ In this task you will create a canvas app using the phone layout template based 
 
 2.  Create new canvas application
 
-    -   Click **New app > Canvas app**.
+    -   Click **New app | Canvas app**.
     -   Select **Phone layout** under **Common Data Service** 
 -   Select **Common Data Service** connection then click **Create**
     -   Select **Visits** table
@@ -196,7 +196,7 @@ Task \#1: Test App
 
     -   Navigate back to the previous window and Click **Done**.
 
-## Task #2: Add App to Solution
+## Task #2: Add App to Solution and publish 
 
 1. Open the Campus Management solution.
    * Sign in to <https://make.powerapps.com>
@@ -205,11 +205,13 @@ Task \#1: Test App
    * Click to open the **Campus Management** solution.
 2. Select **Add existing | App | Canvas app**
 3. Select **Outside solutions** tab
-4. Select **Campus Staff** app, press **Add**
+4. Select **Campus Staff** app, click **Add**
+5. Select **Campus Staff** app, click **Edit**
+6. Select **File | Publish** 
 
 # Challenges
 
-* Calendar view of all visits
-* Filtering by date range
+* Calendar view of all visits and filtering by date range
+* Ability to create and manage contacts as part of the app
 * Would you consider using *appointment* activity as part of the solution? What would it change?
 * How to display multiple meetings during a single visit

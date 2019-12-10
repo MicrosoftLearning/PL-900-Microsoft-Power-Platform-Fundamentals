@@ -256,7 +256,8 @@ Usability of a mobile app significantly improves when, in addition to the text i
 4. Select **Icon** property and enter the following expression
 
    ```
-   If(CheckInButton.DisplayMode = DisplayMode.Disabled 
+   If(
+      CheckInButton.DisplayMode = DisplayMode.Disabled 
    && CheckOutButton.DisplayMode = DisplayMode.Disabled,
        Icon.EmojiFrown,
        Icon.EmojiSmile
@@ -267,6 +268,11 @@ Usability of a mobile app significantly improves when, in addition to the text i
 6. Press **F5** to run the app. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. Verify the icon displays a frown emoji.
 7. Find a different code value that has not been used before. You can run **Campus Staff** app created previously to create new visit records. Verify the icon displays a smile emoji.
 8. Press **ESC** to exit the running app.
+
+## Task #6: Publish the app
+
+1. Select **Campus Security** app, click **Edit**
+2. Select **File | Publish** 
 
 # Challenges
 
