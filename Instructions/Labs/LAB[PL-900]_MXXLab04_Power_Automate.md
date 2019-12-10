@@ -5,7 +5,7 @@ lab:
 ---
 
 # PL-900: Microsoft-Power-Platform-Fundamentals
-## Module X, Lab 2 – Canvas App
+## Module X, Lab 4 – Power Automate
 
 Scenario
 ========
@@ -16,53 +16,37 @@ Campus administration would like to modernize their visitor registration system 
 
 Throughout this course you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
 
-In this lab, you will create we will now design a PowerApps canvas app that the inspectors will use in the field on their mobile devices. Canvas apps are low code apps that can be designed for a tablet or mobile phone layouts. You will build a two-screen canvas app that allows inspectors quickly access and process the inspections.
+In this lab, you will create Power Automate flows to automate various parts of the campus visits. 
 
 High-level lab steps
 ======================
 
-We will follow the below schema to design the canvas app:
+The following have been identified as requirements you must implement to complete the project.
 
--   Create the app using the tablet form factor
+* The unique code assigned to each visitor must be made available to them prior to the visits.
+* Security personnel needs to receive notifications of visitors overstaying their scheduled timeslots.
 
--   Connect to Common Data Service as a data source
-
--   Configure a gallery control to show the pending appointments
-
--   Use a CDS view to populate the gallery
-
--   Configure a detail page with appointment info
-
--   Handle checking-in the inspection results to CDS
-
--   Export the solution with the data model and apps and import it to the
-    “Production” environment
-
-The first screen in the application will show all Pending Inspections for the
-logged in Inspector. The second screen lets the inspector update the selected
-Inspection.
 
 ## Prerequisites
 
-
+* Data Model created in Lab01 <href goes here?>
+* Campus staff canvas app created in Lab02 <href goes here?>
 
 Things to consider before you begin
 -----------------------------------
 
--   What information would a security officer need quick access to?
-
 -   
     
 
-Exercise \#1: Create Canvas App
+Exercise \#1: Create Visit Notification flow
 ===============================
 
-**Objective:** In this exercise, you will create a canvas app.
+**Objective:** In this exercise, you will create a Power Automate flow that implements the requirement. Visitor notification is done using email. Notification includes the unique code assigned to the visit.
 
-Task \#1: Create Canvas App
+Task \#1: Create flow
 ---------------------------
 
-1.  Open the Permit Management solution.
+1.  Open the Campus Management solution.
 
     -   Sign in to <https://make.powerapps.com>
 
@@ -72,485 +56,146 @@ Task \#1: Create Canvas App
 
     -   Click to open the **Campus Management** solution.
 
-2.  Create new canvas application
+2.  Click **New** and select **Flow**. This will open the flow editor in a New window.
 
-    -   Click **New** and select **App \| Canvas App \| Tablet Form Factor**.
-        This will open the App Editor in a New window.
+3. Search for **Current** and select **Common Data Service (Current Environment)** connector.
 
-    -   If you are creating your first app, this will ask you to set the
-        Country/region for the app. Click **Get Started.**
+4. Select the trigger **When a Record is Created**, **Updated**, or **Deleted**.
 
-    -   Click File and select Save As.
+   * Select **Create** for **Trigger condition**
+   * Select **Visits** for **The entity name**
+   * Select **Organization** for **Scope**
 
-    -   Check if **The Cloud** is selected. Enter **Inspector** for Name and
-        click **Save**. This will make sure that the changes are not removed if
-        the app closes unexpectedly.
+5.  Click **New Step**. This step is required to retrieve visitors information including email.
 
-3.  Enable Components for the application.
+6. Search for **Current** and select **Common Data Service (Current Environment)** connector.
 
-    -   Select **App Settings** and then select **Advanced Settings**.
+7. Select **Get Record** action. 
 
-    -   Scroll down and turn on **Components**.
+   * Select **Contacts** as **Entity name**
+   * Search dynamic content, select **Visitor (Value)** as a value for **Item ID**
 
-    -   Click on the app designer back button.
+8. Click **New Step**. This is the step that will create and send email to the visitor.
 
-4.  Rename Screen1.
+9. Search for *mail*, select **Mail** connector and **Send an email notification** action 
 
-    -   Go to the **Tree View** and double click on **Screen1**.
+   * Select **Email** as **To** value
 
-    -   Rename it MainScreen and press **Enter.**
+   * Enter **Your scheduled visit to Bellows College** as **Subject**
 
-5.  Import Component.
+   * Enter the following text in **Email Body**
 
-    -   Select the **Components** tab.
+     > Dear {**First Name**},
+     >
+     > your are currently scheduled to visit Bellows Campus from {**Scheduled Start**} until {**Scheduled End**}.
+     >
+     > Your security code is {**Code**}, please do not share it. You will be required to produce this code during your visit.
+     >
+     > Best regards,
+     > Campus administration
+  > Bellows  College
+     
+   * Bolded text denotes dynamic content that needs to be inserted in these places.
+   
+10.  Select flow name and rename it to **Visit notification**
 
-    -   Click on the **… (Component Options)** button and select Import
-        **Components**.
+11.  Press **Save**
 
-    -   Click **Upload File**.
-
-    -   Browser to the lab resources folder, select the **Components** file and
-        click **Open**.
-
-    -   Three components should be imported.
-
-6.  Add the Header component to the MainScreen.
-
-    -   Select the **Screens** tab.
-
-    -   Select the **Insert** tab.
-
-    -   Click **Custom** and select **Header**.
-
-    -   Rename **Header_1** to **MainHeader** by double click on Header_1.
-
-7.  Change the MainHeader properties
-
-    -   Select **MainHeader**.
-
-    -   Change the **Text** attribute of the **MainHeader** to **My Pending
-        Inspections**. This can be done by selecting “Text” property in the
-        dropdown below top menu. Make sure that you have selected the MainHeader
-        control while doing this step.
-
-    -   Change the **Width** vale of the **MainHeader** to the formula below.
-
-               Parent.Width
-
-Task \#3: Add Inspection Gallery
+Task \#2: Validate and test the flow
 --------------------------------
 
-1.  Add Gallery
+1.  Open **Campus Staff** app you created 
+2.  Press + to add a new visit record
+3.  Enter required information, press **Save**
+4.  Open the flow, locate and open most recent **Run**
+5.  Open **Mail** step and verify that email content has been generated correctly.
 
-    -   Select the **Tree View** tab
+# Exercise #2: Create Security Sweep flow
 
-    -   Select the **MainScreen**.
+**Objective:** In this exercise, you will create a Power Automate flow that implements the requirement. Security sweep is performed every 15 minutes and security is notified if any of the visitors overstayed their scheduled time.
 
-    -   Go to the **Insert** tab.
+## Task #1: Create flow to retrieve records
 
-    -   Click **Gallery** and select **Vertical**.
+1. Open the Campus Management solution.
 
-    -   Select **Inspections** for **Data Source**. When Inspection is selected,
-        this will automatically pick the fields and show them in the gallery
-        items.
+   -   Sign in to <https://make.powerapps.com>
 
-    -   Rename **Gallery_1** to **InspectionList** by double click on Gallery_1.
+   -   Select your **environment.**
 
-2.  Select the inspector view
+   -   Select **Solutions**.
 
-    -   Make sure you have the **InspectionList** control selected.
+   -   Click to open the **Campus Management** solution.
 
-    -   Go to the **Properties** pan and select **Inspector View** for **View**.
+2. Click **New** and select **Flow**. This will open the flow editor in a New window.
 
-3.  Change the **InspectionList** control layout
+3. Search for *recurrence*, select **Schedule** connector, **Recurrence** trigger.
 
-    -   Go to the **Properties** pane and click on the **Layout** dropdown.
+4. Set **Interval** to **15 minutes**
 
-    -   Select **Title and Subtitle**.
+5. Click **New step**. Search for **Current** and select **Common Data Service (Current Environment)** connector. Select **List records** action.
 
-4.  Verify the selected fields.
+   * Enter **Visits** as **Entity name**
 
-    -   Go to the **Properties** pane and click on the **Edit Fields**.
+   * Enter the following expression as **Filter Query**
 
-    -   Confirm that Scheduled Date is selected for Subtitle1 and Name is
-        selected for Tile1. Close the Data pane.
+     ```
+     statecode eq 0 and bc_actualstart ne null and bc_actualend eq null and Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)
+     ```
 
-5.  Change date time to date only.
+   To break it down
 
-    -   Expand the **InspectionList** and select **Subtitle1**.
+   * `statecode eq 0` filters active visits (where Status equal Active)
+   * `bc_actualstart ne null` restricts search to visits where Actual Start has a value, i.e. there was a checkin
+   *  `bc_actualend eq null` restricts search to visits where there was no check out (Actual End has no value) 
+   * `Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)` restricts visits where visits meant to complete more than 15 minutes ago.  
 
-    -   Change the Text property of the control to the formula below.
+6.  Click **New step**. Search for **Apply**, select **Apply to each** action 
 
-            DateValue(Text(ThisItem.'Scheduled Date'),"en")
+7.  Select **value** from dynamics content as **Select an output from previous steps**.
 
-6.  Resize the Gallery
+8.  Add data retrieval for related record
 
-    -   Select the **InspectionList** gallery.
+    * Click **Add an action** inside the loop.
+    * Search for **Current** and select **Common Data Service (Current Environment)** connector. 
+    * Select **Get record** action.
+    * Click ..., select **Rename**. Enter **GetBuilding** as step name
+    * Select **Buildings** as **Entity name**
+    * Select **Building (Value)** as **Item ID**
 
-    -   Select **Width** property from the formula dropdown and enter the
-        formula below.
+9.  Repeat previous data retrieval sequence for **Visitor** and **User**, selecting related entity name and using **Visitor (Value)** and **Owner (Value) **as **Item ID**, respectively
 
-            Parent.Width
+10.  Add **Send an email notification** action from **Mail** connection.
 
-    -   Select **Height** property and set it to the formula below.
+11.  Enter your email address as **To**
 
-            Parent.Height - (MainHeader.Height*2)
+12.  Enter "Contact **Full Name** overstayed their welcome". **Full Name** is a dynamics content from the current Visit record.
 
-    -   Select the Y property from the dropdown and set it to formula below.
+13.  Enter "It happened in building **Name**", where **Name** is dynamics content from **GetBuilding** step
 
-             MainHeader.Height
+14.  Locate **Primary Email** from **GetUser** step and insert it into CC field (meeting host will receive a copy of the email)
 
-    -   Select the X property from the dropdown and set it to formula below.
+15.  Select flow name and rename it to **Security Sweep**
 
-            MainHeader.X
+16.  Press **Save**
 
-Task \#4: Add Inspection Details Screen
----------------------------------------
+## Task #2: Validate and test the flow
 
-1.  Click **New Screen** and select **Blank**.
+1. Locate or create visit records that 
+   1. Have active status
+   2.  Scheduled End is in the past (by more than 15 minutes)
+   3. Actual Start has a value.
+2. Open the flow created in task 1 and press **Test**
+3. Select **I'll perform the trigger action**
+4. Press **Run flow**
+5. When flow competes, expand **Apply to each** then expand **Send an email notification** steps
+6. Check the **Subject**, **Email Body** values. Expand **Show more** and check **CC** value.
+7. After your flow testec
+8. Navigate to solution, click ... next to flow, select **Turn off**. This is to prevent flow from executing on a schedule on the test system.
 
-2.  Rename the new screen **DetailsScreen** by double click on the control in
-    Tree View.
+# Challenges
 
-3.  Add Header to the DetailsScreen and edit it
-
-    -   Go to the **MainScreen** and copy the **MainHeader**.
-
-    -   Go to the **DetailsScreen** and paste the **Header**.
-
-    -   Rename the Header you **DetailsHeader** by double click on the control
-        in Tree View.
-
-    -   Select te **Y** property of the **DetailsHeader** and set to **0**.
-
-    -   Select the **Text** property of the **DetailsHeader** and set it to
-        formula below.
-
-               InspectionList.Selected.Name
-
-1.  Add Form to the DetailsScreen.
-
-    -   Select the **DetailsScreen**.
-
-    -   Select the **Insert** tab.
-
-    -   Click **Forms** and select **Edit**.
-
-    -   Rename the form **InspectionForm**.
-
-    -   Resize the Edit form as:
-
-            1.  Select the **InspectionForm** gallery.
-            
-            2.  Select **Width** property from the formula dropdown and enter the
-            formula below.  
-            Parent.Width
-            
-            3.  Select **Height** property and set it to the formula below.  
-            Parent.Height - (DetailsHeader.Height\*2)
-            
-            4.  Select the Y property from the dropdown and set it to formula below.  
-            DetailsHeader.Height
-            
-            5.  Select the X property from the dropdown and set it to formula below.  
-            DetailsHeader.X
-
-2.  Set the **InspectionForm** data source
-
-    -   Select the **InspectionForm** and select the DataSource as
-        **Inspections** entity.
-
-    -   Set the Item value to the formula below.
-
-               InspectionList.Selected
-
-3.  Edit InspectionForm fields. This adds the data cards for fields by default,
-    but you can add/remove the data cards as:
-
-    -   Select the **InspectionForm**.
-
-    -   Go to the **Properties** pane and click **Edit Fields**.
-
-    -   Click **Add Field**.
-
-    -   Select **Name**, **Scheduled Date**, **Status Reason**, and
-        **Comments**.
-
-    -   Click **Add**.
-
-    -   The fields should be arranged in the following order: Name, Scheduled Date, Status Reason, Comments. You can
-        drag/drop to rearrange the fields.
-
-4.  Go to the **Tree View** and expand the **InspectionForm**.
-
-5.  Select the **Scheduled Date** data card.
-
-6.  Go to the **Properties** pane and select the **Advanced** tab.
-
-6.  Click **Unlock to change Properties**.
-
-7.  Expand the **Scheduled Date** card.
-
-8.  Select **StarVisible**, **ErrorMesage**, **MinuteValue**, **Separator**, and
-    **HourValue**.
-
-9.  Delete the selected controls. When the controls are deleted, you will be
-    able to see an error message.
-
-10.  Select the **DateValue** control.
-
-11. Select the **Scheduled Date** DataCard.
-
-12. Go to formula bar and select **Update**.
-
-13. Remove everything after the **SelectedDate**. This should remove the error
-    message from the app.
-
-14. Select the **InspectionForm**. Then navigate to the **Properties** pane and click **Edit Fields**.
-
-15. Expand the **Name** field.
-
-16. Click on the **Control Type** dropdown and select **View Text**.
-
-17. Expand the **Scheduled Date** field. Observe the change.
-
-18. Notice we cannot change this the same way because we’ve customized it. From
-    the Tree View select DateValue control inside the **Scheduled Date**
-    Datacard and go to the **Advanced tab** of the **Properties pane**.
-
-19. Search for DisplayMode property and remove the existing formula and place
-    the following:
-
-                DisplayMode.View
-
-20. Close the **Fields** pane.
-
-21. Change the Status Reason label.
-
-    -   Select the **Status Reason data card**.
-
-    -   Go to the **Properties** pane and the Advanced tab, click **Unlock to
-        Change properties.**
-
-    -   Change the **DisplayName** to **Inspection Result**.
-
-22. Resize the Comments data card.
-
-    -   Select the **Comments** data card.
-
-    -   Click and drag the right edge to the far right of the screen.
-
-    -   Go to the **Advanced** tab of **Properties** pane and click **Unlock to
-        change properties**.
-
-    -   Set the **Height** value to **300**.
-
-    -   Select the **DataCardValue** control.
-
-    -   Set the **Height** value to **300**.
-
-    -   Change the **Mode** to the formula below.
-
-               TextMode.MultiLine
-
-23.  Save your work.
-
-Task \#5: Submit the Inspection Result
---------------------------------------
-
-1.  Add submit button to the details screen.
-
-    -   Select the **DetailsScreen**. Make sure that you have not selected the
-        Edit Form.
-
-    -   Go to the **Insert** tab and click **Button**.
-
-    -   Rename the button **SubmitButton**.
-
-    -   Change the Text value of the button to **Submit**.
-
-    -   Place the button below the form through drag and drop.
-
-2.  Submit the inspection result.
-
-    -   Select the **SubmitButton.**
-
-    -   Set the **OnSelect** value of the submit button to the formula below.
-        Remove the false expression and update it. This formula will submit the
-        form and then navigate back to the MainScreen.
-
-              SubmitForm(InspectionForm);Back(ScreenTransition.UnCoverRight)
-
-3.  Add navigation from the main screen to the details screen.
-
-    -   Go to the **MainScreen** and select the **InspectionList**.
-
-    -   Set the **OnSelect** property of the **InspectionList** to the formula
-        below. Remove the already existing false expression.
-
-              Navigate(DetailsScreen, ScreenTransition.Cover)
-
-Task \#6: Test Application
---------------------------
-
-1.  Start the application
-
-    -   Select the **MainScreen** and click **Preview the App**.
-
-    -   The application should load and show at least one inspection. Click on
-        the inspection.
-
-    -   The application should navigate to the details screen. Change the
-        **Inspection Result** to **Passed**, provide a comment in the textbox as
-        “Frame Inspection was completed.”, and click **Submit**.
-
-    -   The inspection should be submitted, and the application should navigate
-        back to the MainScreen. Click Close.
-
-2.  Save and publish the application
-
-    -   Click **File** and then click **Save**.
-
-    -   Click Publish.
-
-    -   Click **Publish this Version**.
-
-    -   Click **Close**.
-
-    -   Close the **Designer** browser window or tab.
-
-    -   Click **Leave** if prompted when tried to close the browser window.
-
-    -   Navigate back to the previous window and Click **Done**.
-
-3.  Confirm the inspection record was updated
-
-    -   Select **Apps** and click to open the **Permit Management Application**.
-
-    -   Select **Inspections** and click to open the **Framing Inspection**.
-
-    -   The **Status Reason** of the inspection should be **Passed,** and the
-        comment should be updated to the comment you provided.
-
-    -   Close the **Permit Management** application.
-
-Exercise \#2: Export/Import Solution
-====================================
-
-**Objective:** In this exercise, you will export the solution you created in the
-development environment and import it to the production environment.
-
-Task \#1: Export solution.
---------------------------
-
-1.  Sign in to <https://make.powerapps.com>
-
-2.  Make sure you have your **Dev** environment selected.
-
-3.  Select **Solutions** and select the **Permit Management** solution.
-
-4.  Click **Solution Checker** and select **Run**.
-
-5.  **Note**: in some environments, you may be prompted to first install
-    Solution checker. When **Install** is selected, this will open a new window.
-    Follow the steps. It might take a few minutes to install the Solution
-    checker and you will have to refresh the PowerApps page after the
-    installation is complete. You should be able to see **Run** option now.
-
-6.  Click on Run and wait for the run to complete.
-
-7.  Click on the More **Commands** of the **Permit Management** solution.
-
-8.  Click Solution Checker and select View Results.
-
-9.  You will see several issues reported.
-
-10. To resolve the issues, follow these steps:
-
-11. Select **Apps**
-
-12. Click … next to **Inspector** app and select **Edit**
-
-13. Click **App checked** icon on the toolbar
-
-14. Select **Recheck All**
-
-15. Expand **Missing accessible label** node
-
-16. Select an issue. This will open the screen with the control and prompt to
-    enter **AccessibleLabel** property.
-
-17. Enter text value as appropriate
-
-18. Repeat the process for all controls with missing accessible labels
-
-19. Expand **Missing tab stop** node
-
-20. Select control, enter a value for the **TabIndex**, e.g. 0
-
-21. **Tips** node may contain the following message:
-    “Use another method instead of HTML, or remove the HTML from this element.”
-
-22. This message is related to Map component we imported as part of the
-    component bundle. This component can be safely deleted as it’s not used by
-    the app.
-
-23. Fix other app issues as appropriate
-
-24. Click **File** and then click **Save**.
-
-25. Click **Publish**.
-
-26. Switch to <https://make.powerapps.com/>
-
-27. Select **Solutions** then select **Permit Management** solution
-
-28. Click **Solution checker** then select **Run** and wait for the run to
-    complete.
-
-29. There should be zero issues.
-
-30. Select **Solutions** and click to open the **Permit Management** solution.
-
-31. Click **Export**.
-
-32. Click **Publish** and wait for the publishing to complete.
-
-33. Click **Next**.
-
-34. Select **Managed** and click **Export**.
-
-35. Click **Save** and select **Save as**.
-
-36. Save the solution on your machine.
-
-37. Click **Export** again.
-
-38. Click **Next**.
-
-39. Edit the version number to match the Managed solution you just exported,
-    select **Unmanaged** and click **Export**.
-
-40. Save the unmanaged solution on your machine.
-
-Task \#2: Import solution.
---------------------------
-
-1.  Sign in to <https://make.powerapps.com>
-
-2.  Make sure you have your **Prod** environment selected.
-
-3.  Select **Solutions** and click **Import**.
-
-4.  Click **Browse**.
-
-5.  Select the **Managed** solution you exported and click **Open**.
-
-6.  Click **Next**.
-
-7.  Click **Import** and this will open a new window to track the import status.
-
-8.  Wait for import to complete and click **Close**.
-
-9.  Navigate to both the model driven and canvas apps you’ve created and add a
-    few records, test the apps.
+* Add building information and map to the notification flow.
+* Can you generate barcode for the visit code? When will that be useful?
+* Date formatting
+* Is it possible to generate a table with overstay information and send only single email?
+* 
