@@ -93,10 +93,9 @@ Task \#1: Create flow
      >
      > Best regards,
      > Campus administration
-  > Bellows  College
+     > Bellows  College
      
    * Bolded text denotes dynamic content that needs to be inserted in these places.
-   
 10.  Select flow name and rename it to **Visit notification**
 
 11.  Press **Save**
@@ -189,7 +188,6 @@ Task \#2: Validate and test the flow
 4. Press **Run flow**
 5. When flow competes, expand **Apply to each** then expand **Send an email notification** steps
 6. Check the **Subject**, **Email Body** values. Expand **Show more** and check **CC** value.
-7. After your flow testec
 8. Navigate to solution, click ... next to flow, select **Turn off**. This is to prevent flow from executing on a schedule on the test system.
 
 # Challenges
@@ -198,4 +196,3 @@ Task \#2: Validate and test the flow
 * Can you generate barcode for the visit code? When will that be useful?
 * Date formatting
 * Is it possible to generate a table with overstay information and send only single email?
-* 

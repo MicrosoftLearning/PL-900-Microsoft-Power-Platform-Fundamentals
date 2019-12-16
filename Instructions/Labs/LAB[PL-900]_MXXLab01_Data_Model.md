@@ -243,6 +243,7 @@ TBC
 # Challenges
 
 * Would you consider using *appointment* activity as part of the solution? What would it change?
+* How to enforce the scheduled end to be after the scheduled start? 
 * Add support for multiple meetings during a single visit.
 * Secure the building access not only for external contacts but for internal staff member as well.
 * Visits to certain buildings require management approval. What would the approval process change in the data model?
