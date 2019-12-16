@@ -5,7 +5,9 @@ lab:
 ---
 
 # PL-900: Microsoft-Power-Platform-Fundamentals
-## Module X, Lab 2 – Canvas App
+## Module X, Lab 2 – Model-driven App
+
+
 
 Scenario
 ========
@@ -16,541 +18,218 @@ Campus administration would like to modernize their visitor registration system 
 
 Throughout this course you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
 
-In this lab, you will create we will now design a PowerApps canvas app that the inspectors will use in the field on their mobile devices. Canvas apps are low code apps that can be designed for a tablet or mobile phone layouts. You will build a two-screen canvas app that allows inspectors quickly access and process the inspections.
+In this lab, you will build a Power Apps model-driven app to allow the backoffice campus staff to manage visit records across the entire campus.
 
 High-level lab steps
 ======================
 
-We will follow the below schema to design the canvas app:
+As part of creating the model-driven app, you will complete the following:
 
--   Create the app using the tablet form factor
+-   Create a new model-driven app named Campus Management
 
--   Connect to Common Data Service as a data source
+-   Edit the app navigation to reference the required entities
 
--   Configure a gallery control to show the pending appointments
+-   Customize the forms and views of the required entities for the app
 
--   Use a CDS view to populate the gallery
+We will work with the following components:
 
--   Configure a detail page with appointment info
+- **Views**: Views allow the user to display the existing data in the form
+of table.
 
--   Handle checking-in the inspection results to CDS
+- **Forms**: This is where the user creates/updates new records in the entities.
 
--   Export the solution with the data model and apps and import it to the
-    “Production” environment
-
-The first screen in the application will show all Pending Inspections for the
-logged in Inspector. The second screen lets the inspector update the selected
-Inspection.
-
-## Prerequisites
-
-
+Both will be integrated to the model-driven app for a better user-experience.
 
 Things to consider before you begin
 -----------------------------------
 
--   What information would a security officer need quick access to?
+-   What changes should we make to improve the user experience?
 
--   
+-   What should we include in a model-driven app based on the data model we’ve built?
     
+-   What customizations can be made on the sitemap of a model-driven app?
 
-Exercise \#1: Create Canvas App
-===============================
 
-**Objective:** In this exercise, you will create a canvas app.
+Exercise \#1: Customize Views and Forms
+=======================================
 
-Task \#1: Create Canvas App
----------------------------
+**Objective:** In this exercise, you will customize views and forms of the custom created entities that will be used in the model-driven app.
 
-1.  Open the Permit Management solution.
+Task \#1: Edit Visit Form
+-----------------------------------
+
+1.  Sign in to <https://make.powerapps.com> if you are not already signed in.
+2.  Select your **environment.**
+3.  Select **Solutions**.
+4.  Click to open the **Campus Management** solution.
+5.  Click to open the **Visit** entity.
+7.  Select the **Forms** tab and click to open the **Main** form type. By default the
+    form has two fields, Name (Primary Field) and Owner.
+7.  Add the following fields below the **Owner** field by dragging fields to the form or simply double-clicking field names:
+    * **Building**
+    * **Visitor**
+    * **Scheduled Start**
+    * **Scheduled End**
+    * **Actual Start**
+    * **Actual End** 
+8.  Drag the **Code** field and drop it in the form header. (You may need to minimize the Properties panel on the right side of the screen to see the field on the form.)
+9.  In the Properties panel check the option **Read-only** field
+10.  Select **Owner** field and in the Properties panel change the **Field label** to **Host**
+11.  Click **Save** and wait for the save to complete.
+12.  Click **Publish** and wait for the publishing to complete.
+13.  Click on the back button in the browser. You should now be back to the
+     Visit entity Forms Tab.
+
+## Task \#2: Edit Visit Views
+
+In this task we will modify default Active Visits view and create new view for today's visits.
+
+1.  Select the **Views** tab and click to open the **Active Visits** view.
+2.  Add the following fields to the view by either clicking or dragging and dropping the fields:
+    1.  **Code**
+    2.  **Visitor**
+    3.  **Building**
+    4.  **Scheduled Start** 
+    5.  **Scheduled End**
+3.  Click on the chevron icon of the **Created On** column and select **Remove**. Field **Created On** will now be removed from the view.
+4.  Click on the chevron icon of the **Name** column and select **Remove**. Field **Name** will now be removed from the view.
+5.  In the Properties panel on the right, click **Sort by** and select **Scheduled Start**. Click on **Scheduled Start** again to change the order to descending (new visits on top).
+6.  Resize individual columns to fit the information presented.
+7.  Click **Save** and wait until the changes are saved.
+8.  Click **Publish** and wait for the publishing to complete.
+9.  Now we will clone the view to create a new view for today's visits. Click `x` next to the existing filter in the Properties panel to remove the filter.
+10.  Press shevron next to **Save** button (be careful not to press the button itself) and select **Save As**.
+11.  Change the name to **Today's Visits** and press **Save**.
+12.  Press **Edit filters** link in the Properties panel.
+13.  Click **Add**, select **Add row**.
+14.  Select **Scheduled Start** as a field, then select **Today** as condition. Press **Ok** to save the condition.
+15.  Add **Actual Start** and **Actual End** fields to the view. Since we no longer filter on the view status, we will get all today's visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
+16.  Click **Save** and wait until the changes are saved.
+17.  Click **Publish** and wait for the publishing to complete.
+18.  Click on the back button in the browser.
+
+Exercise \#2: Create Model-Driven Application
+=============================================
+
+**Objective:** In this exercise, you will create the model-driven app, customize the sitemap, and test the app.
+
+**Note:** You will see several fields not addressed as you build out your application, particularly on the sitemap steps. We have taken some short cuts in the interest of doing the labs. In a real project you would give these items logical names.
+
+Task \#1: Create Application
+----------------------------
+
+1.  Open the Campus Management solution if you are not already in it.
 
     -   Sign in to <https://make.powerapps.com>
 
-    -   Select your **environment.**
+    -   While in your environment, click to open the **Campus Management**
+        solution.
+2.  Create the Model-Driven Application
 
-    -   Select **Solutions**.
+    -   Click **New** and select **App** and then **Model-Drive App**. This will open a new tab.
+    -   Select **Use existing solution to create the App** checkbox
+    -   Enter **Campus Management** for Name and click **Next**.
+    -   Select **Campus Management** solution in the dropdown and click **Done**.
+3.  Click the pencil icon next to **Site Map.**
+4.  Edit the default titles
 
-    -   Click to open the **Campus Management** solution.
+    -   Select **New Area**.
 
-2.  Create new canvas application
+    -   Go to the properties pane and enter **Campus** for **Title**.
 
-    -   Click **New** and select **App \| Canvas App \| Tablet Form Factor**.
-        This will open the App Editor in a New window.
+    -   Select **New Group**.
 
-    -   If you are creating your first app, this will ask you to set the
-        Country/region for the app. Click **Get Started.**
+    -   Go to the **Properties** pane and enter **Security** for **Title**.
+5.  Add the Contact entity to the sitemap
 
-    -   Click File and select Save As.
+    -   Select **New Subarea**.
 
-    -   Check if **The Cloud** is selected. Enter **Inspector** for Name and
-        click **Save**. This will make sure that the changes are not removed if
-        the app closes unexpectedly.
+    -   Go to the **Properties** pane and select **Entity** from the dropdown
+        for **Type**.
 
-3.  Enable Components for the application.
+    -   Search for **Contact** entity from the dropdown for **Entity**.
+6.  Add the Visit entity to the sitemap
 
-    -   Select **App Settings** and then select **Advanced Settings**.
+    -   Select **Security** group and click **Add**.
 
-    -   Scroll down and turn on **Components**.
+    -   Select **Subarea**.
 
-    -   Click on the app designer back button.
+    -   Go to the **Properties** pane.
 
-4.  Rename Screen1.
+    -   Select **Entity** from the dropdown for **Type** and search for
+        **Visit** entity from the dropdown for **Entity**.
+7.  Add the Building entity to the sitemap
 
-    -   Go to the **Tree View** and double click on **Screen1**.
+    -   Select **Campus** area and click **Add**.
+-   Select **New Group**.
+    -   Enter **Settings** for **Title** in the **Properties** pane.
+-   Click **Add**.
+    -   Select **Subarea**.
+-   Go to the **Properties** pane.
+    -   Select **Entity** from the dropdown for **Type** and search for **Building** entity from the dropdown for **Entity**.
 
-    -   Rename it MainScreen and press **Enter.**
+8.  Click **Save**. This will show the loading screen while the changes are getting saved.
 
-5.  Import Component.
+9.  Click **Publish** to publish the sitemap and wait for the publishing to complete.
+10.  Click **Save and Close** to close the sitemap editor.
+11.  You will see the assets for the entities that were added to the sitemap are
+     now all in the application.
+12.  Click **Save** to save the application.
+13.  Click **Validate** to validate the changes done in the application. This will show some warnings but we can ignore them, since we have not referenced a specific View and Form for the entities and the users will have access to all the Views and Forms for **Visit** and **Building** entities.
+14.  Click **Publish** to publish the application and wait for the publishing to
+     complete.
+15.  Click **Save and Close** to close the app designer.
+16.  Click **Done**.
+17.  Select **Solutions** and select **Publish all Customizations.**
+18.  Select **Apps** and your application should now be listed.
 
-    -   Select the **Components** tab.
-
-    -   Click on the **… (Component Options)** button and select Import
-        **Components**.
-
-    -   Click **Upload File**.
-
-    -   Browser to the lab resources folder, select the **Components** file and
-        click **Open**.
-
-    -   Three components should be imported.
-
-6.  Add the Header component to the MainScreen.
-
-    -   Select the **Screens** tab.
-
-    -   Select the **Insert** tab.
-
-    -   Click **Custom** and select **Header**.
-
-    -   Rename **Header_1** to **MainHeader** by double click on Header_1.
-
-7.  Change the MainHeader properties
-
-    -   Select **MainHeader**.
-
-    -   Change the **Text** attribute of the **MainHeader** to **My Pending
-        Inspections**. This can be done by selecting “Text” property in the
-        dropdown below top menu. Make sure that you have selected the MainHeader
-        control while doing this step.
-
-    -   Change the **Width** vale of the **MainHeader** to the formula below.
-
-               Parent.Width
-
-Task \#3: Add Inspection Gallery
---------------------------------
-
-1.  Add Gallery
-
-    -   Select the **Tree View** tab
-
-    -   Select the **MainScreen**.
-
-    -   Go to the **Insert** tab.
-
-    -   Click **Gallery** and select **Vertical**.
-
-    -   Select **Inspections** for **Data Source**. When Inspection is selected,
-        this will automatically pick the fields and show them in the gallery
-        items.
-
-    -   Rename **Gallery_1** to **InspectionList** by double click on Gallery_1.
-
-2.  Select the inspector view
-
-    -   Make sure you have the **InspectionList** control selected.
-
-    -   Go to the **Properties** pan and select **Inspector View** for **View**.
-
-3.  Change the **InspectionList** control layout
-
-    -   Go to the **Properties** pane and click on the **Layout** dropdown.
-
-    -   Select **Title and Subtitle**.
-
-4.  Verify the selected fields.
-
-    -   Go to the **Properties** pane and click on the **Edit Fields**.
-
-    -   Confirm that Scheduled Date is selected for Subtitle1 and Name is
-        selected for Tile1. Close the Data pane.
-
-5.  Change date time to date only.
-
-    -   Expand the **InspectionList** and select **Subtitle1**.
-
-    -   Change the Text property of the control to the formula below.
-
-            DateValue(Text(ThisItem.'Scheduled Date'),"en")
-
-6.  Resize the Gallery
-
-    -   Select the **InspectionList** gallery.
-
-    -   Select **Width** property from the formula dropdown and enter the
-        formula below.
-
-            Parent.Width
-
-    -   Select **Height** property and set it to the formula below.
-
-            Parent.Height - (MainHeader.Height*2)
-
-    -   Select the Y property from the dropdown and set it to formula below.
-
-             MainHeader.Height
-
-    -   Select the X property from the dropdown and set it to formula below.
-
-            MainHeader.X
-
-Task \#4: Add Inspection Details Screen
----------------------------------------
-
-1.  Click **New Screen** and select **Blank**.
-
-2.  Rename the new screen **DetailsScreen** by double click on the control in
-    Tree View.
-
-3.  Add Header to the DetailsScreen and edit it
-
-    -   Go to the **MainScreen** and copy the **MainHeader**.
-
-    -   Go to the **DetailsScreen** and paste the **Header**.
-
-    -   Rename the Header you **DetailsHeader** by double click on the control
-        in Tree View.
-
-    -   Select te **Y** property of the **DetailsHeader** and set to **0**.
-
-    -   Select the **Text** property of the **DetailsHeader** and set it to
-        formula below.
-
-               InspectionList.Selected.Name
-
-1.  Add Form to the DetailsScreen.
-
-    -   Select the **DetailsScreen**.
-
-    -   Select the **Insert** tab.
-
-    -   Click **Forms** and select **Edit**.
-
-    -   Rename the form **InspectionForm**.
-
-    -   Resize the Edit form as:
-
-            1.  Select the **InspectionForm** gallery.
-            
-            2.  Select **Width** property from the formula dropdown and enter the
-            formula below.  
-            Parent.Width
-            
-            3.  Select **Height** property and set it to the formula below.  
-            Parent.Height - (DetailsHeader.Height\*2)
-            
-            4.  Select the Y property from the dropdown and set it to formula below.  
-            DetailsHeader.Height
-            
-            5.  Select the X property from the dropdown and set it to formula below.  
-            DetailsHeader.X
-
-2.  Set the **InspectionForm** data source
-
-    -   Select the **InspectionForm** and select the DataSource as
-        **Inspections** entity.
-
-    -   Set the Item value to the formula below.
-
-               InspectionList.Selected
-
-3.  Edit InspectionForm fields. This adds the data cards for fields by default,
-    but you can add/remove the data cards as:
-
-    -   Select the **InspectionForm**.
-
-    -   Go to the **Properties** pane and click **Edit Fields**.
-
-    -   Click **Add Field**.
-
-    -   Select **Name**, **Scheduled Date**, **Status Reason**, and
-        **Comments**.
-
-    -   Click **Add**.
-
-    -   The fields should be arranged in the following order: Name, Scheduled Date, Status Reason, Comments. You can
-        drag/drop to rearrange the fields.
-
-4.  Go to the **Tree View** and expand the **InspectionForm**.
-
-5.  Select the **Scheduled Date** data card.
-
-6.  Go to the **Properties** pane and select the **Advanced** tab.
-
-6.  Click **Unlock to change Properties**.
-
-7.  Expand the **Scheduled Date** card.
-
-8.  Select **StarVisible**, **ErrorMesage**, **MinuteValue**, **Separator**, and
-    **HourValue**.
-
-9.  Delete the selected controls. When the controls are deleted, you will be
-    able to see an error message.
-
-10.  Select the **DateValue** control.
-
-11. Select the **Scheduled Date** DataCard.
-
-12. Go to formula bar and select **Update**.
-
-13. Remove everything after the **SelectedDate**. This should remove the error
-    message from the app.
-
-14. Select the **InspectionForm**. Then navigate to the **Properties** pane and click **Edit Fields**.
-
-15. Expand the **Name** field.
-
-16. Click on the **Control Type** dropdown and select **View Text**.
-
-17. Expand the **Scheduled Date** field. Observe the change.
-
-18. Notice we cannot change this the same way because we’ve customized it. From
-    the Tree View select DateValue control inside the **Scheduled Date**
-    Datacard and go to the **Advanced tab** of the **Properties pane**.
-
-19. Search for DisplayMode property and remove the existing formula and place
-    the following:
-
-                DisplayMode.View
-
-20. Close the **Fields** pane.
-
-21. Change the Status Reason label.
-
-    -   Select the **Status Reason data card**.
-
-    -   Go to the **Properties** pane and the Advanced tab, click **Unlock to
-        Change properties.**
-
-    -   Change the **DisplayName** to **Inspection Result**.
-
-22. Resize the Comments data card.
-
-    -   Select the **Comments** data card.
-
-    -   Click and drag the right edge to the far right of the screen.
-
-    -   Go to the **Advanced** tab of **Properties** pane and click **Unlock to
-        change properties**.
-
-    -   Set the **Height** value to **300**.
-
-    -   Select the **DataCardValue** control.
-
-    -   Set the **Height** value to **300**.
-
-    -   Change the **Mode** to the formula below.
-
-               TextMode.MultiLine
-
-23.  Save your work.
-
-Task \#5: Submit the Inspection Result
---------------------------------------
-
-1.  Add submit button to the details screen.
-
-    -   Select the **DetailsScreen**. Make sure that you have not selected the
-        Edit Form.
-
-    -   Go to the **Insert** tab and click **Button**.
-
-    -   Rename the button **SubmitButton**.
-
-    -   Change the Text value of the button to **Submit**.
-
-    -   Place the button below the form through drag and drop.
-
-2.  Submit the inspection result.
-
-    -   Select the **SubmitButton.**
-
-    -   Set the **OnSelect** value of the submit button to the formula below.
-        Remove the false expression and update it. This formula will submit the
-        form and then navigate back to the MainScreen.
-
-              SubmitForm(InspectionForm);Back(ScreenTransition.UnCoverRight)
-
-3.  Add navigation from the main screen to the details screen.
-
-    -   Go to the **MainScreen** and select the **InspectionList**.
-
-    -   Set the **OnSelect** property of the **InspectionList** to the formula
-        below. Remove the already existing false expression.
-
-              Navigate(DetailsScreen, ScreenTransition.Cover)
-
-Task \#6: Test Application
+Task \#2: Test Application
 --------------------------
 
 1.  Start the application
 
-    -   Select the **MainScreen** and click **Preview the App**.
+    -   Select **Apps** and click to open the **Campus Management** app in a new window. (If you don't see your app at first, you may need to refresh your browser.)
 
-    -   The application should load and show at least one inspection. Click on
-        the inspection.
+    -   The application should start.
+2.  Create new Contact record
 
-    -   The application should navigate to the details screen. Change the
-        **Inspection Result** to **Passed**, provide a comment in the textbox as
-        “Frame Inspection was completed.”, and click **Submit**.
+    -   Select **Contacts**
 
-    -   The inspection should be submitted, and the application should navigate
-        back to the MainScreen. Click Close.
+    -   Click **New** from the top menu.
 
-2.  Save and publish the application
+    -   Provide **First Name** as **John** and **Last Name** as **Doe**.
 
-    -   Click **File** and then click **Save**.
+    -   Click **Save and Close**.
 
-    -   Click Publish.
+    -   You should now see the created contact on the **Active Contacts** view.
+3.  Create new Building record
 
-    -   Click **Publish this Version**.
+    -   Select **Building** from the sitemap.
 
-    -   Click **Close**.
+    -   Click **New**.
 
-    -   Close the **Designer** browser window or tab.
+    -   Enter the **Name** as Microsoft Building
+        
+-   Click **Save and Close** and this will show the newly created record on
+        the Active Buildings View.
+4.  Create new Visit record
 
-    -   Click **Leave** if prompted when tried to close the browser window.
+    -   Select **Visits** from the sitemap.
+    -   Click **New**.
+    -   Enter the fields as following 
+        -   **Name**: New test visit
+        -   **Building**: select Microsoft Building
+        -   **Visitor**: select John Doe
+        -   **Scheduled Start**: select today's date and 2:00 PM as start time
+        -   **Scheduled End**: select today's date and 3:30 PM as end time
+    -   Click **Save and Close**. This will create the record and you should be able to see it on the
+        Active Visits View.
+    -   Change view to **Today's Visits**. You should be able to see the entered visit in the view.
+5.  You may add more test records.
 
-    -   Navigate back to the previous window and Click **Done**.
+# Challenges
 
-3.  Confirm the inspection record was updated
-
-    -   Select **Apps** and click to open the **Permit Management Application**.
-
-    -   Select **Inspections** and click to open the **Framing Inspection**.
-
-    -   The **Status Reason** of the inspection should be **Passed,** and the
-        comment should be updated to the comment you provided.
-
-    -   Close the **Permit Management** application.
-
-Exercise \#2: Export/Import Solution
-====================================
-
-**Objective:** In this exercise, you will export the solution you created in the
-development environment and import it to the production environment.
-
-Task \#1: Export solution.
---------------------------
-
-1.  Sign in to <https://make.powerapps.com>
-
-2.  Make sure you have your **Dev** environment selected.
-
-3.  Select **Solutions** and select the **Permit Management** solution.
-
-4.  Click **Solution Checker** and select **Run**.
-
-5.  **Note**: in some environments, you may be prompted to first install
-    Solution checker. When **Install** is selected, this will open a new window.
-    Follow the steps. It might take a few minutes to install the Solution
-    checker and you will have to refresh the PowerApps page after the
-    installation is complete. You should be able to see **Run** option now.
-
-6.  Click on Run and wait for the run to complete.
-
-7.  Click on the More **Commands** of the **Permit Management** solution.
-
-8.  Click Solution Checker and select View Results.
-
-9.  You will see several issues reported.
-
-10. To resolve the issues, follow these steps:
-
-11. Select **Apps**
-
-12. Click … next to **Inspector** app and select **Edit**
-
-13. Click **App checked** icon on the toolbar
-
-14. Select **Recheck All**
-
-15. Expand **Missing accessible label** node
-
-16. Select an issue. This will open the screen with the control and prompt to
-    enter **AccessibleLabel** property.
-
-17. Enter text value as appropriate
-
-18. Repeat the process for all controls with missing accessible labels
-
-19. Expand **Missing tab stop** node
-
-20. Select control, enter a value for the **TabIndex**, e.g. 0
-
-21. **Tips** node may contain the following message:
-    “Use another method instead of HTML, or remove the HTML from this element.”
-
-22. This message is related to Map component we imported as part of the
-    component bundle. This component can be safely deleted as it’s not used by
-    the app.
-
-23. Fix other app issues as appropriate
-
-24. Click **File** and then click **Save**.
-
-25. Click **Publish**.
-
-26. Switch to <https://make.powerapps.com/>
-
-27. Select **Solutions** then select **Permit Management** solution
-
-28. Click **Solution checker** then select **Run** and wait for the run to
-    complete.
-
-29. There should be zero issues.
-
-30. Select **Solutions** and click to open the **Permit Management** solution.
-
-31. Click **Export**.
-
-32. Click **Publish** and wait for the publishing to complete.
-
-33. Click **Next**.
-
-34. Select **Managed** and click **Export**.
-
-35. Click **Save** and select **Save as**.
-
-36. Save the solution on your machine.
-
-37. Click **Export** again.
-
-38. Click **Next**.
-
-39. Edit the version number to match the Managed solution you just exported,
-    select **Unmanaged** and click **Export**.
-
-40. Save the unmanaged solution on your machine.
-
-Task \#2: Import solution.
---------------------------
-
-1.  Sign in to <https://make.powerapps.com>
-
-2.  Make sure you have your **Prod** environment selected.
-
-3.  Select **Solutions** and click **Import**.
-
-4.  Click **Browse**.
-
-5.  Select the **Managed** solution you exported and click **Open**.
-
-6.  Click **Next**.
-
-7.  Click **Import** and this will open a new window to track the import status.
-
-8.  Wait for import to complete and click **Close**.
-
-9.  Navigate to both the model driven and canvas apps you’ve created and add a
-    few records, test the apps.
+* Select specific views and forms for Visits and Buildings
+* Security personnel typically work in a single building. How would you provide an easy way for them to display visits only for a selected building?
+* How would you restrict access to specific entities, e.g. Buildings should be read-only for all staff members except the administrators?
+* What Dashboards would you consider adding to the app?s
