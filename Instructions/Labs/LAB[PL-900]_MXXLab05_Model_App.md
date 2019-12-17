@@ -1,13 +1,11 @@
 ---
 lab:
-    title: 'Lab 02: Canvas app'
+    title: 'Lab 5: Model-driven app'
     module: 'Module XX: Power Apps Build'
 ---
 
 # PL-900: Microsoft-Power-Platform-Fundamentals
-## Module X, Lab 2 – Model-driven App
-
-
+## Module X, Lab 5 – Model-driven App
 
 Scenario
 ========

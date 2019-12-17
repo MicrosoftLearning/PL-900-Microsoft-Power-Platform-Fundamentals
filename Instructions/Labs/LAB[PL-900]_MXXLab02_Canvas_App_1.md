@@ -1,11 +1,11 @@
 ---
 lab:
-    title: 'Lab 02: Canvas app'
+    title: 'Lab 02: Canvas app, Part 1'
     module: 'Module XX: Power Apps Build'
 ---
 
 # PL-900: Microsoft-Power-Platform-Fundamentals
-## Module X, Lab 2 – Canvas App
+## Module X, Lab 2 – Canvas App - Part 1
 
 Scenario
 ========
@@ -16,7 +16,7 @@ Campus administration would like to modernize their visitor registration system 
 
 Throughout this course you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus.  
 
-In this lab, you will design a PowerApps canvas app that college staff can use to manage visits for their guests.
+In part 1 this lab, you will design a PowerApps canvas app that college staff can use to manage visits for their guests.
 
 High-level lab steps
 ======================

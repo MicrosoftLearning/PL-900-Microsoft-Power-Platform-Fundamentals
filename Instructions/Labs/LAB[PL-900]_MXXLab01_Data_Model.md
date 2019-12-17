@@ -240,6 +240,8 @@ In this exercise you will import sample data into the Common Data Service
 
 TBC
 
+> The wizard detected a single column in the uploaded file. If your file contains only one column, click OK to continue. Otherwise, click Cancel to select the correct delimiter.
+
 # Challenges
 
 * Would you consider using *appointment* activity as part of the solution? What would it change?
