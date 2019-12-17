@@ -29,7 +29,12 @@ In this lab, you will set up an environment, create Common Data Service database
 High-level lab steps
 ======================
 
-To prepare your learning environments you will create a solution and publisher, and add both new and existing components that are necessary to meet the application requirements. ~~Refer to the data model document for the metadata description (entities, field types and relationships)~~. Your solution will contain several entities upon completion of all the customizations:
+To prepare your learning environments you will:
+
+* create a solution and publisher
+* add both new and existing components required to meet the application requirements. ~~Refer to the data model document for the metadata description (entities, field types and relationships)~~. 
+
+Your solution will contain several entities upon completion of all the customizations:
 
 -   Contact
 -   Building
