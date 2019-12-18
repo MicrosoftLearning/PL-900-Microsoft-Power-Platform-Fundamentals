@@ -1,11 +1,11 @@
 ---
 lab:
     title: 'Lab 01: Data Modeling'
-    module: 'Module 02: Power Apps Build'
+    module: 'Module 03: Introduction to Common Data Service'
 ---
 
 # PL-900: Microsoft-Power-Platform-Fundamentals
-## Module 2, Lab 1 – Data Modeling
+## Module 3, Lab 1 – Data Modeling
 
 
 Scenario
