@@ -17,14 +17,13 @@ Campus administration would like to modernize their visitor registration system 
 
 Throughout this course you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
 
-In this lab, you will set up an environment, create Common Data Service database, and create a solution to track your changes. You will also create a data model to support the following requirements:
+In this lab, you will set up an environment, create Common Data Service (CDS) database, and create a solution to track your changes. You will also create a data model to support the following requirements:
 
 -   R1 – Track the locations (buildings) of the campus visits
-    
 -   R2 – Record basic information to identify and track the visitors 
-    
 -   R3 – Schedule, record, and manage visits 
-    
+
+Finally, you will import sample data into CDS.
 
 High-level lab steps
 ======================
@@ -32,7 +31,7 @@ High-level lab steps
 To prepare your learning environments you will:
 
 * create a solution and publisher
-* add both new and existing components required to meet the application requirements. ~~Refer to the data model document for the metadata description (entities, field types and relationships)~~. 
+* add both new and existing components required to meet the application requirements. Refer to the [data model document](..\..\Allfiles\Labs\Campus Management.vsdx) for the metadata description (entities, field types and relationships) . 
 
 Your solution will contain several entities upon completion of all the customizations:
 
@@ -42,20 +41,24 @@ Your solution will contain several entities upon completion of all the customiza
 
 ## Prerequisites
 
-
+* None
 
 Things to consider before you begin
 -----------------------------------
 
-
+* Naming convention
+* Data types, restrictions (e.g. max length of a name)
+* Datetime formatting to support easy localization
 
 Exercise \#1: Create Environment and Solution
 ==================================================
 
-**Objective:** In this exercise, you will create a working environment.
+**Objective:** In this exercise you will prepare the environment and create a solution to support the data modeling process. 
 
 Task \#1: Create Environment
 -----------------------------
+
+If you do not have and were not given an environment prior to the exercise, in this task you will create a new working environment. Otherwise, you can move onto the next task.
 
 1.  Sign in to <https://aka.ms/ppac>
 
@@ -145,7 +148,7 @@ Exercise \#2: Create Entities and Relationships
 ========================================
 
 **Objective:** In this exercise, you will create entities and add relationships
-between entities.
+between the entities.
 
 Task #1: Create Building Entity and Fields
 -----------------------------------------
@@ -241,11 +244,27 @@ Task #3: Create Relationships
 
 # Exercise \#3: Import Data
 
-In this exercise you will import sample data into the Common Data Service
+**Objective:** In this exercise you will import sample data into the Common Data Service database.
 
-TBC
+## Task #1: Import Data Map
 
-> The wizard detected a single column in the uploaded file. If your file contains only one column, click OK to continue. Otherwise, click Cancel to select the correct delimiter.
+1. Download [CampusDataMap.xml](..\..\Allfiles\Labs\CampusDataMap.xml).
+2. Navigate to Power Platform Admin Center at https://aka.ms/ppac and sign in.
+3. In the left navigation page, select Environments, then select the target environment and click **Settings**.
+4. Expand **Data Management** section, then select **Data Maps**. This will open import map screen in a new browser tab.
+5. Click **Import**, then click **Choose File**. Locate and select **CampusDataMap.xml** downloaded earlier, and then press **OK**.
+
+## Task #2: Import Data  
+
+1. Download [CampusData.zip](..\..\Allfiles\Labs\CampusData.zip).
+2. Switch back to the original tab with the environment.  
+3. Press **Data import wizards**.
+4. Press **IMPORT DATA**.
+5. Click **Choose File**, then locate and select **CampusData.zip** downloaded earlier.
+6. Press **Next**, then press **Next** again.
+7. Select **CampusImportDataMap**, press **Next**.
+8. Review mapping summary, then press **Next**, and then press **Submit**.
+9. Press **Finish**.
 
 # Challenges
 
