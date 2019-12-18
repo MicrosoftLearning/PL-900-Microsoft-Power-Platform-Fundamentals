@@ -148,3 +148,9 @@ Exercise #2: Create Power BI Dashboard
 5. If you have a mobile device, scan the code using a QR scanner app available on both iOS and Android platforms.
 6. Navigate and explore reports on a mobile device.
 
+# Challenges
+
+* Dashboards and reports to include campus and building plans
+* Report and analyze visiting patterns and trends
+* Overstaying visualization
+* Streaming Power BI for near real-time processing for a large campus 
