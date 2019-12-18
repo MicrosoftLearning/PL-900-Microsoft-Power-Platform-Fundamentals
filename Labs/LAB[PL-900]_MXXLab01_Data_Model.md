@@ -31,7 +31,7 @@ High-level lab steps
 To prepare your learning environments you will:
 
 * create a solution and publisher
-* add both new and existing components required to meet the application requirements. Refer to the [data model document](..\..\Allfiles\Labs\Campus Management.vsdx) for the metadata description (entities, field types and relationships) . 
+* add both new and existing components required to meet the application requirements. Refer to the [data model document](..\Allfiles\Campus Management.vsdx) for the metadata description (entities, field types and relationships) . 
 
 Your solution will contain several entities upon completion of all the customizations:
 
@@ -248,7 +248,7 @@ Task #3: Create Relationships
 
 ## Task #1: Import Data Map
 
-1. Download [CampusDataMap.xml](..\..\Allfiles\Labs\CampusDataMap.xml).
+1. Download [CampusDataMap.xml](..\Allfiles\CampusDataMap.xml).
 2. Navigate to Power Platform Admin Center at https://aka.ms/ppac and sign in.
 3. In the left navigation page, select Environments, then select the target environment and click **Settings**.
 4. Expand **Data Management** section, then select **Data Maps**. This will open import map screen in a new browser tab.
