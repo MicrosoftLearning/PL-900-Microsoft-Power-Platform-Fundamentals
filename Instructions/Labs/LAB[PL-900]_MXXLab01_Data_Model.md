@@ -1,11 +1,11 @@
 ---
 lab:
     title: 'Lab 01: Data Modeling'
-    module: 'Module XX: Power Apps Build'
+    module: 'Module 02: Power Apps Build'
 ---
 
 # PL-900: Microsoft-Power-Platform-Fundamentals
-## Module X, Lab 1 – Data Modeling
+## Module 2, Lab 1 – Data Modeling
 
 
 Scenario
