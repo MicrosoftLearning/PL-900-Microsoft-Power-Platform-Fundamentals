@@ -1,11 +1,11 @@
 ---
 lab:
     title: 'Lab 02: Canvas app, Part 1'
-    module: 'Module 02: Power Apps Build'
+    module: 'Module 02: Get started with Power Apps'
 ---
 
 # PL-900: Microsoft-Power-Platform-Fundamentals
-## Module 2, Lab 2 – Canvas App - Part 1
+## Module 2, Lab 2 – Canvas App, Part 1
 
 Scenario
 ========
