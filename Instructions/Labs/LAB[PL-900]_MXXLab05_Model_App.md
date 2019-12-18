@@ -38,6 +38,10 @@ of table.
 
 Both will be integrated to the model-driven app for a better user-experience.
 
+## Prerequisites
+
+* Completion of Lab 1 - Data Modeling
+
 Things to consider before you begin
 -----------------------------------
 
@@ -230,4 +234,4 @@ Task \#2: Test Application
 * Select specific views and forms for Visits and Buildings
 * Security personnel typically work in a single building. How would you provide an easy way for them to display visits only for a selected building?
 * How would you restrict access to specific entities, e.g. Buildings should be read-only for all staff members except the administrators?
-* What Dashboards would you consider adding to the app?s
+* What Dashboards would you consider adding to the app?
