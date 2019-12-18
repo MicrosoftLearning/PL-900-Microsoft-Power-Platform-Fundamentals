@@ -1,11 +1,11 @@
 ---
 lab:
-    title: 'Lab 5: Model-driven app'
-    module: 'Module XX: Power Apps Build'
+    title: 'Lab 3: Model-driven app'
+    module: 'Module 2: Get started with Power Apps'
 ---
 
 # PL-900: Microsoft-Power-Platform-Fundamentals
-## Module X, Lab 5 – Model-driven App
+## Module 2, Lab 3 – Model-driven App
 
 Scenario
 ========
