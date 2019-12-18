@@ -1,7 +1,7 @@
 ---
 lab:
-    title: 'Lab 3: Model-driven app'
-    module: 'Module 2: Get started with Power Apps'
+    title: 'Lab 04: Model-driven app'
+    module: 'Module 02: Get started with Power Apps'
 ---
 
 # PL-900: Microsoft-Power-Platform-Fundamentals
