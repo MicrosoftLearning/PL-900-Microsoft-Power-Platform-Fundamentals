@@ -31,7 +31,7 @@ High-level lab steps
 To prepare your learning environments you will:
 
 * create a solution and publisher
-* add both new and existing components required to meet the application requirements. Refer to the [data model document](..\Allfiles\Campus Management.vsdx) for the metadata description (entities, field types and relationships) . 
+* add both new and existing components required to meet the application requirements. Refer to the data model document under Allfiles\Campus Management.vsdx for the metadata description (entities, field types and relationships). 
 
 Your solution will contain several entities upon completion of all the customizations:
 
