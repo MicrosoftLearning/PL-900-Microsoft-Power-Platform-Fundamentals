@@ -16,41 +16,45 @@ Campus administration would like to modernize their visitor registration system 
 
 Throughout this course you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
 
-In this lab, you will create we will now design a Power BI dashboard.
+In this lab, you will build a Power BI dashboard that visualizes data about campus visits.
 
 High-level lab steps
 ======================
 
-We will follow the below schema to design the canvas app:
+We will follow the below steps to design and create the Power BI dashboard:
 
--   
+-   Connect to Common Data Service 
+-   Transform the data to include user-friendly descriptions for the related records (lookups)
+-    Create and publish a report with various visualizations of the campus visits information
+-    User natural language query to build additional visualizations
+-    Build mobile view
 
 
 ## Prerequisites
 
-
+* This lab requires completion of Lab 1 - Data Modeling
 
 Things to consider before you begin
 -----------------------------------
 
--   
-
--   
-    
+-   Who is the target audience of the report?
+-   How will the audience consume the report? Typical device? Location?
+-   Do you have sufficient data to visualise?
+-   What are the possible characteristics you can use to analyse data about the visits?
 
 Exercise \#1: Create Power BI Report 
 ===============================
 
-**Objective:** In this exercise, you will create a Power BI report.
+**Objective:** In this exercise, you will create a Power BI report based on data from Common Data Service database.
 
 Task \#1: Prepare Data
 ---------------------------
 
 1.  Find out your organization URL
 
-    * Navigate to Power Platform Admin Centre.
-    * Select the target environment.
-    * Right mouse click **Environment URL** on **Details** panel, select **Copy link**.
+    * Navigate to Power Platform Admin Center at https://aka.ms/ppac.
+    * In the left navigation page, select Environments, and then select the target environment.
+    * Right mouse click **Environment URL** on the **Details** panel, then select **Copy link**.
 2. If you do not have Power BI Desktop installed, navigate to https://aka.ms/pbidesktopstore to download and install Power BI app.
 
 3. Open Power BI Desktop, sign in if prompted.
@@ -63,7 +67,7 @@ Task \#1: Prepare Data
 
 7. Expand **Entities** node, select **bc_Building** and **bc_Visit** entities, click **Load**.
 
-8. Click **Model** icon on the left vertical toolbar
+8. Click **Model** icon on the left vertical toolbar.
 
 9. Drag **bc_buildingid** column from **bc_Building** table and drop it to **bc_building** column in **bc_Visit** table. That will create a relationship between two entities that Power BI will be able to use to display related data.
 
@@ -94,7 +98,7 @@ Task \#1: Prepare Data
 1. Press pie chart icon in the **Visualizations** panel to insert the chart.
 2. Drag **Building** field and drop it into **Legend** target box.
 3. Drag **Visits** field and drop it into **Values** target box.
-4. Resize the pie chart using corner handles so that all visualizations are visible.
+4. Resize the pie chart using corner handles so that all chart components are visible.
 5. Click **New visual** on the Power BI ribbon then select stacked column chart in **Visualizations** pane. 
 6. Drag **Visits** field and drop it into **Values** target box.
 7. Drag **Start** field and drop it into **Axis** target box.
@@ -141,5 +145,5 @@ Exercise #2: Create Power BI Dashboard
 2. Depending on the UI version select either **... | Mobile View** or  **Web View | Phone View**.
 3. Rearrange tiles as desired.
 4. Select **... | Generate QR Code**.
-5. If you have a mobile device, scan the code with your mobile device.
+5. If you have a mobile device, scan the code using a QR scanner app available on both iOS and Android platforms.
 6. Navigate and explore reports on a mobile device.
