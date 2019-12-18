@@ -21,7 +21,7 @@ In part 2 of this lab, you will create design and build a Power Apps canvas app 
 High-level lab steps
 ======================
 
-You will follow the below schema to design the canvas app:
+You will follow the below outline to design the canvas app:
 
 -   Create the app using the phone form factor
 -   Connect to Common Data Service as a data source
@@ -33,7 +33,7 @@ You will follow the below schema to design the canvas app:
 
 ## Prerequisites
 
-* 
+* Completion of Lab 1 - Data Modeling
 
 Things to consider before you begin
 -----------------------------------
