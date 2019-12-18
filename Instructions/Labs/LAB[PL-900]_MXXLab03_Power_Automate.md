@@ -1,11 +1,11 @@
 ---
 lab:
-    title: 'Lab 03: Power Automate'
-    module: 'Module XX: Power Apps Build'
+    title: 'Lab 04: Power Automate'
+    module: 'Module 04: Get Started with Power Automate'
 ---
 
 # PL-900: Microsoft-Power-Platform-Fundamentals
-## Module X, Lab 3 – Power Automate
+## Module 4, Lab 3 – Power Automate
 
 Scenario
 ========
@@ -29,7 +29,7 @@ The following have been identified as requirements you must implement to complet
 ## Prerequisites
 
 * Completion of Lab 1 - Data Modeling
-* Campus Staff app created in Lab 2 – Canvas App - Part 1
+* Campus Staff app created in Lab 2 – Canvas App, Part 1
 
 Things to consider before you begin
 -----------------------------------
