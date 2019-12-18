@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab 04: Power Automate'
+    title: 'Lab 05: Power Automate'
     module: 'Module 04: Get Started with Power Automate'
 ---
 
