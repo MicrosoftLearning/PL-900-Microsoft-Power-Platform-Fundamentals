@@ -23,20 +23,19 @@ High-level lab steps
 
 The following have been identified as requirements you must implement to complete the project.
 
-* The unique code assigned to each visitor must be made available to them prior to the visits.
+* The unique code assigned to each visitor must be made available to them prior to their visit.
 * Security personnel needs to receive notifications of visitors overstaying their scheduled timeslots.
-
 
 ## Prerequisites
 
-* Data Model created in Lab01 <href goes here?>
-* Campus staff canvas app created in Lab02 <href goes here?>
+* Completion of Lab 1 - Data Modeling
+* Campus Staff app created in Lab 2 – Canvas App - Part 1
 
 Things to consider before you begin
 -----------------------------------
 
--   
-    
+-   What is the most appropriate distribution mechanism for the visitor codes.
+-   How overstays could be measured and strict policies enforced.
 
 Exercise \#1: Create Visit Notification flow
 ===============================
@@ -194,5 +193,5 @@ Task \#2: Validate and test the flow
 
 * Add building information and map to the notification flow.
 * Can you generate barcode for the visit code? When will that be useful?
-* Date formatting
+* How to ensure user-friendly date formatting in the email body?
 * Is it possible to generate a table with overstay information and send only single email?
