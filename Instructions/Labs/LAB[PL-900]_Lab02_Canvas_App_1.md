@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Lab 02: Canvas app, Part 1'
-    module: 'Module 02: Get started with Power Apps'
+    module: 'Module 03: Introduction to Common Data Service'
 ---
 
 # PL-900: Microsoft-Power-Platform-Fundamentals
