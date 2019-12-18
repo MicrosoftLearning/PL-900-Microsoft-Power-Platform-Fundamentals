@@ -32,7 +32,7 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 ## Prerequisites
 
-* This lab requires completion of Lab 1 - Data Modeling
+* Completion of Lab 1 - Data Modeling
 
 Things to consider before you begin
 -----------------------------------
@@ -147,3 +147,4 @@ Exercise #2: Create Power BI Dashboard
 4. Select **... | Generate QR Code**.
 5. If you have a mobile device, scan the code using a QR scanner app available on both iOS and Android platforms.
 6. Navigate and explore reports on a mobile device.
+
