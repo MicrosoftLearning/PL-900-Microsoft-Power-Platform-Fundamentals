@@ -21,22 +21,24 @@ In part 1 this lab, you will design a PowerApps canvas app that college staff ca
 High-level lab steps
 ======================
 
-We will follow the below schema to design the canvas app:
+We will follow the below outline to design the canvas app:
 
 -   Create the app from data using the phone form factor template
--   Configure a detail page with visit info
--   Configure an edit page to create to visits
--   Configure a gallery control to show the visits
--   Configure filtering on gallery data source to show only future visits
+-   A detail page with visit info
+-   An edit page to create to visits
+-   A gallery control to show the visits
+-   Add filtering on the gallery data source to show only future visits
 
 ## Prerequisites
 
-* Data Model created in Lab01 <href goes here?>
+* Completion of Lab 1 - Data Modeling
 
 Things to consider before you begin
 -----------------------------------
 
--   
+-   What is the most prevalent form factor for the target audience
+-   Estimate the number of records in the system 
+-   How to narrow the records selected to improve app performance and user adoption
 
 
 Exercise \#1: Create Staff Canvas App
@@ -215,3 +217,4 @@ Task \#1: Test App
 * Ability to create and manage contacts as part of the app
 * Would you consider using *appointment* activity as part of the solution? What would it change?
 * How to display multiple meetings during a single visit
+
