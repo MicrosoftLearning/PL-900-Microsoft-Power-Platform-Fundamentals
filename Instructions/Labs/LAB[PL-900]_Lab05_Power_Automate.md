@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Lab 05: Power Automate'
-    module: 'Module 4: Power Automate'
+    module: 'Module 04: Get started with Power Automate'
 ---
 
 # PL-900: Microsoft-Power-Platform-Fundamentals
