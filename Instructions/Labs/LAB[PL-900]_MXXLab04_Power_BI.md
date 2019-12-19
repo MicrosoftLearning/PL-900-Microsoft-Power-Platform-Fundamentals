@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Lab 06: Power BI'
-    module: 'Module 5: Get started with Power BI'
+    module: 'Module 05: Get started with Power BI'
 ---
 
 # PL-900: Microsoft-Power-Platform-Fundamentals
