@@ -215,6 +215,5 @@ Task \#1: Test App
 
 * Calendar view of all visits and filtering by date range
 * Ability to create and manage contacts as part of the app
-* Would you consider using *appointment* activity as part of the solution? What would it change?
 * How to display multiple meetings during a single visit
 

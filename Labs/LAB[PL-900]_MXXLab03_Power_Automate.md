@@ -16,7 +16,7 @@ Campus administration would like to modernize their visitor registration system 
 
 Throughout this course you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
 
-In this lab, you will create Power Automate flows to automate various parts of the campus visits. 
+In this lab, you will create Power Automate flows to automate various parts of the campus management. 
 
 High-level lab steps
 ======================
@@ -29,7 +29,7 @@ The following have been identified as requirements you must implement to complet
 ## Prerequisites
 
 * Completion of Lab 1 - Data Modeling
-* Campus Staff app created in Lab 2 – Canvas App - Part 1
+* Campus Staff app created in Part 1 of Lab 2 – Canvas App (for testing)
 
 Things to consider before you begin
 -----------------------------------
