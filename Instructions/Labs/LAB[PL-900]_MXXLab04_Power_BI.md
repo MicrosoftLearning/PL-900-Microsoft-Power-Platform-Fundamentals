@@ -1,11 +1,11 @@
 ---
 lab:
-    title: 'Lab 04: Power BI'
-    module: 'Module XX: Power Apps Build'
+    title: 'Lab 06: Power BI'
+    module: 'Module 5: Get started with Power BI'
 ---
 
 # PL-900: Microsoft-Power-Platform-Fundamentals
-## Module X, Lab 4 – Power BI
+## Module 4, Lab 6 – Power BI
 
 Scenario
 ========
