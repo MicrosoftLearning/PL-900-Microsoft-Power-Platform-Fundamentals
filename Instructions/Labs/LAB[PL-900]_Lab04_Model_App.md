@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab 5: Model-driven app'
+    title: 'Lab 04: Model-driven app'
     module: 'Module 03: Introduction to the Common Data Service'
 ---
 
