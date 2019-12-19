@@ -33,6 +33,12 @@ Some students may feel excessive to perform all customizations within the soluti
 
 Apart from the common data model built in Lab 1, there are no dependencies between different labs. Trainers should clearly explain the objective of every lab and outline high-level solution components and techniques. Students then should be encouraged to design and build their own solutions without following step by step instructions for every exercise.
 
+## Components
+
+Completed components are available for *all* exercises. They include canvas apps, model-driven app, power automation flows, Power BI pbix file, sample data and data import map, and complete solution exported as both managed and unmanaged. Components shouldn't be used as a shortcut to exercise completion. Instead, they are useful as a demo tool and as a general point of reference.
+
+Because all labs in the course depend on the data model, the model is available as a standalone solution [CampusDataModel_1_0_0_1.zip](..\Allfiles\CampusDataModel_1_0_0_1.zip). It can be imported into a fresh environment followed by the Exercise #3 in Lab 1 (data import). That will create a starting point for the students who were unable to complete the lab. The prebuilt data model gives these students opportunity to catch up and proceed with the rest of the exercises. 
+
 ## Challenges
 
 A number of challenges is provided at the end of every lab. The challenges typically include more realistic scenarios as the course exercises are simplified for the sake of time. Challenges also cover more advanced topics which some students may find helpful.
@@ -53,7 +59,7 @@ Topics to discuss:
 * Where do you start?
 * Relationships 
 * Good practices around implementing data model in CDS
-* Bringing Common Data Model entities (e.g. contacts) – what to include. Relationships are tricky.
+* Bringing Common Data Model entities (e.g. contacts) – what to include.
 * Dev/test sample data sets – how much is enough. Good practices around building dev/test data sets.
 
 ### Challenges
@@ -118,7 +124,7 @@ Topics to discuss
 
 * How to avoid manual entry of the visit code?
 
-  > Device capabilities - use scanning capabilities if visitor can display a barcode with the code. Good discussion of how and when to generate barcodes for the visitors.
+  > Use mobile device scanning capabilities if visitor can display a barcode with the code. Good discussion of how and when to generate barcodes for the visitors.
 
 * Add building validation for the visit
 
@@ -147,6 +153,7 @@ Topics to discuss
 * Other automation means in Power Platform (real-time workflow, UI automation)
 * Human interaction with flows - approval processes
 * Testing the processes during the build
+* Sharing the flows
 * Monitoring running processes
 
 ### Challenges
@@ -179,6 +186,7 @@ Topics to discuss
 -   Connect to data sources, build and refine data model 
 -   Do you have sufficient data to visualise?
 -   What are the possible characteristics you can use to analyse data about the visits?
+-   Publishing and sharing the reports
 -   Accessibility in Power BI when building interactive reports
 
 ### Challenges
@@ -187,34 +195,26 @@ Topics to discuss
 
   > Bring maps, images, external data into the reports
 
-* Report and analyze visiting patterns and trends
+* Report and analyze visiting patterns and trends.
 
   > Discussion of Power BI analytical and data processing capabilities.
 
-* Overstaying visualization.
+* Visualization of overstayed visitors.
 
-  > How to make reports more engaging. Talk about embedding Power Apps into Power BI to add data manipulation capabilities in response to reports presented
+  > How to make reports more engaging. Talk about embedding Power Apps into Power BI to add data manipulation capabilities in response to the reports presented.
 
 * Streaming Power BI for near real-time processing for a large campus.
 
-  > Complex topic and solutions would definitely be out of reach for most of the students but it's important to discuss data snapshots vs streams, frequency of data refreshes, stale data in general
+  > This is a complex topic and the solutions most likely would be out of reach for most of the students but it's important to discuss data ageing, snapshots vs streams, frequency of data refreshes, stale data in general.
 
 ## Lab 05 Model-driven app
 
 In this lab, you will build a Power Apps model-driven app to allow the backoffice campus staff to manage visit records across the entire campus.
 
-Both will be integrated to the model-driven app for a better user-experience.
-
--   What changes should we make to improve the user experience?
-
--   What should we include in a model-driven app based on the data model we’ve built?
-
--   What customizations can be made on the sitemap of a model-driven app?
-
 Topics to discuss:
 
 * Model-driven apps as part of a solution
-* Model-driven vs canvas Power Apps
+* Model-driven vs canvas Power Apps. Target audience and app objectives.
 * What makes a good sitemap?
 * What to include into an app for a given entity?
 * Apps & roles, security in CDS, UI trimming in model-driven apps
@@ -237,5 +237,3 @@ Topics to discuss:
 * What Dashboards would you consider adding to the app?
 
   > Built-in dashboards, embedded canvas, embedded Power BI
-
-  
