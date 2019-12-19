@@ -266,6 +266,15 @@ Task #3: Create Relationships
 8. Review mapping summary, then press **Next**, and then press **Submit**.
 9. Press **Finish**.
 
+## Task #3: Verify Data Import
+
+1. Select the **Campus Management** solution.
+2. Select **Visit** entity, then select **Data** tab.
+3. Press view selector in the top right-hand corner, then select **All fields**
+4. If import was successful, you should see a list of visit entries.
+5. Click on any value in the **Building** column, confirm that the building form opens in a separate window.
+6. Click on any value in the **Visitor** column (you may need to scroll the view to the right), confirm that the contact form opens in a separate window.
+
 # Challenges
 
 * Would you consider using *appointment* activity as part of the solution? What would it change?
