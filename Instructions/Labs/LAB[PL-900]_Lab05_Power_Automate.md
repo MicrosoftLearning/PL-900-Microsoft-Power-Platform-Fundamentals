@@ -1,11 +1,11 @@
 ---
 lab:
-    title: 'Lab 03: Power Automate'
-    module: 'Module XX: Power Apps Build'
+    title: 'Lab 05: Power Automate'
+    module: 'Module 4: Power Automate'
 ---
 
 # PL-900: Microsoft-Power-Platform-Fundamentals
-## Module X, Lab 3 – Power Automate
+## Module 4, Lab 5 – Power Automate
 
 Scenario
 ========
