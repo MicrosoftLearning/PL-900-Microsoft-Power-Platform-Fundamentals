@@ -136,9 +136,9 @@ Topics to discuss
 
 * Add detailed status of the visit, e.g. email display and validation for the visitor, reason for denying building access, etc
 
-  > Access to the propeties of related entities, building engaging UI
+  > Access to the properties of related entities, building engaging UI
 
-* How would you handle the requirement of multiple buildings/meetings/checkings during the single campus visit. For example, someone may visit campus for a day and during that day they will meet staff members in multiple buildings at different time of the day. What about single meeting with multiple external participants? Would you consider bringing *appointment* entity into the soluton? 
+* How would you handle the requirement of multiple buildings/meetings/checkings during the single campus visit. For example, someone may visit campus for a day and during that day they will meet staff members in multiple buildings at different time of the day. What about single meeting with multiple external participants? Would you consider bringing *appointment* entity into the solution? 
 
   > This is a good but potentially complex and lengthy topic to discuss. Consider initiating a discussion and giving students some form of "home work". Discuss how Power Apps enable iterative approach to building apps, i.e. start simple and enhance as you go.
 
@@ -172,7 +172,7 @@ Topics to discuss
 
 * Is it possible to generate a table with overstay information and send only single email?
 
-  > Using variables, building more complex expressions, manipualting email format.
+  > Using variables, building more complex expressions, manipulating email format.
 
 ## Lab 04 Power BI
 
