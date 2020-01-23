@@ -7,6 +7,16 @@ lab:
 # PL-900: Microsoft-Power-Platform-Fundamentals
 ## Module 3, Lab 1 – Data Modeling
 
+## Important notice re: tenants - temporary workaround
+
+As of January 23, 2020, WWL is unable to provide students with pre-provisioned Dynamics 365 access, and is working on a solution that should be available in the next 4-6 weeks. As a workaround, we are recommending using Dynamics 365 Trial accounts. Each student will be responsible for requesting these. To help students in getting the Dynamics 365 tenants (including Marketing), M365 tenants will be provided through the Authorized Lab Hosters. This is a short-term solution and we will keep all stakeholders including Learning Partners and MCTs updated as progress is made and advise as a more permanent solution timeline for pre-provisioning Dynamics 365 access for lab use is established. Please work with your Authorized Lab Hoster for provisioning of the M365 Tenants for the students and follow the instructions below to use the M365 tenant to secure a Dynamics 365 trial for your appropriate application.
+ 
+1. Using your provided M365 credentials, log into https://admin.microsoft.com/ and accept the terms.
+2. Once you’ve logged in successfully, access https://trials.dynamics.com/. Select the applicable application for your course.
+3. Under “Work email,” enter the email address from the M365 credentials. Under “phone number,” enter your own phone number.
+4. Select Get Started.
+5. You will be prompted to enter your password for the on.microsoft.com account. Enter the password provided for the M365 tenant.
+6. If you are prompted to accept terms and conditions, accept them. Your environment may take a few minutes to provision.
 
 Scenario
 ========
