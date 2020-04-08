@@ -91,7 +91,7 @@ Task \#1: Prepare Data
 
 16. Click ... next to the **bc_scheduledstart** field and select **Rename**. Enter **Start** as the field name.
 
-17. Save work in progress by pressing **File | Save** and entering a filename of your choice.
+17. Save work in progress by pressing **File &#124; Save** and entering a filename of your choice.
 
 ## Task #2: Create Chart and Time Visualizations
 
@@ -107,8 +107,8 @@ Task \#1: Prepare Data
 10. Test the report interactivity:
     * Select various building slices on the pie chart and observe changes on the time report.
     * Select various bars on the time column chart and observe changes on the pie report.
-    * Drilldown to the month level using icons or **Data/Drill | Expand next level** ribbon command.
-11. Save work in progress by pressing **File | Save**.
+    * Drilldown to the month level using icons or **Data/Drill &#124; Expand next level** ribbon command.
+11. Save work in progress by pressing **File &#124; Save**.
 
 Exercise #2: Create Power BI Dashboard
 ================================
@@ -142,9 +142,9 @@ Exercise #2: Create Power BI Dashboard
 ## Task #4: Build Mobile Phone View
 
 1. Select the report from **Reports** area.
-2. Depending on the UI version select either **... | Mobile View** or  **Web View | Phone View**.
+2. Depending on the UI version select either **... &#124; Mobile View** or  **Web View &#124; Phone View**.
 3. Rearrange tiles as desired.
-4. Select **... | Generate QR Code**.
+4. Select **... &#124; Generate QR Code**.
 5. If you have a mobile device, scan the code using a QR scanner app available on both iOS and Android platforms.
 6. Navigate and explore reports on a mobile device.
 
