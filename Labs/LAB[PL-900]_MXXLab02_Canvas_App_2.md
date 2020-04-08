@@ -61,7 +61,7 @@ Task \#1: Create Canvas App
     -   Click to open the **Campus Management** solution.
 2.  Create new canvas application
 
-    -   Click **New** and select **App \| Canvas App \| Phone Form Factor**.
+    -   Click **New** and select **App \&#124; Canvas App \&#124; Phone Form Factor**.
         This will open the App Editor in a New window.
 -   If you are creating your first app, this will ask you to set the
         Country/region for the app. Click **Get Started.**
@@ -70,10 +70,10 @@ Task \#1: Create Canvas App
         click **Save**. This will make sure that the changes are not removed if
     the app closes unexpectedly.
 3.  Connect to data source (Visits)
-    1.  Click **View | Data sources**
+    1.  Click **View &#124; Data sources**
     2.  Click **See all entities**
     3.  Select **Visits**
-4.  To preserve work in progress, click **File | Save** then press **Save**
+4.  To preserve work in progress, click **File &#124; Save** then press **Save**
 
 Task \#2: Display Visitor information
 --------------------------------
@@ -99,7 +99,7 @@ Task \#2: Display Visitor information
    -   Change the order of the selected fields by dragging the field cards in the list. Recommended order is Visitor, Building, Scheduled Start, Scheduled End, Actual Start, Actual End
    -   Select **Item** property and enter `LookUp(Visits, Code = textCode.Text)` 
 
-3.  To preserve work in progress, click **File | Save** then press **Save**
+3.  To preserve work in progress, click **File &#124; Save** then press **Save**
 
 4. Test the app
 
@@ -172,7 +172,7 @@ Task \#3: Add Check In and Check Out Buttons
      )
      ```
 
-5. To preserve work in progress, click **File | Save** then press **Save**.
+5. To preserve work in progress, click **File &#124; Save** then press **Save**.
 
 6. Press **F5** to run the app. Both buttons should be disabled. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. The **Check In** button should become enabled.
 
@@ -225,7 +225,7 @@ To perform the check in and check out process we need to update CDS visit data a
 
    The only difference from check in expression is setting of the *Status* field to *Inactive* value.
 
-5. To preserve work in progress, click **File | Save** then press **Save**.
+5. To preserve work in progress, click **File &#124; Save** then press **Save**.
 
 6. Press **F5** to run the app. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. The **Check In** button should become enabled.
 
@@ -249,7 +249,7 @@ Usability of a mobile app significantly improves when, in addition to the text i
 
 1. Select **Inset** tab
 
-2. Select **Icon | Add**. At this point it does not matter which icon we select as we want the value to be dynamic.
+2. Select **Icon &#124; Add**. At this point it does not matter which icon we select as we want the value to be dynamic.
 
 3. Resize and place the icon in the middle of the screen below the buttons
 
@@ -264,7 +264,7 @@ Usability of a mobile app significantly improves when, in addition to the text i
    )
    ```
 
-5. To preserve work in progress, click **File | Save** then press **Save**.
+5. To preserve work in progress, click **File &#124; Save** then press **Save**.
 6. Press **F5** to run the app. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. Verify the icon displays a frown emoji.
 7. Find a different code value that has not been used before. You can run **Campus Staff** app created previously to create new visit records. Verify the icon displays a smile emoji.
 8. Press **ESC** to exit the running app.
@@ -272,7 +272,7 @@ Usability of a mobile app significantly improves when, in addition to the text i
 ## Task #6: Publish the app
 
 1. Select **Campus Security** app, click **Edit**
-2. Select **File | Publish** 
+2. Select **File &#124; Publish** 
 
 # Challenges
 

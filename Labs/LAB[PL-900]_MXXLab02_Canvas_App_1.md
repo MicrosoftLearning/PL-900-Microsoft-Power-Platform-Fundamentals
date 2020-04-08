@@ -61,7 +61,7 @@ In this task you will create a canvas app using the phone layout template based 
 
 2.  Create new canvas application
 
-    -   Click **New app | Canvas app**.
+    -   Click **New app &#124; Canvas app**.
     -   Select **Phone layout** under **Common Data Service** 
 -   Select **Common Data Service** connection then click **Create**
     -   Select **Visits** table
@@ -91,7 +91,7 @@ In this task you will configure detail form to view information about individual
 6.  Click **Add**
 7.  Rearrange fields by dragging and dropping field names up or down. Recommended order is:
     * Code, Name, Building, Visitor, Scheduled Start, Scheduled End, Actual Start, Actual End
-8.  To preserve work in progress, click **File | Save** then press **Save** 
+8.  To preserve work in progress, click **File &#124; Save** then press **Save** 
 
 ## Task #3: Configure Visits Edit Form 
 
@@ -110,7 +110,7 @@ In this task you will configure a form to edit information about individual visi
 7.  Click **Add**
 8.  Rearrange fields by dragging and dropping field names up or down. Recommended order is:
     * Name, Building, Visitor, Scheduled Start, Scheduled End
-9.  To preserve work in progress, click **File | Save** then press **Save** 
+9.  To preserve work in progress, click **File &#124; Save** then press **Save** 
 
 Task \#4: Configure Visits gallery
 ---------------------------------------
@@ -128,7 +128,7 @@ In this task you will configure pre-generated gallery to display the title, star
 9.  Press `CTRL-C` then `CTRL-V` to create a copy of the field.
 10.  Using either mouse or keyboard, move the copied control down and align it with the other controls in the gallery
 11.  Change **Text** property to`ThisItem.'Scheduled End'`
-12.  To preserve work in progress, click **File | Save** then press **Save** 
+12.  To preserve work in progress, click **File &#124; Save** then press **Save** 
 
 ## Task #6: Add date filter
 
@@ -136,7 +136,7 @@ Because number of visits continuously grows, users need a feature to filter the 
 
 1. Select **Insert** menu
 
-2. Click **Input | Date picker** 
+2. Click **Input &#124; Date picker** 
 
 3. Using either keyboard or mouse, position control below search box.
 
@@ -163,7 +163,7 @@ Because number of visits continuously grows, users need a feature to filter the 
    )
    ```
    
-8. To preserve work in progress, click **File | Save** then press **Save**
+8. To preserve work in progress, click **File &#124; Save** then press **Save**
 
 # Exercise #2: Complete the App
 
@@ -205,11 +205,11 @@ Task \#1: Test App
    * Select your **environment.**
    * Select **Solutions**.
    * Click to open the **Campus Management** solution.
-2. Select **Add existing | App | Canvas app**
+2. Select **Add existing &#124; App &#124; Canvas app**
 3. Select **Outside solutions** tab
 4. Select **Campus Staff** app, click **Add**
 5. Select **Campus Staff** app, click **Edit**
-6. Select **File | Publish** 
+6. Select **File &#124; Publish** 
 
 # Challenges
 
