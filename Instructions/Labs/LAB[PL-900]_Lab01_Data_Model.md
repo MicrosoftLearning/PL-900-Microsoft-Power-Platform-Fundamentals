@@ -1,11 +1,11 @@
 ---
 lab:
     title: 'Lab 01: Data Modeling'
-    module: 'Module 03: Introduction to the Common Data Service'
+    module: 'Module 02: Introduction to the Common Data Service'
 ---
 
 # PL-900: Microsoft-Power-Platform-Fundamentals
-## Module 3, Lab 1 – Data Modeling
+## Module 2, Lab 1 – Data Modeling
 
 ## Important notice re: tenants - temporary workaround
 
@@ -49,11 +49,12 @@ Your solution will contain several entities upon completion of all the customiza
 -   Building
 -   Visit
 
-Prerequisites:
+## Prerequisites:
 
 * None
 
 Things to consider before you begin:
+-----------------------------------
 
 * Naming convention
 * Data types, restrictions (e.g. max length of a name)
