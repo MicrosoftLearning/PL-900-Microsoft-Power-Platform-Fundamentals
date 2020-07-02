@@ -82,8 +82,8 @@ Task \#1: Create flow
 
    * Enter **Your scheduled visit to Bellows College** as **Subject**
 
-   * Enter the following text in **Email Body** 
-       > *Bolded text denotes dynamic content that needs to be inserted in these places. It is recommended to type all text first and then add dynamic content in the correct place.*
+   * Enter the following text in **Email Body**  
+        *Note: Bolded text denotes dynamic content that needs to be inserted in these places. It is recommended to type all text first and then add dynamic content in the correct place.*
      >
      > Dear {**First Name**},
      >
