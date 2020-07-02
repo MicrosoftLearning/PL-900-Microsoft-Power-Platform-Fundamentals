@@ -25,9 +25,9 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 -   Connect to Common Data Service 
 -   Transform the data to include user-friendly descriptions for the related records (lookups)
--    Create and publish a report with various visualizations of the campus visits information
--    User natural language query to build additional visualizations
--    Build mobile view
+-   Create and publish a report with various visualizations of the campus visits information
+-   User natural language query to build additional visualizations
+-   Build mobile view
 
 
 ## Prerequisites
@@ -39,8 +39,8 @@ Things to consider before you begin
 
 -   Who is the target audience of the report?
 -   How will the audience consume the report? Typical device? Location?
--   Do you have sufficient data to visualise?
--   What are the possible characteristics you can use to analyse data about the visits?
+-   Do you have sufficient data to visualize?
+-   What are the possible characteristics you can use to analyze data about the visits?
 
 Exercise \#1: Create Power BI Report 
 ===============================
@@ -99,7 +99,7 @@ Task \#1: Prepare Data
 2. Drag **Building** field and drop it into **Legend** target box.
 3. Drag **Visits** field and drop it into **Values** target box.
 4. Resize the pie chart using corner handles so that all chart components are visible.
-5. Click **New visual** on the Power BI ribbon then select stacked column chart in **Visualizations** pane. 
+5. Click **New visual** on the Power BI ribbon then, if not already selected, select stacked column chart in **Visualizations** pane. 
 6. Drag **Visits** field and drop it into **Values** target box.
 7. Drag **Start** field and drop it into **Axis** target box.
 8. Click **x** next to **Day** and **Quarter** to leave only **Year** and **Month** totals.
