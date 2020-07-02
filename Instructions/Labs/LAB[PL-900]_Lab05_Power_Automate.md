@@ -82,7 +82,7 @@ Task \#1: Create flow
 
    * Enter **Your scheduled visit to Bellows College** as **Subject**
 
-   * Enter the following text in **Email Body**  
+   * Enter the following text in **Email Body**:  
         *Note: Bolded text denotes dynamic content that needs to be inserted in these places. It is recommended to type all text first and then add dynamic content in the correct place.*
      >
      > Dear {**First Name**},
@@ -159,24 +159,24 @@ Task \#2: Validate and test the flow
 
     * Click **Add an action** inside the loop.
     * Search for **Current** and select **Common Data Service (Current Environment)** connector. 
-    * Select **Get record** action.
+    * Select **Get a record** action.
     * Click ..., select **Rename**. Enter **GetBuilding** as step name
     * Select **Buildings** as **Entity name**
     * Select **Building (Value)** as **Item ID**
 
 9.  Repeat previous data retrieval sequence for **Visitor** and **User**, selecting related entity name and using **Visitor (Value)** and **Owner (Value) **as **Item ID**, respectively
 
-10.  Add **Send an email notification** action from **Mail** connection.
+10.  Add **Send an email notification** action from **Mail** connection, staying within the **Apply to each loop**
 
 11.  Enter your email address as **To**
 
-12.  Enter "Contact **Full Name** overstayed their welcome". **Full Name** is a dynamics content from the current Visit record.
+12.  Enter "Contact {**Full Name**} overstayed their welcome". **Full Name** is a dynamics content from the current Visit record.
 
 13.  Enter "It happened in building **Name**", where **Name** is dynamics content from **GetBuilding** step
 
 14.  Locate **Primary Email** from **GetUser** step and insert it into CC field (meeting host will receive a copy of the email)
 
-15.  Select flow name and rename it to **Security Sweep**
+15.  Select flow name **Untitled** in the upper left corner and rename it to **Security Sweep**
 
 16.  Press **Save**
 
