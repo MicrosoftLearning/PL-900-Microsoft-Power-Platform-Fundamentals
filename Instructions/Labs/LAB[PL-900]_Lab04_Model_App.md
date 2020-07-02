@@ -65,9 +65,9 @@ Task \#1: Edit Visit Form
 3.  Select **Solutions**.
 4.  Click to open the **Campus Management** solution.
 5.  Click to open the **Visit** entity.
-7.  Select the **Forms** tab and click to open the **Main** form type. By default the
+6.  Select the **Forms** tab and click to open the **Main** form type. By default the
     form has two fields, Name (Primary Field) and Owner.
-7.  Add the following fields below the **Owner** field by dragging fields to the form or simply double-clicking field names:
+7.  Add the following fields below the **Owner** field by dragging fields to the form or simply clicking field names:
     * **Building**
     * **Visitor**
     * **Scheduled Start**
@@ -100,7 +100,7 @@ In this task we will modify default Active Visits view and create new view for t
 7.  Click **Save** and wait until the changes are saved.
 8.  Click **Publish** and wait for the publishing to complete.
 9.  Now we will clone the view to create a new view for today's visits. Click `x` next to the existing filter in the Properties panel to remove the filter.
-10.  Press shevron next to **Save** button (be careful not to press the button itself) and select **Save As**.
+10.  Press chevron next to **Save** button (be careful not to press the button itself) and select **Save As**.
 11.  Change the name to **Today's Visits** and press **Save**.
 12.  Press **Edit filters** link in the Properties panel.
 13.  Click **Add**, select **Add row**.
@@ -128,7 +128,7 @@ Task \#1: Create Application
         solution.
 2.  Create the Model-Driven Application
 
-    -   Click **New** and select **App** and then **Model-Drive App**. This will open a new tab.
+    -   Click **New** and select **App** and then **Model-Driven App**. This will open a new tab.
     -   Select **Use existing solution to create the App** checkbox
     -   Enter **Campus Management** for Name and click **Next**.
     -   Select **Campus Management** solution in the dropdown and click **Done**.
@@ -139,7 +139,7 @@ Task \#1: Create Application
 
     -   Go to the properties pane and enter **Campus** for **Title**.
 
-    -   Select **New Group**.
+    -   Select **Group**.
 
     -   Go to the **Properties** pane and enter **Security** for **Title**.
 5.  Add the Contact entity to the sitemap
@@ -206,7 +206,7 @@ Task \#2: Test Application
     -   You should now see the created contact on the **Active Contacts** view.
 3.  Create new Building record
 
-    -   Select **Building** from the sitemap.
+    -   Select **Buildings** from the sitemap.
 
     -   Click **New**.
 
