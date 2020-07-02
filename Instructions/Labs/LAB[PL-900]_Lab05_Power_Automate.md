@@ -10,11 +10,11 @@ lab:
 Scenario
 ========
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently and there are no means to collect and analyze data about the visits across the entire campus. 
+Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
 
 Campus administration would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
 
-Throughout this course you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
+Throughout this course, you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
 
 In this lab, you will create Power Automate flows to automate various parts of the campus management. 
 
@@ -82,19 +82,23 @@ Task \#1: Create flow
 
    * Enter **Your scheduled visit to Bellows College** as **Subject**
 
-   * Enter the following text in **Email Body**
-
+   * Enter the following text in **Email Body** 
+       > *Bolded text denotes dynamic content that needs to be inserted in these places. It is recommended to type all text first and then add dynamic content in the correct place.*
+     >
      > Dear {**First Name**},
      >
-     > your are currently scheduled to visit Bellows Campus from {**Scheduled Start**} until {**Scheduled End**}.
+     > You are currently scheduled to visit Bellows Campus from {**Scheduled Start**} until {**Scheduled End**}.
      >
      > Your security code is {**Code**}, please do not share it. You will be required to produce this code during your visit.
      >
+     >
      > Best regards,
-     > Campus administration
-     > Bellows  College
+     >
+     > Campus Administration
+     >
+     > Bellows College
      
-   * Bolded text denotes dynamic content that needs to be inserted in these places.
+   
 10.  Select flow name and rename it to **Visit notification**
 
 11.  Press **Save**
