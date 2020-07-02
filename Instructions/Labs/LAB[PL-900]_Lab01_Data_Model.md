@@ -21,11 +21,11 @@ As of January 23, 2020, WWL is unable to provide students with pre-provisioned D
 Scenario
 ========
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently and there are no means to collect and analyze data about the visits across the entire campus. 
+Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
 
 Campus administration would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
 
-Throughout this course you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
+Throughout this course, you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
 
 In this lab, you will set up an environment, create Common Data Service (CDS) database, and create a solution to track your changes. You will also create a data model to support the following requirements:
 
@@ -33,7 +33,7 @@ In this lab, you will set up an environment, create Common Data Service (CDS) da
 -   R2 – Record basic information to identify and track the visitors 
 -   R3 – Schedule, record, and manage visits 
 
-Finally, you will import sample data into CDS.
+Finally, you will import sample data into Common Data Service.
 
 High-level lab steps
 ======================
@@ -41,7 +41,7 @@ High-level lab steps
 To prepare your learning environments you will:
 
 * create a solution and publisher
-* add both new and existing components required to meet the application requirements. Refer to the [data model document](../../Allfiles/Labs/Campus%20Management.vsdx) for the metadata description (entities, field types and relationships) . 
+* add both new and existing components required to meet the application requirements. Refer to the [data model document](../../Allfiles/Labs/Campus%20Management.vsdx) for the metadata description (entities and relationships) . 
 
 Your solution will contain several entities upon completion of all the customizations:
 
@@ -49,12 +49,11 @@ Your solution will contain several entities upon completion of all the customiza
 -   Building
 -   Visit
 
-## Prerequisites
+Prerequisites:
 
 * None
 
-Things to consider before you begin
------------------------------------
+Things to consider before you begin:
 
 * Naming convention
 * Data types, restrictions (e.g. max length of a name)
@@ -196,7 +195,7 @@ We would like to assign each visit a unique number that can be easily entered an
    * Enter **Scheduled Start** for **Display Name**.
    * Select **Date and Time** for **Data Type**.
    * Check the **Required** checkbox.
-   * Expand **Advanced** section.
+   * Expand **Advanced Options** section.
    * Select **Time zone independent** for **Behavior**.
    * Click **Done**.
 
@@ -239,7 +238,7 @@ Task #3: Create Relationships
     * Click to open the **Visit** entity.
     * Select the **Relationships** tab.
     * Click **Add Relationship** and select **Many-to-one**
-    * Select Contact for **Related (One)** 
+    * Select **Contact** for **Related (One)** 
     * Enter **Visitor** for **Lookup field display name** 
     * Click **Done**.
 3.  Create Visit to Building relationship
@@ -263,6 +262,7 @@ Task #3: Create Relationships
 3. In the left navigation page, select Environments, then select the target environment and click **Settings**.
 4. Expand **Data Management** section, then select **Data Maps**. This will open import map screen in a new browser tab.
 5. Click **Import**, then click **Choose File**. Locate and select **CampusDataMap.xml** downloaded earlier, and then press **OK**.
+6. Select **Solutions** from the top menu and click **Publish All Customizations.**
 
 ## Task #2: Import Data  
 
@@ -278,7 +278,7 @@ Task #3: Create Relationships
 
 ## Task #3: Verify Data Import
 
-1. Select the **Campus Management** solution.
+1. Select the **Campus Management** solution. *If you do not still have this open, navigate to make.powerapps.com and click solutions on the left pane to locate your solution.*
 2. Select **Visit** entity, then select **Data** tab.
 3. Press view selector in the top right-hand corner, then select **All fields**
 4. If import was successful, you should see a list of visit entries.
