@@ -10,11 +10,11 @@ lab:
 Scenario
 ========
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently and there are no means to collect and analyze data about the visits across the entire campus. 
+Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
 
 Campus administration would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
 
-Throughout this course you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus.  
+Throughout this course, you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus.  
 
 In part 1 this lab, you will design a PowerApps canvas app that college staff can use to manage visits for their guests.
 
@@ -36,7 +36,7 @@ We will follow the below outline to design the canvas app:
 Things to consider before you begin
 -----------------------------------
 
--   What is the most prevalent form factor for the target audience
+-   What is the most prevalent form factor for the target audience?
 -   Estimate the number of records in the system 
 -   How to narrow the records selected to improve app performance and user adoption
 
@@ -89,7 +89,7 @@ In this task you will configure detail form to view information about individual
     * Scheduled Start
     * Visitor
 6.  Click **Add**
-7.  Rearrange fields by dragging and dropping field names up or down. Recommended order is:
+7.  Rearrange fields in the Fields pane by dragging and dropping field names up or down. Recommended order is:
     * Code, Name, Building, Visitor, Scheduled Start, Scheduled End, Actual Start, Actual End
 8.  To preserve work in progress, click **File | Save** then press **Save** 
 
@@ -130,7 +130,7 @@ In this task you will configure pre-generated gallery to display the title, star
 11.  Change **Text** property to`ThisItem.'Scheduled End'`
 12.  To preserve work in progress, click **File | Save** then press **Save** 
 
-## Task #6: Add date filter
+## Task #5: Add date filter
 
 Because number of visits continuously grows, users need a feature to filter the visits gallery. For example, user may want to see only the future visits. In this task you will add ability to show visits only after a date selected by the user.
 
