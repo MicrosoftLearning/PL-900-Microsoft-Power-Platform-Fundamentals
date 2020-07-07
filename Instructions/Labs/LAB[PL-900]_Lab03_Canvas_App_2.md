@@ -1,11 +1,11 @@
 ---
 lab:
-    title: 'Lab 03: Canvas app, Part 2'
+    title: 'Lab: Canvas app, Part 2'
     module: 'Module 03: Introduction to the Common Data Service'
 ---
 
-# PL-900: Microsoft-Power-Platform-Fundamentals
-## Module 3, Lab 3 – Canvas App, Part 2
+# Module 3: Introduction to the Common Data Service
+## Lab: Canvas App, Part 2
 
 Scenario
 ========
