@@ -1,11 +1,11 @@
 ---
 lab:
-    title: 'Lab 06: Power BI'
-    module: 'Module 05: Get started with Power BI'
+    title: 'Lab: Power BI'
+    module: 'Module 05: Get Started with Power BI'
 ---
 
-# PL-900: Microsoft-Power-Platform-Fundamentals
-## Module 4, Lab 6 – Power BI
+# Module 5: Get Started with Power BI
+## Lab: Power BI
 
 Scenario
 ========
