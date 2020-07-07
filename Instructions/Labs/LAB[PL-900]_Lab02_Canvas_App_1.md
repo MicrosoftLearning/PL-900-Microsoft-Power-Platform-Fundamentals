@@ -1,7 +1,7 @@
 ---
 lab:
-    title: 'Lab: Canvas app, Part 1'
-    module: 'Module 03: Introduction to the Common Data Service'
+    title: 'Lab: Canvas App, Part 1'
+    module: 'Module 3: Introduction to the Common Data Service'
 ---
 
 # Module 3: Introduction to the Common Data Service
