@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Lab: Power BI'
-    module: 'Module 05: Get Started with Power BI'
+    module: 'Module 5: Get Started with Power BI'
 ---
 
 # Module 5: Get Started with Power BI
