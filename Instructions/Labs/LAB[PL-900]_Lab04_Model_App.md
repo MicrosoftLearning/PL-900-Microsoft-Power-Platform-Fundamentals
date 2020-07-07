@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Lab: Model-driven app'
-    module: 'Module 03: Introduction to the Common Data Service'
+    module: 'Module 3: Introduction to the Common Data Service'
 ---
 
 # Module 3: Introduction to the Common Data Service
