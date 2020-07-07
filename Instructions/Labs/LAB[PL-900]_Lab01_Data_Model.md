@@ -1,11 +1,12 @@
 ---
 lab:
-    title: 'Lab 01: Data Modeling'
+    title: 'Lab: Data Modeling'
     module: 'Module 02: Introduction to the Common Data Service'
 ---
 
 # PL-900: Microsoft-Power-Platform-Fundamentals
-## Module 2, Lab 1 – Data Modeling
+## Module 2: Get Started with Power Apps
+## Lab: Data Modeling
 
 ## Important notice re: tenants - temporary workaround
 
