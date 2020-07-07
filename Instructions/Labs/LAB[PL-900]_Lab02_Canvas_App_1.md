@@ -1,10 +1,10 @@
 ---
 lab:
     title: 'Lab: Canvas App, Part 1'
-    module: 'Module 3: Introduction to the Common Data Service'
+    module: 'Module 3: Get Started with Power Apps'
 ---
 
-# Module 3: Introduction to the Common Data Service
+# Module 3: Get Started with Power Apps
 ## Lab: Canvas App, Part 1
 
 Scenario
