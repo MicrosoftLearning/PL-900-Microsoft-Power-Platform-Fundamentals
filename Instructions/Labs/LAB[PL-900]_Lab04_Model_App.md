@@ -1,11 +1,11 @@
 ---
 lab:
-    title: 'Lab 04: Model-driven app'
+    title: 'Lab: Model-driven app'
     module: 'Module 03: Introduction to the Common Data Service'
 ---
 
-# PL-900: Microsoft-Power-Platform-Fundamentals
-## Module 3, Lab 4 – Model-driven App
+# Module 3: Introduction to the Common Data Service
+## Lab: Model-driven App
 
 Scenario
 ========
