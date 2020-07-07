@@ -1,10 +1,10 @@
 ---
 lab:
     title: 'Lab: Model-driven app'
-    module: 'Module 3: Introduction to the Common Data Service'
+    module: 'Module 3: Get Started with Power Apps'
 ---
 
-# Module 3: Introduction to the Common Data Service
+# Module 3: Get Started with Power Apps
 ## Lab: Model-driven App
 
 Scenario
