@@ -4,8 +4,7 @@ lab:
     module: 'Module 02: Introduction to the Common Data Service'
 ---
 
-# PL-900: Microsoft-Power-Platform-Fundamentals
-## Module 2: Get Started with Power Apps
+# Module 2: Get Started with Power Apps
 ## Lab: Data Modeling
 
 ## Important notice re: tenants - temporary workaround
