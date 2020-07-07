@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Lab: Power Automate'
-    module: 'Module 04: Get Started with Power Automate'
+    module: 'Module 4: Get Started with Power Automate'
 ---
 
 # Module 4: Get started with Power Automate
