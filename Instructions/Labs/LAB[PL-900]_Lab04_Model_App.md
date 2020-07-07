@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab: Model-driven app'
+    title: 'Lab: Model-driven App'
     module: 'Module 3: Get Started with Power Apps'
 ---
 
