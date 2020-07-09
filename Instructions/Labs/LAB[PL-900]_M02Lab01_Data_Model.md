@@ -190,9 +190,9 @@ We would like to assign each visit a unique number that can be easily entered an
    * Make sure you have the **Fields** tab selected and click **Add Field**.
    * Enter **Scheduled Start** for **Display Name**.
    * Select **Date and Time** for **Data Type**.
-   * Check the **Required** checkbox.
+   * In the **Required** field, select **Required**.
    * Expand **Advanced Options** section.
-   * Select **Time zone independent** for **Behavior**.
+   * In the **Behavior** field, select **Time zone independent**.
    * Click **Done**.
 
 4.  Create Scheduled End field
