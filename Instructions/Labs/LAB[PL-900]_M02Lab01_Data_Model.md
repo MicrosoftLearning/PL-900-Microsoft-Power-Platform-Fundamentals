@@ -255,12 +255,12 @@ Task #3: Create Relationships
 4. Click **Settings** at the top.
 5. Expand **Data Management** section, then select **Data Maps**. This will open import map screen in a new browser tab.
 6. Click **Import**, then click **Choose File**. Locate and select **CampusDataMap.xml** downloaded earlier, and then press **OK**.
-7. Select **Solutions** from the top menu and click **Publish All Customizations.**
+7. Select **Solutions** from the top menu and click **Publish all customizations.**
 
 ## Task #2: Import Data  
 
 1. Download [CampusData.zip](../../Allfiles/Labs/CampusData.zip).
-2. Switch back to the original tab with the environment.  
+2. Navigate to your Bellows College environment. 
 3. Press **Data import wizards**.
 4. Press **IMPORT DATA**.
 5. Click **Choose File**, then locate and select **CampusData.zip** downloaded earlier.
