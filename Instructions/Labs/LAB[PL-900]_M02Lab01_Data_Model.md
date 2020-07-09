@@ -31,7 +31,7 @@ High-level lab steps
 To prepare your learning environments you will:
 
 * create a solution and publisher
-* add both new and existing components required to meet the application requirements. Refer to the [data model document](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Labs/Campus%20Management.png) for the metadata description (entities and relationships). 
+* add both new and existing components required to meet the application requirements. Refer to the [data model document](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Labs/Campus%20Management.png) for the metadata description (entities and relationships). You can hold CTRL+click or right click the link to open the data model document in a new window.
 
 Your solution will contain several entities upon completion of all the customizations:
 
