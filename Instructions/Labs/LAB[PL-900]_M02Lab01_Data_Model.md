@@ -191,7 +191,7 @@ We would like to assign each visit a unique number that can be easily entered an
    * Enter **Scheduled Start** for **Display Name**.
    * Select **Date and Time** for **Data Type**.
    * In the **Required** field, select **Required**.
-   * Expand **Advanced Options** section.
+   * Expand **Advanced options** section.
    * In the **Behavior** field, select **Time zone independent**.
    * Click **Done**.
 
@@ -201,22 +201,22 @@ We would like to assign each visit a unique number that can be easily entered an
     * Enter **Scheduled End** for **Display Name**.
     * Select **Date and Time** for **Data Type**.
     * Check the **Required** checkbox.
-    * Expand **Advanced** section.
-    * Select **Time zone independent** for **Behavior**.
+    * Expand **Advanced options** section.
+    * In the **Behavior** field, select **Time zone independent**.
     * Click **Done**.
 6.  Create Actual Start field
     * Click **Add Field**.
     * Enter **Actual Start** for **Display Name**.
     * Select **Date and Time** for **Data Type**.
-    * Expand **Advanced** section.
-    * Select **Time zone independent** for **Behavior**.
+    * Expand **Advanced options** section.
+    * In the **Behavior** field, select **Time zone independent**.
     * Click **Done**.
 7.  Create Actual End field
     * Click **Add Field**.
     * Enter **Actual End** for **Display Name**.
     * Select **Date and Time** for **Data Type**.
-    * Expand **Advanced** section.
-    * Select **Time zone independent** for **Behavior**.
+    * Expand **Advanced options** section.
+    * In the **Behavior** field, select **Time zone independent**.
     * Click **Done**.
 7.  Create Code field
     * Click **Add Field**.
