@@ -37,7 +37,7 @@ Apart from the common data model built in Lab 1, there are no dependencies betwe
 
 Completed components are available for *all* exercises. They include canvas apps, model-driven app, power automation flows, Power BI pbix file, sample data and data import map, and complete solution exported as both managed and unmanaged. Components shouldn't be used as a shortcut to exercise completion. Instead, they are useful as a demo tool and as a general point of reference.
 
-Because all labs in the course depend on the data model, the model is available as a standalone solution [CampusDataModel_1_0_0_1.zip](..\Allfiles\CampusDataModel_1_0_0_1.zip). It can be imported into a fresh environment followed by the Exercise #3 in Lab 1 (data import). That will create a starting point for the students who were unable to complete the lab. The prebuilt data model gives these students opportunity to catch up and proceed with the rest of the exercises. 
+Because all labs in the course depend on the data model, the model is available as a standalone solution [CampusDataModel_1_0_0_1.zip](../Allfiles/CampusDataModel_1_0_0_1.zip). It can be imported into a fresh environment followed by the Exercise #3 in Lab 1 (data import). That will create a starting point for the students who were unable to complete the lab. The prebuilt data model gives these students opportunity to catch up and proceed with the rest of the exercises. 
 
 ## Challenges
 
