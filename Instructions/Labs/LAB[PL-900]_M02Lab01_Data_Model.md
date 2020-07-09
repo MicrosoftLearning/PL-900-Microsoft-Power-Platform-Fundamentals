@@ -164,7 +164,8 @@ Task #1: Create Building Entity and Fields
 2.  Create Building entity
 
     -   Click **New** and select **Entity**.
-    -   Enter **Building** for **Display Name** and click **Create**. This will
+    -   Enter **Building** for **Display Name** 
+    -   Click **Done**. This will
             start provisioning the entity in background while you can start adding
             other entities and fields.
 
