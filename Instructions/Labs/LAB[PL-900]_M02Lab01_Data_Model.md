@@ -4,7 +4,7 @@ lab:
     module: 'Module 2: Introduction to the Common Data Service'
 ---
 
-# Module 2: Get Started with Power Apps
+# Module 2: Introduction to the Common Data Service
 ## Lab: Data Modeling
 
 
