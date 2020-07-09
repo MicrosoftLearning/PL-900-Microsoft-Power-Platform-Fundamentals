@@ -171,11 +171,11 @@ Task #1: Create Building Entity and Fields
 
 ## Task #2: Create Visit Entity and Fields
 
-**Visit** entity will contain information about the campus visits including the building, visitor, scheduled and actual time of each visit. 
+The **Visit** entity will contain information about the campus visits including the building, visitor, scheduled and actual time of each visit. 
 
 We would like to assign each visit a unique number that can be easily entered and interpreted by a visitor when asked during the visit check-in process.
 
-> [!NOTE]
+> [NOTE]
 > We use **Time zone independent** behavior to record date and time information because time of a visit is *always* local to the location of the building and should not change when viewed from a different time zone. 
 
 1.  Select **Campus Management** solution
