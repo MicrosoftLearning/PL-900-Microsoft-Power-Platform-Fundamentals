@@ -136,7 +136,7 @@ Task \#3: Add Existing Entity
 
 1.  Click to open the **Campus Management** solution you just created.
 2.  Click **Add Existing** and select **Entity**.
-3.  Search for **Contact** and select it.
+3.  Locate **Contact** and select it.
 4.  Click **Next**.
 5.  Click **Select Components**.
 6.  Select the **Views** tab and select the **Active Contacts** view. Click
@@ -144,8 +144,8 @@ Task \#3: Add Existing Entity
 7.  Click **Select Components** again.
 8.  Select the **Forms** tab and select the **Contact** form.
 9.  Click **Add**.
-10. You should have **1 View** and **1 Form** selected. Click **Add** again.
-    This will add the Contact entity to the newly created solution. 
+10. You should have **1 View** and **1 Form** selected. Click **Add**.
+    This will add the Contact entity with the selected View and Form to the newly created solution. 
 21.  Your solution should now have one entity: Contact.
 
 Exercise \#2: Create Entities and Relationships
