@@ -106,7 +106,7 @@ Task \#2: Create Solution and Publisher
 
     -   Sign in to <https://make.powerapps.com>
 
-    -   Select your environment from the top drop-down menu.
+    -   Select your environment by clicking on **Evironment** on the top right of the screen and choosing your environment from the drop-down menu.
 
     -   Select **Solutions** from the left menu and click **New Solution**.
 
@@ -116,16 +116,18 @@ Task \#2: Create Solution and Publisher
 
     -   Click on the **Publisher** dropdown and select **+ Publisher**.
 
-    -   Enter **Bellows College** for **Display Name** and **bc** for **Prefix**
+    -   In the window that pops up, enter **Bellows College** for **Display Name** and **bc** for **Prefix**
 
-    -   Click **Save and Close**.
+    -   Click **Save and Close**. 
+    
+    -   Click **Done** in the pop-up window.
 
 3.  Complete the solution creation.
 
     -   Now, click on the **Publisher** dropdown and select the **Bellows College**
         publisher you just created.
 
-    -   Enter **1.0.0.0** for **Version** and click **Create**.
+    -   Validate that **Version** is set to **1.0.0.0** and click **Create**.
 
 Task \#3: Add Existing Entity
 -----------------------------
