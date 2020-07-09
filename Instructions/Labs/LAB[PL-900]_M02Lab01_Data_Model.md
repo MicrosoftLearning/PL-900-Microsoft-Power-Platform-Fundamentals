@@ -182,7 +182,8 @@ We would like to assign each visit a unique number that can be easily entered an
 2. Create Visit entity
 
    * Click **New** and select **Entity**.
-   * Enter **Visit** for **Display Name** and click **Create**. This will start provisioning the entity in background while you can start adding other fields.
+   * Enter **Visit** for **Display Name** 
+   * Click **Done**. This will start provisioning the entity in background while you can start adding other fields.
 
 3. Create Scheduled Start field
 
