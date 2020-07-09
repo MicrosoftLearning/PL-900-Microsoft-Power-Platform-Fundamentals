@@ -146,7 +146,7 @@ Task \#3: Add Existing Entity
 9.  Click **Add**.
 10. You should have **1 View** and **1 Form** selected. Click **Add**.
     This will add the Contact entity with the selected View and Form to the newly created solution. 
-21.  Your solution should now have one entity: Contact.
+11.  Your solution should now have one entity: Contact.
 
 Exercise \#2: Create Entities and Relationships
 ========================================
@@ -157,11 +157,10 @@ between the entities.
 Task #1: Create Building Entity and Fields
 -----------------------------------------
 
-1.  Continuing in your development environment, open the Campus Management
-    solution
+1.  You should still have your browser open to the Campus Management solution. If not, open the Campus Management solution by following these steps:
     * Sign in to <https://make.powerapps.com> (if you are not already signed in)
     * Select **Solutions** and click to open the **Campus Management**
-          solution you just created (if you are not already in this Solution)
+          solution you just created.
 2.  Create Building entity
 
     -   Click **New** and select **Entity**.
