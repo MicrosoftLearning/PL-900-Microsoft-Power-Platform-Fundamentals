@@ -250,11 +250,12 @@ Task #3: Create Relationships
 ## Task #1: Import Data Map
 
 1. Download [CampusDataMap.xml](../../Allfiles/Labs/CampusDataMap.xml).
-2. Navigate to Power Platform Admin Center at https://aka.ms/ppac and sign in.
-3. In the left navigation page, select Environments, then select the target environment and click **Settings**.
-4. Expand **Data Management** section, then select **Data Maps**. This will open import map screen in a new browser tab.
-5. Click **Import**, then click **Choose File**. Locate and select **CampusDataMap.xml** downloaded earlier, and then press **OK**.
-6. Select **Solutions** from the top menu and click **Publish All Customizations.**
+2. Navigate to Power Platform Admin Center at <https://admin.powerplatform.microsoft.com> and sign in.
+3. Select your Bellows College environment.
+4. Click **Settings** at the top.
+5. Expand **Data Management** section, then select **Data Maps**. This will open import map screen in a new browser tab.
+6. Click **Import**, then click **Choose File**. Locate and select **CampusDataMap.xml** downloaded earlier, and then press **OK**.
+7. Select **Solutions** from the top menu and click **Publish All Customizations.**
 
 ## Task #2: Import Data  
 
