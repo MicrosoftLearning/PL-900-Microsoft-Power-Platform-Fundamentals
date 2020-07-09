@@ -229,23 +229,19 @@ We would like to assign each visit a unique number that can be easily entered an
 Task #3: Create Relationships
 ------------------------------
 
-1.  Select the **Campus Management** solution.
-4.  Create Visit to Contact relationship
-    * Click to open the **Visit** entity.
+1.  Ensure that you are still viewing the **Visit** entity of the **Campus Management** solution. If not, navigate there.
+2.  Create Visit to Contact relationship
     * Select the **Relationships** tab.
     * Click **Add Relationship** and select **Many-to-one**
     * Select **Contact** for **Related (One)** 
     * Enter **Visitor** for **Lookup field display name** 
     * Click **Done**.
 3.  Create Visit to Building relationship
-    * Click to open the **Visit** entity.
-    * Select the **Relationships** tab.
     * Click **Add Relationship** and select **Many-to-one**
-    * Select Building for **Related (One)** 
+    * Select **Building** for **Related (One)** 
     * Click **Done**.
 4.  Click **Save Entity**.
-5.  Select **Solutions** from the top menu and click **Publish All
-    Customizations.**
+5.  Select **Solutions** from the top menu and click **Publish all customizations.**
 
 # Exercise \#3: Import Data
 
