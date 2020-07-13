@@ -84,13 +84,14 @@ In this task you will create a canvas app using the phone layout template based 
 Task \#2: Configure Visits Detail Form
 --------------------------------
 
-In this task you will configure detail form to view information about individual visit record
+In this task, you will configure the Detail form to view information about individual visit records.
 
-1.  Expand **DetailScreen1** under **Tree view**
-2.  Select **DetailForm1**
-3.  Select **Edit** next to **Fields** in the properties panel
-4.  Click **Add field**
-5.  Select the following fields
+1.  Select the Back arrow at the top left to go back to the app definition.
+2. Expand **DetailScreen1** under **Tree view**
+3.  Select **DetailForm1**
+4.  Select **Edit fields** next to **Fields** in the right-hand panel.
+5.  Click **Add field**
+6.  Select the following fields:
     * Actual End
     * Actual Start
     * Building 
@@ -98,10 +99,10 @@ In this task you will configure detail form to view information about individual
     * Scheduled End
     * Scheduled Start
     * Visitor
-6.  Click **Add**
-7.  Rearrange fields in the Fields pane by dragging and dropping field names up or down. Recommended order is:
+7.  Click **Add**
+8.  Rearrange fields in the **Fields** pane by dragging and dropping field names up or down. Recommended order is:
     * Code, Name, Building, Visitor, Scheduled Start, Scheduled End, Actual Start, Actual End
-8.  To preserve work in progress, click **File | Save** then press **Save** 
+9.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 ## Task #3: Configure Visits Edit Form 
 
