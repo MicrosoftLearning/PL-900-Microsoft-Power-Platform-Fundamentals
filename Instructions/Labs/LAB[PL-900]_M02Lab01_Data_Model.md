@@ -277,6 +277,7 @@ Task #3: Create Relationships
 9. Select **CampusImportDataMap**, press **Next**.
 10. Review mapping summary, then press **Next**, and then press **Submit**.
 11. Press **Finish**.
+12. The data import will now begin. You can now use the Refresh button on the right side of the My Imports screen to refresh the table until all four imports have a **Status Reason** of **Completed**. This may take a few minutes.
 
 ## Task #3: Verify Data Import
 
