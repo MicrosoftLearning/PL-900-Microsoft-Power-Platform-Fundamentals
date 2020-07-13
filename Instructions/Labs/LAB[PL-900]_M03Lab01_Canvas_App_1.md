@@ -185,7 +185,7 @@ Task \#1: Test App
 
 1.  Start the application
 
-    -   Select the **BrowseScreen1** and press **F5** or click **Preview the App**.
+    -   Select the **BrowseScreen1** and press **F5**, or click the Play icon at the upper-right corner to preview the app.
     -   The application should load and show a list of visits. 
     -   Test the filter by selecting different dates in the date picker control
     -   Select a visit and verify that display form is working properly
