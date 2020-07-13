@@ -283,10 +283,10 @@ Task #3: Create Relationships
 
 1. Select the **Campus Management** solution. If you do not still have this open, navigate to make.powerapps.com and click solutions on the left pane to locate your solution.*
 2. Select the **Visit** entity, then select the **Data** tab.
-3. Click the view selector in the top right-hand corner, then select **All fields**
+3. Click **Active Visits** in the top right-hand corner to display the view selector, then select **All fields**
 4. If the import was successful, you should see a list of visit entries.
-5. Click on any value in the **Building** column, confirm that the building form opens in a separate window.
-6. Click on any value in the **Visitor** column (you may need to scroll the view to the right), confirm that the contact form opens in a separate window.
+5. Click on any value in the **Building** column, confirm that the Building form opens in a separate window.
+6. Click on any value in the **Visitor** column (you may need to scroll the view to the right), confirm that the Contact form opens in a separate window.
 
 # Challenges
 
