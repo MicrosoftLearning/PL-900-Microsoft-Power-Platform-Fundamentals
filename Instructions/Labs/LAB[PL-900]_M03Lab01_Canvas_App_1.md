@@ -44,12 +44,12 @@ Things to consider before you begin
 Exercise \#1: Create Staff Canvas App
 ===============================
 
-**Objective:** In this exercise, you will create a canvas app from a template and then modify it to include required data
+**Objective:** In this exercise, you will create a canvas app from a template and then modify it to include required data.
 
 Task \#1: Create Canvas App
 ---------------------------
 
-In this task you will create a canvas app using the phone layout template based on Common Data Service. Using Visits as a selected entity from Common Data Service, the template will generate Gallery - View - Edit app to manage campus visits.
+In this task, you will create a canvas app using the phone layout template based on Common Data Service. Using Visits as a selected entity from Common Data Service, the template will generate a Gallery - View - Edit app to manage campus visits.
 
 1.  Open the Campus Management solution.
 
@@ -106,7 +106,7 @@ In this task, you will configure the Detail form to view information about indiv
 
 ## Task #3: Configure Visits Edit Form 
 
-In this task you will configure a form to edit information about individual visit record
+In this task, you will configure a form to edit information about individual visit records.
 
 1.  Expand **EditScreen1** under **Tree view**
 2.  Select **EditForm1**
@@ -126,20 +126,20 @@ In this task you will configure a form to edit information about individual visi
 Task \#4: Configure Visits gallery
 ---------------------------------------
 
-In this task you will configure pre-generated gallery to display the title, start and end dates for the visit. 
+In this task, you will configure the pre-generated gallery to display the title, start and end dates for the visit. 
 
 1.  Expand **BrowseScreen1** under **Tree view**
 2.  Select **BrowseGallery1**
 3.  Select **TemplateSize** property from the property dropdown
 4.  Replace the expression with the following `Min(150, BrowseGallery1.Height - 60)`. That will ensure sufficient space for additional information.
-5.  Edit the gallery by pressing the pencil icon in the top left corner of the gallery
-6.  Select the field with date time 
-7.  Change **Text** property from `ThisItem.'Created On'`to `ThisItem.'Scheduled Start'`
+5.  Edit the gallery by pressing the pencil icon in the top left corner of the gallery (hover over the app preview and click the pencil icon).
+6.  Select the Date Time field.
+7.  In the formula bar at the top, change `ThisItem.'Created On'`to `ThisItem.'Scheduled Start'`
 8.  Select the field again
 9.  Press `CTRL-C` then `CTRL-V` to create a copy of the field.
 10.  Using either mouse or keyboard, move the copied control down and align it with the other controls in the gallery
-11.  Change **Text** property to`ThisItem.'Scheduled End'`
-12.  To preserve work in progress, click **File | Save** then press **Save** 
+11.  In the formula bar at the top, change `ThisItem.'Scheduled Start'` to `ThisItem.'Scheduled End'`
+12.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 ## Task #5: Add date filter
 
@@ -174,7 +174,7 @@ Because number of visits continuously grows, users need a feature to filter the 
    )
    ```
    
-8. To preserve work in progress, click **File | Save** then press **Save**
+8. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 # Exercise #2: Complete the App
 
