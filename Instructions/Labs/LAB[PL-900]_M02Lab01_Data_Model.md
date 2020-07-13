@@ -267,14 +267,16 @@ Task #3: Create Relationships
 ## Task #2: Import Data  
 
 1. Download [CampusData.zip](../../Allfiles/Labs/CampusData.zip).
-2. Navigate to your Bellows College environment. 
-3. Press **Data import wizards**.
-4. Press **IMPORT DATA**.
-5. Click **Choose File**, then locate and select **CampusData.zip** downloaded earlier.
-6. Press **Next**, then press **Next** again.
-7. Select **CampusImportDataMap**, press **Next**.
-8. Review mapping summary, then press **Next**, and then press **Submit**.
-9. Press **Finish**.
+2. Navigate to Power Platform Admin Center at <https://admin.powerplatform.microsoft.com>.
+3. Select your Bellows College environment.
+4. Click **Settings** at the top.
+5. Expand **Data Management** section, then select **Data import wizard**.
+6. Press **IMPORT DATA**.
+7. Click **Choose File**, then locate and select **CampusData.zip** downloaded earlier.
+8. Press **Next**, then press **Next** again.
+9. Select **CampusImportDataMap**, press **Next**.
+10. Review mapping summary, then press **Next**, and then press **Submit**.
+11. Press **Finish**.
 
 ## Task #3: Verify Data Import
 
