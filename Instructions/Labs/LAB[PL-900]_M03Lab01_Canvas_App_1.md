@@ -215,11 +215,10 @@ Task \#1: Test App
    * Select your **Environment** if the Environment displayed in the top right is not your Bellows College environment. 
    * Select **Solutions**.
    * Click to open the **Campus Management** solution.
-2. Select **Add existing**, then click **App**, and then click **Canvas app**
-3. Select **Outside solutions** tab
-4. Select **Campus Staff** app, click **Add**
-5. Select **Campus Staff** app, click **Edit**
-6. Select **File** and click **Publish** 
+2. Select **Add existing**, then click **App**, and then click **Canvas app**.
+3. Select **Outside solutions** tab.
+4. Select **Campus Staff** app, click **Add**.
+5. Select **Publish all customizations**.
 
 # Challenges
 
