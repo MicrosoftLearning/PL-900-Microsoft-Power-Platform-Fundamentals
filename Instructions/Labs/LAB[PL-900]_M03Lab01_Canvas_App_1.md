@@ -16,7 +16,7 @@ Campus administration would like to modernize their visitor registration system 
 
 Throughout this course, you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus.  
 
-In part 1 this lab, you will design a PowerApps canvas app that college staff can use to manage visits for their guests.
+In part 1 this lab, you will design a Power Apps canvas app that college staff can use to manage visits for their guests.
 
 High-level lab steps
 ======================
@@ -24,9 +24,9 @@ High-level lab steps
 We will follow the below outline to design the canvas app:
 
 -   Create the app from data using the phone form factor template
--   A detail page with visit info
--   An edit page to create to visits
--   A gallery control to show the visits
+-   Configure a detail page with visit info
+-   Configure an edit page to create to visits
+-   Configure a gallery control to show the visits
 -   Add filtering on the gallery data source to show only future visits
 
 ## Prerequisites
@@ -49,27 +49,27 @@ Exercise \#1: Create Staff Canvas App
 Task \#1: Create Canvas App
 ---------------------------
 
-In this task you will create a canvas app using the phone layout template based on Common Data Service. Using Visits as a selected entity from CDS, the template will generate Gallery - View - Edit app to manage campus visits.
+In this task you will create a canvas app using the phone layout template based on Common Data Service. Using Visits as a selected entity from Common Data Service, the template will generate Gallery - View - Edit app to manage campus visits.
 
 1.  Open the Campus Management solution.
 
     -   Sign in to <https://make.powerapps.com>
 
-    -   Select your **environment.**
+    -   Select your **environment** at the top right, if it is not already set to your Bellows College environment.
 
     -   Select **Apps**.
 
 2.  Create new canvas application
-
-    -   Click **New app | Canvas app**.
-    -   Select **Phone layout** under **Common Data Service** 
--   Select **Common Data Service** connection then click **Create**
+    -   Click **New app** and select **Canvas**.
+    -   Select **Phone layout** under **Common Data Service**.
+-   Select **Common Data Service** connection then click **Create**.
     -   Select **Visits** table
     -   Click **Connect**
+    -   The **Welcome to Power Apps Studio** window may appear. Click **Skip**.
 3.  Save application
-    1.  Click **File > Save**
+    1.  Click **File > Save**.
     2.  Type the name of the app as **Campus Staff**
-    3.  Press **Save**
+    3.  Press **Save**.
 
 Task \#2: Configure Visits Detail Form
 --------------------------------
