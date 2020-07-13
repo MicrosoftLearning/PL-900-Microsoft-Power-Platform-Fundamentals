@@ -10,7 +10,7 @@ lab:
 
 Scenario
 ========
-
+    
 Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
 
 Campus administration would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
@@ -200,30 +200,37 @@ We would like to assign each visit a unique number that can be easily entered an
     * Click **Add Field**.
     * Enter **Scheduled End** for **Display Name**.
     * Select **Date and Time** for **Data Type**.
-    * Check the **Required** checkbox.
+    * In the **Required** field, select **Required**.
     * Expand **Advanced options** section.
     * In the **Behavior** field, select **Time zone independent**.
     * Click **Done**.
+    
 6.  Create Actual Start field
+
     * Click **Add Field**.
     * Enter **Actual Start** for **Display Name**.
     * Select **Date and Time** for **Data Type**.
     * Expand **Advanced options** section.
     * In the **Behavior** field, select **Time zone independent**.
     * Click **Done**.
+    
 7.  Create Actual End field
+
     * Click **Add Field**.
     * Enter **Actual End** for **Display Name**.
     * Select **Date and Time** for **Data Type**.
     * Expand **Advanced options** section.
     * In the **Behavior** field, select **Time zone independent**.
     * Click **Done**.
+    
 7.  Create Code field
+
     * Click **Add Field**.
     * Enter **Code** for **Display Name**.
     * Select **Autonumber** for **Data Type**.
     * Select **Date prefixed number** for **Autonumber type**.
     * Click **Done**.
+    
 8.  Click **Save Entity**
 
 Task #3: Create Relationships
