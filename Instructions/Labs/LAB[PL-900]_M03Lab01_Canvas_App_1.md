@@ -60,15 +60,25 @@ In this task you will create a canvas app using the phone layout template based 
     -   Select **Apps**.
 
 2.  Create new canvas application
+
     -   Click **New app** and select **Canvas**.
+    
     -   Select **Phone layout** under **Common Data Service**.
+    
 -   Select **Common Data Service** connection then click **Create**.
+
     -   Select **Visits** table
+    
     -   Click **Connect**
+    
     -   The **Welcome to Power Apps Studio** window may appear. Click **Skip**.
+    
 3.  Save application
+
     1.  Click **File > Save**.
+    
     2.  Type the name of the app as **Campus Staff**
+    
     3.  Press **Save**.
 
 Task \#2: Configure Visits Detail Form
