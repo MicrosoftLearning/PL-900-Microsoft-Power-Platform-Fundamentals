@@ -155,7 +155,7 @@ Because number of visits continuously grows, users need a feature to filter the 
 
 5. Resize and move the gallery control so that it is located under the date picker and covers the screen. You can do this by clicking the resize icon at the top center of the gallery control and resizing the control to start after the date picker.
 
-6. Select **Items** property
+6. While still selecting **BrowseGallery1**, click the **Advanced** tab of the Properties pane and locate the **Items** property.
 
 7. In the expression, locate `[@Visits]` and replace them with `Filter(Visits,'Scheduled End' >= DatePicker1.SelectedDate)`. Full expression should look like the following:
 
