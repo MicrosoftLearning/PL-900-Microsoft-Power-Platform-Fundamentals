@@ -137,23 +137,23 @@ In this task, you will configure the pre-generated gallery to display the title,
 7.  In the formula bar at the top, change `ThisItem.'Created On'`to `ThisItem.'Scheduled Start'`
 8.  Select the field again
 9.  Press `CTRL-C` then `CTRL-V` to create a copy of the field.
-10.  Using either mouse or keyboard, move the copied control down and align it with the other controls in the gallery
+10.  Using either mouse or keyboard, move the copied control down and align it with the other controls in the gallery, beneath the other Date Time field.
 11.  In the formula bar at the top, change `ThisItem.'Scheduled Start'` to `ThisItem.'Scheduled End'`
 12.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 ## Task #5: Add date filter
 
-Because number of visits continuously grows, users need a feature to filter the visits gallery. For example, user may want to see only the future visits. In this task you will add ability to show visits only after a date selected by the user.
+Because number of visits continuously grows, users need a feature to filter the visits gallery. For example, the user may want to see only the future visits. In this task, you will add ability to show visits only after a date selected by the user.
 
-1. Select **Insert** menu
+1. Select **Insert** menu at the top.
 
-2. Click **Input | Date picker** 
+2. Click **Input** and select **Date picker**.
 
-3. Using either keyboard or mouse, position control below search box.
+3. Using either keyboard or mouse, position the control below the search box.
 
 4. Select **BrowseGallery1** 
 
-5. Resize and move the gallery control so that it's located under the date picker and covers the screen.
+5. Resize and move the gallery control so that it is located under the date picker and covers the screen. You can do this by clicking the resize icon at the top center of the gallery control and resizing the control to start after the date picker.
 
 6. Select **Items** property
 
