@@ -119,9 +119,9 @@ In this task you will configure a form to edit information about individual visi
     * Scheduled Start
     * Visitor
 7.  Click **Add**
-8.  Rearrange fields by dragging and dropping field names up or down. Recommended order is:
+8.  Rearrange fields in the **Fields** pane by dragging and dropping field names up or down. Recommended order is:
     * Name, Building, Visitor, Scheduled Start, Scheduled End
-9.  To preserve work in progress, click **File | Save** then press **Save** 
+9.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 Task \#4: Configure Visits gallery
 ---------------------------------------
