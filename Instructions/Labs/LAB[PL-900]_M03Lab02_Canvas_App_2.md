@@ -54,7 +54,7 @@ Task \#1: Create Canvas App
 
     -   Sign in to <https://make.powerapps.com>
 
-    -   Select your **environment.**
+    -   If the Environment displayed in the top right is not your Bellows College environment, select your **Environment**. 
 
     -   Select **Solutions**.
 
@@ -70,10 +70,10 @@ Task \#1: Create Canvas App
         click **Save**. This will make sure that the changes are not removed if
     the app closes unexpectedly.
 3.  Connect to data source (Visits)
-    1.  Click **View | Data sources**
+    1.  Click **View \| Data sources**
     2.  Click **See all entities**
     3.  Select **Visits**
-4.  To preserve work in progress, click **File | Save** then press **Save**
+4.  To preserve work in progress, click **File \| Save** then press **Save**
 
 Task \#2: Display Visitor information
 --------------------------------
@@ -172,7 +172,7 @@ Task \#3: Add Check In and Check Out Buttons
      )
      ```
 
-5. To preserve work in progress, click **File | Save** then press **Save**.
+5. To preserve work in progress, click **File \| Save** then press **Save**.
 
 6. Press **F5** to run the app. Both buttons should be disabled. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. The **Check In** button should become enabled.
 
@@ -225,7 +225,7 @@ To perform the check in and check out process we need to update CDS visit data a
 
    The only difference from check in expression is setting of the *Status* field to *Inactive* value.
 
-5. To preserve work in progress, click **File | Save** then press **Save**.
+5. To preserve work in progress, click **File \| Save** then press **Save**.
 
 6. Press **F5** to run the app. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. The **Check In** button should become enabled.
 
@@ -249,7 +249,7 @@ Usability of a mobile app significantly improves when, in addition to the text i
 
 1. Select **Inset** tab
 
-2. Select **Icon | Add**. At this point it does not matter which icon we select as we want the value to be dynamic.
+2. Select **Icon \| Add**. At this point it does not matter which icon we select as we want the value to be dynamic.
 
 3. Resize and place the icon in the middle of the screen below the buttons
 
@@ -264,7 +264,7 @@ Usability of a mobile app significantly improves when, in addition to the text i
    )
    ```
 
-5. To preserve work in progress, click **File | Save** then press **Save**.
+5. To preserve work in progress, click **File \| Save** then press **Save**.
 6. Press **F5** to run the app. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. Verify the icon displays a frown emoji.
 7. Find a different code value that has not been used before. You can run **Campus Staff** app created previously to create new visit records. Verify the icon displays a smile emoji.
 8. Press **ESC** to exit the running app.
@@ -272,7 +272,7 @@ Usability of a mobile app significantly improves when, in addition to the text i
 ## Task #6: Publish the app
 
 1. Select **Campus Security** app, click **Edit**
-2. Select **File | Publish** 
+2. Select **File \| Publish** 
 
 # Challenges
 
