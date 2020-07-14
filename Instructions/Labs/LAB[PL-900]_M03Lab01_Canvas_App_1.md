@@ -212,7 +212,7 @@ Task \#1: Test App
 
 1. Open the Campus Management solution.
    * Sign in to <https://make.powerapps.com>
-   * Select your **Environment** if the Environment displayed in the top right is not your Bellows College environment. 
+   * If the Environment displayed in the top right is not your Bellows College environment, select your **Environment**. 
    * Select **Solutions**.
    * Click to open the **Campus Management** solution.
 2. Select **Add existing**, then click **App**, and then click **Canvas app**.
