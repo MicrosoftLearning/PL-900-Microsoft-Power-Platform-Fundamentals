@@ -73,8 +73,9 @@ Task \#1: Create Canvas App
 
 3.  Connect to data source (Visits)
     1.  Click **View \| Data sources**
-    2.  Click **See all entities**
-    3.  Select **Visits**
+    2.  Click **Add data**
+    3.  Click **See all entities**
+    4.  Select **Visits** and wait for the Visit entity to display under Data sources.
 4.  To preserve work in progress, click **File \| Save** then press **Save**
 
 Task \#2: Display Visitor information
