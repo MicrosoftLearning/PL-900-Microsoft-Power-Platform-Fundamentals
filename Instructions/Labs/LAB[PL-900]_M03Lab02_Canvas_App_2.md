@@ -82,26 +82,26 @@ Task \#2: Display Visitor information
 
 1.  Add search box
 
-    -   Select the **Tree View** tab
-    -   Select the **Screen1**.
+    -   Select the **Tree View** tab on the left.
+    -   Select **Screen1**.
     -   Go to the **Insert** tab.
     -   Click **Text** and select **Text input**.
-    -   Select **Default** property and clear the value.
-    -   Select **HintText** property and enter **"Enter visitor code"** as a value (including double quotes)
+    -   Select the text in the **Default** property and clear the value.
+    -   Select **HintText** property and enter **"Enter visitor code"** as the value (including double quotes)
     -   Click on ... next to control name in a tree view, select **Rename**, change the name to **textCode**
 2. Add form view
 
    -   On **Insert** tab click **Forms**  then select **Display**
-   -   Using size handles position the form below the search textbox
+   -   Using size handles, position the form below the search textbox
    -   Select **DataSource** property and enter **Visits**
    -   In properties pane select **Horizontal** as **Layout**
    -   Click **Edit fields**
    -   Click **Add field** and select the following fields: Actual End, Actual Start, Building, Scheduled End, Scheduled Start, Visitor
    -   Press **Add**
    -   Change the order of the selected fields by dragging the field cards in the list. Recommended order is Visitor, Building, Scheduled Start, Scheduled End, Actual Start, Actual End
-   -   Select **Item** property and enter `LookUp(Visits, Code = textCode.Text)` 
+   -   In the Advanced tab, select **Item** property and enter `LookUp(Visits, Code = textCode.Text)` 
 
-3.  To preserve work in progress, click **File | Save** then press **Save**
+3.  To preserve work in progress, click **File \| Save** then press **Save**
 
 4. Test the app
 
