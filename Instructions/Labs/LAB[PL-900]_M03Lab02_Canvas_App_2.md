@@ -275,8 +275,9 @@ Usability of a mobile app significantly improves when, in addition to the text i
 
 ## Task #6: Publish the app
 
-1. Select **Campus Security** app, click **Edit**
+1. You should still have the Campus Security app open in your browser. If not, select **Campus Security** app and click **Edit**.
 2. Select **File \| Publish** 
+3. Select **Publish this version**
 
 # Challenges
 
