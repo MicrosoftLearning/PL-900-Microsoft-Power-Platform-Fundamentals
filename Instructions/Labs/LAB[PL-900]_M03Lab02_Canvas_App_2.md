@@ -110,9 +110,10 @@ Task \#2: Display Visitor information
    -   Select **Data** tab
    -   Open the View Selector in the top right by clicking the current View name (Active Visits)
    -   Change the View to **All fields**
-   -   Select and copy one of the values displayed in the **Code** column
+   -   Locate a Visit record that does not have an Actual Start or Actual End value. Select and copy the **Code** for this Visit.
    -   Switch to the browser tab with the app, press F5 to run the app
    -   Paste the copied value into the search textbox, verify that the record is displayed in the form
+   -   Clear the search textbox contents.
 5.  Press **ESC** to exit the running app.
 
 
@@ -122,7 +123,7 @@ Task \#3: Add Check In and Check Out Buttons
 1. Save search results in a variable to reuse across the control
 
    * Select **textCode** control
-   * Select **OnChange** property
+   * Select **OnChange** property in the Advanced tab
    * Enter the following expression `Set(Visit, LookUp(Visits, Code = textCode.Text))`
      It is the same expression as above except this time we save results in a global variable. That allows us to use the variable *Visit* throughout the app without the need to re-enter the entire lookup expression.
 
@@ -130,8 +131,8 @@ Task \#3: Add Check In and Check Out Buttons
    
 1. Select **Insert** tab
    2. Click **Button**
-   3. Change the button **Text** property to **"Check In"**
-   4. Rename the button as **CheckInButton**
+   3. Change the button **Text** property to **"Check In"** (you can type within the existing quotes)
+   4. Rename the button as **CheckInButton** by clicking the button name (Button1) in the right panel
    5. Click **Button** to insert another button
    6. Change the button **Text** property to **"Check Out"**
    7. Rename the button as **CheckOutButton**
@@ -140,9 +141,9 @@ Task \#3: Add Check In and Check Out Buttons
 3. Enable and disable buttons depending on visit data. 
    We would like to enable **Check In** button when the visit record has been located (not blank), record status is active, and the visit has not started yet, i.e. the actual start value is blank.
 
-   * Select the **DisplayMode** property of the button
+   * Select the Check In button and click on the **DisplayMode** property of the button in the Properties tab
 
-   * Enter the expression below.
+   * Enter the expression below in the function bar.
 
       ```
       If(!IsBlank(Visit) 
@@ -162,9 +163,9 @@ Task \#3: Add Check In and Check Out Buttons
 
 4. We would like to enable **Check Out** button when the visit record has been located (not blank), record status is active, and the visit has already started, i.e. the actual start value is not blank.
 
-   * Select the **DisplayMode** property of the **Check Out** button
+   * Select the Check Out button and click on the **DisplayMode** property of the button in the Properties tab
 
-   * Enter the expression below.
+   * Enter the expression below in the function bar.
 
      ```
      If(!IsBlank(Visit) 
@@ -175,7 +176,7 @@ Task \#3: Add Check In and Check Out Buttons
      )
      ```
 
-5. To preserve work in progress, click **File \| Save** then press **Save**.
+5. To preserve work in progress, click **File \| Save** then press **Save**. Click the back arrow at the top right (below "Power Apps") to return to the app.
 
 6. Press **F5** to run the app. Both buttons should be disabled. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. The **Check In** button should become enabled.
 
@@ -183,11 +184,11 @@ Task \#3: Add Check In and Check Out Buttons
 
 ## Task #4: Complete Check In and Check Out Process
 
-To perform the check in and check out process we need to update CDS visit data as following:
+To perform the check in and check out process we need to update Common Data Service visit data as following:
 
 * When visitor checks in, set *Actual Start* field to the current date and time
 * When visitor checks out, set *Actual End* field to the current date and time. 
-* After check out, set the record status to inactive indicating that the visit has been completed
+* After check out, set the record status to inactive, indicating that the visit has been completed
 
 1. Select **Check In** button.
 
@@ -248,15 +249,15 @@ To perform the check in and check out process we need to update CDS visit data a
 Task \#5: Add visual indicators
 --------------------------------------
 
-Usability of a mobile app significantly improves when, in addition to the text information, the visual indicators are provided. In this task we will add an icon indicating if a visitor can be checked in or checked out.
+Usability of a mobile app significantly improves when, in addition to the text information, the visual indicators are provided. In this task, we will add an icon indicating if a visitor can be checked in or checked out.
 
-1. Select **Inset** tab
+1. Select **Insert** tab
 
-2. Select **Icon \| Add**. At this point it does not matter which icon we select as we want the value to be dynamic.
+2. Select **Icons \| Add**. At this point it does not matter which icon we select as we want the value to be dynamic.
 
 3. Resize and place the icon in the middle of the screen below the buttons
 
-4. Select **Icon** property and enter the following expression
+4. In the Advanced tab for the Icon, select **Icon** property (in the Design section) and enter the following expression
 
    ```
    If(
@@ -269,7 +270,7 @@ Usability of a mobile app significantly improves when, in addition to the text i
 
 5. To preserve work in progress, click **File \| Save** then press **Save**.
 6. Press **F5** to run the app. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. Verify the icon displays a frown emoji.
-7. Find a different code value that has not been used before. You can run **Campus Staff** app created previously to create new visit records. Verify the icon displays a smile emoji.
+7. Find a different code value that has not been used before (it should not have an Actual Start or Actual End value). At this time, you can run **Campus Staff** app created previously to create new visit records. Verify the icon displays a smile emoji.
 8. Press **ESC** to exit the running app.
 
 ## Task #6: Publish the app
