@@ -101,15 +101,16 @@ Task \#2: Display Visitor information
    -   Change the order of the selected fields by dragging the field cards in the list. Recommended order is Visitor, Building, Scheduled Start, Scheduled End, Actual Start, Actual End
    -   In the Advanced tab, select **Item** property and enter `LookUp(Visits, Code = textCode.Text)` 
 
-3.  To preserve work in progress, click **File \| Save** then press **Save**
+3.  To preserve work in progress, click **File \| Save** then press **Save**. Click the back arrow at the top right (below "Power Apps") to return to the app.
 
 4. Test the app
 
    -   Switch to the browser tab containing the solution
    -   Select **Visit** entity
    -   Select **Data** tab
-   -   Click **Select view** then select **All fields**
-   -   Select and copy any of the values displayed in the **Code** column
+   -   Open the View Selector in the top right by clicking the current View name (Active Visits)
+   -   Change the View to **All fields**
+   -   Select and copy one of the values displayed in the **Code** column
    -   Switch to the browser tab with the app, press F5 to run the app
    -   Paste the copied value into the search textbox, verify that the record is displayed in the form
 5.  Press **ESC** to exit the running app.
