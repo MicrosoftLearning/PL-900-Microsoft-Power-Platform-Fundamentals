@@ -96,19 +96,22 @@ In this task, we will modify default Active Visits view and create new view for 
 3.  Click on the dropdown arrow by the **Created On** column and select **Remove**. Field **Created On** will now be removed from the view.
 4.  Click on the dropdown arrow by the **Name** column and select **Remove**. Field **Name** will now be removed from the view.
 5.  In the Properties panel on the right, click **Sort by** and select **Scheduled Start**. Click on **Scheduled Start** again to change the order to descending (new visits on top).
-6.  Resize individual columns to fit the information presented.
+6.  Resize the individual column widths to fit the data.
 7.  Click **Save** and wait until the changes are saved.
 8.  Click **Publish** and wait for the publishing to complete.
 9.  Now we will clone the view to create a new view for today's visits. Click `x` next to the existing filter in the Properties panel to remove the filter.
-10.  Press chevron next to **Save** button (be careful not to press the button itself) and select **Save As**.
+10.  Click on the dropdown arrow by the **Save** button (be careful not to press the button itself) and select **Save As**.
 11.  Change the name to **Today's Visits** and press **Save**.
 12.  Press **Edit filters** link in the Properties panel.
 13.  Click **Add**, select **Add row**.
-14.  Select **Scheduled Start** as a field, then select **Today** as condition. Press **Ok** to save the condition.
+14.  Select **Scheduled Start** as a field, then select **Today** as the condition. 
+15.  Click the **...** on the **Status** row and click **Delete**. 
+16.  The view is now filtered to show only records where the Scheduled Start date is today. Press **Ok** to save the condition.
 15.  Add **Actual Start** and **Actual End** fields to the view. Since we no longer filter on the view status, we will get all today's visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
 16.  Click **Save** and wait until the changes are saved.
 17.  Click **Publish** and wait for the publishing to complete.
-18.  Click on the back button in the browser.
+18.  Click **Back** at the top left of the screen. You should now be back to the
+     Visit entity Views Tab.
 
 Exercise \#2: Create Model-Driven Application
 =============================================
