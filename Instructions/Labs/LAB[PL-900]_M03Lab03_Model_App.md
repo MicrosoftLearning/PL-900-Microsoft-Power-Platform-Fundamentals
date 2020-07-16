@@ -84,7 +84,7 @@ Task \#1: Edit Visit Form
 
 ## Task \#2: Edit Visit Views
 
-In this task we will modify default Active Visits view and create new view for today's visits.
+In this task, we will modify default Active Visits view and create new view for today's visits.
 
 1.  Select the **Views** tab and click to open the **Active Visits** view.
 2.  Add the following fields to the view by either clicking or dragging and dropping the fields:
@@ -93,8 +93,8 @@ In this task we will modify default Active Visits view and create new view for t
     3.  **Building**
     4.  **Scheduled Start** 
     5.  **Scheduled End**
-3.  Click on the chevron icon of the **Created On** column and select **Remove**. Field **Created On** will now be removed from the view.
-4.  Click on the chevron icon of the **Name** column and select **Remove**. Field **Name** will now be removed from the view.
+3.  Click on the dropdown arrow by the **Created On** column and select **Remove**. Field **Created On** will now be removed from the view.
+4.  Click on the dropdown arrow by the **Name** column and select **Remove**. Field **Name** will now be removed from the view.
 5.  In the Properties panel on the right, click **Sort by** and select **Scheduled Start**. Click on **Scheduled Start** again to change the order to descending (new visits on top).
 6.  Resize individual columns to fit the information presented.
 7.  Click **Save** and wait until the changes are saved.
