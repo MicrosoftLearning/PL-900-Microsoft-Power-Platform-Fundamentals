@@ -10,11 +10,11 @@ lab:
 Scenario
 ========
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently and there are no means to collect and analyze data about the visits across the entire campus. 
+Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
 
 Campus administration would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
 
-Throughout this course you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
+Throughout this course, you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
 
 In this lab, you will build a Power Apps model-driven app to allow the backoffice campus staff to manage visit records across the entire campus.
 
@@ -65,8 +65,8 @@ Task \#1: Edit Visit Form
 3.  Select **Solutions**.
 4.  Click to open the **Campus Management** solution.
 5.  Click to open the **Visit** entity.
-6.  Select the **Forms** tab and click to open the **Main** form type. By default the
-    form has two fields, Name (Primary Field) and Owner.
+6.  Select the **Forms** tab and click to open the **Main** form type. 
+    -   By default the form has two fields, Name (Primary Field) and Owner.
 7.  Add the following fields below the **Owner** field by dragging fields to the form or simply clicking field names:
     * **Building**
     * **Visitor**
@@ -75,11 +75,11 @@ Task \#1: Edit Visit Form
     * **Actual Start**
     * **Actual End** 
 8.  Drag the **Code** field and drop it in the form header. (You may need to minimize the Properties panel on the right side of the screen to see the field on the form.)
-9.  In the Properties panel check the option **Read-only** field
+9.  While still selected on the Code field, check the checkbox for the **Read-only** field in the Properties panel.
 10.  Select **Owner** field and in the Properties panel change the **Field label** to **Host**
-11.  Click **Save** and wait for the save to complete.
-12.  Click **Publish** and wait for the publishing to complete.
-13.  Click on the back button in the browser. You should now be back to the
+11.  Click **Save** at the top right and wait for the save to complete.
+12.  Click **Publish** at the top right and wait for the publishing to complete.
+13.  Click **Back** at the top left of the screen. You should now be back to the
      Visit entity Forms Tab.
 
 ## Task \#2: Edit Visit Views
