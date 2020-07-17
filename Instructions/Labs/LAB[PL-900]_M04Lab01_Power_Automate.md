@@ -84,14 +84,14 @@ Task \#1: Create flow
    * Enter **Your scheduled visit to Bellows College** in the **Subject** field.
 
    * Enter the following text in **Email Body**:  
-        *Note: Bolded text denotes dynamic content that needs to be inserted in these places. It is recommended to type all text first and then add dynamic content in the correct place.*
+        *Note: Dynamic content needs to be placed where fields are named in brackets. It is recommended to type all text first and then add dynamic content in the correct place.*
 
    ```
-    Dear {**First Name**},
+    Dear {First Name},
 
-    You are currently scheduled to visit Bellows Campus from {**Scheduled Start**} until {**Scheduled End**}.
+    You are currently scheduled to visit Bellows Campus from {Scheduled Start} until {Scheduled End}.
 
-    Your security code is {**Code**}, please do not share it. You will be required to produce this code during your visit.
+    Your security code is {Code}, please do not share it. You will be required to produce this code during your visit.
 
 
     Best regards,
@@ -100,7 +100,7 @@ Task \#1: Create flow
     Bellows College
    ```
    
-10.  Select flow name and rename it to **Visit notification**
+10.  Select the **Untitled** flow name at the top and rename it to **Visit notification**
 
 11.  Press **Save**
 
@@ -131,13 +131,15 @@ Task \#2: Validate and test the flow
 
 2. Click **New** and select **Flow**. This will open the flow editor in a New window.
 
-3. Search for *recurrence*, select **Schedule** connector, **Recurrence** trigger.
+3. Search for *recurrence*, select **Schedule** connector, and then select the **Recurrence** trigger.
 
 4. Set **Interval** to **15 minutes**
 
 5. Click **New step**. Search for **Current** and select **Common Data Service (Current Environment)** connector. Select **List records** action.
 
    * Enter **Visits** as **Entity name**
+   
+   * Click **Show advanced options**
 
    * Enter the following expression as **Filter Query**
 
@@ -154,45 +156,63 @@ Task \#2: Validate and test the flow
 
 6.  Click **New step**. Search for **Apply**, select **Apply to each** action 
 
-7.  Select **value** from dynamics content as **Select an output from previous steps**.
+7.  Select **value** from dynamics content in the **Select an output from previous steps** field.
 
-8.  Add data retrieval for related record
+8.  Retrieve Building data for related record
 
     * Click **Add an action** inside the loop.
     * Search for **Current** and select **Common Data Service (Current Environment)** connector. 
     * Select **Get a record** action.
-    * Click ..., select **Rename**. Enter **GetBuilding** as step name
+    * Click **...** beside **Get a record**, select **Rename**. Enter **GetBuilding** as step name
     * Select **Buildings** as **Entity name**
-    * Select **Building (Value)** as **Item ID**
+    * Select **Building (Value)** as **Item ID** from the Dynamic content
 
-9.  Repeat previous data retrieval sequence for **Visitor** and **User**, selecting related entity name and using **Visitor (Value)** and **Owner (Value) **as **Item ID**, respectively
+9.  Retrieve Visitor data for related record
 
-10.  Add **Send an email notification** action from **Mail** connection, staying within the **Apply to each loop**
+    * Click **Add an action** inside the loop.
+    * Search for **Current** and select **Common Data Service (Current Environment)** connector. 
+    * Select **Get a record** action.
+    * Click **...** beside **Get a record**, select **Rename**. Enter **GetVisitor** as step name
+    * Select **Visits** as **Entity name**
+    * Select **Visitor (Value)** as **Item ID** from the Dynamic content
+    
+10.  Retrieve Owner data for related record
+    * Click **Add an action** inside the loop.
+    * Search for **Current** and select **Common Data Service (Current Environment)** connector. 
+    * Select **Get a record** action.
+    * Click **...** beside **Get a record**, select **Rename**. Enter **GetUser** as step name
+    * Select **Visits** as **Entity name**
+    * Select **Owner (Value)** as **Item ID** from the Dynamic content
 
-11.  Enter your email address as **To**
+11.  Add **Send an email notification** action from **Mail** connection, staying within the **Apply to each loop**
 
-12.  Enter "Contact {**Full Name**} overstayed their welcome". **Full Name** is a dynamics content from the current Visit record.
+12.  Enter your email address as **To**
 
-13.  Enter "It happened in building **Name**", where **Name** is dynamics content from **GetBuilding** step
+13.  Enter "Contact {**Vistor (Value)**} overstayed their welcome" in the **Subject** field. **Visitor (Value)** is a dynamic content from the **GetVisitor** step.
 
-14.  Locate **Primary Email** from **GetUser** step and insert it into CC field (meeting host will receive a copy of the email)
+14.  Enter "It happened in building **Name**", in the **Body** field. **Name** is a dynamic content from **GetBuilding** step.
 
-15.  Select flow name **Untitled** in the upper left corner and rename it to **Security Sweep**
+15.  Click **Show advanced options**.
+
+16.  Locate **Primary Email** from **GetUser** step and insert it into CC field (meeting host will receive a copy of the email)
+
+17.  Select flow name **Untitled** in the upper left corner and rename it to **Security Sweep**
 
 16.  Press **Save**
 
 ## Task #2: Validate and test the flow
 
-1. Locate or create visit records that 
+1. Locate or create visit records that:
    1. Have active status
-   2.  Scheduled End is in the past (by more than 15 minutes)
+   2. Scheduled End is in the past (by more than 15 minutes)
    3. Actual Start has a value.
-2. Open the flow created in task 1 and press **Test**
-3. Select **I'll perform the trigger action**
-4. Press **Run flow**
-5. When flow competes, expand **Apply to each** then expand **Send an email notification** steps
-6. Check the **Subject**, **Email Body** values. Expand **Show more** and check **CC** value.
-8. Navigate to solution, click ... next to flow, select **Turn off**. This is to prevent flow from executing on a schedule on the test system.
+2. Navigate to your solution and locate the **Security Sweep** flow. Click the **...** and click **Edit**.
+3. When your flow opens, click **Test**.
+4. Select **I'll perform the trigger action**.
+5. Click **Test** and **Run Flow**.
+6. When flow competes, click **Done**. 
+7. Expand **Apply to each**, then expand the **Send an email notification** steps. Check the **Subject**, **Email Body** values. Expand **Show more** and check **CC** value.
+8. Navigate to solution, click **...** next to the flow, select **Turn off**. This is to prevent flow from executing on a schedule on the test system.
 
 # Challenges
 
