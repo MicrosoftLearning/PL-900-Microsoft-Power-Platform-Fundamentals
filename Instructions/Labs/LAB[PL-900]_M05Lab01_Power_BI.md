@@ -115,7 +115,7 @@ Exercise #2: Create Power BI Dashboard
 
 ## Task #1: Publish Power BI Report
 
-1. Press **Publish** button on the ribbon.
+1. Press **Publish** button on the Home tab of the ribbon.
 
 2. Select **My workspace** as the destination, then press **Select**.
 
@@ -123,12 +123,12 @@ Exercise #2: Create Power BI Dashboard
 
 ## Task #2: Create Power BI Dashboard
 
-1. Expand **My workspace**.
-2. Select the report under **Reports** heading.
+1. Within the webpage opened in the previous step, click **My workspace** at the top.
+2. Select your **report** from the list of items.
 3. Select **Pin a live page** on the menu. Depending on the layout you may need to press **...** to show additional menu items.
 4. Select **New dashboard** on **Pin to dashboard** prompt.
 5. Enter **Campus Management** as a **Dashboard name**, press **Pin live**.
-6. Select **My workspace** node, select **Campus Management** dashboard.
+6. Select **My workspace** at the top, select **Campus Management** dashboard.
 7. Test interactivity of the pie and bar charts displayed.
 
 ## Task #3: Add Visualizations Using Natural Language
