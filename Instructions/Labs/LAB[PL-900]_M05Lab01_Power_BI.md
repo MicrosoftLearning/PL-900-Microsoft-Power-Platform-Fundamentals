@@ -147,7 +147,7 @@ Exercise #2: Create Power BI Dashboard
 3. Click **Phone view** at the top right and change the View to **Web view**.
 4. Select **My Workspace** at the top, and select your **Report**.
 5. Select **... \| Generate QR Code**.
-6. If you have a mobile device, scan the code using a QR scanner app available on both iOS and Android platforms.
+6. If you have a mobile device, scan the code using a QR scanner app available on both iOS and Android platforms. Log in to your account if prompted.
 7. Navigate and explore the report on a mobile device.
 
 # Challenges
