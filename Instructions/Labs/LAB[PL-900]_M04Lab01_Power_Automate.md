@@ -190,7 +190,7 @@ Task \#2: Validate and test the flow
 
 13.  Enter "Contact {**Vistor (Value)**} overstayed their welcome" in the **Subject** field. **Visitor (Value)** is a dynamic content from the **GetVisitor** step.
 
-14.  Enter "It happened in building **Name**", in the **Body** field. **Name** is a dynamic content from **GetBuilding** step.
+14.  Enter "It happened in building {**Name**}", in the **Body** field. **Name** is a dynamic content from **GetBuilding** step.
 
 15.  Click **Show advanced options**.
 
