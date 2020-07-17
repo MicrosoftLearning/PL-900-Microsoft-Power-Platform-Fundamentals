@@ -133,20 +133,22 @@ Exercise #2: Create Power BI Dashboard
 
 ## Task #3: Add Visualizations Using Natural Language
 
-1. Select **Ask a question about your data** on top of the dashboard
+1. Within the **Campus Management** dashboard, select **Ask a question about your data** at the top.
 2. Enter **buildings by number of visits** in Q&A area. The bar chart will be displayed.
 3. Select **Pin visual**.
 4. Select **Existing dashboard**, select **Campus Management** dashboard, press **Pin**.
 5. Test the behaviour by clicking on the chart to drilldown to Q&A.
+6. Click **Exit Q&A**.
 
 ## Task #4: Build Mobile Phone View
 
-1. Select the report from **Reports** area.
-2. Depending on the UI version select either **... \| Mobile View** or  **Web View | Phone View**.
-3. Rearrange tiles as desired.
-4. Select **... \| Generate QR Code**.
-5. If you have a mobile device, scan the code using a QR scanner app available on both iOS and Android platforms.
-6. Navigate and explore reports on a mobile device.
+1. In the Dashboard, select **... \| Mobile View**.
+2. Rearrange tiles as desired.
+3. Click **Phone view** at the top right and change the View to **Web view**.
+4. Select **My Workspace** at the top, and select your **Report**.
+5. Select **... \| Generate QR Code**.
+6. If you have a mobile device, scan the code using a QR scanner app available on both iOS and Android platforms.
+7. Navigate and explore the report on a mobile device.
 
 # Challenges
 
