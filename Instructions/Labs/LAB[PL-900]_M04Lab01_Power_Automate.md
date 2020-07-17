@@ -21,7 +21,7 @@ In this lab, you will create Power Automate flows to automate various parts of t
 High-level lab steps
 ======================
 
-The following have been identified as requirements you must implement to complete the project.
+The following have been identified as requirements you must implement to complete the project:
 
 * The unique code assigned to each visitor must be made available to them prior to their visit.
 * Security personnel needs to receive notifications of visitors overstaying their scheduled timeslots.
@@ -69,34 +69,36 @@ Task \#1: Create flow
 
 6. Search for **Current** and select **Common Data Service (Current Environment)** connector.
 
-7. Select **Get Record** action. 
+7. Select **Get a record** action. 
 
    * Select **Contacts** as **Entity name**
-   * Search dynamic content, select **Visitor (Value)** as a value for **Item ID**
+   * In the **Item ID** field, select **Visitor (Value)** from the Dynamic content list.
 
 8. Click **New Step**. This is the step that will create and send email to the visitor.
 
 9. Search for *mail*, select **Mail** connector and **Send an email notification** action 
+   * If asked to Accept terms and conditions for using this action, click **Accept**.
+   
+   * Select **To** field, select **Email** from the Dynamic content list.
 
-   * Select **Email** as **To** value
-
-   * Enter **Your scheduled visit to Bellows College** as **Subject**
+   * Enter **Your scheduled visit to Bellows College** in the **Subject** field.
 
    * Enter the following text in **Email Body**:  
         *Note: Bolded text denotes dynamic content that needs to be inserted in these places. It is recommended to type all text first and then add dynamic content in the correct place.*
-     >
-     > Dear {**First Name**},
-     >
-     > You are currently scheduled to visit Bellows Campus from {**Scheduled Start**} until {**Scheduled End**}.
-     >
-     > Your security code is {**Code**}, please do not share it. You will be required to produce this code during your visit.
-     >
-     >
-     > Best regards,
-     >
-     > Campus Administration
-     >
-     > Bellows College
+> [NOTE]
+>
+> Dear {**First Name**},
+>
+> You are currently scheduled to visit Bellows Campus from {**Scheduled Start**} until {**Scheduled End**}.
+>
+> Your security code is {**Code**}, please do not share it. You will be required to produce this code during your visit.
+>
+>
+> Best regards,
+>
+> Campus Administration
+>
+> Bellows College
      
    
 10.  Select flow name and rename it to **Visit notification**
