@@ -110,15 +110,14 @@ In this task, we will modify default Active Visits view and create new view for 
 15.  Add **Actual Start** and **Actual End** fields to the view. Since we no longer filter on the view status, we will get all today's visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
 16.  Click **Save** and wait until the changes are saved.
 17.  Click **Publish** and wait for the publishing to complete.
-18.  Click **Back** at the top left of the screen. You should now be back to the
-     Visit entity Views Tab.
+
 
 Exercise \#2: Create Model-Driven Application
 =============================================
 
 **Objective:** In this exercise, you will create the model-driven app, customize the sitemap, and test the app.
 
-**Note:** You will see several fields not addressed as you build out your application, particularly on the sitemap steps. We have taken some short cuts in the interest of doing the labs. In a real project you would give these items logical names.
+**Note:** You will see several fields not addressed as you build out your application, particularly on the sitemap steps. We have taken some short cuts in the interest of doing the labs. In a real implementation, you would give these items logical names.
 
 Task \#1: Create Application
 ----------------------------
