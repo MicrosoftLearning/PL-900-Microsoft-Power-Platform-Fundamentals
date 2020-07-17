@@ -191,9 +191,9 @@ Task \#2: Test Application
 
 1.  Start the application
 
-    -   Select **Apps** and click to open the **Campus Management** app in a new window. (If you don't see your app at first, you may need to refresh your browser.)
+    -   Select **Apps** and click on the **Campus Management** app. (If you don't see your app at first, you may need to refresh your browser.)
 
-    -   The application should start.
+    -   The application should open in a new window.
 2.  Create new Contact record
 
     -   Select **Contacts**
