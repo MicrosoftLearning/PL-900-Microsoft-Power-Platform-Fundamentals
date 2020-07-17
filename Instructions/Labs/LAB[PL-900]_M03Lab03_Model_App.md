@@ -213,7 +213,7 @@ Task \#2: Test Application
 
     -   Enter the **Name** as Microsoft Building
         
--   Click **Save and Close** and this will show the newly created record on
+    -   Click **Save and Close** and this will show the newly created record on
         the Active Buildings View.
 4.  Create new Visit record
 
