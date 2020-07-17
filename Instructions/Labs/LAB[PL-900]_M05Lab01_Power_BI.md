@@ -95,20 +95,20 @@ Task \#1: Prepare Data
 
 ## Task #2: Create Chart and Time Visualizations
 
-1. Press pie chart icon in the **Visualizations** panel to insert the chart.
-2. Drag **Building** field and drop it into **Legend** target box.
-3. Drag **Visits** field and drop it into **Values** target box.
+1. Press the pie chart icon in the **Visualizations** panel to insert the chart.
+2. Drag the **Building** field and drop it into **Legend** box.
+3. Drag the **Visits** field and drop it into **Values** target box.
 4. Resize the pie chart using corner handles so that all chart components are visible.
 5. Click **New visual** on the Power BI ribbon then, if not already selected, select stacked column chart in **Visualizations** pane. 
 6. Drag **Visits** field and drop it into **Values** target box.
 7. Drag **Start** field and drop it into **Axis** target box.
-8. Click **x** next to **Day** and **Quarter** to leave only **Year** and **Month** totals.
-9. Resize the chart as required using the corner handles.
+8. In the Visualizations pane, click **x** next to **Day** and **Quarter** to leave only **Year** and **Month** totals for the Axis.
+9. Resize the chart as desired using the corner handles.
 10. Test the report interactivity:
     * Select various building slices on the pie chart and observe changes on the time report.
     * Select various bars on the time column chart and observe changes on the pie report.
-    * Drilldown to the month level using icons or **Data/Drill | Expand next level** ribbon command.
-11. Save work in progress by pressing **File | Save**.
+    * Drilldown to the month level using icons or **Data/Drill \| Expand next level** ribbon command.
+11. Save work in progress by pressing **File \| Save**.
 
 Exercise #2: Create Power BI Dashboard
 ================================
@@ -142,9 +142,9 @@ Exercise #2: Create Power BI Dashboard
 ## Task #4: Build Mobile Phone View
 
 1. Select the report from **Reports** area.
-2. Depending on the UI version select either **... | Mobile View** or  **Web View | Phone View**.
+2. Depending on the UI version select either **... \| Mobile View** or  **Web View | Phone View**.
 3. Rearrange tiles as desired.
-4. Select **... | Generate QR Code**.
+4. Select **... \| Generate QR Code**.
 5. If you have a mobile device, scan the code using a QR scanner app available on both iOS and Android platforms.
 6. Navigate and explore reports on a mobile device.
 
