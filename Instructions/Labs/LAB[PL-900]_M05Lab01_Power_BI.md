@@ -52,18 +52,18 @@ Task \#1: Prepare Data
 
 1.  Find out your organization URL
 
-    * Navigate to Power Platform Admin Center at https://aka.ms/ppac.
-    * In the left navigation page, select Environments, and then select the target environment.
-    * Right mouse click **Environment URL** on the **Details** panel, then select **Copy link**.
+    * Navigate to Power Platform Admin Center at https://admin.powerplatform.com
+    * In the left navigation page, select Environments, and then open the target environment.
+    * Right mouse click **Environment URL** on the **Details** panel, then select **Copy link address**.
 2. If you do not have Power BI Desktop installed, navigate to https://aka.ms/pbidesktopstore to download and install Power BI app.
 
 3. Open Power BI Desktop, sign in if prompted.
 
 4. Select **Get data**.
 
-5. Select **Power Platform**, then select **Common Data Service**, and press **Connect**.
+5. Select **Power Platform** on the left, then select **Common Data Service**, and press **Connect**.
 
-6. Paste the environment URL you copied earlier, press **OK**.
+6. Paste the environment URL you copied earlier into the **Server URL** field, press **OK**.
 
 7. Expand **Entities** node, select **bc_Building** and **bc_Visit** entities, click **Load**.
 
@@ -75,7 +75,7 @@ Task \#1: Prepare Data
 
 11. Expand **bc_Visits** node in the **Fields** panel.
 
-12. Click ... and select **New Column**.
+12. Click **...** beside **bc_Visits** and select **New Column**.
 
 13. Complete the formula as following
 
@@ -85,13 +85,13 @@ Task \#1: Prepare Data
 
     and press ENTER. That will add a new field with the building name into the visits data.
 
-14. Click ... next to the field and select **Rename**. Enter **Building** as the field name.
+14. Click **...* next to the field and select **Rename**. Enter **Building** as the field name.
 
-15. Click ... next to the **bc_visitid** field and select **Rename**. Enter **Visits** as the field name.
+15. Click **...* next to the **bc_visitid** field and select **Rename**. Enter **Visits** as the field name.
 
-16. Click ... next to the **bc_scheduledstart** field and select **Rename**. Enter **Start** as the field name.
+16. Click **...* next to the **bc_scheduledstart** field and select **Rename**. Enter **Start** as the field name.
 
-17. Save work in progress by pressing **File | Save** and entering a filename of your choice.
+17. Save work in progress by pressing **File \| Save** and entering a filename of your choice.
 
 ## Task #2: Create Chart and Time Visualizations
 
