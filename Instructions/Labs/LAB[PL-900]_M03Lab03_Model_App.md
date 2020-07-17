@@ -132,23 +132,22 @@ Task \#1: Create Application
 
     -   Click **New** and select **App** and then **Model-Driven App**. This will open a new tab.
     -   Select **Use existing solution to create the App** checkbox
-    -   Enter **Campus Management** for Name and click **Next**.
-    -   Select **Campus Management** solution in the dropdown and click **Done**.
+    -   Enter **Campus Management** for Name and click **Done**.
 3.  Click the pencil icon next to **Site Map.**
 4.  Edit the default titles
 
     -   Select **New Area**.
 
-    -   Go to the properties pane and enter **Campus** for **Title**.
+    -   Change the Title of the **New Area** to **Campus** in the properties pane on the right.
 
-    -   Select **Group**.
+    -   Select **New Group**.
 
-    -   Go to the **Properties** pane and enter **Security** for **Title**.
+    -   Change the Title of the **New Group** to **Security** in the properties pane on the right.
 5.  Add the Contact entity to the sitemap
 
     -   Select **New Subarea**.
 
-    -   Go to the **Properties** pane and select **Entity** from the dropdown
+    -   In the **Properties** pane, select **Entity** from the dropdown
         for **Type**.
 
     -   Search for **Contact** entity from the dropdown for **Entity**.
@@ -165,11 +164,11 @@ Task \#1: Create Application
 7.  Add the Building entity to the sitemap
 
     -   Select **Campus** area and click **Add**.
--   Select **New Group**.
+-   Select **Group**.
     -   Enter **Settings** for **Title** in the **Properties** pane.
--   Click **Add**.
+    -   WHile still selected on the **Settings** Area, click **Add**.
     -   Select **Subarea**.
--   Go to the **Properties** pane.
+    -   Go to the **Properties** pane.
     -   Select **Entity** from the dropdown for **Type** and search for **Building** entity from the dropdown for **Entity**.
 
 8.  Click **Save**. This will show the loading screen while the changes are getting saved.
