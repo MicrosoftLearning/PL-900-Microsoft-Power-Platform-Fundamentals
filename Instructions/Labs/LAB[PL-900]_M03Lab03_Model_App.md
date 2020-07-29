@@ -63,7 +63,7 @@ Task \#1: Edit Visit Form
 1.  Sign in to <https://make.powerapps.com> if you are not already signed in.
 2.  Select your **environment.**
 3.  Select **Solutions**.
-4.  Click to open the **Campus Management** solution.
+4.  Click to open your **Campus Management** solution.
 5.  Click to open the **Visit** entity.
 6.  Select the **Forms** tab and click to open the **Main** form type. 
     -   By default the form has two fields, Name (Primary Field) and Owner.
@@ -122,17 +122,17 @@ Exercise \#2: Create Model-Driven Application
 Task \#1: Create Application
 ----------------------------
 
-1.  Open the Campus Management solution if you are not already in it.
+1.  Open your Campus Management solution if you are not already in it.
 
     -   Sign in to <https://make.powerapps.com>
 
-    -   While in your environment, click to open the **Campus Management**
+    -   While in your environment, click to open your **Campus Management**
         solution.
 2.  Create the Model-Driven Application
 
     -   Click **New** and select **App** and then **Model-Driven App**. This will open a new tab.
     -   Select **Use existing solution to create the App** checkbox
-    -   Enter **Campus Management** for Name and click **Done**.
+    -   Enter **[Your Last Name] Campus Management** for Name and click **Done**.
 3.  Click the pencil icon next to **Site Map.**
 4.  Edit the default titles
 
@@ -191,7 +191,7 @@ Task \#2: Test Application
 
 1.  Start the application
 
-    -   Select **Apps** and click on the **Campus Management** app. (If you don't see your app at first, you may need to refresh your browser.)
+    -   Select **Apps** and click on your **Campus Management** app. (If you don't see your app at first, you may need to refresh your browser.)
 
     -   The application should open in a new window.
 2.  Create new Contact record
@@ -234,5 +234,5 @@ Task \#2: Test Application
 
 * Select specific views and forms for Visits and Buildings
 * Security personnel typically work in a single building. How would you provide an easy way for them to display visits only for a selected building?
-* How would you restrict access to specific entities, e.g. Buildings should be read-only for all staff members except the administrators?
+* Restrict access to specific entities, e.g. Buildings should be read-only for all staff members except the administrators
 * What Dashboards would you consider adding to the app?
