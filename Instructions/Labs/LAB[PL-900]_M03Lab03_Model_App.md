@@ -47,7 +47,7 @@ Things to consider before you begin
 
 -   What changes should we make to improve the user experience?
 
--   What should we include in a model-driven app based on the data model we’ve built?
+-   What should we include in a model-driven app based on the data model we have built?
     
 -   What customizations can be made on the sitemap of a model-driven app?
 
