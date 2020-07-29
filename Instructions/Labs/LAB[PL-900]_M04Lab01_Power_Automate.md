@@ -34,8 +34,8 @@ The following have been identified as requirements you must implement to complet
 Things to consider before you begin
 -----------------------------------
 
--   What is the most appropriate distribution mechanism for the visitor codes.
--   How overstays could be measured and strict policies enforced.
+-   What is the most appropriate distribution mechanism for the visitor codes?
+-   How could overstays be measured and strict policies enforced?
 
 Exercise \#1: Create Visit Notification flow
 ===============================
@@ -45,7 +45,7 @@ Exercise \#1: Create Visit Notification flow
 Task \#1: Create flow
 ---------------------------
 
-1.  Open the Campus Management solution.
+1.  Open your Campus Management solution.
 
     -   Sign in to <https://make.powerapps.com>
 
@@ -53,7 +53,7 @@ Task \#1: Create flow
 
     -   Select **Solutions**.
 
-    -   Click to open the **Campus Management** solution.
+    -   Click to open your **Campus Management** solution.
 
 2.  Click **New** and select **Flow**. This will open the flow editor in a New window.
 
@@ -108,7 +108,7 @@ Task \#2: Validate and test the flow
 --------------------------------
 
 1.  Open **Campus Staff** app you created 
-2.  Press + to add a new visit record
+2.  Press **+** to add a new Visit record
 3.  Enter required information, press **Save**
 4.  Open the flow, locate and open most recent **Run**
 5.  Open **Mail** step and verify that email content has been generated correctly.
@@ -119,15 +119,15 @@ Task \#2: Validate and test the flow
 
 ## Task #1: Create flow to retrieve records
 
-1. Open the Campus Management solution.
+1. Open your Campus Management solution.
 
    -   Sign in to <https://make.powerapps.com>
 
-   -   Select your **environment.**
+   -   Select your **Environment.**
 
    -   Select **Solutions**.
 
-   -   Click to open the **Campus Management** solution.
+   -   Click to open your **Campus Management** solution.
 
 2. Click **New** and select **Flow**. This will open the flow editor in a New window.
 
@@ -218,5 +218,5 @@ Task \#2: Validate and test the flow
 
 * Add building information and map to the notification flow.
 * Can you generate barcode for the visit code? When will that be useful?
-* How to ensure user-friendly date formatting in the email body?
-* Is it possible to generate a table with overstay information and send only single email?
+* How could you ensure user-friendly date formatting is used in the email body?
+* Is it possible to generate a table with overstay information and send only a single email?
