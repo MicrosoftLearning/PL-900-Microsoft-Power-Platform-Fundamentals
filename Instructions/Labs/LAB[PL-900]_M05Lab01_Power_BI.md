@@ -53,7 +53,7 @@ Task \#1: Prepare Data
 1.  Find out your organization URL
 
     * Navigate to Power Platform Admin Center at https://admin.powerplatform.com
-    * In the left navigation page, select Environments, and then open the target environment.
+    * In the left navigation page, select Environments, and then open your Bellows College environment.
     * Right mouse click **Environment URL** on the **Details** panel, then select **Copy link address**.
 2. If you do not have Power BI Desktop installed, navigate to https://aka.ms/pbidesktopstore to download and install Power BI app.
 
@@ -127,16 +127,16 @@ Exercise #2: Create Power BI Dashboard
 2. Select your **report** from the list of items.
 3. Select **Pin a live page** on the menu. Depending on the layout you may need to press **...** to show additional menu items.
 4. Select **New dashboard** on **Pin to dashboard** prompt.
-5. Enter **Campus Management** as a **Dashboard name**, press **Pin live**.
+5. Enter **[Your Last Name] Campus Management** as a **Dashboard name**, press **Pin live**.
 6. Select **My workspace** at the top, select **Campus Management** dashboard.
 7. Test interactivity of the pie and bar charts displayed.
 
 ## Task #3: Add Visualizations Using Natural Language
 
-1. Within the **Campus Management** dashboard, select **Ask a question about your data** at the top.
+1. Within your **Campus Management** dashboard, select **Ask a question about your data** at the top.
 2. Enter **buildings by number of visits** in Q&A area. The bar chart will be displayed.
 3. Select **Pin visual**.
-4. Select **Existing dashboard**, select **Campus Management** dashboard, press **Pin**.
+4. Select **Existing dashboard**, select your **Campus Management** dashboard, press **Pin**.
 5. Test the behaviour by clicking on the chart to drilldown to Q&A.
 6. Click **Exit Q&A**.
 
