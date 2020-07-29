@@ -27,7 +27,7 @@ You will follow the below outline to design the canvas app:
 -   Connect to Common Data Service as a data source
 -   Capture the input (visitor code) and locate the visitor record
 -   Configure a form viewer control to show the visitor information
--   Use a CDS view to populate the gallery
+-   Use a Common Data Service view to populate the gallery
 -   Handle checking-in and checking-out process for a visitor
 
 
@@ -50,7 +50,7 @@ Exercise \#1: Create Security Canvas App
 Task \#1: Create Canvas App
 ---------------------------
 
-1.  Open the Campus Management solution.
+1.  Open your Campus Management solution.
 
     -   Sign in to <https://make.powerapps.com>
 
@@ -66,7 +66,7 @@ Task \#1: Create Canvas App
     -   If you are creating your first app, this will ask you to set the
         Country/region for the app. Click **Get Started.**
     -   Click File and select Save As.
-    -   Check if **The Cloud** is selected. Enter **Campus Security** for Name and
+    -   Check if **The Cloud** is selected. Enter **[Your Last Name] Campus Security** for Name and
         click **Save**. This will make sure that the changes are not lost if the app closes unexpectedly.
     -   Click the back arrow at the top right (below "Power Apps") to return to the app.
 
@@ -281,8 +281,8 @@ Usability of a mobile app significantly improves when, in addition to the text i
 
 # Challenges
 
-* How to avoid manual entry of the visit code?
+* Avoid manual entry of the visit code
 * Add building validation for the visit
 * Add validation of the visit actual time vs visit scheduled time (too early, too late, etc)
 * Add detailed status of the visit, e.g. email display and validation for the visitor, reason for denying building access, etc
-* How would you handle the requirement of multiple buildings/meetings/checkings during the single campus visit. For example, someone may visit campus for a day and during that day they will meet staff members in multiple buildings at different time of the day. Would you consider bringing *appointment* entity into the soluton?
+* Multiple buildings/meetings/checkings during a single campus visit. For example, someone may visit campus for a day and during that day they will meet staff members in multiple buildings at different time of the day. Would you consider bringing *appointment* entity into the soluton?
