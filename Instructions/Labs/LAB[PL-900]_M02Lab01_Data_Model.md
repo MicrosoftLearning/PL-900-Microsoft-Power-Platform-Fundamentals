@@ -284,12 +284,12 @@ Task #3: Create Relationships
 
 ## Task #3: Verify Data Import
 
-1. Select the **Campus Management** solution. If you do not still have this open, navigate to make.powerapps.com and click solutions on the left pane to locate your solution.*
-2. Select the **Visit** entity, then select the **Data** tab.
+1. Select the **Campus Management** solution. If you do not still have this open, navigate to <https://make.powerapps.com> and click Solutions on the left pane to locate your solution.
+2. Click to open the **Visit** entity, then select the **Data** tab.
 3. Click **Active Visits** in the top right-hand corner to display the view selector, then select **All fields**
 4. If the import was successful, you should see a list of visit entries.
-5. Click on any value in the **Building** column, confirm that the Building form opens in a separate window.
-6. Click on any value in the **Visitor** column (you may need to scroll the view to the right), confirm that the Contact form opens in a separate window.
+5. Click on any value in the **Building** column, confirm that the Building form opens in a separate window. Close this window.
+6. Click on any value in the **Visitor** column (you may need to scroll the view to the right), confirm that the Contact form opens in a separate window. Close this window.
 
 # Challenges
 
