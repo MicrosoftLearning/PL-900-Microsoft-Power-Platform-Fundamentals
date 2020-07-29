@@ -110,7 +110,7 @@ Task \#2: Create Solution and Publisher
 
     -   Select **Solutions** from the left menu and click **New Solution**.
 
-    -   Enter **Campus Management** for **Display Name**.
+    -   Enter **[Your Last Name] Campus Management** for **Display Name**.
 
 2.  Create Publisher
 
@@ -134,7 +134,7 @@ Task \#2: Create Solution and Publisher
 Task \#3: Add Existing Entity
 -----------------------------
 
-1.  Click to open the **Campus Management** solution you just created.
+1.  Click to open your **Campus Management** solution you just created.
 2.  Click **Add Existing** and select **Entity**.
 3.  Locate **Contact** and select it.
 4.  Click **Next**.
