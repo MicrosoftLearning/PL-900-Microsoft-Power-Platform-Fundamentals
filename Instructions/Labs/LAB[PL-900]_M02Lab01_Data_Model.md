@@ -274,7 +274,7 @@ Task #3: Create Relationships
 3. Select your Bellows College environment.
 4. Click **Settings** at the top.
 5. Expand **Data Management** section, then select **Data import wizard**.
-6. Press **IMPORT DATA**.
+6. Click **IMPORT DATA**.
 7. Click **Choose File**, then locate and select **CampusData.zip** downloaded earlier.
 8. Press **Next**, then press **Next** again.
 9. Select **CampusImportDataMap**, press **Next**.
@@ -294,8 +294,8 @@ Task #3: Create Relationships
 # Challenges
 
 * Would you consider using *appointment* activity as part of the solution? What would it change?
-* How to enforce the scheduled end to be after the scheduled start? 
-* Add support for multiple meetings during a single visit.
-* Secure the building access not only for external contacts but for internal staff member as well.
-* Visits to certain buildings require management approval. What would the approval process change in the data model?
+* How could you enforce the scheduled end to be after the scheduled start? 
+* How could you add support for multiple meetings during a single visit?
+* How could you secure the building access not only for external contacts but for internal staff member as well?
+* How could you make visits to certain buildings require management approval? What would the approval process change in the data model?
 
