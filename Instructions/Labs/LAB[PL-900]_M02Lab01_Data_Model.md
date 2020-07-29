@@ -49,6 +49,8 @@ Things to consider before you begin:
 * Naming convention
 * Data types, restrictions (e.g. max length of a name)
 * Datetime formatting to support easy localization
+* Record the characters before the "@" symbol in your email address - it should be a first name and a last initial. These characters will become your "alias" throughout the course. Write them down somewhere you will be able to access throughout the course. 
+* **Important:** Please be aware that this tenant and the Dynamics 365 organization will be shared with the other students in your classroom, like employees would share a tenant when using the Dynamics 365 instance belonging to their organization. Do not use any PII (personally identifiable information) when creating records. It is also good practice to use your username prefix (ex., **mollyc**) in front of all records, data, apps, workflows, etc. you create. 
 
 Exercise \#1: Create Environment and Solution
 ==================================================
@@ -60,14 +62,14 @@ Task \#1: Create Environment
 
 If you do not have and were not given an environment prior to the exercise, in this task you will create a new working environment. Otherwise, you can move onto the next task.
 
-1.  Sign in to <https://aka.ms/ppac>
+1.  Sign in to <https://admin.powerplatform.com/> with the provided credentials.
 
-2.  Select **Environments** and click **New** from the top menu. This will open
+2.  In the **Environments** tab, select **New** from the top menu. This will open
     a menu on the right-hand side of the window.
 
 3.  Enter **Bellows College [Your Last Name]** for **Name**.
 
-4.  Select **Production** in the dropdown for **Type.**
+4.  Select **Trial** in the dropdown for **Type.**
 
 5.  Select your **Region**
 
@@ -90,7 +92,7 @@ If you do not have and were not given an environment prior to the exercise, in t
 
 12. Click **Save**.
 
-13. Your environment may take a few minutes to provision. You can click the **Refresh** button to refresh the list. When the environment is provisioned, the **State** will change to Ready.
+13. Your environment will take a few moments to be created. We will refer to this environment as your Bellows College environment throughout the duration of this course. You can click the **Refresh** button to refresh the list. When the environment is provisioned, the **State** will change to Ready.
 
 14. If you did not previously create your database, select your environment and click **Create my database**. Otherwise, skip this step.
 
@@ -104,13 +106,13 @@ Task \#2: Create Solution and Publisher
 
 1.  Create Solution
 
-    -   Sign in to <https://make.powerapps.com>
+    -   Navigate to <https://make.powerapps.com>. You may need to reauthenticate - click **Sign in** and follow instructions if needed.
 
     -   Select your environment by clicking on **Environment** on the upper right corner of the screen and choosing your environment from the drop-down menu.
 
     -   Select **Solutions** from the left menu and click **New Solution**.
 
-    -   Enter **Campus Management** for **Display Name**.
+    -   Enter **[Your Last Name] Campus Management** for **Display Name**.
 
 2.  Create Publisher
 
@@ -134,7 +136,7 @@ Task \#2: Create Solution and Publisher
 Task \#3: Add Existing Entity
 -----------------------------
 
-1.  Click to open the **Campus Management** solution you just created.
+1.  Click to open your **Campus Management** solution you just created.
 2.  Click **Add Existing** and select **Entity**.
 3.  Locate **Contact** and select it.
 4.  Click **Next**.
@@ -157,9 +159,9 @@ between the entities.
 Task #1: Create Building Entity and Fields
 -----------------------------------------
 
-1.  You should still have your browser open to the Campus Management solution. If not, open the Campus Management solution by following these steps:
+1.  You should still have your browser open to your Campus Management solution. If not, open the Campus Management solution by following these steps:
     * Sign in to <https://make.powerapps.com> (if you are not already signed in)
-    * Select **Solutions** and click to open the **Campus Management**
+    * Select **Solutions** and click to open the **[Your Last Name] Campus Management**
           solution you just created.
 2.  Create Building entity
 
@@ -178,7 +180,7 @@ We would like to assign each visit a unique number that can be easily entered an
 > [NOTE]
 > We use **Time zone independent** behavior to record date and time information because time of a visit is *always* local to the location of the building and should not change when viewed from a different time zone. 
 
-1.  Select **Campus Management** solution
+1.  Select your **Campus Management** solution
 2. Create Visit entity
 
    * Click **New** and select **Entity**.
@@ -236,7 +238,7 @@ We would like to assign each visit a unique number that can be easily entered an
 Task #3: Create Relationships
 ------------------------------
 
-1.  Ensure that you are still viewing the **Visit** entity of the **Campus Management** solution. If not, navigate there.
+1.  Ensure that you are still viewing the **Visit** entity of your **Campus Management** solution. If not, navigate there.
 2.  Create Visit to Contact relationship
     * Select the **Relationships** tab.
     * Click **Add Relationship** and select **Many-to-one**
