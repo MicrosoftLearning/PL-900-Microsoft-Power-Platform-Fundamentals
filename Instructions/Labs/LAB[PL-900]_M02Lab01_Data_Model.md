@@ -178,7 +178,7 @@ We would like to assign each visit a unique number that can be easily entered an
 > [NOTE]
 > We use **Time zone independent** behavior to record date and time information because time of a visit is *always* local to the location of the building and should not change when viewed from a different time zone. 
 
-1.  Select **Campus Management** solution
+1.  Select your **Campus Management** solution
 2. Create Visit entity
 
    * Click **New** and select **Entity**.
