@@ -264,8 +264,8 @@ Task #3: Create Relationships
 4. Click **Settings** at the top.
 5. Expand **Data Management** section, then select **Data Maps**. This will open import map screen in a new browser tab.
 6. Click **Import**, then click **Choose File**. Locate and select **CampusDataMap.xml** downloaded earlier, and then press **OK**. 
-7. Thew Campus Data Map file should successfully be imported. If you encounter an error, please go back and validate that you have created all of the required entities and fields from the previous tasks.
-8. Select **Solutions** from the top menu and click **Publish all customizations.**
+7. The Campus Data Map file should successfully be imported. If you encounter an error, please go back and validate that you have created all of the required entities and fields from the previous tasks.
+8. Navigate back to the browser window with <https://make.powerapps.com> open. Click **Solutions** from the top menu and click **Publish all customizations.**
 
 ## Task #2: Import Data  
 
