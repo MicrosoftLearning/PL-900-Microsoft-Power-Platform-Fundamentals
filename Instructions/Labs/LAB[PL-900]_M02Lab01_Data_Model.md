@@ -55,7 +55,6 @@ Things to consider before you begin:
 Exercise \#1: Create Solution
 ==================================================
 
-
 Task \#1: Create Solution and Publisher
 ---------------------------------------
 
@@ -88,7 +87,7 @@ Task \#1: Create Solution and Publisher
     
     -   Click **Create**.
 
-Task \#3: Add Existing Entity
+Task \#2: Add Existing Entity
 -----------------------------
 
 1.  Click to open your **Campus Management** solution you just created.
