@@ -38,7 +38,7 @@ their organization. Do not use any PII (personally identifiable information)
 when creating records. It is also good practice to use your username prefix
 (ex., **mollyc**) in front of all records, data, apps, flows, etc. you create.
 
-1.  Select **Environments** and click **+New.**
+2.  Select **Environments** and click **+New.**
 
     -   For **Name**, enter **[my prefix] Practice.** (Example: mollyc
         Practice.)
@@ -53,14 +53,14 @@ when creating records. It is also good practice to use your username prefix
     -   On the next tab, leave all selections to default and click **Save**
         again.
 
-2.  Your **Practice** environment should now show in the list of Environments.
+3.  Your **Practice** environment should now show in the list of Environments.
     You may also see other students' environments in this list with their
     individual prefixes; only work within your Practice environment.
 
-3.  Your environment may take a few minutes to provision. Refresh the page if
+4.  Your environment may take a few minutes to provision. Refresh the page if
     needed. When your environment is prepared, select your **Practice**
     environment by clicking on the ellipses next to its name to expand the drop
     down menu and select **Settings.**
 
-4.  Explore the different areas in **Settings** that you are interested in but
+5.  Explore the different areas in **Settings** that you are interested in but
     do not make any changes yet.
