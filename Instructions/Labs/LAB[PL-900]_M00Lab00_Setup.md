@@ -13,6 +13,10 @@ Campus administration would like to modernize their visitor registration system 
 
 Throughout this course, you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus.
 
+
+In this Module 0 lab, you will validate that your classroom tenant is working as expected. You will access your individual credentials, record your “alias”, and access the Power Platform admin center. In the admin center, we will create an individual environment using your alias.
+
+
 **Important Note:** This lab will provide you with an actual Dynamics 365 tenant
 and licenses for the Power Platform applications you will be using in this
 course. Please be aware that the Power Platform is evolving all the time. The
