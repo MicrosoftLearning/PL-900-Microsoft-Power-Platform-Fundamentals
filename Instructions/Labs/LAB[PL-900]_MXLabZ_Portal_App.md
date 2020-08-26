@@ -25,8 +25,8 @@ The following have been identified as requirements you must implement to complet
 
 ## Prerequisites
 
-* An enviroment with the Common Data Service database created with sample data.
-* Completion of Lab 1 - Data Modeling
+* Completion of **Module 0 Lab 0 - Validate lab environment**
+* Completion of **Module 2 Lab 1 - Data Modeling**
 
 ## Things to consider before you begin
 

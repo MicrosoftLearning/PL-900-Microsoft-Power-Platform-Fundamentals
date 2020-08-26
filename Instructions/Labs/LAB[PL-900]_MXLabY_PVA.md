@@ -9,8 +9,7 @@ lab:
 
 ## Lab: Power Virtual Agents
 
-Scenario
-========
+# Scenario
 
 Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently and there are no means to collect and analyze data about the visits across the entire campus. 
 
@@ -160,7 +159,7 @@ In this task, you will change the greeting to Covid-19 specific.
 
 9.  The bot should now reply with correct information.
 
-### Exercise 5: Publish the bot
+# Exercise \#5: Publish the bot
 
 In this exercise, you will publish the bot.
 
@@ -184,7 +183,6 @@ In this exercise, you will publish the bot.
 
 10. Go ahead and start chatting with the bot.  
     
-    ![Bot demo website - screenshot](./media/8-image1.png)
 
 # Challenges
 

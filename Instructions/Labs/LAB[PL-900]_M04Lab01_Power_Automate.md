@@ -28,8 +28,9 @@ The following have been identified as requirements you must implement to complet
 
 ## Prerequisites
 
-* Completion of Lab 1 - Data Modeling
-* Campus Staff app created in Part 1 of Lab 2 – Canvas App (for testing)
+* Completion of **Module 0 Lab 0 - Validate lab environment**
+* Completion of **Module 2 Lab 1 - Data Modeling**
+* Campus Staff app created in **Module 3 Lab 1 – Canvas App** (for testing)
 
 Things to consider before you begin
 -----------------------------------
@@ -92,10 +93,11 @@ Task \#1: Create flow
     You are currently scheduled to visit Bellows Campus from {Scheduled Start} until {Scheduled End}.
 
     Your security code is {Code}, please do not share it. You will be required to produce this code during your visit.
+   ```
 
 
     Best regards,
-
+    
     Campus Administration
     Bellows College
    ```
@@ -143,7 +145,7 @@ Task \#2: Validate and test the flow
 
    * Enter the following expression as **Filter Query**
 
-     ```
+   ```
      statecode eq 0 and bc_actualstart ne null and bc_actualend eq null and Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)
      ```
 

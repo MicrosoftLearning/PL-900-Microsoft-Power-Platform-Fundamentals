@@ -33,7 +33,8 @@ You will follow the below outline to design the canvas app:
 
 ## Prerequisites
 
-* Completion of Lab 1 - Data Modeling
+* Completion of **Module 0 Lab 0 - Validate lab environment**
+* Completion of **Module 2 Lab 1 - Data Modeling**
 
 Things to consider before you begin
 -----------------------------------
