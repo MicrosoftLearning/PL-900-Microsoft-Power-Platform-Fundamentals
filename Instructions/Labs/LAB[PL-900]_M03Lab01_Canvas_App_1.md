@@ -5,10 +5,10 @@ lab:
 ---
 
 # Module 3: Get Started with Power Apps
+
 ## Lab: Canvas App, Part 1
 
-Scenario
-========
+# Scenario
 
 Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
 
@@ -18,8 +18,7 @@ Throughout this course, you will build applications and perform automation to en
 
 In part 1 this lab, you will design a Power Apps canvas app that college staff can use to manage visits for their guests.
 
-High-level lab steps
-======================
+# High-level lab steps
 
 We will follow the below outline to design the canvas app:
 
@@ -33,8 +32,7 @@ We will follow the below outline to design the canvas app:
 
 * Completion of Lab 1 - Data Modeling
 
-Things to consider before you begin
------------------------------------
+## Things to consider before you begin
 
 -   What is the most prevalent form factor for the target audience?
 -   Estimate the number of records in the system 
@@ -46,8 +44,7 @@ Exercise \#1: Create Staff Canvas App
 
 **Objective:** In this exercise, you will create a canvas app from a template and then modify it to include required data.
 
-Task \#1: Create Canvas App
----------------------------
+## Task \#1: Create Canvas App
 
 In this task, you will create a canvas app using the phone layout template based on Common Data Service. Using Visits as a selected entity from Common Data Service, the template will generate a Gallery - View - Edit app to manage campus visits.
 

@@ -16,13 +16,7 @@ Throughout this course, you will build applications and perform automation to en
 
 In this Module 0 lab, you will validate that your classroom tenant is working as expected. You will access your individual credentials, record your “alias”, and access the Power Platform admin center. In the admin center, we will create an individual environment using your alias.
 
-
-**Important Note:** This lab will provide you with an actual Dynamics 365 tenant
-and licenses for the Power Platform applications you will be using in this
-course. Please be aware that the Power Platform is evolving all the time. The
-instructions in this document may be different from what you experience in your
-actual tenant. It is also possible to experience a delay of several minutes
-before the virtual machine has network connectivity to begin the labs.
+**Important Note:** This lab will provide you with an actual Dynamics 365 tenant and licenses for the Power Platform applications you will be using in this course. Please be aware that the Power Platform is evolving all the time. The instructions in this document may be different from what you experience in your actual tenant. It is also possible to experience a delay of several minutes before the virtual machine has network connectivity to begin the labs.
 
 Exercise 1 – Set up your Practice environment
 ---------------------------------------------
@@ -35,28 +29,23 @@ do the majority of your lab work in.
 1.  Access <https://admin.Powerplatform.microsoft.com> and log in with your user
     credentials.
 
-**Important:** Please be aware that this tenant and the Dynamics 365
-organization will be shared with the other students in your classroom, like
-employees would share a tenant when using the Dynamics 365 instance belonging to
-their organization. Do not use any PII (personally identifiable information)
-when creating records. It is also good practice to use your username prefix
-(ex., **mollyc**) in front of all records, data, apps, flows, etc. you create.
+**Important:** Please be aware that this tenant and the Dynamics 365 organization will be shared with the other students in your classroom, like employees would share a tenant when using the Dynamics 365 instance belonging to
+their organization. Do not use any PII (personally identifiable information) when creating records. It is also good practice to use your username prefix (ex., **mollyc**) in front of all records, data, apps, flows, etc. you create.
 
 2.  Select **Environments** and click **+New.**
 
-    -   For **Name**, enter **[my prefix] Practice.** (Example: mollyc
-        Practice.)
-
-    -   For **Type**, select **Trial.**
-
-    -   Change the toggle on **Create a database for this environment?** to
+    -   For **Name**, enter **[my prefix] Practice.** (Example: **mollyc Practice**.)
+        
+-   For **Type**, select **Trial.**
+    
+-   Change the toggle on **Create a database for this environment?** to
         **Yes.**
-
-    -   Leave all other selections as default and click **Save.**
-
-    -   On the next tab, leave all selections to default and click **Save**
+    
+-   Leave all other selections as default and click **Save.**
+    
+-   On the next tab, leave all selections to default and click **Save**
         again.
-
+    
 3.  Your **Practice** environment should now show in the list of Environments.
     You may also see other students' environments in this list with their
     individual prefixes; only work within your Practice environment.

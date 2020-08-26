@@ -4,13 +4,12 @@ lab:
     module: 'Module 2: Introduction to the Common Data Service'
 ---
 
-# Module 2: Introduction to the Common Data Service
+# Module 2: Introduction to Common Data Service
 ## Lab: Data Modeling
 
 
-Scenario
-========
-    
+# Scenario
+
 Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
 
 Campus administration would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
@@ -25,8 +24,7 @@ In this lab, you will access your Practice environment from the previous lab, cr
 
 Finally, you will import sample data into Common Data Service.
 
-High-level lab steps
-======================
+# High-level lab steps
 
 To prepare your learning environments you will:
 
