@@ -32,7 +32,8 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 ## Prerequisites
 
-* Completion of Lab 1 - Data Modeling
+* Completion of **Module 0 Lab 0 - Validate lab environment**
+* Completion of **Module 2 Lab 1 - Data Modeling**
 
 Things to consider before you begin
 -----------------------------------
@@ -55,29 +56,32 @@ Task \#1: Prepare Data
     * Navigate to Power Platform Admin Center at https://admin.powerplatform.com
     * In the left navigation page, select Environments, and then open your Bellows College environment.
     * Right mouse click **Environment URL** on the **Details** panel, then select **Copy link address**.
-2. If you do not have Power BI Desktop installed, navigate to https://aka.ms/pbidesktopstore to download and install Power BI app.
+2.  If you do not have Power BI Desktop installed, navigate to https://aka.ms/pbidesktopstore to download and install Power BI app.
+
+> [!IMPORTANT]
+> If you experience issues installing Power BI Desktop using Microsoft Store, try standalone installer that can be downloaded from https://aka.ms/pbiSingleInstaller.
 
 3. Open Power BI Desktop, sign in if prompted.
 
-4. Select **Get data**.
+2. Select **Get data**.
 
-5. Select **Power Platform** on the left, then select **Common Data Service**, and press **Connect**.
+3. Select **Power Platform** on the left, then select **Common Data Service**, and press **Connect**.
 
-6. Paste the environment URL you copied earlier into the **Server URL** field, press **OK**.
+4. Paste the environment URL you copied earlier into the **Server URL** field, press **OK**.
 
-7. Expand **Entities** node, select **bc_Building** and **bc_Visit** entities, click **Load**.
+5. Expand **Entities** node, select **bc_Building** and **bc_Visit** entities, click **Load**.
 
-8. Click **Model** icon on the left vertical toolbar.
+6. Click **Model** icon on the left vertical toolbar.
 
-9. Drag **bc_buildingid** column from **bc_Building** table and drop it to **bc_building** column in **bc_Visit** table. That will create a relationship between two entities that Power BI will be able to use to display related data.
+7. Drag **bc_buildingid** column from **bc_Building** table and drop it to **bc_building** column in **bc_Visit** table. That will create a relationship between two entities that Power BI will be able to use to display related data.
 
-10. Select **Report** icon on the left toolbar.
+8. Select **Report** icon on the left toolbar.
 
-11. Expand **bc_Visits** node in the **Fields** panel.
+9. Expand **bc_Visits** node in the **Fields** panel.
 
-12. Click **...** beside **bc_Visits** and select **New Column**.
+10. Click **...** beside **bc_Visits** and select **New Column**.
 
-13. Complete the formula as following
+11. Complete the formula as following
 
     ```
     Column = RELATED(bc_Building[bc_name])
@@ -85,13 +89,13 @@ Task \#1: Prepare Data
 
     and press ENTER. That will add a new field with the building name into the visits data.
 
-14. Click **...* next to the field and select **Rename**. Enter **Building** as the field name.
+12. Click **...* next to the field and select **Rename**. Enter **Building** as the field name.
 
-15. Click **...* next to the **bc_visitid** field and select **Rename**. Enter **Visits** as the field name.
+13. Click **...* next to the **bc_visitid** field and select **Rename**. Enter **Visits** as the field name.
 
-16. Click **...* next to the **bc_scheduledstart** field and select **Rename**. Enter **Start** as the field name.
+14. Click **...* next to the **bc_scheduledstart** field and select **Rename**. Enter **Start** as the field name.
 
-17. Save work in progress by pressing **File \| Save** and entering a filename of your choice.
+15. Save work in progress by pressing **File \| Save** and entering a filename of your choice.
 
 ## Task #2: Create Chart and Time Visualizations
 

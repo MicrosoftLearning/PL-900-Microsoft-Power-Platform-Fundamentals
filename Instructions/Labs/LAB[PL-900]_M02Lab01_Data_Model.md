@@ -4,13 +4,12 @@ lab:
     module: 'Module 2: Introduction to the Common Data Service'
 ---
 
-# Module 2: Introduction to the Common Data Service
+# Module 2: Introduction to Common Data Service
 ## Lab: Data Modeling
 
 
-Scenario
-========
-    
+# Scenario
+
 Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
 
 Campus administration would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
@@ -25,8 +24,7 @@ In this lab, you will access your Practice environment from the previous lab, cr
 
 Finally, you will import sample data into Common Data Service.
 
-High-level lab steps
-======================
+# High-level lab steps
 
 To prepare your learning environments you will:
 
@@ -47,10 +45,15 @@ Things to consider before you begin:
 -----------------------------------
 
 * Naming convention
+
 * Data types, restrictions (e.g. max length of a name)
+
 * Datetime formatting to support easy localization
+
 * Record the characters before the "@" symbol in your email address - it should be a first name and a last initial. These characters will become your "alias" throughout the course. Write them down somewhere you will be able to access throughout the course. 
-* **Important:** Please be aware that this tenant and the Dynamics 365 organization will be shared with the other students in your classroom, like employees would share a tenant when using the Dynamics 365 instance belonging to their organization. Do not use any PII (personally identifiable information) when creating records. It is also good practice to use your username prefix (ex., **mollyc**) in front of all records, data, apps, workflows, etc. you create. 
+
+> [!IMPORTANT]
+> Please be aware that this tenant and the Dynamics 365 organization will be shared with the other students in your classroom, like employees would share a tenant when using the Dynamics 365 instance belonging to their organization. Do not use any PII (personally identifiable information) when creating records. It is also good practice to use your username prefix (ex., **mollyc**) in front of all records, data, apps, workflows, etc. you create. 
 
 Exercise \#1: Create Solution
 ==================================================
