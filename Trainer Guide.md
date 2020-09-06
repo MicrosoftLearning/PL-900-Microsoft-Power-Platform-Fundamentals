@@ -1,11 +1,64 @@
 ---
 lab:
     title: 'Trainer Guide'
-    module: 'Module XX: Power Apps Build'
+    module: 'Module 1: Introduction to Power Platform'
 ---
 
 # PL-900: Microsoft-Power-Platform-Fundamentals
 ## Trainer Guide
+
+<!-- TODO -->
+
+# TODO
+
+* [x] Include delivery outline
+* [ ] Align numbering and mentioning of modules and labs with the new module numbering 
+* [ ] Explain why we're using custom Visits and not appointments (complexity of activity parties; not everything was working with activities and activity parties at the time of writing in canvas power apps and power automate; whatever else :D )
+* [ ] Add discussions for power bi and pva
+
+
+## Module outline
+
+1. Intro to Power Platform 
+
+2. Intro to Common Data Service 
+
+   * Lab 1
+
+3. Intro to Power Apps 
+
+4. How to build a canvas app (formerly How to build an app solution)
+
+   * Lab 2
+   * Lab 3
+
+5. How to build a model-driven app/Intro to model-driven apps
+
+   * Lab 4
+
+6. Intro to Power Apps portals 
+
+   * Lab 5
+
+7. Intro to Power Automate 
+
+8. How to build an automated solution 
+
+   * Lab 6
+
+9. Intro to Power BI 
+
+10. How to build a simple dashboard 
+
+    * Lab 7
+
+11. Intro to Power Virtual Agents 
+
+12. How to build a basic chatbot
+
+    * Lab 8
+
+<!-- END OF TODO -->
 
 # Environments
 
