@@ -1,20 +1,20 @@
 ---
 lab:
-    title: 'Lab 5: Model-driven app'
-    module: 'Module XX: Power Apps Build'
+    title: 'Lab 4: How to build a model-driven app'
+    module: 'Module 5: Introduction to model-driven apps'
 ---
 
-# PL-900: Microsoft-Power-Platform-Fundamentals
-## Module X, Lab 5 – Model-driven App
+# Module 5: Introduction to model-driven apps
+## Lab 4: How to build a model-driven app
 
 Scenario
 ========
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently and there are no means to collect and analyze data about the visits across the entire campus. 
+Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
 
 Campus administration would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
 
-Throughout this course you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
+Throughout this course, you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
 
 In this lab, you will build a Power Apps model-driven app to allow the backoffice campus staff to manage visit records across the entire campus.
 
@@ -40,14 +40,15 @@ Both will be integrated to the model-driven app for a better user-experience.
 
 ## Prerequisites
 
-* Completion of Lab 1 - Data Modeling
+* Completion of **Module 0 Lab 0 - Validate lab environment**
+* Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
 
 Things to consider before you begin
 -----------------------------------
 
 -   What changes should we make to improve the user experience?
 
--   What should we include in a model-driven app based on the data model we’ve built?
+-   What should we include in a model-driven app based on the data model we have built?
     
 -   What customizations can be made on the sitemap of a model-driven app?
 
@@ -63,11 +64,11 @@ Task \#1: Edit Visit Form
 1.  Sign in to <https://make.powerapps.com> if you are not already signed in.
 2.  Select your **environment.**
 3.  Select **Solutions**.
-4.  Click to open the **Campus Management** solution.
+4.  Click to open your **Campus Management** solution.
 5.  Click to open the **Visit** entity.
-7.  Select the **Forms** tab and click to open the **Main** form type. By default the
-    form has two fields, Name (Primary Field) and Owner.
-7.  Add the following fields below the **Owner** field by dragging fields to the form or simply double-clicking field names:
+6.  Select the **Forms** tab and click to open the **Main** form type. 
+    -   By default the form has two fields, Name (Primary Field) and Owner.
+7.  Add the following fields below the **Owner** field by dragging fields to the form or simply clicking field names:
     * **Building**
     * **Visitor**
     * **Scheduled Start**
@@ -75,16 +76,16 @@ Task \#1: Edit Visit Form
     * **Actual Start**
     * **Actual End** 
 8.  Drag the **Code** field and drop it in the form header. (You may need to minimize the Properties panel on the right side of the screen to see the field on the form.)
-9.  In the Properties panel check the option **Read-only** field
+9.  While still selected on the Code field, check the checkbox for the **Read-only** field in the Properties panel.
 10.  Select **Owner** field and in the Properties panel change the **Field label** to **Host**
-11.  Click **Save** and wait for the save to complete.
-12.  Click **Publish** and wait for the publishing to complete.
-13.  Click on the back button in the browser. You should now be back to the
+11.  Click **Save** at the top right and wait for the save to complete.
+12.  Click **Publish** at the top right and wait for the publishing to complete.
+13.  Click **Back** at the top left of the screen. You should now be back to the
      Visit entity Forms Tab.
 
 ## Task \#2: Edit Visit Views
 
-In this task we will modify default Active Visits view and create new view for today's visits.
+In this task, we will modify default Active Visits view and create new view for today's visits.
 
 1.  Select the **Views** tab and click to open the **Active Visits** view.
 2.  Add the following fields to the view by either clicking or dragging and dropping the fields:
@@ -93,60 +94,61 @@ In this task we will modify default Active Visits view and create new view for t
     3.  **Building**
     4.  **Scheduled Start** 
     5.  **Scheduled End**
-3.  Click on the chevron icon of the **Created On** column and select **Remove**. Field **Created On** will now be removed from the view.
-4.  Click on the chevron icon of the **Name** column and select **Remove**. Field **Name** will now be removed from the view.
+3.  Click on the dropdown arrow by the **Created On** column and select **Remove**. Field **Created On** will now be removed from the view.
+4.  Click on the dropdown arrow by the **Name** column and select **Remove**. Field **Name** will now be removed from the view.
 5.  In the Properties panel on the right, click **Sort by** and select **Scheduled Start**. Click on **Scheduled Start** again to change the order to descending (new visits on top).
-6.  Resize individual columns to fit the information presented.
+6.  Resize the individual column widths to fit the data.
 7.  Click **Save** and wait until the changes are saved.
 8.  Click **Publish** and wait for the publishing to complete.
 9.  Now we will clone the view to create a new view for today's visits. Click `x` next to the existing filter in the Properties panel to remove the filter.
-10.  Press shevron next to **Save** button (be careful not to press the button itself) and select **Save As**.
+10.  Click on the dropdown arrow by the **Save** button (be careful not to press the button itself) and select **Save As**.
 11.  Change the name to **Today's Visits** and press **Save**.
 12.  Press **Edit filters** link in the Properties panel.
 13.  Click **Add**, select **Add row**.
-14.  Select **Scheduled Start** as a field, then select **Today** as condition. Press **Ok** to save the condition.
+14.  Select **Scheduled Start** as a field, then select **Today** as the condition. 
+15.  Click the **...** on the **Status** row and click **Delete**. 
+16.  The view is now filtered to show only records where the Scheduled Start date is today. Press **Ok** to save the condition.
 15.  Add **Actual Start** and **Actual End** fields to the view. Since we no longer filter on the view status, we will get all today's visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
 16.  Click **Save** and wait until the changes are saved.
 17.  Click **Publish** and wait for the publishing to complete.
-18.  Click on the back button in the browser.
+
 
 Exercise \#2: Create Model-Driven Application
 =============================================
 
 **Objective:** In this exercise, you will create the model-driven app, customize the sitemap, and test the app.
 
-**Note:** You will see several fields not addressed as you build out your application, particularly on the sitemap steps. We have taken some short cuts in the interest of doing the labs. In a real project you would give these items logical names.
+**Note:** You will see several fields not addressed as you build out your application, particularly on the sitemap steps. We have taken some short cuts in the interest of doing the labs. In a real implementation, you would give these items logical names.
 
 Task \#1: Create Application
 ----------------------------
 
-1.  Open the Campus Management solution if you are not already in it.
+1.  Open your Campus Management solution if you are not already in it.
 
     -   Sign in to <https://make.powerapps.com>
 
-    -   While in your environment, click to open the **Campus Management**
+    -   While in your environment, click to open your **Campus Management**
         solution.
 2.  Create the Model-Driven Application
 
-    -   Click **New** and select **App** and then **Model-Drive App**. This will open a new tab.
+    -   Click **New** and select **App** and then **Model-Driven App**. This will open a new tab.
     -   Select **Use existing solution to create the App** checkbox
-    -   Enter **Campus Management** for Name and click **Next**.
-    -   Select **Campus Management** solution in the dropdown and click **Done**.
+    -   Enter **[Your Last Name] Campus Management** for Name and click **Done**.
 3.  Click the pencil icon next to **Site Map.**
 4.  Edit the default titles
 
     -   Select **New Area**.
 
-    -   Go to the properties pane and enter **Campus** for **Title**.
+    -   Change the Title of the **New Area** to **Campus** in the properties pane on the right.
 
     -   Select **New Group**.
 
-    -   Go to the **Properties** pane and enter **Security** for **Title**.
+    -   Change the Title of the **New Group** to **Security** in the properties pane on the right.
 5.  Add the Contact entity to the sitemap
 
     -   Select **New Subarea**.
 
-    -   Go to the **Properties** pane and select **Entity** from the dropdown
+    -   In the **Properties** pane, select **Entity** from the dropdown
         for **Type**.
 
     -   Search for **Contact** entity from the dropdown for **Entity**.
@@ -163,11 +165,11 @@ Task \#1: Create Application
 7.  Add the Building entity to the sitemap
 
     -   Select **Campus** area and click **Add**.
--   Select **New Group**.
+-   Select **Group**.
     -   Enter **Settings** for **Title** in the **Properties** pane.
--   Click **Add**.
+    -   WHile still selected on the **Settings** Area, click **Add**.
     -   Select **Subarea**.
--   Go to the **Properties** pane.
+    -   Go to the **Properties** pane.
     -   Select **Entity** from the dropdown for **Type** and search for **Building** entity from the dropdown for **Entity**.
 
 8.  Click **Save**. This will show the loading screen while the changes are getting saved.
@@ -190,9 +192,9 @@ Task \#2: Test Application
 
 1.  Start the application
 
-    -   Select **Apps** and click to open the **Campus Management** app in a new window. (If you don't see your app at first, you may need to refresh your browser.)
+    -   Select **Apps** and click on your **Campus Management** app. (If you don't see your app at first, you may need to refresh your browser.)
 
-    -   The application should start.
+    -   The application should open in a new window.
 2.  Create new Contact record
 
     -   Select **Contacts**
@@ -206,13 +208,13 @@ Task \#2: Test Application
     -   You should now see the created contact on the **Active Contacts** view.
 3.  Create new Building record
 
-    -   Select **Building** from the sitemap.
+    -   Select **Buildings** from the sitemap.
 
     -   Click **New**.
 
     -   Enter the **Name** as Microsoft Building
         
--   Click **Save and Close** and this will show the newly created record on
+    -   Click **Save and Close** and this will show the newly created record on
         the Active Buildings View.
 4.  Create new Visit record
 
@@ -233,5 +235,5 @@ Task \#2: Test Application
 
 * Select specific views and forms for Visits and Buildings
 * Security personnel typically work in a single building. How would you provide an easy way for them to display visits only for a selected building?
-* How would you restrict access to specific entities, e.g. Buildings should be read-only for all staff members except the administrators?
+* Restrict access to specific entities, e.g. Buildings should be read-only for all staff members except the administrators
 * What Dashboards would you consider adding to the app?
