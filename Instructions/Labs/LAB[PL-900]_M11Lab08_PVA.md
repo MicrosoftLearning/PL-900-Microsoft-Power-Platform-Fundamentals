@@ -1,13 +1,12 @@
 ---
 lab:
-    title: 'Lab: Power Virtual Agents'
-    module: 'Module X: Introduction to Power Virtual Agents'
-
+    title: 'Lab 8: How to build a basic chatbot'
+    module: 'Module 11: Intro to Power Virtual Agents'
 ---
 
-# Module X: Introduction to Power Virtual Agents
+# Module 11: Intro to Power Virtual Agents
 
-## Lab: Power Virtual Agents
+## Lab 8: How to build a basic chatbot
 
 # Scenario
 
@@ -37,9 +36,9 @@ The following have been identified as requirements you must implement to complet
 
   - Completion of **Module 0 Lab 0 - Validate lab environment**
 
-  - Completion of **Module 2 Lab 1 - Data Modeling**
+  - Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
 
-  - Bonus exercise only: Completion of **Module X Lab Z - Power Apps portals** 
+  - Bonus exercise only: Completion of **Module 6 Lab 5 - Introduction to Power Apps portals** 
 
 ## Things to consider before you begin
 

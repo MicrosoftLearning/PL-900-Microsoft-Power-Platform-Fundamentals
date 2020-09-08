@@ -1,12 +1,12 @@
 ---
 lab:
-    title: 'Lab: Power Apps portals'
-    module: 'Module X: Introduction to Power Apps portals'
+    title: 'Lab 5: Introduction to Power Apps portals'
+    module: 'Module 6: Introduction to Power Apps portals'
 ---
 
-# Module Z: Introduction to Power Apps portals
+# Module 6: Introduction to Power Apps portals
 
-## Lab: Power Apps portals
+## Lab 5: Introduction to Power Apps portals
 
 # Scenario
 
@@ -26,7 +26,7 @@ The following have been identified as requirements you must implement to complet
 ## Prerequisites
 
 * Completion of **Module 0 Lab 0 - Validate lab environment**
-* Completion of **Module 2 Lab 1 - Data Modeling**
+* Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
 
 ## Things to consider before you begin
 

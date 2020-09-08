@@ -1,11 +1,47 @@
----
-lab:
-    title: 'Trainer Guide'
-    module: 'Module XX: Power Apps Build'
----
-
 # PL-900: Microsoft-Power-Platform-Fundamentals
+
 ## Trainer Guide
+
+# Module outline
+
+1. Intro to Power Platform 
+
+2. Intro to Common Data Service 
+
+   * Lab 1
+
+3. Intro to Power Apps 
+
+4. How to build a canvas app (formerly How to build an app solution)
+
+   * Lab 2
+   * Lab 3
+
+5. How to build a model-driven app/Intro to model-driven apps
+
+   * Lab 4
+
+6. Intro to Power Apps portals 
+
+   * Lab 5
+
+7. Intro to Power Automate 
+
+8. How to build an automated solution 
+
+   * Lab 6
+
+9. Intro to Power BI 
+
+10. How to build a simple dashboard 
+
+    * Lab 7
+
+11. Intro to Power Virtual Agents 
+
+12. How to build a basic chatbot
+
+    * Lab 8
 
 # Environments
 
@@ -16,7 +52,7 @@ The environments need no specific configuration considerations, a plain CDS *wit
 We recommend completing the labs as a student prior to the training delivery. 
 
 * Familiarity with the exercises will make the delivery more efficient.
-* Solution components built during this exercise can be used as needed for your demos. Demos are not required but some find them useful. Do a few on topics that you feel most comfortable with.
+* Solution components built during this exercise can be used as needed for your demos. Demos are not required but many find them useful. As this is a fundamentals course targeting a non-technical audience, sometimes seeing the technology in action helps student retain the details. Do a few on topics that you feel most comfortable with.
 
 # Overview
 
@@ -31,22 +67,25 @@ Some students may feel excessive to perform all customizations within the soluti
 > [!IMPORTANT]
 > We are building components typical for Power Platform solutions. Dependencies are minimal but **Lab 1** is critical as the rest of the exercises use data model built during this lab. Sample data imported during the lab makes building and testing the apps easier, more realistic, and more relatable.
 
-Apart from the common data model built in Lab 1, there are no dependencies between different labs. Trainers should clearly explain the objective of every lab and outline high-level solution components and techniques. Students then should be encouraged to design and build their own solutions without following step by step instructions for every exercise.
+Apart from the common data model built in Lab 1, there are no dependencies between different labs. Trainers should clearly explain the objective of every lab and outline high-level solution components and techniques. Students then should be encouraged to design and build their own solutions without following the step by step instructions for every exercise. Training environments are disposable and a safe place for students to try out new things without breaking production environments.
 
 ## Components
 
-Completed components are available for *all* exercises. They include canvas apps, model-driven app, power automation flows, Power BI pbix file, sample data and data import map, and complete solution exported as both managed and unmanaged. Components shouldn't be used as a shortcut to exercise completion. Instead, they are useful as a demo tool and as a general point of reference.
+Completed components are available for *all* exercises. They include canvas apps, model-driven app, Power Automation flows, Power BI pbix file, sample data and data import map, and complete solution exported as both managed and unmanaged. Components shouldn't be used as a shortcut to exercise completion. Instead, they are useful as a demo tool and as a general point of reference.
 
 Because all labs in the course depend on the data model, the model is available as a standalone solution [CampusDataModel_1_0_0_1.zip](../Allfiles/CampusDataModel_1_0_0_1.zip). It can be imported into a fresh environment followed by the Exercise #3 in Lab 1 (data import). That will create a starting point for the students who were unable to complete the lab. The prebuilt data model gives these students opportunity to catch up and proceed with the rest of the exercises. 
 
 ## Challenges
 
-A number of challenges is provided at the end of every lab. The challenges typically include more realistic scenarios as the course exercises are simplified for the sake of time. Challenges also cover more advanced topics which some students may find helpful.
+A number of challenges is provided at the end of the labs. The challenges typically include more realistic scenarios as the course exercises are simplified for the sake of time. Challenges also cover more advanced topics which some students may find helpful.
 
 Use the challenges to initiate a discussion about real-world scenarios and how techniques learned during the exercises can be applied to solve the challenges.
 
-Labs
-======================
+# Labs
+
+## Lab 00 Set up your practice environment
+
+For most students, they will need to provision an environment to use to complete their labs. These steps are included as lab 0. In some scenarios, the trainer will have provisioned practice environments for students. In that case, lab 0 becomes unnecessary. 
 
 ## Lab 01 Data Model
 
@@ -61,10 +100,11 @@ Topics to discuss:
 * Good practices around implementing data model in CDS
 * Bringing Common Data Model entities (e.g. contacts) – what to include.
 * Dev/test sample data sets – how much is enough. Good practices around building dev/test data sets.
+* Lead a discussion on why our data model uses an entirely custom entity **Visits** instead of a custom activity, or even the out-of-the-box appointment entity. Share details of the security implications of either approach. Discuss the complexity of the activity party entity. 
 
 ### Challenges
 
-* Would you consider using *appointment* activity as part of the solution? What would it change
+* Would you consider using *appointment* activity as part of the solution? What would it change?
 
   > Appointment or any other activity entity require more advanced understanding of concepts like activity parties, Regarding field, etc. Some of the maker tooling may not be capable of working with these yet and complex workarounds may be required.
 
@@ -74,7 +114,7 @@ Topics to discuss:
 
 * Add support for multiple meetings during a single visit.
 
-  > Many-to-many relationships and associated challenges
+  > Discuss many-to-many relationships and associated challenges
 
 * Secure the building access not only for external contacts but for internal staff member as well.
 
@@ -82,9 +122,9 @@ Topics to discuss:
 
 * Visits to certain buildings require management approval. What would the approval process change in the data model?
 
-  > Discussion of business process flows and power automation approvals as techniques to introduce human factor into the processes
+  > Discussion of business process flows and Power Automate approvals as techniques to introduce human factor into the processes.
 
-## Lab 02 Canvas app
+## Lab 02 and 03 Canvas app
 
 This lab consists of two parts targeting different user personas.
 
@@ -92,17 +132,17 @@ In part 1 this lab, you will build a Power Apps canvas app that college staff ca
 
 In part 2 of this lab, you will create build a Power Apps canvas app that the security personnel will use at the building entrances to quickly validate and register the visitors.
 
-Topics to discuss
+### Topics to discuss
 
 - Tablet vs phone form factor. Responsive layouts (available soon in canvas).
-- How does the target audience impact the app design.
-- How knowledge of Excel can benefit app makers (traditional procedural programming vs properties and expression syntax of Power Apps)
+- How does the target audience impact the app design?
+- How can knowledge of Excel benefit app makers (traditional procedural programming vs properties and expression syntax of Power Apps)?
 
 - Which connector to use. How CDS connector is now internal to canvas Power Apps.
 
 - App checker – new metrics every day. Make sure to retest the app.
 
-- Accessibility – what makes a good accessible app
+- Accessibility – what makes a good accessible app?
 
 ### Challenges
 
@@ -138,15 +178,81 @@ Topics to discuss
 
   > Access to the properties of related entities, building engaging UI
 
-* How would you handle the requirement of multiple buildings/meetings/checkings during the single campus visit. For example, someone may visit campus for a day and during that day they will meet staff members in multiple buildings at different time of the day. What about single meeting with multiple external participants? Would you consider bringing *appointment* entity into the solution? 
+* How would you handle the requirement of multiple buildings/meetings/check-ins during the single campus visit. For example, someone may visit campus for a day and during that day they will meet staff members in multiple buildings at different times of the day. What about single meeting with multiple external participants? Would you consider bringing *appointment* entity into the solution? 
 
-  > This is a good but potentially complex and lengthy topic to discuss. Consider initiating a discussion and giving students some form of "home work". Discuss how Power Apps enable iterative approach to building apps, i.e. start simple and enhance as you go.
+  > This is a good but potentially complex and lengthy topic to discuss. Consider initiating a discussion and giving students some form of "homework". Discuss how Power Apps enable iterative approach to building apps, i.e. start simple and enhance as you go.
 
-## Lab 03 Power Automate
+## Lab 04 Model-driven app
 
-In this lab, you will create Power Automate flows to automate various parts of the campus management. This lab requires, in addition to Lab 1, an app built in Part 1 of Lab 2. This is necessary so that the testing of automation can be performed (triggering processes by entering new data)
+In this lab, you will build a Power Apps model-driven app to allow the back-office campus staff to manage visit records across the entire campus.
 
-Topics to discuss
+### Topics to discuss
+
+* Model-driven apps as part of a solution
+* Model-driven vs canvas Power Apps. Target audience and app objectives.
+* What makes a good sitemap?
+* What to include into an app for a given entity?
+* Apps & roles, security in CDS, UI trimming in model-driven apps
+* Adjusting data model vs adjusting the model-driven app
+
+### Challenges
+
+* Select specific views and forms for Visits and Buildings
+
+  > Fine-tuning the app for the target audience. Creating useful views and forms
+
+* Security personnel typically work in a single building. How would you provide an easy way for them to display visits only for a selected building?
+
+  > Personalization in model-driven apps, e.g. personal views. Grids and filtering. Pre-building fixed views if number of buildings is small. Sub-grids (on Building form)
+
+* How would you restrict access to specific entities, e.g. Buildings should be read-only for all staff members except the administrators?
+
+  > Security roles, UI trimming. Potentially talk about reference data (user-owned vs organization-owned entities)
+
+* What Dashboards would you consider adding to the app?
+
+  > Built-in dashboards, embedded canvas, embedded Power BI
+
+## Lab 05 Power Apps portal app
+
+In this lab, you will build a Power Apps portal app. In this portal users can be anonymous and learn information about the school.
+
+Note, this lab has dependencies on prior labs. Prerequisites are:
+
+* Completion of Module 0 Lab 0 - Validate lab environment
+* Completion of Module 2 Lab 1 - Introduction to Common Data Service
+
+###  Topics to discuss
+
+* Forms and views in CDS are exposed in the portal. At what stage of app-making would be best for building these for the portal?
+* In this lab, we only expose public-facing data. However, portals offer secure access to data for authenticated users. In this scenario, what additional data might we consider showing behind a secure login?
+* When might we want a portal app verse a model-driven app verses a canvas app?
+
+### Challenges
+
+* Create a different view of Buildings (changing filtering options and fields). 
+
+  >  You will need to select Browse from the Portal studio to see the changes.
+
+* In the Portal studio, select the Source Code Editor icon </> to view the page source.
+
+  >  If you are comfortable with HTML, make some modifications and view the results.
+
+* On the toolbelt, click on the Themes icon.
+
+  > Try different theme options.
+
+* Create a page with the Form component, modify a List component to add or edit Common Data Service records.
+
+* Enable Entity Permissions in a List component Settings.
+
+  >  What happens to the data?
+
+## Lab 06 Power Automate
+
+In this lab, you will create Power Automate flows to automate various parts of the campus management. This lab requires, in addition to Lab 1, an app built in Part 1 of Lab 2. This is necessary so that the testing of automation can be performed (triggering processes by entering new data).
+
+### Topics to discuss
 
 * Flows in solutions
 * CDS connectors (standard vs current environment)
@@ -162,7 +268,7 @@ Topics to discuss
 
   > Potentially using images, maps, external services to deliver this information.
 
-* Can you generate barcode for the visit code? When will that be useful?
+* Can you generate a barcode for the visit code? When will that be useful?
 
   > Barcodes can include additional information like building name and can be scanned by another app eliminating manual data entry. How to generate the barcodes? Using barcode fonts? Images? External service?
 
@@ -174,18 +280,18 @@ Topics to discuss
 
   > Using variables, building more complex expressions, manipulating email format.
 
-## Lab 04 Power BI
+## Lab 07 Power BI
 
 In this lab, you will build a Power BI dashboard that visualizes data about the campus visits.
 
-Topics to discuss
+### Topics to discuss
 
 -   Who is the target audience of the report?
 -   How will the audience consume the report? Typical device? Location?
 -   How to start the design; how to move beyond the blank canvas
 -   Connect to data sources, build and refine data model 
--   Do you have sufficient data to visualise?
--   What are the possible characteristics you can use to analyse data about the visits?
+-   Do you have sufficient data to visualize?
+-   What are the possible characteristics you can use to analyze data about the visits?
 -   Publishing and sharing the reports
 -   Accessibility in Power BI when building interactive reports
 
@@ -207,33 +313,19 @@ Topics to discuss
 
   > This is a complex topic and the solutions most likely would be out of reach for most of the students but it's important to discuss data ageing, snapshots vs streams, frequency of data refreshes, stale data in general.
 
-## Lab 05 Model-driven app
+## Lab 08 Power Virtual Agent
 
-In this lab, you will build a Power Apps model-driven app to allow the backoffice campus staff to manage visit records across the entire campus.
+In this lab, you will use Power Virtual Agents to build a chat bot. The bot will read from the Centers for Disease Control FAQ site for information above COVID-19.
 
-Topics to discuss:
+### Topics to discuss
 
-* Model-driven apps as part of a solution
-* Model-driven vs canvas Power Apps. Target audience and app objectives.
-* What makes a good sitemap?
-* What to include into an app for a given entity?
-* Apps & roles, security in CDS, UI trimming in model-driven apps
-* Adjusting data model vs adjusting the model-driven app
+* Other bot scenarios for the school
+* What automation would you add to the bot?
+
+* Challenges with relying on an external source for bot information
 
 ### Challenges
 
-* Select specific views and forms for Visits and Buildings
-
-  > Fine-tuning the app for the target audience. Creating useful views and forms
-
-* Security personnel typically work in a single building. How would you provide an easy way for them to display visits only for a selected building?
-
-  > Personalization in model-driven apps, e.g. personal views. Grids and filtering. Pre-building fixed views if number of buildings is small. Subgrids (on Building form)
-
-* How would you restrict access to specific entities, e.g. Buildings should be read-only for all staff members except the administrators?
-
-  > Security roles, UI trimming. Potentially talk about reference data (user-owned vs organization-owned entities)
-
-* What Dashboards would you consider adding to the app?
-
-  > Built-in dashboards, embedded canvas, embedded Power BI
+* Embed the bot on the portal you made in a prior lab
+* What other information could you give the bot to help web users? Building information? Campus Maps?
+* Could we use the COVID information to do other things such as set building capacity based on outbreaks and distancing guidelines?
