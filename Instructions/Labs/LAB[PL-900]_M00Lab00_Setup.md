@@ -7,7 +7,7 @@ lab:
 Module 0: Course introduction
 =================================
 
-## Practice Lab – Validate lab environment
+## Lab: Validate lab environment
 
 Scenario
 --------
