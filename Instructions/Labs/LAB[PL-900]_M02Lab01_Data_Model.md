@@ -16,7 +16,7 @@ Campus administration would like to modernize their visitor registration system 
 
 Throughout this course, you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
 
-In this lab, you will access your Practice environment from the previous lab, create a Common Data Service (CDS) database, and create a solution to track your changes. You will also create a data model to support the following requirements:
+In this lab, you access your environment, create a Common Data Service (CDS) database, and create a solution to track your changes. You will also create a data model to support the following requirements:
 
 -   R1 – Track the locations (buildings) of the campus visits
 -   R2 – Record basic information to identify and track the visitors 
@@ -48,11 +48,6 @@ Your solution will contain several entities upon completion of all the customiza
 * Data types, restrictions (e.g. max length of a name)
 
 * Datetime formatting to support easy localization
-
-* Record the characters before the "@" symbol in your email address - it should be a first name and a last initial. These characters will become your "alias" throughout the course. Write them down somewhere you will be able to access throughout the course. 
-
-> [!IMPORTANT]
-> Please be aware that this tenant and the Dynamics 365 organization will be shared with the other students in your classroom, like employees would share a tenant when using the Dynamics 365 instance belonging to their organization. Do not use any PII (personally identifiable information) when creating records. It is also good practice to use your username prefix (ex., **mollyc**) in front of all records, data, apps, workflows, etc. you create. 
 
 # Exercise \#1: Create Solution
 
