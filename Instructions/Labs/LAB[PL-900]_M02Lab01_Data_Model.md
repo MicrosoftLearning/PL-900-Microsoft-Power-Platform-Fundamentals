@@ -8,8 +8,7 @@ lab:
 ## Lab: Data Modeling
 
 
-Scenario
-========
+# Scenario
     
 Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
 
@@ -25,8 +24,7 @@ In this lab, you access your environment, create a Common Data Service (CDS) dat
 
 Finally, you will import sample data into Common Data Service.
 
-High-level lab steps
-======================
+# High-level lab steps
 
 To prepare your learning environments you will:
 
@@ -43,20 +41,17 @@ Your solution will contain several entities upon completion of all the customiza
 
 * Completion of **Module 0 Lab 0 - Validate lab environment**
 
-Things to consider before you begin:
------------------------------------
+## Things to consider before you begin:
 
 * Naming convention
 * Data types, restrictions (e.g. max length of a name)
 * Datetime formatting to support easy localization
 
-Exercise \#1: Create Solution
-==================================================
+# Exercise \#1: Create Solution
 
 **Objective:** In this exercise, you will prepare the environment and create a solution to support the data modeling process. 
 
-Task \#1: Create Solution and Publisher
----------------------------------------
+## Task \#1: Create Solution and Publisher
 
 1.  Create Solution
 
@@ -87,8 +82,7 @@ Task \#1: Create Solution and Publisher
     
     -   Click **Create**.
 
-Task \#2: Add Existing Entity
------------------------------
+## Task \#2: Add Existing Entity
 
 1.  Click to open your **Campus Management** solution you just created.
 2.  Click **Add Existing** and select **Entity**.
@@ -104,14 +98,12 @@ Task \#2: Add Existing Entity
     This will add the Contact entity with the selected View and Form to the newly created solution. 
 11.  Your solution should now have one entity: Contact.
 
-Exercise \#2: Create Entities and Relationships
-========================================
+# Exercise \#2: Create Entities and Relationships
 
 **Objective:** In this exercise, you will create entities and add relationships
 between the entities.
 
-Task #1: Create Building Entity and Fields
------------------------------------------
+## Task #1: Create Building Entity and Fields
 
 1.  You should still have your browser open to the Campus Management solution. If not, open the Campus Management solution by following these steps:
     * Sign in to <https://make.powerapps.com> (if you are not already signed in)
@@ -189,8 +181,7 @@ We would like to assign each visit a unique number that can be easily entered an
     
 8.  Click **Save Entity**
 
-Task #3: Create Relationships
-------------------------------
+## Task #3: Create Relationships
 
 1.  Ensure that you are still viewing the **Visit** entity of your **Campus Management** solution. If not, navigate there.
 2.  Create Visit to Contact relationship
