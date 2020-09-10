@@ -1,14 +1,14 @@
 ---
 lab:
-    title: 'Lab 2: How to build a canvas app, Part 1'
-    module: 'Module 3: Introduction to Power Apps'
+    title: 'Lab: Canvas App, Part 1'
+    module: 'Module 3: Get Started with Power Apps'
 ---
 
-# Module 3: Introduction to Power Apps
+# Module 3: Get Started with Power Apps
+## Lab: Canvas App, Part 1
 
-## Lab 2: How to build a canvas app, Part 1
-
-# Scenario
+Scenario
+========
 
 Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
 
@@ -18,7 +18,8 @@ Throughout this course, you will build applications and perform automation to en
 
 In part 1 this lab, you will design a Power Apps canvas app that college staff can use to manage visits for their guests.
 
-# High-level lab steps
+High-level lab steps
+======================
 
 We will follow the below outline to design the canvas app:
 
@@ -30,10 +31,10 @@ We will follow the below outline to design the canvas app:
 
 ## Prerequisites
 
-* Completion of **Module 0 Lab 0 - Validate lab environment**
-* Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
+* Completion of Lab 1 - Data Modeling
 
-## Things to consider before you begin
+Things to consider before you begin
+-----------------------------------
 
 -   What is the most prevalent form factor for the target audience?
 -   Estimate the number of records in the system 
@@ -45,11 +46,12 @@ Exercise \#1: Create Staff Canvas App
 
 **Objective:** In this exercise, you will create a canvas app from a template and then modify it to include required data.
 
-## Task \#1: Create Canvas App
+Task \#1: Create Canvas App
+---------------------------
 
 In this task, you will create a canvas app using the phone layout template based on Common Data Service. Using Visits as a selected entity from Common Data Service, the template will generate a Gallery - View - Edit app to manage campus visits.
 
-1.  Open your Campus Management solution.
+1.  Open the Campus Management solution.
 
     -   Sign in to <https://make.powerapps.com>
 
@@ -75,7 +77,7 @@ In this task, you will create a canvas app using the phone layout template based
 
     1.  Click **File > Save**.
     
-    2.  Type the name of the app as **[Your Last Name] Campus Staff**
+    2.  Type the name of the app as **Campus Staff**
     
     3.  Press **Save**.
 
@@ -212,10 +214,10 @@ Task \#1: Test App
    * Sign in to <https://make.powerapps.com>
    * If the Environment displayed in the top right is not your Bellows College environment, select your **Environment**. 
    * Select **Solutions**.
-   * Click to open your **Campus Management** solution.
+   * Click to open the **Campus Management** solution.
 2. Select **Add existing**, then click **App**, and then click **Canvas app**.
 3. Select **Outside solutions** tab.
-4. Select your **Campus Staff** app, click **Add**.
+4. Select **Campus Staff** app, click **Add**.
 5. Select **Publish all customizations**.
 
 # Challenges
