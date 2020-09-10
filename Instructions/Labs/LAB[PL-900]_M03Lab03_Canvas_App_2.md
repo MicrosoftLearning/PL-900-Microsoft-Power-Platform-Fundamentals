@@ -1,11 +1,11 @@
 ---
 lab:
-    title: 'Lab 3: How to build a canvas app, Part 2'
-    module: 'Module 3: Introduction to Power Apps'
+    title: 'Lab: Canvas App, Part 2'
+    module: 'Module 3: Get Started with Power Apps'
 ---
 
-# Module 3: Introduction to Power Apps
-## Lab 3: How to build a canvas app, Part 2
+# Module 3: Get Started with Power Apps
+## Lab: Canvas App, Part 2
 
 Scenario
 ========
@@ -27,14 +27,13 @@ You will follow the below outline to design the canvas app:
 -   Connect to Common Data Service as a data source
 -   Capture the input (visitor code) and locate the visitor record
 -   Configure a form viewer control to show the visitor information
--   Use a Common Data Service view to populate the gallery
+-   Use a CDS view to populate the gallery
 -   Handle checking-in and checking-out process for a visitor
 
 
 ## Prerequisites
 
-* Completion of **Module 0 Lab 0 - Validate lab environment**
-* Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
+* Completion of Lab 1 - Data Modeling
 
 Things to consider before you begin
 -----------------------------------
@@ -51,7 +50,7 @@ Exercise \#1: Create Security Canvas App
 Task \#1: Create Canvas App
 ---------------------------
 
-1.  Open your Campus Management solution.
+1.  Open the Campus Management solution.
 
     -   Sign in to <https://make.powerapps.com>
 
@@ -67,7 +66,7 @@ Task \#1: Create Canvas App
     -   If you are creating your first app, this will ask you to set the
         Country/region for the app. Click **Get Started.**
     -   Click File and select Save As.
-    -   Check if **The Cloud** is selected. Enter **[Your Last Name] Campus Security** for Name and
+    -   Check if **The Cloud** is selected. Enter **Campus Security** for Name and
         click **Save**. This will make sure that the changes are not lost if the app closes unexpectedly.
     -   Click the back arrow at the top right (below "Power Apps") to return to the app.
 
@@ -282,8 +281,8 @@ Usability of a mobile app significantly improves when, in addition to the text i
 
 # Challenges
 
-* Avoid manual entry of the visit code
+* How to avoid manual entry of the visit code?
 * Add building validation for the visit
 * Add validation of the visit actual time vs visit scheduled time (too early, too late, etc)
 * Add detailed status of the visit, e.g. email display and validation for the visitor, reason for denying building access, etc
-* Multiple buildings/meetings/checkings during a single campus visit. For example, someone may visit campus for a day and during that day they will meet staff members in multiple buildings at different time of the day. Would you consider bringing *appointment* entity into the soluton?
+* How would you handle the requirement of multiple buildings/meetings/checkings during the single campus visit. For example, someone may visit campus for a day and during that day they will meet staff members in multiple buildings at different time of the day. Would you consider bringing *appointment* entity into the soluton?
