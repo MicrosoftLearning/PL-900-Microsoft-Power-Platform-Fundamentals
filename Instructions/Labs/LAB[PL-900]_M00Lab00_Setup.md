@@ -39,7 +39,7 @@ Exercise 1 – Acquire your Power Platform trial tenant
 Exercise 2 - Create your environment 
 ------------------------------------------
 
-In this exercise, you will be create your **Practice** environment that you will do the majority of your lab work in.
+In this exercise, you will create your **Practice** environment that you will do the majority of your lab work in.
 
 ### Task 1 – Create environment
 
@@ -61,4 +61,4 @@ In this exercise, you will be create your **Practice** environment that you will
 
 4. Your environment may take a few minutes to provision. Refresh the page if needed. When your environment is prepared, select your **Practice** environment by clicking on the ellipses next to its name to expand the drop down menu and select **Settings.** 
 
-3.  Explore the different areas in **Settings** that you are interested in but do not make any changes yet. 
+5.  Explore the different areas in **Settings** that you are interested in but do not make any changes yet. 
