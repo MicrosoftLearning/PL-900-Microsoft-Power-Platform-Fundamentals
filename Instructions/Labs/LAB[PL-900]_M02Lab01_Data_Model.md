@@ -17,7 +17,7 @@ Campus administration would like to modernize their visitor registration system 
 
 Throughout this course, you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
 
-In this lab, you will set up an environment, create Common Data Service (CDS) database, and create a solution to track your changes. You will also create a data model to support the following requirements:
+In this lab, you access your environment, create a Common Data Service (CDS) database, and create a solution to track your changes. You will also create a data model to support the following requirements:
 
 -   R1 – Track the locations (buildings) of the campus visits
 -   R2 – Record basic information to identify and track the visitors 
@@ -41,7 +41,7 @@ Your solution will contain several entities upon completion of all the customiza
 
 ## Prerequisites:
 
-* None
+* Completion of **Module 0 Lab 0 - Validate lab environment**
 
 Things to consider before you begin:
 -----------------------------------
@@ -50,61 +50,17 @@ Things to consider before you begin:
 * Data types, restrictions (e.g. max length of a name)
 * Datetime formatting to support easy localization
 
-Exercise \#1: Create Environment and Solution
+Exercise \#1: Create Solution
 ==================================================
 
-**Objective:** In this exercise you will prepare the environment and create a solution to support the data modeling process. 
+**Objective:** In this exercise, you will prepare the environment and create a solution to support the data modeling process. 
 
-Task \#1: Create Environment
------------------------------
-
-If you do not have and were not given an environment prior to the exercise, in this task you will create a new working environment. Otherwise, you can move onto the next task.
-
-1.  Sign in to <https://aka.ms/ppac>
-
-2.  Select **Environments** and click **New** from the top menu. This will open
-    a menu on the right-hand side of the window.
-
-3.  Enter **Bellows College [Your Last Name]** for **Name**.
-
-4.  Select **Production** in the dropdown for **Type.**
-
-5.  Select your **Region**
-
-6.  Enter the **Purpose** for creating this environment (Optional). 
-    
-7.  Turn on the **toggle** to **create a database for this environment** if you
-    wish to create the database along with this, otherwise this can be done once
-    the environment is configured.
-
-8.  Click **Next.**
-
-9.  Select **Language** and **Currency**. For the purposes of these labs, the
-    environments have **English** and **US dollars** (USD) selected.
-
-10. Leave the **Enable Dynamics 365 apps** disabled for the purpose of these
-    labs.
-
-11. Leave the **Deploy Sample apps and data** disabled for the purpose of these
-    labs.
-
-12. Click **Save**.
-
-13. Your environment may take a few minutes to provision. You can click the **Refresh** button to refresh the list. When the environment is provisioned, the **State** will change to Ready.
-
-14. If you did not previously create your database, select your environment and click **Create my database**. Otherwise, skip this step.
-
-    - Select **Currency** and **Language**. For the purposes of these labs, the
-    environments have **US dollars** (USD) and **English** selected.
-
-    - Click **Create my Database**.
-
-Task \#2: Create Solution and Publisher
+Task \#1: Create Solution and Publisher
 ---------------------------------------
 
 1.  Create Solution
 
-    -   Sign in to <https://make.powerapps.com>
+    -   Sign in to <https://make.powerapps.com>. You may need to reauthenticate - click **Sign in** and follow instructions if needed.
 
     -   Select your environment by clicking on **Environment** on the upper right corner of the screen and choosing your environment from the drop-down menu.
 
@@ -131,7 +87,7 @@ Task \#2: Create Solution and Publisher
     
     -   Click **Create**.
 
-Task \#3: Add Existing Entity
+Task \#2: Add Existing Entity
 -----------------------------
 
 1.  Click to open your **Campus Management** solution you just created.
@@ -236,7 +192,7 @@ We would like to assign each visit a unique number that can be easily entered an
 Task #3: Create Relationships
 ------------------------------
 
-1.  Ensure that you are still viewing the **Visit** entity of the **Campus Management** solution. If not, navigate there.
+1.  Ensure that you are still viewing the **Visit** entity of your **Campus Management** solution. If not, navigate there.
 2.  Create Visit to Contact relationship
     * Select the **Relationships** tab.
     * Click **Add Relationship** and select **Many-to-one**
@@ -278,7 +234,7 @@ Task #3: Create Relationships
 9. Select **CampusImportDataMap**, press **Next**.
 10. Review mapping summary, then press **Next**, and then press **Submit**.
 11. Press **Finish**.
-12. The data import will now begin. You can now use the Refresh button on the right side of the My Imports screen to refresh the table until all four imports have a **Status Reason** of **Completed**. This may take a few minutes.
+12. The data import will now begin. You can now use the Refresh button on the right side of the **My Imports** screen to refresh the table until all four imports have a Status Reason of **Completed**. This may take a few minutes.
 
 ## Task #3: Verify Data Import
 
@@ -291,7 +247,7 @@ Task #3: Create Relationships
 
 # Challenges
 
-* Would you consider using *appointment* activity as part of the solution? What would it change?
+* Would you consider using appointment activity as part of the solution? What would it change?
 * How to enforce the scheduled end to be after the scheduled start? 
 * Add support for multiple meetings during a single visit.
 * Secure the building access not only for external contacts but for internal staff member as well.
