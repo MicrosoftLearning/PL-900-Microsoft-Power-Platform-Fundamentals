@@ -1,11 +1,11 @@
 ---
 lab:
-    title: 'Lab 6: How to build an automated solution'
-    module: 'Module 7: Introduction to Power Automate'
+    title: 'Lab: Power Automate'
+    module: 'Module 4: Get Started with Power Automate'
 ---
 
-# Module 7: Introduction to Power Automate
-## Lab 6: How to build an automated solution
+# Module 4: Get started with Power Automate
+## Lab: Power Automate
 
 Scenario
 ========
@@ -28,15 +28,14 @@ The following have been identified as requirements you must implement to complet
 
 ## Prerequisites
 
-* Completion of **Module 0 Lab 0 - Validate lab environment**
-* Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
-* Campus Staff app created in **Module 3 Lab 2 – How to build a canvas app, Part 1** (for testing)
+* Completion of Lab 1 - Data Modeling
+* Campus Staff app created in Part 1 of Lab 2 – Canvas App (for testing)
 
 Things to consider before you begin
 -----------------------------------
 
--   What is the most appropriate distribution mechanism for the visitor codes?
--   How could overstays be measured and strict policies enforced?
+-   What is the most appropriate distribution mechanism for the visitor codes.
+-   How overstays could be measured and strict policies enforced.
 
 Exercise \#1: Create Visit Notification flow
 ===============================
@@ -46,7 +45,7 @@ Exercise \#1: Create Visit Notification flow
 Task \#1: Create flow
 ---------------------------
 
-1.  Open your Campus Management solution.
+1.  Open the Campus Management solution.
 
     -   Sign in to <https://make.powerapps.com>
 
@@ -54,7 +53,7 @@ Task \#1: Create flow
 
     -   Select **Solutions**.
 
-    -   Click to open your **Campus Management** solution.
+    -   Click to open the **Campus Management** solution.
 
 2.  Click **New** and select **Flow**. This will open the flow editor in a New window.
 
@@ -93,11 +92,10 @@ Task \#1: Create flow
     You are currently scheduled to visit Bellows Campus from {Scheduled Start} until {Scheduled End}.
 
     Your security code is {Code}, please do not share it. You will be required to produce this code during your visit.
-   ```
 
 
     Best regards,
-    
+
     Campus Administration
     Bellows College
    ```
@@ -110,7 +108,7 @@ Task \#2: Validate and test the flow
 --------------------------------
 
 1.  Open **Campus Staff** app you created 
-2.  Press **+** to add a new Visit record
+2.  Press + to add a new visit record
 3.  Enter required information, press **Save**
 4.  Open the flow, locate and open most recent **Run**
 5.  Open **Mail** step and verify that email content has been generated correctly.
@@ -121,15 +119,15 @@ Task \#2: Validate and test the flow
 
 ## Task #1: Create flow to retrieve records
 
-1. Open your Campus Management solution.
+1. Open the Campus Management solution.
 
    -   Sign in to <https://make.powerapps.com>
 
-   -   Select your **Environment.**
+   -   Select your **environment.**
 
    -   Select **Solutions**.
 
-   -   Click to open your **Campus Management** solution.
+   -   Click to open the **Campus Management** solution.
 
 2. Click **New** and select **Flow**. This will open the flow editor in a New window.
 
@@ -145,7 +143,7 @@ Task \#2: Validate and test the flow
 
    * Enter the following expression as **Filter Query**
 
-   ```
+     ```
      statecode eq 0 and bc_actualstart ne null and bc_actualend eq null and Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)
      ```
 
@@ -220,5 +218,5 @@ Task \#2: Validate and test the flow
 
 * Add building information and map to the notification flow.
 * Can you generate barcode for the visit code? When will that be useful?
-* How could you ensure user-friendly date formatting is used in the email body?
-* Is it possible to generate a table with overstay information and send only a single email?
+* How to ensure user-friendly date formatting in the email body?
+* Is it possible to generate a table with overstay information and send only single email?
