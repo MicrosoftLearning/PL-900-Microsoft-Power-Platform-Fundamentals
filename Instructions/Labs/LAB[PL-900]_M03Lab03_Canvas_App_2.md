@@ -27,7 +27,7 @@ You will follow the below outline to design the canvas app:
 -   Connect to Common Data Service as a data source
 -   Capture the input (visitor code) and locate the visitor record
 -   Configure a form viewer control to show the visitor information
--   Use a CDS view to populate the gallery
+-   Use a Common Data Service view to populate the gallery
 -   Handle checking-in and checking-out process for a visitor
 
 
