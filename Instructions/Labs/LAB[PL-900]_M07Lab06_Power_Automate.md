@@ -1,10 +1,10 @@
 ---
 lab:
     title: 'Lab 6: How to build an automated solution'
-    module: 'Module 7: Introduction to Power Automate'
+    module: 'Module 4: Introduction to Power Automate'
 ---
 
-# Module 7: Introduction to Power Automate
+# Module 4: Introduction to Power Automate
 ## Lab 6: How to build an automated solution
 
 Scenario
