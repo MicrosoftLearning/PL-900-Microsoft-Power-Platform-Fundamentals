@@ -1,10 +1,10 @@
 ---
 lab:
     title: 'Lab 7: How to build a simple dashboard'
-    module: 'Module 9: Introduction to Power BI'
+    module: 'Module 5: Introduction to Power BI'
 ---
 
-# Module 9: Introduction to Power BI
+# Module 5: Introduction to Power BI
 ## Lab 7: How to build a simple dashboard
 
 Scenario
