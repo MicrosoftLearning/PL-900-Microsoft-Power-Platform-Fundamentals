@@ -4,7 +4,7 @@ lab:
     module: 'Module 3: Get started with Power Apps'
 ---
 
-# Module 3: Module 3: Get started with Power Apps
+# Module 3: Get started with Power Apps
 
 ## Lab 2: How to build a canvas app, Part 1
 
