@@ -1,11 +1,10 @@
 ---
 lab:
     title: 'Lab 8: How to build a basic chatbot'
-    module: 'Module 11: Intro to Power Virtual Agents'
+    module: 'Module 6: Intro to Power Virtual Agents'
 ---
 
-# Module 11: Intro to Power Virtual Agents
-
+# Module 6: Intro to Power Virtual Agents
 ## Lab 8: How to build a basic chatbot
 
 # Scenario
