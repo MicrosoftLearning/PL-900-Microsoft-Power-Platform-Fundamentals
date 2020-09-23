@@ -29,7 +29,7 @@ Finally, you will import sample data into Common Data Service.
 To prepare your learning environments you will:
 
 * create a solution and publisher
-* add both new and existing components required to meet the application requirements. Refer to the [data model document](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Labs/Campus%20Management.png) for the metadata description (entities and relationships). You can hold CTRL+click or right click the link to open the data model document in a new window.
+* add both new and existing components required to meet the application requirements. Refer to the [data model document](../../Allfiles/Campus%20Management.png) for the metadata description (entities and relationships). You can hold CTRL+click or right click the link to open the data model document in a new window.
 
 Your solution will contain several entities upon completion of all the customizations:
 
@@ -201,31 +201,50 @@ We would like to assign each visit a unique number that can be easily entered an
 
 **Objective:** In this exercise you will import sample data into the Common Data Service database.
 
-## Task #1: Import Data Map
+## Task #1: Import solution
 
-1. Download [CampusDataMap.xml](../../Allfiles/Labs/CampusDataMap.xml) if you have not already.
-2. Navigate to Power Platform Admin Center at <https://admin.powerplatform.microsoft.com> and sign in.
-3. Select your Bellows College environment.
-4. Click **Settings** at the top.
-5. Expand **Data Management** section, then select **Data Maps**. This will open import map screen in a new browser tab.
-6. Click **Import**, then click **Choose File**. Locate and select **CampusDataMap.xml** downloaded earlier, and then press **OK**. 
-7. The Campus Data Map file should successfully be imported. If you encounter an error, please go back and validate that you have created all of the required entities and fields from the previous tasks.
-8. Navigate back to the browser window with <https://make.powerapps.com> open. Click **Solutions** from the top menu and click **Publish all customizations.**
+In this task you will import a solution that contains the Power Automate flow required to complete data import.
+
+1. Download [Data Import Solution](../../Allfiles/DataImport_1_0_0_2_managed.zip) if you have not already.
+2. Sign in to <https://make.powerapps.com>.
+3. Select your **[my initials] Practice** environment at the top right, if it is not already selected.
+4. Select **Solutions** in the left navigation panel.
+5. Click **Import**, then click **Browse**. Locate and select **DataImport_1_0_0_2_managed.zip** downloaded earlier, and then press **Next**.
+
+   > [!IMPORTANT]
+   > You may receive the following message: 
+   >
+   > There are missing dependencies. Install the following solutions before installing this one: "&lt;solution name&gt;". 
+   >
+   > That message indicates that either the data model is not complete, the publisher prefix is not **bc**, or the **Building** and **Visit** entity names differ from the names listed in the steps above. 
+
+6. Press **Next**. You should be prompted to re-establish connections. 
+7. Expand the connection dropdown and select **+ New Connection**.
+8. The new browser window or tab will open. Select **Create** when prompted to create Common Data Service connection. Sign in if required to complete creating the connection.
+9. Switch back to the previous tab where you were importing the solution.
+10. Click **Refresh** to refresh the list of connections. 
+11. Ensure the connection you just created is selected.
+12. Press **Import**.
+13. Wait until the import is complete.
 
 ## Task #2: Import Data  
 
-1. Download [CampusData.zip](../../Allfiles/Labs/CampusData.zip).
-2. Navigate to Power Platform Admin Center at <https://admin.powerplatform.microsoft.com>.
-3. Select your Bellows College environment.
-4. Click **Settings** at the top.
-5. Expand **Data Management** section, then select **Data import wizard**.
-6. Click **IMPORT DATA**.
-7. Click **Choose File**, then locate and select **CampusData.zip** downloaded earlier.
-8. Press **Next**, then press **Next** again.
-9. Select **CampusImportDataMap**, press **Next**.
-10. Review mapping summary, then press **Next**, and then press **Submit**.
-11. Press **Finish**.
-12. The data import will now begin. You can now use the Refresh button on the right side of the My Imports screen to refresh the table until all four imports have a **Status Reason** of **Completed**. This may take a few minutes.
+1. Open **Data Import** solution.
+
+2. Check the **Status** of the **Import Data** flow.
+
+3. If **Status** is **Off**, select **...** then select **Turn On**.
+
+   > [!IMPORTANT]
+   > If you receive an error message verify that the entities and fields you created match the instructions above.
+
+4. Select **Import Data** component.
+
+5. Click **Run** then click **Run flow** when prompted.
+
+6. Click **Done**.
+
+7. Wait until the flow instance completes the run. You can open the running instance to monitor the progress.
 
 ## Task #3: Verify Data Import
 
