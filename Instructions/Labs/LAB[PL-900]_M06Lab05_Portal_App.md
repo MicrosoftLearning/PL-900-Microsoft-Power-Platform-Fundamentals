@@ -1,10 +1,10 @@
 ---
 lab:
     title: 'Lab 5: Introduction to Power Apps portals'
-    module: 'Module 6: Introduction to Power Apps portals'
+    module: 'Module 3: Get started with Power Apps'
 ---
 
-# Module 6: Introduction to Power Apps portals
+# Module 3: Get started with Power Apps
 
 ## Lab 5: Introduction to Power Apps portals
 
