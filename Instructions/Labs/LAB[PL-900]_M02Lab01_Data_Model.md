@@ -219,7 +219,7 @@ In this task you will import a solution that contains the Power Automate flow re
    > That message indicates that either the data model is not complete, the publisher prefix is not **bc**, or the **Building** and **Visit** entity names differ from the names listed in the steps above. 
 
 6. Press **Next**. You should be prompted to re-establish connections. 
-7. Expand the connection dropdown and select **+ New Connection**.
+7. Expand the **Select a connection** dropdown and select **+ New Connection**.
 8. The new browser window or tab will open. Select **Create** when prompted to create Common Data Service connection. Sign in if required to complete creating the connection.
 9. Switch back to the previous tab where you were importing the solution.
 10. Click **Refresh** to refresh the list of connections. 
@@ -236,19 +236,19 @@ In this task you will import a solution that contains the Power Automate flow re
 3. If **Status** is **Off**, select **...** then select **Turn On**.
 
    > [!IMPORTANT]
-   > If you receive an error message verify that the entities and fields you created match the instructions above.
+   > If you receive an error message, verify that the entities and fields you created match the instructions above.
 
-4. Select **Import Data** component.
+4. Select **Import Data** component. A new tab will open Power Automate. Click **Get Started** if presented with a popup. 
 
 5. Click **Run** then click **Run flow** when prompted.
 
 6. Click **Done**.
 
-7. Wait until the flow instance completes the run. You can open the running instance to monitor the progress.
+7. Wait until the flow instance completes the run. You can open the running instance to monitor the progress. The purpose of this flow was to generate example data for the upcoming labs. In the next task, you will verify that the data import was successful. 
 
 ## Task #3: Verify Data Import
 
-1. Select the **Campus Management** solution. If you do not still have this open, navigate to <https://make.powerapps.com> and click Solutions on the left pane to locate your solution.
+1. Navigate back to the previous Power Apps tab. Click **Done** on the popup. Select **Solutions** on the left navigation bar and open your **Campus Management** solution.
 2. Click to open the **Visit** entity, then select the **Data** tab.
 3. Click **Active Visits** in the top right-hand corner to display the view selector, then select **All fields**
 4. If the import was successful, you should see a list of visit entries.
