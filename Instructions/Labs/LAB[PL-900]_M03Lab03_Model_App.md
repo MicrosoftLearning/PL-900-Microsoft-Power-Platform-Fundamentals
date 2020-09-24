@@ -88,7 +88,7 @@ Task \#1: Edit Visit Form
 
 9.  While still selected on the Code field, check the checkbox for the **Read-only field** in the Properties panel.
 
-10.  Select **Owner** field and in the Properties panel change the **Field label** to **Host**
+10.  Select **Owner** field. In the Properties panel, change the **Field label** to **Host**
 
 11.  Click **Save** at the top right and wait for the save to complete.
 
@@ -111,11 +111,11 @@ In this task, we will modify default Active Visits view and create new view for 
     *  **Scheduled Start** 
     *  **Scheduled End**
     
-3.  Click on the dropdown arrow by the **Created On** column and select **Remove**. Field **Created On** will now be removed from the view.
+3.  Click the **Created On** column and select **Remove**. Field **Created On** will now be removed from the view.
 
-4.  Click on the dropdown arrow by the **Name** column and select **Remove**. Field **Name** will now be removed from the view.
+4.  Click the **Name** column and select **Remove**. Field **Name** will now be removed from the view.
 
-5.  In the Properties panel on the right, click **Sort by** and select **Scheduled Start**. Click on **Scheduled Start** again to change the order to descending (new visits on top).
+5.  In the Properties panel on the right, click **Sort by ...** and select **Scheduled Start**. Click on **Scheduled Start** again to change the order to descending (new visits on top).
 
 6.  Resize the individual column widths to fit the data.
 
@@ -123,7 +123,7 @@ In this task, we will modify default Active Visits view and create new view for 
 
 8.  Click **Publish** and wait for the publishing to complete.
 
-9.  Now we will clone the view to create a new view for today's visits. Click `x` next to the existing filter in the Properties panel to remove the filter.
+9.  Now we will clone the view to create a new view for today's visits.
 
 10.  Click on the dropdown arrow by the **Save** button (be careful not to press the button itself) and select **Save As**.
 
@@ -165,11 +165,15 @@ Task \#1: Create Application
         
 2.  Create the Model-Driven Application
 
-    -   Click **New** and select **App** and then **Model-Driven App**. This will open a new tab.
+    -   Click **New** and select **App** and then **Model-driven app**. This will open a new tab.
     
     -   Select **Use existing solution to create the App** checkbox
     
-    -   Enter **[Your Last Name] Campus Management** for Name and click **Done**.
+    -   Enter **[Your Last Name] Campus Management** for Name and click **Next**.
+    
+    -   Select your Campus Management solution
+    
+    -   Click **Done**
     
 3.  Click the pencil icon next to **Site Map.**
 
@@ -177,11 +181,11 @@ Task \#1: Create Application
 
     -   Select **New Area**.
 
-    -   Change the Title of the **New Area** to **Campus** in the properties pane on the right.
+    -   Change the Title of the New Area to **Campus** in the properties pane on the right.
 
     -   Select **New Group**.
 
-    -   Change the Title of the **New Group** to **Security** in the properties pane on the right.
+    -   Change the Title of the New Group to **Security** in the properties pane on the right.
     
 5.  Add the Contact entity to the sitemap
 
@@ -254,7 +258,7 @@ Task \#2: Test Application
     
 2.  Create new Contact record
 
-    -   Select **Contacts**
+    -   The app should open to the **Active Contacts** view
 
     -   Click **New** from the top menu.
 
@@ -286,13 +290,13 @@ Task \#2: Test Application
         -   **Name**: New test visit
         -   **Building**: select Microsoft Building
         -   **Visitor**: select John Doe
-        -   **Scheduled Start**: select today's date and 2:00 PM as start time
-        -   **Scheduled End**: select today's date and 3:30 PM as end time
+        -   **Scheduled Start**: select tomorrow's date and 2:00 PM as start time
+        -   **Scheduled End**: select tomorrow's date and 3:30 PM as end time
         
     -   Click **Save and Close**. This will create the record and you should be able to see it on the
         Active Visits View.
         
-    -   Change view to **Today's Visits**. You should be able to see the entered visit in the view.
+    -   Change view to **Today's Visits**. You should be able to see the new visit in the view.
     
 5.  You may add more test records.
 
