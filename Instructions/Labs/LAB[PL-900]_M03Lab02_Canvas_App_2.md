@@ -102,7 +102,7 @@ Task \#2: Display Visitor information
     
     -   Select **HintText** property and enter **"Enter visitor code"** as the value (including double quotes)
     
-    -   Click on **...** next to control name in a tree view, select **Rename**, change the name to **textCode**
+    -   Click on **...** next to the control name in a tree view (TextInput1), select **Rename**, change the name to **textCode**
     
 2. Add form view
 
@@ -122,9 +122,11 @@ Task \#2: Display Visitor information
    
    -   Change the order of the selected fields by dragging the field cards in the list. Recommended order is Visitor, Building, Scheduled Start, Scheduled End, Actual Start, Actual End
    
+   -   Click the **X** to close the Fields pane
+   
    -   In the Advanced tab, select **Item** property and enter `LookUp(Visits, Code = textCode.Text)` 
 
-3.  To preserve work in progress, click **File \| Save** then press **Save**. Click the back arrow at the top right (below "Power Apps") to return to the app.
+3. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 4. Test the app
 
