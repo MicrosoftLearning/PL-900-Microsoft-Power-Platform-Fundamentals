@@ -83,7 +83,7 @@ Task \#1: Create Canvas App
     
     3.  Select **Visits** and wait for the Visit entity to display under the Data **In your app** section.
     
-4.  To preserve work in progress, click **File \| Save** then press **Save**
+4.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 Task \#2: Display Visitor information
 --------------------------------
@@ -217,7 +217,7 @@ Task \#3: Add Check In and Check Out Buttons
      )
      ```
 
-5. To preserve work in progress, click **File \| Save** then press **Save**. Click the back arrow at the top right (below "Power Apps") to return to the app.
+5. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 6. Press **F5** to run the app. Both buttons should be disabled. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. The **Check In** button should become enabled.
 
@@ -270,7 +270,7 @@ To perform the check in and check out process we need to update Common Data Serv
 
    The only difference from check in expression is setting of the *Status* field to *Inactive* value.
 
-5. To preserve work in progress, click **File \| Save** then press **Save**.
+5. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 6. Press **F5** to run the app. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. The **Check In** button should become enabled.
 
@@ -312,7 +312,7 @@ Usability of a mobile app significantly improves when, in addition to the text i
    )
    ```
 
-5. To preserve work in progress, click **File \| Save** then press **Save**.
+5. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 6. Press **F5** to run the app. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. Verify the icon displays a frown emoji.
 
