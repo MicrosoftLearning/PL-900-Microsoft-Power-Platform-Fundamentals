@@ -193,9 +193,9 @@ Task \#1: Test App
 
 2.  Save and publish the application
 
-    -   Click **File** and then click **Save**.
+    -   Click **File** and, if the Save button is displayed, click **Save**.
 
-    -   Click Publish.
+    -   Click **Publish**.
 
     -   Click **Publish this Version**.
 
