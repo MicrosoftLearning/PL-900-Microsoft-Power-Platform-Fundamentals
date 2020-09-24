@@ -142,7 +142,7 @@ Task \#2: Display Visitor information
    
    -   Locate a Visit record that does not have an Actual Start or Actual End value. Select and copy the **Code** for this Visit.
    
-   -   Switch to the browser tab with the app, press F5 to run the app
+   -   Switch to the browser tab with the app, press F5 or click the Play icon at the upper-right corner to preview the app.
    
    -   Paste the copied value into the search textbox, verify that the record is displayed in the form
    
