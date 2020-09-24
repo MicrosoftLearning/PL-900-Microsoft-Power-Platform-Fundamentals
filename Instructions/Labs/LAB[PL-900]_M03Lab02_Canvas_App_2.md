@@ -102,7 +102,7 @@ Task \#2: Display Visitor information
     
     -   Select **HintText** property and enter **"Enter visitor code"** as the value (including double quotes)
     
-    -   Click on **...** next to the control name in a tree view (TextInput1), select **Rename**, change the name to **textCode**
+    -   Click on **...** next to the control name in tree view (TextInput1), select **Rename**, change the name to **textCode**
     
 2. Add form view
 
@@ -153,6 +153,7 @@ Task \#2: Display Visitor information
 
 Task \#3: Add Check In and Check Out Buttons
 ---------------------------------------
+In this task, we will create buttons for the user to check in and check out of their Visit. 
 
 1. Save search results in a variable to reuse across the control
 
@@ -169,13 +170,13 @@ Task \#3: Add Check In and Check Out Buttons
    
    2. Click **Button**
    
-   3. Change the button **Text** property to **"Check In"** (you can type within the existing quotes)
+   3. In the properties pane, change the button **Text** property to **"Check In"** (you can type within the existing quotes)
    
-   4. Rename the button as **CheckInButton** by clicking the button name (Button1) in the right panel
+   4. Click on **...** next to the button name in tree view (Button1), select **Rename**, change the name to **CheckInButton**
    
    5. Click **Button** to insert another button
    
-   6. Change the button **Text** property to **"Check Out"**
+   6. In the properties pane, change the button **Text** property to **"Check Out"** (you can type within the existing quotes)
    
    7. Rename the button as **CheckOutButton**
    
