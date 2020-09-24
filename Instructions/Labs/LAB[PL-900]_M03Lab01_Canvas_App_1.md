@@ -128,7 +128,7 @@ In this task, you will configure the pre-generated gallery to display the title,
 
 1.  Expand **BrowseScreen1** under **Tree view**
 2.  Select **BrowseGallery1**
-3.  Select **TemplateSize** property from the property dropdown
+3.  Select **TemplateSize** property from in the Properties panel
 4.  Replace the expression with the following `Min(150, BrowseGallery1.Height - 60)`. That will ensure sufficient space for additional information.
 5.  Edit the gallery by pressing the pencil icon in the top left corner of the gallery (hover over the app preview and click the pencil icon).
 6.  Select the Date Time field.
