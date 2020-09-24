@@ -222,7 +222,7 @@ In this task, we will create buttons for the user to check in and check out of t
 
 5. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
-6. Press **F5** to run the app. Both buttons should be disabled. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. The **Check In** button should become enabled.
+6. Press **F5** to run the app. Both buttons should be disabled. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. The **Check In** button should become enabled. Clear the search box contents.
 
 7. Press **ESC** to exit the running app.
 
@@ -236,7 +236,7 @@ To perform the check in and check out process we need to update Common Data Serv
 
 1. Select **Check In** button.
 
-2. Set **OnSelect** property  to the following expression.
+2. Set **OnSelect** property on the Advanced tab to the following expression.
 
    ```
    Patch(
@@ -252,11 +252,13 @@ To perform the check in and check out process we need to update Common Data Serv
 
    * `Patch(Visits, Visit, {'Actual Start': Now()});`. *Patch* method updates **Visits** entity, the record identified by **Visit** variable (which is the current visit). The expression sets the value of *Actual Start* field to the current date and time (*Now()* method).
    * `Refresh([@Visits]);`. This expression refreshes the visit records as the underlying values have changed
-   * `Set(Visit, LookUp(Visits, Code = textCode.Text));` This expression updates the *Visit* variable with fresh data from CDS.
+   * `Set(Visit, LookUp(Visits, Code = textCode.Text));` This expression updates the *Visit* variable with fresh data from Common Data Service.
+   
+   When a user clicks this button, the Actual Start of the Visit will be set to the current date and time and the data will refresh.
 
 3. Select **Check Out** button.
 
-4. Set **OnSelect** property  to the following expression.
+4. Set **OnSelect** property on the Advanced tab to the following expression.
 
    ```
    Patch(
@@ -271,15 +273,15 @@ To perform the check in and check out process we need to update Common Data Serv
    Set(Visit, LookUp(Visits, Code = textCode.Text));
    ```
 
-   The only difference from check in expression is setting of the *Status* field to *Inactive* value.
+   When a user clicks this button, the Actual End will be set to the current date and time, the Status of the Visit record will be set to Inactive, and the data will refresh.
 
 5. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
-6. Press **F5** to run the app. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. The **Check In** button should become enabled.
+6. Press **F5** or click the Play button to run the app. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. The **Check In** button should become enabled.
 
 7. Press **Check In** button. The following should happen:
 
-   1. *Actual Start* has a current date and time
+   1. **Actual Start** is set to the current date and time
    
    2. **Check In** button is disabled
    
@@ -287,11 +289,13 @@ To perform the check in and check out process we need to update Common Data Serv
 
 8. Press **Check Out** button.
 
-   1. *Actual End* has a current date and time
+   1. **Actual End** is set to the current date and time
    
    2. Both buttons are disabled
 
-9. Press **ESC** to exit the running app.
+9. Clear the search box contents.
+
+10. Press **ESC** to exit the running app.
 
 Task \#5: Add visual indicators
 --------------------------------------
