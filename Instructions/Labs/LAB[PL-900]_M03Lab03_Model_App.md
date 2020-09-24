@@ -105,11 +105,11 @@ In this task, we will modify default Active Visits view and create new view for 
 
 2.  Add the following fields to the view by either clicking or dragging and dropping the fields:
 
-    1.  **Code**
-    2.  **Visitor**
-    3.  **Building**
-    4.  **Scheduled Start** 
-    5.  **Scheduled End**
+    *  **Code**
+    *  **Visitor**
+    *  **Building**
+    *  **Scheduled Start** 
+    *  **Scheduled End**
     
 3.  Click on the dropdown arrow by the **Created On** column and select **Remove**. Field **Created On** will now be removed from the view.
 
