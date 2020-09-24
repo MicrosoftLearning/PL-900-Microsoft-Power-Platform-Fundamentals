@@ -55,7 +55,7 @@ Task \#1: Create Canvas App
 
     -   Sign in to <https://make.powerapps.com>
 
-    -   If the Environment displayed in the top right is not your Bellows College environment, select your **Environment**. 
+    -   If the Environment displayed in the top right is not your Practice environment, select your **Environment**. 
 
     -   Select **Solutions**.
 
