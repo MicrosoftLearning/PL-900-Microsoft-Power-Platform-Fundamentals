@@ -323,7 +323,7 @@ Usability of a mobile app significantly improves when, in addition to the text i
 
 6. Press **F5** to run the app. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. Verify the icon displays a frown emoji.
 
-7. Find a different code value that has not been used before (it should not have an Actual Start or Actual End value). At this time, you can run **Campus Staff** app created previously to create new visit records. Verify the icon displays a smile emoji.
+7. Find a different code value that has not been used before (it should not have an Actual Start or Actual End value). You can navigate to the previous tab to copy another Code from one of the Visits you have created. You also have the option to run your **Campus Staff** app created previously to create new visit records. Verify the icon displays a smile emoji for this code.
 
 8. Press **ESC** to exit the running app.
 
