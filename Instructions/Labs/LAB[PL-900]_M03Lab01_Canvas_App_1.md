@@ -189,6 +189,7 @@ Task \#1: Test App
     -   Select a visit and verify that display form is working properly
     -   Return to the gallery and press + to create a new visit. Verify that edit form contains required fields including visitor, building, and scheduled start and end dates.
     -   Fill in the information and submit. Verify that the new record appears in the gallery.
+    -   Create at least 2 more visits.
     -   Press **ESC** key to close the app
 
 2.  Save and publish the application
