@@ -85,26 +85,29 @@ Task \#1: Create flow
    * Enter **Your scheduled visit to Bellows College** in the **Subject** field.
 
    * Enter the following text in **Email Body**:  
-        *Note: Dynamic content needs to be placed where fields are named in brackets. It is recommended to type all text first and then add dynamic content in the correct place.*
-
-   ```
-    Dear {First Name},
-
-    You are currently scheduled to visit Bellows Campus from {Scheduled Start} until {Scheduled End}.
-
-    Your security code is {Code}, please do not share it. You will be required to produce this code during your visit.
-   ```
-
-
-    Best regards,
+        
+     *Note: Dynamic content needs to be placed where fields are named in brackets. It is recommended to type all text first and then add dynamic content in the correct place.*
+   
+```
+Dear {First Name},
+   
+You are currently scheduled to visit Bellows Campus from {Scheduled Start} until {Scheduled End}.
+   
+Your security code is {Code}, please do not share it. You will be required to produce this code during your visit.
+   
+Best regards,
     
-    Campus Administration
-    Bellows College
-   ```
+Campus Administration
+Bellows College
+```
    
 10.  Select the **Untitled** flow name at the top and rename it to **Visit notification**
 
-11.  Press **Save**
+11. Press **Save**
+
+    You flow should look approximately like the following:
+
+![Power Automate visitor notification flow](media/4-power-automate-notify.png)
 
 Task \#2: Validate and test the flow
 --------------------------------
@@ -147,7 +150,7 @@ Task \#2: Validate and test the flow
 
    ```
      statecode eq 0 and bc_actualstart ne null and bc_actualend eq null and Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)
-     ```
+   ```
 
    To break it down
 
@@ -200,7 +203,11 @@ Task \#2: Validate and test the flow
 
 17.  Select flow name **Untitled** in the upper left corner and rename it to **Security Sweep**
 
-16.  Press **Save**
+18. Press **Save**
+
+    Your flow should look approximately like the following:
+
+![Security sweep scheduled flow](media/4-power-automate-security-sweep.png)
 
 ## Task #2: Validate and test the flow
 

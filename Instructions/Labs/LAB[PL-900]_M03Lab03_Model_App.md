@@ -162,7 +162,7 @@ Task \#1: Create Application
 
     -   While in your environment, click to open your **Campus Management**
         solution.
-        
+    
 2.  Create the Model-Driven Application
 
     -   Click **New** and select **App** and then **Model-driven app**. This will open a new tab.
@@ -206,7 +206,7 @@ Task \#1: Create Application
 
     -   Select **Entity** from the dropdown for **Type** and search for
         **Visit** entity from the dropdown for **Entity**.
-        
+    
 7.  Add the Building entity to the sitemap
 
     -   Select **Campus** area and click **Add**.
@@ -215,7 +215,7 @@ Task \#1: Create Application
     
     -   Enter **Settings** for **Title** in the **Properties** pane.
     
-    -   WHile still selected on the **Settings** Area, click **Add**.
+    -   While still selected on the **Settings** Area, click **Add**.
     
     -   Select **Subarea**.
     
@@ -278,7 +278,7 @@ Task \#2: Test Application
         
     -   Click **Save and Close** and this will show the newly created record on
         the Active Buildings View.
-        
+    
 4.  Create new Visit record
 
     -   Select **Visits** from the sitemap.
@@ -298,7 +298,11 @@ Task \#2: Test Application
         
     -   Change view to **Today's Visits**. You should be able to see the new visit in the view.
     
-5.  You may add more test records.
+5. You may add more test records.
+
+   Your running app should look approximately like the following:
+
+![Sample model driven app](media/3-model-app.png)
 
 # Challenges
 
