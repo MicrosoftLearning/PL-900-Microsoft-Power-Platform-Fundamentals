@@ -79,8 +79,7 @@ In this task, you will create a canvas app using the phone layout template based
     
     3.  Press **Save**.
 
-Task \#2: Configure Visits Detail Form
---------------------------------
+## Task \#2: Configure Visits Detail Form
 
 In this task, you will configure the Detail form to view information about individual visit records.
 
@@ -118,11 +117,16 @@ In this task, you will configure a form to edit information about individual vis
     * Visitor
 7.  Click **Add**
 8.  Rearrange fields in the **Fields** pane by dragging and dropping field names up or down. Recommended order is:
+    
     * Name, Building, Visitor, Scheduled Start, Scheduled End
+    
+    Your screen should look approximately like the following:
+
+![Canvas edit form](media/2-canvas-edit.png)
+
 9.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
-Task \#4: Configure Visits gallery
----------------------------------------
+## Task \#4: Configure Visits gallery
 
 In this task, you will configure the pre-generated gallery to display the title, start and end dates for the visit. 
 
@@ -172,6 +176,10 @@ Because number of visits continuously grows, users need a feature to filter the 
    )
    ```
    
+   Your screen should look approximately like the following:
+
+![Canvas filtering gallery](media/2-canvas-browse.png)
+
 8. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 # Exercise #2: Complete the App
