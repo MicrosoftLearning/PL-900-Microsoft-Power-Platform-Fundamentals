@@ -205,11 +205,11 @@ We would like to assign each visit a unique number that can be easily entered an
 
 In this task you will import a solution that contains the Power Automate flow required to complete data import.
 
-1. Download [Data Import Solution](../../Allfiles/DataImport_1_0_0_4_managed.zip) if you have not already.
+1. Download [Data Import Solution](../../Allfiles/DataImport_managed.zip) if you have not already.
 2. Sign in to <https://make.powerapps.com>.
 3. Select your **[my initials] Practice** environment at the top right, if it is not already selected.
 4. Select **Solutions** in the left navigation panel.
-5. Click **Import**, then click **Browse**. Locate and select **DataImport_1_0_0_2_managed.zip** downloaded earlier, and then press **Next**.
+5. Click **Import**, then click **Browse**. Locate and select **DataImport_managed.zip** downloaded earlier, and then press **Next**.
 
    > [!IMPORTANT]
    > You may receive the following message: 
