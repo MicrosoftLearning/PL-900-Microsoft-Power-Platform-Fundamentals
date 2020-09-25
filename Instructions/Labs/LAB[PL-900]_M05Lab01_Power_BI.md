@@ -48,7 +48,26 @@ Exercise \#1: Create Power BI Report
 
 **Objective:** In this exercise, you will create a Power BI report based on data from Common Data Service database.
 
-Task \#1: Prepare Data
+Task \#1: Install Power Bi Desktop / Prepare Power BI service
+---------------------------
+
+1.  If you do not have Power BI Desktop installed, navigate to [https://aka.ms/pbidesktopstore](https://aka.ms/pbidesktopstore) to download and install Power BI app.
+
+> [!IMPORTANT]
+> If you experience issues installing Power BI Desktop using Microsoft Store, try standalone installer that can be downloaded from [https://aka.ms/pbiSingleInstaller](https://aka.ms/pbiSingleInstaller).
+
+2. If you successfully installed Power BI Desktop, continue on [Task \#2](#task-2-prepare-data). If you do not have required permissions to install desktop applications or experience difficulties in running or configuring Power BI Desktop, complete the task steps below and then continue on [Task \#3](#task-3-create-chart-and-time-visualizations) but instead of Power BI Desktop use online Power BI service at [https://app.powerbi.com](https://app.powerbi.com) throughout the lab. 
+3. Download [visits.pbix](../../Allfiles/visits.pbix) and save on your computer.
+4. Navigate to [https://app.powerbi.com/](https://app.powerbi.com/). 
+5. Click **My Workspace**.
+6. Expand **+New** and select **Upload a file**.
+7. Select **Local File**.
+8. Locate and select **visits.pbix** file you've downloaded earlier.
+9. Once data load is complete, select **visits** report.
+10. Click **Edit**. If **Edit** menu item is not visible click **...** and then select **Edit**.
+11. Continue to [Task \#3](#task-3-create-chart-and-time-visualizations).
+
+Task \#2: Prepare Data
 ---------------------------
 
 1.  Find out your organization URL
@@ -56,12 +75,7 @@ Task \#1: Prepare Data
     * Navigate to Power Platform Admin Center at https://admin.powerplatform.com
     * In the left navigation page, select Environments, and then open your Bellows College environment.
     * Right mouse click **Environment URL** on the **Details** panel, then select **Copy link address**.
-2.  If you do not have Power BI Desktop installed, navigate to https://aka.ms/pbidesktopstore to download and install Power BI app.
-
-> [!IMPORTANT]
-> If you experience issues installing Power BI Desktop using Microsoft Store, try standalone installer that can be downloaded from https://aka.ms/pbiSingleInstaller.
-
-3. Open Power BI Desktop, sign in if prompted.
+2.  Open Power BI Desktop, sign in if prompted.
 
 2. Select **Get data**.
 
@@ -77,9 +91,9 @@ Task \#1: Prepare Data
 
 8. Select **Report** icon on the left toolbar.
 
-9. Expand **bc_Visits** node in the **Fields** panel.
+9. Expand **bc_Visit** node in the **Fields** panel.
 
-10. Click **...** beside **bc_Visits** and select **New Column**.
+10. Click **...** beside **bc_Visit** and select **New Column**.
 
 11. Complete the formula as following
 
@@ -89,22 +103,22 @@ Task \#1: Prepare Data
 
     and press ENTER. That will add a new field with the building name into the visits data.
 
-12. Click **...* next to the field and select **Rename**. Enter **Building** as the field name.
+12. Click **...** next to the **Column** field and select **Rename**. Enter **Building** as the field name.
 
-13. Click **...* next to the **bc_visitid** field and select **Rename**. Enter **Visits** as the field name.
+13. Click **...** next to the **bc_visitid** field and select **Rename**. Enter **Visit** as the field name.
 
-14. Click **...* next to the **bc_scheduledstart** field and select **Rename**. Enter **Start** as the field name.
+14. Click **...** next to the **bc_scheduledstart** field and select **Rename**. Enter **Start** as the field name.
 
 15. Save work in progress by pressing **File \| Save** and entering a filename of your choice.
 
-## Task #2: Create Chart and Time Visualizations
+## Task #3: Create Chart and Time Visualizations
 
 1. Press the pie chart icon in the **Visualizations** panel to insert the chart.
 2. Drag the **Building** field and drop it into **Legend** box.
-3. Drag the **Visits** field and drop it into **Values** target box.
+3. Drag the **Visit** field and drop it into **Values** target box.
 4. Resize the pie chart using corner handles so that all chart components are visible.
-5. Click **New visual** on the Power BI ribbon then, if not already selected, select stacked column chart in **Visualizations** pane. 
-6. Drag **Visits** field and drop it into **Values** target box.
+5. Click on the report outside of the pie chart to deselect it, select stacked column chart in **Visualizations** pane. 
+6. Drag **Visit** field and drop it into **Values** target box.
 7. Drag **Start** field and drop it into **Axis** target box.
 8. In the Visualizations pane, click **x** next to **Day** and **Quarter** to leave only **Year** and **Month** totals for the Axis.
 9. Resize the chart as desired using the corner handles.
@@ -129,10 +143,10 @@ Exercise #2: Create Power BI Dashboard
 
 1. Within the webpage opened in the previous step, click **My workspace** at the top.
 2. Select your **report** from the list of items.
-3. Select **Pin a live page** on the menu. Depending on the layout you may need to press **...** to show additional menu items.
-4. Select **New dashboard** on **Pin to dashboard** prompt.
+3. Select **Pin a dashboard** on the menu. Depending on the layout you may need to press **...** to show additional menu items.
+4. Select **New dashboard** on **Pin to dashboard** prompt. 
 5. Enter **[Your Last Name] Campus Management** as a **Dashboard name**, press **Pin live**.
-6. Select **My workspace** at the top, select **Campus Management** dashboard.
+6. Select **My workspace** at the top, select **[Your Last Name] Campus Management** dashboard.
 7. Test interactivity of the pie and bar charts displayed.
 
 ## Task #3: Add Visualizations Using Natural Language
@@ -140,9 +154,12 @@ Exercise #2: Create Power BI Dashboard
 1. Within your **Campus Management** dashboard, select **Ask a question about your data** at the top.
 2. Enter **buildings by number of visits** in Q&A area. The bar chart will be displayed.
 3. Select **Pin visual**.
-4. Select **Existing dashboard**, select your **Campus Management** dashboard, press **Pin**.
-5. Test the behaviour by clicking on the chart to drilldown to Q&A.
+4. Select **Existing dashboard**, select your **[Your Last Name] Campus Management** dashboard, press **Pin**.
+5. Test the behavior by clicking on the chart to drilldown to Q&A.
 6. Click **Exit Q&A**.
+7. Navigate to **[Your Last Name] Campus Management** dashboard. It should look like the following:
+
+![Power BI Dashboard](media/5-powerbi-result.png)
 
 ## Task #4: Build Mobile Phone View
 
