@@ -88,18 +88,18 @@ Task \#1: Create flow
         
      *Note: Dynamic content needs to be placed where fields are named in brackets. It is recommended to type all text first and then add dynamic content in the correct place.*
    
-   ```
+```
 Dear {First Name},
    
 You are currently scheduled to visit Bellows Campus from {Scheduled Start} until {Scheduled End}.
    
 Your security code is {Code}, please do not share it. You will be required to produce this code during your visit.
    
-   Best regards,
+Best regards,
     
-   Campus Administration
-   Bellows College
-   ```
+Campus Administration
+Bellows College
+```
    
 10.  Select the **Untitled** flow name at the top and rename it to **Visit notification**
 
