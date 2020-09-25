@@ -325,6 +325,10 @@ Usability of a mobile app significantly improves when, in addition to the text i
 
 7. Find a different code value that has not been used before (it should not have an Actual Start or Actual End value). You can navigate to the previous tab to copy another Code from one of the Visits you have created. You also have the option to run your **Campus Staff** app created previously to create new visit records. Verify the icon displays a smile emoji for this code.
 
+   Your running app should look approximately like the following:
+
+![Canvas running security app](media/3-canvas-running.png)
+
 8. Press **ESC** to exit the running app.
 
 ## Task #6: Publish the app
@@ -341,4 +345,4 @@ Usability of a mobile app significantly improves when, in addition to the text i
 * Add building validation for the visit
 * Add validation of the visit actual time vs visit scheduled time (too early, too late, etc)
 * Add detailed status of the visit, e.g. email display and validation for the visitor, reason for denying building access, etc
-* Multiple buildings/meetings/checkings during a single campus visit. For example, someone may visit campus for a day and during that day they will meet staff members in multiple buildings at different time of the day. Would you consider bringing *appointment* entity into the soluton?
+* Multiple buildings/meetings/checkings during a single campus visit. For example, someone may visit campus for a day and during that day they will meet staff members in multiple buildings at different time of the day. Would you consider bringing *appointment* entity into the solution?
