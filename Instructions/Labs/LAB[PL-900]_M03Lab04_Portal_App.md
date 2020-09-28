@@ -190,7 +190,7 @@ Exercise \#3: Change the Portal Theme
 
 **Objective:** In this exercise, you will create a new theme that will alter the color scheme of your portal. 
 
-Task #1: Create a Webpage
+Task #1: Apply and Edit a Theme
 --------------------------------
 
 1.  Open Power Apps portals Studio
