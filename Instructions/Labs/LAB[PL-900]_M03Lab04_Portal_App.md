@@ -14,14 +14,14 @@ Bellows College is an educational organization with multiple buildings on campus
 
 Campus administration would like to provide the visitors with the information about the buildings on campus. The visitors will be able to view the buildings list on a website, which will be built using a Power Apps portal.
 
-In this lab, you will provision a Power Apps portal and create a portals web page that will show a listing of the buildings on campus.
+In this lab, you will provision a Power Apps portal and create a portals webpage that will show a listing of the buildings on campus.
 
 # High-level lab steps
 
 You will follow the below outline to design the Power Apps portal:
 
 * A Power Apps portal needs to be provisioned in the Common Data Service environment.
-* A web page will be configured to show a list of the buildings.
+* A webpage will be configured to show a list of the buildings.
 
 ## Prerequisites
 
@@ -72,23 +72,23 @@ Task \#2: Navigate to Portal
 
 3.  You should be redirected to a portal website with the landing page with a welcome message
 
-Exercise \#2: Create a Portal Web Page
+Exercise \#2: Create a Portal Webpage
 ===============================
 
-**Objective:** In this exercise, you will create a new web page that will display some static content as well as a list of buildings from the Common Data Service.
+**Objective:** In this exercise, you will create a new webpage that will display some static content as well as a list of buildings from the Common Data Service.
 
-Task #1: Create a Page
+Task #1: Create a Webpage
 --------------------------------
 
-1.  Open the Portal studio
+1.  Open Power Apps portals Studio
 
-    -   Sign in to <https://make.powerapps.com>
+    -   Sign in to <https://make.powerapps.com> (you may still have this open in your tabs)
 
     -   Locate the app that has the **Type** of **Portal**
 
-    -   click on the ellipses (...) and choose **Edit**
+    -   Click on the ellipses (**...**) and choose **Edit**
 
-2.  You are now in the Portals Studio.  This is where you can modify and create portal content
+2.  You are now in the Power Apps portals Studio. This is where you can modify and create portal content.
 
 3.  Create a new page
 
@@ -107,9 +107,9 @@ Task #1: Create a Page
 Task #2: Add Static Content
 --------------------------------
 
-1.  Add a section to the web page
+1.  Add a section to the webpage
 
-    -   On the canvas (area showing web page), select the **Page Copy** section
+    -   On the canvas (area showing webpage), select the **Page Copy** section. This is the large box around the 2 sentences of text in the middle of your page.
 
     -   On the toolbelt (left side), select the **Components** icon
 
@@ -117,54 +117,59 @@ Task #2: Add Static Content
 
 2.  Add Static Text
 
-    -   On the canvas (area showing web page), select the left column
+    -   On the canvas (area showing webpage), select the left column
 
     -   On the toolbelt (left side), select the **Components** icon
 
     -   Choose **Text** from the **Portal components** area
 
-    -   In the new text area, enter in or paste in some text
+    -   In the new text area, copy and paste the following text:
+          ```
+          The following is the building directory.
+          ```
+    -   Select the text box above the one you just edited, and click **Delete** on the command bar to remove the default text.
 
 3. Add an Image
 
-    -   On the canvas (area showing web page), select the right column
+    -   On the canvas (area showing webpage), select the right column
 
     -   On the toolbelt (left side), select the **Components** icon
 
     -   Choose **Image** from the **Portal components** area
 
-    -   Select the new image area
-
-    -   In the properties pane, choose an existing **Image** and locate and select the **Product A.png**
+    -   In the properties pane, click **Select an image**. Locate and select the **Product A.png**
 
 4.  Click **Browse website** to view the page so far.  Notice that there is **Building Directory** option on the main menu.
 
 Task #3: Add a List Component
 --------------------------------
 
-1.  Open the Portal studio
+1.  Open Power Apps portals Studio
 
-    -   Sign in to <https://make.powerapps.com>
+    -   Sign in to <https://make.powerapps.com> (you may still have this open in your tabs)
 
     -   Locate the app that has the **Type** of **Portal**
 
-    -   click on the ellipses (...) and choose **Edit**
+    -   Click on the ellipses (**...**) and choose **Edit**
+    
 2.  Edit the existing page you created earlier
 
     -   On the toolbelt (left hand side), choose the **Pages** option 
 
-    -   Locate the **Building Directory** page you created earlier
-3.  Add a the list component
+    -   Locate and select the **Building Directory** page you created earlier
+    
+3.  Add a list component
 
     -   On the toolbelt (left side), select the **Components** icon
 
-    -   Choose **One column section** from the **Section layout** area (a section will appear below the image and text on the web page)
+    -   Choose **One column section** from the **Section layout** area (a section will appear below the image and text on the webpage)
 
     -   Select the new column section on the canvas
 
     -   On the toolbelt (left side), select the **Components** icon
 
     -   Choose **List** from the **Portal Components** area (a list component will appear in the new section)
+    
 4.  Configure the list component
 
     -   Select the list component on the canvas
@@ -176,14 +181,45 @@ Task #3: Add a List Component
     -   In the **Views**, choose **Active Buildings**
 
     -   Leave the remaining default settings
-5.  Click **Browse website** to view the page.  You should see the list of Buildings from the Common Data Service appear on the web page.
+    
+5.  Click **Browse website** to view the page. You should see the list of Buildings from the Common Data Service appear on the webpage.
+
+Exercise \#3: Change the Portal Theme
+===============================
+
+**Objective:** In this exercise, you will create a new theme that will alter the color scheme of your portal. 
+
+Task #1: Create a Webpage
+--------------------------------
+
+1.  Open Power Apps portals Studio
+
+    -   Sign in to <https://make.powerapps.com> (you may still have this open in your tabs)
+
+    -   Locate the app that has the **Type** of **Portal**
+
+    -   Click on the ellipses (**...**) and choose **Edit**
+    
+2.  Apply and customize a basic theme
+
+    -   On the toolbelt (left side), select the **Components** icon
+    
+    -   Click the toggle for **Enable basic theme** to turn this feature on.
+    
+    -   On one of presets, click the ellipses (**...**) and choose **Customize**
+    
+    -   A copy of the basic theme has been created. 
+    
+    -   On the properties pane, play around with changing the colors and exploring the impact of these changes to your portal.
+    
+    -   Rename your theme
 
 ![Sample buildings list](media/9-portallabresult.jpg)
 
 # Challenges
 
-* Create a different view of Buildings (changing filtering options and fields).  You will need to select **Browse** from the Portal studio to see the changes.
-* In the Portal studio, select the Source Code Editor icon `</>` to view the page source.  If you are comfortable with HTML, make some modifications and view the results.
-* On the toolbelt, click on the Themes icon and play with different theme options.
-* Create a page with the **Form** component, modify a **List** component to add or edit Common Data Service records.
+* Create a different view of Buildings (changing filtering options and fields). You will need to select **Browse** from the Portal studio to see the changes.
+* In the Portal studio, select the Source Code Editor icon `</>` to view the page source. If you are comfortable with HTML, make some modifications and view the results.
+* On the toolbelt, click on the **Themes** icon and edit the CSS of your custom theme.
+* Create a page with the **Form** component and modify a **List** component to add or edit Common Data Service records with the form.
 * Enable **Entity Permissions** in a **List** component **Settings**, what happens to the data?
