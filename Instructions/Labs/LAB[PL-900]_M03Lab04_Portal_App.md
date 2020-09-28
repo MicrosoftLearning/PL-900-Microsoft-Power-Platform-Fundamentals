@@ -30,7 +30,7 @@ You will follow the below outline to design the Power Apps portal:
 
 ## Things to consider before you begin
 
--   Power Apps portals apps are always started from a template instead of a blank application. Once you provision a portal, it will already have pages, menus and a default theme.
+* Power Apps portals apps are always started from a template instead of a blank application. Once you provision a portal, it will already have pages, menus and a default theme.
 
 # Exercise \#1: Provision a Power Apps portal
 
@@ -62,6 +62,7 @@ Task \#2: Navigate to Portal
 --------------------------------
 
 1.  You will get a notification in <https://make.powerapps.com> when the portal has been provisioned
+
 2.  Open the new portal
 
     -   Click on **Apps**
