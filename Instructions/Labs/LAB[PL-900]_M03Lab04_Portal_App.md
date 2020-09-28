@@ -214,6 +214,8 @@ Task #1: Create a Webpage
     
     -   Rename your theme
 
+Your app layout should look similar to the following structure:
+
 ![Sample buildings list](media/9-portallabresult.jpg)
 
 # Challenges
