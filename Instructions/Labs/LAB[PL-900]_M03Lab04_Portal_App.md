@@ -10,18 +10,18 @@ lab:
 
 # Scenario
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently and there are no means to collect and analyze data about the visits across the entire campus. 
+Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
-Campus administration would like to provide the visitors with the information about the buildings on campus.  The visitors will be able to view the building list on a website, which will be built using a Power Apps portal.
+Campus administration would like to provide the visitors with the information about the buildings on campus. The visitors will be able to view the buildings list on a website, which will be built using a Power Apps portal.
 
 In this lab, you will provision a Power Apps portal and create a portals web page that will show a listing of the buildings on campus.
 
 # High-level lab steps
 
-The following have been identified as requirements you must implement to complete the project.
+You will follow the below outline to design the Power Apps portal:
 
 * A Power Apps portal needs to be provisioned in the Common Data Service environment.
-* A web page must show a listing of the Buildings.
+* A web page will be configured to show a list of the buildings.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ The following have been identified as requirements you must implement to complet
 
 ## Things to consider before you begin
 
--   Power Apps portals apps are always started from a template instead of a blank application.  Once you provision a portal, it will already have pages, menus and a default theme.
+-   Power Apps portals apps are always started from a template instead of a blank application. Once you provision a portal, it will already have pages, menus and a default theme.
 
 # Exercise \#1: Provision a Power Apps portal
 
