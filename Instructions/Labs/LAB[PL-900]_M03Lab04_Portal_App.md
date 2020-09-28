@@ -124,7 +124,7 @@ Task #2: Add Static Content
 
     -   Choose **Text** from the **Portal components** area
 
-    -   In the new text area, copy and paste the following text:
+    -   In the new text area, enter the following text:
           ```
           The following is the building directory.
           ```
