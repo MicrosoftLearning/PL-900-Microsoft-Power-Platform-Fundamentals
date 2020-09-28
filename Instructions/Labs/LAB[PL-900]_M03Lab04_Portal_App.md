@@ -214,6 +214,10 @@ Task #1: Create a Webpage
     -   On the properties pane, play around with changing the colors and exploring the impact of these changes to your portal.
     
     -   Rename your theme
+    
+3.  Save your changes
+
+    -   On the command bar, click **Sync Configuration**
 
 Your app layout should look similar to the following structure:
 
