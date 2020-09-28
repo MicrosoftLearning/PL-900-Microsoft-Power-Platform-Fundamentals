@@ -34,7 +34,7 @@ You will follow the below outline to design the Power Apps portal:
 
 # Exercise \#1: Provision a Power Apps portal
 
-**Objective:** In this exercise, you will provision a Power Apps portal on your environment that will be accessible anywhere on the world wide web.
+**Objective:** In this exercise, you will provision a Power Apps portal in your environment that will be accessible anywhere on the world wide web.
 
 ## Task \#1: Provision Power Apps portal
 
@@ -42,13 +42,13 @@ You will follow the below outline to design the Power Apps portal:
 
     -   Sign in to <https://make.powerapps.com>
 
-    -   Select your **environment**
+    -   If the **Environment** displayed in the top right is not your Practice environment, select your Environment.
 
     -   Click on the **Portal from blank** panel under **Make your own app**
 
 2.  Provide new portal details
 
-    -   Give the portal a name (it can be anything you want)
+    -   Enter **Bellows College Visitors** as the portal **Name**
 
     -   Provide a unique URL; **something**.powerappsportals.com (if the name has been taken, choose a different one)
 
