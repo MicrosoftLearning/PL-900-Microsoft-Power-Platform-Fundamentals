@@ -249,7 +249,8 @@ Task \#2: Validate and test the flow
 
     Your flow should look approximately like the following:
 
-![Security sweep scheduled flow](media/4-power-automate-security-sweep.png)
+![Security sweep scheduled flow part 1](media/4-power-automate-security-sweep-1.PNG)
+![Security sweep scheduled flow part 2](media/4-power-automate-security-sweep-2.PNG)
 
 ## Task #2: Validate and test the flow
 
