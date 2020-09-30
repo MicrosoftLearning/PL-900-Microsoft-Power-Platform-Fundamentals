@@ -145,7 +145,9 @@ Task \#2: Validate and test the flow
 
 12.  Click the back arrow on the command bar
 
-13.  In the **Details** section, notice that the **Status** is set to **On**. This means your flow will run whenever a new Visit is created, until you click **Turn off**. Any time the flow runs, you will see it added to the **28-day run history** list. Leave the flow on. 
+13.  In the **Details** section, notice that the **Status** is set to **On**. This means your flow will run whenever a new Visit is created, until you turn it off. Any time the flow runs, you will see it added to the **28-day run history** list.
+
+14.  Turn the flow off by clicking **Turn off** on the command bar.
 
 # Exercise #2: Create Security Sweep flow
 
