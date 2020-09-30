@@ -264,6 +264,8 @@ Task \#2: Test Application
 
     -   Provide **First Name** as **John** and **Last Name** as **Doe**.
 
+    -   Provide your personal email as **Email**. This will be used in a future lab. 
+    
     -   Click **Save and Close**.
 
     -   You should now see the created contact on the **Active Contacts** view.
