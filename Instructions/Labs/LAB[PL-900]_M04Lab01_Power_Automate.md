@@ -90,7 +90,7 @@ On this action, click the ellipsis (**...**) and click **Rename**. Rename this a
 
    * Enter the following text in **Email Body**:  
         
-     *Note: Dynamic content needs to be placed where fields are named in brackets. It is recommended to type all text first and then add dynamic content in the correct place.*
+     *Note: Dynamic content needs to be placed where fields are named in brackets. It is recommended to copy & paste all text first and then add dynamic content in the correct places.*
    
         ```
         Dear {First Name},
