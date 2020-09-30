@@ -111,7 +111,7 @@ Bellows College
 
     You flow should look approximately like the following:
 
-![Power Automate visitor notification flow](media/4-power-automate-notify.png)
+![Power Automate visitor notification flow](media/4-power-automate-notify.PNG)
 
 Task \#2: Validate and test the flow
 --------------------------------
