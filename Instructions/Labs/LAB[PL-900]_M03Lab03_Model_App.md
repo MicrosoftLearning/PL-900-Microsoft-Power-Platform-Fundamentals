@@ -5,7 +5,7 @@ lab:
 ---
 
 # Module 3: Get started with Power Apps
-## Lab 4: How to build a model-driven app
+## Lab 3: How to build a model-driven app
 
 Scenario
 ========
