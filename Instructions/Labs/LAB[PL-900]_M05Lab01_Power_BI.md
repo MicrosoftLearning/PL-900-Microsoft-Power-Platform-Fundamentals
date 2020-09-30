@@ -83,9 +83,12 @@ Task \#2: Prepare Data
 
 1.  Find out your organization URL
 
-    * Navigate to Power Platform Admin Center at https://admin.powerplatform.com
-    * In the left navigation page, select Environments, and then open your Bellows College environment.
-    * Right mouse click **Environment URL** on the **Details** panel, then select **Copy link address**.
+    * In a new tab, navigate to Power Platform Admin Center at https://admin.powerplatform.com
+    
+    * In the left navigation page, select Environments, and then open your Practice environment.
+    
+    * Right mouse click **Environment URL** on the **Details** panel, then select **Copy link**.
+    
 2.  Open Power BI Desktop, sign in if prompted.
 
 2. Select **Get data**.
