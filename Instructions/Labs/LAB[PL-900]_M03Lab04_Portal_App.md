@@ -224,7 +224,7 @@ Task #1: Apply and Edit a Theme
 
 Your app layout should look similar to the following structure:
 
-![Sample buildings list](media/9-portallabresult.jpg)
+![Example portal](media/9-portallabresult.JPG)
 
 # Challenges
 
