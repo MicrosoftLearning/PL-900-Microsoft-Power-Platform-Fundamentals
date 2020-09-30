@@ -26,8 +26,8 @@ We will follow the below steps to design and create the Power BI dashboard:
 -   Connect to Common Data Service 
 -   Transform the data to include user-friendly descriptions for the related records (lookups)
 -   Create and publish a report with various visualizations of the campus visits information
--   User natural language query to build additional visualizations
--   Build mobile view
+-   Utilize a user natural language query to build additional visualizations
+-   Build a mobile view of the Power BI dashboard
 
 
 ## Prerequisites
@@ -57,14 +57,25 @@ Task \#1: Install Power Bi Desktop / Prepare Power BI service
 > If you experience issues installing Power BI Desktop using Microsoft Store, try standalone installer that can be downloaded from [https://aka.ms/pbiSingleInstaller](https://aka.ms/pbiSingleInstaller).
 
 2. If you successfully installed Power BI Desktop, continue on [Task \#2](#task-2-prepare-data). If you do not have required permissions to install desktop applications or experience difficulties in running or configuring Power BI Desktop, complete the task steps below and then continue on [Task \#3](#task-3-create-chart-and-time-visualizations) but instead of Power BI Desktop use online Power BI service at [https://app.powerbi.com](https://app.powerbi.com) throughout the lab. 
+
 3. Download [visits.pbix](../../Allfiles/visits.pbix) and save on your computer.
-4. Navigate to [https://app.powerbi.com/](https://app.powerbi.com/). 
-5. Click **My Workspace**.
+
+4. Navigate to [https://app.powerbi.com/](https://app.powerbi.com/) and click **Sign in**. 
+
+5. Click **My Workspace**. 
+
+6. If presented with the **Get Data** page, click **Skip**. 
+
 6. Expand **+New** and select **Upload a file**.
+
 7. Select **Local File**.
+
 8. Locate and select **visits.pbix** file you've downloaded earlier.
-9. Once data load is complete, select **visits** report.
+
+9. Once data load is complete, select **visits** report (notice that the Type is set to **Report**).
+
 10. Click **Edit**. If **Edit** menu item is not visible click **...** and then select **Edit**.
+
 11. Continue to [Task \#3](#task-3-create-chart-and-time-visualizations).
 
 Task \#2: Prepare Data
