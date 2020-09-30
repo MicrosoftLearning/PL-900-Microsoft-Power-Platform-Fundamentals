@@ -59,30 +59,34 @@ Task \#1: Create flow
 
 2.  Click **New** and select **Flow**. This will open the Power Automate flow editor in a new window.
 
-3. Search for **Current** and select **Common Data Service (Current Environment)** connector.
+3. Search for *Current* and select **Common Data Service (Current Environment)** connector.
 
 4. Select the trigger **When a Record is Created, Updated or Deleted**.
 
    * Select **Create** for **Trigger condition**
+   
    * Select **Visits** for **The entity name**
+   
    * Select **Organization** for **Scope**
    
-   On the trigger step, click the ellipsis (**...**) and click **Rename**. Rename this trigger **"When a visit is created"**. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
+   * On the trigger step, click the ellipsis (**...**) and click **Rename**. Rename this trigger **"When a visit is created"**. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
 
 5.  Click **New Step**. This step is required to retrieve visitors information, including email address.
 
-6. Search for **Current** and select **Common Data Service (Current Environment)** connector.
+6. Search for *Current* and select **Common Data Service (Current Environment)** connector.
 
 7. Select **Get a record** action. 
 
    * Select **Contacts** as **Entity name**
+   
    * In the **Item ID** field, select **Visitor (Value)** from the Dynamic content list.
-
-On this action, click the ellipsis (**...**) and click **Rename**. Rename this action **"Get the Visitor"**. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
+   
+   * On this action, click the ellipsis (**...**) and click **Rename**. Rename this action **"Get the Visitor"**. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
 
 8. Click **New Step**. This is the step that will create and send email to the visitor.
 
 9. Search for *mail*, select **Mail** connector and **Send an email notification** action 
+
    * If asked to Accept terms and conditions for using this action, click **Accept**.
    
    * Select **To** field, select **Email** from the Dynamic content list. Notice that it is beneath the **Get the Visitor** gray header. This means you are selecting the Email that is related to the Visitor that you looked up in the previous step. 
@@ -118,17 +122,29 @@ Task \#2: Validate and test the flow
 --------------------------------
 
 1.  Open a new tab in your browser and navigate to <https://make.powerapps.com>
+
 2.  Click **Apps** and select the **Campus Staff** app you created
+
 3.  Leaving this tab open, navigate back to the previous tab with your flow. 
+
 4.  On the command bar, click **Test**. Select **I'll perform the trigger action** and then **Save & Test**.
+
 5.  Leaving the flow tab open, navigate back to the previous tab with the **Campus Staff** app.
+
 6.  Press **+** to add a new Visit record
+
 7.  Enter **John Doe** as **Name** and choose any **Building**
+
 8.  Choose **John Doe** as the **Visitor**
+
 9.  Choose the **Scheduled Start** and **Scheduled End Dates** to any dates in the future.
+
 10.  Press **Save**
+
 11.  Navigate back to the previous tab with the flow being tested. Watch as the flow is run. If there are any errors, go back and compare your flow to the example above. If the email is sent successfully, you will receive it in your inbox. 
+
 12.  Click the back arrow on the command bar
+
 13.  In the **Details** section, notice that the **Status** is set to **On**. This means your flow will run whenever a new Visit is created, until you click **Turn off**. Any time the flow runs, you will see it added to the **28-day run history** list. Leave the flow on. 
 
 # Exercise #2: Create Security Sweep flow
@@ -153,7 +169,7 @@ Task \#2: Validate and test the flow
 
 4. Set **Interval** to **15 minutes**
 
-5. Click **New step**. Search for **Current** and select **Common Data Service (Current Environment)** connector. Select **List records** action.
+5. Click **New step**. Search for *Current* and select **Common Data Service (Current Environment)** connector. Select **List records** action.
 
    * Enter **Visits** as **Entity name**
    
@@ -164,15 +180,14 @@ Task \#2: Validate and test the flow
    ```
      statecode eq 0 and bc_actualstart ne null and bc_actualend eq null and Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)
    ```
+   
+   * To break it down:
+       * `statecode eq 0` filters active visits (where Status equal Active)
+       * `bc_actualstart ne null` restricts search to visits where Actual Start has a value, i.e. there was a checkin
+       * `bc_actualend eq null` restricts search to visits where there was no check out (Actual End has no value) 
+       * `Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)` restricts visits where visits meant to complete more than 15 minutes ago.  
 
-   To break it down
-
-   * `statecode eq 0` filters active visits (where Status equal Active)
-   * `bc_actualstart ne null` restricts search to visits where Actual Start has a value, i.e. there was a checkin
-   *  `bc_actualend eq null` restricts search to visits where there was no check out (Actual End has no value) 
-   * `Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)` restricts visits where visits meant to complete more than 15 minutes ago.  
-
-On this action, click the ellipsis (**...**) and click **Rename**. Rename this action **"List active visits that ended more than 15 minutes ago"**. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
+   * On this action, click the ellipsis (**...**) and click **Rename**. Rename this action **"List active visits that ended more than 15 minutes ago"**. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
 
 6.  Click **New step**. Search for **Apply**, select **Apply to each** action 
 
@@ -181,40 +196,50 @@ On this action, click the ellipsis (**...**) and click **Rename**. Rename this a
 8.  Retrieve Building data for related record
 
     * Click **Add an action** inside the Apply to Each loop.
-    * Search for **Current** and select **Common Data Service (Current Environment)** connector. 
+    
+    * Search for *Current* and select **Common Data Service (Current Environment)** connector. 
+    
     * Select **Get a record** action.
+    
     * Select **Buildings** as **Entity name**
+    
     * Select **Building (Value)** as **Item ID** from the Dynamic content
+    
     * Click **...** beside **Get a record**, select **Rename**. Enter **Get building** as step name
     
 9.  Retrieve Visitor data for related record
 
     * Click **Add an action** inside the Apply to Each loop.
-    * Search for **Current** and select **Common Data Service (Current Environment)** connector. 
-    * Select **Get a record** action.
-    * Select **Visits** as **Entity name**
-    * Select **Visitor (Value)** as **Item ID** from the Dynamic content
-    * Click **...** beside **Get a record**, select **Rename**. Enter **Get visitor** as step name
     
-10.  Retrieve Owner data for related record
-    * Click **Add an action** inside the Apply to Each loop.
-    * Search for **Current** and select **Common Data Service (Current Environment)** connector. 
+    * Search for *Current* and select **Common Data Service (Current Environment)** connector.
+    
     * Select **Get a record** action.
-    * Select **Visits** as **Entity name**
-    * Select **Owner (Value)** as **Item ID** from the Dynamic content
-    * Click **...** beside **Get a record**, select **Rename**. Enter **Get user** as step name
+    
+    * Select **Contacts** as **Entity name**
+    
+    * Select **Visitor (Value)** as **Item ID** from the Dynamic content
+    
+    * Click **...** beside **Get a record**, select **Rename**. Enter **Get visitor** as step name
     
 11.  Add **Send an email notification** action from **Mail** connection, staying within the **Apply to each loop**
 
 12.  Enter your email address as **To**
 
-13.  Enter "Contact {**Vistor (Value)**} overstayed their welcome" in the **Subject** field. **Visitor (Value)** is a dynamic content from the **GetVisitor** step.
+13.  Enter the following in the **Subject** field. **Visitor (Value)** is a dynamic content from the **Get visitor** step.
 
-14.  Enter "It happened in building {**Name**}", in the **Body** field. **Name** is a dynamic content from **GetBuilding** step.
+       ```
+         {**Full Name**} overstayed their welcome
+       ```
+   
+14.  Enter the following in the **Body** field. **Name** is a dynamic content from **Get building** step.
 
-15.  Click **Show advanced options**.
-
-16.  Locate **Primary Email** from **GetUser** step and insert it into CC field (meeting host will receive a copy of the email)
+       ```
+         There is an overstay in building {**Name**}
+         
+         Best,
+         
+         Campus Security
+       ```
 
 17.  Select flow name **Untitled** in the upper left corner and rename it to **Security Sweep**
 
@@ -227,15 +252,24 @@ On this action, click the ellipsis (**...**) and click **Rename**. Rename this a
 ## Task #2: Validate and test the flow
 
 1. Locate or create visit records that:
+
    1. Have active status
+   
    2. Scheduled End is in the past (by more than 15 minutes)
+   
    3. Actual Start has a value.
+   
 2. Navigate to your solution and locate the **Security Sweep** flow. Click the **...** and click **Edit**.
+
 3. When your flow opens, click **Test**.
+
 4. Select **I'll perform the trigger action**.
 5. Click **Test** and **Run Flow**.
+
 6. When flow competes, click **Done**. 
+
 7. Expand **Apply to each**, then expand the **Send an email notification** steps. Check the **Subject**, **Email Body** values. Expand **Show more** and check **CC** value.
+
 8. Navigate to solution, click **...** next to the flow, select **Turn off**. This is to prevent flow from executing on a schedule on the test system.
 
 # Challenges
