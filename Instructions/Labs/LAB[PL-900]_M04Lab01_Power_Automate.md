@@ -56,17 +56,19 @@ Task \#1: Create flow
 
     -   Click to open your **Campus Management** solution.
 
-2.  Click **New** and select **Flow**. This will open the flow editor in a New window.
+2.  Click **New** and select **Flow**. This will open the Power Automate flow editor in a new window.
 
 3. Search for **Current** and select **Common Data Service (Current Environment)** connector.
 
-4. Select the trigger **When a Record is Created**, **Updated**, or **Deleted**.
+4. Select the trigger **When a Record is Created, Updated or Deleted**.
 
    * Select **Create** for **Trigger condition**
    * Select **Visits** for **The entity name**
    * Select **Organization** for **Scope**
+   
+   On the trigger step, click the ellipsis (**...**) and click **Rename**. Rename this trigger **"When a visit is created"**. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
 
-5.  Click **New Step**. This step is required to retrieve visitors information including email.
+5.  Click **New Step**. This step is required to retrieve visitors information, including email address.
 
 6. Search for **Current** and select **Common Data Service (Current Environment)** connector.
 
@@ -75,12 +77,14 @@ Task \#1: Create flow
    * Select **Contacts** as **Entity name**
    * In the **Item ID** field, select **Visitor (Value)** from the Dynamic content list.
 
+On this action, click the ellipsis (**...**) and click **Rename**. Rename this action **"Get the Visitor"**. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
+
 8. Click **New Step**. This is the step that will create and send email to the visitor.
 
 9. Search for *mail*, select **Mail** connector and **Send an email notification** action 
    * If asked to Accept terms and conditions for using this action, click **Accept**.
    
-   * Select **To** field, select **Email** from the Dynamic content list.
+   * Select **To** field, select **Email** from the Dynamic content list. Notice that it is beneath the **Get the Visitor** gray header. This means you are selecting the Email that is related to the Visitor that you looked up in the previous step. 
 
    * Enter **Your scheduled visit to Bellows College** in the **Subject** field.
 
