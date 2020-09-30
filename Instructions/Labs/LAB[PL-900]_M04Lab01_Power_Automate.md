@@ -264,17 +264,18 @@ Task \#2: Validate and test the flow
 3. When your flow opens, click **Test**.
 
 4. Select **I'll perform the trigger action**.
+
 5. Click **Test** and **Run Flow**.
 
 6. When flow competes, click **Done**. 
 
-7. Expand **Apply to each**, then expand the **Send an email notification** steps. Check the **Subject**, **Email Body** values. Expand **Show more** and check **CC** value.
+7. Expand **Apply to each**, then expand the **Send an email notification** step. Check the **Subject**, **Email Body** values.
 
 8. Navigate to solution, click **...** next to the flow, select **Turn off**. This is to prevent flow from executing on a schedule on the test system.
 
 # Challenges
 
-* Add building information and map to the notification flow.
-* Can you generate barcode for the visit code? When will that be useful?
+* Add Actual Start and Scheduled End to the email body.
 * How could you ensure user-friendly date formatting is used in the email body?
 * Is it possible to generate a table with overstay information and send only a single email?
+* Can you generate barcode for the visit code? When will that be useful?
