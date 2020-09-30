@@ -222,6 +222,7 @@ Task #1: Apply and Edit a Theme
 
     -   On the command bar, click **Sync Configuration**
 
+
 Your app layout should look similar to the following structure:
 
 ![Example portal](media/9-portallabresult.JPG)
