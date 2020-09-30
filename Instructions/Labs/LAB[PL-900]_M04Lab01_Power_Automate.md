@@ -5,7 +5,7 @@ lab:
 ---
 
 # Module 4: Introduction to Power Automate
-## Lab 6: How to build an automated solution
+## Lab: How to build an automated solution
 
 Scenario
 ========
@@ -31,6 +31,7 @@ The following have been identified as requirements you must implement to complet
 * Completion of **Module 0 Lab 0 - Validate lab environment**
 * Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
 * Campus Staff app created in **Module 3 Lab 2 – How to build a canvas app, part 2** (for testing)
+* John Doe contact created with a personal email address in **Module 3 Lab 4 - How to build a model-driven app** (for testing)
 
 Things to consider before you begin
 -----------------------------------
@@ -116,9 +117,12 @@ On this action, click the ellipsis (**...**) and click **Rename**. Rename this a
 Task \#2: Validate and test the flow
 --------------------------------
 
-1.  Open **Campus Staff** app you created 
+1.  Open a new tab in your browser and navigate to <https://make.powerapps.com>
+2.  Click **Apps** and select the **Campus Staff** app you created 
 2.  Press **+** to add a new Visit record
-3.  Enter required information, press **Save**
+3.  Enter a **Name** and choose a **Building**
+4.  Choose **John Doe** as the **Visitor**
+required information, press **Save**
 4.  Open the flow, locate and open most recent **Run**
 5.  Open **Mail** step and verify that email content has been generated correctly.
 
