@@ -120,8 +120,8 @@ Task \#2: Validate and test the flow
 1.  Open a new tab in your browser and navigate to <https://make.powerapps.com>
 2.  Click **Apps** and select the **Campus Staff** app you created
 3.  Leaving this tab open, navigate back to the previous tab with your flow. 
-4.  On the command bar, click **Test**
-5.  Leaving the flow tab open, navigate back to the previous tab with the Campus Staff app.
+4.  On the command bar, click **Test**. Select **I'll perform the trigger action** and then **Save & Test**.
+5.  Leaving the flow tab open, navigate back to the previous tab with the **Campus Staff** app.
 6.  Press **+** to add a new Visit record
 7.  Enter **John Doe** as **Name** and choose any **Building**
 8.  Choose **John Doe** as the **Visitor**
