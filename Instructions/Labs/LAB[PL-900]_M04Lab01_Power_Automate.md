@@ -24,13 +24,13 @@ High-level lab steps
 The following have been identified as requirements you must implement to complete the project:
 
 * The unique code assigned to each visitor must be made available to them prior to their visit.
-* Security personnel needs to receive notifications of visitors overstaying their scheduled timeslots.
+* Security personnel need to receive notifications of visitors overstaying their scheduled timeslots.
 
 ## Prerequisites
 
 * Completion of **Module 0 Lab 0 - Validate lab environment**
 * Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
-* Campus Staff app created in **Module 3 Lab 2 – How to build a canvas app, Part 1** (for testing)
+* Campus Staff app created in **Module 3 Lab 2 – How to build a canvas app, part 2** (for testing)
 
 Things to consider before you begin
 -----------------------------------
@@ -41,7 +41,7 @@ Things to consider before you begin
 Exercise \#1: Create Visit Notification flow
 ===============================
 
-**Objective:** In this exercise, you will create a Power Automate flow that implements the requirement. Visitor notification is done using email. Notification includes the unique code assigned to the visit.
+**Objective:** In this exercise, you will create a Power Automate flow that implements the requirement. The visitor should be sent an email that includes the unique code assigned to the visit.
 
 Task \#1: Create flow
 ---------------------------
