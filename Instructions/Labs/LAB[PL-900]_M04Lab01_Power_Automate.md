@@ -129,11 +129,11 @@ Task \#2: Validate and test the flow
 10.  Press **Save**
 11.  Navigate back to the previous tab with the flow being tested. Watch as the flow is run. If there are any errors, go back and compare your flow to the example above. If the email is sent successfully, you will receive it in your inbox. 
 12.  Click the back arrow on the command bar
-13.  In the **Details** section, notice that the **Status** is set to **On**. This means your flow will run whenever a new Visit is created, until you click **Turn off**. Leave the flow on. 
+13.  In the **Details** section, notice that the **Status** is set to **On**. This means your flow will run whenever a new Visit is created, until you click **Turn off**. Any time the flow runs, you will see it added to the **28-day run history** list. Leave the flow on. 
 
 # Exercise #2: Create Security Sweep flow
 
-**Objective:** In this exercise, you will create a Power Automate flow that implements the requirement. Security sweep is performed every 15 minutes and security is notified if any of the visitors overstayed their scheduled time.
+**Objective:** In this exercise, you will create a Power Automate flow that implements the requirement. A security sweep needs to be performed every 15 minutes, and security should be notified if any of the visitors overstayed their scheduled time.
 
 ## Task #1: Create flow to retrieve records
 
@@ -147,7 +147,7 @@ Task \#2: Validate and test the flow
 
    -   Click to open your **Campus Management** solution.
 
-2. Click **New** and select **Flow**. This will open the flow editor in a New window.
+2. Click **New** and select **Flow**. This will open the Power Automate flow editor in a new window.
 
 3. Search for *recurrence*, select **Schedule** connector, and then select the **Recurrence** trigger.
 
@@ -172,36 +172,38 @@ Task \#2: Validate and test the flow
    *  `bc_actualend eq null` restricts search to visits where there was no check out (Actual End has no value) 
    * `Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)` restricts visits where visits meant to complete more than 15 minutes ago.  
 
+On this action, click the ellipsis (**...**) and click **Rename**. Rename this action **"List active visits that ended more than 15 minutes ago"**. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
+
 6.  Click **New step**. Search for **Apply**, select **Apply to each** action 
 
-7.  Select **value** from dynamics content in the **Select an output from previous steps** field.
+7.  Select **value** from dynamics content in the **Select an output from previous steps** field. Notice that it is beneath the **List active visits that ended more than 15 minutes ago** gray header. This means you are selecting the list of visits that you looked up in the previous step. 
 
 8.  Retrieve Building data for related record
 
-    * Click **Add an action** inside the loop.
+    * Click **Add an action** inside the Apply to Each loop.
     * Search for **Current** and select **Common Data Service (Current Environment)** connector. 
     * Select **Get a record** action.
-    * Click **...** beside **Get a record**, select **Rename**. Enter **GetBuilding** as step name
     * Select **Buildings** as **Entity name**
     * Select **Building (Value)** as **Item ID** from the Dynamic content
-
+    * Click **...** beside **Get a record**, select **Rename**. Enter **Get building** as step name
+    
 9.  Retrieve Visitor data for related record
 
-    * Click **Add an action** inside the loop.
+    * Click **Add an action** inside the Apply to Each loop.
     * Search for **Current** and select **Common Data Service (Current Environment)** connector. 
     * Select **Get a record** action.
-    * Click **...** beside **Get a record**, select **Rename**. Enter **GetVisitor** as step name
     * Select **Visits** as **Entity name**
     * Select **Visitor (Value)** as **Item ID** from the Dynamic content
+    * Click **...** beside **Get a record**, select **Rename**. Enter **Get visitor** as step name
     
 10.  Retrieve Owner data for related record
-    * Click **Add an action** inside the loop.
+    * Click **Add an action** inside the Apply to Each loop.
     * Search for **Current** and select **Common Data Service (Current Environment)** connector. 
     * Select **Get a record** action.
-    * Click **...** beside **Get a record**, select **Rename**. Enter **GetUser** as step name
     * Select **Visits** as **Entity name**
     * Select **Owner (Value)** as **Item ID** from the Dynamic content
-
+    * Click **...** beside **Get a record**, select **Rename**. Enter **Get user** as step name
+    
 11.  Add **Send an email notification** action from **Mail** connection, staying within the **Apply to each loop**
 
 12.  Enter your email address as **To**
