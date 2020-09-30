@@ -20,8 +20,9 @@ In this lab, you will provision a Power Apps portal and create a portals webpage
 
 You will follow the below outline to design the Power Apps portal:
 
-* A Power Apps portal needs to be provisioned in the Common Data Service environment.
-* A webpage will be configured to show a list of the buildings.
+* Provision a Power Apps portal in the Common Data Service environment
+* Create and configure a webpage to show a list of the buildings
+* Create a new theme and apply it to the portal
 
 ## Prerequisites
 
@@ -139,6 +140,8 @@ Task #2: Add Static Content
     -   Choose **Image** from the **Portal components** area
 
     -   In the properties pane, click **Select an image**. Locate and select the **Product A.png**
+    
+    -   In the properties pane, click the Formatting section drop-down and change the **Width** to 70% (be sure to type the %). You can play around with the sizing of the image until it is as desired.
 
 4.  Click **Browse website** to view the page so far.  Notice that there is **Building Directory** option on the main menu.
 
@@ -225,8 +228,8 @@ Your app layout should look similar to the following structure:
 
 # Challenges
 
-* Create a different view of Buildings (changing filtering options and fields). You will need to select **Browse** from the Portal studio to see the changes.
-* In the Portal studio, select the Source Code Editor icon `</>` to view the page source. If you are comfortable with HTML, make some modifications and view the results.
+* Create a different view of Buildings that just displays the Building Name. You will need to select **Browse website** from the Portal studio to see the changes.
 * On the toolbelt, click on the **Themes** icon and edit the CSS of your custom theme.
 * Create a page with the **Form** component and modify a **List** component to add or edit Common Data Service records with the form.
 * Enable **Entity Permissions** in a **List** component **Settings**, what happens to the data?
+* In the Portal studio, select the Source Code Editor icon `</>` to view the page source. If you are comfortable with HTML, make some modifications and view the results.
