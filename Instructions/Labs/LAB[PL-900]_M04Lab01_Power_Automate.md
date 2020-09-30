@@ -110,7 +110,7 @@ On this action, click the ellipsis (**...**) and click **Rename**. Rename this a
 
 11. Press **Save**
 
-    You flow should look approximately like the following:
+    Leave this flow tab open for the next task. You flow should look approximately like the following:
 
 ![Power Automate visitor notification flow](media/4-power-automate-notify.PNG)
 
@@ -118,13 +118,18 @@ Task \#2: Validate and test the flow
 --------------------------------
 
 1.  Open a new tab in your browser and navigate to <https://make.powerapps.com>
-2.  Click **Apps** and select the **Campus Staff** app you created 
-2.  Press **+** to add a new Visit record
-3.  Enter a **Name** and choose a **Building**
-4.  Choose **John Doe** as the **Visitor**
-required information, press **Save**
-4.  Open the flow, locate and open most recent **Run**
-5.  Open **Mail** step and verify that email content has been generated correctly.
+2.  Click **Apps** and select the **Campus Staff** app you created
+3.  Leaving this tab open, navigate back to the previous tab with your flow. 
+4.  On the command bar, click **Test**
+5.  Leaving the flow tab open, navigate back to the previous tab with the Campus Staff app.
+6.  Press **+** to add a new Visit record
+7.  Enter **John Doe** as **Name** and choose any **Building**
+8.  Choose **John Doe** as the **Visitor**
+9.  Choose the **Scheduled Start** and **Scheduled End Dates** to any dates in the future.
+10.  Press **Save**
+11.  Navigate back to the previous tab with the flow being tested. Watch as the flow is run. If there are any errors, go back and compare your flow to the example above. If the email is sent successfully, you will receive it in your inbox. 
+12.  Click the back arrow on the command bar
+13.  In the **Details** section, notice that the **Status** is set to **On**. This means your flow will run whenever a new Visit is created, until you click **Turn off**. Leave the flow on. 
 
 # Exercise #2: Create Security Sweep flow
 
