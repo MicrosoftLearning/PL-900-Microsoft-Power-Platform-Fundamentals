@@ -71,17 +71,17 @@ In this exercise, you will sign up for Power Virtual Agents trial.
 
 In this exercise, you will generate topics from the CDC FAQ site.
 
-1.  In a new tab, navigate to [CDC FAQ](https://www.cdc.gov/coronavirus/2019-ncov/faq.html) site and examine what is on the site. You will generate your topics from these FAQs.
+1.  In a new tab, navigate to the [CDC FAQ](https://www.cdc.gov/coronavirus/2019-ncov/faq.html) site and examine what is on the site. You will generate your topics from these FAQs.
 
 2.  Copy the URL.
 
 3.  Go back to Power Virtual Agents and make sure you still have **Topics** selected.
 
-4.  Select the **Suggested** tab.
+4.  Select the **Suggested** tab, below **Topics**.
 
 5.  Click **Get started.**
 
-6.  Paste the URL you copied in the **Web link** textbox and click **Add**.
+6.  Paste the URL you copied in the **Link to online content** textbox and click **Add**.
 
 7.  Click **Start** and wait. This can take few minutes.
 
@@ -91,11 +91,11 @@ In this exercise, you will generate topics from the CDC FAQ site.
 
 10. You should see the trigger phrase and what the bot reply will be. **Click Add to topics.**
     
-11. The suggested topic should be added to your topics. Select all the suggested topics and click **Add to topics**.
+11. The suggested topic should be added to your topics. Select all the suggested topics and click **Add to topics** (you can select all by using the icon to the left of the Name column). If you receive an error message, please try again.
 
-12. Select the Topics tab. You should see the new topics with their status set to Off.
+12. Once the Suggested topics have been added, select the **Existing** tab. You should see the new topics with their status set to Off.
 
-13. Click on the toggle button of the **Status** column to turn them all **On**. If you are short on time, you may turn on the first ten, but ensure you have turned “**How can I protect myself**” to **On**.
+13. Click on the toggle button of the **Status** column to turn them all **On**. If you are short on time, you may turn on the first ten, but ensure you have turned “**Should I wear a mask?**" to **On**.
 
 14. Do not navigate away from this browser window.
 
@@ -107,23 +107,23 @@ In this task, you will test the topics you added.
 
 2.  Click **Reset**.
 
-3.  Type **How can I protect myself?** And click **Send**.
+3.  Type **Should I wear a mask?** and click **Send**.
 
 4.  The bot should give you the correct information and ask if it answered your question. Click **Yes**.
 
 5.  The bot should ask you the rate how it did. Give it an excellent rating.
 
-6.  The bot should ask if it can help you with anything else. Click **No, Thanks**.
+6.  The bot should ask if it can help you with anything else. Click **No**.
 
 7.  The bot should conclude the chat session.
 
 8.  Type **hello** and click **Send**.
 
-9.  The bot should greet you and tell you what it can do. Your bot can now help users with Covid-19 FAQs, you will change the greeting message in the next task. Do not navigate away from this browser window.
+9.  The bot should greet you and tell you what it can do. Your bot can now help users with COVID-19 FAQs, so you will need to change the greeting message in the next task. Do not navigate away from this browser window.
 
 # Exercise \#4: Change the greeting
 
-In this task, you will change the greeting to Covid-19 specific.
+In this task, you will change the greeting to COVID-19 specific.
 
 1.  Make sure you have **Topics** selected and select the **Existing** tab.
 
@@ -137,23 +137,23 @@ In this task, you will change the greeting to Covid-19 specific.
 
 6.  Click **Save**.
 
-7.  Click **Test Bot** and then Click **Reset** to reset the chat.
+7.  Click **Test Bot** if your bot is not still open. Click **Reset** to reset the chat.
 
 8.  Type hello and click **Send**.
 
-9.  The bot should now reply with correct information.
+9.  The bot should now reply with the new greeting.
 
 # Exercise \#5: Publish the bot
 
 In this exercise, you will publish the bot.
 
-1.  Select **Publish**.
+1.  Select **Publish** on the left navigation bar.
 
 2.  Click **Publish**.
 
 3.  Click **Publish** again and wait for the publishing to complete.
 
-4.  Expand **Manage** and select **Channels**.
+4.  Expand **Manage** on the left navigation bar and select **Channels**.
 
 5.  You will get list of available channels you can publish your bot to. Select **Demo website**.
 
