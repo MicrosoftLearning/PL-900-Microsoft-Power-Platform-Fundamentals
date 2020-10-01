@@ -172,4 +172,4 @@ When completed, your published bot should look similar to this:
 ![Bot demo website - screenshot](./media/8-image1.png)
 
 # Challenges 
-* Embed your chatbot on your Bellows College Visitors portal (more information on how to do this [here](https://docs.microsoft.com/en-us/power-virtual-agents/publication-connect-bot-to-web-channels).
+* Embed your chatbot on your Bellows College Visitors portal (more information on how to do this under **Add bot to Power Apps** [here](https://docs.microsoft.com/en-us/power-virtual-agents/publication-connect-bot-to-web-channels).)
