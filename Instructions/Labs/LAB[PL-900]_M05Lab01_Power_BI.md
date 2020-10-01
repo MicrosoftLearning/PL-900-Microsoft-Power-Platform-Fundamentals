@@ -182,7 +182,7 @@ Exercise #2: Create Power BI Dashboard
 
 ## Task #3: Add Visualizations Using Natural Language
 
-1. Within your **Campus Management** dashboard, select **Ask a question about your data** at the top.
+1. Within your **Campus Management** dashboard, select **Ask a question about your data** bar at the top.
 
 2. Enter **buildings by number of visits** in Q&A area. The bar chart will be displayed.
 
@@ -190,17 +190,15 @@ Exercise #2: Create Power BI Dashboard
 
 4. Select **Existing dashboard**, select your **[Your Last Name] Campus Management** dashboard, press **Pin**.
 
-5. Test the behavior by clicking on the chart to drilldown to Q&A.
+5. Click **Exit Q&A**.
 
-6. Click **Exit Q&A**.
-
-7. Navigate to **[Your Last Name] Campus Management** dashboard. It should look like the following:
+6. Navigate to **[Your Last Name] Campus Management** dashboard. It should look similar to the following:
 
     ![Power BI Dashboard](media/5-powerbi-result.png)
 
-## Task #4: Build Mobile Phone View
+## Task #4: Build Mobile Phone View and Share a Report with a QR Code
 
-1. In the Dashboard, select **... \| Mobile View**.
+1. In the Dashboard, select **Edit \| Mobile View**.
 
 2. Rearrange tiles as desired.
 
@@ -208,15 +206,15 @@ Exercise #2: Create Power BI Dashboard
 
 4. Select **My Workspace** at the top, and select your **Report**.
 
-5. Select **... \| Generate QR Code**.
+5. Select **Edit** and then select **... \| Generate QR Code**.
 
-6. If you have a mobile device, scan the code using a QR scanner app available on both iOS and Android platforms. Log in to your account if prompted.
+6. If you have a mobile device, scan the code using a QR scanner app available on both iOS and Android platforms, or the camera app if your phone supports it. Log in to your account if prompted.
 
 7. Navigate and explore the report on a mobile device.
 
 # Challenges
 
-* Dashboards and reports to include campus and building plans
+* Dashboards and reports to include your campus and building plans
 * Report and analyze visiting patterns and trends
 * Overstaying visualization
 * Streaming Power BI for near real-time processing for a large campus 
