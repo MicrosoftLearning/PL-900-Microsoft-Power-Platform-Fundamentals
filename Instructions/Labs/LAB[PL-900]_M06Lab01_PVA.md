@@ -49,33 +49,23 @@ In this exercise, you will sign up for Power Virtual Agents trial.
 
 1.  Navigate to [Power Virtual Agents](https://powerva.microsoft.com/)
 
-2.  Scroll down and click **Sign up**.
+2.  Click **Start Free Trial**.
 
-3.  Provide your admin email address and click **Sign up**.
+3.  Sign in, if required.
 
-4.  Click **Sign in**.
+4. The **Create new bot** window should appear.
 
-5.  Provide your password and click **Sign in** again.
+5. Enter **Crisis Bot** for **Name** and select a language.
 
-6.  Click **Create** and wait until you see the sign in button.
+6. Select your Practice environment to create the bot in and click **Create**. Wait for the bot to be created.
 
-7.  Click **Sign in**.
+7. Test the bot. Type **Hello** in the message box and click **Send**. The bot should greet you and tell you what it can do.
 
-8.  Select your country/region and click **Get Started**.
+8. Close the **Chat**.
 
-9.  Select **+New Bot. **
+9. Select **Topics**. The bot comes with some sample user topics and some system topics. The default greeting came from the system topics.
 
-10. Enter **Crisis Bot** for name, select the environment you want to create the bot in, select a language, and click **Create**. Wait for the bot to be created.
-
-11. Click **Explore bot**.
-
-12. Test the bot. Type **Hello** in the message box and click **Send**. The bot should greet you and tell you what it can do.
-
-13. Close the **Chat**.
-
-14. Select **Topics**. The bot comes with some sample user topics and some system topics. The default greeting came from the system topics.
-
-15. In the next exercise, you will generate your own topics from the CDC FAQ site. Do not navigate away from this browser window.
+10. In the next exercise, you will generate your own topics from the CDC FAQ site. Do not navigate away from this browser window.
 
 # Exercise \#2: Create topics
 
