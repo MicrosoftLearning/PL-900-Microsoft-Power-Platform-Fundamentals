@@ -84,21 +84,36 @@ In this task, you will create a canvas app using the phone layout template based
 In this task, you will configure the Detail form to view information about individual visit records.
 
 1.  Select the Back arrow at the top left to go back to the app definition.
+
 2. Expand **DetailScreen1** under **Tree view**
+
 3.  Select **DetailForm1**
+
 4.  Select **Edit fields** next to **Fields** in the right-hand panel.
+
 5.  Click **Add field**
+
 6.  Select the following fields:
+
     * Actual End
+    
     * Actual Start
+    
     * Building 
+    
     * Code
+    
     * Scheduled End
+    
     * Scheduled Start
+    
     * Visitor
+    
 7.  Click **Add**
+
 8.  Rearrange fields in the **Fields** pane by dragging and dropping field names up or down. Recommended order is:
     * Code, Name, Building, Visitor, Scheduled Start, Scheduled End, Actual Start, Actual End
+    
 9.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 ## Task #3: Configure Visits Edit Form 
@@ -106,16 +121,27 @@ In this task, you will configure the Detail form to view information about indiv
 In this task, you will configure a form to edit information about individual visit records.
 
 1.  Expand **EditScreen1** under **Tree view**
+
 2.  Select **EditForm1**
+
 3.  Select **Created On** field and press **Del** key to remove the field
+
 4.  Select **Edit fields** in the properties panel
+
 5.  Click **Add field**
+
 6.  Select the following fields
+
     * Building 
+    
     * Scheduled End
+    
     * Scheduled Start
+    
     * Visitor
+    
 7.  Click **Add**
+
 8.  Rearrange fields in the **Fields** pane by dragging and dropping field names up or down. Recommended order is:
     
     * Name, Building, Visitor, Scheduled Start, Scheduled End
@@ -131,16 +157,27 @@ In this task, you will configure a form to edit information about individual vis
 In this task, you will configure the pre-generated gallery to display the title, start and end dates for the visit. 
 
 1.  Expand **BrowseScreen1** under **Tree view**
+
 2.  Select **BrowseGallery1**
+
 3.  Select **TemplateSize** property from in the Properties panel
+
 4.  Replace the expression with the following `Min(150, BrowseGallery1.Height - 60)`. That will ensure sufficient space for additional information.
+
 5.  Edit the gallery by pressing the pencil icon in the top left corner of the gallery (hover over the app preview and click the pencil icon).
+
 6.  Select the Date Time field.
+
 7.  In the formula bar at the top, change `ThisItem.'Created On'`to `ThisItem.'Scheduled Start'`
+
 8.  Select the field again
+
 9.  Press `CTRL-C` then `CTRL-V` to create a copy of the field.
+
 10.  Using either mouse or keyboard, move the copied control down and align it with the other controls in the gallery, beneath the other Date Time field.
+
 11.  In the formula bar at the top, change `ThisItem.'Scheduled Start'` to `ThisItem.'Scheduled End'`
+
 12.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 ## Task #5: Add date filter
@@ -192,12 +229,19 @@ Task \#1: Test App
 1.  Start the application
 
     -   Select the **BrowseScreen1** and press **F5**, or click the Play icon at the upper-right corner to preview the app.
+    
     -   The application should load and show a list of visits. 
+    
     -   Test the filter by selecting different dates in the date picker control
+    
     -   Select a visit and verify that display form is working properly
+    
     -   Return to the gallery and press + to create a new visit. Verify that edit form contains required fields including visitor, building, and scheduled start and end dates.
+    
     -   Fill in the information and submit. Verify that the new record appears in the gallery.
+    
     -   Create at least 2 more visits.
+    
     -   Press **ESC** key to close the app
 
 2.  Save and publish the application
@@ -218,13 +262,21 @@ Task \#1: Test App
 ## Task #2: Add App to Solution and publish 
 
 1. Open the Campus Management solution.
+
    * Sign in to <https://make.powerapps.com>
+   
    * If the Environment displayed in the top right is not your Practice environment, select your **Environment**. 
+   
    * Select **Solutions**.
+   
    * Click to open your **Campus Management** solution.
+   
 2. Select **Add existing**, then click **App**, and then click **Canvas app**.
+
 3. Select **Outside solutions** tab.
+
 4. Select your **Campus Staff** app, click **Add**.
+
 5. Select **Publish all customizations**.
 
 # Challenges
