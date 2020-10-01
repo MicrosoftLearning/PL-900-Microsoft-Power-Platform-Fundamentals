@@ -148,7 +148,7 @@ In this task, you will configure a form to edit information about individual vis
     
     Your screen should look approximately like the following:
 
-![Canvas edit form](media/2-canvas-edit.png)
+![Canvas edit form](media/2-canvas-edit-form.PNG)
 
 9.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
