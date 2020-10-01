@@ -9,13 +9,13 @@ lab:
 
 # Scenario
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently and there are no means to collect and analyze data about the visits across the entire campus. 
+Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
-Like most organizations Bellows College is quickly responding to concerns with misinformation about COVID-19, best practices, schedules and so on. In this lab you will build a Power Virtual Agent bot that will point to the Center for Disease Control page with questions and answers regarding the current status of the pandemic. The college will want this to be embedded on their portal site as well as to be made available ad hoc as departments make their own planned reopening.
+Like most organizations, Bellows College is quickly responding to concerns with misinformation about COVID-19, best practices, schedules, and so on. In this lab, you will build a Power Virtual Agent chatbot that will point to the Center for Disease Control page with questions and answers regarding the current status of the pandemic. The college will want this setup so that it can be embedded on their portal site, as well made available ad hoc as departments make their own planned reopening.
 
 ## High level steps
 
-We will follow the below outline to build our Power Virtual Agent
+We will follow the below outline to build our Power Virtual Agent:
 
   - Sign up for a trial of Power Virtual Agent
 
@@ -27,7 +27,7 @@ We will follow the below outline to build our Power Virtual Agent
 
   - Publish the bot
 
-  - **Bonus:** Embed bot in your portal
+  - **Bonus Challenge:** Embed bot in your portal
 
 ## Prerequisites
 
@@ -37,17 +37,13 @@ The following have been identified as requirements you must implement to complet
 
   - Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
 
-  - Bonus exercise only: Completion of **Module 6 Lab 5 - Introduction to Power Apps portals** 
+  - Bonus exercise only: Completion of **Module 6 Lab 4 - Introduction to Power Apps portals** 
 
 ## Things to consider before you begin
 
 Bots can be very useful in many different scenarios. Based on what you know so far about Bellows College, consider where else in the organization a bot might be of use.
 
-When completed, your published bot will look like this:
-
-![Bot demo website - screenshot](./media/8-image1.png)
-
-# Exercise \#1: Sign up for PVA
+# Exercise \#1: Sign up for PVA and Create a New Bot
 
 In this exercise, you will sign up for Power Virtual Agents trial.
 
@@ -73,7 +69,7 @@ In this exercise, you will sign up for Power Virtual Agents trial.
 
 11. Click **Explore bot**.
 
-12. Test the Bot. Type **Hello** in the message box and click **Send**. The Bot should greet you and tell you what it can do.
+12. Test the bot. Type **Hello** in the message box and click **Send**. The bot should greet you and tell you what it can do.
 
 13. Close the **Chat**.
 
@@ -85,7 +81,7 @@ In this exercise, you will sign up for Power Virtual Agents trial.
 
 In this exercise, you will generate topics from the CDC FAQ site.
 
-1.  Navigate to [CDC FAQ](https://www.cdc.gov/coronavirus/2019-ncov/faq.html) site and examine what is on the site. You will generate your topics from these FAQs
+1.  In a new tab, navigate to [CDC FAQ](https://www.cdc.gov/coronavirus/2019-ncov/faq.html) site and examine what is on the site. You will generate your topics from these FAQs.
 
 2.  Copy the URL.
 
@@ -105,13 +101,13 @@ In this exercise, you will generate topics from the CDC FAQ site.
 
 10. You should see the trigger phrase and what the bot reply will be. **Click Add to topics.**
     
-    The suggested topic should be added to your topics. Select all the suggested topics and click **Add to topics**.
+11. The suggested topic should be added to your topics. Select all the suggested topics and click **Add to topics**.
 
-11. Select the Topics tab. You should see the new topics with their status set to Off.
+12. Select the Topics tab. You should see the new topics with their status set to Off.
 
-12. Click on the toggle button of the status column to turn them all on. If you are short on time, you may turn on the first ten, but ensure you’ve turned “**How can I protect myself**” to On.
+13. Click on the toggle button of the **Status** column to turn them all **On**. If you are short on time, you may turn on the first ten, but ensure you have turned “**How can I protect myself**” to **On**.
 
-13. Do not navigate away from this browser window.
+14. Do not navigate away from this browser window.
 
 # Exercise \#3: Test topics
 
@@ -121,7 +117,7 @@ In this task, you will test the topics you added.
 
 2.  Click **Reset**.
 
-3.  Type **How can I protect myself?** And click Send.
+3.  Type **How can I protect myself?** And click **Send**.
 
 4.  The bot should give you the correct information and ask if it answered your question. Click **Yes**.
 
@@ -161,7 +157,7 @@ In this task, you will change the greeting to Covid-19 specific.
 
 In this exercise, you will publish the bot.
 
-1.  Select Publish.
+1.  Select **Publish**.
 
 2.  Click **Publish**.
 
@@ -181,6 +177,9 @@ In this exercise, you will publish the bot.
 
 10. Go ahead and start chatting with the bot.  
     
+When completed, your published bot should look similar to this:
+
+![Bot demo website - screenshot](./media/8-image1.png)
 
 # Challenges
 
