@@ -163,8 +163,7 @@ In this task, we will create buttons for the user to check in and check out of t
    * In the properties pane, select the **Advanced** tab and select **OnChange** property
    
    * Enter the following expression `Set(Visit, LookUp(Visits, Code = textCode.Text))`
-    >[!NOTE]
-    >It is the same expression as above, except this time we save results in a global variable. That allows us to use the variable *Visit* throughout the app without the need to re-enter the entire lookup expression.
+    > *Note: It is the same expression as above, except this time we save results in a global variable. That allows us to use the variable *Visit* throughout the app without the need to re-enter the entire lookup expression.*
 
 2. Add buttons for checking in and checking out
 
@@ -327,8 +326,7 @@ Usability of a mobile app significantly improves when, in addition to the text i
 
 7. Find a different code value that has not been used before (it should not have an Actual Start or Actual End value). 
 
-    >[!NOTE]
-    >You can navigate to the previous tab to copy another Code from one of the Visits you have created. You also have the option to run your **Campus Staff** app created previously to create new visit records. Verify the icon displays a smile emoji for this code.
+    > *Note: You can navigate to the previous tab to copy another Code from one of the Visits you have created. You also have the option to run your **Campus Staff** app created previously to create new visit records. Verify the icon displays a smile emoji for this code.*
 
    Your running app should look approximately like the following:
 
