@@ -53,7 +53,8 @@ In this task, you will create a canvas app using the phone layout template based
 
     -   Sign in to <https://make.powerapps.com>
 
-    -   Select your **environment** at the top right, if it is not already set to your Bellows College environment.
+    -   Select your **environment** at the top right if it is not already set to
+        your Bellows College environment.
 
     -   Select **Apps**.
 
@@ -62,21 +63,21 @@ In this task, you will create a canvas app using the phone layout template based
     -   Click **New app** and select **Canvas**.
 
     -   Select **Phone layout** under **Common Data Service**.
-    
-3.   Select **Common Data Service** connection then click **Create**.
+
+3.  Select **Common Data Service** connection then click **Create**.
 
     -   Select **Visits** table
 
     -   Click **Connect**
 
     -   The **Welcome to Power Apps Studio** window may appear. Click **Skip**.
-    
+
 4.  Save application
 
-    -   Click **File > Save**.
-    
+    -   Click **File \> Save**.
+
     -   Enter **[Your Last Name] Campus Staff** as the **Name**.
-    
+
     -   Press **Save**.
 
 ## Task \#2: Configure Visits Detail Form
