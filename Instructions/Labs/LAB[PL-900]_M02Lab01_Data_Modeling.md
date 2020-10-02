@@ -92,7 +92,7 @@ Your solution will contain several entities upon completion of all the customiza
 
 4.  Click **Next**.
 
-5.  Click **Select Components**.
+5.  Click **Select Components** under Contact.
 
 6.  Select the **Views** tab and select the **Active Contacts** view. Click
     **Add**.
@@ -103,8 +103,10 @@ Your solution will contain several entities upon completion of all the customiza
 
 9.  Click **Add**.
 
-10. You should have **1 View** and **1 Form** selected. Click **Add**.
-    This will add the Contact entity with the selected View and Form to the newly created solution. 
+> [NOTE]
+> You should have **1 View** and **1 Form** selected. 
+
+10.  Click **Add** again. This will add the Contact entity with the selected View and Form to the newly created solution. 
     
 11.  Your solution should now have one entity: Contact.
 
@@ -136,7 +138,7 @@ The **Visit** entity will contain information about the campus visits including 
 
 We would like to assign each visit a unique number that can be easily entered and interpreted by a visitor when asked during the visit check-in process.
 
-> [NOTE]
+> [!NOTE]
 > We use **Time zone independent** behavior to record date and time information, because time of a visit is always local to the location of the building and should not change when viewed from a different time zone. 
 
 1.  Select your **Campus Management** solution
@@ -181,7 +183,7 @@ We would like to assign each visit a unique number that can be easily entered an
     
     * Click **Done**.
     
-6.  Create Actual Start field
+5.  Create Actual Start field
 
     * Click **Add Field**.
     
@@ -189,19 +191,23 @@ We would like to assign each visit a unique number that can be easily entered an
     
     * Select **Date and Time** for **Data Type**.
     
+    * In the **Required** field, leave this as **Optional**.
+    
     * Expand **Advanced options** section.
     
     * In the **Behavior** field, select **Time zone independent**.
     
     * Click **Done**.
     
-7.  Create Actual End field
+6.  Create Actual End field
 
     * Click **Add Field**.
     
     * Enter **Actual End** for **Display Name**.
     
     * Select **Date and Time** for **Data Type**.
+    
+    * In the **Required** field, leave this as **Optional**.
     
     * Expand **Advanced options** section.
     
@@ -259,7 +265,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 In this task you will import a solution that contains the Power Automate flow required to complete data import.
 
-1. Download [Data Import Solution](../../Allfiles/DataImport_managed.zip) if you have not already.
+1. You should have the **DataImport_managed.zip** file store on your Desktop. Download [Data Import Solution](../../Allfiles/DataImport_managed.zip) if you do not.
 
 2. Sign in to <https://make.powerapps.com>.
 
@@ -267,7 +273,7 @@ In this task you will import a solution that contains the Power Automate flow re
 
 4. Select **Solutions** in the left navigation panel.
 
-5. Click **Import**, then click **Browse**. Locate and select **DataImport_managed.zip** downloaded earlier, and then press **Next**.
+5. Click **Import**, then click **Browse**. Browse and select **DataImport_managed.zip** from your Desktop, and then press **Next**.
 
    > [!IMPORTANT]
    > You may receive the following message: 
@@ -317,13 +323,14 @@ In this task you will import a solution that contains the Power Automate flow re
 
 2. Click to open the **Visit** entity, then select the **Data** tab.
 
-3. Click **Active Visits** in the top right-hand corner to display the view selector, then select **All fields**
+3. Click **Active Visits** in the top right-hand corner to display the view selector, then select **All fields**. This will change the view that is being used to display the Visit data.
 
-4. If the import was successful, you should see a list of visit entries.
+> [!NOTE]
+> If the import was successful, you should see a list of visit entries.
 
-5. Click on any value in the **Building** column, confirm that the Building form opens in a separate window. Close this window.
+4. Click on any value in the **Building** column, confirm that the Building form opens in a separate window. Close this window.
 
-6. Click on any value in the **Visitor** column (you may need to scroll the view to the right), confirm that the Contact form opens in a separate window. Close this window.
+5. Click on any value in the **Visitor** column (you may need to scroll the view to the right), confirm that the Contact form opens in a separate window. Close this window.
 
 # Challenges
 
