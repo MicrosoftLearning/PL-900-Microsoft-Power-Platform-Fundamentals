@@ -85,17 +85,27 @@ Your solution will contain several entities upon completion of all the customiza
 ## Task \#2: Add Existing Entity
 
 1.  Click to open your **Campus Management** solution you just created.
+
 2.  Click **Add Existing** and select **Entity**.
+
 3.  Locate **Contact** and select it.
+
 4.  Click **Next**.
+
 5.  Click **Select Components**.
+
 6.  Select the **Views** tab and select the **Active Contacts** view. Click
     **Add**.
+    
 7.  Click **Select Components** again.
+
 8.  Select the **Forms** tab and select the **Contact** form.
+
 9.  Click **Add**.
+
 10. You should have **1 View** and **1 Form** selected. Click **Add**.
     This will add the Contact entity with the selected View and Form to the newly created solution. 
+    
 11.  Your solution should now have one entity: Contact.
 
 # Exercise \#2: Create Entities and Relationships
@@ -106,16 +116,19 @@ between the entities.
 ## Task #1: Create Building Entity and Fields
 
 1.  You should still have your browser open to your Campus Management solution. If not, open the Campus Management solution by following these steps:
+
     * Sign in to <https://make.powerapps.com> (if you are not already signed in)
+    
     * Select **Solutions** and click to open the **[Your Last Name] Campus Management**
           solution you just created.
+          
 2.  Create Building entity
 
     -   Click **New** and select **Entity**.
+    
     -   Enter **Building** for **Display Name** 
-    -   Click **Done**. This will
-            start provisioning the entity in background while you can start adding
-            other entities and fields.
+    
+    -   Click **Done**. This will start provisioning the entity in background while you can start adding other entities and fields.
 
 ## Task #2: Create Visit Entity and Fields
 
@@ -127,56 +140,85 @@ We would like to assign each visit a unique number that can be easily entered an
 > We use **Time zone independent** behavior to record date and time information, because time of a visit is always local to the location of the building and should not change when viewed from a different time zone. 
 
 1.  Select your **Campus Management** solution
+
 2. Create Visit entity
 
    * Click **New** and select **Entity**.
+   
    * Enter **Visit** for **Display Name** 
+   
    * Click **Done**. This will start provisioning the entity in background while you can start adding other fields.
 
 3. Create Scheduled Start field
 
    * Make sure you have the **Fields** tab selected and click **Add Field**.
+   
    * Enter **Scheduled Start** for **Display Name**.
+   
    * Select **Date and Time** for **Data Type**.
+   
    * In the **Required** field, select **Required**.
+   
    * Expand **Advanced options** section.
+   
    * In the **Behavior** field, select **Time zone independent**.
+   
    * Click **Done**.
 
 4.  Create Scheduled End field
 
     * Click **Add Field**.
+    
     * Enter **Scheduled End** for **Display Name**.
+    
     * Select **Date and Time** for **Data Type**.
+    
     * In the **Required** field, select **Required**.
+    
     * Expand **Advanced options** section.
+    
     * In the **Behavior** field, select **Time zone independent**.
+    
     * Click **Done**.
     
 6.  Create Actual Start field
 
     * Click **Add Field**.
+    
     * Enter **Actual Start** for **Display Name**.
+    
     * Select **Date and Time** for **Data Type**.
+    
     * Expand **Advanced options** section.
+    
     * In the **Behavior** field, select **Time zone independent**.
+    
     * Click **Done**.
     
 7.  Create Actual End field
 
     * Click **Add Field**.
+    
     * Enter **Actual End** for **Display Name**.
+    
     * Select **Date and Time** for **Data Type**.
+    
     * Expand **Advanced options** section.
+    
     * In the **Behavior** field, select **Time zone independent**.
+    
     * Click **Done**.
     
 7.  Create Code field
 
     * Click **Add Field**.
+    
     * Enter **Code** for **Display Name**.
+    
     * Select **Autonumber** for **Data Type**.
+    
     * Select **Date prefixed number** for **Autonumber type**.
+    
     * Click **Done**.
     
 8.  Click **Save Entity**
@@ -184,17 +226,29 @@ We would like to assign each visit a unique number that can be easily entered an
 ## Task #3: Create Relationships
 
 1.  Ensure that you are still viewing the **Visit** entity of your **Campus Management** solution. If not, navigate there.
+
 2.  Create Visit to Contact relationship
+
     * Select the **Relationships** tab.
+    
     * Click **Add Relationship** and select **Many-to-one**
+    
     * Select **Contact** for **Related (One)** 
+    
     * Enter **Visitor** for **Lookup field display name** 
+    
     * Click **Done**.
+    
 3.  Create Visit to Building relationship
+
     * Click **Add Relationship** and select **Many-to-one**
+    
     * Select **Building** for **Related (One)** 
+    
     * Click **Done**.
+    
 4.  Click **Save Entity**.
+
 5.  Select **Solutions** from the top menu and click **Publish all customizations.**
 
 # Exercise \#3: Import Data
@@ -206,9 +260,13 @@ We would like to assign each visit a unique number that can be easily entered an
 In this task you will import a solution that contains the Power Automate flow required to complete data import.
 
 1. Download [Data Import Solution](../../Allfiles/DataImport_managed.zip) if you have not already.
+
 2. Sign in to <https://make.powerapps.com>.
+
 3. Select your **[my initials] Practice** environment at the top right, if it is not already selected.
+
 4. Select **Solutions** in the left navigation panel.
+
 5. Click **Import**, then click **Browse**. Locate and select **DataImport_managed.zip** downloaded earlier, and then press **Next**.
 
    > [!IMPORTANT]
@@ -219,12 +277,19 @@ In this task you will import a solution that contains the Power Automate flow re
    > That message indicates that either the data model is not complete, the publisher prefix is not **bc**, or the **Building** and **Visit** entity names differ from the names listed in the steps above. 
 
 6. Press **Next**. You should be prompted to re-establish connections. 
+
 7. Expand the **Select a connection** dropdown and select **+ New Connection**.
+
 8. The new browser window or tab will open. Select **Create** when prompted to create Common Data Service connection. Sign in if required to complete creating the connection.
+
 9. Switch back to the previous tab where you were importing the solution.
+
 10. Click **Refresh** to refresh the list of connections. 
+
 11. Ensure the connection you just created is selected.
+
 12. Press **Import**.
+
 13. Wait until the import is complete.
 
 ## Task #2: Import Data  
@@ -249,10 +314,15 @@ In this task you will import a solution that contains the Power Automate flow re
 ## Task #3: Verify Data Import
 
 1. Navigate back to the previous Power Apps tab. Click **Done** on the popup. Select **Solutions** on the left navigation bar and open your **Campus Management** solution.
+
 2. Click to open the **Visit** entity, then select the **Data** tab.
+
 3. Click **Active Visits** in the top right-hand corner to display the view selector, then select **All fields**
+
 4. If the import was successful, you should see a list of visit entries.
+
 5. Click on any value in the **Building** column, confirm that the Building form opens in a separate window. Close this window.
+
 6. Click on any value in the **Visitor** column (you may need to scroll the view to the right), confirm that the Contact form opens in a separate window. Close this window.
 
 # Challenges
