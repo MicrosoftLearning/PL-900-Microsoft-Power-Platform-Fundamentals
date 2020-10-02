@@ -101,7 +101,7 @@ Task \#2: Display Visitor information
     
     -   Select the text in the **Default** property and clear the value.
     
-    -   Select **HintText** property and enter **"Enter visitor code"** as the value (including double quotes)
+    -   Select **HintText** property and enter `"Enter visitor code"` as the value (including double quotes)
     
     -   Click on **...** next to the control name in tree view (TextInput1), select **Rename**, change the name to `**textCode**`
     
@@ -174,13 +174,13 @@ In this task, we will create buttons for the user to check in and check out of t
    
    * In the properties pane, change the button **Text** property to `"Check In"` (you can type within the existing quotes)
    
-   * Click on **...** next to the button name in tree view (Button1), select **Rename**, change the name to **CheckInButton**
+   * Click on **...** next to the button name in tree view (Button1), select **Rename**, change the name to `CheckInButton`
    
    * Click **Button** to insert another button
    
-   * In the properties pane, change the button **Text** property to **"Check Out"** (you can type within the existing quotes)
+   * In the properties pane, change the button **Text** property to `"Check Out"` (you can type within the existing quotes)
    
-   * Rename the button as **CheckOutButton**
+   * Rename the button as `CheckOutButton`
    
    * Position the buttons side by side below the record form view 
    
@@ -325,7 +325,10 @@ Usability of a mobile app significantly improves when, in addition to the text i
 
 6. Press **F5** to run the app. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. Verify the icon displays a frown emoji.
 
-7. Find a different code value that has not been used before (it should not have an Actual Start or Actual End value). You can navigate to the previous tab to copy another Code from one of the Visits you have created. You also have the option to run your **Campus Staff** app created previously to create new visit records. Verify the icon displays a smile emoji for this code.
+7. Find a different code value that has not been used before (it should not have an Actual Start or Actual End value). 
+
+    >[!NOTE]
+    >You can navigate to the previous tab to copy another Code from one of the Visits you have created. You also have the option to run your **Campus Staff** app created previously to create new visit records. Verify the icon displays a smile emoji for this code.
 
    Your running app should look approximately like the following:
 
