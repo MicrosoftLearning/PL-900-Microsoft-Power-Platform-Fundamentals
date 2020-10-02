@@ -103,7 +103,7 @@ Your solution will contain several entities upon completion of all the customiza
 
 9.  Click **Add**.
 
-    > *Note: You should have **1 View** and **1 Form** selected. 
+    > You should have **1 View** and **1 Form** selected. 
 
 10.  Click **Add** again. This will add the Contact entity with the selected View and Form to the newly created solution. 
     
@@ -137,7 +137,7 @@ The **Visit** entity will contain information about the campus visits including 
 
 We would like to assign each visit a unique number that can be easily entered and interpreted by a visitor when asked during the visit check-in process.
 
-> *Note: We use **Time zone independent** behavior to record date and time information, because time of a visit is always local to the location of the building and should not change when viewed from a different time zone. 
+> We use **Time zone independent** behavior to record date and time information, because time of a visit is always local to the location of the building and should not change when viewed from a different time zone. 
 
 1.  Select your **Campus Management** solution
 
@@ -273,7 +273,7 @@ In this task you will import a solution that contains the Power Automate flow re
 
 5. Click **Import**, then click **Browse**. Browse and select **DataImport_managed.zip** from your Desktop, and then press **Next**.
 
->[!IMPORTANT]You may receive the following message: 
+> **Important:** You may receive the following message: 
 >
 >There are missing dependencies. Install the following solutions before installing this one: "&lt;solution name&gt;". 
 >
@@ -303,8 +303,7 @@ In this task you will import a solution that contains the Power Automate flow re
 
 3. If **Status** is **Off**, select **...** then select **Turn On**.
 
-   > [!IMPORTANT]
-   > If you receive an error message, verify that the entities and fields you created match the instructions above.
+   > **Important:** If you receive an error message, verify that the entities and fields you created match the instructions above.
 
 4. Select **Import Data** component. A new tab will open Power Automate. Click **Get Started** if presented with a popup. 
 
@@ -322,7 +321,7 @@ In this task you will import a solution that contains the Power Automate flow re
 
 3. Click **Active Visits** in the top right-hand corner to display the view selector, then select **All fields**. This will change the view that is being used to display the Visit data.
 
-> *Note: If the import was successful, you should see a list of visit entries.*
+    > If the import was successful, you should see a list of visit entries.
 
 4. Click on any value in the **Building** column, confirm that the Building form opens in a separate window. Close this window.
 
