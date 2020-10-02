@@ -139,7 +139,8 @@ In this task, we will modify default Active Visits view and create new view for 
 
 16.  The view is now filtered to show only records where the Scheduled Start date is today. Press **Ok** to save the condition.
 
-15.  Add **Actual Start** and **Actual End** fields to the view. Since we no longer filter on the view status, we will get all today's visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
+15.  Add **Actual Start** and **Actual End** fields to the view. 
+    > *Note: Since we no longer filter on the view status, we will get all today's visits including completed ones. These fields will help to differentiate completed visits and visits in progress.*
 
 16.  Click **Save** and wait until the changes are saved.
 
@@ -234,7 +235,9 @@ Task \#1: Create Application
      
 12.  Click **Save** to save the application.
 
-13.  Click **Validate** to validate the changes done in the application. This will show some warnings but we can ignore them, since we have not referenced a specific View and Form for the entities and the users will have access to all the Views and Forms for **Visit** and **Building** entities.
+13.  Click **Validate** to validate the changes done in the application. 
+
+    > *Note: This will show some warnings but we can ignore them, since we have not referenced a specific View and Form for the entities and the users will have access to all the Views and Forms for **Visit** and **Building** entities.*
 
 14.  Click **Publish** to publish the application and wait for the publishing to
      complete.
@@ -262,7 +265,7 @@ Task \#2: Test Application
 
     -   Click **New** from the top menu.
 
-    -   Provide **First Name** as **John** and **Last Name** as **Doe**.
+    -   Provide **First Name** as `John` and **Last Name** as `Doe`.
 
     -   Provide your personal email as **Email**. This will be used in a future lab. 
     
@@ -276,7 +279,7 @@ Task \#2: Test Application
 
     -   Click **New**.
 
-    -   Enter the **Name** as Microsoft Building
+    -   Enter the **Name** as `Microsoft Building`
         
     -   Click **Save and Close** and this will show the newly created record on
         the Active Buildings View.
@@ -289,7 +292,7 @@ Task \#2: Test Application
     
     -   Enter the fields as following 
     
-        -   **Name**: New test visit
+        -   **Name**: `New test visit`
         -   **Building**: select Microsoft Building
         -   **Visitor**: select John Doe
         -   **Scheduled Start**: select tomorrow's date and 2:00 PM as start time
