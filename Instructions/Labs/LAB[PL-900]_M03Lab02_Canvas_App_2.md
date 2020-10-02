@@ -70,8 +70,9 @@ Task \#1: Create Canvas App
     
     -   Click **File** and select **Save As**.
     
-    -   Check if **The cloud** is selected. Enter **[Your Last Name] Campus Security** for Name and
-        click **Save**. This will make sure that the changes are not lost if the app closes unexpectedly.
+    -   Check if **The cloud** is selected. 
+    
+    -   Enter **[Your Last Name] Campus Security** for Name and click **Save**. This will make sure that the changes are not lost if the app closes unexpectedly.
         
     -   Click the back arrow at the top left (below Power Apps) to return to the app.
 
@@ -90,7 +91,7 @@ Task \#2: Display Visitor information
 
 1.  Add search box
 
-    -   Select the **Tree View** tab on the left.
+    -   Select the **Tree View** tab on the left navigation bar.
     
     -   Select **Screen1**.
     
@@ -102,7 +103,7 @@ Task \#2: Display Visitor information
     
     -   Select **HintText** property and enter **"Enter visitor code"** as the value (including double quotes)
     
-    -   Click on **...** next to the control name in tree view (TextInput1), select **Rename**, change the name to **textCode**
+    -   Click on **...** next to the control name in tree view (TextInput1), select **Rename**, change the name to `**textCode**`
     
 2. Add form view
 
@@ -116,7 +117,7 @@ Task \#2: Display Visitor information
    
    -   Click **Edit fields**
    
-   -   Click **Add field** and select the following fields: Actual End, Actual Start, Building, Scheduled End, Scheduled Start, Visitor
+   -   Click **Add field** and select the following fields: **Actual End**, **Actual Start**, **Building**, **Scheduled End**, **Scheduled Start**, **Visitor**
    
    -   Press **Add**
    
@@ -136,7 +137,7 @@ Task \#2: Display Visitor information
    
    -   Select **Data** tab
    
-   -   Open the View Selector in the top right by clicking the current View name (Active Visits)
+   -   Open the View Selector in the top right by clicking the current View name, **Active Visits**
    
    -   Change the View to **All fields**
    
@@ -159,28 +160,29 @@ In this task, we will create buttons for the user to check in and check out of t
 
    * Select **textCode** control
    
-   * Select **OnChange** property in the Advanced tab
+   * In the properties pane, select the **Advanced** tab and select **OnChange** property
    
    * Enter the following expression `Set(Visit, LookUp(Visits, Code = textCode.Text))`
-     It is the same expression as above except this time we save results in a global variable. That allows us to use the variable *Visit* throughout the app without the need to re-enter the entire lookup expression.
+    >[!NOTE]
+    >It is the same expression as above, except this time we save results in a global variable. That allows us to use the variable *Visit* throughout the app without the need to re-enter the entire lookup expression.
 
 2. Add buttons for checking in and checking out
+
+   * Select **Insert** tab
    
-   1. Select **Insert** tab
+   * Click **Button**
    
-   2. Click **Button**
+   * In the properties pane, change the button **Text** property to `"Check In"` (you can type within the existing quotes)
    
-   3. In the properties pane, change the button **Text** property to **"Check In"** (you can type within the existing quotes)
+   * Click on **...** next to the button name in tree view (Button1), select **Rename**, change the name to **CheckInButton**
    
-   4. Click on **...** next to the button name in tree view (Button1), select **Rename**, change the name to **CheckInButton**
+   * Click **Button** to insert another button
    
-   5. Click **Button** to insert another button
+   * In the properties pane, change the button **Text** property to **"Check Out"** (you can type within the existing quotes)
    
-   6. In the properties pane, change the button **Text** property to **"Check Out"** (you can type within the existing quotes)
+   * Rename the button as **CheckOutButton**
    
-   7. Rename the button as **CheckOutButton**
-   
-   8. Position the buttons side by side below the record form view 
+   * Position the buttons side by side below the record form view 
    
 3. Enable and disable buttons depending on visit data. 
    We would like to enable **Check In** button when the visit record has been located (not blank), record status is active, and the visit has not started yet, i.e. the actual start value is blank.
