@@ -95,7 +95,7 @@ Task \#1: Create flow
 
    * Enter the following text in **Email Body**:  
         
-    > Dynamic content needs to be placed where fields are named in brackets. It is recommended to copy & paste all text first and then add dynamic content in the correct places.*
+        > Dynamic content needs to be placed where fields are named in brackets. It is recommended to copy & paste all text first and then add dynamic content in the correct places.*
    
         ```
         Dear {First Name},
