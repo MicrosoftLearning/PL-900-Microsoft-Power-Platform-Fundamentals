@@ -63,7 +63,7 @@ In this task, you will create a canvas app using the phone layout template based
     
     -   Select **Phone layout** under **Common Data Service**.
     
--   Select **Common Data Service** connection then click **Create**.
+3.   Select **Common Data Service** connection then click **Create**.
 
     -   Select **Visits** table
     
@@ -71,7 +71,7 @@ In this task, you will create a canvas app using the phone layout template based
     
     -   The **Welcome to Power Apps Studio** window may appear. Click **Skip**.
     
-3.  Save application
+4.  Save application
 
     1.  Click **File > Save**.
     
