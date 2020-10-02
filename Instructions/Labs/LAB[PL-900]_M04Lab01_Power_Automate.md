@@ -230,13 +230,13 @@ Task \#2: Validate and test the flow
 13.  Enter the following in the **Subject** field. **Visitor (Value)** is a dynamic content from the **Get visitor** step.
 
        ```
-         {**Full Name**} overstayed their welcome
+         {Full Name} overstayed their welcome
        ```
    
 14.  Enter the following in the **Body** field. **Name** is a dynamic content from **Get building** step.
 
        ```
-         There is an overstay in building {**Name**}
+         There is an overstay in building {Name}
          
          Best,
          
