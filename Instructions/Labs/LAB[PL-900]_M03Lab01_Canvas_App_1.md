@@ -184,19 +184,23 @@ In this task, you will configure the pre-generated gallery to display the title,
 
 Because number of visits continuously grows, users need a feature to filter the visits gallery. For example, the user may want to see only the future visits. In this task, you will add ability to show visits only after a date selected by the user.
 
-1. Select **Insert** menu at the top.
+1. Select **BrowseScreen1** to ensure BrowseGallery1 is deselected
 
-2. Click **Input** and select **Date picker**.
+2. Select **Insert** menu at the top.
 
-3. Using either keyboard or mouse, position the control below the search box.
+3. Click **Input** and select **Date picker**.
 
-4. Select **BrowseGallery1** 
+4. Using either keyboard or mouse, position the control below the search box.
 
-5. Resize and move the gallery control so that it is located under the date picker and covers the screen. You can do this by clicking the resize icon at the top center of the gallery control and resizing the control to start after the date picker.
+5. Select **BrowseGallery1** 
 
-6. While still selecting **BrowseGallery1**, click the **Advanced** tab of the Properties pane and locate the **Items** property.
+6. Resize and move the gallery control so that it is located under the date picker and covers the screen. You can do this by clicking the resize icon at the top center of the gallery control and resizing the control to start after the date picker.
 
-7. In the expression, locate `[@Visits]` and replace them with `Filter(Visits,'Scheduled End' >= DatePicker1.SelectedDate)`. Full expression should look like the following:
+7. While still selecting **BrowseGallery1**, click the **Advanced** tab of the Properties pane.
+
+8. Locate the **Items** property and click in the text box.
+
+8. In the expression, locate `[@Visits]` and replace it with `Filter(Visits,'Scheduled End' >= DatePicker1.SelectedDate)`. Full expression should look like the following:
 
    ```
    SortByColumns(
@@ -217,7 +221,7 @@ Because number of visits continuously grows, users need a feature to filter the 
 
 ![Canvas filtering gallery](media/2-canvas-browse.png)
 
-8. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
+9. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 # Exercise #2: Complete the App
 
@@ -242,7 +246,7 @@ Task \#1: Test App
     
     -   Create at least 2 more visits.
     
-    -   Press **ESC** key to close the app
+    -   Press **ESC** key or click the **X** icon to close preview mode.
 
 2.  Save and publish the application
 
