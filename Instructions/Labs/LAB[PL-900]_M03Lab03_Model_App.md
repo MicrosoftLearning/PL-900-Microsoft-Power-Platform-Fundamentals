@@ -238,7 +238,7 @@ Task \#1: Create Application
 
 13.  Click **Validate** to validate the changes done in the application. 
 
-        >  This will show some warnings but we can ignore them, since we have not referenced a specific View and Form for the entities and the users will have access to all the Views and Forms for **Visit** and **Building** entities.*
+        >  This will show some warnings but we can ignore them, since we have not referenced a specific View and Form for the entities and the users will have access to all the Views and Forms for **Visit** and **Building** entities.
 
 14.  Click **Publish** to publish the application and wait for the publishing to
      complete.
