@@ -141,7 +141,7 @@ In this task, we will modify default Active Visits view and create new view for 
 
 15.  Add **Actual Start** and **Actual End** fields to the view. 
 
-        > Since we no longer filter on the view status, we will get all today's visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
+        > **Note:** Since we no longer filter on the view status, we will get all today's visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
 
 16.  Click **Save** and wait until the changes are saved.
 
