@@ -116,7 +116,7 @@ Task \#1: Create flow
 
     Leave this flow tab open for the next task. You flow should look approximately like the following:
 
-![Power Automate visitor notification flow](media/4-power-automate-notify.PNG)
+![Power Automate visitor notification flow](media/4-power-automate-notify.png)
 
 Task \#2: Validate and test the flow
 --------------------------------
@@ -249,7 +249,7 @@ Task \#2: Validate and test the flow
 
     Your flow should look approximately like the following:
 
-![Security sweep scheduled flow part 1](media/4-power-automate-security-sweep.PNG)
+![Security sweep scheduled flow part 1](media/4-power-automate-security-sweep.png)
 
 ## Task #2: Validate and test the flow
 
