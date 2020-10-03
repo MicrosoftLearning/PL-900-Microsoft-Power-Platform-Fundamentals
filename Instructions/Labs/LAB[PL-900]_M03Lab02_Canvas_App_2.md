@@ -1,11 +1,11 @@
 ---
 lab:
-    title: 'Lab: Canvas App, Part 2'
-    module: 'Module 3: Get Started with Power Apps'
+    title: 'Lab 3: How to build a canvas app, part 2'
+    module: 'Module 3: Get started with Power Apps'
 ---
 
-# Module 3: Get Started with Power Apps
-## Lab: Canvas App, Part 2
+# Module 3: Get started with Power Apps
+## Lab 2: How to build a canvas app, part 2
 
 Scenario
 ========
@@ -33,7 +33,8 @@ You will follow the below outline to design the canvas app:
 
 ## Prerequisites
 
-* Completion of Lab 1 - Data Modeling
+* Completion of **Module 0 Lab 0 - Validate lab environment**
+* Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
 
 Things to consider before you begin
 -----------------------------------
@@ -50,93 +51,137 @@ Exercise \#1: Create Security Canvas App
 Task \#1: Create Canvas App
 ---------------------------
 
-1.  Open the Campus Management solution.
+1.  Open your Campus Management solution.
 
     -   Sign in to <https://make.powerapps.com>
 
-    -   If the Environment displayed in the top right is not your Bellows College environment, select your **Environment**. 
+    -   If the Environment displayed in the top right is not your Practice environment, select your **Environment**. 
 
     -   Select **Solutions**.
 
     -   Click to open the **Campus Management** solution.
+    
 2.  Create new canvas application
 
     -   Click **New** and select **App \| Canvas App \| Phone Form Factor**.
         This will open the App Editor in a New window.
-    -   If you are creating your first app, this will ask you to set the
-        Country/region for the app. Click **Get Started.**
-    -   Click File and select Save As.
-    -   Check if **The Cloud** is selected. Enter **Campus Security** for Name and
-        click **Save**. This will make sure that the changes are not lost if the app closes unexpectedly.
-    -   Click the back arrow at the top right (below "Power Apps") to return to the app.
+        
+    -   Click **Skip** if presented with the Welcome to Power Apps Studio dialogue.
+    
+    -   Click **File** and select **Save As**.
+    
+    -   Check if **The cloud** is selected. 
+    
+    -   Enter **[Your Last Name] Campus Security** for Name and click **Save**. This will make sure that the changes are not lost if the app closes unexpectedly.
+        
+    -   Click the back arrow at the top left (below Power Apps) to return to the app.
 
 3.  Connect to data source (Visits)
-    1.  Click **View \| Data sources**
-    2.  Click **Add data**
-    3.  Click **See all entities**
-    4.  Select **Visits** and wait for the Visit entity to display under Data sources.
-4.  To preserve work in progress, click **File \| Save** then press **Save**
+
+    -   Click **View \| Data sources**
+    
+    -   Click **See all entities**
+    
+    -   Select **Visits** and wait for the Visit entity to display under the Data **In your app** section.
+    
+4.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 Task \#2: Display Visitor information
 --------------------------------
 
 1.  Add search box
 
-    -   Select the **Tree View** tab on the left.
+    -   Select the **Tree View** tab on the left navigation bar.
+    
     -   Select **Screen1**.
+    
     -   Go to the **Insert** tab.
+    
     -   Click **Text** and select **Text input**.
+    
     -   Select the text in the **Default** property and clear the value.
-    -   Select **HintText** property and enter **"Enter visitor code"** as the value (including double quotes)
-    -   Click on ... next to control name in a tree view, select **Rename**, change the name to **textCode**
+    
+    -   Select **HintText** property and enter `"Enter visitor code"` as the value (including double quotes)
+    
+    -   Click on **...** next to the control name in tree view (TextInput1), select **Rename**, change the name to `**textCode**`
+    
 2. Add form view
 
    -   On **Insert** tab click **Forms**  then select **Display**
+   
    -   Using size handles, position the form below the search textbox
+   
    -   Select **DataSource** property and enter **Visits**
+   
    -   In properties pane select **Horizontal** as **Layout**
+   
    -   Click **Edit fields**
-   -   Click **Add field** and select the following fields: Actual End, Actual Start, Building, Scheduled End, Scheduled Start, Visitor
+   
+   -   Click **Add field** and select the following fields: **Actual End**, **Actual Start**, **Building**, **Scheduled End**, **Scheduled Start**, **Visitor**
+   
    -   Press **Add**
+   
    -   Change the order of the selected fields by dragging the field cards in the list. Recommended order is Visitor, Building, Scheduled Start, Scheduled End, Actual Start, Actual End
+   
+   -   Click the **X** to close the Fields pane
+   
    -   In the Advanced tab, select **Item** property and enter `LookUp(Visits, Code = textCode.Text)` 
 
-3.  To preserve work in progress, click **File \| Save** then press **Save**. Click the back arrow at the top right (below "Power Apps") to return to the app.
+3. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 4. Test the app
 
    -   Switch to the browser tab containing the solution
+   
    -   Select **Visit** entity
+   
    -   Select **Data** tab
-   -   Open the View Selector in the top right by clicking the current View name (Active Visits)
+   
+   -   Open the View Selector in the top right by clicking the current View name, **Active Visits**
+   
    -   Change the View to **All fields**
+   
    -   Locate a Visit record that does not have an Actual Start or Actual End value. Select and copy the **Code** for this Visit.
-   -   Switch to the browser tab with the app, press F5 to run the app
+   
+   -   Switch to the browser tab with the app, press F5 or click the Play icon at the upper-right corner to preview the app.
+   
    -   Paste the copied value into the search textbox, verify that the record is displayed in the form
+   
    -   Clear the search textbox contents.
+   
 5.  Press **ESC** to exit the running app.
 
 
 Task \#3: Add Check In and Check Out Buttons
 ---------------------------------------
+In this task, we will create buttons for the user to check in and check out of their Visit. 
 
 1. Save search results in a variable to reuse across the control
 
    * Select **textCode** control
-   * Select **OnChange** property in the Advanced tab
+   
+   * In the properties pane, select the **Advanced** tab and select **OnChange** property
+   
    * Enter the following expression `Set(Visit, LookUp(Visits, Code = textCode.Text))`
-     It is the same expression as above except this time we save results in a global variable. That allows us to use the variable *Visit* throughout the app without the need to re-enter the entire lookup expression.
+        > It is the same expression as above, except this time we save results in a global variable. That allows us to use the variable *Visit* throughout the app without the need to re-enter the entire lookup expression.
 
 2. Add buttons for checking in and checking out
+
+   * Select **Insert** tab
    
-1. Select **Insert** tab
-   2. Click **Button**
-   3. Change the button **Text** property to **"Check In"** (you can type within the existing quotes)
-   4. Rename the button as **CheckInButton** by clicking the button name (Button1) in the right panel
-   5. Click **Button** to insert another button
-   6. Change the button **Text** property to **"Check Out"**
-   7. Rename the button as **CheckOutButton**
-   8. Position the buttons side by side below the record form view 
+   * Click **Button**
+   
+   * In the properties pane, change the button **Text** property to `"Check In"` (you can type within the existing quotes)
+   
+   * Click on **...** next to the button name in tree view (Button1), select **Rename**, change the name to `CheckInButton`
+   
+   * Click **Button** to insert another button
+   
+   * In the properties pane, change the button **Text** property to `"Check Out"` (you can type within the existing quotes)
+   
+   * Rename the button as `CheckOutButton`
+   
+   * Position the buttons side by side below the record form view 
    
 3. Enable and disable buttons depending on visit data. 
    We would like to enable **Check In** button when the visit record has been located (not blank), record status is active, and the visit has not started yet, i.e. the actual start value is blank.
@@ -176,9 +221,9 @@ Task \#3: Add Check In and Check Out Buttons
      )
      ```
 
-5. To preserve work in progress, click **File \| Save** then press **Save**. Click the back arrow at the top right (below "Power Apps") to return to the app.
+5. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
-6. Press **F5** to run the app. Both buttons should be disabled. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. The **Check In** button should become enabled.
+6. Press **F5** to run the app. Both buttons should be disabled. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. The **Check In** button should become enabled. Clear the search box contents.
 
 7. Press **ESC** to exit the running app.
 
@@ -192,7 +237,7 @@ To perform the check in and check out process we need to update Common Data Serv
 
 1. Select **Check In** button.
 
-2. Set **OnSelect** property  to the following expression.
+2. Set **OnSelect** property on the Advanced tab to the following expression.
 
    ```
    Patch(
@@ -208,11 +253,13 @@ To perform the check in and check out process we need to update Common Data Serv
 
    * `Patch(Visits, Visit, {'Actual Start': Now()});`. *Patch* method updates **Visits** entity, the record identified by **Visit** variable (which is the current visit). The expression sets the value of *Actual Start* field to the current date and time (*Now()* method).
    * `Refresh([@Visits]);`. This expression refreshes the visit records as the underlying values have changed
-   * `Set(Visit, LookUp(Visits, Code = textCode.Text));` This expression updates the *Visit* variable with fresh data from CDS.
+   * `Set(Visit, LookUp(Visits, Code = textCode.Text));` This expression updates the *Visit* variable with fresh data from Common Data Service.
+   
+   When a user clicks this button, the Actual Start of the Visit will be set to the current date and time and the data will refresh.
 
 3. Select **Check Out** button.
 
-4. Set **OnSelect** property  to the following expression.
+4. Set **OnSelect** property on the Advanced tab to the following expression.
 
    ```
    Patch(
@@ -227,24 +274,29 @@ To perform the check in and check out process we need to update Common Data Serv
    Set(Visit, LookUp(Visits, Code = textCode.Text));
    ```
 
-   The only difference from check in expression is setting of the *Status* field to *Inactive* value.
+   When a user clicks this button, the Actual End will be set to the current date and time, the Status of the Visit record will be set to Inactive, and the data will refresh.
 
-5. To preserve work in progress, click **File \| Save** then press **Save**.
+5. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
-6. Press **F5** to run the app. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. The **Check In** button should become enabled.
+6. Press **F5** or click the Play button to run the app. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. The **Check In** button should become enabled.
 
 7. Press **Check In** button. The following should happen:
 
-   1. *Actual Start* has a current date and time
-   2. **Check In** button is disabled
-   3. **Check Out** button is enabled
+   * **Actual Start** is set to the current date and time
+   
+   * **Check In** button is disabled
+   
+   * **Check Out** button is enabled
 
 8. Press **Check Out** button.
 
-   1. *Actual End* has a current date and time
-   2. Both buttons are disabled
+   * **Actual End** is set to the current date and time
+   
+   * Both buttons are disabled
 
-9. Press **ESC** to exit the running app.
+9. Clear the search box contents.
+
+10. Press **ESC** to exit the running app.
 
 Task \#5: Add visual indicators
 --------------------------------------
@@ -268,21 +320,32 @@ Usability of a mobile app significantly improves when, in addition to the text i
    )
    ```
 
-5. To preserve work in progress, click **File \| Save** then press **Save**.
+5. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
+
 6. Press **F5** to run the app. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. Verify the icon displays a frown emoji.
-7. Find a different code value that has not been used before (it should not have an Actual Start or Actual End value). At this time, you can run **Campus Staff** app created previously to create new visit records. Verify the icon displays a smile emoji.
+
+7. Find a different code value that has not been used before (it should not have an Actual Start or Actual End value). 
+
+    > You can navigate to the previous tab to copy another Code from one of the Visits you have created. You also have the option to run your **Campus Staff** app created previously to create new visit records. Verify the icon displays a smile emoji for this code.
+
+   Your running app should look approximately like the following:
+
+![Canvas running security app](media/3-canvas-running.png)
+
 8. Press **ESC** to exit the running app.
 
 ## Task #6: Publish the app
 
 1. You should still have the Campus Security app open in your browser. If not, select **Campus Security** app and click **Edit**.
+
 2. Select **File \| Publish** 
+
 3. Select **Publish this version**
 
 # Challenges
 
-* How to avoid manual entry of the visit code?
+* Avoid manual entry of the visit code
 * Add building validation for the visit
 * Add validation of the visit actual time vs visit scheduled time (too early, too late, etc)
 * Add detailed status of the visit, e.g. email display and validation for the visitor, reason for denying building access, etc
-* How would you handle the requirement of multiple buildings/meetings/checkings during the single campus visit. For example, someone may visit campus for a day and during that day they will meet staff members in multiple buildings at different time of the day. Would you consider bringing *appointment* entity into the soluton?
+* Multiple buildings/meetings/checkings during a single campus visit. For example, someone may visit campus for a day and during that day they will meet staff members in multiple buildings at different time of the day. Would you consider bringing *appointment* entity into the solution?
