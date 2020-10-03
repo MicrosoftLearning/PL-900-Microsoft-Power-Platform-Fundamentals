@@ -140,7 +140,8 @@ In this task, we will modify default Active Visits view and create new view for 
 16.  The view is now filtered to show only records where the Scheduled Start date is today. Press **Ok** to save the condition.
 
 15.  Add **Actual Start** and **Actual End** fields to the view. 
-    > *Note: Since we no longer filter on the view status, we will get all today's visits including completed ones. These fields will help to differentiate completed visits and visits in progress.*
+
+    > Since we no longer filter on the view status, we will get all today's visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
 
 16.  Click **Save** and wait until the changes are saved.
 
