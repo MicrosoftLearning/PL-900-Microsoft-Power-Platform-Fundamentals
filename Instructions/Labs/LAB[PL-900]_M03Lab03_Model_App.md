@@ -153,7 +153,7 @@ Exercise \#2: Create Model-Driven Application
 
 **Objective:** In this exercise, you will create the model-driven app, customize the sitemap, and test the app.
 
-**Note:** You will see several fields not addressed as you build out your application, particularly on the sitemap steps. We have taken some short cuts in the interest of doing the labs. In a real implementation, you would give these items logical names.
+        > You will see several fields not addressed as you build out your application, particularly on the sitemap steps. We have taken some short cuts in the interest of doing the labs. In a real implementation, you would give these items logical names.
 
 Task \#1: Create Application
 ----------------------------
@@ -238,7 +238,7 @@ Task \#1: Create Application
 
 13.  Click **Validate** to validate the changes done in the application. 
 
-    > *Note: This will show some warnings but we can ignore them, since we have not referenced a specific View and Form for the entities and the users will have access to all the Views and Forms for **Visit** and **Building** entities.*
+        >  This will show some warnings but we can ignore them, since we have not referenced a specific View and Form for the entities and the users will have access to all the Views and Forms for **Visit** and **Building** entities.*
 
 14.  Click **Publish** to publish the application and wait for the publishing to
      complete.
