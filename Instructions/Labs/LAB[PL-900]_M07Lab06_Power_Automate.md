@@ -253,7 +253,7 @@ Task \#2: Validate and test the flow
 
 ## Task #2: Validate and test the flow
 
-1. Locate or create visit records that:
+1. Validate that you have visit records that:
 
    1. Have active status
    
@@ -261,7 +261,7 @@ Task \#2: Validate and test the flow
    
    3. Actual Start has a value.
    
-    >  To get to this data, navigate to <make.powerapps.com> in a new tab. Click **solutions** on the left pane to locate your solution. Select the **Visit** entity, then select the **Data** tab. Click **Active Visits** in the top right-hand corner to display the view selector, then select **All fields**
+    >  To view this data, navigate to <make.powerapps.com> in a new tab. Click **solutions** on the left pane to locate your solution. Select the **Visit** entity, then select the **Data** tab. Click **Active Visits** in the top right-hand corner to display the view selector, then select **All fields**. 
    
 2. Navigate to your solution and locate the **Security Sweep** flow. Click the **...** and click **Edit**.
 
