@@ -153,7 +153,7 @@ Exercise \#2: Create Model-Driven Application
 
 **Objective:** In this exercise, you will create the model-driven app, customize the sitemap, and test the app.
 
-        > You will see several fields not addressed as you build out your application, particularly on the sitemap steps. We have taken some short cuts in the interest of doing the labs. In a real implementation, you would give these items logical names.
+> You will see several fields not addressed as you build out your application, particularly on the sitemap steps. We have taken some short cuts in the interest of doing the labs. In a real implementation, you would give these items logical names.
 
 Task \#1: Create Application
 ----------------------------
