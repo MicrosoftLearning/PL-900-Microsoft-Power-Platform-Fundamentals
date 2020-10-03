@@ -261,7 +261,7 @@ Task \#2: Validate and test the flow
    
    3. Actual Start has a value.
    
-         >**Note**: To view this data, navigate to <make.powerapps.com> in a new tab. Click **Solutions** on the left pane to locate your solution. Select the **Visit** entity, then select the **Data** tab. Click **Active Visits** in the top right-hand corner to display the view selector, then select **All fields**.
+         >**Note**: To view this data, navigate to <make.powerapps.com> in a new tab. Click Solutions on the left pane to locate your solution. Select the Visit entity, then select the Data tab. Click Active Visits in the top right-hand corner to display the view selector, then select All fields.
    
 2. Navigate to your solution and locate the **Security Sweep** flow. Click the **...** and click **Edit**.
 
