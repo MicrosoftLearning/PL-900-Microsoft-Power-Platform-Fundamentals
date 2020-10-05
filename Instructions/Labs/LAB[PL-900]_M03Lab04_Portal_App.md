@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab 5: Introduction to Power Apps portals'
+    title: 'Lab 5: How to build a Power Apps portal'
     module: 'Module 3: Get started with Power Apps'
 ---
 
