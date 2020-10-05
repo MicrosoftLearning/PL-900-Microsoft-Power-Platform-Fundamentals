@@ -281,7 +281,6 @@ In this task you will import a solution that contains the Power Automate flow re
 >   publisher prefix is not **bc**, or the **Building** and **Visit** entity
 >   names differ from the names listed in the steps above.
 
-
 6. Press **Next**. You should be prompted to re-establish connections. 
 
 7. Expand the **Select a connection** dropdown and select **+ New Connection**.
@@ -314,7 +313,7 @@ In this task you will import a solution that contains the Power Automate flow re
 
 6. Click **Done**.
 
-7. Wait until the flow instance completes the run. You can open the running instance to monitor the progress. The purpose of this flow was to generate example data for the upcoming labs. In the next task, you will verify that the data import was successful. 
+7. Wait until the flow instance completes the run. You can refresh the **28-day run history** table to see when the flow has run. The purpose of this flow was to generate example data for the upcoming labs. In the next task, you will verify that the data import was successful. 
 
 ## Task #3: Verify Data Import
 
