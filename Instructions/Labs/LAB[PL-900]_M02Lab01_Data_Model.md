@@ -100,11 +100,11 @@ Your solution will contain several entities upon completion of all the customiza
 7.  Click **Select Components** again.
 
 8.  Select the **Forms** tab and select the **Contact** form.
-
-    > You should have **1 View** and **1 Form** selected. 
     
 9.  Click **Add**.
 
+    > You should have **1 View** and **1 Form** selected. 
+    
 10.  Click **Add** again. This will add the Contact entity with the selected View and Form to the newly created solution. 
     
 11.  Your solution should now have one entity: Contact.
