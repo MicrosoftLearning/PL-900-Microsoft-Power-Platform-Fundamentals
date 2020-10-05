@@ -304,7 +304,7 @@ In this task you will import a solution that contains the Power Automate flow re
 
 2. Check the **Status** of the **Import Data** flow.
 
-3. If **Status** is **Off**, select **...** then select **Turn On**.
+3. If **Status** is **Off**, select **...** next to **Import Data** then select **Turn On**.
 
    > **Important:** If you receive an error message, verify that the entities and fields you created match the instructions above.
 
