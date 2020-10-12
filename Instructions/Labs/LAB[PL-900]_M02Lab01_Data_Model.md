@@ -313,7 +313,9 @@ In this task you will import a solution that contains the Power Automate flow re
 
 6. Click **Done**.
 
-7. Wait until the flow instance completes the run. You can refresh the **28-day run history** table to see when the flow has run. The purpose of this flow was to generate example data for the upcoming labs. In the next task, you will verify that the data import was successful. 
+7. Wait until the flow instance completes the run. You can refresh the **28-day run history** table to see when the flow has run. 
+
+    > The purpose of this flow was to generate example data for the upcoming labs. In the next task, you will verify that the data import was successful. 
 
 ## Task #3: Verify Data Import
 
@@ -321,13 +323,19 @@ In this task you will import a solution that contains the Power Automate flow re
 
 2. Click to open the **Visit** entity, then select the **Data** tab.
 
-3. Click **Active Visits** in the top right-hand corner to display the view selector, then select **All fields**. This will change the view that is being used to display the Visit data.
+3. Click **Active Visits** in the top right-hand corner to display the view selector, then select **All fields**. This will change the view that is being used to display the Visit data. 
+
+    > If you do not see **Active Visits** due to smaller resolution, you should see an eye icon in the same location.
 
     > If the import was successful, you should see a list of visit entries.
 
-4. Click on any value in the **Building** column, confirm that the Building form opens in a separate window. Close this window.
+4. Click on any value in the **Building** column, confirm that the Building form opens in a separate window. 
 
-5. Click on any value in the **Visitor** column (you may need to scroll the view to the right), confirm that the Contact form opens in a separate window. Close this window.
+5. Close the recently launched window.
+
+6. Click on any value in the **Visitor** column (you may need to scroll the view to the right), confirm that the Contact form opens in a separate window.
+
+7. Close the recently launched window.
 
 # Challenges
 
