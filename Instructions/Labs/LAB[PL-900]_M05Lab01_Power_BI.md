@@ -7,8 +7,7 @@ lab:
 # Module 5: Get Started with Power BI
 ## Lab: How to build a simple dashboard
 
-Scenario
-========
+# Scenario
 
 Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
 
@@ -18,8 +17,7 @@ Throughout this course, you will build applications and perform automation to en
 
 In this lab, you will build a Power BI dashboard that visualizes data about campus visits.
 
-High-level lab steps
-======================
+# High-level lab steps
 
 We will follow the below steps to design and create the Power BI dashboard:
 
@@ -35,21 +33,18 @@ We will follow the below steps to design and create the Power BI dashboard:
 * Completion of **Module 0 Lab 0 - Validate lab environment**
 * Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
 
-Things to consider before you begin
------------------------------------
+## Things to consider before you begin
 
 -   Who is the target audience of the report?
 -   How will the audience consume the report? Typical device? Location?
 -   Do you have sufficient data to visualize?
 -   What are the possible characteristics you can use to analyze data about the visits?
 
-Exercise \#1: Create Power BI Report 
-===============================
+# Exercise \#1: Create Power BI Report 
 
 **Objective:** In this exercise, you will create a Power BI report based on data from Common Data Service database.
 
-Task \#1: Install Power BI Desktop / Prepare Power BI service
----------------------------
+## Task \#1: Install Power BI Desktop / Prepare Power BI service
 
 1.  If you do not have Power BI Desktop installed, navigate to [https://aka.ms/pbidesktopstore](https://aka.ms/pbidesktopstore) to download and install Power BI app.
 
@@ -78,8 +73,7 @@ Task \#1: Install Power BI Desktop / Prepare Power BI service
 
 11. Continue to [Task \#3](#task-3-create-chart-and-time-visualizations).
 
-Task \#2: Prepare Data
----------------------------
+## Task \#2: Prepare Data
 
 1.  Find out your organization URL
 
@@ -155,8 +149,7 @@ Task \#2: Prepare Data
     
 11. Save work in progress by pressing **File \| Save**.
 
-Exercise #2: Create Power BI Dashboard
-================================
+# Exercise #2: Create Power BI Dashboard
 
 ## Task #1: Publish Power BI Report
 
