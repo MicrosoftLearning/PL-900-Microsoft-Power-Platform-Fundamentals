@@ -141,7 +141,7 @@ Now, we will clone the view to create a new view for today's visits.
 
         > **Note:** Since we no longer filter on the view status, we will get all today's visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
 
-15.  Click on the dropdown arrow by the **Save** button (be careful not to press the button itself) and select **Save As**.
+15.  Click on the **dropdown arrow** by the Save button (be careful not to press the button itself) and select **Save As**.
 
 16.  Change the name to **Today's Visits** and press **Save**.
 
