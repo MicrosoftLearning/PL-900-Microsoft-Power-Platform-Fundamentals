@@ -84,9 +84,11 @@ Task \#1: Edit Visit Form
     * **Actual Start**
     * **Actual End** 
     
-8.  Drag the **Code** field and drop it in the form header. (You may need to minimize the Properties panel on the right side of the screen to see the field on the form.)
+8.  Drag the **Code** field and drop it in the form header. 
 
-9.  While still selected on the Code field, check the checkbox for the **Read-only field** in the Properties panel.
+    > The header is the top right area of the form. You may need to minimize the Properties panel on the right side of the screen to see the field on the form.
+
+9.  With the **Code** field still selected, check the checkbox for the **Read-only field** in the Properties panel.
 
 10.  Select **Owner** field. In the Properties panel, change the **Field label** to **Host**
 
@@ -123,33 +125,31 @@ In this task, we will modify default Active Visits view and create new view for 
 
 8.  Click **Publish** and wait for the publishing to complete.
 
-9.  Now we will clone the view to create a new view for today's visits.
+Now, we will clone the view to create a new view for today's visits.
 
-10.  Click on the dropdown arrow by the **Save** button (be careful not to press the button itself) and select **Save As**.
+9.  Press **Edit filters** link in the Properties panel.
 
-11.  Change the name to **Today's Visits** and press **Save**.
+10.  Click **Add**, select **Add row**.
 
-12.  Press **Edit filters** link in the Properties panel.
+11.  Select **Scheduled Start** as a field, then select **Today** as the condition in the drop-down. 
 
-13.  Click **Add**, select **Add row**.
+12.  Click the **...** on the **Status** row and click **Delete**. 
 
-14.  Select **Scheduled Start** as a field, then select **Today** as the condition. 
+13.  Press **Ok** to save the condition. The view is now filtered to show only records where the Scheduled Start date is today.
 
-15.  Click the **...** on the **Status** row and click **Delete**. 
-
-16.  The view is now filtered to show only records where the Scheduled Start date is today. Press **Ok** to save the condition.
-
-15.  Add **Actual Start** and **Actual End** fields to the view. 
+14.  Add **Actual Start** and **Actual End** fields to the view. 
 
         > **Note:** Since we no longer filter on the view status, we will get all today's visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
 
-16.  Click **Save** and wait until the changes are saved.
+15.  Click on the dropdown arrow by the **Save** button (be careful not to press the button itself) and select **Save As**.
+
+16.  Change the name to **Today's Visits** and press **Save**.
 
 17.  Click **Publish** and wait for the publishing to complete.
 
 
 Exercise \#2: Create Model-Driven Application
-=============================================
+=======================================
 
 **Objective:** In this exercise, you will create the model-driven app, customize the sitemap, and test the app.
 
@@ -169,11 +169,11 @@ Task \#1: Create Application
 
     -   Click **New** and select **App** and then **Model-driven app**. This will open a new tab.
     
-    -   Select **Use existing solution to create the App** checkbox
-    
     -   Enter **[Your Last Name] Campus Management** for Name and click **Next**.
     
-    -   Select your Campus Management solution
+    -   Select **Use existing solution to create the App** checkbox
+    
+    -   Select your **Campus Management** solution
     
     -   Click **Done**
     
@@ -217,7 +217,7 @@ Task \#1: Create Application
     
     -   Enter **Settings** for **Title** in the **Properties** pane.
     
-    -   While still selected on the **Settings** Area, click **Add**.
+    -   With the **Settings** Area still selected, click **Add**.
     
     -   Select **Subarea**.
     
@@ -229,27 +229,25 @@ Task \#1: Create Application
 
 9.  Click **Publish** to publish the sitemap and wait for the publishing to complete.
 
-10.  Click **Save and Close** to close the sitemap editor.
-
-11.  You will see the assets for the entities that were added to the sitemap are
+10.  Click **Save and Close** to close the sitemap editor. You will see the assets for the entities that were added to the sitemap are
      now all in the application.
      
-12.  Click **Save** to save the application.
+11.  Click **Save** to save the application.
 
-13.  Click **Validate** to validate the changes done in the application. 
+12.  Click **Validate** to validate the changes done in the application. 
 
         >  This will show some warnings but we can ignore them, since we have not referenced a specific View and Form for the entities and the users will have access to all the Views and Forms for **Visit** and **Building** entities.
 
-14.  Click **Publish** to publish the application and wait for the publishing to
+13.  Click **Publish** to publish the application and wait for the publishing to
      complete.
      
-15.  Click **Save and Close** to close the app designer.
+14.  Click **Save and Close** to close the app designer.
 
-16.  Click **Done**.
+15.  Click **Done**.
 
-17.  Select **Solutions** and select **Publish all Customizations.**
+16.  Select **Solutions** and select **Publish all Customizations.**
 
-18.  Select **Apps** and your application should now be listed.
+17.  Select **Apps** and your application should now be listed.
 
 Task \#2: Test Application
 --------------------------
