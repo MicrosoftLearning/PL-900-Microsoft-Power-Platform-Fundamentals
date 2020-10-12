@@ -74,7 +74,7 @@ Task \#1: Create Canvas App
     
     -   Enter **[Your Last Name] Campus Security** for Name and click **Save**. This will make sure that the changes are not lost if the app closes unexpectedly.
         
-    -   Click the back arrow at the top left (below Power Apps) to return to the app.
+    -   Click the **Back** arrow at the top left (below Power Apps) to return to the app.
 
 3.  Connect to data source (Visits)
 
@@ -103,7 +103,7 @@ Task \#2: Display Visitor information
     
     -   Select **HintText** property and enter `"Enter visitor code"` as the value (including double quotes)
     
-    -   Click on **...** next to the control name in tree view (TextInput1), select **Rename**, change the name to `**textCode**`
+    -   Click on **...** next to the control name in tree view (TextInput1), select **Rename**, change the name to `textCode`
     
 2. Add form view
 
@@ -145,11 +145,11 @@ Task \#2: Display Visitor information
    
    -   Switch to the browser tab with the app, press F5 or click the Play icon at the upper-right corner to preview the app.
    
-   -   Paste the copied value into the search textbox, verify that the record is displayed in the form
+5.  Paste the copied value into the search textbox, verify that the record is displayed in the form
    
-   -   Clear the search textbox contents.
+6.  Clear the search textbox contents.
    
-5.  Press **ESC** to exit the running app.
+7.  Press **ESC** to exit the running app.
 
 
 Task \#3: Add Check In and Check Out Buttons
@@ -171,13 +171,13 @@ In this task, we will create buttons for the user to check in and check out of t
    
    * Click **Button**
    
-   * In the properties pane, change the button **Text** property to `"Check In"` (you can type within the existing quotes)
+   * In the properties pane, change the button **Text** property to "`Check In`" (you can type within the existing quotes)
    
    * Click on **...** next to the button name in tree view (Button1), select **Rename**, change the name to `CheckInButton`
    
    * Click **Button** to insert another button
    
-   * In the properties pane, change the button **Text** property to `"Check Out"` (you can type within the existing quotes)
+   * In the properties pane, change the button **Text** property to "`Check Out`" (you can type within the existing quotes)
    
    * Rename the button as `CheckOutButton`
    
@@ -205,6 +205,7 @@ In this task, we will create buttons for the user to check in and check out of t
    * `&&` - logical AND operator
    * `Visit.Status = 'Status (Visits)'.Active` status of the record is *Active*
    * `IsBlank(Visit.'Actual Start')` - Active Start field does not have any data in it
+   * `DisplayMode.Edit, DisplayMode.Disabled` - If the above conditions are met, the button will become editable. If not, the button will remain disabled.
 
 4. We would like to enable **Check Out** button when the visit record has been located (not blank), record status is active, and the visit has already started, i.e. the actual start value is not blank.
 
@@ -223,9 +224,13 @@ In this task, we will create buttons for the user to check in and check out of t
 
 5. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
-6. Press **F5** to run the app. Both buttons should be disabled. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. The **Check In** button should become enabled. Clear the search box contents.
+6. Press **F5** to run the app. 
 
-7. Press **ESC** to exit the running app.
+7. Both buttons should be disabled. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. The **Check In** button should become enabled. 
+
+8. Clear the search box contents.
+
+9. Press **ESC** to exit the running app.
 
 ## Task #4: Complete Check In and Check Out Process
 
@@ -276,7 +281,7 @@ To perform the check in and check out process we need to update Common Data Serv
 
    When a user clicks this button, the Actual End will be set to the current date and time, the Status of the Visit record will be set to Inactive, and the data will refresh.
 
-5. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
+5. To preserve work in progress, click **File** then click **Save**. Use the **Back** arrow to return to the app.
 
 6. Press **F5** or click the Play button to run the app. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. The **Check In** button should become enabled.
 
@@ -320,7 +325,7 @@ Usability of a mobile app significantly improves when, in addition to the text i
    )
    ```
 
-5. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
+5. To preserve work in progress, click **File** then click **Save**. Use the **Back** arrow to return to the app.
 
 6. Press **F5** to run the app. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. Verify the icon displays a frown emoji.
 
