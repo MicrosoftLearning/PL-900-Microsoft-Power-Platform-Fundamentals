@@ -54,7 +54,7 @@ In this task, you will create a canvas app using the phone layout template based
     -   Sign in to <https://make.powerapps.com>
 
     -   Select your **environment** at the top right if it is not already set to
-        your Bellows College environment.
+        your Practice environment.
 
     -   Select **Apps**.
 
@@ -84,7 +84,7 @@ In this task, you will create a canvas app using the phone layout template based
 
 In this task, you will configure the Detail form to view information about individual visit records.
 
-1.  Select the Back arrow at the top left to go back to the app definition.
+1.  Select the **Back** arrow at the top left to go back to the app definition.
 
 2. Expand **DetailScreen1** under **Tree view**
 
@@ -197,7 +197,7 @@ Because number of visits continuously grows, users need a feature to filter the 
 
 6. Resize and move the gallery control so that it is located under the date picker and covers the screen. You can do this by clicking the resize icon at the top center of the gallery control and resizing the control to start after the date picker.
 
-7. While still selecting **BrowseGallery1**, click the **Advanced** tab of the Properties pane.
+7. With **BrowseGallery1** still selected, click the **Advanced** tab of the Properties pane.
 
 8. Locate the **Items** property and click in the text box.
 
@@ -257,7 +257,7 @@ Task \#1: Test App
 
     -   Click **Publish this Version**.
 
-    -   Click the back arrow to navigate back to the app.
+    -   Click the **Back** arrow to navigate back to the app.
 
     -   Close the **Designer** browser window or tab.
 
