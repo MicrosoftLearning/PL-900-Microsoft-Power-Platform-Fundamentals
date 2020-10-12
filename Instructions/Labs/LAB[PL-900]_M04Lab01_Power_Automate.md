@@ -7,8 +7,7 @@ lab:
 # Module 4: Get Started with Power Automate
 ## Lab: How to build an automated solution
 
-Scenario
-========
+## Scenario
 
 Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
 
@@ -18,8 +17,7 @@ Throughout this course, you will build applications and perform automation to en
 
 In this lab, you will create Power Automate flows to automate various parts of the campus management. 
 
-High-level lab steps
-======================
+# High-level lab steps
 
 The following have been identified as requirements you must implement to complete the project:
 
@@ -33,19 +31,16 @@ The following have been identified as requirements you must implement to complet
 * Campus Staff app created in **Module 3 Lab 2 – How to build a canvas app, part 2** (for testing)
 * John Doe contact created with a personal email address in **Module 3 Lab 4 - How to build a model-driven app** (for testing)
 
-Things to consider before you begin
------------------------------------
+## Things to consider before you begin
 
 -   What is the most appropriate distribution mechanism for the visitor codes?
 -   How could overstays be measured and strict policies enforced?
 
-Exercise \#1: Create Visit Notification flow
-===============================
+# Exercise \#1: Create Visit Notification flow
 
 **Objective:** In this exercise, you will create a Power Automate flow that implements the requirement. The visitor should be sent an email that includes the unique code assigned to the visit.
 
-Task \#1: Create flow
----------------------------
+## Task \#1: Create flow
 
 1.  Open your Campus Management solution.
 
@@ -118,8 +113,7 @@ Task \#1: Create flow
 
 ![Power Automate visitor notification flow](media/4-power-automate-notify.png)
 
-Task \#2: Validate and test the flow
---------------------------------
+## Task \#2: Validate and test the flow
 
 1.  Open a new tab in your browser and navigate to <https://make.powerapps.com>
 
@@ -223,7 +217,9 @@ Task \#2: Validate and test the flow
     
     * Click **...** beside **Get a record**, select **Rename**. Enter **Get visitor** as step name
     
-11.  Add **Send an email notification** action from **Mail** connection, staying within the **Apply to each loop**
+11.  Send email notification
+
+     * Click **Add an action** inside the Apply to Each loop. Add **Send an email notification** action from **Mail** connection.
 
 12.  Enter your email address as **To**
 
