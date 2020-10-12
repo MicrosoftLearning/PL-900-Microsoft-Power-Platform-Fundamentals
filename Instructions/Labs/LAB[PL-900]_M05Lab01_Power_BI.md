@@ -185,7 +185,7 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 5. Click **Exit Q&A**.
 
-6. Navigate to **[Your Last Name] Campus Management** dashboard. It should look similar to the following:
+Your **[Your Last Name] Campus Management** dashboard should be displayed. You may have to scroll down to see the new Q&A visual. Your dashboard should look similar to the following:
 
     ![Power BI Dashboard](media/5-powerbi-result.png)
 
@@ -201,9 +201,7 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 5. Select **Edit** and then select **... \| Generate QR Code**.
 
-6. If you have a mobile device, scan the code using a QR scanner app available on both iOS and Android platforms, or the camera app if your phone supports it. Log in to your account if prompted.
-
-7. Navigate and explore the report on a mobile device.
+6. *Optional:* If you have a mobile device, scan the code using a QR scanner app available on both iOS and Android platforms, or the camera app if your phone supports it. Log in to your account if prompted. Navigate and explore the report on a mobile device.
 
 # Challenges
 
