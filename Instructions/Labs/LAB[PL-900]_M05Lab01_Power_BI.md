@@ -56,8 +56,8 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 2. Navigate to [https://aka.ms/pbidesktopstore](https://aka.ms/pbidesktopstore) to download and install Power BI Desktop.
 
-> [!IMPORTANT]
-> If you experience issues installing Power BI Desktop using Microsoft Store, try standalone installer that can be downloaded from [https://aka.ms/pbiSingleInstaller](https://aka.ms/pbiSingleInstaller).
+    > [!IMPORTANT]
+    > If you experience issues installing Power BI Desktop using Microsoft Store, try standalone installer that can be downloaded from [https://aka.ms/pbiSingleInstaller](https://aka.ms/pbiSingleInstaller).
 
 3. If you successfully installed Power BI Desktop, you can now skip to [Task \#2](#task-2-prepare-data); otherwise, continue to the next step.
 
