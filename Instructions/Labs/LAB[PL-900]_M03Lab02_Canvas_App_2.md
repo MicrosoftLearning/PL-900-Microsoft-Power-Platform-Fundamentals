@@ -181,7 +181,7 @@ In this task, we will create buttons for the user to check in and check out of t
    
    * Rename the button as `CheckOutButton`
    
-   * Position the buttons side by side below the record form view 
+   * Position the buttons below the search box, with **Check In** above **Check Out** 
    
 3. Enable and disable buttons depending on visit data. 
    We would like to enable **Check In** button when the visit record has been located (not blank), record status is active, and the visit has not started yet, i.e. the actual start value is blank.
@@ -312,7 +312,7 @@ Usability of a mobile app significantly improves when, in addition to the text i
 
 2. Select **Icons \| Add**. At this point it does not matter which icon we select as we want the value to be dynamic.
 
-3. Resize and place the icon in the middle of the screen below the buttons
+3. Resize and place the icon to the left of the buttons
 
 4. In the Advanced tab for the Icon, select **Icon** property (in the Design section) and enter the following expression
 
