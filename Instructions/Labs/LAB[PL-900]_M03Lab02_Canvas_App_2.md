@@ -43,13 +43,11 @@ Things to consider before you begin
 -   What should happen if visitor code is invalid
 -   What should happen if the visitor arrives outside of the scheduled hours 
 
-Exercise \#1: Create Security Canvas App
-===============================
+# Exercise \#1: Create Security Canvas App
 
 **Objective:** In this exercise, you will create a canvas app.
 
-Task \#1: Create Canvas App
----------------------------
+## Task \#1: Create Canvas App
 
 1.  Open your Campus Management solution.
 
@@ -86,8 +84,7 @@ Task \#1: Create Canvas App
     
 4.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
-Task \#2: Display Visitor information
---------------------------------
+## Task \#2: Display Visitor information
 
 1.  Add search box
 
@@ -152,8 +149,8 @@ Task \#2: Display Visitor information
 7.  Press **ESC** to exit the running app.
 
 
-Task \#3: Add Check In and Check Out Buttons
----------------------------------------
+## Task \#3: Add Check In and Check Out Buttons
+
 In this task, we will create buttons for the user to check in and check out of their Visit. 
 
 1. Save search results in a variable to reuse across the control
@@ -232,7 +229,7 @@ In this task, we will create buttons for the user to check in and check out of t
 
 9. Press **ESC** to exit the running app.
 
-## Task #4: Complete Check In and Check Out Process
+## Task \#4: Complete Check In and Check Out Process
 
 To perform the check in and check out process we need to update Common Data Service visit data as following:
 
@@ -303,8 +300,7 @@ To perform the check in and check out process we need to update Common Data Serv
 
 10. Press **ESC** to exit the running app.
 
-Task \#5: Add visual indicators
---------------------------------------
+## Task \#5: Add visual indicators
 
 Usability of a mobile app significantly improves when, in addition to the text information, the visual indicators are provided. In this task, we will add an icon indicating if a visitor can be checked in or checked out.
 
