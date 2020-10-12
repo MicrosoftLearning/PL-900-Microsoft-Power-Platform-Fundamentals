@@ -59,8 +59,7 @@ You will follow the below outline to design the Power Apps portal:
 
 3. The Portal provisioning process will run anywhere from 30 to 45 minutes.  Please be patient.
 
-Task \#2: Navigate to Portal
---------------------------------
+## Task \#2: Navigate to Portal
 
 1.  You will get a notification in <https://make.powerapps.com> when the portal has been provisioned
 
@@ -74,13 +73,11 @@ Task \#2: Navigate to Portal
 
 3.  You should be redirected to a portal website with the landing page with a welcome message
 
-Exercise \#2: Create a Portal Webpage
-===============================
+# Exercise \#2: Create a Portal Webpage
 
 **Objective:** In this exercise, you will create a new webpage that will display some static content as well as a list of buildings from the Common Data Service.
 
-Task #1: Create a Webpage
---------------------------------
+## Task #1: Create a Webpage
 
 1.  Open Power Apps portals Studio
 
@@ -106,8 +103,7 @@ Task #1: Create a Webpage
 
     -   In the **Partial URL** change the value to **building-directory**, press the Tab key (to initiate auto-save)
 
-Task #2: Add Static Content
---------------------------------
+## Task #2: Add Static Content
 
 1.  Add a section to the webpage
 
@@ -145,10 +141,11 @@ Task #2: Add Static Content
 
 4.  Click **Browse website** to view the page so far.  Notice that there is **Building Directory** option on the main menu.
 
-Task #3: Add a List Component
---------------------------------
+    > You may need to configure your browser to allow pop-ups.
 
-1.  Open Power Apps portals Studio
+## Task #3: Add a List Component
+
+1.  Navigate to the previous tab and continue to step #2. If not available, follow the below steps to return to this location.
 
     -   Sign in to <https://make.powerapps.com> (you may still have this open in your tabs)
 
@@ -156,13 +153,11 @@ Task #3: Add a List Component
 
     -   Click on the ellipses (**...**) and choose **Edit**
     
-2.  Edit the existing page you created earlier
-
     -   On the toolbelt (left hand side), choose the **Pages** option 
 
     -   Locate and select the **Building Directory** page you created earlier
     
-3.  Add a list component
+2.  Add a list component
 
     -   On the toolbelt (left side), select the **Components** icon
 
@@ -174,27 +169,25 @@ Task #3: Add a List Component
 
     -   Choose **List** from the **Portal Components** area (a list component will appear in the new section)
     
-4.  Configure the list component
+3.  Configure the list component
 
     -   Select the list component on the canvas
 
     -   In the properties pane (right side), enter in **Buildings List** in the **Name** field
 
-    -   In the **Entity** field, choose **Buildings** from the drop-down list
+    -   In the **Entity** field, choose **Building (bc_building)** from the drop-down list
 
     -   In the **Views**, choose **Active Buildings**
 
     -   Leave the remaining default settings
     
-5.  Click **Browse website** to view the page. You should see the list of Buildings from the Common Data Service appear on the webpage.
+4.  Click **Browse website** to view the page. You should see the list of Buildings from the Common Data Service appear on the webpage.
 
-Exercise \#3: Change the Portal Theme
-===============================
+# Exercise \#3: Change the Portal Theme
 
 **Objective:** In this exercise, you will create a new theme that will alter the color scheme of your portal. 
 
-Task #1: Apply and Edit a Theme
---------------------------------
+## Task #1: Apply and Edit a Theme
 
 1.  Open Power Apps portals Studio
 
