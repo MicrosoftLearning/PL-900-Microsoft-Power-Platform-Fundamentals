@@ -157,7 +157,7 @@ You will follow the below outline to design the Power Apps portal:
 
     -   Locate and select the **Building Directory** page you created earlier
     
-2.  Add a list component
+2.  Add a list component to the Building Directory page
 
     -   On the toolbelt (left side), select the **Components** icon
 
@@ -189,7 +189,7 @@ You will follow the below outline to design the Power Apps portal:
 
 ## Task #1: Apply and Edit a Theme
 
-1.  Open Power Apps portals Studio
+1.  Navigate to the previous tab and continue to step #2. If not available, follow the below steps to return to this location.
 
     -   Sign in to <https://make.powerapps.com> (you may still have this open in your tabs)
 
@@ -199,7 +199,7 @@ You will follow the below outline to design the Power Apps portal:
     
 2.  Apply and customize a basic theme
 
-    -   On the toolbelt (left side), select the **Components** icon
+    -   On the toolbelt (left side), select the **Themes** icon
     
     -   Click the toggle for **Enable basic theme** to turn this feature on.
     
