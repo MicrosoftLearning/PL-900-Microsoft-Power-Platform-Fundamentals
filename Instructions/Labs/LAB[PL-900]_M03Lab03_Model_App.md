@@ -7,8 +7,7 @@ lab:
 # Module 3: Get started with Power Apps
 ## Lab 3: How to build a model-driven app
 
-Scenario
-========
+# Scenario
 
 Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
 
@@ -18,8 +17,7 @@ Throughout this course, you will build applications and perform automation to en
 
 In this lab, you will build a Power Apps model-driven app to allow the backoffice campus staff to manage visit records across the entire campus.
 
-High-level lab steps
-======================
+# High-level lab steps
 
 As part of creating the model-driven app, you will complete the following:
 
@@ -43,8 +41,7 @@ Both will be integrated to the model-driven app for a better user-experience.
 * Completion of **Module 0 Lab 0 - Validate lab environment**
 * Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
 
-Things to consider before you begin
------------------------------------
+## Things to consider before you begin
 
 -   What changes should we make to improve the user experience?
 
@@ -53,13 +50,11 @@ Things to consider before you begin
 -   What customizations can be made on the sitemap of a model-driven app?
 
 
-Exercise \#1: Customize Views and Forms
-=======================================
+# Exercise \#1: Customize Views and Forms
 
 **Objective:** In this exercise, you will customize views and forms of the custom created entities that will be used in the model-driven app.
 
-Task \#1: Edit Visit Form
------------------------------------
+## Task \#1: Edit Visit Form
 
 1.  Sign in to <https://make.powerapps.com> if you are not already signed in.
 
@@ -148,15 +143,13 @@ Now, we will clone the view to create a new view for today's visits.
 17.  Click **Publish** and wait for the publishing to complete.
 
 
-Exercise \#2: Create Model-Driven Application
-=======================================
+# Exercise \#2: Create Model-Driven Application
 
 **Objective:** In this exercise, you will create the model-driven app, customize the sitemap, and test the app.
 
 > You will see several fields not addressed as you build out your application, particularly on the sitemap steps. We have taken some short cuts in the interest of doing the labs. In a real implementation, you would give these items logical names.
 
-Task \#1: Create Application
-----------------------------
+## Task \#1: Create Application
 
 1.  Open your Campus Management solution if you are not already in it.
 
@@ -249,8 +242,7 @@ Task \#1: Create Application
 
 17.  Select **Apps** and your application should now be listed.
 
-Task \#2: Test Application
---------------------------
+## Task \#2: Test Application
 
 1.  Start the application
 
