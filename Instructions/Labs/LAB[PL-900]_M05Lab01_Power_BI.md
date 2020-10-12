@@ -197,7 +197,7 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 Your **[Your Last Name] Campus Management** dashboard should be displayed. You may have to scroll down to see the new Q&A visual. Your dashboard should look similar to the following:
 
-    ![Power BI Dashboard](media/5-powerbi-result.png)
+![Power BI Dashboard](media/5-powerbi-result.png)
 
 ## Task #4: Build Mobile Phone View and Share a Report with a QR Code
 
