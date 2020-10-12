@@ -57,7 +57,7 @@ In this exercise, you will sign up for Power Virtual Agents trial.
 
 5. Enter **Crisis Bot** for **Name** and select a language.
 
-6. Select your Practice environment to create the bot in and click **Create**. Wait for the bot to be created.
+6. Select your Practice environment to create the bot in and click **Create**. Wait for the bot to be created. Click **Explore bot** if prompted.
 
 7. Test the bot. Type **Hello** in the message box and click **Send**. The bot should greet you and tell you what it can do.
 
@@ -91,7 +91,9 @@ In this exercise, you will generate topics from the CDC FAQ site.
 
 10. You should see the trigger phrase and what the bot reply will be. **Click Add to topics.**
     
-11. The suggested topic should be added to your topics. Select all the suggested topics and click **Add to topics** (you can select all by using the icon to the left of the Name column). If you receive an error message, please try again.
+11. The suggested topic should be added to your topics. Select all the suggested topics and click **Add to topics** 
+
+    > You can select all topics by using the icon to the left of the Name column. If you receive an error message, please try again.
 
 12. Once the Suggested topics have been added, select the **Existing** tab. You should see the new topics with their status set to Off.
 
@@ -103,7 +105,7 @@ In this exercise, you will generate topics from the CDC FAQ site.
 
 In this task, you will test the topics you added.
 
-1.  Click **Test your bot.**
+1.  Click **Test your bot** at the bottom left.
 
 2.  Click **Reset**.
 
@@ -129,11 +131,11 @@ In this task, you will change the greeting to COVID-19 specific.
 
 2.  Collapse the **User Topics** section.
 
-3.  Click to open the **Greeting** topic of the System Topics.
+3.  Click to open the **Greeting** topic of the System Topics. You can also use the search box to **Search existing topics**.
 
 4.  The greeting topic has 52 trigger phrases, click **Go to authoring canvas**.
 
-5.  Go to the first message and replace it with **Hi, I’m a virtual agent. I can tell you about how COVID-19 spreads, how to protect yourself, preparing your home and family for COVID-19, symptoms, testing, and more.**
+5.  Go to the first message and replace it with `Hi, I’m a virtual agent. I can tell you about how COVID-19 spreads, how to protect yourself, preparing your home and family for COVID-19, symptoms, testing, and more.`
 
 6.  Click **Save**.
 
@@ -157,7 +159,7 @@ In this exercise, you will publish the bot.
 
 5.  You will get list of available channels you can publish your bot to. Select **Demo website**.
 
-6.  Change the welcome message to **Try my COVID-19 FAQ bot.**
+6.  Change the welcome message to `Try my COVID-19 FAQ bot.`
 
 7.  Enter “Who is at higher risk for serious illness from COVID-19”, “What does more severe illness mean” and “What is CDC doing about COVID-19” for conversation starters and click **Save**.
 
