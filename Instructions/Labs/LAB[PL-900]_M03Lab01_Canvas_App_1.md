@@ -40,8 +40,7 @@ We will follow the below outline to design the canvas app:
 -   How to narrow the records selected to improve app performance and user adoption
 
 
-Exercise \#1: Create Staff Canvas App
-===============================
+# Exercise \#1: Create Staff Canvas App
 
 **Objective:** In this exercise, you will create a canvas app from a template and then modify it to include required data.
 
@@ -228,8 +227,7 @@ Because number of visits continuously grows, users need a feature to filter the 
 
 In this exercise you will test the application and, once successful, you will add it to your solution.
 
-Task \#1: Test App
---------------------------
+## Task \#1: Test App
 
 1.  Start the application
 
