@@ -38,7 +38,7 @@ In this Module 0 lab, you will acquire a Power Platform trial tenant and access 
 
 ### Task \#2 – Create environment
 
-1.  Access <https://admin.Powerplatform.microsoft.com> and log in with your Microsoft 365 credentials if prompted again.
+1.  Access <https://admin.powerplatform.microsoft.com> and log in with your Microsoft 365 credentials if prompted again.
 
 2. Select **Environments** and click **+New.**
 
