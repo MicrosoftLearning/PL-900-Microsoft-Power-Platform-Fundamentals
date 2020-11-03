@@ -69,14 +69,12 @@ You are now in the Power Apps portals Studio. This is where you can modify and c
 
     -   Mouse over **Fixed layouts** and choose **Page with title**
 
-3.  Modify the page properties
+3.  In the properties pane, under **Display** change the **Name** from **New page (1)** to `Building Directory`
 
-    -   In the properties pane, under **Display** change the **Name** from **New page (1)** to **Building Directory**, press the Tab key (to initiate auto-save)
+4.  In the **Partial URL** change the value to `building-directory`, press the Tab key (to initiate auto-save)
 
-    -   The title of the page should now read **Building Directory**
-
-4.  In the **Partial URL** change the value to **building-directory**, press the Tab key (to initiate auto-save)
-
+    > The title of the page should now read **Building Directory**
+    
 ## Task \#3: Add Static Content
 
 1.  Add a section to the webpage
@@ -111,9 +109,9 @@ You are now in the Power Apps portals Studio. This is where you can modify and c
 
     -   In the properties pane, click **Select an image**. Locate and select the **Product A.png**
     
-    -   In the properties pane, click the Formatting section drop-down and change the **Width** to 70% (be sure to type the %). You can play around with the sizing of the image until it is as desired.
+    -   In the properties pane, click the **Formatting** section drop-down and change the **Width** to 70% (be sure to type the %). You can play around with the sizing of the image until it is as desired.
 
-4.  Click **Browse website** to view the page so far.  Notice that there is **Building Directory** option on the main menu.
+4.  Click **Browse website** to view the page so far.  Notice that there is now the **Building Directory** option on the main menu.
 
     > You may need to configure your browser to allow pop-ups.
 
@@ -147,7 +145,7 @@ You are now in the Power Apps portals Studio. This is where you can modify and c
 
     -   Select the list component on the canvas
 
-    -   In the properties pane (right side), enter in **Buildings List** in the **Name** field
+    -   In the properties pane (right side), enter in `Buildings List` in the **Name** field
 
     -   In the **Entity** field, choose **Building (bc_building)** from the drop-down list
 
@@ -155,7 +153,9 @@ You are now in the Power Apps portals Studio. This is where you can modify and c
 
     -   Leave the remaining default settings
     
-4.  Click **Browse website** to view the page. You should see the list of Buildings from the Common Data Service appear on the webpage.
+4.  Click **Browse website** to view the page. 
+
+    > You should see the list of Buildings from the Common Data Service appear on the webpage.
 
 # Exercise \#2: Change the Portal Theme
 
@@ -185,10 +185,7 @@ You are now in the Power Apps portals Studio. This is where you can modify and c
     
     -   Rename your theme
     
-3.  Save your changes
-
-    -   On the command bar, click **Sync Configuration**
-
+3.  On the command bar, click **Sync Configuration**
 
 Your app layout should look similar to the following structure:
 
