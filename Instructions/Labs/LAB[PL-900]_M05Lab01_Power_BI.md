@@ -74,7 +74,7 @@ We will follow the below steps to design and create the Power BI dashboard:
 8. Expand **+New** and select **Upload a file**.
 
     > [!IMPORTANT]
-    > If you do not see this option, you may have New Look off. Check at the top of your window that the **New look** toggle is switched **On**. 
+    > If you don't see **+New**, you may need to activate the new look for Power BI. Be sure to toggle the **New look** to **On** at the top of your screen.
 
 9. Select **Local File**.
 
