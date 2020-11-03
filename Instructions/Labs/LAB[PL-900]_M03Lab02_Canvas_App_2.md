@@ -108,7 +108,7 @@ You will follow the below outline to design the canvas app:
    
    -   Using size handles, position the form below the search textbox
    
-   -   Select **DataSource** property and enter **Visits**
+   -   Select **DataSource** property and select **Visits**
    
    -   In properties pane select **Horizontal** as **Layout**
 
@@ -120,15 +120,17 @@ You will follow the below outline to design the canvas app:
    
    -   Press **Add**
    
+   -   Remove both the **Name** and **Created On** fields
+   
    -   Change the order of the selected fields by dragging the field cards in the list. Recommended order is Visitor, Building, Scheduled Start, Scheduled End, Actual Start, Actual End
    
    -   Click the **X** to close the Fields pane
    
-   -   In the Advanced tab, select **Item** property and enter `LookUp(Visits, Code = textCode.Text)` 
+5. While still selecting the form view, select the Advanced tab on the Properties pane. Select **Item** property and enter `LookUp(Visits, Code = textCode.Text)` 
 
-5. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
+6. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
-6. Prepare to test the app
+7. Prepare to test the app
 
    -   Switch to the browser tab containing the solution
    
@@ -142,16 +144,15 @@ You will follow the below outline to design the canvas app:
    
    -   Locate a Visit record that does not have an Actual Start or Actual End value. Select and copy the **Code** for this Visit.
 
-7.  Test the app
+8.  Test the app
 
    -   Switch to the browser tab with the app, press **F5** or click the **Play** icon at the upper-right corner to preview the app.
    
    -   Paste the copied value into the search textbox, verify that the record is displayed in the form
    
-6.  Clear the search textbox contents.
+9.  Clear the search textbox contents.
    
-7.  Press **ESC** to exit the running app.
-
+10.  Press **ESC** to exit the running app.
 
 ## Task \#3: Add Check In and Check Out Buttons
 
@@ -164,6 +165,7 @@ In this task, we will create buttons for the user to check in and check out of t
     * In the properties pane, select the **Advanced** tab and select **OnChange** property
    
     * Enter the following expression `Set(Visit, LookUp(Visits, Code = textCode.Text))`
+    
     > This will save the visit in a global variable when a user searches in the textCode searchbox. That allows us to use the variable *Visit* throughout the app without the need to re-enter the entire lookup expression.
 
 2. Add Check In Button
