@@ -54,9 +54,7 @@ In this Module 0 lab, you will acquire a Power Platform trial tenant and access 
 
 3. Your **Practice** environment should now show in the list of Environments. 
 
-4. Your environment may take a few minutes to provision. Refresh the page if needed. When your environment is prepared, select your **Practice** environment by clicking on the ellipses next to its name to expand the drop down menu and select **Settings.** 
-
-5.  Explore the different areas in **Settings** that you are interested in, but do not make any changes yet. 
+    > Your environment may take a few minutes to provision. Refresh the page if needed.
 
 # Exercise \#2: Provision a Power Apps portal
 
