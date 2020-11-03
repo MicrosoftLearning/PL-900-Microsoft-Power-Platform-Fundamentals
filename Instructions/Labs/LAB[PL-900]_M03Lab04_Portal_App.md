@@ -47,7 +47,7 @@ You will follow the below outline to design the Power Apps portal:
 
 4.  Click on the app name to open the portal
 
-3.  You should be redirected to a portal website landing page with a welcome message
+    > You should be redirected to your portal website landing page with a welcome message
 
 ## Task \#2: Create a Webpage
 
