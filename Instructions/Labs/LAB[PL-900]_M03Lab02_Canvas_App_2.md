@@ -122,7 +122,7 @@ You will follow the below outline to design the canvas app:
    
     -   Remove both the **Name** and **Created On** fields
    
-    -   Change the order of the selected fields by dragging the field cards in the list. Recommended order is Visitor, Building, Scheduled Start, Scheduled End, Actual Start, Actual End
+    -   Change the order of the selected fields by dragging the field cards in the list. Recommended order is: Visitor, Building, Scheduled Start, Scheduled End, Actual Start, Actual End
    
     -   Click the **X** to close the Fields pane
    
