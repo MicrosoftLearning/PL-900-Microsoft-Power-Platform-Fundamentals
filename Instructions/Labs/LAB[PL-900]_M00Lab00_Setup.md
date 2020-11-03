@@ -80,4 +80,4 @@ In this Module 0 lab, you will acquire a Power Platform trial tenant and access 
 
     -   Click **Create**
 
-The Portal provisioning process will run anywhere from 30 to 45 minutes. You do not have to wait, as this will continue while moving on to the next module.
+    > The Portal provisioning process will run anywhere from 30 to 45 minutes. You do not have to wait, as this will continue while moving on to the next module.
