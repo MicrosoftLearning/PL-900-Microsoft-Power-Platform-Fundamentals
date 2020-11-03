@@ -31,79 +31,53 @@ You will follow the below outline to design the Power Apps portal:
 
 ## Things to consider before you begin
 
-* Power Apps portals apps are always started from a template instead of a blank application. Once you provision a portal, it will already have pages, menus and a default theme.
+* Power Apps portals apps are always started from a template instead of a blank application. Your portal should have been created in Module 0 Lab 0. Once you provision a portal, it will already have pages, menus and a default theme. 
 
-# Exercise \#1: Provision a Power Apps portal
-
-**Objective:** In this exercise, you will provision a Power Apps portal in your environment that will be accessible anywhere on the world wide web.
-
-## Task \#1: Provision Power Apps portal
-
-1.  Create new portal app.
-
-    -   Sign in to <https://make.powerapps.com>
-
-    -   If the **Environment** displayed in the top right is not your Practice environment, select your Environment.
-
-    -   Click on the **Portal from blank** panel under **Make your own app**
-
-2.  Provide new portal details
-
-    -   Enter **Bellows College Visitors** as the portal **Name**
-
-    -   Provide a unique URL; **something**.powerappsportals.com (if the name has been taken, choose a different one)
-
-    -   Select a base portal **Language**
-
-    -   Click **Create**
-
-3. The Portal provisioning process will run anywhere from 30 to 45 minutes.  Please be patient.
-
-## Task \#2: Navigate to Portal
-
-1.  You will get a notification in <https://make.powerapps.com> when the portal has been provisioned
-
-2.  Open the new portal
-
-    -   Click on **Apps**
-
-    -   Locate the app that has the **Type** of **Portal**
-
-    -   Click on the app name
-
-3.  You should be redirected to a portal website with the landing page with a welcome message
-
-# Exercise \#2: Create a Portal Webpage
+# Exercise \#1: Create a Portal Webpage
 
 **Objective:** In this exercise, you will create a new webpage that will display some static content as well as a list of buildings from the Common Data Service.
 
-## Task #1: Create a Webpage
+## Task \#1: Navigate to Portal
+
+1.  Navigate to <https://make.powerapps.com>.
+
+2.  Click on **Apps**
+
+3.  Locate the app that has the **Type** of **Portal**
+
+4.  Click on the app name to open the portal
+
+3.  You should be redirected to a portal website landing page with a welcome message
+
+## Task \#2: Create a Webpage
 
 1.  Open Power Apps portals Studio
 
     -   Sign in to <https://make.powerapps.com> (you may still have this open in your tabs)
 
+    -   Select **Apps**
+    
     -   Locate the app that has the **Type** of **Portal**
 
-    -   Click on the ellipses (**...**) and choose **Edit**
+    -   Click on the ellipses (**...**) to the right of the portals app name and choose **Edit**
 
-2.  You are now in the Power Apps portals Studio. This is where you can modify and create portal content.
+You are now in the Power Apps portals Studio. This is where you can modify and create portal content.
 
-3.  Create a new page
+2.  Create a new page
 
     -   From the command bar, select **New page**
 
     -   Mouse over **Fixed layouts** and choose **Page with title**
 
-4.  Modify the page properties
+3.  Modify the page properties
 
     -   In the properties pane, under **Display** change the **Name** from **New page (1)** to **Building Directory**, press the Tab key (to initiate auto-save)
 
     -   The title of the page should now read **Building Directory**
 
-    -   In the **Partial URL** change the value to **building-directory**, press the Tab key (to initiate auto-save)
+4.  In the **Partial URL** change the value to **building-directory**, press the Tab key (to initiate auto-save)
 
-## Task #2: Add Static Content
+## Task \#3: Add Static Content
 
 1.  Add a section to the webpage
 
@@ -143,7 +117,7 @@ You will follow the below outline to design the Power Apps portal:
 
     > You may need to configure your browser to allow pop-ups.
 
-## Task #3: Add a List Component
+## Task \#4: Add a List Component
 
 1.  Navigate to the previous tab and continue to step #2. If not available, follow the below steps to return to this location.
 
@@ -183,7 +157,7 @@ You will follow the below outline to design the Power Apps portal:
     
 4.  Click **Browse website** to view the page. You should see the list of Buildings from the Common Data Service appear on the webpage.
 
-# Exercise \#3: Change the Portal Theme
+# Exercise \#2: Change the Portal Theme
 
 **Objective:** In this exercise, you will create a new theme that will alter the color scheme of your portal. 
 
