@@ -340,7 +340,7 @@ Usability of a mobile app significantly improves when visual indicators are prov
 
 Your running app should look approximately like the following:
 
-![Canvas running security app](media/3-canvas-running.png)
+![Canvas running security app](media/3-canvas-app-running.png)
 
 8. Press **ESC** to exit the running app.
 
