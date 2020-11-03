@@ -7,8 +7,7 @@ lab:
 # Module 3: Get started with Power Apps
 ## Lab 2: How to build a canvas app, part 2
 
-Scenario
-========
+# Scenario
 
 Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
 
@@ -18,8 +17,7 @@ Throughout this course, you will build applications and perform automation to en
 
 In part 2 of this lab, you will create design and build a Power Apps canvas app that the security personnel will use at the building entrances to quickly confirm and register the visitors.
 
-High-level lab steps
-======================
+# High-level lab steps
 
 You will follow the below outline to design the canvas app:
 
@@ -30,14 +28,12 @@ You will follow the below outline to design the canvas app:
 -   Use a Common Data Service view to populate the gallery
 -   Handle checking-in and checking-out process for a visitor
 
-
 ## Prerequisites
 
 * Completion of **Module 0 Lab 0 - Validate lab environment**
 * Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
 
-Things to consider before you begin
------------------------------------
+## Things to consider before you begin
 
 -   What information would a security officer need quick access to?
 -   What should happen if visitor code is invalid
@@ -66,11 +62,13 @@ Things to consider before you begin
         
     -   Click **Skip** if presented with the Welcome to Power Apps Studio dialogue.
     
+3.  Save the canvas app
+
     -   Click **File** and select **Save As**.
     
     -   Check if **The cloud** is selected. 
     
-    -   Enter **[Your Last Name] Campus Security** for Name and click **Save**. This will make sure that the changes are not lost if the app closes unexpectedly.
+    -   Enter **[Your Last Name] Campus Security** for Name and click **Save**.
         
     -   Click the **Back** arrow at the top left (below Power Apps) to return to the app.
 
@@ -96,13 +94,15 @@ Things to consider before you begin
     
     -   Click **Text** and select **Text input**.
     
-    -   Select the text in the **Default** property and clear the value.
+2.  Edit the text input object
+
+    -   While still selecting the Text input object, select the text in the **Default** property and clear the value.
     
     -   Select **HintText** property and enter `"Enter visitor code"` as the value (including double quotes)
     
     -   Click on **...** next to the control name in tree view (TextInput1), select **Rename**, change the name to `textCode`
     
-2. Add form view
+3.  Add a form view
 
    -   On **Insert** tab click **Forms**  then select **Display**
    
@@ -111,7 +111,9 @@ Things to consider before you begin
    -   Select **DataSource** property and enter **Visits**
    
    -   In properties pane select **Horizontal** as **Layout**
-   
+
+4.  Edit form view
+
    -   Click **Edit fields**
    
    -   Click **Add field** and select the following fields: **Actual End**, **Actual Start**, **Building**, **Scheduled End**, **Scheduled Start**, **Visitor**
@@ -124,9 +126,9 @@ Things to consider before you begin
    
    -   In the Advanced tab, select **Item** property and enter `LookUp(Visits, Code = textCode.Text)` 
 
-3. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
+5. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
-4. Test the app
+6. Prepare to test the app
 
    -   Switch to the browser tab containing the solution
    
@@ -139,10 +141,12 @@ Things to consider before you begin
    -   Change the View to **All fields**
    
    -   Locate a Visit record that does not have an Actual Start or Actual End value. Select and copy the **Code** for this Visit.
+
+7.  Test the app
+
+   -   Switch to the browser tab with the app, press **F5** or click the **Play** icon at the upper-right corner to preview the app.
    
-   -   Switch to the browser tab with the app, press F5 or click the Play icon at the upper-right corner to preview the app.
-   
-5.  Paste the copied value into the search textbox, verify that the record is displayed in the form
+   -   Paste the copied value into the search textbox, verify that the record is displayed in the form
    
 6.  Clear the search textbox contents.
    
@@ -155,14 +159,14 @@ In this task, we will create buttons for the user to check in and check out of t
 
 1. Save search results in a variable to reuse across the control
 
-   * Select **textCode** control
+    * Select **textCode** control
    
-   * In the properties pane, select the **Advanced** tab and select **OnChange** property
+    * In the properties pane, select the **Advanced** tab and select **OnChange** property
    
-   * Enter the following expression `Set(Visit, LookUp(Visits, Code = textCode.Text))`
-        > It is the same expression as above, except this time we save results in a global variable. That allows us to use the variable *Visit* throughout the app without the need to re-enter the entire lookup expression.
+    * Enter the following expression `Set(Visit, LookUp(Visits, Code = textCode.Text))`
+    > This will save the visit in a global variable when a user searches in the textCode searchbox. That allows us to use the variable *Visit* throughout the app without the need to re-enter the entire lookup expression.
 
-2. Add buttons for checking in and checking out
+2. Add Check In Button
 
    * Select **Insert** tab
    
@@ -171,8 +175,10 @@ In this task, we will create buttons for the user to check in and check out of t
    * In the properties pane, change the button **Text** property to "`Check In`" (you can type within the existing quotes)
    
    * Click on **...** next to the button name in tree view (Button1), select **Rename**, change the name to `CheckInButton`
-   
-   * Click **Button** to insert another button
+
+3. Add Check Out Button   
+
+   * Click **Button** on the Insert tab to insert another button
    
    * In the properties pane, change the button **Text** property to "`Check Out`" (you can type within the existing quotes)
    
@@ -180,12 +186,13 @@ In this task, we will create buttons for the user to check in and check out of t
    
    * Position the buttons below the search box, with **Check In** above **Check Out** 
    
-3. Enable and disable buttons depending on visit data. 
-   We would like to enable **Check In** button when the visit record has been located (not blank), record status is active, and the visit has not started yet, i.e. the actual start value is blank.
+## Task \#4: Enable and disable buttons depending on visit data
 
-   * Select the Check In button and click on the **DisplayMode** property of the button in the Properties tab
+We would like to enable **Check In** button when the visit record has been located (not blank), record status is active, and the visit has not started yet, i.e. the actual start value is blank.
 
-   * Enter the expression below in the function bar.
+1. Select the **Check In button** and click on the **DisplayMode** property of the button in the Properties tab
+
+2. Enter the expression below in the function bar:
 
       ```
       If(!IsBlank(Visit) 
@@ -204,11 +211,11 @@ In this task, we will create buttons for the user to check in and check out of t
    * `IsBlank(Visit.'Actual Start')` - Active Start field does not have any data in it
    * `DisplayMode.Edit, DisplayMode.Disabled` - If the above conditions are met, the button will become editable. If not, the button will remain disabled.
 
-4. We would like to enable **Check Out** button when the visit record has been located (not blank), record status is active, and the visit has already started, i.e. the actual start value is not blank.
+We would like to enable **Check Out** button when the visit record has been located (not blank), record status is active, and the visit has already started, i.e. the actual start value is not blank.
 
-   * Select the Check Out button and click on the **DisplayMode** property of the button in the Properties tab
+3. Select the Check Out button and click on the **DisplayMode** property of the button in the Properties tab
 
-   * Enter the expression below in the function bar.
+4. Enter the expression below in the function bar:
 
      ```
      If(!IsBlank(Visit) 
@@ -229,7 +236,7 @@ In this task, we will create buttons for the user to check in and check out of t
 
 9. Press **ESC** to exit the running app.
 
-## Task \#4: Complete Check In and Check Out Process
+## Task \#5: Complete Check In and Check Out Process
 
 To perform the check in and check out process we need to update Common Data Service visit data as following:
 
@@ -253,15 +260,15 @@ To perform the check in and check out process we need to update Common Data Serv
 
    This expression contains the following parts:
 
-   * `Patch(Visits, Visit, {'Actual Start': Now()});`. *Patch* method updates **Visits** entity, the record identified by **Visit** variable (which is the current visit). The expression sets the value of *Actual Start* field to the current date and time (*Now()* method).
-   * `Refresh([@Visits]);`. This expression refreshes the visit records as the underlying values have changed
-   * `Set(Visit, LookUp(Visits, Code = textCode.Text));` This expression updates the *Visit* variable with fresh data from Common Data Service.
+   * **Patch(Visits, Visit, {'Actual Start': Now()});**. *Patch* method updates **Visits** entity, the record identified by **Visit** variable (which is the current visit). The expression sets the value of *Actual Start* field to the current date and time (*Now()* method).
+   * **Refresh([@Visits]);**. This expression refreshes the visit records as the underlying values have changed
+   * **Set(Visit, LookUp(Visits, Code = textCode.Text));** This expression updates the *Visit* variable with fresh data from Common Data Service.
    
-   When a user clicks this button, the Actual Start of the Visit will be set to the current date and time and the data will refresh.
+   > When a user clicks this button, the Actual Start of the Visit will be set to the current date and time and the data will refresh.
 
 3. Select **Check Out** button.
 
-4. Set **OnSelect** property on the Advanced tab to the following expression.
+4. Set **OnSelect** property on the Advanced tab to the following expression:
 
    ```
    Patch(
@@ -300,9 +307,9 @@ To perform the check in and check out process we need to update Common Data Serv
 
 10. Press **ESC** to exit the running app.
 
-## Task \#5: Add visual indicators
+## Task \#6: Add visual indicators
 
-Usability of a mobile app significantly improves when, in addition to the text information, the visual indicators are provided. In this task, we will add an icon indicating if a visitor can be checked in or checked out.
+Usability of a mobile app significantly improves when visual indicators are provided. In this task, we will add an icon indicating if a visitor can be checked in or checked out.
 
 1. Select **Insert** tab
 
@@ -329,13 +336,13 @@ Usability of a mobile app significantly improves when, in addition to the text i
 
     > You can navigate to the previous tab to copy another Code from one of the Visits you have created. You also have the option to run your **Campus Staff** app created previously to create new visit records. Verify the icon displays a smile emoji for this code.
 
-   Your running app should look approximately like the following:
+Your running app should look approximately like the following:
 
 ![Canvas running security app](media/3-canvas-running.png)
 
 8. Press **ESC** to exit the running app.
 
-## Task #6: Publish the app
+## Task #7: Publish the app
 
 1. You should still have the Campus Security app open in your browser. If not, select **Campus Security** app and click **Edit**.
 
