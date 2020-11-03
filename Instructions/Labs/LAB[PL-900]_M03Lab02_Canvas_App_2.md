@@ -207,11 +207,11 @@ We would like to enable **Check In** button when the visit record has been locat
 
    The expression can be broken down as following:
 
-   * `!IsBlank(Visit)` - visit record was found
-   * `&&` - logical AND operator
-   * `Visit.Status = 'Status (Visits)'.Active` status of the record is *Active*
-   * `IsBlank(Visit.'Actual Start')` - Active Start field does not have any data in it
-   * `DisplayMode.Edit, DisplayMode.Disabled` - If the above conditions are met, the button will become editable. If not, the button will remain disabled.
+   * **!IsBlank(Visit)** - visit record was found
+   * **&&** - logical AND operator
+   * **Visit.Status = 'Status (Visits)'.Active** status of the record is *Active*
+   * **IsBlank(Visit.'Actual Start')** - Active Start field does not have any data in it
+   * **DisplayMode.Edit, DisplayMode.Disabled** - If the above conditions are met, the button will become editable. If not, the button will remain disabled.
 
 We would like to enable **Check Out** button when the visit record has been located (not blank), record status is active, and the visit has already started, i.e. the actual start value is not blank.
 
