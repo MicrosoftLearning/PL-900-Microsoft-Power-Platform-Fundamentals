@@ -65,13 +65,13 @@ In this task, you will create a canvas app using the phone layout template based
 
 3.  Select **Common Data Service** connection then click **Create**.
 
-    -   Select **Visits** table
+4.  Select **Visits** table
 
-    -   Click **Connect**
+5.  Click **Connect**
 
-    -   The **Welcome to Power Apps Studio** window may appear. Click **Skip**.
+6.  The **Welcome to Power Apps Studio** window may appear. Click **Skip**.
 
-4.  Save application
+7.  Save application
 
     -   Click **File \> Save**.
 
@@ -116,7 +116,7 @@ In this task, you will configure the Detail form to view information about indiv
     
 9.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
-## Task #3: Configure Visits Edit Form 
+## Task \#3: Configure Visits Edit Form 
 
 In this task, you will configure a form to edit information about individual visit records.
 
@@ -130,7 +130,7 @@ In this task, you will configure a form to edit information about individual vis
 
 5.  Click **Add field**
 
-6.  Select the following fields
+6.  Select the following fields:
 
     * Building 
     
@@ -160,7 +160,7 @@ In this task, you will configure the pre-generated gallery to display the title,
 
 2.  Select **BrowseGallery1**
 
-3.  Select **TemplateSize** property from in the Properties panel
+3.  Select **TemplateSize** property from in the Properties panel on the right
 
 4.  Replace the expression with the following `Min(150, BrowseGallery1.Height - 60)`. That will ensure sufficient space for additional information.
 
@@ -168,15 +168,15 @@ In this task, you will configure the pre-generated gallery to display the title,
 
 6.  Select the Date Time field.
 
-7.  In the formula bar at the top, change `ThisItem.'Created On'`to `ThisItem.'Scheduled Start'`
+7.  In the formula bar at the top, change **ThisItem.'Created On'**to `ThisItem.'Scheduled Start'`
 
 8.  Select the field again
 
-9.  Press `CTRL-C` then `CTRL-V` to create a copy of the field.
+9.  Press **CTRL-C** then **CTRL-V** to create a copy of the field.
 
 10.  Using either mouse or keyboard, move the copied control down and align it with the other controls in the gallery, beneath the other Date Time field.
 
-11.  In the formula bar at the top, change `ThisItem.'Scheduled Start'` to `ThisItem.'Scheduled End'`
+11.  In the formula bar at the top, change **ThisItem.'Scheduled Start'** to `ThisItem.'Scheduled End'`
 
 12.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
@@ -184,7 +184,7 @@ In this task, you will configure the pre-generated gallery to display the title,
 
 Because number of visits continuously grows, users need a feature to filter the visits gallery. For example, the user may want to see only the future visits. In this task, you will add ability to show visits only after a date selected by the user.
 
-1. Select **BrowseScreen1** to ensure BrowseGallery1 is deselected
+1. Select **BrowseScreen1**
 
 2. Select **Insert** menu at the top.
 
@@ -200,7 +200,7 @@ Because number of visits continuously grows, users need a feature to filter the 
 
 8. Locate the **Items** property and click in the text box.
 
-8. In the expression, locate `[@Visits]` and replace it with `Filter(Visits,'Scheduled End' >= DatePicker1.SelectedDate)`. Full expression should look like the following:
+9. In the expression, locate **[@Visits]** and replace it with `Filter(Visits,'Scheduled End' >= DatePicker1.SelectedDate)`. The full expression should look like the following:
 
    ```
    SortByColumns(
@@ -217,11 +217,11 @@ Because number of visits continuously grows, users need a feature to filter the 
    )
    ```
    
-   Your screen should look approximately like the following:
+Your screen should look approximately like the following:
 
 ![Canvas filtering gallery](media/2-canvas-browse.png)
 
-9. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
+10. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 # Exercise #2: Complete the App
 
@@ -231,7 +231,7 @@ In this exercise you will test the application and, once successful, you will ad
 
 1.  Start the application
 
-    -   Select the **BrowseScreen1** and press **F5**, or click the Play icon at the upper-right corner to preview the app.
+    -   Select the **BrowseScreen1** and press **F5**, or click the **Play** icon at the upper-right corner to preview the app.
     
     -   The application should load and show a list of visits. 
     
@@ -239,7 +239,7 @@ In this exercise you will test the application and, once successful, you will ad
     
     -   Select a visit and verify that display form is working properly
     
-    -   Return to the gallery and press + to create a new visit. Verify that edit form contains required fields including visitor, building, and scheduled start and end dates.
+    -   Return to the gallery and press **+** to create a new visit. Verify that edit form contains required fields including visitor, building, and scheduled start and end dates.
     
     -   Fill in the information and submit. Verify that the new record appears in the gallery.
     
@@ -260,7 +260,6 @@ In this exercise you will test the application and, once successful, you will ad
     -   Close the **Designer** browser window or tab.
 
     -   Click **Leave** if prompted when tried to close the browser window.
-
 
 ## Task #2: Add App to Solution and publish 
 
