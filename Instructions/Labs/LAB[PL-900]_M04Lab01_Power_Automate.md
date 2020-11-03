@@ -180,10 +180,10 @@ The following have been identified as requirements you must implement to complet
    ```
    
    * To break it down:
-       * statecode eq 0 filters active visits (where Status equal Active)
-       * bc_actualstart ne null restricts search to visits where Actual Start has a value, i.e. there was a checkin
-       * bc_actualend eq null restricts search to visits where there was no check out (Actual End has no value) 
-       * Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15) restricts visits where visits meant to complete more than 15 minutes ago.
+       * **statecode eq 0** filters active visits (where Status equal Active)
+       * **bc_actualstart ne null** restricts search to visits where Actual Start has a value, i.e. there was a checkin
+       * **bc_actualend eq null** restricts search to visits where there was no check out (Actual End has no value) 
+       * **Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)** restricts visits where visits meant to complete more than 15 minutes ago.
 
    * On this action, click the ellipsis (**...**) and click **Rename**. Rename this action **"List active visits that ended more than 15 minutes ago"**. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
 
