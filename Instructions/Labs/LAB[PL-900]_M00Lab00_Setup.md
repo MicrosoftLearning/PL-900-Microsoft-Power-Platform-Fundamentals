@@ -68,6 +68,8 @@ In this Module 0 lab, you will acquire a Power Platform trial tenant and access 
 
 3.  Click on the **Portal from blank** panel under **Make your own app**
 
+    > If you do not see this option, try zooming out.
+
 4.  Provide new portal details
 
     -   Enter **Bellows College Visitors** as the portal **Name**
