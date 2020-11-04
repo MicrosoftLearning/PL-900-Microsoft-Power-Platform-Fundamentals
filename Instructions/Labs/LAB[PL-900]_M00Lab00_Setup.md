@@ -18,10 +18,11 @@ Campus administration would like to modernize their visitor registration system 
 
 Throughout this course, you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus.
 
-In this Module 0 lab, you will acquire a Power Platform trial tenant and access the Power Platform admin center. In the admin center, we will create an individual environment for configuration during the course.
+In this Module 0 lab, you will acquire a Power Platform trial tenant and access the Power Platform admin center. In the admin center, you will then create your **Practice** environment that you will do the majority of your lab work in.
 
-Exercise 1 – Acquire your Power Platform trial tenant 
-------------------------------------------
+## Exercise 1 – Setup
+
+### Task 1 - Acquire your Power Platform trial tenant
 
 1. Copy your **Microsoft 365 credentials** from the Authorized Lab Hoster.
 
@@ -35,15 +36,9 @@ Exercise 1 – Acquire your Power Platform trial tenant
 
 6. Select **Yes** to stay signed in.
 
+### Task \#2 – Create environment
 
-Exercise 2 - Create your environment 
-------------------------------------------
-
-In this exercise, you will create your **Practice** environment that you will do the majority of your lab work in.
-
-### Task 1 – Create environment
-
-1.  Access <https://admin.Powerplatform.microsoft.com> and log in with your Microsoft 365 credentials if prompted again.
+1.  Access <https://admin.powerplatform.microsoft.com> and log in with your Microsoft 365 credentials if prompted again.
 
 2. Select **Environments** and click **+New.**
 
@@ -59,6 +54,30 @@ In this exercise, you will create your **Practice** environment that you will do
 
 3. Your **Practice** environment should now show in the list of Environments. 
 
-4. Your environment may take a few minutes to provision. Refresh the page if needed. When your environment is prepared, select your **Practice** environment by clicking on the ellipses next to its name to expand the drop down menu and select **Settings.** 
+    > Your environment may take a few minutes to provision. Refresh the page if needed.
 
-5.  Explore the different areas in **Settings** that you are interested in, but do not make any changes yet. 
+# Exercise \#2: Provision a Power Apps portal
+
+**Objective:** Provisioning a Power Apps portal can take some time. In this exercise, you will create your Power Apps portal in your environment so that the provisioning process can be initiated. You will use this portal in a later lab.
+
+## Task \#1: Create Power Apps portal
+
+1.  Sign in to <https://make.powerapps.com>
+
+2.  If the **Environment** displayed in the top right is not your Practice environment, select your Environment.
+
+3.  Click on the **Portal from blank** panel under **Make your own app**
+
+    > If you do not see this option, try zooming out.
+
+4.  Provide new portal details
+
+    -   Enter **Bellows College Visitors** as the portal **Name**
+
+    -   Provide a unique URL; **something**.powerappsportals.com (if the name has been taken, choose a different one)
+
+    -   Select a base portal **Language**
+
+    -   Click **Create**
+
+    > The Portal provisioning process will run anywhere from 30 to 45 minutes. You do not have to wait, as this will continue while moving on to the next module.

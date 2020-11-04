@@ -68,7 +68,7 @@ Both will be integrated to the model-driven app for a better user-experience.
 
 6.  Select the **Forms** tab and click to open the **Main** form type. 
 
-    -   By default the form has two fields, Name (Primary Field) and Owner.
+    > By default, the form has two fields: Name (Primary Field) and Owner.
     
 7.  Add the following fields below the **Owner** field by dragging fields to the form or simply clicking field names:
 
@@ -134,14 +134,13 @@ Now, we will clone the view to create a new view for today's visits.
 
 14.  Add **Actual Start** and **Actual End** fields to the view. 
 
-        > **Note:** Since we no longer filter on the view status, we will get all today's visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
+    > **Note:** Since we no longer filter on the view status, we will get all today's visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
 
 15.  Click on the **dropdown arrow** by the Save button (be careful not to press the button itself) and select **Save As**.
 
 16.  Change the name to **Today's Visits** and press **Save**.
 
 17.  Click **Publish** and wait for the publishing to complete.
-
 
 # Exercise \#2: Create Model-Driven Application
 
@@ -222,17 +221,13 @@ Now, we will clone the view to create a new view for today's visits.
 
 9.  Click **Publish** to publish the sitemap and wait for the publishing to complete.
 
-10.  Click **Save and Close** to close the sitemap editor. You will see the assets for the entities that were added to the sitemap are
-     now all in the application.
+10.  Click **Save and Close** to close the sitemap editor. 
+
+    > You will see the assets for the entities that were added to the sitemap are now in the application.
      
-11.  Click **Save** to save the application.
+11.  Click **Validate** to validate the changes done in the application. 
 
-12.  Click **Validate** to validate the changes done in the application. 
-
-        >  This will show some warnings but we can ignore them, since we have not referenced a specific View and Form for the entities and the users will have access to all the Views and Forms for **Visit** and **Building** entities.
-
-13.  Click **Publish** to publish the application and wait for the publishing to
-     complete.
+    >  This will show some warnings but we can ignore them, since we have not referenced a specific View and Form for the entities and the users will have access to all the Views and Forms for **Visit** and **Building** entities.
      
 14.  Click **Save and Close** to close the app designer.
 
@@ -292,7 +287,7 @@ Now, we will clone the view to create a new view for today's visits.
     -   Click **Save and Close**. This will create the record and you should be able to see it on the
         Active Visits View.
         
-    -   Change view to **Today's Visits**. You should be able to see the new visit in the view.
+    -   Change view to **Today's Visits**. You should no longer see the new visit in the view, since it is scheduled for tomorrow.
     
 5. You may add more test records.
 

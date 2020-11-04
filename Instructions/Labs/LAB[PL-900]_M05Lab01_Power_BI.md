@@ -73,6 +73,9 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 8. Expand **+New** and select **Upload a file**.
 
+    > [!IMPORTANT]
+    > If you don't see **+New**, you may need to activate the new look for Power BI. Be sure to toggle the **New look** to **On** at the top of your screen.
+
 9. Select **Local File**.
 
 10. Locate and select **visits.pbix** file you've downloaded earlier.
@@ -113,7 +116,7 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 11. Click **...** beside **bc_Visit** and select **New Column**.
 
-12. Complete the formula as following
+12. Complete the formula as following:
 
     ```
     Column = RELATED(bc_Building[bc_name])
@@ -195,7 +198,9 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 5. Click **Exit Q&A**.
 
-Your **[Your Last Name] Campus Management** dashboard should be displayed. You may have to scroll down to see the new Q&A visual. Your dashboard should look similar to the following:
+Your **[Your Last Name] Campus Management** dashboard should be displayed. You may have to scroll down to see the new Q&A visual. 
+
+Your dashboard should look similar to the following:
 
 ![Power BI Dashboard](media/5-powerbi-result.png)
 

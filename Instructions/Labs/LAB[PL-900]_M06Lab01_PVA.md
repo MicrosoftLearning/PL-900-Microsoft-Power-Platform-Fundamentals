@@ -65,7 +65,7 @@ In this exercise, you will sign up for Power Virtual Agents trial.
 
 9. Select **Topics**. The bot comes with some sample user topics and some system topics. The default greeting came from the system topics.
 
-10. In the next exercise, you will generate your own topics from the CDC FAQ site. Do not navigate away from this browser window.
+> In the next exercise, you will generate your own topics from the CDC FAQ site. Do not navigate away from this browser window.
 
 # Exercise \#2: Create topics
 
@@ -83,23 +83,23 @@ In this exercise, you will generate topics from the CDC FAQ site.
 
 6.  Paste the URL you copied in the **Link to online content** textbox and click **Add**.
 
-7.  Click **Start** and wait. This can take few minutes.
+7.  Click **Start** and wait. This can take a few minutes.
 
-8.  You should get some suggested topics created for you.
+8.  You should get some suggested topics created for you. Click to open one of the suggested topics.
 
-9.  Click to open one of the suggested topics.
-
-10. You should see the trigger phrase and what the bot reply will be. **Click Add to topics.**
+9. You should see the trigger phrase and what the bot reply will be. **Click Add to topics.**
     
-11. The suggested topic should be added to your topics. Select all the suggested topics and click **Add to topics** 
+10. The suggested topic should be added to your topics. Select all the suggested topics and click **Add to topics** 
 
     > You can select all topics by using the icon to the left of the Name column. If you receive an error message, please try again.
 
-12. Once the Suggested topics have been added, select the **Existing** tab. You should see the new topics with their status set to Off.
+11. Once the Suggested topics have been added, select the **Existing** tab. You should see the new topics with their status set to Off.
 
-13. Click on the toggle button of the **Status** column to turn them all **On**. If you are short on time, you may turn on the first ten, but ensure you have turned “**Should I wear a mask?**" to **On**.
+12. Use the toggle button in the **Status** column to turn some of the topics to **On**. 
 
-14. Do not navigate away from this browser window.
+13. Write down the trigger phrase for one of the topics that you have turned on so that you can test with this later.
+
+> Do not navigate away from this browser window.
 
 # Exercise \#3: Test topics
 
@@ -109,13 +109,13 @@ In this task, you will test the topics you added.
 
 2.  Click **Reset**.
 
-3.  Type **Should I wear a mask?** and click **Send**.
+3.  Type the trigger phrase that you recorded from the previous task and click **Send**.
 
 4.  The bot should give you the correct information and ask if it answered your question. Click **Yes**.
 
 5.  The bot should ask you the rate how it did. Give it an excellent rating.
 
-6.  The bot should ask if it can help you with anything else. Click **No**.
+6.  The bot should ask if it can help you with anything else. Click **No, thanks**.
 
 7.  The bot should conclude the chat session.
 
@@ -161,13 +161,22 @@ In this exercise, you will publish the bot.
 
 6.  Change the welcome message to `Try my COVID-19 FAQ bot.`
 
-7.  Enter “Who is at higher risk for serious illness from COVID-19”, “What does more severe illness mean” and “What is CDC doing about COVID-19” for conversation starters and click **Save**.
+7.  Enter the following in **Conversation starters**:
+    ```
+     “Who is at higher risk for serious illness from COVID-19”
+     “What does more severe illness mean”
+     “What is the CDC doing about COVID-19”
+    ```
+    
+8.  Click **Save**.
 
-8.  Copy the **URL**.
+9.  Copy the **URL**.
 
-9.  You can share the URL with your colleagues and get feedback from them. Start a new browser window or tab and navigate to the URL you copied. The demo website should like the image below.
+> You can share the URL with your colleagues and get feedback from them. 
 
-10. Go ahead and start chatting with the bot.  
+10.  Start a new browser window or tab and navigate to the URL you copied. The demo website should like the image below.
+
+11. Go ahead and start chatting with the bot.  
     
 When completed, your published bot should look similar to this:
 

@@ -84,13 +84,13 @@ The following have been identified as requirements you must implement to complet
 
    * If asked to Accept terms and conditions for using this action, click **Accept**.
    
-   * Select **To** field, select **Email** from the Dynamic content list. Notice that it is beneath the **Get the Visitor** gray header. This means you are selecting the Email that is related to the Visitor that you looked up in the previous step. 
+   * Select **To** field, select **Email** from the Dynamic content list. Notice that it is beneath the **Get the Visitor** header. This means you are selecting the Email that is related to the Visitor that you looked up in the previous step. 
 
    * Enter **Your scheduled visit to Bellows College** in the **Subject** field.
 
    * Enter the following text in **Email Body**:  
         
-        > Dynamic content needs to be placed where fields are named in brackets. It is recommended to copy & paste all text first and then add dynamic content in the correct places.*
+        > Dynamic content needs to be placed where fields are named in brackets. It is recommended to copy & paste all text first and then add dynamic content in the correct places.
    
         ```
         Dear {First Name},
@@ -133,7 +133,7 @@ The following have been identified as requirements you must implement to complet
 
 9.  Choose the **Scheduled Start** and **Scheduled End Dates** to any dates in the future.
 
-10.  Press **Save**
+10.  Press the **Checkmark** icon to save the new visit
 
 11.  Navigate back to the previous tab with the flow being tested. Watch as the flow is run. If there are any errors, go back and compare your flow to the example above. If the email is sent successfully, you will receive it in your inbox. 
 
@@ -141,7 +141,9 @@ The following have been identified as requirements you must implement to complet
 
 13.  In the **Details** section, notice that the **Status** is set to **On**. This means your flow will run whenever a new Visit is created, until you turn it off. Any time the flow runs, you will see it added to the **28-day run history** list.
 
-14.  Turn the flow off by clicking **Turn off** on the command bar.
+14.  Turn the flow off by clicking **Turn off** on the command bar. You may need to press the ellipses (**...**) to see this option.
+
+15.  Close this window.
 
 # Exercise #2: Create Security Sweep flow
 
@@ -178,14 +180,14 @@ The following have been identified as requirements you must implement to complet
    ```
    
    * To break it down:
-       * `statecode eq 0` filters active visits (where Status equal Active)
-       * `bc_actualstart ne null` restricts search to visits where Actual Start has a value, i.e. there was a checkin
-       * `bc_actualend eq null` restricts search to visits where there was no check out (Actual End has no value) 
-       * `Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)` restricts visits where visits meant to complete more than 15 minutes ago.  
+       * **statecode eq 0** filters active visits (where Status equal Active)
+       * **bc_actualstart ne null** restricts search to visits where Actual Start has a value, i.e. there was a checkin
+       * **bc_actualend eq null** restricts search to visits where there was no check out (Actual End has no value) 
+       * **Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)** restricts visits where visits meant to complete more than 15 minutes ago.
 
    * On this action, click the ellipsis (**...**) and click **Rename**. Rename this action **"List active visits that ended more than 15 minutes ago"**. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
 
-6.  Click **New step**. Search for **Apply**, select **Apply to each** action 
+6.  Click **New step**. Search for *Apply*, select **Apply to each** action 
 
 7.  Select **value** from dynamics content in the **Select an output from previous steps** field. Notice that it is beneath the **List active visits that ended more than 15 minutes ago** gray header. This means you are selecting the list of visits that you looked up in the previous step. 
 
@@ -223,31 +225,33 @@ The following have been identified as requirements you must implement to complet
 
 12.  Enter your email address as **To**
 
-13.  Enter the following in the **Subject** field. **Visitor (Value)** is a dynamic content from the **Get visitor** step.
+13.  Enter the following in the **Subject** field. **Full Name** is a dynamic content from the **Get visitor** step.
 
-       ```
-         {Full Name} overstayed their welcome
-       ```
+   ```
+   {Full Name} overstayed their welcome
+   ```
    
 14.  Enter the following in the **Body** field. **Name** is a dynamic content from **Get building** step.
 
-       ```
-         There is an overstay in building {Name}
+   ```
+   There is an overstay in building {Name}
          
-         Best,
+   Best,
          
-         Campus Security
-       ```
+   Campus Security
+   ```
 
 17.  Select flow name **Untitled** in the upper left corner and rename it to **Security Sweep**
 
-18. Press **Save**
+18.  Press **Save**
 
     Your flow should look approximately like the following:
 
 ![Security sweep scheduled flow part 1](media/4-power-automate-security-sweep.png)
 
 ## Task #2: Validate and test the flow
+
+Your flow will begin sending you emails (to the email you specified when creating the John Doe contact previously) if there are visits that meet the requirements laid out in the flow.
 
 1. Validate that you have visit records that:
 
@@ -257,7 +261,7 @@ The following have been identified as requirements you must implement to complet
    
    3. Actual Start has a value.
    
-         >**Note**: To view this data, navigate to <make.powerapps.com> in a new tab. Click Solutions on the left pane to locate your solution. Select the Visit entity, then select the Data tab. Click Active Visits in the top right-hand corner to display the view selector, then select All fields.
+   > **Note**: To view this data, navigate to make.powerapps.com in a new tab. Click Solutions on the left pane to locate your solution. Select the Visit entity, then select the Data tab. Click Active Visits in the top right-hand corner to display the view selector, then select All fields.
    
 2. Navigate to your solution and locate the **Security Sweep** flow. Click the **...** and click **Edit**.
 
