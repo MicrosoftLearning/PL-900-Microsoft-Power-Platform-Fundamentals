@@ -65,11 +65,13 @@ Your solution will contain several entities upon completion of all the customiza
 
 2.  Create Publisher
 
-    -   Click on the **Publisher** dropdown and select **+ Publisher**.
+    -   Click on the **Publisher** dropdown and select **+ Publisher**
 
-    -   In the window that pops up, enter **Bellows College** for **Display Name** and **bc** for **Prefix**
+    -   In the window that pops up, enter **Bellows College** for **Display Name** 
+    
+    -   Enter **bc** for **Prefix**
 
-    -   Click **Save and Close**. 
+    -   Click **Save and Close**
     
     -   Click **Done** in the pop-up window.
 
@@ -307,13 +309,15 @@ In this task you will import a solution that contains the Power Automate flow re
 
    > **Important:** If you receive an error message, verify that the entities and fields you created match the instructions above.
 
-4. Select **Import Data** component. A new tab will open Power Automate. Click **Get Started** if presented with a popup. 
+4. Open **Import Data** component. A new tab will open Power Automate. 
 
-5. Click **Run** then click **Run flow** when prompted.
+5. Click **Get Started** if presented with a popup. 
 
-6. Click **Done**.
+6. Click **Run** then click **Run flow** when prompted.
 
-7. Wait until the flow instance completes the run. You can refresh the **28-day run history** table to see when the flow has run. 
+7. Click **Done**.
+
+8. Wait until the flow instance completes the run. You can refresh the **28-day run history** table to see when the flow has run. 
 
     > The purpose of this flow was to generate example data for the upcoming labs. In the next task, you will verify that the data import was successful. 
 
