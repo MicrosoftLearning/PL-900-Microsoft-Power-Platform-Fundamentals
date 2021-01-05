@@ -88,7 +88,7 @@ Your solution will contain several entities upon completion of all the customiza
 
 1.  Click to open your **Campus Management** solution you just created.
 
-2.  Click **Add Existing** and select **Entity**.
+2.  Click **Add Existing** and select **Table**.
 
 3.  Locate **Contact** and select it.
 
@@ -96,27 +96,24 @@ Your solution will contain several entities upon completion of all the customiza
 
 5.  Click **Select Components** under Contact.
 
-6.  Select the **Views** tab and select the **Active Contacts** view. Click
-    **Add**.
-    
-7.  Click **Select Components** again.
+6.  Select the **Views** tab and select the **Active Contacts** view. 
 
-8.  Select the **Forms** tab and select the **Contact** form.
+7.  Select the **Forms** tab and select the **Contact** form.
     
-9.  Click **Add**.
+8.  Click **Add**.
 
-    > You should have **1 View** and **1 Form** selected. 
+9.   > You should have **1 View** and **1 Form** selected. 
     
 10.  Click **Add** again. This will add the Contact entity with the selected View and Form to the newly created solution. 
     
 11.  Your solution should now have one entity: Contact.
 
-# Exercise \#2: Create Entities and Relationships
+# Exercise \#2: Create Tables (Entities) and Relationships
 
-**Objective:** In this exercise, you will create entities and add relationships
-between the entities.
+**Objective:** In this exercise, you will create tables (entities) and add relationships
+between the tables.
 
-## Task #1: Create Building Entity and Fields
+## Task #1: Create Building Table and Columns
 
 1.  You should still have your browser open to your Campus Management solution. If not, open the Campus Management solution by following these steps:
 
@@ -125,17 +122,17 @@ between the entities.
     * Select **Solutions** and click to open the **[Your Last Name] Campus Management**
           solution you just created.
           
-2.  Create Building entity
+2.  Create Building table (entity)
 
-    -   Click **New** and select **Entity**.
+    -   Click **New** and select **Table**.
     
     -   Enter **Building** for **Display Name** 
     
-    -   Click **Done**. This will start provisioning the entity in background while you can start adding other entities and fields.
+    -   Click **Create**. This will start provisioning the entity in background while you can start adding other tables and columns.
 
-## Task #2: Create Visit Entity and Fields
+## Task #2: Create Visit Table and Columns
 
-The **Visit** entity will contain information about the campus visits including the building, visitor, scheduled and actual time of each visit. 
+The **Visit** table will contain information about the campus visits including the building, visitor, scheduled and actual time of each visit. 
 
 We would like to assign each visit a unique number that can be easily entered and interpreted by a visitor when asked during the visit check-in process.
 
@@ -145,15 +142,15 @@ We would like to assign each visit a unique number that can be easily entered an
 
 2. Create Visit entity
 
-   * Click **New** and select **Entity**.
+   * Click **New** and select **Table**.
    
    * Enter **Visit** for **Display Name** 
    
-   * Click **Done**. This will start provisioning the entity in background while you can start adding other fields.
+   * Click **Create**. This will start provisioning the entity in background while you can start adding other fields.
 
-3. Create Scheduled Start field
+3. Create Scheduled Start column
 
-   * Make sure you have the **Fields** tab selected and click **Add Field**.
+   * Make sure you have the **Columns** tab selected and click **Add column**.
    
    * Enter **Scheduled Start** for **Display Name**.
    
@@ -167,9 +164,9 @@ We would like to assign each visit a unique number that can be easily entered an
    
    * Click **Done**.
 
-4.  Create Scheduled End field
+4.  Create Scheduled End column
 
-    * Click **Add Field**.
+    * Click **Add column**.
     
     * Enter **Scheduled End** for **Display Name**.
     
@@ -183,9 +180,9 @@ We would like to assign each visit a unique number that can be easily entered an
     
     * Click **Done**.
     
-5.  Create Actual Start field
+5.  Create Actual Start column
 
-    * Click **Add Field**.
+    * Click **Add column**.
     
     * Enter **Actual Start** for **Display Name**.
     
@@ -199,9 +196,9 @@ We would like to assign each visit a unique number that can be easily entered an
     
     * Click **Done**.
     
-6.  Create Actual End field
+6.  Create Actual End column
 
-    * Click **Add Field**.
+    * Click **Add column**.
     
     * Enter **Actual End** for **Display Name**.
     
@@ -215,9 +212,9 @@ We would like to assign each visit a unique number that can be easily entered an
     
     * Click **Done**.
     
-7.  Create Code field
+7.  Create Code column
 
-    * Click **Add Field**.
+    * Click **Add column**.
     
     * Enter **Code** for **Display Name**.
     
@@ -227,11 +224,11 @@ We would like to assign each visit a unique number that can be easily entered an
     
     * Click **Done**.
     
-8.  Click **Save Entity**
+8.  Click **Save Table** (If you get an error, click Save Table again)
 
 ## Task #3: Create Relationships
 
-1.  Ensure that you are still viewing the **Visit** entity of your **Campus Management** solution. If not, navigate there.
+1.  Ensure that you are still viewing the **Visit** table of your **Campus Management** solution. If not, navigate there.
 
 2.  Create Visit to Contact relationship
 
@@ -241,7 +238,7 @@ We would like to assign each visit a unique number that can be easily entered an
     
     * Select **Contact** for **Related (One)** 
     
-    * Enter **Visitor** for **Lookup field display name** 
+    * Enter **Visitor** for **Lookup column display name** 
     
     * Click **Done**.
     
@@ -253,7 +250,7 @@ We would like to assign each visit a unique number that can be easily entered an
     
     * Click **Done**.
     
-4.  Click **Save Entity**.
+4.  Click **Save Table**.
 
 5.  Select **Solutions** from the top menu and click **Publish all customizations.**
 
@@ -273,7 +270,7 @@ In this task you will import a solution that contains the Power Automate flow re
 
 4. Select **Solutions** in the left navigation panel.
 
-5. Click **Import**, then click **Browse**. Browse and select **DataImport_managed.zip** from your Desktop, and then press **Next**.
+5. Click **Import**, then click **Browse**. Browse and select **DataImport_managed.zip** from your Desktop and Open, and then press **Next**.
 
 >   You may receive the following message:
 >
@@ -308,6 +305,7 @@ In this task you will import a solution that contains the Power Automate flow re
 3. If **Status** is **Off**, select **...** next to **Import Data** then select **Turn On**.
 
    > **Important:** If you receive an error message, verify that the entities and fields you created match the instructions above.
+   
 
 4. Open **Import Data** component. A new tab will open Power Automate. 
 
