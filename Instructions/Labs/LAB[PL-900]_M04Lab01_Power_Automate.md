@@ -59,7 +59,7 @@ The following have been identified as requirements you must implement to complet
 
     -   Click to open your **Campus Management** solution.
 
-2.  Click **New** and select **Flow**. This will open the Power Automate flow editor in a new window.
+2.  Click **New** and select **Cloud flow**. This will open the Power Automate flow editor in a new window.
 
 3. Search for *Current* and select **Common Data Service (Current Environment)** connector.
 
@@ -168,7 +168,7 @@ The following have been identified as requirements you must implement to complet
 
    -   Click to open your **Campus Management** solution.
 
-2. Click **New** and select **Flow**. This will open the Power Automate flow editor in a new window.
+2. Click **New** and select **Cloud flow**. This will open the Power Automate flow editor in a new window.
 
 3. Search for *recurrence*, select **Schedule** connector, and then select the **Recurrence** trigger.
 
