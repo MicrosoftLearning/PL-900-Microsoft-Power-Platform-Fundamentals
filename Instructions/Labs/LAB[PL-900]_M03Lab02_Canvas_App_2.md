@@ -149,7 +149,7 @@ You will follow the below outline to design the canvas app:
    
     -   Change the View to **All fields**
    
-    -   Locate a Visit record that does not have an Actual Start or Actual End value. Select and copy the **Code** for this Visit.
+    -   Locate a Visit record that does not have an Actual Start or Actual End value (i.e., those columns are blank). Select and copy the **Code** for this Visit.
 
 8.  Test the app
 
