@@ -250,7 +250,7 @@ We would like to assign each visit a unique number that can be easily entered an
     
     * Select **Contact** for **Related (One)** 
     
-    * Enter **Visitor** for **Lookup field display name** 
+    * Enter **Visitor** for **Lookup column display name** 
     
     * Click **Done**.
     
