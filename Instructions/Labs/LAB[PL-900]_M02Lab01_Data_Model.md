@@ -240,7 +240,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 ## Task #1: Create Relationships
 
-1.  Ensure that you are still viewing the **Visit** entity of your **Campus Management** solution. If not, navigate there.
+1.  Ensure that you are still viewing the **Visit** table of your **Campus Management** solution. If not, navigate there.
 
 2.  Create Visit to Contact relationship
 
@@ -262,7 +262,7 @@ We would like to assign each visit a unique number that can be easily entered an
     
     * Click **Done**.
     
-4.  Click **Save Entity**.
+4.  Click **Save Table**.
 
 5.  Select **Solutions** from the top menu and click **Publish all customizations.**
 
