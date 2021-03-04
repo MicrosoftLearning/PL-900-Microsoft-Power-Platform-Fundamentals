@@ -296,17 +296,15 @@ In this task you will import a solution that contains the Power Automate flow re
 
 7. Expand the **Select a connection** dropdown and select **+ New Connection**.
 
-8. The new browser window or tab will open. Select **Create** when prompted to create Common Data Service connection. Sign in if required to complete creating the connection.
+8. The new browser window or tab will open. Select **Create** when prompted to the connection. Sign in if required to complete creating the connection.
 
-9. Switch back to the previous tab where you were importing the solution.
+9. Close the current tab so that you are now back to the previous **Import a Solution** tab.
 
-10. Click **Refresh** to refresh the list of connections. 
+10. Ensure the connection you just created is selected. If you do not see your connection, click **Refresh** to refresh the list of connections. 
 
-11. Ensure the connection you just created is selected.
+11. Press **Import**.
 
-12. Press **Import**.
-
-13. Wait until the import is complete.
+12. Wait until the import is complete.
 
 ## Task #2: Import Data  
 
@@ -316,7 +314,7 @@ In this task you will import a solution that contains the Power Automate flow re
 
 3. If **Status** is **Off**, select **...** next to **Import Data** then select **Turn On**.
 
-   > **Important:** If you receive an error message, verify that the entities and fields you created match the instructions above.
+   > **Important:** If you receive an error message, verify that the tables and columns you created match the instructions above.
 
 4. Open **Import Data** component. A new tab will open Power Automate. 
 
@@ -332,15 +330,17 @@ In this task you will import a solution that contains the Power Automate flow re
 
 ## Task #3: Verify Data Import
 
-1. Navigate back to the previous Power Apps tab. Click **Done** on the popup. Select **Solutions** on the left navigation bar and open your **Campus Management** solution.
+1. Navigate back to the previous Power Apps tab. Click **Done** on the popup. 
 
-2. Click to open the **Visit** entity, then select the **Data** tab.
+2. Select **Solutions** on the left navigation bar and open your **Campus Management** solution.
 
-3. Click **Active Visits** in the top right-hand corner to display the view selector, then select **All fields**. This will change the view that is being used to display the Visit data. 
+2. Click to open the **Visit** table, then select the **Data** tab.
+
+3. Click **Active Visits** in the top right-hand corner to display the view selector, then select **All columns**. This will change the view that is being used to display the Visit data. 
 
     > If you do not see **Active Visits** due to smaller resolution, you should see an eye icon in the same location.
 
-    > If the import was successful, you should see a list of visit entries.
+    > If the import was successful, you should see a list of visit rows.
 
 4. Click on any value in the **Building** column, confirm that the Building form opens in a separate window. 
 
