@@ -119,16 +119,17 @@ In this task, you will configure the Detail form to view information about indiv
 
 8.  Rearrange fields in the **Fields** pane by dragging and dropping field names up or down. Recommended order is:
     * Code, Name, Building, Visitor, Scheduled Start, Scheduled End, Actual Start, Actual End
-    
+    >**Tip:** You can collapse each field by clicking the down arrow beside the field name.
+
 9.  Remove the **Created On** field by clicking the ellipses (**...**) beside the field name and selecting **Remove**. 
 
 10.  Close the **Fields** pane.
  
 11.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
-## Task \#3: Configure Visits Edit Form 
+## Task \#3: Configure Visits Edit Form
 
-In this task, you will configure a form to edit information about individual visit records.
+In this task, you will configure a form to edit information about individual visit rows.
 
 1.  Expand **EditScreen1** under **Tree view**
 
@@ -155,12 +156,15 @@ In this task, you will configure a form to edit information about individual vis
 8.  Rearrange fields in the **Fields** pane by dragging and dropping field names up or down. Recommended order is:
     
     * Name, Building, Visitor, Scheduled Start, Scheduled End
-    
-    Your screen should look approximately like the following:
+    >**Tip:** You can collapse each field by clicking the down arrow beside the field name. 
+
+9.  Close the **Fields** pane.
+
+10.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
+
+Your screen should look approximately like the following:
 
 ![Canvas edit form](media/2-canvas-edit-form.png)
-
-9.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 ## Task \#4: Configure Visits gallery
 
