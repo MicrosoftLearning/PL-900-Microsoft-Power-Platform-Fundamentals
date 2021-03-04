@@ -94,7 +94,7 @@ Your solution will contain several entities upon completion of all the customiza
 
 1.  Click to open your **Campus Management** solution you just created.
 
-2.  Click **Add Existing** and select **Entity**.
+2.  Click **Add Existing** and select **Table**.
 
 3.  Locate **Contact** and select it.
 
@@ -113,9 +113,9 @@ Your solution will contain several entities upon completion of all the customiza
 
     > You should have **1 View** and **1 Form** selected. 
     
-10.  Click **Add** again. This will add the Contact entity with the selected View and Form to the newly created solution. 
+10.  Click **Add** again. This will add the Contact table with the selected View and Form to the newly created solution. 
     
-11.  Your solution should now have one entity: Contact.
+11.  Your solution should now have one table: Contact.
 
 # Exercise \#2: Create Entities and Relationships
 
