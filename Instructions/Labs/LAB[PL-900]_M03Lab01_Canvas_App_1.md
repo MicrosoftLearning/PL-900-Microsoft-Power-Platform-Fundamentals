@@ -243,7 +243,7 @@ In this exercise you will test the application and, once successful, you will ad
 
 1.  Start the application
 
-    -   Select the **BrowseScreen1** and press **F5**, or click the **Play** icon at the upper-right corner to preview the app.
+    -   Select the **BrowseScreen1** and press Function **F5**, or click the **Play** icon at the upper-right corner to preview the app.
     
     -   The application should load and show a list of visits. 
     
@@ -251,7 +251,7 @@ In this exercise you will test the application and, once successful, you will ad
     
     -   Select a visit and verify that display form is working properly
     
-    -   Return to the gallery and press **+** to create a new visit. Verify that edit form contains required fields including visitor, building, and scheduled start and end dates.
+    -   Return to the gallery and press **+** to create a new visit. Verify that edit form contains required columns including visitor, building, and scheduled start and end dates.
     
     -   Fill in the information and submit. Verify that the new record appears in the gallery.
     
