@@ -11,7 +11,7 @@ lab:
 ### Important Notice (Effective November 2020):
 Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity is now table. Fields and records in Dataverse databases are now referred to as columns and rows.
 
-While the applications are in the process of updating their user experience, some references to terminology for Microsoft Dataverse like entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon. 
+While the applications are in the process of updating their user experience, some references to terminology for Microsoft Dataverse like entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs.
 
 For more information and for a complete list of affected terms, please visit [What is Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
@@ -38,7 +38,7 @@ We will follow the below outline to design the canvas app:
 ## Prerequisites
 
 * Completion of **Module 0 Lab 0 - Validate lab environment**
-* Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
+* Completion of **Module 2 Lab 1 - Introduction to Microsoft Dataverse**
 
 ## Things to consider before you begin
 
@@ -46,16 +46,15 @@ We will follow the below outline to design the canvas app:
 -   Estimate the number of records in the system 
 -   How to narrow the records selected to improve app performance and user adoption
 
-
 # Exercise \#1: Create Staff Canvas App
 
 **Objective:** In this exercise, you will create a canvas app from a template and then modify it to include required data.
 
 ## Task \#1: Create Canvas App
 
-In this task, you will create a canvas app using the phone layout template based on Common Data Service. Using Visits as a selected entity from Common Data Service, the template will generate a Gallery - View - Edit app to manage campus visits.
+In this task, you will create a canvas app using the phone layout template based on Microsoft Dataverse. Using Visits as a selected table from Dataverse, the template will generate a Gallery - View - Edit app to manage campus visits.
 
-1.  Open your Campus Management solution.
+1.  View the apps in your environment.
 
     -   Sign in to <https://make.powerapps.com>
 
@@ -70,7 +69,7 @@ In this task, you will create a canvas app using the phone layout template based
 
     -   Select **Phone layout** under **Common Data Service**.
 
-3.  Select **Common Data Service** connection then click **Create**.
+3.  Select **Create** under the **Common Data Service** connection
 
 4.  Select **Visits** table
 
@@ -82,7 +81,7 @@ In this task, you will create a canvas app using the phone layout template based
 
     -   Click **File \> Save**.
 
-    -   Enter **[Your Last Name] Campus Staff** as the **Name**.
+    -   Enter **[Your Last Name] Campus Staff** as the app name.
 
     -   Press **Save**.
 
@@ -90,7 +89,7 @@ In this task, you will create a canvas app using the phone layout template based
 
 In this task, you will configure the Detail form to view information about individual visit records.
 
-1.  Select the **Back** arrow at the top left to go back to the app definition.
+1. Select the **Back** arrow at the top left to go back to the app definition.
 
 2. Expand **DetailScreen1** under **Tree view**
 
@@ -121,7 +120,11 @@ In this task, you will configure the Detail form to view information about indiv
 8.  Rearrange fields in the **Fields** pane by dragging and dropping field names up or down. Recommended order is:
     * Code, Name, Building, Visitor, Scheduled Start, Scheduled End, Actual Start, Actual End
     
-9.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
+9.  Remove the **Created On** field by clicking the ellipses (**...**) beside the field name and selecting **Remove**. 
+
+10.  Close the **Fields** pane.
+ 
+11.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 ## Task \#3: Configure Visits Edit Form 
 
