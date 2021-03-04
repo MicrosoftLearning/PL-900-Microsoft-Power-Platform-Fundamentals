@@ -71,9 +71,9 @@ In this Module 0 lab, you will acquire a Power Platform trial tenant and access 
 
 1.  Sign in to <https://make.powerapps.com>
 
-2.  If the **Environment** displayed in the top right is not your Practice environment, select your Environment.
+2.  If the **Environment** displayed in the top right is not your Practice environment, click to select your Environment.
 
-3.  Click on the **Portal from blank** panel under **Make your own app**
+3.  On the Home page, click on the **Portal from blank** panel under **Make your own app**
 
     > If you do not see this option, try zooming out.
 
