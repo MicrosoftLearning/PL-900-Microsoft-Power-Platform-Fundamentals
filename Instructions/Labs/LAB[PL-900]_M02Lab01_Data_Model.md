@@ -1,10 +1,10 @@
 ---
 lab:
     title: 'Lab 1: Data Modeling'
-    module: 'Module 2: Introduction to Common Data Service'
+    module: 'Module 2: Introduction to Microsoft Dataverse'
 ---
 
-# Module 2: Introduction to Common Data Service
+# Module 2: Introduction to Microsoft Dataverse
 ## Lab: Data Modeling
 
 ### Important Notice (Effective November 2020):
@@ -22,20 +22,20 @@ Campus administration would like to modernize their visitor registration system 
 
 Throughout this course, you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
 
-In this lab, you access your environment, create a Common Data Service (CDS) database, and create a solution to track your changes. You will also create a data model to support the following requirements:
+In this lab, you access your environment, create a Microsoft Dataverse database, and create a solution to track your changes. You will also create a data model to support the following requirements:
 
 -   R1 – Track the locations (buildings) of the campus visits
 -   R2 – Record basic information to identify and track the visitors 
 -   R3 – Schedule, record, and manage visits 
 
-Finally, you will import sample data into Common Data Service.
+Finally, you will import sample data into Microsoft Dataverse.
 
 # High-level lab steps
 
 To prepare your learning environments you will:
 
 * create a solution and publisher
-* add both new and existing components required to meet the application requirements. Refer to the [data model document](../../Allfiles/Campus%20Management.png) for the metadata description (entities and relationships). You can hold CTRL+click or right click the link to open the data model document in a new window.
+* add both new and existing components required to meet the application requirements. Refer to the [data model document](https://raw.githubusercontent.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/update-march-2021/Allfiles/Campus%20Management.png) for the metadata description (entities and relationships). You can hold CTRL+click or right click the link to open the data model document in a new window.
 
 Your solution will contain several entities upon completion of all the customizations:
 
@@ -265,7 +265,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 # Exercise \#3: Import Data
 
-**Objective:** In this exercise you will import sample data into the Common Data Service database.
+**Objective:** In this exercise you will import sample data into the Dataverse database.
 
 ## Task #1: Import solution
 
