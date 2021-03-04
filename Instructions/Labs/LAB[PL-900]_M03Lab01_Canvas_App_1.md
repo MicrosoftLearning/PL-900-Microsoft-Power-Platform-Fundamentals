@@ -168,31 +168,29 @@ Your screen should look approximately like the following:
 
 ## Task \#4: Configure Visits gallery
 
-In this task, you will configure the pre-generated gallery to display the title, start and end dates for the visit. 
+In this task, you will configure the pre-generated gallery to display the title, start date and end date for the visit. 
 
 1.  Expand **BrowseScreen1** under **Tree view**
 
 2.  Select **BrowseGallery1**
 
-3.  Select **TemplateSize** property from in the Properties panel on the right
+3.  Select **TemplateSize** property from in the Advanced Properties panel on the right
 
 4.  Replace the expression with the following `Min(150, BrowseGallery1.Height - 60)`. That will ensure sufficient space for additional information.
 
-5.  Edit the gallery by pressing the pencil icon in the top left corner of the gallery (hover over the app preview and click the pencil icon).
+5.  In the app preview, select the first Date Time field in the gallery.
 
-6.  Select the Date Time field.
+6.  In the formula bar at the top, change **ThisItem.'Created On'**to `ThisItem.'Scheduled Start'`
 
-7.  In the formula bar at the top, change **ThisItem.'Created On'**to `ThisItem.'Scheduled Start'`
+7.  Select the field again
 
-8.  Select the field again
+8.  Press **CTRL-C** then **CTRL-V** to create a copy of the field.
 
-9.  Press **CTRL-C** then **CTRL-V** to create a copy of the field.
+9.  Using either mouse or keyboard, move the copied control down and align it with the other controls in the gallery, beneath the other Date Time field.
 
-10.  Using either mouse or keyboard, move the copied control down and align it with the other controls in the gallery, beneath the other Date Time field.
+10.  In the formula bar at the top, change **ThisItem.'Scheduled Start'** to `ThisItem.'Scheduled End'`
 
-11.  In the formula bar at the top, change **ThisItem.'Scheduled Start'** to `ThisItem.'Scheduled End'`
-
-12.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
+11.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 ## Task #5: Add date filter
 
@@ -210,7 +208,7 @@ Because number of visits continuously grows, users need a feature to filter the 
 
 6. Resize and move the gallery control so that it is located under the date picker and covers the screen. You can do this by clicking the resize icon at the top center of the gallery control and resizing the control to start after the date picker.
 
-7. With **BrowseGallery1** still selected, click the **Advanced** tab of the Properties pane.
+7. With **BrowseGallery1** selected, click the **Advanced** tab of the Properties pane.
 
 8. Locate the **Items** property and click in the text box.
 
@@ -231,11 +229,11 @@ Because number of visits continuously grows, users need a feature to filter the 
    )
    ```
    
+10. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
+
 Your screen should look approximately like the following:
 
 ![Canvas filtering gallery](media/2-canvas-browse.png)
-
-10. To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 # Exercise #2: Complete the App
 
