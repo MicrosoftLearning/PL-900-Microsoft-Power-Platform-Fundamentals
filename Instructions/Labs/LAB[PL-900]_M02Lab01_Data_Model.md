@@ -10,7 +10,7 @@ lab:
 ### Important Notice (Effective November 2020):
 Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity is now table. Fields and records in Dataverse databases are now referred to as columns and rows.
 
-While the applications are in the process of updating their user experience, some references to terminology for Microsoft Dataverse like entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon. 
+While the applications are in the process of updating their user experience, some references to terminology for Microsoft Dataverse like entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs.
 
 For more information and for a complete list of affected terms, please visit [What is Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
@@ -22,7 +22,7 @@ Campus administration would like to modernize their visitor registration system 
 
 Throughout this course, you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
 
-In this lab, you access your environment, create a Microsoft Dataverse database, and create a solution to track your changes. You will also create a data model to support the following requirements:
+In this lab you will access your environment, create a Microsoft Dataverse database, and create a solution to track your changes. You will also create a data model to support the following requirements:
 
 -   R1 – Track the locations (buildings) of the campus visits
 -   R2 – Record basic information to identify and track the visitors 
@@ -35,9 +35,9 @@ Finally, you will import sample data into Microsoft Dataverse.
 To prepare your learning environments you will:
 
 * create a solution and publisher
-* add both new and existing components required to meet the application requirements. Refer to the [data model document](https://raw.githubusercontent.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/update-march-2021/Allfiles/Campus%20Management.png) for the metadata description (entities and relationships). You can hold CTRL+click or right click the link to open the data model document in a new window.
+* add both new and existing components required to meet the application requirements. Refer to the [data model document](https://raw.githubusercontent.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/update-march-2021/Allfiles/Campus%20Management.png) for the metadata description (tables and relationships). You can hold CTRL+click or right click the link to open the data model document in a new window.
 
-Your solution will contain several entities upon completion of all the customizations:
+Your solution will contain several tables upon completion of all the customizations:
 
 -   Contact
 -   Building
@@ -289,7 +289,7 @@ In this task you will import a solution that contains the Power Automate flow re
 >   There are missing dependencies. Install the following solutions before installing this one...
 >
 >   That message indicates that either the data model is not complete, the
->   publisher prefix is not **bc**, or the **Building** and **Visit** entity
+>   publisher prefix is not **bc**, or the **Building** and **Visit** table
 >   names differ from the names listed in the steps above.
 
 6. Press **Next**. You should be prompted to re-establish connections. 
