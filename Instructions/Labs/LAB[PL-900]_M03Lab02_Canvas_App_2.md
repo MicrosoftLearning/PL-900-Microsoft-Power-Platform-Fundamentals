@@ -201,9 +201,9 @@ In this task, we will create buttons for the user to check in and check out of t
    
 ## Task \#4: Enable and disable buttons depending on visit data
 
-We would like to enable **Check In** button when the visit record has been located (not blank), record status is active, and the visit has not started yet, i.e. the actual start value is blank.
+Once users have looked up the visit, we would like them to use the Check In button to check in for that visit. We would like to enable **Check In** button when the visit record has been located (not blank), record status is active, and the visit has not started yet, i.e. the actual start value is blank.
 
-1. Select the **Check In button** and click on the **DisplayMode** property of the button in the Properties tab
+1. Select the **Check In button** and click on the **Display Mode** property of the button in the Properties tab
 
 2. Enter the expression below in the function bar:
 
@@ -226,7 +226,7 @@ We would like to enable **Check In** button when the visit record has been locat
 
 We would like to enable **Check Out** button when the visit record has been located (not blank), record status is active, and the visit has already started, i.e. the actual start value is not blank.
 
-3. Select the Check Out button and click on the **DisplayMode** property of the button in the Properties tab
+3. Select the Check Out button and click on the **Display Mode** property of the button in the Properties tab
 
 4. Enter the expression below in the function bar:
 
@@ -243,7 +243,7 @@ We would like to enable **Check Out** button when the visit record has been loca
 
 6. Press **F5** to run the app. 
 
-7. Both buttons should be disabled. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. The **Check In** button should become enabled. 
+7. Both buttons should be disabled. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox (or click outside of the textbox). The **Check In** button should become enabled. 
 
 8. Clear the search box contents.
 
