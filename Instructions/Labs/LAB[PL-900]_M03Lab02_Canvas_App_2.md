@@ -273,8 +273,8 @@ To perform the check in and check out process we need to update Dataverse visit 
 
    This expression contains the following parts:
 
-   * **Patch(Visits, Visit, {'Actual Start': Now()});**. *Patch* method updates **Visits** entity, the record identified by **Visit** variable (which is the current visit). The expression sets the value of *Actual Start* field to the current date and time (*Now()* method).
-   * **Refresh([@Visits]);**. This expression refreshes the visit records as the underlying values have changed
+   * **Patch(Visits, Visit, {'Actual Start': Now()});**. *Patch* method updates **Visits** table, the row identified by **Visit** variable (which is the current visit). The expression sets the value of *Actual Start* column to the current date and time (*Now()* method).
+   * **Refresh([@Visits]);**. This expression refreshes the visit rows, as the underlying values have changed
    * **Set(Visit, LookUp(Visits, Code = textCode.Text));** This expression updates the *Visit* variable with fresh data from Dataverse.
    
    > When a user clicks this button, the Actual Start of the Visit will be set to the current date and time and the data will refresh.
@@ -296,7 +296,7 @@ To perform the check in and check out process we need to update Dataverse visit 
    Set(Visit, LookUp(Visits, Code = textCode.Text));
    ```
 
-   When a user clicks this button, the Actual End will be set to the current date and time, the Status of the Visit record will be set to Inactive, and the data will refresh.
+   When a user clicks this button, the Actual End will be set to the current date and time, the Status of the Visit will be set to Inactive, and the data will refresh.
 
 5. To preserve work in progress, click **File** then click **Save**. Use the **Back** arrow to return to the app.
 
@@ -326,7 +326,7 @@ Usability of a mobile app significantly improves when visual indicators are prov
 
 1. Select **Insert** tab
 
-2. Select **Icons \| Add**. At this point it does not matter which icon we select as we want the value to be dynamic.
+2. Select **Icons \| Add**. Select an Icon. At this point it does not matter which icon we select as we want the value to be dynamic.
 
 3. Resize and place the icon to the left of the buttons
 
