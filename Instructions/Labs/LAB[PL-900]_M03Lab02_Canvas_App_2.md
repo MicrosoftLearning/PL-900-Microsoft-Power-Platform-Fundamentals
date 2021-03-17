@@ -107,31 +107,31 @@ You will follow the below outline to design the canvas app:
 
     -   While still selecting the Text input object, select the text in the **Default** property and clear the value.
     
-    -   Select **HintText** property and enter `"Enter visitor code"` as the value (including double quotes)
+    -   Select **Hint Text** property and enter `"Enter visitor code"` as the value (including double quotes)
     
     -   Click on **...** next to the control name in tree view (TextInput1), select **Rename**, change the name to `textCode`
     
 3.  Add a form view
 
-    -   On **Insert** tab click **Forms**  then select **Display**
+    -   On **Insert** tab click **Forms**  then select **Display** (you may need to click the down arrow on the right side of the ribbon to see Forms)
    
-    -   Using size handles, position the form below the search textbox
+    -   Drag to position the form and align with the bottom of the screen
    
-    -   Select **DataSource** property and select **Visits**
+    -   While still selecting the new form, select **DataSource** property and select **Visits**
    
-    -   In properties pane select **Horizontal** as **Layout**
+    -   In the properties pane select **Horizontal** as **Layout**
 
 4.  Edit form view
 
-    -   Click **Edit fields**
-   
+    -   While still selecting the new form, click **Edit fields**
+
+    -   Remove both the **Name** and **Created On** fields
+
     -   Click **Add field** and select the following fields: **Actual End**, **Actual Start**, **Building**, **Scheduled End**, **Scheduled Start**, **Visitor**
    
     -   Press **Add**
    
-    -   Remove both the **Name** and **Created On** fields
-   
-    -   Change the order of the selected fields by dragging the field cards in the list. Recommended order is: Visitor, Building, Scheduled Start, Scheduled End, Actual Start, Actual End
+    -   Change the order of the selected fields by dragging the field cards in the list. Recommended order is: Visitor, Building, Scheduled Start, Scheduled End, Actual Start, Actual End (you can collapse the fields to make them easier to drag)
    
     -   Click the **X** to close the Fields pane
    
