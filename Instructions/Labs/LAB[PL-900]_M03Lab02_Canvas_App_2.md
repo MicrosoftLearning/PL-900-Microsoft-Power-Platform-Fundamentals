@@ -142,16 +142,18 @@ You will follow the below outline to design the canvas app:
 7.  Prepare to test the app
 
     -   Switch to the browser tab containing the solution
+
+    -   Click **Done** in the pop-up window
    
-    -   Select **Visit** entity
+    -   Select **Visit** table
    
     -   Select **Data** tab
    
     -   Open the View Selector in the top right by clicking the current View name, **Active Visits**
    
-    -   Change the View to **All fields**
+    -   Change the View to **All columns**
    
-    -   Locate a Visit record that does not have an Actual Start or Actual End value (i.e., those columns are blank). Select and copy the **Code** for this Visit.
+    -   Locate a Visit row that does not have an Actual Start or Actual End value (i.e., both columns are blank). Select and copy the **Code** for this Visit.
 
 8.  Test the app
 
