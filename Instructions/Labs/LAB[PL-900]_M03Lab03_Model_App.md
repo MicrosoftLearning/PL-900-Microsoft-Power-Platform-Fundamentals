@@ -30,23 +30,22 @@ As part of creating the model-driven app, you will complete the following:
 
 -   Create a new model-driven app named Campus Management
 
--   Edit the app navigation to reference the required entities
+-   Edit the app navigation to reference the required tables
 
--   Customize the forms and views of the required entities for the app
+-   Customize the forms and views of the required tables for the app
 
 We will work with the following components:
 
-- **Views**: Views allow the user to display the existing data in the form
-of table.
+- **Views**: Views allow the user to display the existing data in the form table.
 
-- **Forms**: This is where the user creates/updates new records in the entities.
+- **Forms**: This is where the user creates/updates new rows in the tables.
 
 Both will be integrated to the model-driven app for a better user-experience.
 
 ## Prerequisites
 
 * Completion of **Module 0 Lab 0 - Validate lab environment**
-* Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
+* Completion of **Module 2 Lab 1 - Introduction to Microsoft Dataverse**
 
 ## Things to consider before you begin
 
@@ -59,7 +58,7 @@ Both will be integrated to the model-driven app for a better user-experience.
 
 # Exercise \#1: Customize Views and Forms
 
-**Objective:** In this exercise, you will customize views and forms of the custom created entities that will be used in the model-driven app.
+**Objective:** In this exercise, you will customize views and forms of the custom created tables that will be used in the model-driven app.
 
 ## Task \#1: Edit Visit Form
 
@@ -77,7 +76,7 @@ Both will be integrated to the model-driven app for a better user-experience.
 
     > By default, the form has two fields: Name (Primary Field) and Owner.
     
-7.  Add the following fields below the **Owner** field by dragging fields to the form or simply clicking field names:
+7.  Select **+ Form field** and ddd the following fields below the **Owner** field by dragging columns to the form or simply clicking column names:
 
     * **Building**
     * **Visitor**
@@ -86,11 +85,11 @@ Both will be integrated to the model-driven app for a better user-experience.
     * **Actual Start**
     * **Actual End** 
     
-8.  Drag the **Code** field and drop it in the form header. 
+8.  Drag the **Code** column and drop it in the form header. 
 
     > The header is the top right area of the form. You may need to minimize the Properties panel on the right side of the screen to see the field on the form.
 
-9.  With the **Code** field still selected, check the checkbox for the **Read-only field** in the Properties panel.
+9.  With the **Code** field still selected, check the checkbox for **Read-only** in the Properties panel.
 
 10.  Select **Owner** field. In the Properties panel, change the **Field label** to **Host**
 
@@ -103,7 +102,7 @@ Both will be integrated to the model-driven app for a better user-experience.
 
 ## Task \#2: Edit Visit Views
 
-In this task, we will modify default Active Visits view and create new view for today's visits.
+In this task, we will modify the default Active Visits view and create a new view for today's visits.
 
 1.  Select the **Views** tab and click to open the **Active Visits** view.
 
@@ -119,7 +118,7 @@ In this task, we will modify default Active Visits view and create new view for 
 
 4.  Click the **Name** column and select **Remove**. Field **Name** will now be removed from the view.
 
-5.  In the Properties panel on the right, click **Sort by ...** and select **Scheduled Start**. Click on **Scheduled Start** again to change the order to descending (new visits on top).
+5.  In the Properties panel on the right, click **Sort by ...** and select **Scheduled Start**. Click on **Scheduled Start** again to change the order to descending.
 
 6.  Resize the individual column widths to fit the data.
 
@@ -168,10 +167,12 @@ Now, we will clone the view to create a new view for today's visits.
 
     -   Click **New** and select **App** and then **Model-driven app**. This will open a new tab.
     
-    -   Enter **[Your Last Name] Campus Management** for Name and click **Next**.
-    
+    -   Enter **[Your Last Name] Campus Management** for Name.
+
     -   Select **Use existing solution to create the App** checkbox
-    
+
+    -   Select **Next**
+
     -   Select your **Campus Management** solution
     
     -   Click **Done**
@@ -188,16 +189,16 @@ Now, we will clone the view to create a new view for today's visits.
 
     -   Change the Title of the New Group to **Security** in the properties pane on the right.
     
-5.  Add the Contact entity to the sitemap
+5.  Add the Contact table to the sitemap
 
     -   Select **New Subarea**.
 
     -   In the **Properties** pane, select **Entity** from the dropdown
         for **Type**.
 
-    -   Search for **Contact** entity from the dropdown for **Entity**.
+    -   Search for **Contact** table from the dropdown for **Entity**.
     
-6.  Add the Visit entity to the sitemap
+6.  Add the Visit table to the sitemap
 
     -   Select **Security** group and click **Add**.
 
@@ -206,9 +207,9 @@ Now, we will clone the view to create a new view for today's visits.
     -   Go to the **Properties** pane.
 
     -   Select **Entity** from the dropdown for **Type** and search for
-        **Visit** entity from the dropdown for **Entity**.
+        **Visit** table from the dropdown for **Entity**.
     
-7.  Add the Building entity to the sitemap
+7.  Add the Building table to the sitemap
 
     -   Select **Campus** area and click **Add**.
     
@@ -222,7 +223,7 @@ Now, we will clone the view to create a new view for today's visits.
     
     -   Go to the **Properties** pane.
     
-    -   Select **Entity** from the dropdown for **Type** and search for **Building** entity from the dropdown for **Entity**.
+    -   Select **Entity** from the dropdown for **Type** and search for **Building** table from the dropdown for **Entity**.
 
 8.  Click **Save**. This will show the loading screen while the changes are getting saved.
 
@@ -232,10 +233,14 @@ Now, we will clone the view to create a new view for today's visits.
 
     > You will see the assets for the entities that were added to the sitemap are now in the application.
      
-11.  Click **Validate** to validate the changes done in the application. 
+11.  Click **Save** on the App Designer.
+
+12.  Click **Validate** to validate the changes done in the application. 
 
     >  This will show some warnings but we can ignore them, since we have not referenced a specific View and Form for the entities and the users will have access to all the Views and Forms for **Visit** and **Building** entities.
      
+13. Click **Publish**
+
 14.  Click **Save and Close** to close the app designer.
 
 15.  Click **Done**.
@@ -252,7 +257,7 @@ Now, we will clone the view to create a new view for today's visits.
 
     -   The application should open in a new window.
     
-2.  Create new Contact record
+2.  Create new Contact
 
     -   The app should open to the **Active Contacts** view
 
@@ -266,7 +271,7 @@ Now, we will clone the view to create a new view for today's visits.
 
     -   You should now see the created contact on the **Active Contacts** view.
     
-3.  Create new Building record
+3.  Create new Building
 
     -   Select **Buildings** from the sitemap.
 
@@ -274,10 +279,10 @@ Now, we will clone the view to create a new view for today's visits.
 
     -   Enter the **Name** as `Microsoft Building`
         
-    -   Click **Save and Close** and this will show the newly created record on
+    -   Click **Save and Close**. This will show the newly created record on
         the Active Buildings View.
     
-4.  Create new Visit record
+4.  Create new Visit
 
     -   Select **Visits** from the sitemap.
     
@@ -291,7 +296,7 @@ Now, we will clone the view to create a new view for today's visits.
         -   **Scheduled Start**: select tomorrow's date and 2:00 PM as start time
         -   **Scheduled End**: select tomorrow's date and 3:30 PM as end time
         
-    -   Click **Save and Close**. This will create the record and you should be able to see it on the
+    -   Click **Save and Close**. This will create the Visit and you should be able to see it on the
         Active Visits View.
         
     -   Change view to **Today's Visits**. You should no longer see the new visit in the view, since it is scheduled for tomorrow.
