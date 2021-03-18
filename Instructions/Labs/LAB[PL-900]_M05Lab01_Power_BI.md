@@ -21,8 +21,8 @@ In this lab, you will build a Power BI dashboard that visualizes data about camp
 
 We will follow the below steps to design and create the Power BI dashboard:
 
--   Connect to Common Data Service 
--   Transform the data to include user-friendly descriptions for the related records (lookups)
+-   Connect to Dataverse
+-   Transform the data to include user-friendly descriptions for the related rows (lookups)
 -   Create and publish a report with various visualizations of the campus visits information
 -   Utilize a user natural language query to build additional visualizations
 -   Build a mobile view of the Power BI dashboard
@@ -31,7 +31,7 @@ We will follow the below steps to design and create the Power BI dashboard:
 ## Prerequisites
 
 * Completion of **Module 0 Lab 0 - Validate lab environment**
-* Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
+* Completion of **Module 2 Lab 1 - Introduction to Microsoft Dataverse**
 
 ## Things to consider before you begin
 
@@ -42,7 +42,7 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 # Exercise \#1: Create Power BI Report 
 
-**Objective:** In this exercise, you will create a Power BI report based on data from Common Data Service database.
+**Objective:** In this exercise, you will create a Power BI report based on data from your Dataverse database.
 
 ## Task \#1: Install Power BI Desktop / Prepare Power BI service
 
