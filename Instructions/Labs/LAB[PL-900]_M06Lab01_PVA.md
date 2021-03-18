@@ -35,7 +35,7 @@ The following have been identified as requirements you must implement to complet
 
   - Completion of **Module 0 Lab 0 - Validate lab environment**
 
-  - Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
+  - Completion of **Module 2 Lab 1 - Introduction to Microsoft Dataverse**
 
   - Bonus exercise only: Completion of **Module 6 Lab 4 - Introduction to Power Apps portals** 
 
