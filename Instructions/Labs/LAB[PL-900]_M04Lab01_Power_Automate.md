@@ -34,7 +34,7 @@ The following have been identified as requirements you must implement to complet
 ## Prerequisites
 
 * Completion of **Module 0 Lab 0 - Validate lab environment**
-* Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
+* Completion of **Module 2 Lab 1 - Introduction to Microsoft Dataverse**
 * Campus Staff app created in **Module 3 Lab 2 – How to build a canvas app, part 2** (for testing)
 * John Doe contact created with a personal email address in **Module 3 Lab 4 - How to build a model-driven app** (for testing)
 
@@ -67,7 +67,7 @@ The following have been identified as requirements you must implement to complet
 
    * Select **Create** for **Trigger condition**
    
-   * Select **Visits** for **The entity name**
+   * Select **Visits** for **Table name**
    
    * Select **Organization** for **Scope**
    
@@ -77,11 +77,11 @@ The following have been identified as requirements you must implement to complet
 
 6. Search for *Current* and select **Common Data Service (Current Environment)** connector.
 
-7. Select **Get a record** action. 
+7. Select **Get a row by ID** action. 
 
-   * Select **Contacts** as **Entity name**
+   * Select **Contacts** as **Table name**
    
-   * In the **Item ID** field, select **Visitor (Value)** from the Dynamic content list.
+   * In the **Row ID** field, select **Visitor (Value)** from the Dynamic content list.
    
    * On this action, click the ellipsis (**...**) and click **Rename**. Rename this action **"Get the Visitor"**. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
 
@@ -128,7 +128,7 @@ The following have been identified as requirements you must implement to complet
 
 3.  Leaving this tab open, navigate back to the previous tab with your flow. 
 
-4.  On the command bar, click **Test**. Select **I'll perform the trigger action** and then **Save & Test**.
+4.  On the command bar, click **Test**. Select **Manually** and then **Save & Test**.
 
 5.  Leaving the flow tab open, navigate back to the previous tab with the **Campus Staff** app.
 
