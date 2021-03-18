@@ -67,7 +67,7 @@ In this exercise, you will sign up for Power Virtual Agents trial.
 
 > In the next exercise, you will generate your own topics from the CDC FAQ site. Do not navigate away from this browser window.
 
-# Exercise \#2: Create topics
+# Exercise \#2: Create Topics
 
 In this exercise, you will generate topics from the CDC FAQ site.
 
@@ -101,7 +101,7 @@ In this exercise, you will generate topics from the CDC FAQ site.
 
 > Do not navigate away from this browser window.
 
-# Exercise \#3: Test topics
+# Exercise \#3: Test Topics
 
 In this task, you will test the topics you added.
 
@@ -123,7 +123,7 @@ In this task, you will test the topics you added.
 
 9.  The bot should greet you and tell you what it can do. Your bot can now help users with COVID-19 FAQs, so you will need to change the greeting message in the next task. Do not navigate away from this browser window.
 
-# Exercise \#4: Change the greeting
+# Exercise \#4: Change the Greeting
 
 In this task, you will change the greeting to COVID-19 specific.
 
@@ -145,7 +145,7 @@ In this task, you will change the greeting to COVID-19 specific.
 
 9.  The bot should now reply with the new greeting.
 
-# Exercise \#5: Publish the bot
+# Exercise \#5: Publish the Bot
 
 In this exercise, you will publish the bot.
 
