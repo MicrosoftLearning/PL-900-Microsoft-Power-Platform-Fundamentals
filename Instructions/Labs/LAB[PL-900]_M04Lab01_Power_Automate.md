@@ -118,7 +118,7 @@ The following have been identified as requirements you must implement to complet
 
     Leave this flow tab open for the next task. You flow should look approximately like the following:
 
-![Power Automate visitor notification flow](media/4-power-automate-notify.png)
+![Power Automate visitor notification flow](media/4-power-automate-notification.png)
 
 ## Task \#2: Validate and test the flow
 
@@ -254,7 +254,7 @@ The following have been identified as requirements you must implement to complet
 
     Your flow should look approximately like the following:
 
-![Security sweep scheduled flow part 1](media/4-power-automate-security-sweep.png)
+![Security sweep scheduled flow part 1](media/4-power-automate-security-sweep-flow.png)
 
 ## Task #2: Validate and test the flow
 
