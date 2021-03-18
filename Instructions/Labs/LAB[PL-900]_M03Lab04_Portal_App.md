@@ -140,6 +140,8 @@ You will follow the below outline to design the Power Apps portal:
     
 2.  Add a list component to the Building Directory page
 
+    -   Select the section with two columns.
+
     -   On the toolbelt (left side), select the **Components** icon
 
     -   Choose **One column section** from the **Section layout** area (a section will appear below the image and text on the webpage)
@@ -156,7 +158,7 @@ You will follow the below outline to design the Power Apps portal:
 
     -   In the properties pane (right side), enter in `Buildings List` in the **Name** field
 
-    -   In the **Entity** field, choose **Building (bc_building)** from the drop-down list
+    -   In the **Table** field, choose **Building (bc_building)** from the drop-down list
 
     -   In the **Views**, choose **Active Buildings**
 
@@ -164,7 +166,7 @@ You will follow the below outline to design the Power Apps portal:
     
 4.  Click **Browse website** to view the page. 
 
-    > You should see the list of Buildings from the Common Data Service appear on the webpage.
+    > You should see the list of Buildings from your Dataverse database appear on the webpage.
 
 # Exercise \#2: Change the Portal Theme
 
@@ -194,7 +196,7 @@ You will follow the below outline to design the Power Apps portal:
     
     -   Rename your theme
     
-3.  On the command bar, click **Sync Configuration**
+3.  On the command bar, click **Sync configuration**
 
 Your app layout should look similar to the following structure:
 
