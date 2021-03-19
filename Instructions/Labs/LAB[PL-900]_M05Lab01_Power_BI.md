@@ -94,7 +94,7 @@ We will follow the below steps to design and create the Power BI dashboard:
     
     * In the left navigation page, select Environments, and then open your Practice environment.
     
-    * Right mouse click **Environment URL** on the **Details** panel, then select **Copy link**.
+    * Right mouse click **Environment URL** on the **Details** panel, then select **Copy link address**.
     
 2. Open Power BI Desktop, sign in with your provided credentials if prompted.
 
@@ -108,7 +108,7 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 7. Click **Model** icon on the left vertical toolbar.
 
-8. Drag **bc_buildingid** column from **bc_Building** table and drop it to **bc_building** column in **bc_Visit** table. That will create a relationship between the two entities that Power BI will be able to use to display related data.
+8. Drag **bc_buildingid** column from **bc_Building** table and drop it to **bc_building** column in **bc_Visit** table. That will create a relationship between the two tables that Power BI will be able to use to display related data.
 
 9. Select **Report** icon on the left toolbar.
 
