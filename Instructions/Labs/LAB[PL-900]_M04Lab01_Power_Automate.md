@@ -34,7 +34,7 @@ The following have been identified as requirements you must implement to complet
 ## Prerequisites
 
 * Completion of **Module 0 Lab 0 - Validate lab environment**
-* Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
+* Completion of **Module 2 Lab 1 - Introduction to Microsoft Dataverse**
 * Campus Staff app created in **Module 3 Lab 2 – How to build a canvas app, part 2** (for testing)
 * John Doe contact created with a personal email address in **Module 3 Lab 4 - How to build a model-driven app** (for testing)
 
@@ -67,7 +67,7 @@ The following have been identified as requirements you must implement to complet
 
    * Select **Create** for **Trigger condition**
    
-   * Select **Visits** for **The entity name**
+   * Select **Visits** for **Table name**
    
    * Select **Organization** for **Scope**
    
@@ -77,11 +77,11 @@ The following have been identified as requirements you must implement to complet
 
 6. Search for *Current* and select **Common Data Service (Current Environment)** connector.
 
-7. Select **Get a record** action. 
+7. Select **Get a row by ID** action. 
 
-   * Select **Contacts** as **Entity name**
+   * Select **Contacts** as **Table name**
    
-   * In the **Item ID** field, select **Visitor (Value)** from the Dynamic content list.
+   * In the **Row ID** field, select **Visitor (Value)** from the Dynamic content list.
    
    * On this action, click the ellipsis (**...**) and click **Rename**. Rename this action **"Get the Visitor"**. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
 
@@ -118,7 +118,7 @@ The following have been identified as requirements you must implement to complet
 
     Leave this flow tab open for the next task. You flow should look approximately like the following:
 
-![Power Automate visitor notification flow](media/4-power-automate-notify.png)
+![Power Automate visitor notification flow](media/4-power-automate-notification.png)
 
 ## Task \#2: Validate and test the flow
 
@@ -128,7 +128,7 @@ The following have been identified as requirements you must implement to complet
 
 3.  Leaving this tab open, navigate back to the previous tab with your flow. 
 
-4.  On the command bar, click **Test**. Select **I'll perform the trigger action** and then **Save & Test**.
+4.  On the command bar, click **Test**. Select **Manually** and then **Save & Test**.
 
 5.  Leaving the flow tab open, navigate back to the previous tab with the **Campus Staff** app.
 
@@ -174,13 +174,13 @@ The following have been identified as requirements you must implement to complet
 
 4. Set **Interval** to **15 minutes**
 
-5. Click **New step**. Search for *Current* and select **Common Data Service (Current Environment)** connector. Select **List records** action.
+5. Click **New step**. Search for *Current* and select **Common Data Service (Current Environment)** connector. Select **List rows** action.
 
-   * Enter **Visits** as **Entity name**
+   * Enter **Visits** as **Table name**
    
    * Click **Show advanced options**
 
-   * Enter the following expression as **Filter Query**
+   * Enter the following expression as **Filter rows**
 
    ```
      statecode eq 0 and bc_actualstart ne null and bc_actualend eq null and Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)
@@ -204,7 +204,7 @@ The following have been identified as requirements you must implement to complet
     
     * Search for *Current* and select **Common Data Service (Current Environment)** connector. 
     
-    * Select **Get a record** action.
+    * Select **Get a row by ID** action.
     
     * Select **Buildings** as **Entity name**
     
@@ -218,7 +218,7 @@ The following have been identified as requirements you must implement to complet
     
     * Search for *Current* and select **Common Data Service (Current Environment)** connector.
     
-    * Select **Get a record** action.
+    * Select **Get a row by ID** action.
     
     * Select **Contacts** as **Entity name**
     
@@ -241,7 +241,7 @@ The following have been identified as requirements you must implement to complet
 14.  Enter the following in the **Body** field. **Name** is a dynamic content from **Get building** step.
 
    ```
-   There is an overstay in building {Name}
+   There is an overstay in building {Name}.
          
    Best,
          
@@ -254,7 +254,7 @@ The following have been identified as requirements you must implement to complet
 
     Your flow should look approximately like the following:
 
-![Security sweep scheduled flow part 1](media/4-power-automate-security-sweep.png)
+![Security sweep scheduled flow part 1](media/4-power-automate-security-sweep-flow.png)
 
 ## Task #2: Validate and test the flow
 
@@ -270,19 +270,19 @@ Your flow will begin sending you emails (to the email you specified when creatin
    
    > **Note**: To view this data, navigate to make.powerapps.com in a new tab. Click Solutions on the left pane to locate your solution. Select the Visit entity, then select the Data tab. Click Active Visits in the top right-hand corner to display the view selector, then select All fields.
    
-2. Navigate to your solution and locate the **Security Sweep** flow. Click the **...** and click **Edit**.
+2. Navigate to your **Security Sweep** flow, if not already there.
 
 3. When your flow opens, click **Test**.
 
-4. Select **I'll perform the trigger action**.
+4. Select **Manually**.
 
-5. Click **Test** and **Run Flow**.
+5. Click **Save & Test** and **Run Flow**.
 
 6. When flow competes, click **Done**. 
 
 7. Expand **Apply to each**, then expand the **Send an email notification** step. Check the **Subject**, **Email Body** values.
 
-8. Navigate to solution, click **...** next to the flow, select **Turn off**. This is to prevent flow from executing on a schedule on the test system.
+8. Select the back arrow to the Security Sweep flow details. Select **Turn off** on the command bar. This is to prevent flow from executing on a schedule on the test system.
 
 # Challenges
 

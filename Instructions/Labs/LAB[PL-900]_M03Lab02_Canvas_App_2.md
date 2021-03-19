@@ -29,22 +29,22 @@ In part 2 of this lab, you will create design and build a Power Apps canvas app 
 You will follow the below outline to design the canvas app:
 
 -   Create the app using the phone form factor
--   Connect to Common Data Service as a data source
--   Capture the input (visitor code) and locate the visitor record
+-   Connect to Dataverse as a data source
+-   Capture the input (visitor code) and locate the visitor row
 -   Configure a form viewer control to show the visitor information
--   Use a Common Data Service view to populate the gallery
+-   Use a Dataverse view to populate the gallery
 -   Handle checking-in and checking-out process for a visitor
 
 ## Prerequisites
 
 * Completion of **Module 0 Lab 0 - Validate lab environment**
-* Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
+* Completion of **Module 2 Lab 1 - Introduction to Microsoft Dataverse**
 
 ## Things to consider before you begin
 
 -   What information would a security officer need quick access to?
--   What should happen if visitor code is invalid
--   What should happen if the visitor arrives outside of the scheduled hours 
+-   What should happen if visitor code is invalid?
+-   What should happen if the visitor arrives outside of the scheduled hours?
 
 # Exercise \#1: Create Security Canvas App
 
@@ -60,7 +60,7 @@ You will follow the below outline to design the canvas app:
 
     -   Select **Solutions**.
 
-    -   Click to open the **Campus Management** solution.
+    -   Click to open your **Campus Management** solution.
     
 2.  Create new canvas application
 
@@ -83,9 +83,11 @@ You will follow the below outline to design the canvas app:
 
     -   Click **View \| Data sources**
     
-    -   Click **See all entities**
+    -   Click **+ Add Data**
+
+    -   Click **See all entities** (or tables)
     
-    -   Select **Visits** and wait for the Visit entity to display under the Data **In your app** section.
+    -   Select **Visits** and wait for the Visit table to display on the Data tab.
     
 4.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
@@ -105,31 +107,31 @@ You will follow the below outline to design the canvas app:
 
     -   While still selecting the Text input object, select the text in the **Default** property and clear the value.
     
-    -   Select **HintText** property and enter `"Enter visitor code"` as the value (including double quotes)
+    -   Select **Hint Text** property and enter `"Enter visitor code"` as the value (including double quotes)
     
     -   Click on **...** next to the control name in tree view (TextInput1), select **Rename**, change the name to `textCode`
     
 3.  Add a form view
 
-    -   On **Insert** tab click **Forms**  then select **Display**
+    -   On **Insert** tab click **Forms**  then select **Display** (you may need to click the down arrow on the right side of the ribbon to see Forms)
    
-    -   Using size handles, position the form below the search textbox
+    -   Drag to position the form and align with the bottom of the screen
    
-    -   Select **DataSource** property and select **Visits**
+    -   While still selecting the new form, select **DataSource** property and select **Visits**
    
-    -   In properties pane select **Horizontal** as **Layout**
+    -   In the properties pane select **Horizontal** as **Layout**
 
 4.  Edit form view
 
-    -   Click **Edit fields**
-   
+    -   While still selecting the new form, click **Edit fields**
+
+    -   Remove both the **Name** and **Created On** fields
+
     -   Click **Add field** and select the following fields: **Actual End**, **Actual Start**, **Building**, **Scheduled End**, **Scheduled Start**, **Visitor**
    
     -   Press **Add**
    
-    -   Remove both the **Name** and **Created On** fields
-   
-    -   Change the order of the selected fields by dragging the field cards in the list. Recommended order is: Visitor, Building, Scheduled Start, Scheduled End, Actual Start, Actual End
+    -   Change the order of the selected fields by dragging the field cards in the list. Recommended order is: Visitor, Building, Scheduled Start, Scheduled End, Actual Start, Actual End (you can collapse the fields to make them easier to drag)
    
     -   Click the **X** to close the Fields pane
    
@@ -140,16 +142,18 @@ You will follow the below outline to design the canvas app:
 7.  Prepare to test the app
 
     -   Switch to the browser tab containing the solution
+
+    -   Click **Done** in the pop-up window
    
-    -   Select **Visit** entity
+    -   Select **Visit** table
    
     -   Select **Data** tab
    
     -   Open the View Selector in the top right by clicking the current View name, **Active Visits**
    
-    -   Change the View to **All fields**
+    -   Change the View to **All columns**
    
-    -   Locate a Visit record that does not have an Actual Start or Actual End value (i.e., those columns are blank). Select and copy the **Code** for this Visit.
+    -   Locate a Visit row that does not have an Actual Start or Actual End value (i.e., both columns are blank). Select and copy the **Code** for this Visit.
 
 8.  Test the app
 
@@ -197,9 +201,9 @@ In this task, we will create buttons for the user to check in and check out of t
    
 ## Task \#4: Enable and disable buttons depending on visit data
 
-We would like to enable **Check In** button when the visit record has been located (not blank), record status is active, and the visit has not started yet, i.e. the actual start value is blank.
+Once users have looked up the visit, we would like them to use the Check In button to check in for that visit. We would like to enable **Check In** button when the visit record has been located (not blank), record status is active, and the visit has not started yet, i.e. the actual start value is blank.
 
-1. Select the **Check In button** and click on the **DisplayMode** property of the button in the Properties tab
+1. Select the **Check In button** and click on the **Display Mode** property of the button in the Properties tab
 
 2. Enter the expression below in the function bar:
 
@@ -222,7 +226,7 @@ We would like to enable **Check In** button when the visit record has been locat
 
 We would like to enable **Check Out** button when the visit record has been located (not blank), record status is active, and the visit has already started, i.e. the actual start value is not blank.
 
-3. Select the Check Out button and click on the **DisplayMode** property of the button in the Properties tab
+3. Select the Check Out button and click on the **Display Mode** property of the button in the Properties tab
 
 4. Enter the expression below in the function bar:
 
@@ -239,7 +243,7 @@ We would like to enable **Check Out** button when the visit record has been loca
 
 6. Press **F5** to run the app. 
 
-7. Both buttons should be disabled. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. The **Check In** button should become enabled. 
+7. Both buttons should be disabled. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox (or click outside of the textbox). The **Check In** button should become enabled. 
 
 8. Clear the search box contents.
 
@@ -247,7 +251,7 @@ We would like to enable **Check Out** button when the visit record has been loca
 
 ## Task \#5: Complete Check In and Check Out Process
 
-To perform the check in and check out process we need to update Common Data Service visit data as following:
+To perform the check in and check out process we need to update Dataverse visit data as following:
 
 * When visitor checks in, set *Actual Start* field to the current date and time
 * When visitor checks out, set *Actual End* field to the current date and time. 
@@ -269,9 +273,9 @@ To perform the check in and check out process we need to update Common Data Serv
 
    This expression contains the following parts:
 
-   * **Patch(Visits, Visit, {'Actual Start': Now()});**. *Patch* method updates **Visits** entity, the record identified by **Visit** variable (which is the current visit). The expression sets the value of *Actual Start* field to the current date and time (*Now()* method).
-   * **Refresh([@Visits]);**. This expression refreshes the visit records as the underlying values have changed
-   * **Set(Visit, LookUp(Visits, Code = textCode.Text));** This expression updates the *Visit* variable with fresh data from Common Data Service.
+   * **Patch(Visits, Visit, {'Actual Start': Now()});**. *Patch* method updates **Visits** table, the row identified by **Visit** variable (which is the current visit). The expression sets the value of *Actual Start* column to the current date and time (*Now()* method).
+   * **Refresh([@Visits]);**. This expression refreshes the visit rows, as the underlying values have changed
+   * **Set(Visit, LookUp(Visits, Code = textCode.Text));** This expression updates the *Visit* variable with fresh data from Dataverse.
    
    > When a user clicks this button, the Actual Start of the Visit will be set to the current date and time and the data will refresh.
 
@@ -292,7 +296,7 @@ To perform the check in and check out process we need to update Common Data Serv
    Set(Visit, LookUp(Visits, Code = textCode.Text));
    ```
 
-   When a user clicks this button, the Actual End will be set to the current date and time, the Status of the Visit record will be set to Inactive, and the data will refresh.
+   When a user clicks this button, the Actual End will be set to the current date and time, the Status of the Visit will be set to Inactive, and the data will refresh.
 
 5. To preserve work in progress, click **File** then click **Save**. Use the **Back** arrow to return to the app.
 
@@ -322,7 +326,7 @@ Usability of a mobile app significantly improves when visual indicators are prov
 
 1. Select **Insert** tab
 
-2. Select **Icons \| Add**. At this point it does not matter which icon we select as we want the value to be dynamic.
+2. Select **Icons \| Add**. Select an Icon. At this point it does not matter which icon we select as we want the value to be dynamic.
 
 3. Resize and place the icon to the left of the buttons
 
