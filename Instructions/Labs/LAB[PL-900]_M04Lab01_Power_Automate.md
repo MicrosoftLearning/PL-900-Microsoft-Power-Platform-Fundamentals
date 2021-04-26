@@ -61,9 +61,9 @@ The following have been identified as requirements you must implement to complet
 
 2.  Click **New** and select **Cloud flow**. This will open the Power Automate flow editor in a new window.
 
-3. Search for *Current* and select **Common Data Service (Current Environment)** connector.
+3. Search for *Current* and select **Microsoft Dataverse** connector.
 
-4. Select the trigger **When a Record is Created, Updated or Deleted**.
+4. Select the trigger **When a row is added, modified or deleted**.
 
    * Select **Create** for **Trigger condition**
    
@@ -75,7 +75,7 @@ The following have been identified as requirements you must implement to complet
 
 5.  Click **New Step**. This step is required to retrieve visitors information, including email address.
 
-6. Search for *Current* and select **Common Data Service (Current Environment)** connector.
+6. Search for *Current* and select **Microsoft Dataverse** connector.
 
 7. Select **Get a row by ID** action. 
 
@@ -174,7 +174,7 @@ The following have been identified as requirements you must implement to complet
 
 4. Set **Interval** to **15 minutes**
 
-5. Click **New step**. Search for *Current* and select **Common Data Service (Current Environment)** connector. Select **List rows** action.
+5. Click **New step**. Search for *Current* and select **Microsoft Dataverse** connector. Select **List rows** action.
 
    * Enter **Visits** as **Table name**
    
@@ -202,7 +202,7 @@ The following have been identified as requirements you must implement to complet
 
     * Click **Add an action** inside the Apply to Each loop.
     
-    * Search for *Current* and select **Common Data Service (Current Environment)** connector. 
+    * Search for *Current* and select **Microsoft Dataverse** connector. 
     
     * Select **Get a row by ID** action.
     
@@ -216,7 +216,7 @@ The following have been identified as requirements you must implement to complet
 
     * Click **Add an action** inside the Apply to Each loop.
     
-    * Search for *Current* and select **Common Data Service (Current Environment)** connector.
+    * Search for *Current* and select **Microsoft Dataverse** connector.
     
     * Select **Get a row by ID** action.
     
