@@ -274,7 +274,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 In this task you will import a solution that contains the Power Automate flow required to complete data import.
 
-1. You should have the **DataImport_managed.zip** file stored on your Desktop. Download [Data Import Solution](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/update-march-2021/Allfiles/DataImport_managed.zip?raw=true) if you do not.
+1. You should have the **DataImport_managed.zip** file stored on your Desktop. Download [Data Import Solution](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/DataImport_managed.zip) if you do not.
 
 2. Sign in to <https://make.powerapps.com>.
 
