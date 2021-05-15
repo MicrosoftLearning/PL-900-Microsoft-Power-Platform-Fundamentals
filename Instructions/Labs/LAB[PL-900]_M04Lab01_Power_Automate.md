@@ -8,9 +8,7 @@ lab:
 ## Lab: How to build an automated solution
 
 ### Important Notice (Effective November 2020):
-Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity is now table. Fields and records in Dataverse databases are now referred to as columns and rows.
-
-While the applications are in the process of updating their user experience, some references to terminology for Microsoft Dataverse like entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon. 
+Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon.
 
 For more information and for a complete list of affected terms, please visit [What is Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
@@ -61,11 +59,11 @@ The following have been identified as requirements you must implement to complet
 
 2.  Click **New** and select **Cloud flow**. This will open the Power Automate flow editor in a new window.
 
-3. Search for *Current* and select **Common Data Service (Current Environment)** connector.
+3. Select for **Microsoft Dataverse**.
 
-4. Select the trigger **When a Record is Created, Updated or Deleted**.
+4. Select the trigger **When a row is Created, Updated or Deleted**.
 
-   * Select **Create** for **Trigger condition**
+   * Select **Create** for **Change type**
    
    * Select **Visits** for **Table name**
    
@@ -73,9 +71,9 @@ The following have been identified as requirements you must implement to complet
    
    * On the trigger step, click the ellipsis (**...**) and click **Rename**. Rename this trigger **"When a visit is created"**. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
 
-5.  Click **New Step**. This step is required to retrieve visitors information, including email address.
+5. Select **New Step**. This step is required to retrieve visitors information, including email address.
 
-6. Search for *Current* and select **Common Data Service (Current Environment)** connector.
+6. Select **Microsoft Dataverse**.
 
 7. Select **Get a row by ID** action. 
 
@@ -118,7 +116,7 @@ The following have been identified as requirements you must implement to complet
 
     Leave this flow tab open for the next task. You flow should look approximately like the following:
 
-![Power Automate visitor notification flow](media/4-power-automate-notification.png)
+![Power Automate visitor notification flow](![image](https://user-images.githubusercontent.com/78555251/118340724-ccb13300-b4d9-11eb-96c2-c7b005bb9ac0.png))
 
 ## Task \#2: Validate and test the flow
 
@@ -174,7 +172,7 @@ The following have been identified as requirements you must implement to complet
 
 4. Set **Interval** to **15 minutes**
 
-5. Click **New step**. Search for *Current* and select **Common Data Service (Current Environment)** connector. Select **List rows** action.
+5. Click **New step**. Search for *Current* and select **Microsoft Dataverse** connector. Select **List rows** action.
 
    * Enter **Visits** as **Table name**
    
@@ -202,13 +200,13 @@ The following have been identified as requirements you must implement to complet
 
     * Click **Add an action** inside the Apply to Each loop.
     
-    * Search for *Current* and select **Common Data Service (Current Environment)** connector. 
+    * Select **Microsoft Dataverse**. 
     
     * Select **Get a row by ID** action.
     
-    * Select **Buildings** as **Entity name**
+    * Select **Buildings** as **Table name**
     
-    * Select **Building (Value)** as **Item ID** from the Dynamic content
+    * Select **Building (Value)** as **Row ID** from the Dynamic content
     
     * Click **...** beside **Get a record**, select **Rename**. Enter **Get building** as step name
     
@@ -216,13 +214,13 @@ The following have been identified as requirements you must implement to complet
 
     * Click **Add an action** inside the Apply to Each loop.
     
-    * Search for *Current* and select **Common Data Service (Current Environment)** connector.
+    * Select **Microsoft Dataverse**.
     
     * Select **Get a row by ID** action.
     
-    * Select **Contacts** as **Entity name**
+    * Select **Contacts** as **Table name**
     
-    * Select **Visitor (Value)** as **Item ID** from the Dynamic content
+    * Select **Visitor (Value)** as **Row ID** from the Dynamic content
     
     * Click **...** beside **Get a record**, select **Rename**. Enter **Get visitor** as step name
     
