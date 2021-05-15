@@ -116,7 +116,7 @@ The following have been identified as requirements you must implement to complet
 
     Leave this flow tab open for the next task. You flow should look approximately like the following:
 
-![Power Automate visitor notification flow](![image](https://user-images.githubusercontent.com/78555251/118340724-ccb13300-b4d9-11eb-96c2-c7b005bb9ac0.png))
+![Power Automate visitor notification flow](![image](https://user-images.githubusercontent.com/78555251/118340724-ccb13300-b4d9-11eb-96c2-c7b005bb9ac0.png)
 
 ## Task \#2: Validate and test the flow
 
