@@ -10,9 +10,7 @@ Module 0: Course introduction
 ## Lab: Validate lab environment
 
 ### Important Notice (Effective November 2020):
-Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity is now table. Fields and records in Dataverse databases are now referred to as columns and rows.
-
-While the applications are in the process of updating their user experience, some references to terminology for Microsoft Dataverse like entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon. 
+Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon. 
 
 For more information and for a complete list of affected terms, please visit [What is Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
@@ -79,7 +77,7 @@ In this Module 0 lab, you will acquire a Power Platform trial tenant and access 
 
 4.  Provide new portal details
 
-    -   Enter **Bellows College Visitors** as the portal **Name**
+    -   Enter **```Bellows College Visitors```** as the portal **Name**
 
     -   Provide a unique URL; **something**.powerappsportals.com (if the name has been taken, choose a different one)
 

@@ -9,9 +9,7 @@ lab:
 ## Lab: How to build a canvas app, Part 1
 
 ### Important Notice (Effective November 2020):
-Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity is now table. Fields and records in Dataverse databases are now referred to as columns and rows.
-
-While the applications are in the process of updating their user experience, some references to terminology for Microsoft Dataverse like entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs.
+Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon.
 
 For more information and for a complete list of affected terms, please visit [What is Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
@@ -67,13 +65,9 @@ In this task, you will create a canvas app using the phone layout template based
 
     -   Click **New app** and select **Canvas**.
 
-    -   Select **Phone layout** under **Common Data Service**.
+    -   Select **Phone layout** under **Microsoft Dataverse (Legacy)**.
 
-3.  Select **Create** under the **Common Data Service** connection
-
-4.  Select **Visits** table
-
-5.  Click **Connect**
+4.  Select **Visits** table. Click **Connect**.
 
 6.  The **Welcome to Power Apps Studio** window may appear. Click **Skip**.
 

@@ -8,9 +8,7 @@ lab:
 ## Lab 2: How to build a canvas app, part 2
 
 ### Important Notice (Effective November 2020):
-Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity is now table. Fields and records in Dataverse databases are now referred to as columns and rows.
-
-While the applications are in the process of updating their user experience, some references to terminology for Microsoft Dataverse like entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon.  
+Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon.
 
 For more information and for a complete list of affected terms, please visit [What is Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
@@ -85,7 +83,7 @@ You will follow the below outline to design the canvas app:
     
     -   Click **+ Add Data**
 
-    -   Click **See all entities** (or tables)
+    -   Click **See all tables**
     
     -   Select **Visits** and wait for the Visit table to display on the Data tab.
     
