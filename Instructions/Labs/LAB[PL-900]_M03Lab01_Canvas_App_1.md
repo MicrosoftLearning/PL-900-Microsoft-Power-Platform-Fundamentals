@@ -59,13 +59,11 @@ In this task, you will create a canvas app using the phone layout template based
     -   Select your **environment** at the top right if it is not already set to
         your Practice environment.
 
-    -   Select **Apps**.
+    -   Select **Create**.
 
 2.  Create new canvas application
 
-    -   Click **New app** and select **Canvas**.
-
-    -   Select **Phone layout** under **Microsoft Dataverse (Legacy)**.
+    -   Click **Dataverse*.
 
 4.  Select **Visits** table. Click **Connect**.
 
