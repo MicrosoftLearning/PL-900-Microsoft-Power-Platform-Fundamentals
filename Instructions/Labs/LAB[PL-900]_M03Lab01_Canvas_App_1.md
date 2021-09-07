@@ -63,19 +63,24 @@ In this task, you will create a canvas app using the phone layout template based
 
 2.  Create new canvas application
 
-    -   Click **New app** and select **Canvas**.
+    -   Enter **[Your Last Name] Campus Staff** as the app name.
 
-    -   Select **Phone layout** under **Microsoft Dataverse (Legacy)**.
+    -   Select **Phone** under for the Format.
 
-4.  Select **Visits** table. Click **Connect**.
+    -   Select **Create.**
 
-6.  The **Welcome to Power Apps Studio** window may appear. Click **Skip**.
+
+3.  The **Welcome to Power Apps Studio** window may appear. Click **Skip**.
+
+4.  Select the **Data** tab on the left pane.
+
+5.  Select **Add data.**
+
+6.  Select the **Visits** table.
 
 7.  Save application
 
     -   Click **File \> Save**.
-
-    -   Enter **[Your Last Name] Campus Staff** as the app name.
 
     -   Press **Save**.
 
