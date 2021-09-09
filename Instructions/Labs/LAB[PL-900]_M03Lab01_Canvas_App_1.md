@@ -52,33 +52,28 @@ We will follow the below outline to design the canvas app:
 
 In this task, you will create a canvas app using the phone layout template based on Microsoft Dataverse. Using Visits as a selected table from Dataverse, the template will generate a Gallery - View - Edit app to manage campus visits.
 
-1.  View the apps in your environment.
+1.  Start creating an app from data
 
     -   Sign in to <https://make.powerapps.com>
 
     -   Select your **environment** at the top right if it is not already set to
         your Practice environment.
 
-    -   Select **Apps**.
+    -   Select the **Dataverse** icon within **Start from data** on the Home screen.
 
-2.  Create new canvas application
+2.  Connect to your Visits table
+    
+    -   Select **+ New connection**
 
-    -   Enter **[Your Last Name] Campus Staff** as the app name.
+    -   Select **Microsoft Dataverse** and click **Create**
 
-    -   Select **Phone** under for the Format.
+    -   Locate and select your **Visits** table
 
-    -   Select **Create.**
-
+    -   Select **Connect**
 
 3.  The **Welcome to Power Apps Studio** window may appear. Click **Skip**.
 
-4.  Select the **Data** tab on the left pane.
-
-5.  Select **Add data.**
-
-6.  Select the **Visits** table.
-
-7.  Save application
+4.  Save application
 
     -   Click **File \> Save**.
 
