@@ -71,7 +71,9 @@ Your solution will contain several tables upon completion of all the customizati
 
     -   Click on the **Publisher** dropdown and select **+ Publisher**
 
-    -   In the window that pops up, enter **Bellows College** for **Display Name** 
+    -   In the window that pops up, enter **Bellows College** for **Display Name**. 
+
+    -   Enter **BellowsCollege** for **Name**.
     
     -   Enter **bc** for **Prefix**
 
@@ -115,10 +117,10 @@ Your solution will contain several tables upon completion of all the customizati
 
     > You should have **1 View** and **1 Form** selected. 
     
-10.  Click **Add** again. This will add the Contact table with the selected View and Form to the newly created solution. 
-    
-    > Your solution should now have one table: Contact.
+10.  Click **Add** again. This will add the Contact table with the selected View and Form to the newly created solution.
 
+> Your solution should now have one table: Contact.
+    
 ## Task #2: Create Building Table
 
 1.  You should still have your browser open to your Campus Management solution. If not, open the Campus Management solution by following these steps:
@@ -134,7 +136,7 @@ Your solution will contain several tables upon completion of all the customizati
     
     -   Enter **Building** for **Display Name** 
     
-    -   Click **Create**. This will start provisioning the table in background while you can start adding other tables and columns.
+    -   Click **Save**. This will start provisioning the table in background while you can start adding other tables and columns.
 
 ## Task #3: Create Visit Table and Columns
 
@@ -144,7 +146,12 @@ We would like to assign each visit a unique number that can be easily entered an
 
 > We use **Time zone independent** behavior to record date and time information, because time of a visit is always local to the location of the building and should not change when viewed from a different time zone. 
 
-1.  Select your **Campus Management** solution
+1.  You should still have your browser open to your Campus Management solution. If not, open the Campus Management solution by following these steps:
+
+    * Sign in to <https://make.powerapps.com> (if you are not already signed in)
+    
+    * Select **Solutions** and click to open the **[Your Last Name] Campus Management**
+          solution you just created.
 
 2. Create Visit table
 
@@ -152,9 +159,11 @@ We would like to assign each visit a unique number that can be easily entered an
    
    * Enter **Visit** for **Display Name** 
    
-   * Click **Create**. This will start provisioning the table in background while you can start adding other columns.
+   * Click **Save**. This will start provisioning the table in background while you can start adding other columns.
 
 3. Create Scheduled Start column
+
+   * Select **Visit** table
 
    * Make sure you have the **Columns** tab selected and click **Add column**.
    
@@ -262,7 +271,9 @@ We would like to assign each visit a unique number that can be easily entered an
     
 4.  Click **Save Table**.
 
-5.  Select **Solutions** from the top menu and click **Publish all customizations.**
+5.  Select **Back to solutions** at the top left.
+
+6.  Select **Publish all customizations.**
 
 # Exercise \#4: Import Data
 
