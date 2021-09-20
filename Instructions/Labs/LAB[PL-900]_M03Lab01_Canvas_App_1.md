@@ -77,6 +77,8 @@ In this task, you will create a canvas app using the phone layout template based
 
     -   Click **File \> Save**.
 
+    -   Enter [Your Last Name] Campus Staff as the **App name**.
+
     -   Press **Save**.
 
 ## Task \#2: Configure Visits Detail Form
