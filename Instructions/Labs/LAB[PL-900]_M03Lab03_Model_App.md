@@ -74,7 +74,7 @@ Both will be integrated to the model-driven app for a better user-experience.
 
     > By default, the form has two fields: Name (Primary Field) and Owner.
     
-7.  Select **+ Form field** and ddd the following fields below the **Owner** field by dragging columns to the form or simply clicking column names:
+7.  Select **+ Form field** and add the following fields below the **Owner** field by dragging columns to the form or simply clicking column names:
 
     * **Building**
     * **Visitor**
