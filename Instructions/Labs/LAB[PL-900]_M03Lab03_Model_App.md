@@ -7,11 +7,6 @@ lab:
 # Module 3: Get started with Power Apps
 ## Lab 3: How to build a model-driven app
 
-### Important Notice (Effective November 2020):
-Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon.
-
-For more information and for a complete list of affected terms, please visit [What is Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
-
 # Scenario
 
 Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
@@ -70,7 +65,7 @@ Both will be integrated to the model-driven app for a better user-experience.
 
 5.  Click to open the **Visit** entity.
 
-6.  Select the **Forms** tab and click to open the **Main** form type. 
+6.  Select the **Forms** tab and select the **Main** form type and click **Edit form**.
 
     > By default, the form has two fields: Name (Primary Field) and Owner.
     
@@ -95,7 +90,7 @@ Both will be integrated to the model-driven app for a better user-experience.
 
 12.  Click **Publish** at the top right and wait for the publishing to complete.
 
-13.  Click **Back** at the top left of the screen. You should now be back to the
+13.  If the edit view opened in a new tab, close the tab. Otherwise, click **Back** at the top left of the screen. You should now be back to the
      Visit entity Forms Tab.
 
 ## Task \#2: Edit Visit Views
@@ -163,7 +158,9 @@ Now, we will clone the view to create a new view for today's visits.
     
 2.  Create the Model-Driven Application
 
-    -   Click **New** and select **App** and then **Model-driven app**. This will open a new tab.
+    -   Click **New** and select **App** and then **Model-driven app**.
+    
+    -   In the Model-driven app from blanks screen, click **Create**.
     
     -   Enter **[Your Last Name] Campus Management** for Name.
 
@@ -289,7 +286,7 @@ Now, we will clone the view to create a new view for today's visits.
     -   Enter the fields as following 
     
         -   **Name**: `New test visit`
-        -   **Building**: select Microsoft Building
+        -   **Building**: Alpine Ski House
         -   **Visitor**: select John Doe
         -   **Scheduled Start**: select tomorrow's date and 2:00 PM as start time
         -   **Scheduled End**: select tomorrow's date and 3:30 PM as end time
