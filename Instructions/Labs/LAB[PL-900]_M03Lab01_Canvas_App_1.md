@@ -8,11 +8,6 @@ lab:
 
 ## Lab: How to build a canvas app, Part 1
 
-### Important Notice (Effective November 2020):
-Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon.
-
-For more information and for a complete list of affected terms, please visit [What is Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
-
 # Scenario
 
 Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
@@ -283,7 +278,7 @@ In this exercise you will test the application and, once successful, you will ad
    
 2. Select **Add existing**, then click **App**, and then click **Canvas app**.
 
-3. Select **Outside solutions** tab.
+3. Select **Outside Dataverse** tab.
 
 4. Select your **Campus Staff** app, click **Add**.
 
