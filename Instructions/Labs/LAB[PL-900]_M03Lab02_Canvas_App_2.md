@@ -62,8 +62,12 @@ You will follow the below outline to design the canvas app:
     
 2.  Create new canvas application
 
-    -   Click **New** and select **App \| Canvas App \| Phone Form Factor**.
-        This will open the App Editor in a New window.
+    -   Click **New** and select **App \| Canvas App**.
+        
+    -   Enter **[Your Last Name] Campus Security** for Name.
+    
+    -   Select **Phone** as form factor and click **Create**.
+        This will open the App Editor.
         
     -   Click **Skip** if presented with the Welcome to Power Apps Studio dialogue.
     
@@ -71,9 +75,7 @@ You will follow the below outline to design the canvas app:
 
     -   Click **File** and select **Save As**.
     
-    -   Check if **The cloud** is selected. 
-    
-    -   Enter **[Your Last Name] Campus Security** for Name and click **Save**.
+    -   Check if **The cloud** is selected click **Save**.
         
     -   Click the **Back** arrow at the top left (below Power Apps) to return to the app.
 
