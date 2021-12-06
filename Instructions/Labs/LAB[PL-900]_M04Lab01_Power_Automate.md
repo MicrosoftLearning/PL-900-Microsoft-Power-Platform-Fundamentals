@@ -85,7 +85,7 @@ The following have been identified as requirements you must implement to complet
 
 8. Click **New Step**. This is the step that will create and send email to the visitor.
 
-9. Search for *mail*, select **Mail** connector and **Send an email notification** action 
+9. Search for *mail*, select **Office 365 Outlook** connector and **Send an email (V2)** action.
 
    * If asked to Accept terms and conditions for using this action, click **Accept**.
    
@@ -226,7 +226,7 @@ The following have been identified as requirements you must implement to complet
     
 11.  Send email notification
 
-     * Click **Add an action** inside the Apply to Each loop. Add **Send an email notification** action from **Mail** connection.
+     * Click **Add an action** inside the Apply to Each loop. Add **Send an email (V2)** action from **Office 365 Outlook** connection.
 
 12.  Enter your email address as **To**
 
