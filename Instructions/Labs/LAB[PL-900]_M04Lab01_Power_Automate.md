@@ -57,19 +57,19 @@ The following have been identified as requirements you must implement to complet
 
     -   Click to open your **Campus Management** solution.
 
-2.  Click **New** and select **Cloud flow**. This will open the Power Automate flow editor in a new window.
+2.  Click **New** and select **Automation**, **Cloud flow** and then **Automated**. This will open the Power Automate flow editor in a new window.
 
 3. Select for **Microsoft Dataverse**.
 
-4. Select the trigger **When a row is Created, Updated or Deleted**.
+4. Select the trigger **When a row is added, modified or deleted**.
 
-   * Select **Create** for **Change type**
+   * Select **Added** for **Change type**
    
    * Select **Visits** for **Table name**
    
    * Select **Organization** for **Scope**
    
-   * On the trigger step, click the ellipsis (**...**) and click **Rename**. Rename this trigger **"When a visit is created"**. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
+   * On the trigger step, click the ellipsis (**...**) and click **Rename**. Rename this trigger **"When a visit is added"**. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
 
 5. Select **New Step**. This step is required to retrieve visitors information, including email address.
 
@@ -166,7 +166,7 @@ The following have been identified as requirements you must implement to complet
 
    -   Click to open your **Campus Management** solution.
 
-2. Click **New** and select **Cloud flow**. This will open the Power Automate flow editor in a new window.
+2. Click **New** and select **Automation**, **Cloud flow** and then **Scheduled**. This will open the Power Automate flow editor in a new window.
 
 3. Search for *recurrence*, select **Schedule** connector, and then select the **Recurrence** trigger.
 
@@ -236,7 +236,7 @@ The following have been identified as requirements you must implement to complet
    {Full Name} overstayed their welcome
    ```
    
-14.  Enter the following in the **Body** field. **Name** is a dynamic content from **Get building** step.
+14.  Enter the following in the **Body** field. **Name** is a dynamic content from **Get building** step. You may need to scroll to the bottom of the list.
 
    ```
    There is an overstay in building {Name}.
