@@ -215,7 +215,7 @@ Now, we will clone the view to create a new view for today's visits.
     
     -   Enter **Settings** for **Title** in the **Properties** pane.
     
-    -   With the **Settings** Area still selected, click **Add**.
+    -   With the **Settings** group still selected, click **Add**.
     
     -   Select **Subarea**.
     
