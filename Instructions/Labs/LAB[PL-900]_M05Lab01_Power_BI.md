@@ -98,9 +98,9 @@ We will follow the below steps to design and create the Power BI dashboard:
     
 2. Open Power BI Desktop, sign in with your provided credentials if prompted.
 
-3. Select **Get data**.
+3. Select **Get data** and then select **more...**.
 
-4. Select **Power Platform** on the left, then select **Common Data Service**, and press **Connect**.
+4. Select **Power Platform** on the left, then select **Common Data Service (Legacy)**, and press **Connect**. If prompted, sign in with your provided credentials and click **Connect**.
 
 5. Paste the environment URL you copied earlier into the **Server URL** field, press **OK**.
 
