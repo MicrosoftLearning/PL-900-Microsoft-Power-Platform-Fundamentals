@@ -56,7 +56,7 @@ The following have been identified as requirements you must implement to complet
 
 3. In the Choose your flow's trigger field, search for **Microsoft Dataverse**.
 
-4. Select the trigger **When a row is added, modified or deleted**.
+4. Select the trigger **When a row is added, modified or deleted**, and then click **Create**.
 
    * Select **Added** for **Change type**
    
