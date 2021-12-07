@@ -81,7 +81,7 @@ In this exercise, you will generate topics from the CDC FAQ site.
 
 5.  Click **Get started.**
 
-6.  Paste the URL you copied in the **Link to online content** textbox and click **Add**. Make sure you remove the scheme (https://) from the copied URL, as it is already specified.
+6. Paste the URL you copied in the **Link to online content** textbox and click **Add**. Note that if you copied the full URL, https:// will be listed twice. Ensure that the URL only lists the protocol once.
 
 7.  Click **Start** and wait. This can take a few minutes.
 
