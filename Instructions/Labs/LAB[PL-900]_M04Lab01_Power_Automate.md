@@ -224,19 +224,19 @@ The following have been identified as requirements you must implement to complet
     
     * Click **...** beside **Get a record**, select **Rename**. Enter **Get visitor** as step name
     
-11.  Send email notification
+10.  Send email notification
 
      * Click **Add an action** inside the Apply to Each loop. Add **Send an email (V2)** action from **Office 365 Outlook** connection.
 
-12.  Enter your email address as **To**
+11.  Enter your email address as **To**
 
-13.  Enter the following in the **Subject** field. **Full Name** is a dynamic content from the **Get visitor** step.
+12.  Enter the following in the **Subject** field. **Full Name** is a dynamic content from the **Get visitor** step.
 
    ```
    {Full Name} overstayed their welcome
    ```
    
-14.  Enter the following in the **Body** field. **Name** is a dynamic content from **Get building** step. You may need to scroll to the bottom of the list.
+13.  Enter the following in the **Body** field. **Name** is a dynamic content from **Get building** step. You may need to scroll to the bottom of the list.
 
    ```
    There is an overstay in building {Name}.
@@ -246,9 +246,9 @@ The following have been identified as requirements you must implement to complet
    Campus Security
    ```
 
-17.  Select flow name **Untitled** in the upper left corner and rename it to **Security Sweep**
+14.  Select flow name **Untitled** in the upper left corner and rename it to **Security Sweep**
 
-18.  Press **Save**
+15.  Press **Save**
 
     Your flow should look approximately like the following:
 
