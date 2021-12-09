@@ -283,7 +283,7 @@ In this exercise you will test the application and, once successful, you will ad
    
 2. Select **Add existing**, then click **App**, and then click **Canvas app**.
 
-3. Select **Outside solutions** tab.
+3. Select **Outside Dataverse** tab.
 
 4. Select your **Campus Staff** app, click **Add**.
 
