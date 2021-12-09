@@ -215,7 +215,7 @@ Because number of visits continuously grows, users need a feature to filter the 
            TextSearchBox1.Text,
        	"bc_code","bc_name"
        ),
-     "bc_code",
+     "bc_scheduledstart",
      If(SortDescending1, Descending, Ascending)
    )
    ```
