@@ -8,11 +8,6 @@ lab:
 
 ## Lab 4: How to build a Power Apps portal
 
-### Important Notice (Effective November 2020):
-Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon. 
-
-For more information and for a complete list of affected terms, please visit [What is Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
-
 # Scenario
 
 Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
@@ -74,7 +69,7 @@ You will follow the below outline to design the Power Apps portal:
 
     -   From the command bar, select **New page**
 
-    -   Select **Blank**
+    - Select **Landing page**
 
 3.  In the properties pane, under **Display** change the **Name** from **New page (1)** to `Building Directory`
 
@@ -86,7 +81,7 @@ You will follow the below outline to design the Power Apps portal:
 
 1.  Add a section to the webpage
 
-    -   On the canvas (area showing webpage), select the **Page Copy** section. To select them, hover the mouse over the area between the header and the upper section.
+    - On the canvas (area showing webpage), select a section of the page that is not a column.
 
     -   On the toolbelt (left side), select the **Components** icon
 
@@ -114,7 +109,7 @@ You will follow the below outline to design the Power Apps portal:
 
     -   Choose **Image** from the **Portal components** area
 
-    -   In the properties pane, click **Select an image**. Locate and select the **Product A.png**
+    - In the properties pane, click **Select an image**. Locate and select the **Pages.png**
     
     -   In the properties pane, click the **Formatting** section drop-down and change the **Width** to 70% (be sure to type the %). You can play around with the sizing of the image until it is as desired.
 
@@ -208,7 +203,7 @@ You will follow the below outline to design the Power Apps portal:
 
     -   On the toolbelt (left side), select the **Themes** icon
     
-    -   Click the toggle for **Enable basic theme** to turn this feature on.
+    - Ensure that the toggle for **Enable basic theme** is set to on.
     
     -   On one of presets, click the ellipses (**...**) and choose **Customize**
     
