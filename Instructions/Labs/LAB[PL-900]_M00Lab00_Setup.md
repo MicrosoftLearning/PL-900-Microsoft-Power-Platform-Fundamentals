@@ -7,13 +7,6 @@ lab:
 Module 0: Course introduction
 =================================
 
-## Lab: Validate lab environment
-
-### Important Notice (Effective November 2020):
-Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon. 
-
-For more information and for a complete list of affected terms, please visit [What is Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
-
 Scenario
 --------
 
