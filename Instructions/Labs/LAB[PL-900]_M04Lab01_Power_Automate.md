@@ -7,11 +7,6 @@ lab:
 # Module 4: Get Started with Power Automate
 ## Lab: How to build an automated solution
 
-### Important Notice (Effective November 2020):
-Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon.
-
-For more information and for a complete list of affected terms, please visit [What is Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
-
 ## Scenario
 
 Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
@@ -59,9 +54,9 @@ The following have been identified as requirements you must implement to complet
 
 2.  Click **New** and select **Automation**, **Cloud flow** and then **Automated**. This will open the Power Automate flow editor in a new window.
 
-3. Select for **Microsoft Dataverse**.
+3. In **Choose your flow's trigger**, search for **Microsoft Dataverse**.
 
-4. Select the trigger **When a row is added, modified or deleted**.
+4. Select the trigger **When a row is added, modified or deleted**, and then click **Create**.
 
    * Select **Added** for **Change type**
    
@@ -73,7 +68,7 @@ The following have been identified as requirements you must implement to complet
 
 5. Select **New Step**. This step is required to retrieve visitors information, including email address.
 
-6. Select **Microsoft Dataverse**.
+6. Search for **Microsoft Dataverse**.
 
 7. Select **Get a row by ID** action. 
 
@@ -168,9 +163,9 @@ The following have been identified as requirements you must implement to complet
 
 2. Click **New** and select **Automation**, **Cloud flow** and then **Scheduled**. This will open the Power Automate flow editor in a new window.
 
-3. Search for *recurrence*, select **Schedule** connector, and then select the **Recurrence** trigger.
+3. Set the flow to repeat every **15** minutes.
 
-4. Set **Interval** to **15 minutes**
+4. Click **Create**.
 
 5. Click **New step**. Search for *Current* and select **Microsoft Dataverse** connector. Select **List rows** action.
 
