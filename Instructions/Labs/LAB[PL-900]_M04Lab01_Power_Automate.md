@@ -54,7 +54,7 @@ The following have been identified as requirements you must implement to complet
 
 2.  Click **New** and select **Automation**, **Cloud flow** and then **Automated**. This will open the Power Automate flow editor in a new window.
 
-3. In the Choose your flow's trigger field, search for **Microsoft Dataverse**.
+3. In **Choose your flow's trigger**, search for **Microsoft Dataverse**.
 
 4. Select the trigger **When a row is added, modified or deleted**, and then click **Create**.
 
