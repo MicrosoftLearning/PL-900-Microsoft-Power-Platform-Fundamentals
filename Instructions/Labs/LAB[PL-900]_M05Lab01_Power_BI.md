@@ -206,15 +206,15 @@ Your dashboard should look similar to the following:
 
 ## Task #4: Build Mobile Phone View and Share a Report with a QR Code
 
-1. In the Dashboard, select **Edit \| Mobile View**.
+1. In the Dashboard, select **Edit \| Mobile Layout**.
 
 2. Rearrange tiles as desired.
 
-3. Click **Phone view** at the top right and change the View to **Web view**.
+3. Click **Mobile layout** at the top right and change the View to **Web layout**.
 
 4. Select **My Workspace** at the top, and select your **Report**.
 
-5. Select **Edit** and then select **... \| Generate QR Code**.
+5. Select **Edit** and then select **... \| Generate a QR Code**.
 
 6. *Optional:* If you have a mobile device, scan the code using a QR scanner app available on both iOS and Android platforms, or the camera app if your phone supports it. Log in to your account if prompted. Navigate and explore the report on a mobile device.
 
