@@ -178,14 +178,14 @@ create new custom tables for Buildings and Visits in the solution.
 
     ![Contact table columns.](media/1A-Columns.png)
 
-16. Select the Close button in the lower right corner of the screen.
+16. Select the **Close** button to save your table.
 
 ## Task \#2: Create visit table
 The **Visit** table will contain information about the campus visits including
 the building, visitor, scheduled and actual time of each visit. We would like to
-assign each visit a unique number that can be easily entered and interpreted by
+assign each visit a unique number that can be easily entered and used by the staff.
 
-1.  You should still have your power app open from the previous exercise.
+1.  You should still have your app open from the previous exercise.
 
 2.  Under the Data section, select the down arrow next to **Add Data**.
 
@@ -194,28 +194,28 @@ assign each visit a unique number that can be easily entered and interpreted by
 4.  In the create a table box, set the table name to **Visit**, and select
     **Create.**
 
-5.  Once your Visit table is created, at the top of the screen select the **+
+5.  Once your Visit table is created, select the **+
     New Column** button.
 
 6.  Configure the column as follows:
 
-    1.  **Name:** Data Scheduled
+    1.  **Name:** Date Scheduled
 
     2.  **Type:** Date
 
 7.  Select the **Create** button.
 
-8.  At the top of the screen select the **+ New Column** button again.
+8.  Select the **+ New Column** button again.
 
 9.  Configure the column as follows:
 
-    1.  **Name:** Actual Visit Data
+    1.  **Name:** Actual Visit Date
 
     2.  **Type:** Date
 
 10. Select the **Create** button.
 
-11. At the top of the screen select the **+ New Column** button again.
+11. Select the **+ New Column** button again.
 
 12. Configure the column as follows:
 
@@ -227,7 +227,7 @@ assign each visit a unique number that can be easily entered and interpreted by
 
 13. Select the **Create** button.
 
-14. At the top of the screen select the **+ New Column** button again.
+14. Select the **+ New Column** button again.
 
 15. Configure the column as follows:
 
@@ -237,11 +237,11 @@ assign each visit a unique number that can be easily entered and interpreted by
 
 16. Select the **Create** button.
 
-17. Your completed Visit Table, should resemble the Image below:
+17. Your completed Visit Table should resemble the Image below:
 
     ![Visit table columns.](media/1B-Teams-Table.png)
 
-18. Select the Close button to save your table.
+18. Select the **Close** button to save your table.
 
 # Exercise \#3: Build a simple app
 
@@ -249,17 +249,18 @@ assign each visit a unique number that can be easily entered and interpreted by
 
 ## Task \#1: Create Relationships
 
-1.  One the screen, select **Build from Data**.
+1.  One the screen, select **With data**.
+    > NOTE: you may need to zoom in with the zoom bar to see this in the middle of your screen.
 
-2.  Select the **Visit** table.
+2.  Select **Visits** to build the app from the data in the **Visit** table.
 
-3.  Using the commands at the top left of the screen, select the **Save**
+3.  Using the commands at the top right of the screen, select the **Save**
     button.
 
 4.  Select the **Play** button.
 
 5.  Using the navigation on the left, select **+ New Record**.
 
-6.  Fill in the data as needed.
+6.  Populate the Name, Actual Visit Date, and Date Scheduled.
 
-7.  Select the Check button on the right to save your changes.
+7.  Select the Check button on the right to create your first Visit record.
