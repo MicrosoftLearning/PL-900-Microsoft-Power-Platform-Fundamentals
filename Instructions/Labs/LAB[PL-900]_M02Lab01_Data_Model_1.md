@@ -61,11 +61,7 @@ customizations:
 
 ## Things to consider before you begin:
 
--   Naming convention
-
--   Data types, restrictions (e.g. max length of a name)
-
--   Datetime formatting to support easy localization
+-   Naming conventions - type names carefully.
 
 # Exercise \#1: Create a new Team in Microsoft Teams
 
