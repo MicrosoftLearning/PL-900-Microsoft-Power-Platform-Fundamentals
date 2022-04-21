@@ -73,9 +73,9 @@ customizations:
 2.  In the lower left corner of the **Microsoft Teams** app, select **Join or
     create a Team**.
 
-3.  In the **Join or create a team** screen, select **Create a Team**
+3.  Select **Create a Team**
 
-4.  In the **Create** a team screen, select **From Scratch**
+4.  Select **From Scratch**
 
 5.  In the **What kind of team will this be** screen, select **Public**
 
@@ -84,7 +84,7 @@ customizations:
 
 7.  Select the **Create** button.
 
-8.  On the **Add members** screen, select the **Skip** button
+8.  On the **Add members** screen, select **Skip**.
 
 # Provision your first Dataverse Environment
 
@@ -95,7 +95,7 @@ customizations:
 
 2.  In the lower left corner of the screen, select the **Apps** Icon.
 
-3.  On the **App Marketplace** Screen, use the search box to find and select
+3.  Under **Apps**, use the search box to find and select
     **Power Apps**.
 
 4.  Select the **Add** button to add the Power Apps application to your Teams
@@ -103,31 +103,28 @@ customizations:
 
 ## Task \#2: Provision Dataverse for Teams to Create a table
 
-1.  If you are not already logged into Microsoft Teams with you student
+1.  If you are not already logged into Microsoft Teams with your student
     credentials, open your web browser, navigate to
     <https://Teams.microsoft.com> and sign in with your student credentials.
 
-2.  Using the navigation on the left, select the **Ellipsis** icon **(More Added
-    Apps)**.
+2.  Using the navigation on the left, find and select **Power Apps**. 
+    > If you do not see Power Apps, select the **Ellipsis** icon. In the **Find an App** Screen, 
+    > search for and select **Power Apps** to open it.
 
-3.  In the **Find an App** Screen, enter **Power Apps**, and select **Power
-    Apps** to open it.
+3.  To start creating an application, select **Start now**.
 
-4.  To start creating an application, select **Start** Now
+4.  On the **Select a Team for this app** screen, select your **Bellows College** team that you created in a previous exercise.
 
-5.  On the **Select a Team for this app** screen, select the **Your Initials
-    Bellows College** team that you created in a previous exercise.
+5.  Select the **Create** button and wait for your app to be created.
 
-6.  Select the **Create** button
-
-NOTE: It can take several minutes for the application to be created. When your
+    > NOTE: It can take several minutes for the application to be created. When your
 environment is provisioned, a pop-up window will display in the lower-right
 corner of your screen, letting you know that the process has finished.
 
-1.  After the **Power Apps Editor** appears, name your app **Bellows College
-    visit tracker “Your Initials”**.
+6.  After the **Power Apps Editor** appears, name your app **Bellows College
+    visit tracker [Your Initials]**.
 
-2.  Select **Save**.
+7.  Select **Save**.
 
 # Exercise \#2: Create tables to store data
 
@@ -137,17 +134,17 @@ create new custom tables for Buildings and Visits in the solution.
 1.  With your **Visit tracker** open, select the **Data** icon on the left side
     of the screen.
 
-2.  Select **Create** n**ew table** button.
+2.  Select **Create new table**.
 
 3.  On the Create a table screen, enter **Contact** and select the **Create**
     button
 
 4.  On the **Name** column, select the drop-down arrow next to name. From the
-    menu that appear, choose **Edit Column**.
+    menu that appears, select **Edit Column**.
 
-5.  Change the name to First Name, select **Save**.
+5.  Change the name to First Name and select **Save**.
 
-6.  At the top of the screen select the **+ New Column** button.
+6.  Select the **+ New Column** button.
 
 7.  Configure the column as follows:
 
@@ -157,7 +154,7 @@ create new custom tables for Buildings and Visits in the solution.
 
 8.  Select the **Create** button.
 
-9.  At the top of the screen select the **+ New Column** button again.
+9.  Select the **+ New Column** button again.
 
 10. Configure the column as follows:
 
@@ -167,7 +164,7 @@ create new custom tables for Buildings and Visits in the solution.
 
 11. Select the **Create** button.
 
-12. At the top of the screen select the **+ New Column** button again.
+12. Select the **+ New Column** button again.
 
 13. Configure the column as follows:
 
