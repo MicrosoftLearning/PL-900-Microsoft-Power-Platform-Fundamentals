@@ -39,7 +39,7 @@ the Power Platform admin center. In the admin center, you will then create your
 4.  You see a prompt that you have an existing account with Microsoft. Select
     **Sign in.**
 
-5.  Enter the password provided by the Authorized Lab Hoster.
+5.  Enter the password provided by the Authorized Lab Hoster and sign in.
 
 6.  Select **Yes** to stay signed in.
 
@@ -49,7 +49,7 @@ the Power Platform admin center. In the admin center, you will then create your
 ### Task \#2 – Create environment
 
 1.  Access <https://admin.powerplatform.microsoft.com> and log in with your
-    Microsoft 365 credentials if prompted again.
+    Microsoft 365 credentials if prompted.
 
 2.  Select **Environments** and click **+New.**
 
