@@ -176,15 +176,14 @@ create new custom tables for Buildings and Visits in the solution.
 
 15. You Contacts table should resemble the Image below:
 
-    ![](media/d838dda08873583d0e7156a2752e17b1.png)
+    ![Contact table columns.](media/1A-Columns.png)
 
 16. Select the Close button in the lower right corner of the screen.
 
+## Task \#2: Create visit table
 The **Visit** table will contain information about the campus visits including
 the building, visitor, scheduled and actual time of each visit. We would like to
 assign each visit a unique number that can be easily entered and interpreted by
-
-## Task \#2: Create visit table
 
 1.  You should still have your power app open from the previous exercise.
 
@@ -240,7 +239,7 @@ assign each visit a unique number that can be easily entered and interpreted by
 
 17. Your completed Visit Table, should resemble the Image below:
 
-    ![](media/16bd1bb3fd33f67c7545e96326f70028.png)
+    ![Visit table columns.](media/1B-Teams-Table.png)
 
 18. Select the Close button to save your table.
 
