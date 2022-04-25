@@ -37,22 +37,13 @@ Finally, you will import sample data into Microsoft Dataverse.
 
 To prepare your learning environments you will:
 
--   Install Power Apps inside Teams
+* create a solution and publisher
+* add both new and existing components required to meet the application requirements. Refer to the [data model document](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png) for the metadata description (tables and relationships). You can hold CTRL+click or right click the link to open the data model document in a new window.
 
--   add both new and existing components required to meet the application
-    requirements. Refer to the [data model
-    document](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png)
-    for the metadata description (tables and relationships). You can hold
-    CTRL+click or right click the link to open the data model document in a new
-    window.
-
-Your solution will contain several tables upon completion of all the
-customizations:
+Your solution will contain several tables upon completion of all the customizations:
 
 -   Contact
-
 -   Building
-
 -   Visit
 
 ## Prerequisites:
