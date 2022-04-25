@@ -27,7 +27,7 @@ campus visits.
 
 # High-level lab steps
 
-We will follow the below steps to design and create the Power BI dashboard:
+We will follow the below steps to design and create a Power BI dashboard:
 
 -   Connect to Dataverse
 
@@ -68,8 +68,7 @@ the Excel spreadsheet we leveraged in a previous exercise.
 1.  Download [visits.pbix](../../Allfiles/visits.pbix) and save on your
     computer.
 
-2.  Navigate to <https://app.powerbi.com/> and click **Sign in** with your
-    student credentials.
+2.  Navigate to <https://app.powerbi.com/> and sign in if needed.
 
 3.  In the lower Left corner of the screen, select **Get Data**
 
@@ -86,14 +85,11 @@ the Excel spreadsheet we leveraged in a previous exercise.
 8.  Click **Edit**. If **Edit** menu item is not visible click **...** and then
     select **Edit**.
 
-9.  You have now setup Power BI service to use for your labs. Continue to [Task
-    \#3](#task-3-create-chart-and-time-visualizations), but use the online Power
-    BI service at <https://app.powerbi.com> instead of Power BI Desktop
-    throughout the lab.
+You have now setup Power BI service to use for your labs. 
 
 ## Task \#2: Create Chart and Time Visualizations
 
-1.  Press the pie chart icon in the **Visualizations** panel to insert a chart.
+1.  Press the **Pie chart** icon in the **Visualizations** panel to insert a chart.
 
 2.  Drag the **Building** field and drop it into **Legend** box.
 
