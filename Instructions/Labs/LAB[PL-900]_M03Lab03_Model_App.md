@@ -190,19 +190,21 @@ the sitemap, and test the app.
 
 3.  Create the Model-Driven Application:
 
-    1.  Click **New** and select **App** and then **Model-driven app**. Select **Blank app** in the **Start from** section of the Home screen.
+    1.  Select **Blank app** in the **Start from** section of the Home screen.
 
-    2.  In the Model-driven app from blanks screen, select Modern app designer,
-        then click the **Create** button.
+    2.  Under **Blank app based on Dataverse**, select **Create**.
 
-    3.  Enter **[Your Last Name] Campus Management** for Name, select the
-        **Create** button.
+    3.  Select the **Modern app designer** experience.
+    
+    4.  Select **Create**.
+    
+    5.  Enter **Bellows Campus Management** for Name and select **Create**.
 
 4.  After your new model-driven application loads, select the **+ Add Page**
     button.
 
 5.  On the Add Page screen, choose **Table based view and form**, and then
-    select the Next button.
+    select the **Next** button.
 
 6.  Add the following tables:
 
@@ -210,8 +212,7 @@ the sitemap, and test the app.
 
     2.  Contact
 
-7.  After you have selected all the tables you want to add, select the **Add**
-    button.
+7.  After you have selected the 2 tables, select **Add**.
 
 8.  Using the navigation icons on the left side of the screen, select
     **Navigation**.
@@ -222,6 +223,7 @@ the sitemap, and test the app.
 10.  On the right side of the screen, in the **Display Options** section, change
     the **Title** to **Security**.
 
+## Task \#1: Edit your app
 Now that we have all the necessary components added to your model-driven
 application, we will now organize items.
 
@@ -232,23 +234,22 @@ application, we will now organize items.
 
 3.  Using the navigation on the left side of the screen, select **Pages**.
 
-4.  Locate and expand the **Visit** table.
+4.  Locate and expand the **Visit** table on the Pages pane.
 
-5.  Select **View form**.
+5.  Select **Visit form**.
 
-6.  On the right side of the screen, under forms select, **Manage Forms**.
+6.  On the right side of the screen, select **Manage Forms**.
 
 7.  Select the **Main Information** form, and then click **Save**.
 
-8.  Under the **Visit** table on the left, select **View Visi**t.
+8.  Under the **Visit** table on the left, select **Visit view**.
 
-9.  On the right side of the screen, under views, select **Manage Views**.
+9.  On the right side of the screen, select **Manage views**.
 
-10. Select the **Today’s Visits**, and **Active Visits** forms, and then select
+10. Select the **Today’s Visits** and **Active Visits** forms, then select
     **Save**.
 
-11. At the top of the app on the left side of the screen, select the Save
-    button.
+11. At the top of the app on the left side of the screen, select **Save**.
 
 12. Once the **Save** is complete, select the **Publish** button to publish your
     changes.
@@ -257,14 +258,11 @@ application, we will now organize items.
 
 1.  Start the application
 
-    1.  Select **Apps** and click on your **Campus Management** app. (If you
-        don't see your app at first, you may need to refresh your browser.)
-
-    2.  The application should open in a new window.
+    1.  Select **Play** to open your app in a new window.
 
 2.  Create new Contact
 
-    1.  The app should open to the **Active Contacts** view
+    1.  The app should open to the **My Active Contacts** view
 
     2.  Click **New** from the top menu.
 
@@ -308,12 +306,4 @@ application, we will now organize items.
 
 # Challenges
 
--   Select specific views and forms for Visits and Buildings
-
--   Security personnel typically work in a single building. How would you
-    provide an easy way for them to display visits only for a selected building?
-
--   Restrict access to specific entities, e.g. Buildings should be read-only for
-    all staff members except the administrators
-
--   What Dashboards would you consider adding to the app?
+-   Select specific views and forms for Contacts
