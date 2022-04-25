@@ -133,6 +133,9 @@ Visits.
 
 8.  Click the **Left Arrow** to return to the Browse screen.
 
+9. Select **File**, then **Save**.
+
+10. Select **Publish**.
 
 # Challenges
 
