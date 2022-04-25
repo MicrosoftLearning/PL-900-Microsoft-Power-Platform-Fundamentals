@@ -68,10 +68,13 @@ custom created tables that will be used in the model-driven app.
 
 1.  Sign in to <https://make.powerapps.com> if you are not already signed in.
 
-2.  Using the navigation on the left, expand Dataverse, select tables, and click
+2.  Select your **[my initials] Practice** environment at the top right if it is
+    not already selected.
+
+3.  Using the navigation on the left, expand Dataverse, select tables, and click
     to open your **Visit** table.
 
-3.  Select the **Forms** tab and select the Information for with **Main** form
+4.  Select the **Forms** tab and select the Information for with **Main** form
     type and click **Edit form**.
 
     **IMPORTANT:** *Since by default all forms are named Information. Make sure
@@ -80,10 +83,10 @@ custom created tables that will be used in the model-driven app.
 
 >   By default, the form has two fields: Name (Primary Field) and Owner.
 
-1.  On the right side of the screen under properties, select the **Display
+5.  On the right side of the screen under properties, select the **Display
     Name** field, and change it to **Main Information**.
 
-2.  Using the menu at top of the screen, select **+ Form field** and add the
+6.  Using the menu at top of the screen, select **+ Form field** and add the
     following fields below the **Owner** field by dragging columns to the form
     or simply clicking column names:
 
@@ -97,23 +100,23 @@ custom created tables that will be used in the model-driven app.
 
     5.  **Actual End**
 
-3.  Drag the **Code** column and drop it in the form header.
+7.  Drag the **Code** column and drop it in the form header.
 
 >   The header is the top right area of the form. You may need to minimize the
 >   Properties panel on the right side of the screen to see the field on the
 >   form.
 
-1.  With the **Code** field still selected, check the checkbox for **Read-only**
+8.  With the **Code** field still selected, check the checkbox for **Read-only**
     in the Properties panel on the right side of the screen.
 
-2.  Select **Owner** field. In the Properties panel, change the **Field label**
+9.  Select **Owner** field. In the Properties panel, change the **Field label**
     to **Host**
 
-3.  Click **Save** at the top right and wait for the save to complete.
+10.  Click **Save** at the top right and wait for the save to complete.
 
-4.  Click **Publish** at the top right and wait for the publishing to complete.
+11.  Click **Publish** at the top right and wait for the publishing to complete.
 
-5.  If the edit view opened in a new tab, close the tab. Otherwise, click
+12.  If the edit view opened in a new tab, close the tab. Otherwise, click
     **Back** at the top left of the screen. You should now be back to the Visit
     entity Forms Tab.
 
@@ -160,16 +163,14 @@ Now, we will clone the view to create a new view for today's visits.
 
 6.  Add **Actual Start** and **Actual End** fields to the view.
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 > **Note:** Since we no longer filter on the view status, we will get all today's visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1.  Click on the **dropdown arrow** by the Save button (be careful not to press
+7.  Click on the **dropdown arrow** by the Save button (be careful not to press
     the button itself) and select **Save As**.
 
-2.  Change the name to **Today's Visits** and press **Save**.
+8.  Change the name to **Today's Visits** and press **Save**.
 
-3.  Click **Publish** and wait for the publishing to complete.
+9.  Click **Publish** and wait for the publishing to complete.
 
 # Exercise \#2: Create Model-Driven Application
 
