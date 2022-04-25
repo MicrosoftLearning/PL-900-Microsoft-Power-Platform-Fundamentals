@@ -50,26 +50,11 @@ To prepare your learning environments you will:
 
 -   Naming conventions - type names carefully.
 
-# Exercise \#1: Create New Tables
+# Exercise \#1: Create New Table
 
-**Objective:** In this exercise, you will create new custom tables for Buildings and Visits. 
+**Objective:** In this exercise, you will create new custom table Visits. 
 
-## Task \#1: Create Building Table
-
-1.  Sign into <https://make.powerapps.com> (if you are not already signed in)
-
-2.  Select your **[my initials] Practice** environment at the top right if it is
-    not already selected.
-
-3.  Using the navigation on the left, expand **Dataverse** and select **Tables**.
-
-4.  Click **New table**.
-
-5.  Enter **Building** for **Display Name**.
-
-6.  Click **Create**.
-
-## Task \# 2: Create Visit Table and Columns
+## Task \# 1: Create Visit Table and Columns
 
 The **Visit** table will contain information about the campus visits including
 the building, visitor, scheduled and actual time of each visit.
