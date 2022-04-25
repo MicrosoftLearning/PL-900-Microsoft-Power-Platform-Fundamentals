@@ -68,36 +68,34 @@ custom created tables that will be used in the model-driven app.
 
 1.  Sign in to <https://make.powerapps.com> if you are not already signed in.
 
-2.  Select your **environment.**
+2.  Using the navigation on the left, expand Dataverse, select tables, and click
+    to open your **Visit** table.
 
-3.  Select **Solutions**.
+3.  Select the **Forms** tab and select the Information for with **Main** form
+    type and click **Edit form**.
 
-4.  Click to open your **Campus Management** solution.
-
-5.  Click to open the **Visit** table.
-
-6.  Select the **Forms** tab and select the **Main** form type and click **Edit
-    form**.
+    **IMPORTANT:** *Since by default all forms are named Information. Make sure
+    to verify that the form you select has a Form Type of* **Main** *and not
+    something else.*
 
 >   By default, the form has two fields: Name (Primary Field) and Owner.
 
 1.  On the right side of the screen under properties, select the **Display
     Name** field, and change it to **Main Information**.
 
-2.  Select **+ Form field** and add the following fields below the **Owner**
-    field by dragging columns to the form or simply clicking column names:
+2.  Using the menu at top of the screen, select **+ Form field** and add the
+    following fields below the **Owner** field by dragging columns to the form
+    or simply clicking column names:
 
-    1.  **Building**
+    1.  **Visitor**
 
-    2.  **Visitor**
+    2.  **Scheduled Start**
 
-    3.  **Scheduled Start**
+    3.  **Scheduled End**
 
-    4.  **Scheduled End**
+    4.  **Actual Start**
 
-    5.  **Actual Start**
-
-    6.  **Actual End**
+    5.  **Actual End**
 
 3.  Drag the **Code** column and drop it in the form header.
 
@@ -124,7 +122,7 @@ custom created tables that will be used in the model-driven app.
 In this task, we will modify the default Active Visits view and create a new
 view for today's visits.
 
-1.  Select the **Views** tab and click to open the **Active Visits** view.
+1.  Select the **Views** tab and click to open your **Active Visits** view.
 
 2.  Add the following fields to the view by either clicking or dragging and
     dropping the fields:
@@ -133,27 +131,18 @@ view for today's visits.
 
     2.  **Visitor**
 
-    3.  **Building**
+    3.  **Scheduled Start**
 
-    4.  **Scheduled Start**
-
-    5.  **Scheduled End**
+    4.  **Scheduled End**
 
 3.  Click the **Created On** column and select **Remove**. Field **Created On**
     will now be removed from the view.
 
-4.  Click the **Name** column and select **Remove**. Field **Name** will now be
-    removed from the view.
+4.  Resize the individual column widths to fit the data.
 
-5.  In the Properties panel on the right, click **Sort by ...** and select
-    **Scheduled Start**. Click on **Scheduled Start** again to change the order
-    to descending.
+5.  Click **Save** and wait until the changes are saved.
 
-6.  Resize the individual column widths to fit the data.
-
-7.  Click **Save** and wait until the changes are saved.
-
-8.  Click **Publish** and wait for the publishing to complete.
+6.  Click **Publish** and wait for the publishing to complete.
 
 Now, we will clone the view to create a new view for today's visits.
 
