@@ -51,7 +51,7 @@ complete the project:
 implements the requirement. The visitor should be sent an email that includes
 the unique code assigned to the visit.
 
-## Task \#1: Create flow
+## Task \#1: Create a flow
 
 1.  Navigate to <https://make.powerapps.com>. You may need to reauthenticate - click **Sign in** and follow instructions if needed.
 
@@ -82,47 +82,47 @@ the unique code assigned to the visit.
         practice, so you and other flow editors can understand the purpose of
         the step without having to dive into the details.
 
-9.  Create a step to get the visitor row:
+## Task \#2: Create a step to get the visitor row
 
-    1.  Select **New Step**. This step is required to retrieve visitors information,
+1.  Select **New Step**. This step is required to retrieve visitors information,
     including email address.
 
-    2.  Search for **Dataverse**.
+2.  Search for **Dataverse**.
 
-    3.  Select the **Get a row by ID** action.
+3.  Select the **Get a row by ID** action.
 
-    4.  Select **Contacts** as **Table name**
+4.  Select **Contacts** as **Table name**
 
-    5.  In the **Row ID** field, select **Visitor (Value)** from the Dynamic
+5.  In the **Row ID** field, select **Visitor (Value)** from the Dynamic
         content list.
 
-    3.  On this action, click the ellipsis (**...**) and click **Rename**.
+6.  On this action, click the ellipsis (**...**) and click **Rename**.
         Rename this action **"Get the Visitor"**. This is a good practice, so
         you and other flow editors can understand the purpose of the step
         without having to dive into the details.
 
-8.  Create a step to send an email to the visitor:
+## Task \#3: Create a step to send an email to the visitor
 
-    1.  Click **New Step**. This is the step that will create and send email to the
+1.  Click **New Step**. This is the step that will create and send email to the
     visitor.
 
-    2.  Search for *mail*, select **Office 365 Outlook** connector and **Send an
+2.  Search for *mail*, select **Office 365 Outlook** connector and **Send an
     email (V2)** action.
 
-    3.  If asked to Accept terms and conditions for using this action, click
+3.  If asked to Accept terms and conditions for using this action, click
         **Accept**.
 
-    4.  Select **Add dynamic content** under the **To** field. 
+4.  Select **Add dynamic content** under the **To** field. 
     
-    5.  Select **Email** from the Dynamic content list.
+5.  Select **Email** from the Dynamic content list.
         > Notice that it is beneath the **Get the visitor** header. This means you
         are selecting the Email that is related to the Visitor that you looked
         up in the previous step.
 
-    5.  Enter **Your scheduled visit to Bellows College** in the **Subject**
+5.  Enter **Your scheduled visit to Bellows College** in the **Subject**
         field.
 
-    6.  Enter the following text in **Email Body**:
+6.  Enter the following text in **Email Body**:
 
 >   Dynamic content needs to be placed where fields are named in brackets. It is
 >   recommended to copy & paste all text first and then add dynamic content in
@@ -139,30 +139,33 @@ the unique code assigned to the visit.
    Bellows College
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    7.  Highlight the **{First Name}** text. Replace it with the **First Name**
+7.  Highlight the **{First Name}** text. Replace it with the **First Name**
         field from the **Get the Visitor** step.
 
-    8.  Highlight the **{Scheduled Start}** text. Replace it with the **Scheduled
+8.  Highlight the **{Scheduled Start}** text. Replace it with the **Scheduled
         Start** field **Get the Visitor** step.
 
-    9.  Highlight the **{Scheduled End}** text. Replace it with the **Scheduled
+9.  Highlight the **{Scheduled End}** text. Replace it with the **Scheduled
         End** field from the **Get the Visitor** Step.
 
-    10.  Select the **Untitled** flow name at the top and rename it to `Visit
-        notification`
+10.  Select the flow name at the top and rename it to `Visit
+        Notification`.
 
-    11.  Press **Save**
+11.  Click **Save**.
 
 Leave this flow tab open for the next task. You flow should look
     approximately like the following:
 
-## ![Example of flow steps.](media/4-flow.png)
+![Example of flow steps.](media/4-Flow.png)
 
 ## Task \#2: Validate and test the flow
 
-1.  Open a new tab in your browser and navigate to <https://make.powerapps.com>
+1.  Open a new tab in your browser and navigate to <https://make.powerapps.com>.
 
-2.  Click **Apps** and select the **Campus Management Model-driven** app you
+2.  Select your **[my initials] Practice** environment at the top right if it is
+    not already selected.
+
+3.  Click **Apps** and select the **Campus Management Model-driven** app you
     created earlier.
 
 3.  Leaving this tab open, navigate back to the previous tab with your flow.
@@ -170,37 +173,24 @@ Leave this flow tab open for the next task. You flow should look
 4.  On the command bar, click **Test**. Select **Manually** and then **Save &
     Test**.
 
-5.  Using the navigation on the left, select **Contacts**.
+5.  Using the navigation on the left, select **Visits**
 
-6.  Press **+ New** to add a new **Contact** record
+6. Press the **+ New** button to add a new **Visit** record.
 
-7.  Complete the Contact as follows:
-
-    -   **First Name:** Your First Name
-
-    -   **Last Name:** Your Last Name
-
-    -   **Email:** Enter your personal or work email
-
-8.  Select the **Save and Close** button.
-
-9.  Using the navigation on the left, select **Visits**
-
-10. Press the **+ New** button to add a new **Visit** record.
-
-11. Complete the Visit record as follows:
+7. Complete the Visit record as follows:
 
     -   **Name:** Test Visit
 
-    -   **Building:** Select Any Building
-
-    -   **Visitor:** Select the Contact you just created
+    -   **Visitor:** John Doe
 
     -   **Scheduled Start:** Tomorrow at 8:00 AM
 
     -   **Scheduled End:** Tomorrow at 9:00 AM
 
-12. Select the **Save and Close** button.
+8. Select the **Save and Close** button.
 
-After a short delay, you should see an email in the mailbox of the that you
-entered into the contact’s name.
+After a short delay, you should see an email in your inbox, since you populated John Doe's email as your personal email. 
+
+# Challenges
+
+-   Play around with the formatting on the email. How can you make it more professional looking? 
