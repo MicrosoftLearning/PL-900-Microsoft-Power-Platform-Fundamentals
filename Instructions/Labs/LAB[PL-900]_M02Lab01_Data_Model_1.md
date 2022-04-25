@@ -80,16 +80,19 @@ and interpreted by a visitor when asked during the visit check-in process.
 
 1.  Sign into <https://make.powerapps.com> (if you are not already signed in)
 
-2.  Using the navigation on the left, expand Dataverse, and select Tables.
+2.  Select your **[my initials] Practice** environment at the top right if it is
+    not already selected.
 
-3.  Click **New table**.
+3.  Using the navigation on the left, expand Dataverse, and select Tables.
 
-4.  Enter **Visit** for **Display Name**.
+4.  Click **New table**.
 
-5.  Click **Create**. This will start provisioning the table in background while
+5.  Enter **Visit** for **Display Name**.
+
+6.  Click **Create**. This will start provisioning the table in background while
     you can start adding other columns.
 
-6.  Create Scheduled Start column
+7.  Create Scheduled Start column
 
     1.  You should be on the Visit table columns page.
 
@@ -108,7 +111,7 @@ and interpreted by a visitor when asked during the visit check-in process.
 
     8.  Click **Done**.
 
-7.  Create Scheduled End column
+8.  Create Scheduled End column
 
     1.  Click **Add column**.
 
@@ -124,7 +127,7 @@ and interpreted by a visitor when asked during the visit check-in process.
 
     7.  Click **Done**.
 
-8.  Create Actual Start column
+9.  Create Actual Start column
 
     1.  Click **Add column**.
 
@@ -140,7 +143,7 @@ and interpreted by a visitor when asked during the visit check-in process.
 
     7.  Click **Done**.
 
-9.  Create Actual End column
+10.  Create Actual End column
 
     1.  Click **Add column**.
 
@@ -156,7 +159,7 @@ and interpreted by a visitor when asked during the visit check-in process.
 
     7.  Click **Done**.
 
-10. Create Code column
+11. Create Code column
 
     1.  Click **Add column**.
 
@@ -168,7 +171,7 @@ and interpreted by a visitor when asked during the visit check-in process.
 
     5.  Click **Done**.
 
-11. Create Visitor lookup column
+12. Create Visitor lookup column
 
     1.  Click **Add column**.
 
@@ -180,7 +183,7 @@ and interpreted by a visitor when asked during the visit check-in process.
 
     5.  Click **Done**.
 
-12. Click **Save Table**
+13. Click **Save Table**
 
 # Exercise \#2: Import Data
 
