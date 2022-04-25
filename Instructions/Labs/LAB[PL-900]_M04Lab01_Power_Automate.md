@@ -53,24 +53,23 @@ the unique code assigned to the visit.
 
 ## Task \#1: Create flow
 
-1.  Open your Campus Management solution.
+1.  Navigate to <https://make.powerapps.com>. You may need to reauthenticate - click **Sign in** and follow instructions if needed.
 
-    1.  Sign in to <https://make.powerapps.com>
+2.  Select your **[my initials] Practice** environment at the top right if it is
+    not already selected.
 
-    2.  Select your **environment.**
+2.  In the left navigation, select **Flows**.
 
-    3.  Select **Solutions**.
+4.  If prompted, select **Get started**.
 
-    4.  Click to open your **Campus Management** solution.
+5.  Click **New flow** and select **Automated cloud flow**.
 
-2.  Click **New** and select **Automation**, **Cloud flow** and then
-    **Automated**. This will open the Power Automate flow editor in a new
-    window.
+6.  In **Choose your flow's trigger**, search for **Dataverse**.
 
-3.  In **Choose your flow's trigger**, search for **Microsoft Dataverse**.
-
-4.  Select the trigger **When a row is added, modified or deleted**, and then
+7.  Select the trigger **When a row is added, modified or deleted**, and then
     click **Create**.
+
+8.  Populate the trigger conditions for the flow:
 
     1.  Select **Added** for **Change type**
 
@@ -83,16 +82,18 @@ the unique code assigned to the visit.
         practice, so you and other flow editors can understand the purpose of
         the step without having to dive into the details.
 
-5.  Select **New Step**. This step is required to retrieve visitors information,
+9.  Create a step to get the visitor row:
+
+    1.  Select **New Step**. This step is required to retrieve visitors information,
     including email address.
 
-6.  Search for **Microsoft Dataverse**.
+    2.  Search for **Dataverse**.
 
-7.  Select **Get a row by ID** action.
+    3.  Select the **Get a row by ID** action.
 
-    1.  Select **Contacts** as **Table name**
+    4.  Select **Contacts** as **Table name**
 
-    2.  In the **Row ID** field, select **Visitor (Value)** from the Dynamic
+    5.  In the **Row ID** field, select **Visitor (Value)** from the Dynamic
         content list.
 
     3.  On this action, click the ellipsis (**...**) and click **Rename**.
@@ -100,24 +101,28 @@ the unique code assigned to the visit.
         you and other flow editors can understand the purpose of the step
         without having to dive into the details.
 
-8.  Click **New Step**. This is the step that will create and send email to the
+8.  Create a step to send an email to the visitor:
+
+    1.  Click **New Step**. This is the step that will create and send email to the
     visitor.
 
-9.  Search for *mail*, select **Office 365 Outlook** connector and **Send an
+    2.  Search for *mail*, select **Office 365 Outlook** connector and **Send an
     email (V2)** action.
 
-    1.  If asked to Accept terms and conditions for using this action, click
+    3.  If asked to Accept terms and conditions for using this action, click
         **Accept**.
 
-    2.  Select **To** field, select **Email** from the Dynamic content list.
-        Notice that it is beneath the **Get the Visitor** header. This means you
+    4.  Select **Add dynamic content** under the **To** field. 
+    
+    5.  Select **Email** from the Dynamic content list.
+        > Notice that it is beneath the **Get the visitor** header. This means you
         are selecting the Email that is related to the Visitor that you looked
         up in the previous step.
 
-    3.  Enter **Your scheduled visit to Bellows College** in the **Subject**
+    5.  Enter **Your scheduled visit to Bellows College** in the **Subject**
         field.
 
-    4.  Enter the following text in **Email Body**:
+    6.  Enter the following text in **Email Body**:
 
 >   Dynamic content needs to be placed where fields are named in brackets. It is
 >   recommended to copy & paste all text first and then add dynamic content in
@@ -134,24 +139,24 @@ the unique code assigned to the visit.
    Bellows College
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1.  Highlight the **{Text First}** text. Replace it with the **First Name**
-    field from the **Get the Visitor** step.
+    7.  Highlight the **{First Name}** text. Replace it with the **First Name**
+        field from the **Get the Visitor** step.
 
-2.  Highlight the **{Scheduled Start}** text. Replace it with the **Scheduled
-    Start** field **Get the Visitor** step.
+    8.  Highlight the **{Scheduled Start}** text. Replace it with the **Scheduled
+        Start** field **Get the Visitor** step.
 
-3.  Highlight the **{Scheduled End}** text. Replace it with the **Scheduled
-    End** field from the **Get the Visitor** Step.
+    9.  Highlight the **{Scheduled End}** text. Replace it with the **Scheduled
+        End** field from the **Get the Visitor** Step.
 
-4.  Select the **Untitled** flow name at the top and rename it to `Visit
-    notification`
+    10.  Select the **Untitled** flow name at the top and rename it to `Visit
+        notification`
 
-5.  Press **Save**
+    11.  Press **Save**
 
-    Leave this flow tab open for the next task. You flow should look
+Leave this flow tab open for the next task. You flow should look
     approximately like the following:
 
-## ![](media/4973f9db7b65b1232d5c78ca8aceafec.png)
+## ![Example of flow steps.](media/4-flow.png)
 
 ## Task \#2: Validate and test the flow
 
