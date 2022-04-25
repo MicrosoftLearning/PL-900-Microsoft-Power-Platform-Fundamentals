@@ -58,15 +58,13 @@ To prepare your learning environments you will:
 
 1.  Sign into <https://make.powerapps.com> (if you are not already signed in)
 
-2.  Using the navigation on the left, expand Dataverse, and select Tables.
+2.  Using the navigation on the left, expand **Dataverse** and select **Tables**.
 
-3.  Click **New** and select **Table**.
+3.  Click **New table**.
 
-4.  Enter **Building** (followed by your Initials) for **Display Name.** For
-    example, Building
+4.  Enter **Building** for **Display Name**.
 
-5.  Click **Save**. This will start provisioning the table in background while
-    you can start adding other tables and columns.
+5.  Click **Create**.
 
 ## Task \# 2: Create Visit Table and Columns
 
@@ -84,24 +82,23 @@ and interpreted by a visitor when asked during the visit check-in process.
 
 2.  Using the navigation on the left, expand Dataverse, and select Tables.
 
-3.  Click **New** and select **Table**.
+3.  Click **New table**.
 
-4.  Enter **Visit** (followed by your Initials) for **Display Name.** For
-    example, Visit DB.
+4.  Enter **Visit** for **Display Name**.
 
-5.  Click **Save**. This will start provisioning the table in background while
+5.  Click **Create**. This will start provisioning the table in background while
     you can start adding other columns.
 
 6.  Create Scheduled Start column
 
-    1.  Select **Visit** your initials table
+    1.  You should be on the Visit table columns page.
 
     2.  Make sure you have the **Columns** tab selected and click **Add
         column**.
 
-    3.  Enter **Scheduled Start** for **Display Name**.
+    3.  Enter **Scheduled Start** for **Display name**.
 
-    4.  Select **Date and Time** for **Data Type**.
+    4.  Select **Date and Time** for **Data type**.
 
     5.  In **Required**, select **Required**.
 
@@ -115,9 +112,9 @@ and interpreted by a visitor when asked during the visit check-in process.
 
     1.  Click **Add column**.
 
-    2.  Enter **Scheduled End** for **Display Name**.
+    2.  Enter **Scheduled End** for **Display name**.
 
-    3.  Select **Date and Time** for **Data Type**.
+    3.  Select **Date and Time** for **Data type**.
 
     4.  In **Required**, select **Required**.
 
@@ -131,9 +128,9 @@ and interpreted by a visitor when asked during the visit check-in process.
 
     1.  Click **Add column**.
 
-    2.  Enter **Actual Start** for **Display Name**.
+    2.  Enter **Actual Start** for **Display name**.
 
-    3.  Select **Date and Time** for **Data Type**.
+    3.  Select **Date and Time** for **Data type**.
 
     4.  In **Required**, leave this as **Optional**.
 
@@ -147,9 +144,9 @@ and interpreted by a visitor when asked during the visit check-in process.
 
     1.  Click **Add column**.
 
-    2.  Enter **Actual End** for **Display Name**.
+    2.  Enter **Actual End** for **Display name**.
 
-    3.  Select **Date and Time** for **Data Type**.
+    3.  Select **Date and Time** for **Data type**.
 
     4.  In **Required**, leave this as **Optional**.
 
@@ -163,19 +160,21 @@ and interpreted by a visitor when asked during the visit check-in process.
 
     1.  Click **Add column**.
 
-    2.  Enter **Code** for **Display Name**.
+    2.  Enter **Code** for **Display name**.
 
-    3.  Select **Text** for **Data Type**.
+    3.  Select **Autonumber** for **Data type**.
+    
+    4.  Select **Date prefixed number** for **Autonumber type**.
 
-    4.  Click **Done**.
+    5.  Click **Done**.
 
 11. Create Visitor lookup column
 
     1.  Click **Add column**.
 
-    2.  Enter **Visitor** for **Display Name**.
+    2.  Enter **Visitor** for **Display name**.
 
-    3.  Select **Lookup** for **Data Type**.
+    3.  Select **Lookup** for **Data type**.
 
     4.  Select **Contact** for the **Related Table.**
 
@@ -194,7 +193,7 @@ In this task you will import a solution that contains the Power Automate flow
 required to complete data import.
 
 1.  You should have the **Visits.xls** file stored on your Desktop. Download
-    [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/DataImport_managed.zip?raw=true)
+    [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/majorupdate_april2022/Allfiles/Visits.xlsx)
     if you do not.
 
 2.  If not already signed in, sign in to <https://make.powerapps.com>.
