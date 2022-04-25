@@ -184,14 +184,12 @@ the sitemap, and test the app.
 
 ## Task \#1: Create Application
 
-1.  Open your Campus Management solution if you are not already in it.
+1.  Sign into <https://make.powerapps.com> (if you are not already signed in)
 
-    1.  Sign in to <https://make.powerapps.com>
+2.  Select your **[my initials] Practice** environment at the top right if it is
+    not already selected.
 
-    2.  While in your environment, click to open your **Campus Management**
-        solution.
-
-2.  Create the Model-Driven Application
+3.  Create the Model-Driven Application
 
     1.  Click **New** and select **App** and then **Model-driven app**.
 
@@ -201,30 +199,28 @@ the sitemap, and test the app.
     3.  Enter **[Your Last Name] Campus Management** for Name, select the
         **Create** button.
 
-3.  After your new model-driven application loads, select the **+ Add Page**
+4.  After your new model-driven application loads, select the **+ Add Page**
     button.
 
-4.  On the Add Page screen, choose **Table based view and form**, and then
+5.  On the Add Page screen, choose **Table based view and form**, and then
     select the Next button.
 
-5.  Add the following tables:
+6.  Add the following tables:
 
-    1.  Building
+    1.  Visit
 
-    2.  Visit
+    2.  Contact
 
-    3.  Contact
-
-6.  After you have selected all the tables you want to add, select the **Add**
+7.  After you have selected all the tables you want to add, select the **Add**
     button.
 
-7.  Using the navigation icons on the left side of the screen, select
+8.  Using the navigation icons on the left side of the screen, select
     **Navigation**.
 
-8.  In the Navigation Pane, select the **Group 1** text below where it says
+9.  In the Navigation Pane, select the **Group 1** text below where it says
     Navigation bar.
 
-9.  On the right side of the screen, in the **Display Options** section, change
+10.  On the right side of the screen, in the **Display Options** section, change
     the **Title** to **Security**.
 
 Now that we have all the necessary components added to your model-driven
@@ -282,17 +278,6 @@ application, we will now organize items.
 
     6.  You should now see the created contact on the **Active Contacts** view.
 
-3.  Create new Building
-
-    1.  Select **Buildings** from the sitemap.
-
-    2.  Click **New**.
-
-    3.  Enter the **Name** as `Microsoft Building`
-
-    4.  Click **Save and Close**. This will show the newly created record on the
-        Active Buildings View.
-
 4.  Create new Visit
 
     1.  Select **Visits** from the sitemap.
@@ -303,14 +288,12 @@ application, we will now organize items.
 
         1.  **Name**: `New test visit`
 
-        2.  **Building**: Alpine Ski House
+        2.  **Visitor**: select John Doe
 
-        3.  **Visitor**: select John Doe
-
-        4.  **Scheduled Start**: select tomorrow's date and 2:00 PM as start
+        3.  **Scheduled Start**: select tomorrow's date and 2:00 PM as start
             time
 
-        5.  **Scheduled End**: select tomorrow's date and 3:30 PM as end time
+        4.  **Scheduled End**: select tomorrow's date and 3:30 PM as end time
 
     4.  Click **Save and Close**. This will create the Visit and you should be
         able to see it on the Active Visits View.
