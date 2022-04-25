@@ -54,15 +54,14 @@ Visits Initials table you created earlier.
 3.  In necessary, click the **Home** icon on the right side of the screen. Under
     the **Start from** section, select **Dataverse**.
 
-4.  Select the OneDrive for business connection where you saved the Visits.xlsx
-    file earlier.
+4.  Select your Dataverse connection. 
 
 >   **NOTE:** *If a Dataverse connection does not exist:*
 >   -   Select **New Connection**
 >   -   Locate **Microsoft Dataverse**
 >   -   Click **Create**
 
-5.  Locate and select the **Visits your initials** table you created in the
+5.  Locate and select the **Visits** table you created in the
     previous lab.
 
 6.  Select the **Connect** button.
@@ -72,36 +71,30 @@ Visits Initials table you created earlier.
 
 8.  After creation has completed, is should look like the image below.
 
-Congratulations, you have successfully created a Power App from an a Dataverse
-table. The next step in the process is to tailor the app to match a customer’s
-branding. The next series of steps, will walk you through providing some extra
+![Canvas app created from Visit data.](media/2-canvas-app-from-data.png)
+
+Congratulations, you have successfully created a Power App from a Dataverse
+table. The next step in the process is to tailor the app to match your college's
+branding. The next series of steps will walk you through providing some extra
 customization to the app.
 
 ## Task \#2: Modify and theme the newly created app
 
-1.  On the left side of the screen, use the **Tree View** to select the
-    **BrowseGallery1** control. *(This will select the gallery that is used to
-    display the list of visits.)*
+1.  Select the app name **Visits**.
 
-2.  On the **BrowseScreen1**, select the **LblAppName1** label control in the
-    upper left side of the screen that displays the text **Visit your
-    Initials**.
+3.  On the right side of the screen, under the Properties tab, update the **Text** control property to **“Bellows College Visits”**.
 
-3.  On the right side of the screen, under the properties tab, replace the text
-    Table1 in the **Text** control property with **“Visits”**.
+4. In the properties, change the **Font size** to **24**.
 
-4.  Using the navigation on the left, select the **DetailsScreen1**.
+4.  Using the navigation on the left, select **DetailsScreen1**.
 
-5.  Select the **LblAppName2** label control in the upper left side of the
-    screen that displays the text **Visit your Initials**.
+5.  Select the title **Visits**.
 
-6.  On the right side of the screen, under the properties tab, replace the text
-    Table1 in the **Text** control property with **“Visit Details”**.
+6.  On the right side of the screen, under the properties tab, update the **Text** control property to **“Visit Details”**.
 
-7.  Using the navigation on the left, select the **EditScreen1**.
+7.  Using the navigation on the left, select **EditScreen1**.
 
-8.  Select the **LblAppName2** label control in the upper left side of the
-    screen that displays the text **Visit your Initials**.
+8.  Select the title **Visits**.
 
 9.  On the right side of the screen, under the properties tab, replace the text
     Table1 in the **Text** control property with **“Edit Details”**.
@@ -114,14 +107,13 @@ customization to the app.
 ## Task \#3: Test your Visits app
 
 In this task, you will configure a form to edit information about individual
-visit rows.
+Visits.
 
-1.  With your application open in the App Designer, select **File** \> **Save**,
-    and save your app with the name **Visits App**.
+1.  With your application open in the App Designer, select **File**, update the name of your app to **Visits App** and select **Save**.
 
 2.  Once the app is saved, use the **back** arrow to return to your app.
 
-3.  In the app designer, select the **preview your app** button on the command
+3.  In the app designer, select the **preview your app** button (Play icon) on the command
     bar. *(You can also preview the app by pressing F5 on your keyboard.)*
 
 4.  Once the app opens, in the **Search Items** field, enter the text **Maria**
@@ -144,6 +136,4 @@ visit rows.
 
 # Challenges
 
--   Create a view of all visits filtered by date range
-
--   Add the ability to create and manage contacts as part of the app
+-   Add the following columns to the forms in DetailScreen1 and EditScreen1: Actual Start, Actual End, Code, Scheduled Start, & Scheduled End
