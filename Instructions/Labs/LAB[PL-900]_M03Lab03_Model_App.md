@@ -305,7 +305,7 @@ application, we will now organize items.
 
     Your running app should look approximately like the following:
 
-![](media/3-model-app.png)
+![](media/3-model-driven-app.png)
 
 # Challenges
 
