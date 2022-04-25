@@ -48,10 +48,13 @@ Visits Initials table you created earlier.
 
 1.  Navigate to <https://make.powerapps.com>. You may need to reauthenticate - click **Sign in** and follow instructions if needed.
 
-2.  In necessary, click the **Home** icon on the right side of the screen. Under
+2.  Select your **[my initials] Practice** environment at the top right if it is
+    not already selected.
+
+3.  In necessary, click the **Home** icon on the right side of the screen. Under
     the **Start from** section, select **Dataverse**.
 
-3.  Select the OneDrive for business connection where you saved the Visits.xlsx
+4.  Select the OneDrive for business connection where you saved the Visits.xlsx
     file earlier.
 
 >   **NOTE:** *If a Dataverse connection does not exist:*
@@ -59,15 +62,15 @@ Visits Initials table you created earlier.
 >   -   Locate **Microsoft Dataverse**
 >   -   Click **Create**
 
-4.  Locate and select the **Visits your initials** table you created in the
+5.  Locate and select the **Visits your initials** table you created in the
     previous lab.
 
-5.  Select the **Connect** button.
+6.  Select the **Connect** button.
 
-6.  After your app is created, On the Welcome to Power Apps Studio screen, check
+7.  After your app is created, On the Welcome to Power Apps Studio screen, check
     the **Don’t show me this again** box, and then select **Skip**.
 
-7.  After creation has completed, is should look like the image below.
+8.  After creation has completed, is should look like the image below.
 
 Congratulations, you have successfully created a Power App from an a Dataverse
 table. The next step in the process is to tailor the app to match a customer’s
@@ -114,7 +117,7 @@ In this task, you will configure a form to edit information about individual
 visit rows.
 
 1.  With your application open in the App Designer, select **File** \> **Save**,
-    and save your app with the name **Visits from xls**.
+    and save your app with the name **Visits App**.
 
 2.  Once the app is saved, use the **back** arrow to return to your app.
 
