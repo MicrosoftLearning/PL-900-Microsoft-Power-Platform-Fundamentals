@@ -58,13 +58,16 @@ To prepare your learning environments you will:
 
 1.  Sign into <https://make.powerapps.com> (if you are not already signed in)
 
-2.  Using the navigation on the left, expand **Dataverse** and select **Tables**.
+2.  Select your **[my initials] Practice** environment at the top right if it is
+    not already selected.
 
-3.  Click **New table**.
+3.  Using the navigation on the left, expand **Dataverse** and select **Tables**.
 
-4.  Enter **Building** for **Display Name**.
+4.  Click **New table**.
 
-5.  Click **Create**.
+5.  Enter **Building** for **Display Name**.
+
+6.  Click **Create**.
 
 ## Task \# 2: Create Visit Table and Columns
 
