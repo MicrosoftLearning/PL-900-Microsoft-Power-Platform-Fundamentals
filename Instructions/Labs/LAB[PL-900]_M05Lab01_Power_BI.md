@@ -91,9 +91,9 @@ You have now setup Power BI service to use for your labs.
 
 1.  Press the **Pie chart** icon in the **Visualizations** panel to insert a chart.
 
-2.  Drag the **Building** field and drop it into **Legend** box.
+2.  Press the drop-down arrow beside **bc_Building** in the Fields pane. Drag the **Building** field and drop it into **Legend** box.
 
-3.  Drag the **Visit** field and drop it into **Values** target box.
+3.  Press the drop-down arrow beside **bc_Visit** in the Fields pane. Drag the **Visit** field and drop it into **Values** box.
 
 4.  Resize the pie chart using corner handles so that all chart components are
     visible.
@@ -101,12 +101,12 @@ You have now setup Power BI service to use for your labs.
 5.  Click on the report outside of the pie chart to deselect it and select
     stacked column chart in **Visualizations** pane.
 
-6.  Drag **Visit** field and drop it into **Values** target box.
+6.  Press the drop-down arrow beside **bc_Visit** in the Fields pane. Drag the **Visit** field and drop it into **Values** box.
 
 7.  Drag **Start** field and drop it into **Axis** target box.
 
-8.  In the Visualizations pane, click **x** next to **Day** and **Quarter** to
-    leave only **Year** and **Month** totals for the Axis.
+8.  In the Visualizations pane, click **x** next to **Year** and **Quarter** to
+    leave only **Month** and **Day** totals for the Axis.
 
 9.  Resize the chart as desired using the corner handles.
 
@@ -116,27 +116,17 @@ You have now setup Power BI service to use for your labs.
         the time report.
 
     2.  Click on the column chart. Press the down arrow to turn on **Drill
-        down** mode, then press the column to drill down to the next level
-        (months). Another way to do this is to click **Data/Drill \| Expand next
-        level** on the ribbon.
-
+        down** mode, then click a column to drill down to the next level
+        (days). 
+    
     3.  Drill up and down and select various bars on the time column chart to
         observe changes on the pie report.
 
-11. Save work in progress by pressing **File \| Save**.
+11. Save work in progress by pressing **Save**.
 
 # Exercise \#2: Create Power BI Dashboard
 
-## Task \#1: Publish Power BI Report
-
-1.  Press **Publish** button on the Home tab of the ribbon.
-
-2.  Select **My workspace** as the destination, then press **Select**.
-
-3.  Wait until publishing is complete and click **Open \<name of your
-    report\>.pbix in Power BI**.
-
-## Task \#2: Create Power BI Dashboard
+## Task \#1: Create Power BI Dashboard
 
 1.  You should have the report open from the previous task.
 
@@ -145,30 +135,32 @@ You have now setup Power BI service to use for your labs.
 
 3.  Select **New dashboard** on **Pin to dashboard** prompt.
 
-4.  Enter **[Your Last Name] Campus Management** as a **Dashboard name**, press
+4.  Enter **Campus Management** as a **Dashboard name**, press
     **Pin live**.
 
 5.  Select **My workspace** at the top, select **[Your Last Name] Campus
     Management** dashboard.
 
-6.  Test interactivity of the pie and bar charts displayed.
+6.  A pop-up will prompt you that the dashboard has been created. Select **Go to dashboard**.
 
-## Task \#3: Add Visualizations Using Natural Language
+7.  Test interactivity of the pie and bar charts displayed.
+
+## Task \#2: Add Visualizations Using Natural Language
 
 1.  Within your **Campus Management** dashboard, select **Ask a question about
     your data** bar at the top.
 
-2.  Enter **buildings by number of visits** in Q&A area. The bar chart will be
+2.  Enter **buildings by number of visits** in Q&A area. A bar chart will be
     displayed.
 
 3.  Select **Pin visual**.
 
-4.  Select **Existing dashboard**, select your **[Your Last Name] Campus
+4.  Select **Existing dashboard**, select your **Campus
     Management** dashboard, press **Pin**.
 
 5.  Click **Exit Q&A**.
 
-Your **[Your Last Name] Campus Management** dashboard should be displayed. You
+Your **Campus Management** dashboard should be displayed with three visuals on it. You
 may have to scroll down to see the new Q&A visual.
 
 Your dashboard should look similar to the following:
