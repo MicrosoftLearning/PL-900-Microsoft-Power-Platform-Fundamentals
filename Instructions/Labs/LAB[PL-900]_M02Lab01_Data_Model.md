@@ -206,17 +206,17 @@ required to complete data import.
 
 4.  Using the navigation on the left, expand **Dataverse**, and select tables.
 
-5.  Locate and open the **Visit your Initials** table, you created in the
+5.  Locate and open the **Visit** table, you created in the
     previous exercise.
 
-6.  Using the menu at the top, select the drop-down arrow next to **Data**.
+6.  Using the menu at the top, select the drop-down arrow next to **Data**, select the arrow next to **Get data**, and then select **Get data from Excel**.
 
 7.  From the menu that appears, select **Get data**, and then select **Get data
     from Excel**.
 
 8.  From the menu that appears, select the **Upload** button.
 
-9.  Locate and select the **Visits.xls** file, you downloaded earlier. *(Note it
+9.  Locate and select the **Visits.xls** file you downloaded earlier. *(Note it
     can take a minute or two for the file to upload. Do not worry if you get a
     message that mapping errors exist, we will fix those next.)*
 
@@ -247,7 +247,7 @@ rest of the course.*
 ## Task \#2: Verify Data Import
 
 1.  After your data has been imported, use the navigation at the left of the
-    screen to select the **Visits your initials** table again.
+    screen to select the **Visit** table again.
 
 2.  Using the tabs on the top, select the Data tab.
 
