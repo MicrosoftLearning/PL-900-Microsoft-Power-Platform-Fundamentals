@@ -54,204 +54,206 @@ Your solution will contain several tables upon completion of all the customizati
 
 -   Naming conventions - type names carefully.
 
-# Exercise \#1: Create a new Team in Microsoft Teams
+# Exercise \#1: Create New Tables
 
-## Task \#1: Create a Team
+**Objective:** In this exercise, you will create new custom tables for Buildings and Visits. 
 
-1.  In a browser, navigate to <https://Teams.microsoft.com> and sign in with
-    your student credentials.
+## Task \#1: Create Building Table
 
-2.  In the lower left corner of the **Microsoft Teams** app, select **Join or
-    create a Team**.
+1.  Sign into <https://make.powerapps.com> (if you are not already signed in)
 
-3.  Select **Create a Team**
+2.  Using the navigation on the left, expand Dataverse, and select Tables.
 
-4.  Select **From Scratch**
+3.  Click **New** and select **Table**.
 
-5.  In the **What kind of team will this be** screen, select **Public**
+4.  Enter **Building** (followed by your Initials) for **Display Name.** For
+    example, Building
 
-6.  In the **Name** screen, enter your initials followed by **Bellows College**.
-    For example, it will look something like **DB Bellows College**.
+5.  Click **Save**. This will start provisioning the table in background while
+    you can start adding other tables and columns.
 
-7.  Select the **Create** button.
+## Task \# 2: Create Visit Table and Columns
 
-8.  On the **Add members** screen, select **Skip**.
-
-# Provision your first Dataverse Environment
-
-## Task \#1: Add the Power Apps app to your Teams instance
-
-1.  In a browser, navigate to <https://Teams.microsoft.com> and sign in with
-    your student credentials.
-
-2.  In the lower left corner of the screen, select the **Apps** Icon.
-
-3.  Under **Apps**, use the search box to find and select
-    **Power Apps**.
-
-4.  Select the **Add** button to add the Power Apps application to your Teams
-    Client.
-
-## Task \#2: Provision Dataverse for Teams to Create a table
-
-1.  If you are not already logged into Microsoft Teams with your student
-    credentials, open your web browser, navigate to
-    <https://Teams.microsoft.com> and sign in with your student credentials.
-
-2.  Using the navigation on the left, find and select **Power Apps**. 
-    > If you do not see Power Apps, select the **Ellipsis** icon. In the **Find an App** Screen, 
-    > search for and select **Power Apps** to open it.
-
-3.  To start creating an application, select **Start now**.
-
-4.  On the **Select a Team for this app** screen, select your **Bellows College** team that you created in a previous exercise.
-
-5.  Select the **Create** button and wait for your app to be created.
-
-    > NOTE: It can take several minutes for the application to be created. When your
-environment is provisioned, a pop-up window will display in the lower-right
-corner of your screen, letting you know that the process has finished.
-
-6.  After the **Power Apps Editor** appears, name your app **Bellows College
-    visit tracker [Your Initials]**.
-
-7.  Select **Save**.
-
-# Exercise \#2: Create tables to store data
-
-**Objective:** In this exercise, you will add the standard Contact table and
-create new custom tables for Buildings and Visits in the solution.
-
-1.  With your **Visit tracker** open, select the **Data** icon on the left side
-    of the screen.
-
-2.  Select **Create new table**.
-
-3.  On the Create a table screen, enter **Contact** and select the **Create**
-    button
-
-4.  On the **Name** column, select the drop-down arrow next to name. From the
-    menu that appears, select **Edit Column**.
-
-5.  Change the name to First Name and select **Save**.
-
-6.  Select the **+ New Column** button.
-
-7.  Configure the column as follows:
-
-    1.  **Name:** Last Name
-
-    2.  **Type:** Text
-
-8.  Select the **Create** button.
-
-9.  Select the **+ New Column** button again.
-
-10. Configure the column as follows:
-
-    1.  **Name:** Email
-
-    2.  **Type:** Email
-
-11. Select the **Create** button.
-
-12. Select the **+ New Column** button again.
-
-13. Configure the column as follows:
-
-    1.  **Name:** Phone
-
-    2.  **Type:** Phone
-
-14. Select the **Create** button.
-
-15. You Contacts table should resemble the Image below:
-
-    ![Contact table columns.](media/1A-Columns.png)
-
-16. Select the **Close** button to save your table.
-
-## Task \#2: Create visit table
 The **Visit** table will contain information about the campus visits including
-the building, visitor, scheduled and actual time of each visit. We would like to
-assign each visit a unique number that can be easily entered and used by the staff.
+the building, visitor, scheduled and actual time of each visit.
 
-1.  You should still have your app open from the previous exercise.
+We would like to assign each visit a unique number that can be easily entered
+and interpreted by a visitor when asked during the visit check-in process.
 
-2.  Under the Data section, select the down arrow next to **Add Data**.
+>   We use **Time zone independent** behavior to record date and time
+>   information, because time of a visit is always local to the location of the
+>   building and should not change when viewed from a different time zone.
 
-3.  From the menu that appears, select **Create new table**.
+1.  Sign into <https://make.powerapps.com> (if you are not already signed in)
 
-4.  In the create a table box, set the table name to **Visit**, and select
-    **Create.**
+2.  Using the navigation on the left, expand Dataverse, and select Tables.
 
-5.  Once your Visit table is created, select the **+
-    New Column** button.
+3.  Click **New** and select **Table**.
 
-6.  Configure the column as follows:
+4.  Enter **Visit** (followed by your Initials) for **Display Name.** For
+    example, Visit DB.
 
-    1.  **Name:** Date Scheduled
+5.  Click **Save**. This will start provisioning the table in background while
+    you can start adding other columns.
 
-    2.  **Type:** Date
+6.  Create Scheduled Start column
 
-7.  Select the **Create** button.
+    1.  Select **Visit** your initials table
 
-8.  Select the **+ New Column** button again.
+    2.  Make sure you have the **Columns** tab selected and click **Add
+        column**.
 
-9.  Configure the column as follows:
+    3.  Enter **Scheduled Start** for **Display Name**.
 
-    1.  **Name:** Actual Visit Date
+    4.  Select **Date and Time** for **Data Type**.
 
-    2.  **Type:** Date
+    5.  In **Required**, select **Required**.
 
-10. Select the **Create** button.
+    6.  Expand **Advanced options** section.
 
-11. Select the **+ New Column** button again.
+    7.  In **Behavior**, select **Time zone independent**.
 
-12. Configure the column as follows:
+    8.  Click **Done**.
 
-    1.  **Name:** Visitor
+7.  Create Scheduled End column
 
-    2.  **Type:** Lookup
+    1.  Click **Add column**.
 
-    3.  **Related table:** Contact
+    2.  Enter **Scheduled End** for **Display Name**.
 
-13. Select the **Create** button.
+    3.  Select **Date and Time** for **Data Type**.
 
-14. Select the **+ New Column** button again.
+    4.  In **Required**, select **Required**.
 
-15. Configure the column as follows:
+    5.  Expand **Advanced options** section.
 
-    1.  **Name:** Code
+    6.  In **Behavior**, select **Time zone independent**.
 
-    2.  **Type:** Auto number
+    7.  Click **Done**.
 
-16. Select the **Create** button.
+8.  Create Actual Start column
 
-17. Your completed Visit Table should resemble the Image below:
+    1.  Click **Add column**.
 
-    ![Visit table columns.](media/1B-Teams-Table.png)
+    2.  Enter **Actual Start** for **Display Name**.
 
-18. Select the **Close** button to save your table.
+    3.  Select **Date and Time** for **Data Type**.
 
-# Exercise \#3: Build a simple app
+    4.  In **Required**, leave this as **Optional**.
 
-**Objective:** In this exercise, you will add relationships between the tables.
+    5.  Expand **Advanced options** section.
 
-## Task \#1: Create Relationships
+    6.  In **Behavior**, select **Time zone independent**.
 
-1.  One the screen, select **With data**.
-    > NOTE: you may need to zoom in with the zoom bar to see this in the middle of your screen.
+    7.  Click **Done**.
 
-2.  Select **Visits** to build the app from the data in the **Visit** table.
+9.  Create Actual End column
 
-3.  Using the commands at the top right of the screen, select the **Save**
-    button.
+    1.  Click **Add column**.
 
-4.  Select the **Play** button.
+    2.  Enter **Actual End** for **Display Name**.
 
-5.  Using the navigation on the left, select **+ New Record**.
+    3.  Select **Date and Time** for **Data Type**.
 
-6.  Populate the Name, Actual Visit Date, and Date Scheduled.
+    4.  In **Required**, leave this as **Optional**.
 
-7.  Select the Check button on the right to create your first Visit record.
+    5.  Expand **Advanced options** section.
+
+    6.  In **Behavior**, select **Time zone independent**.
+
+    7.  Click **Done**.
+
+10. Create Code column
+
+    1.  Click **Add column**.
+
+    2.  Enter **Code** for **Display Name**.
+
+    3.  Select **Text** for **Data Type**.
+
+    4.  Click **Done**.
+
+11. Create Visitor lookup column
+
+    1.  Click **Add column**.
+
+    2.  Enter **Visitor** for **Display Name**.
+
+    3.  Select **Lookup** for **Data Type**.
+
+    4.  Select **Contact** for the **Related Table.**
+
+    5.  Click **Done**.
+
+12. Click **Save Table**
+
+# Exercise \#2: Import Data
+
+**Objective:** In this exercise you will import sample data into the Dataverse
+database.
+
+## Task \#1: Import the Visits.xls file.
+
+In this task you will import a solution that contains the Power Automate flow
+required to complete data import.
+
+1.  You should have the **Visits.xls** file stored on your Desktop. Download
+    [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/DataImport_managed.zip?raw=true)
+    if you do not.
+
+2.  If not already signed in, sign in to <https://make.powerapps.com>.
+
+3.  Select your **[my initials] Practice** environment at the top right if it is
+    not already selected.
+
+4.  Using the navigation on the left, expand **Dataverse**, and select tables.
+
+5.  Locate and open the **Visit your Initials** table, you created in the
+    previous exercise.
+
+6.  Using the menu at the top, select the drop-down arrow next to **Data**.
+
+7.  From the menu that appears, select **Get data**, and then select **Get data
+    from Excel**.
+
+8.  From the menu that appears, select the **Upload** button.
+
+9.  Locate and select the **Visits.xls** file, you downloaded earlier. *(Note it
+    can take a minute or two for the file to upload. Do not worry if you get a
+    message that mapping errors exist, we will fix those next.)*
+
+10. Select **Map columns.**
+
+11. Map the Columns as noted below:
+
+    | Visit Db columns | Source Values   |
+    |------------------|-----------------|
+    | Actual End       | Actual end      |
+    | Actual Start     | Actual start    |
+    | Code             | Code            |
+    | Name             | Name            |
+    | Scheduled End    | Scheduled end   |
+    | Scheduled Start  | Scheduled start |
+
+12. Leave all the rest of the fields to **Not Set**.
+
+13. In the upper right corner of the screen, select **Save changes**.
+
+14. On the **Import data** screen, verify that the mapping status says, Mapping
+    was successful, and select the **Import** button.
+
+**Note:** *It can take several minutes for your data to import into your table.
+Don’t worry if you get a few errors, that is normal, and will not impact the
+rest of the course.*
+
+## Task \#2: Verify Data Import
+
+1.  After your data has been imported, use the navigation at the left of the
+    screen to select the **Visits your initials** table again.
+
+2.  Using the tabs on the top, select the Data tab.
+
+3.  Verify that there are records in your table.
+
+Congratulations, you have successfully created new tables and
+imported data.
