@@ -131,7 +131,7 @@ and interpreted by a visitor when asked during the visit check-in process.
 
     7.  Click **Done**.
 
-10.  Create Actual End column
+10. Create Actual End column
 
     1.  Click **Add column**.
 
