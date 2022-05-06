@@ -99,7 +99,7 @@ the unique code assigned to the visit when a visit is created.
 
 ## Task \#3: Create a step to send an email to the visitor
 
-1.  Click **New Step**. This is the step that will create and send email to the
+1.  Click **New Step**. This is the step that will send an email to the
     visitor.
 
 2.  Search for *mail*, select **Office 365 Outlook** connector and **Send an
