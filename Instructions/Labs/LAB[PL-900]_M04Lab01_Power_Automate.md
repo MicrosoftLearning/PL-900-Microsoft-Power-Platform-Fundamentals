@@ -58,7 +58,7 @@ the unique code assigned to the visit when a visit is created.
 
 5.  Click **New flow** and select **Automated cloud flow**.
 
-6.  Enter 'Visit Noticification' for **Flow name**.
+6.  Enter "Visit Notification" for **Flow name**.
 
 7.  In **Choose your flow's trigger**, search for **Dataverse**.
 
