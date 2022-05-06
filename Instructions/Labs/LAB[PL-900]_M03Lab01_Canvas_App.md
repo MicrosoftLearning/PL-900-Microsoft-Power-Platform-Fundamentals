@@ -123,7 +123,9 @@ In this task, you will test out your new app.
 
 1.  With your application open in the App Designer, select **File**, update the name of your app to **Visits App** and select **Save**.
 
-2.  Once the app is saved, use the **back** arrow to return to your app.
+2.  Once the app is saved, click **Publish** 
+
+3.  Select the **back** arrow to return to your app.
 
 3.  Using the navigation on the left, select **BrowseScreen1**.
 
@@ -142,7 +144,7 @@ In this task, you will test out your new app.
 6.  To edit the record, select the **Pencil Icon** in the upper right corner of
     the app.
 
-7.  You can edit the Visit Name here and click the Check icon to save the change.
+7.  You can edit the Visit Name here and click the Checkmark icon to save the change.
 
 8.  On the top right of the screen, click the **X** Icon to return to the canvas app editor.
 
