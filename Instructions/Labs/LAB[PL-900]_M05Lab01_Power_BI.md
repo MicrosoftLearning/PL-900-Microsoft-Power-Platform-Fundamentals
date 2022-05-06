@@ -91,7 +91,7 @@ You have now setup Power BI service to use for your labs.
 
 1.  Press the **Pie chart** icon in the **Visualizations** panel to insert a chart.
 
-2.  Press the drop-down arrow beside **bc_Building** in the Fields pane. Drag the **Building** field and drop it into **Legend** box.
+2.  Press the drop-down arrow beside **bc_name** in the Fields pane. Drag the **Building** field and drop it into **Legend** box.
 
 3.  Press the drop-down arrow beside **bc_Visit** in the Fields pane. Drag the **Visit** field and drop it into **Values** box.
 
