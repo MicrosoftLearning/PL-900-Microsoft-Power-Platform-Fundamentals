@@ -79,7 +79,7 @@ custom created tables that will be used in the model-driven app.
 4.  Select the **Forms** tab and click to open the Information form with **Main** form
     type.
 
->   **IMPORTANT:** *Since by default all forms are named Information. Make sure
+>   **IMPORTANT:** *Since by default all forms are named Information, make sure
     to verify that the form you select has a Form Type of* **Main** *and not
     something else.*
 
