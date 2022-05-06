@@ -86,7 +86,7 @@ custom created tables that will be used in the model-driven app.
 
 >   By default, the form has two fields: Name (Primary Field) and Owner.
 
-5.  On the right side of the screen under properties, select the **Display
+5.  On the right side of the screen on the Properties panel, select the **Display
     Name** field, and change it to **Main Information**.
 
 6.  Using the menu at top of the screen, select **+ Form field** and add the
@@ -105,7 +105,7 @@ custom created tables that will be used in the model-driven app.
 
 7.  Drag the **Code** column and drop it in the form header.
 
->   The header is the top right area of the form. You may need to minimize the
+>   The header is the top right area of the form. You may need to collapse the
 >   Properties panel on the right side of the screen to see the field on the
 >   form.
 
