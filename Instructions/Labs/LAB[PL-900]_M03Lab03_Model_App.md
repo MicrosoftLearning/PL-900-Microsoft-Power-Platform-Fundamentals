@@ -307,6 +307,8 @@ application, we will now organize items.
 
 ![](media/3-model-driven-app.png)
 
+Congratulations! You have created and configured your first model-driven app.
+
 # Challenges
 
 -   Select specific views and forms for Contacts
