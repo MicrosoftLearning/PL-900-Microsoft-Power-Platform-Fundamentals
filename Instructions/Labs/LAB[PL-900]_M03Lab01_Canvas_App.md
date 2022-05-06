@@ -85,6 +85,8 @@ customization to the app.
 
 ## Task \#2: Modify and theme the newly created app
 
+In this task, you will customize the header text on each of the three screens for your app (Browse, Detail, and Edit) and change the app theme.
+
 1.  Select the app name **Visits**.
 
 3.  On the right side of the screen, under the Properties tab, update the **Text** control property to **“Bellows College Visits”**.
@@ -117,8 +119,7 @@ customization to the app.
 
 ## Task \#3: Test your Visits app
 
-In this task, you will configure a form to edit information about individual
-Visits.
+In this task, you will test out your new app.
 
 1.  With your application open in the App Designer, select **File**, update the name of your app to **Visits App** and select **Save**.
 
