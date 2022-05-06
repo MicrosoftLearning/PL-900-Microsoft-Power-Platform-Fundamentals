@@ -87,7 +87,7 @@ customization to the app.
 
 In this task, you will customize the header text on each of the three screens for your app (Browse, Detail, and Edit) and change the app theme.
 
-1.  Select the app name **Visits**.
+1.  Select the **Visits** label on your screen.
 
 3.  On the right side of the screen, under the Properties tab, update the **Text** control property to **“Bellows College Visits”**.
 
