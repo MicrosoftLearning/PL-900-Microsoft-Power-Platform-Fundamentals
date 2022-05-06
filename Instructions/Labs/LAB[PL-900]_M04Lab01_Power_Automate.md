@@ -89,10 +89,12 @@ the unique code assigned to the visit when a visit is created.
 
 4.  Select **Contacts** as **Table name**
 
-5.  In the **Row ID** field, select **Visitor (Value)** from the Dynamic
+5.  Select the **Row ID** field. Notice that a window pops up to select Dynamic content or Expressions. 
+
+6.  In the **Row ID** field, select **Visitor (Value)** from the Dynamic
         content list.
 
-6.  On this action, click the ellipsis (**...**) and click **Rename**.
+7.  On this action, click the ellipsis (**...**) and click **Rename**.
         Rename this action **"Get the Visitor"**. This is a good practice, so
         you and other flow editors can understand the purpose of the step
         without having to dive into the details.
