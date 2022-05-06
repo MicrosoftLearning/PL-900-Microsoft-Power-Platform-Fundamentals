@@ -76,7 +76,7 @@ Visits Initials table you created earlier.
 9. In the app designer, select the **preview your app** button (Play icon) on the command
     bar. *(You can also preview the app by pressing F5 on your keyboard.)* Take a look around and see how your app looks out-of-the-box.
 
-10. Close the app preview.
+10. Close the app preview by selecting the **X** in the upper right of the screen.
 
 Congratulations, you have successfully created a Power App from a Dataverse
 table. The next step in the process is to tailor the app to match your college's
