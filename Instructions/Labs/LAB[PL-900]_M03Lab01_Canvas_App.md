@@ -51,7 +51,7 @@ Visits Initials table you created earlier.
 2.  Select your **[my initials] Practice** environment at the top right if it is
     not already selected.
 
-3.  In necessary, click the **Home** icon on the right side of the screen. Under
+3.  If necessary, click the **Home** icon on the right side of the screen. Under
     the **Start from** section, select **Dataverse**.
 
 4.  Select your Dataverse connection. 
@@ -64,7 +64,7 @@ Visits Initials table you created earlier.
 5.  Locate and select the **Visits** table you created in the
     previous lab.
 
-6.  Select the **Connect** button.
+6.  Select the **Connect** button in the bottom right corner.
 
 7.  After your app is created, On the Welcome to Power Apps Studio screen, check
     the **Don’t show me this again** box, and then select **Skip**.
