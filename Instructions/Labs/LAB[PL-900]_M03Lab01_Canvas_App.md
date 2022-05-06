@@ -87,7 +87,7 @@ customization to the app.
 
 In this task, you will customize the header text on each of the three screens for your app (Browse, Detail, and Edit) and change the app theme.
 
-1.  Select the **Visits** label on your screen.
+1.  You are on the Browse screen. Select the **Visits** label on the screen.
 
 3.  On the right side of the screen, under the Properties tab, update the **Text** control property to **“Bellows College Visits”**.
 
@@ -97,7 +97,7 @@ In this task, you will customize the header text on each of the three screens fo
 
 5.  Using the navigation on the left, select **DetailScreen1**.
 
-5.  Select the title **Visits**.
+5.  Select the **Visits** label on the screen.
 
 6.  On the right side of the screen, under the properties tab, update the **Text** control property to **“Visit Details”**.
 
@@ -105,7 +105,7 @@ In this task, you will customize the header text on each of the three screens fo
 
 8.  Using the navigation on the left, select **EditScreen1** (you may need to scroll down to see this on the Tree view).
 
-9.  Select the title **Visits**.
+9.  Select the **Visits** label on the screen.
 
 10.  On the right side of the screen, under the properties tab, replace the text
     Table1 in the **Text** control property with **“Edit Details”**.
@@ -123,7 +123,7 @@ In this task, you will test out your new app.
 
 1.  With your application open in the App Designer, select **File**, update the name of your app to **Visits App** and select **Save**.
 
-2.  Once the app is saved, click **Publish** and then click **Publish this version**.
+2.  If presented with the option, click **Publish** and then click **Publish this version**.
 
 3.  Select the **back** arrow to return to your app.
 
