@@ -223,7 +223,9 @@ required to complete data import.
 12. In the upper right corner of the screen, select **Save changes**.
 
 13. On the **Import data** screen, verify that the mapping status says "Mapping
-    was successful" and select **Import** in the upper right corner.
+    was successful".
+
+14. Select **Import** in the upper right corner to complete the data import.
 
 **Note:** *It can take several minutes for your data to import into your table.
 Don’t worry if you get a few errors, that is normal, and will not impact the
@@ -234,9 +236,11 @@ rest of the course.*
 1.  After your data has been imported, use the navigation at the left of the
     screen to select the **Visit** table again.
 
-2.  Using the tabs on the top, select the **Data** tab for the Visit table.
+2.  Notice that you have many tabs for the Visit table. These include Table, Relationships, Business rules, and more. 
 
-3.  Verify that there are records in your table.
+3.  Select the **Data** tab for the Visit table. This is beneath Tables /> Visit.
+
+3.  Verify that there are records in your table. You can change the view by selecting the view name at the top right and changing it to **All Columns**. 
 
 Congratulations, you have successfully created new tables and
 imported data.
