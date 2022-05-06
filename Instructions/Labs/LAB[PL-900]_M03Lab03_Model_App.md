@@ -75,6 +75,7 @@ custom created tables that will be used in the model-driven app.
 
 3.  Using the navigation on the left, expand **Dataverse**, select **Tables**, and click
     to open your **Visit** table.
+>   If you do not see the Visit table, make sure you are in the correct environment (step 2).
 
 4.  Select the **Forms** tab and click to open the Information form with **Main** form
     type.
@@ -111,7 +112,7 @@ custom created tables that will be used in the model-driven app.
 8.  With the **Code** field still selected, check the checkbox for **Read-only**
     in the Properties panel on the right side of the screen.
 
-9.  Select **Owner** field. In the Properties panel, change the **Field label**
+9.  Select **Owner** field. In the Properties panel, change the **Label**
     to **Host**
 
 10.  Click **Save** at the top right and wait for the save to complete.
