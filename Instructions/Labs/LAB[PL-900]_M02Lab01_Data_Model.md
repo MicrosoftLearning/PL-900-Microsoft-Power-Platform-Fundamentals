@@ -184,7 +184,7 @@ In this task you will import a solution that contains the Power Automate flow
 required to complete data import.
 
 1.  You should have the **Visits.xls** file stored on your Desktop. Download
-    [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/majorupdate_april2022/Allfiles/Visits.xlsx)
+    [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx)
     if you do not.
 
 2.  If not already signed in, sign in to <https://make.powerapps.com>.
