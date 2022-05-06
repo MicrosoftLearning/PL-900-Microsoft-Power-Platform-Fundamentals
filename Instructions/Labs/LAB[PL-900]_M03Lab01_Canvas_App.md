@@ -5,7 +5,7 @@ lab:
 ---
 
 # Module 3: Get started with Power Apps
-## Lab 1: How to build a canvas app
+## Lab: How to build a canvas app
 
 # Scenario
 
