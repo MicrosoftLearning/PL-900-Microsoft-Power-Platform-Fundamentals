@@ -135,8 +135,7 @@ In this task, you will test out your new app.
     search field).*
 
 5.  Once the **Contoso Suites** record for **Maria Campbell** is displayed,
-    click the **right arrow** on the record to navigate to the **Visit Details**
-    screen. (**Note**: *If more than one Contoso Suites Maria Campbell record is
+    click on the row to navigate to open the details for that visit. (**Note**: *If more than one Contoso Suites Maria Campbell record is
     displayed, select any of them*)
 
 6.  To edit the record, select the **Pencil Icon** in the upper right corner of
