@@ -238,7 +238,7 @@ rest of the course.*
 
 2.  Notice that you have many tabs for the Visit table. These include Table, Relationships, Business rules, and more. 
 
-3.  Select the **Data** tab for the Visit table. This is beneath Tables /> Visit.
+3.  Select the **Data** tab for the Visit table. This is beneath Tables \> Visit.
 
 3.  Verify that there are records in your table. You can change the view by selecting the view name at the top right and changing it to **All Columns**. 
 
