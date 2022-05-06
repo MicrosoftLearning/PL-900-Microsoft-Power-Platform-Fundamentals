@@ -92,7 +92,7 @@ the unique code assigned to the visit when a visit is created.
 5.  Select the **Row ID** field. Notice that a window pops up to select Dynamic content or Expressions. 
 
 6.  In the **Row ID** field, select **Visitor (Value)** from the Dynamic
-        content list.
+        content list. In this step, you are looking up the Contact for the Visit row that was created to trigger this flow. Since email address is part of the Contact table, you will need this information to send the email to the visitor. 
 
 7.  On this action, click the ellipsis (**...**) and click **Rename**.
         Rename this action **"Get the Visitor"**. This is a good practice, so
