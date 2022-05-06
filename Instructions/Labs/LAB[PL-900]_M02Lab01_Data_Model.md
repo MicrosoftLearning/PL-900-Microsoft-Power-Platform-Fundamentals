@@ -169,7 +169,11 @@ and interpreted by a visitor when asked during the visit check-in process.
 
     4.  Select **Contact** for the **Related Table.**
 
-    5.  Click **Done**.
+    5.  Expand **Advanced options** section.
+    
+    6.  Enter **visitor_id** for **Relationship name**.
+    
+    7.  Click **Done**.
 
 13. Click **Save Table** in the bottom right.
 
