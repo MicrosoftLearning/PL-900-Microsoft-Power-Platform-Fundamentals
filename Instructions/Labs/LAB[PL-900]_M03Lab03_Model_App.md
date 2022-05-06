@@ -46,9 +46,11 @@ Both will be integrated to the model-driven app for a better user-experience.
 
 ## Prerequisites
 
--   Completion of **Module 0 Lab 0 - Validate lab environment**
+-   Completion of **Module 0 Lab - Validate lab environment**
 
--   Completion of **Module 2 Lab 1 - Data modeling**
+-   Completion of **Module 2 Lab - Data modeling**
+
+-   Completion of **Module 3 Lab - How to build a canvas app**
 
 ## Things to consider before you begin
 
