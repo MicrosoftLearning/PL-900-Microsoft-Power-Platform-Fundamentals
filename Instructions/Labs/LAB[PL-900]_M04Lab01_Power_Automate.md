@@ -187,7 +187,7 @@ Leave this flow tab open for the next task. You flow should look
 
 9. Navigate to the tab with your flow test running. After a short delay, you should see the flow running. This is where you can catch any issues in the flow or confirm that it ran successfully. 
 
-After a short delay, you should see an email in your inbox, since you populated John Doe's email as your personal email. 
+After a short delay, you should see an email in your inbox, since you populated John Doe's email as your personal email. Note that it may go to your Junk Email folder.
 
 # Challenges
 
