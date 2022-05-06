@@ -116,7 +116,7 @@ You have now setup Power BI service to use for your labs.
         the time report.
 
     2.  Click on the column chart. Press the down arrow to turn on **Drill
-        down** mode, then click a column to drill down to the next level
+        down** mode (or right click on the chart and select **Drill down**), then click a column to drill down to the next level
         (days). 
     
     3.  Drill up and down and select various bars on the time column chart to
