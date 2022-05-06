@@ -234,7 +234,7 @@ rest of the course.*
 1.  After your data has been imported, use the navigation at the left of the
     screen to select the **Visit** table again.
 
-2.  Using the tabs on the top, select the Data tab.
+2.  Using the tabs on the top, select the **Data** tab for the Visit table.
 
 3.  Verify that there are records in your table.
 
