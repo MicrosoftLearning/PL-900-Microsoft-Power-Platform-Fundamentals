@@ -148,9 +148,7 @@ In this task, you will test out your new app.
 
 8.  On the top right of the screen, click the **X** Icon to return to the canvas app editor.
 
-9. Select **File**, then **Save**.
-
-10. Select **Publish**.
+Congratulations! You have created and configured your first canvas app.
 
 # Challenges
 
