@@ -141,10 +141,10 @@ the unique code assigned to the visit when a visit is created.
         field from the **Get the Visitor** step.
 
 8.  Highlight the **{Scheduled Start}** text. Replace it with the **Scheduled
-        Start** field **Get the Visitor** step.
+        Start** field **When a visit is added** step.
 
 9.  Highlight the **{Scheduled End}** text. Replace it with the **Scheduled
-        End** field from the **Get the Visitor** Step.
+        End** field from the **When a visit is added** Step.
 
 10.  Click **Save**.
 
