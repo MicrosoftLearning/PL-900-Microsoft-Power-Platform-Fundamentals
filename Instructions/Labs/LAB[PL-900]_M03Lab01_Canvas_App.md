@@ -56,10 +56,10 @@ Visits Initials table you created earlier.
 
 4.  Select your Dataverse connection. 
 
->   **NOTE:** *If a Dataverse connection does not exist:*
->   -   Select **New Connection**
->   -   Locate **Microsoft Dataverse**
->   -   Click **Create**
+    >   **NOTE:** *If a Dataverse connection does not exist:*
+    >   -   Select **New Connection**
+    >   -   Locate **Microsoft Dataverse**
+    >   -   Click **Create**
 
 5.  Locate and select the **Visits** table you created in the
     previous lab.
