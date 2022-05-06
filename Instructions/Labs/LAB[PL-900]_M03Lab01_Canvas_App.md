@@ -125,7 +125,9 @@ In this task, you will test out your new app.
 
 2.  Once the app is saved, use the **back** arrow to return to your app.
 
-3.  In the app designer, select the **preview your app** button (Play icon) on the command
+3.  Using the navigation on the left, select **BrowseScreen1**.
+
+4.  In the app designer, select the **preview your app** button (Play icon) on the command
     bar. *(You can also preview the app by pressing F5 on your keyboard.)*
 
 4.  Once the app opens, in the **Search Items** field, enter the text **Maria**
