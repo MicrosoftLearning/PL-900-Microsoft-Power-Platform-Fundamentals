@@ -58,12 +58,14 @@ the unique code assigned to the visit when a visit is created.
 
 5.  Click **New flow** and select **Automated cloud flow**.
 
-6.  In **Choose your flow's trigger**, search for **Dataverse**.
+6.  Enter 'Visit Noticification' for **Flow name**.
 
-7.  Select the trigger **When a row is added, modified or deleted**, and then
+7.  In **Choose your flow's trigger**, search for **Dataverse**.
+
+8.  Select the trigger **When a row is added, modified or deleted**, and then
     click **Create**.
 
-8.  Populate the trigger conditions for the flow:
+9.  Populate the trigger conditions for the flow:
 
     1.  Select **Added** for **Change type**
 
@@ -142,10 +144,7 @@ the unique code assigned to the visit when a visit is created.
 9.  Highlight the **{Scheduled End}** text. Replace it with the **Scheduled
         End** field from the **Get the Visitor** Step.
 
-10.  Select the flow name at the top and rename it to `Visit
-        Notification`.
-
-11.  Click **Save**.
+10.  Click **Save**.
 
 Leave this flow tab open for the next task. You flow should look
     approximately like the following:
