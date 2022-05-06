@@ -91,22 +91,28 @@ customization to the app.
 
 4. In the properties, change the **Font size** to **24**.
 
-4.  Using the navigation on the left, select **DetailsScreen1**.
+4.  Click in the gray area to see the updated text on your Browse screen.
+
+5.  Using the navigation on the left, select **DetailScreen1**.
 
 5.  Select the title **Visits**.
 
 6.  On the right side of the screen, under the properties tab, update the **Text** control property to **“Visit Details”**.
 
-7.  Using the navigation on the left, select **EditScreen1**.
+7.  Click in the gray area to see the updated text on your Details screen.
 
-8.  Select the title **Visits**.
+8.  Using the navigation on the left, select **EditScreen1** (you may need to scroll down to see this on the Tree view).
 
-9.  On the right side of the screen, under the properties tab, replace the text
+9.  Select the title **Visits**.
+
+10.  On the right side of the screen, under the properties tab, replace the text
     Table1 in the **Text** control property with **“Edit Details”**.
 
-10. Using the navigation on the left, select the **BrowseScreen1**.
+11.  Click in the gray area to see the updated text on your Edit screen.
 
-11. On the command toolbar, select the **Theme** button and from the list that
+12. Using the navigation on the left, select the **BrowseScreen1**.
+
+13. On the command toolbar, select the **Theme** button and from the list that
     appears select the **Red** theme color.
 
 ## Task \#3: Test your Visits app
