@@ -82,7 +82,7 @@ custom created tables that will be used in the model-driven app.
 >   **IMPORTANT:** *Since by default all forms are named Information, make sure
     to verify that the form you select has a Form Type of* **Main** *and not
     something else.*
->   By default, the form has two fields: Name (Primary Field) and Owner.
+    By default, the form has two fields: Name (Primary Field) and Owner.
 
 5.  On the right side of the screen on the Properties panel, select the **Display
     Name** field, and change it to **Main Information**.
