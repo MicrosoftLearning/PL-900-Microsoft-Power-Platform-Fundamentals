@@ -112,7 +112,7 @@ You have now setup Power BI service to use for your labs.
 
 10. Test the report interactivity:
 
-    1.  Select various building slices on the pie chart and observe changes on
+    1.  Click various building slices on the pie chart and observe changes on
         the time report.
 
     2.  Click on the column chart. Press the down arrow to turn on **Drill
