@@ -117,10 +117,10 @@ the unique code assigned to the visit when a visit is created.
         are selecting the Email that is related to the Visitor that you looked
         up in the previous step.
 
-5.  Enter **Your scheduled visit to Bellows College** in the **Subject**
+6.  Enter **Your scheduled visit to Bellows College** in the **Subject**
         field.
 
-6.  Enter the following text in **Email Body**:
+7.  Enter the following text in **Email Body**:
 
 >   Dynamic content needs to be placed where fields are named in brackets. It is
 >   recommended to copy & paste all text first and then add dynamic content in
@@ -137,16 +137,16 @@ the unique code assigned to the visit when a visit is created.
    Bellows College
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-7.  Highlight the **{First Name}** text. Replace it with the **First Name**
+8.  Highlight the **{First Name}** text. Replace it with the **First Name**
         field from the **Get the Visitor** step.
 
-8.  Highlight the **{Scheduled Start}** text. Replace it with the **Scheduled
+9.  Highlight the **{Scheduled Start}** text. Replace it with the **Scheduled
         Start** field **When a visit is added** step.
 
-9.  Highlight the **{Scheduled End}** text. Replace it with the **Scheduled
+10.  Highlight the **{Scheduled End}** text. Replace it with the **Scheduled
         End** field from the **When a visit is added** Step.
 
-10.  Click **Save**.
+11.  Click **Save**.
 
 Leave this flow tab open for the next task. You flow should look
     approximately like the following:
