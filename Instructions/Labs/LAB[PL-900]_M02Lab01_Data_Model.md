@@ -25,7 +25,7 @@ In this lab you will access your environment, create a Microsoft Dataverse
 database, and create a solution to track your changes. You will also create a
 data model to support the following requirements:
 
--   R1 – Track the locations (buildings) of the campus visits
+-   R1 – Track information for scheduled campus visits
 
 -   R2 – Record basic information to identify and track the visitors
 
@@ -39,7 +39,7 @@ To prepare your learning environments you will:
 
 * create a solution and publisher
 * add both new and existing components required to meet the application requirements. Refer to the [data model document](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png) for the metadata description (tables and relationships). You can hold CTRL+click or right click the link to open the data model document in a new window.
-* create Building and Visit tables
+* create Visit table
 * import Visit data using an Excel spreadsheet
 
 ## Prerequisites:
@@ -52,12 +52,12 @@ To prepare your learning environments you will:
 
 # Exercise \#1: Create New Table
 
-**Objective:** In this exercise, you will create new custom table Visits. 
+**Objective:** In this exercise, you will create new custom table for Visits. 
 
 ## Task \# 1: Create Visit Table and Columns
 
 The **Visit** table will contain information about the campus visits including
-the building, visitor, scheduled and actual time of each visit.
+the visitor, scheduled times and actual times of each visit.
 
 We would like to assign each visit a unique number that can be easily entered
 and interpreted by a visitor when asked during the visit check-in process.
@@ -180,8 +180,7 @@ database.
 
 ## Task \#1: Import the Visits.xls file.
 
-In this task you will import a solution that contains the Power Automate flow
-required to complete data import.
+In this task you will import a Visit data from an Excel file. 
 
 1.  You should have the **Visits.xls** file stored on your Desktop. Download
     [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx)
@@ -193,8 +192,9 @@ required to complete data import.
     not already selected.
 
 4.  Using the navigation on the left, expand **Dataverse**, and select tables.
+    >   You may see this as Data \> Tables on your screen. 
 
-5.  Locate and open the **Visit** table, you created in the
+5.  Locate and open the **Visit** table you created in the
     previous exercise.
 
 6.  Using the menu at the top, select the drop-down arrow next to **Data**, select the arrow next to **Get data**, and then select **Get data from Excel**.
@@ -236,11 +236,11 @@ rest of the course.*
 1.  After your data has been imported, use the navigation at the left of the
     screen to select the **Visit** table again.
 
-2.  Notice that you have many tabs for the Visit table. These include Table, Relationships, Business rules, and more. 
+2.  Notice that you have many tabs for the Visit table. These include Cikynns, Relationships, Business rules, Views, and more. 
 
-3.  Select the **Data** tab for the Visit table. This is beneath Tables \> Visit.
+3.  Select the **Data** tab for the Visit table. This is beneath **Tables** \> **Visit**.
 
 3.  Verify that there are records in your table. You can change the view by selecting the view name at the top right and changing it to **All Columns**. 
 
-Congratulations, you have successfully created new tables and
+Congratulations, you have successfully created a new table and
 imported data.
