@@ -93,7 +93,7 @@ In this task, you will customize the header text on each of the three screens fo
 
 4. In the properties, change the **Font size** to **24**.
 
-4.  Click in the gray area to see the updated text on your Browse screen.
+4.  Click in the gray background to see the updated text on your Browse screen.
 
 5.  Using the navigation on the left, select **DetailScreen1**.
 
@@ -101,7 +101,7 @@ In this task, you will customize the header text on each of the three screens fo
 
 6.  On the right side of the screen, under the properties tab, update the **Text** control property to **“Visit Details”**.
 
-7.  Click in the gray area to see the updated text on your Details screen.
+7.  Click in the gray background to see the updated text on your Details screen.
 
 8.  Using the navigation on the left, select **EditScreen1** (you may need to scroll down to see this on the Tree view).
 
@@ -110,7 +110,7 @@ In this task, you will customize the header text on each of the three screens fo
 10.  On the right side of the screen, under the properties tab, replace the text
     Table1 in the **Text** control property with **“Edit Details”**.
 
-11.  Click in the gray area to see the updated text on your Edit screen.
+11.  Click in the gray background to see the updated text on your Edit screen.
 
 12. Using the navigation on the left, select the **BrowseScreen1**.
 
