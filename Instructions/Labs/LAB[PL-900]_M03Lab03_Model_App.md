@@ -1,11 +1,11 @@
 ---
 lab:
-    title: 'Lab 2: How to build a model-driven app'
+    title: 'Lab 3: How to build a model-driven app'
     module: 'Module 3: Get started with Power Apps'
 ---
 
 # Module 3: Get started with Power Apps
-## Lab 2: How to build a model-driven app
+## Lab: How to build a model-driven app
 
 # Scenario
 
