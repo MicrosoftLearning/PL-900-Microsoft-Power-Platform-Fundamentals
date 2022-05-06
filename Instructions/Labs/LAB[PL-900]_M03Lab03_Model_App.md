@@ -152,7 +152,12 @@ view for today's visits.
 
 Now, we will clone the view to create a new view for today's visits.
 
-1.  Click **Edit filters** link in the Properties panel.
+1.  Click on the **dropdown arrow** by the Save button (be careful not to press
+    the button itself) and select **Save As**.
+
+2.  Change the name to **Today's Visits** and press **Save**.
+
+3.  Click **Edit filters** link in the Properties panel.
 
 2.  Click **Add**, select **Add row**.
 
@@ -168,12 +173,9 @@ Now, we will clone the view to create a new view for today's visits.
 
 > **Note:** Since we no longer filter on the view status, we will get all today's visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
 
-7.  Click on the **dropdown arrow** by the Save button (be careful not to press
-    the button itself) and select **Save As**.
+7.  Click **Save**.
 
-8.  Change the name to **Today's Visits** and press **Save**.
-
-9.  Click **Publish** and wait for the publishing to complete.
+8.  Click **Publish** and wait for the publishing to complete.
 
 # Exercise \#2: Create Model-Driven Application
 
@@ -218,7 +220,7 @@ the sitemap, and test the app.
 8.  Using the navigation icons on the left side of the screen, select
     **Navigation**.
 
-9.  In the Navigation Pane, select the **Group 1** text below where it says
+9.  In the Navigation Pane, select **Group 1** below where it says
     Navigation bar.
 
 10.  On the right side of the screen, in the **Display Options** section, change
@@ -235,7 +237,7 @@ application, we will now organize items.
 
 3.  Using the navigation on the left side of the screen, select **Pages**.
 
-4.  Locate and expand the **Visit** table on the Pages pane.
+4.  Locate and expand **Visit** on the Pages pane.
 
 5.  Select **Visit form**.
 
@@ -250,7 +252,7 @@ application, we will now organize items.
 10. Select the **Today’s Visits** and **Active Visits** forms, then select
     **Save**.
 
-11. At the top of the app on the left side of the screen, select **Save**.
+11. Select **Save**.
 
 12. Once the **Save** is complete, select the **Publish** button to publish your
     changes.
