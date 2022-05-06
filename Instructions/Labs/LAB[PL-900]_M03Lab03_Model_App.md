@@ -119,7 +119,7 @@ custom created tables that will be used in the model-driven app.
 
 12.  If the edit view opened in a new browser tab or window, close it. Otherwise, click
     **Back** at the top left of the screen. You should now be back to the Visit
-    entity Forms Tab.
+    tables Forms Tab.
 
 ## Task \#2: Edit Active Visits view
 
