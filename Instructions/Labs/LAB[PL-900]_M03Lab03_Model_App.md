@@ -118,7 +118,7 @@ custom created tables that will be used in the model-driven app.
 
 11.  Click **Publish** at the top right and wait for the publishing to complete.
 
-12.  If the edit view opened in a new tab, close the tab. Otherwise, click
+12.  If the edit view opened in a new browser tab or window, close it. Otherwise, click
     **Back** at the top left of the screen. You should now be back to the Visit
     entity Forms Tab.
 
