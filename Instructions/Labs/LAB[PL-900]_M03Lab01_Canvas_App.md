@@ -142,10 +142,9 @@ In this task, you will test out your new app.
 6.  To edit the record, select the **Pencil Icon** in the upper right corner of
     the app.
 
-7.  On the top of the screen, click the **X** Icon to return to the **Property
-    Details** Screen
+7.  You can edit the Visit Name here and click the Check icon to save the change.
 
-8.  Click the **Left Arrow** to return to the Browse screen.
+8.  On the top right of the screen, click the **X** Icon to return to the canvas app editor.
 
 9. Select **File**, then **Save**.
 
