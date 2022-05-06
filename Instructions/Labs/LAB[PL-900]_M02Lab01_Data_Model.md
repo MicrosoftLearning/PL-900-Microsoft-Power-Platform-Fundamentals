@@ -199,18 +199,15 @@ required to complete data import.
 
 6.  Using the menu at the top, select the drop-down arrow next to **Data**, select the arrow next to **Get data**, and then select **Get data from Excel**.
 
-7.  From the menu that appears, select **Get data**, and then select **Get data
-    from Excel**.
+7.  From the menu that appears, select the **Upload** button.
 
-8.  From the menu that appears, select the **Upload** button.
-
-9.  Locate and select the **Visits.xls** file you downloaded earlier. *(Note it
+8.  Locate and select the **Visits.xls** file you downloaded earlier. *(Note it
     can take a minute or two for the file to upload. Do not worry if you get a
     message that mapping errors exist, we will fix those next.)*
 
-10. Select **Map columns.**
+9. Select **Map columns.**
 
-11. Map the Columns as noted below:
+10. Map the Columns as noted below:
 
     | Visit Db columns | Source Values   |
     |------------------|-----------------|
@@ -221,11 +218,11 @@ required to complete data import.
     | Scheduled End    | Scheduled end   |
     | Scheduled Start  | Scheduled start |
 
-12. Leave all the rest of the fields to **Not Set**.
+11. Leave all the rest of the fields to **Not Set**.
 
-13. In the upper right corner of the screen, select **Save changes**.
+12. In the upper right corner of the screen, select **Save changes**.
 
-14. On the **Import data** screen, verify that the mapping status says, Mapping
+13. On the **Import data** screen, verify that the mapping status says, Mapping
     was successful, and select the **Import** button.
 
 **Note:** *It can take several minutes for your data to import into your table.
