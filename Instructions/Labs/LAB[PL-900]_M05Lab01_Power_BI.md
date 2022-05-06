@@ -65,7 +65,7 @@ the Excel spreadsheet we leveraged in a previous exercise.
 
 ## Task \#1: Prepare Power BI service
 
-1.  Download [visits.pbix](../../Allfiles/visits.pbix) and save on your
+1.  Download [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) and save on your
     computer.
 
 2.  Navigate to <https://app.powerbi.com/> and sign in if needed.
