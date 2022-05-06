@@ -123,7 +123,7 @@ In this task, you will test out your new app.
 
 1.  With your application open in the App Designer, select **File**, update the name of your app to **Visits App** and select **Save**.
 
-2.  Once the app is saved, click **Publish** 
+2.  Once the app is saved, click **Publish** and then click **Publish this version**.
 
 3.  Select the **back** arrow to return to your app.
 
