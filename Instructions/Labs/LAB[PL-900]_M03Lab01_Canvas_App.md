@@ -73,6 +73,11 @@ Visits Initials table you created earlier.
 
 ![Canvas app created from Visit data.](media/2-canvas-app-from-data.png)
 
+9. In the app designer, select the **preview your app** button (Play icon) on the command
+    bar. *(You can also preview the app by pressing F5 on your keyboard.)* Take a look around and see how your app looks out-of-the-box.
+
+10. Close the app preview.
+
 Congratulations, you have successfully created a Power App from a Dataverse
 table. The next step in the process is to tailor the app to match your college's
 branding. The next series of steps will walk you through providing some extra
