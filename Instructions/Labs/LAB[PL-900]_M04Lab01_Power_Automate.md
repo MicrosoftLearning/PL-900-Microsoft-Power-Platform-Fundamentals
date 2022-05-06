@@ -22,16 +22,14 @@ Throughout this course, you will build applications and perform automation to
 enable the Bellows College administration and security personnel to manage and
 control access to the buildings on campus.
 
-In this lab, you will create Power Automate flows to automate various parts of
-the campus management.
+In this lab, you will create a Power Automate flow to email a visitor when a visit is scheduled.
 
 # High-level lab steps
 
 The following have been identified as requirements you must implement to
 complete the project:
 
--   Security personnel need to receive notifications of visitors overstaying
-    their scheduled timeslots.
+-   Contacts need to be notified via email when a visit is scheduled.
 
 ## Prerequisites
 
@@ -39,17 +37,13 @@ complete the project:
 
 -   Completion of **Module 2 Lab 1 - Introduction to Microsoft Dataverse**
 
--   John Doe contact created with a personal email address in
-
-## Things to consider before you begin
-
--   How could overstays be measured and strict policies enforced?
+-   John Doe contact created with a personal email address populated
 
 # Exercise \#1: Create Visit Notification flow
 
 **Objective:** In this exercise, you will create a Power Automate flow that
 implements the requirement. The visitor should be sent an email that includes
-the unique code assigned to the visit.
+the unique code assigned to the visit when a visit is created.
 
 ## Task \#1: Create a flow
 
