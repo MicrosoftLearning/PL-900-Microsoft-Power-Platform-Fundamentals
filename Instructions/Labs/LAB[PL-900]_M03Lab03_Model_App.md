@@ -103,9 +103,9 @@ custom created tables that will be used in the model-driven app.
 
 7.  Drag the **Code** column and drop it in the form header.
 
->   The header is the top right area of the form. You may need to collapse the
->   Properties panel on the right side of the screen to see the field on the
->   form.
+    >   The header is the top right area of the form. You may need to collapse the
+    >   Properties panel on the right side of the screen to see the field on the
+    >   form.
 
 8.  With the **Code** field still selected, check the checkbox for **Read-only**
     in the Properties panel on the right side of the screen.
@@ -222,9 +222,9 @@ the sitemap, and test the app.
     Navigation bar.
 
 10.  On the right side of the screen, in the **Display Options** section, change
-    the **Title** to **Security**.
+    the **Title** property to **Security**.
 
-## Task \#1: Edit your app
+## Task \#2: Edit your app
 Now that we have all the necessary components added to your model-driven
 application, we will now organize items.
 
@@ -243,7 +243,7 @@ application, we will now organize items.
 
 7.  Select the **Main Information** form, and then click **Save**.
 
-8.  Under the **Visit** table on the left, select **Visit view**.
+8.  Under **Visit** on the Pages pane, select **Visit view**.
 
 9.  On the right side of the screen, select **Manage views**.
 
@@ -255,7 +255,7 @@ application, we will now organize items.
 12. Once the **Save** is complete, select the **Publish** button to publish your
     changes.
 
-## Task \#2: Test Application
+## Task \#3: Test Application
 
 1.  Start the application
 
@@ -263,14 +263,14 @@ application, we will now organize items.
 
 2.  Create new Contact
 
-    1.  The app should open to the **My Active Contacts** view
+    1.  The app should open to the **My Active Contacts** view. If it does not, select Visits on the left. 
 
     2.  Click **New** from the top menu.
 
     3.  Provide **First Name** as `John` and **Last Name** as `Doe`.
 
     4.  Provide your personal email as **Email**. This will be used in a future
-        lab.
+        lab where you will receive an email. 
 
     5.  Click **Save and Close**.
 
