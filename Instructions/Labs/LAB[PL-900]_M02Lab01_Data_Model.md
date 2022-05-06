@@ -171,7 +171,7 @@ and interpreted by a visitor when asked during the visit check-in process.
 
     5.  Click **Done**.
 
-13. Click **Save Table**
+13. Click **Save Table** in the bottom right.
 
 # Exercise \#2: Import Data
 
