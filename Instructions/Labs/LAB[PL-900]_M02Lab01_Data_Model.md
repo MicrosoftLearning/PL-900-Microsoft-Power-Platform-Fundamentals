@@ -222,8 +222,8 @@ required to complete data import.
 
 12. In the upper right corner of the screen, select **Save changes**.
 
-13. On the **Import data** screen, verify that the mapping status says, Mapping
-    was successful, and select the **Import** button.
+13. On the **Import data** screen, verify that the mapping status says "Mapping
+    was successful" and select **Import** in the upper right corner.
 
 **Note:** *It can take several minutes for your data to import into your table.
 Don’t worry if you get a few errors, that is normal, and will not impact the
