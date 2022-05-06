@@ -153,7 +153,7 @@ Leave this flow tab open for the next task. You flow should look
 
 ![Example of flow steps.](media/4-Flow.png)
 
-## Task \#2: Validate and test the flow
+## Task \#4: Validate and test the flow
 
 1.  Open a new tab in your browser and navigate to <https://make.powerapps.com>.
 
@@ -163,11 +163,11 @@ Leave this flow tab open for the next task. You flow should look
 3.  Click **Apps** and select the **Campus Management Model-driven** app you
     created earlier.
 
-3.  Leaving this tab open, navigate back to the previous tab with your flow.
+3.  Leaving this browser tab open, navigate back to the previous tab with your flow.
 
 4.  On the command bar, click **Test**. Select **Manually** and then click **Test**.
 
-5.  Navigate to the tab with your model-driven app open. 
+5.  Navigate to the browser tab with your model-driven app open. 
 
 6.  Using the navigation on the left, select **Visits**
 
@@ -185,7 +185,7 @@ Leave this flow tab open for the next task. You flow should look
 
 8. Select the **Save and Close** button.
 
-9. Navigate to the tab with your flow test running. After a short delay, you should see the flow running. This is where you can catch any issues in the flow or confirm that it ran successfully. 
+9. Navigate to the browser tab with your flow test running. After a short delay, you should see the flow running. This is where you can catch any issues in the flow or confirm that it ran successfully. 
 
 After a short delay, you should see an email in your inbox, since you populated John Doe's email as your personal email. Note that it may go to your Junk Email folder.
 
