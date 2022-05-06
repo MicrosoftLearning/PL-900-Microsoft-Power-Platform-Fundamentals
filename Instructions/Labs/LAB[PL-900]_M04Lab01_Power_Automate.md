@@ -165,10 +165,11 @@ Leave this flow tab open for the next task. You flow should look
 
 3.  Leaving this tab open, navigate back to the previous tab with your flow.
 
-4.  On the command bar, click **Test**. Select **Manually** and then **Save &
-    Test**.
+4.  On the command bar, click **Test**. Select **Manually** and then click **Test**.
 
-5.  Using the navigation on the left, select **Visits**
+5.  Navigate to the tab with your model-driven app open. 
+
+6.  Using the navigation on the left, select **Visits**
 
 6. Press the **+ New** button to add a new **Visit** record.
 
@@ -183,6 +184,8 @@ Leave this flow tab open for the next task. You flow should look
     -   **Scheduled End:** Tomorrow at 9:00 AM
 
 8. Select the **Save and Close** button.
+
+9. Navigate to the tab with your flow test running. After a short delay, you should see the flow running. This is where you can catch any issues in the flow or confirm that it ran successfully. 
 
 After a short delay, you should see an email in your inbox, since you populated John Doe's email as your personal email. 
 
