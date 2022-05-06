@@ -51,7 +51,7 @@ Visits Initials table you created earlier.
 2.  Select your **[my initials] Practice** environment at the top right if it is
     not already selected.
 
-3.  If necessary, click the **Home** icon on the right side of the screen. Under
+3.  If necessary, click the **Home** icon on the left side of the screen. Under
     the **Start from** section, select **Dataverse**.
 
 4.  Select your Dataverse connection. 
