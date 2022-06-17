@@ -66,185 +66,166 @@ and interpreted by a visitor when asked during the visit check-in process.
 >   information, because time of a visit is always local to the location of the
 >   building and should not change when viewed from a different time zone.
 
-1.  Sign into <https://make.powerapps.com> (if you are not already signed in)
+1. Sign into [https://make.powerapps.com](https://make.powerapps.com/) (if you are not already signed in)
 
-2.  Select your **[my initials] Practice** environment at the top right if it is
-    not already selected.
+2. Select your **[my initials] Practice** environment at the top right if it is not already selected.
 
-3.  Using the navigation on the left, expand Dataverse, and select Tables.
+3. Using the navigation on the left, expand Dataverse, and select Tables.
 
-4.  Click **New table**.
+4. Click **New table**.
 
-5.  Enter **Visit** for **Display Name**.
+5. Enter **Visit** for **Display Name**.
 
-6.  Click **Create**. This will start provisioning the table in background while
-    you can start adding other columns.
+6. Click **Save**. This will start provisioning the table in background while you can start adding other columns.
 
-7.  Create Scheduled Start column
+7. After the table is created, under the **Schema** section, select **Columns.** 
 
-    1.  You should be on the Visit table columns page.
+8. Select **New column** and configure as follows: 
 
-    2.  Make sure you have the **Columns** tab selected and click **Add
-        column**.
+	- Enter **Scheduled Start** for **Display name**.
 
-    3.  Enter **Scheduled Start** for **Display name**.
+	- Select **Date and Time** for **Data type**.
 
-    4.  Select **Date and Time** for **Data type**.
+	- In **Required**, select **Business required**.
 
-    5.  In **Required**, select **Required**.
+	- Expand **Advanced options** section.
 
-    6.  Expand **Advanced options** section.
+	- In **Behavior**, select **Time zone independent**.
 
-    7.  In **Behavior**, select **Time zone independent**.
+	- Click **Save**.
 
-    8.  Click **Done**.
+9. Create Scheduled End column 
 
-8.  Create Scheduled End column
+	- Click **Add column**.
 
-    1.  Click **Add column**.
+	- Enter **Scheduled End** for **Display name**.
 
-    2.  Enter **Scheduled End** for **Display name**.
+	- Select **Date and Time** for **Data type**.
 
-    3.  Select **Date and Time** for **Data type**.
+	- In **Required**, select **Business required**.
 
-    4.  In **Required**, select **Required**.
+	- Expand **Advanced options** section.
 
-    5.  Expand **Advanced options** section.
+	- In **Behavior**, select **Time zone independent**.
 
-    6.  In **Behavior**, select **Time zone independent**.
+	- Click **Save**.
 
-    7.  Click **Done**.
+10. Create Actual Start column
 
-9.  Create Actual Start column
+	- Click **Add column**.
 
-    1.  Click **Add column**.
+	- Enter **Actual Start** for **Display name**.
 
-    2.  Enter **Actual Start** for **Display name**.
+	- Select **Date and Time** for **Data type**.
 
-    3.  Select **Date and Time** for **Data type**.
+	- In **Required**, leave this as **Optional.**
 
-    4.  In **Required**, leave this as **Optional**.
+	- Expand **Advanced options** section.
 
-    5.  Expand **Advanced options** section.
+	- In **Behavior**, select **Time zone independent**.
 
-    6.  In **Behavior**, select **Time zone independent**.
+	- Click **Save**.
 
-    7.  Click **Done**.
+11. Create Actual End column
 
-10. Create Actual End column
+	- Click **Add column**.
 
-    1.  Click **Add column**.
+	- Enter **Actual End** for **Display name**.
 
-    2.  Enter **Actual End** for **Display name**.
+	- Select **Date and Time** for **Data type**.
 
-    3.  Select **Date and Time** for **Data type**.
+	- In **Required**, leave this as **Optional**.
 
-    4.  In **Required**, leave this as **Optional**.
+	- Expand **Advanced options** section.
 
-    5.  Expand **Advanced options** section.
+	- In **Behavior**, select **Time zone independent**.
 
-    6.  In **Behavior**, select **Time zone independent**.
+	- Click **Save**.
 
-    7.  Click **Done**.
+12. Create Code column
 
-11. Create Code column
+	- Click **Add column**.
 
-    1.  Click **Add column**.
+	- Enter **Code** for **Display name**.
 
-    2.  Enter **Code** for **Display name**.
+	- Select **Autonumber** for **Data type**.
 
-    3.  Select **Autonumber** for **Data type**.
-    
-    4.  Select **Date prefixed number** for **Autonumber type**.
+	- Select **Date prefixed number** for **Autonumber type**.
 
-    5.  Click **Done**.
+	- Click **Save**.
 
-12. Create Visitor lookup column
+13. Create Visitor lookup column
 
-    1.  Click **Add column**.
+	- Click **Add column**.
 
-    2.  Enter **Visitor** for **Display name**.
+	- Enter **Visitor** for **Display name**.
 
-    3.  Select **Lookup** for **Data type**.
+	- Select **Lookup** for **Data type**.
 
-    4.  Select **Contact** for the **Related Table.**
+	- Select **Contact** for the **Related Table.**
 
-    5.  Expand **Advanced options** section.
-    
-    6.  Enter **visitor_id** for **Relationship name**.
-    
-    7.  Click **Done**.
+	- Expand **Advanced options** section.
 
-13. Click **Save Table** in the bottom right.
+	- Enter **visitor_id** for **Relationship name**.
 
-# Exercise \#2: Import Data
+	- Click **Save**.
 
-**Objective:** In this exercise you will import sample data into the Dataverse
-database.
+ 
 
-## Task \#1: Import the Visits.xls file.
+Exercise #2: Import Data
 
-In this task you will import a Visit data from an Excel file. 
+**Objective:** In this exercise you will import sample data into the Dataverse database.
 
-1.  You should have the **Visits.xls** file stored on your Desktop. Download
-    [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx)
-    if you do not.
+Task #1: Import the Visits.xls file.
 
-2.  If not already signed in, sign in to <https://make.powerapps.com>.
+In this task you will import a Visit data from an Excel file.
 
-3.  Select your **[my initials] Practice** environment at the top right if it is
-    not already selected.
+1. You should have the **Visits.xls** file stored on your Desktop. Download [Visits.xls](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) if you do not.
 
-4.  Using the navigation on the left, expand **Dataverse**, and select tables.
-    >   You may see this as Data \> Tables on your screen. 
+2. If not already signed in, sign in to [https://make.powerapps.com](https://make.powerapps.com/).
 
-5.  Locate and open the **Visit** table you created in the
-    previous exercise.
+3. Select your **[my initials] Practice** environment at the top right if it is not already selected.
 
-6.  Using the menu at the top, select the drop-down arrow next to **Data**, select the arrow next to **Get data**, and then select **Get data from Excel**.
+4. Using the navigation on the left, expand **Dataverse**, and select tables.
 
-7.  From the menu that appears, select the **Upload** button.
+You may see this as Data > Tables on your screen.
 
-8.  Locate and select the **Visits.xls** file you downloaded earlier. *(Note it
-    can take a minute or two for the file to upload. Do not worry if you get a
-    message that mapping errors exist, we will fix those next.)*
+5. Locate and open the **Visit** table you created in the previous exercise.
+
+6. Using the menu at the top, select the drop-down arrow next to **Import**, select the **Import data from Excel**.
+
+7. From the menu that appears, select the **Upload** button.
+
+8. Locate and select the **Visits.xls** file you downloaded earlier. (Note it can take a minute or two for the file to upload. Do not worry if you get a message that mapping errors exist, we will fix those next.)
 
 9. Select **Map columns.**
 
 10. Map the Columns as noted below:
 
-    | Visit Db columns | Source Values   |
-    |------------------|-----------------|
-    | Actual End       | Actual end      |
-    | Actual Start     | Actual start    |
-    | Code             | Code            |
-    | Name             | Name            |
-    | Scheduled End    | Scheduled end   |
-    | Scheduled Start  | Scheduled start |
+| Visit Db columns| Source Values |
+| - |
+| Actual End| Actual end |
+| Actual Start| Actual start |
+| Code| Code |
+| Name| Name |
+| Scheduled End| Scheduled end |
+| Scheduled Start| Scheduled start |
+
 
 11. Leave all the rest of the fields to **Not Set**.
 
 12. In the upper right corner of the screen, select **Save changes**.
 
-13. On the **Import data** screen, verify that the mapping status says "Mapping
-    was successful".
+13. On the **Import data** screen, verify that the mapping status says “Mapping was successful”.
 
 14. Select **Import** in the upper right corner to complete the data import.
 
-**Note:** *It can take several minutes for your data to import into your table.
-Don’t worry if you get a few errors, that is normal, and will not impact the
-rest of the course.*
+**Note:** It can take several minutes for your data to import into your table. Don’t worry if you get a few errors, that is normal, and will not impact the rest of the course.
 
-## Task \#2: Verify Data Import
+Task #2: Verify Data Import
 
-1.  After your data has been imported, use the navigation at the left of the
-    screen to select the **Visit** table again.
+1. After your data has been imported, use the navigation at the left of the screen to select the **Visit** table again.
 
-2.  Notice that you have many tabs for the Visit table. These include Cikynns, Relationships, Business rules, Views, and more. 
+2. Verify that you see the imported data under the **Visit columns and data** section. 
 
-3.  Select the **Data** tab for the Visit table. This is beneath **Tables** \> **Visit**.
-
-3.  Verify that there are records in your table. You can change the view by selecting the view name at the top right and changing it to **All Columns**. 
-
-Congratulations, you have successfully created a new table and
-imported data.
+Congratulations, you have successfully created a new table and imported data.
