@@ -9,301 +9,261 @@ lab:
 
 # Scenario
 
-Bellows College is an educational organization with multiple buildings on
-campus. Campus visitors are currently recorded in paper journals. The
-information is not captured consistently, and there are no means to collect and
-analyze data about the visits across the entire campus.
+Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
-Campus administration would like to modernize their visitor registration system
-where access to the buildings is controlled by security personnel and all visits
-are required to be pre-registered and recorded by their hosts.
+Campus administration would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
 
-Throughout this course, you will build applications and perform automation to
-enable the Bellows College administration and security personnel to manage and
-control access to the buildings on campus.
+Throughout this course, you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus.
 
-In this lab, you will build a Power Apps model-driven app to allow the
-backoffice campus staff to manage visit records across the entire campus.
+In this lab, you will build a Power Apps model-driven app to allow the backoffice campus staff to manage visit records across the entire campus.
 
-# High-level lab steps
+High-level lab steps
 
 As part of creating the model-driven app, you will complete the following:
 
--   Create a new model-driven app named Campus Management
+- Create a new model-driven app named Campus Management
 
--   Edit the app navigation to reference the required tables
+- Edit the app navigation to reference the required tables
 
--   Customize the forms and views of the required tables for the app
+- Customize the forms and views of the required tables for the app
 
 We will work with the following components:
 
--   **Views**: Views allow the user to display the existing data in the form
-    table.
+- **Views**: Views allow the user to display the existing data in the form table.
 
--   **Forms**: This is where the user creates/updates new rows in the tables.
+- **Forms**: This is where the user creates/updates new rows in the tables.
 
 Both will be integrated to the model-driven app for a better user-experience.
 
-## Prerequisites
+Prerequisites
 
--   Completion of **Module 0 Lab - Validate lab environment**
+- Completion of **Module 0 Lab - Validate lab environment**
 
--   Completion of **Module 2 Lab - Data modeling**
+- Completion of **Module 2 Lab - Data modeling**
 
--   Completion of **Module 3 Lab - How to build a canvas app**
+- Completion of **Module 3 Lab - How to build a canvas app**
 
-## Things to consider before you begin
+Things to consider before you begin
 
--   What changes should we make to improve the user experience?
+- What changes should we make to improve the user experience?
 
--   What should we include in a model-driven app based on the data model we have
-    built?
+- What should we include in a model-driven app based on the data model we have built?
 
--   What customizations can be made on the sitemap of a model-driven app?
+- What customizations can be made on the sitemap of a model-driven app?
 
-# Exercise \#1: Customize Views and Forms
+Exercise #1: Customize Views and Forms
 
-**Objective:** In this exercise, you will customize views and forms of the
-custom created tables that will be used in the model-driven app.
+**Objective:** In this exercise, you will customize views and forms of the custom created tables that will be used in the model-driven app.
 
-## Task \#1: Edit Visit Form
+Task #1: Edit Visit Form
 
-1.  Sign in to <https://make.powerapps.com> if you are not already signed in.
+1. Sign in to [https://make.powerapps.com](https://make.powerapps.com/) if you are not already signed in.
 
-2.  Select your **[my initials] Practice** environment at the top right if it is
-    not already selected.
+2. Select your **[my initials] Practice** environment at the top right if it is not already selected.
 
-3.  Using the navigation on the left, expand **Dataverse**, select **Tables**, and click
-    to open your **Visit** table.
->   If you do not see the Visit table, make sure you are in the correct environment (step 2).
+3. Using the navigation on the left, expand **Dataverse**, select **Tables**, and click to open your **Visit** table.
 
-4.  Select the **Forms** tab and click to open the Information form with **Main** form
-    type.
->   **IMPORTANT:** *Since by default all forms are named Information, make sure
-    to verify that the form you select has a Form Type of* **Main** *and not
-    something else.*
-    By default, the form has two fields: Name (Primary Field) and Owner.
+If you do not see the Visit table, make sure you are in the correct environment (step 2).
 
-5.  On the right side of the screen on the Properties panel, select the **Display
-    Name** field, and change it to **Main Information**.
+4. Under the Data Experiences sections, select **Forms** and click to open the Information form with **Main** form type.
 
-6.  Using the menu at top of the screen, select **+ Form field** and add the
-    following fields below the **Owner** field by dragging columns to the form
-    or simply clicking column names:
+**IMPORTANT:** Since by default all forms are named Information, make sure to verify that the form you select has a Form Type of **Main** and not something else. By default, the form has two fields: Name (Primary Field) and Owner.
 
-    1.  **Visitor**
+5. On the right side of the screen on the Properties panel, select the **Display Name** field, and change it to **Main Information**.
 
-    2.  **Scheduled Start**
+6. Using the menu at top of the screen, select **+ Form field** and add the following fields below the **Owner** field by dragging columns to the form or simply clicking column names:
 
-    3.  **Scheduled End**
+	0. **Visitor**
 
-    4.  **Actual Start**
+	1. **Scheduled Start**
 
-    5.  **Actual End**
+	2. **Scheduled End**
 
-7.  Drag the **Code** column and drop it in the form header.
+	3. **Actual Start**
 
-    >   The header is the top right area of the form. You may need to collapse the
-    >   Properties panel on the right side of the screen to see the field on the
-    >   form.
+	4. **Actual End**
 
-8.  With the **Code** field still selected, check the checkbox for **Read-only**
-    in the Properties panel on the right side of the screen.
+7. Drag the **Code** column and drop it in the form header.
 
-9.  Select **Owner** field. In the Properties panel, change the **Label**
-    to **Host**
+The header is the top right area of the form. You may need to collapse the Properties panel on the right side of the screen to see the field on the form.
 
-10.  Click **Save** at the top right and wait for the save to complete.
+8. With the **Code** field still selected, check the checkbox for **Read-only** in the Properties panel on the right side of the screen.
 
-11.  Click **Publish** at the top right and wait for the publishing to complete.
+9. Select **Owner** field. In the Properties panel, change the **Label** to **Host**
 
-12.  If the edit view opened in a new browser tab or window, close it. Otherwise, click
-    **Back** at the top left of the screen. You should now be back to the Visit
-    tables Forms Tab.
+10. Click **Save** at the top right and wait for the save to complete.
 
-## Task \#2: Edit Active Visits view
+11. Click **Publish** at the top right and wait for the publishing to complete.
 
-In this task, we will modify the default Active Visits view and create a new
-view for today's visits.
+12. If the edit view opened in a new browser tab or window, close it. Otherwise, click **Back** at the top left of the screen. You should now be back to the Visit tables Forms Tab.
 
-1.  Select the **Views** tab and click to open your **Active Visits** view.
+13. Using the breadcrumbs in the upper left (Tables>Visit>Forms). Select **Visit** to return to the **Visit** table main screen. 
 
-2.  Add the following fields to the view by either clicking or dragging and
-    dropping the fields:
+Task #2: Edit Active Visits view
 
-    1.  **Code**
+In this task, we will modify the default Active Visits view and create a new view for today’s visits.
 
-    2.  **Visitor**
+1. Under the Data experiences section, select **Views** and click to open your **Active Visits** view.
 
-    3.  **Scheduled Start**
+2. Add the following fields to the view by either clicking or dragging and dropping the fields:
 
-    4.  **Scheduled End**
+	0. **Code**
 
-3.  Click the **Created On** column and select **Remove**. Field **Created On**
-    will now be removed from the view.
+	1. **Visitor**
 
-4.  Resize the individual column widths to fit the data.
+	2. **Scheduled Start**
 
-5.  Click **Save** and wait until the changes are saved.
+	3. **Scheduled End**
 
-6.  Click **Publish** and wait for the publishing to complete.
+3. Click the **Created On** column and select **Remove**. Field **Created On** will now be removed from the view.
 
-## Task \#3: Create new view for today's visits
+4. Resize the individual column widths to fit the data.
 
-Now, we will clone the view to create a new view for today's visits.
+5. Click **Save** and wait until the changes are saved.
 
-1.  Click on the **dropdown arrow** by the Save button (be careful not to press
-    the button itself) and select **Save As**.
+6. Click **Publish** and wait for the publishing to complete.
 
-2.  Change the name to **Today's Visits** and press **Save**.
+Task #3: Create new view for today’s visits
 
-3.  Click **Edit filters** link in the Properties panel.
+Now, we will clone the view to create a new view for today’s visits.
 
-2.  Click **Add**, select **Add row**.
+IMPORTANT: Make sure that you do not close the Active Visits view, as we will be leveraging it to create the new today’s visits view. 
 
-3.  Select **Scheduled Start** as a field, then select **Today** as the
-    condition in the drop-down.
+1. Click on the **dropdown arrow** by the Save button (be careful not to press the button itself) and select **Save As**.
 
-4.  Click the **...** on the **Status** row and click **Delete** to delete that filter condition.
+2. Change the name to **Today’s Visits** and press **Save**.
 
-5.  Press **Ok** to save the condition. The view is now filtered to show only
-    records where the Scheduled Start date is today.
+3. Click **Edit filters** link in the Properties panel.
 
-6.  Add **Actual Start** and **Actual End** fields to the view.
+4. Click **Add**, select **Add row**.
 
-> **Note:** Since we no longer filter on the view status, we will get all today's visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
+5. Select **Scheduled Start** as a field, then select **Today** as the condition in the drop-down.
 
-7.  Click **Save**.
+6. Click the **…** on the **Status** row and click **Delete** to delete that filter condition.
 
-8.  Click **Publish** and wait for the publishing to complete.
+7. Press **Ok** to save the condition. The view is now filtered to show only records where the Scheduled Start date is today.
 
-# Exercise \#2: Create Model-Driven Application
+8. Add **Actual Start** and **Actual End** fields to the view.
 
-**Objective:** In this exercise, you will create the model-driven app, customize
-the sitemap, and test the app.
+**Note:** Since we no longer filter on the view status, we will get all today’s visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
 
->   For simplicity and time's sake, we will not be addressing some of the Visit columns in this lab. 
+1. Click **Save**.
 
-## Task \#1: Create Application
+2. Click **Publish** and wait for the publishing to complete.
 
-1.  Sign into <https://make.powerapps.com> (if you are not already signed in).
+Exercise #2: Create Model-Driven Application
 
-2.  Select your **[my initials] Practice** environment at the top right if it is
-    not already selected.
+**Objective:** In this exercise, you will create the model-driven app, customize the sitemap, and test the app.
 
-3.  Create the Model-Driven Application:
+For simplicity and time’s sake, we will not be addressing some of the Visit columns in this lab.
 
-    1.  Select **Blank app** in the **Start from** section of the Home screen.
+Task #1: Create Application
 
-    2.  Under **Blank app based on Dataverse**, select **Create**.
+1. Sign into [https://make.powerapps.com](https://make.powerapps.com/) (if you are not already signed in).
 
-    3.  Select the **Modern app designer** experience.
-    
-    4.  Select **Create**.
-    
-    5.  Enter **Bellows Campus Management** for Name and select **Create**.
+2. Select your **[my initials] Practice** environment at the top right if it is not already selected.
 
-4.  After your new model-driven application loads, select the **+ Add Page**
-    button.
+3. Create the Model-Driven Application:
 
-5.  On the Add Page screen, choose **Table based view and form**, and then
-    select the **Next** button.
+	0. Select **Blank app** in the **Start from** section of the Home screen.
 
-6.  Add the following tables:
+	1. Under **Blank app based on Dataverse**, select **Create**.
 
-    1.  Visit
+	2. Enter **Bellows Campus Management** for Name and select **Create**.
 
-    2.  Contact
+4. After your new model-driven application loads, select the **+ Add Page** button.
 
-7.  After you have selected the 2 tables, select **Add**.
+5. On the Add Page screen, choose **Table based view and form**, and then select the **Next** button.
 
-8.  Using the navigation icons on the left side of the screen, select
-    **Navigation**.
+6. Add the following tables:
 
-9.  In the Navigation Pane, select **Group 1** below where it says
-    Navigation bar.
+	0. Visit
 
-10.  On the right side of the screen, in the **Display Options** section, change
-    the **Title** property to **Security**.
+	1. Contact
 
-## Task \#2: Edit your app
-Now that we have all the necessary components added to your model-driven
-application, we will now organize items.
+7. After you have selected the 2 tables, select **Add**.
 
-1.  In the Navigation Pane, under the security group, select **SubArea1**.
+8. Using the navigation icons on the left side of the screen, select **Navigation**.
 
-2.  Select the **Ellipsis**, and from the menu that appears, select remove
-    **SubArea1**.
+9. In the Navigation Pane, select **Group 1** below where it says Navigation bar.
 
-3.  Using the navigation on the left side of the screen, select **Pages**.
+10. On the right side of the screen, in the **Display Options** section, change the **Title** property to **Security**.
 
-4.  Locate and expand **Visit** on the Pages pane.
+Task #2: Edit your app
 
-5.  Select **Visit form**.
+Now that we have all the necessary components added to your model-driven application, we will now organize items.
 
-6.  On the right side of the screen, select **Manage Forms**.
+1. In the Navigation Pane, under the security group, select **SubArea1**.
 
-7.  Select the **Main Information** form, and then click **Save**.
+2. Select the **Ellipsis**, and from the menu that appears, select remove **SubArea1**.
 
-8.  Under **Visit** on the Pages pane, select **Visit view**.
+3. Using the navigation on the left side of the screen, select **Pages**.
 
-9.  On the right side of the screen, select **Manage views**.
+4. Locate and expand **Visit** on the Pages pane.
 
-10. Select the **Today’s Visits** and **Active Visits** forms, then select
-    **Save**.
+5. Select **Visit form**.
 
-11. Select **Save**.
+6. On the right side of the screen, select **Add form**.
 
-12. Once the **Save** is complete, select the **Publish** button to publish your
-    changes.
+7. Select the **Main Information** form.
 
-## Task \#3: Test Application
+8. Under **Visit** on the Pages pane, select **Visit view**.
 
-1.  Start the application
+9. On the right side of the screen, select **Add view**.
 
-    1.  Select **Play** to open your app in a new window.
+10. Select the **Today’s Visits** view.
 
-2.  Create new Contact
+11. Select **Add view** again. 
 
-    1.  The app should open to the **My Active Contacts** view. If it does not, select Visits on the left. 
+12. Select the **Active Visits** view. 
 
-    2.  Click **New** from the top menu.
+13. Select **Save**.
 
-    3.  Provide **First Name** as `John` and **Last Name** as `Doe`.
+14. Once the **Save** is complete, select the **Publish** button to publish your changes.
 
-    4.  Provide your personal email as **Email**. This will be used in a future
-        lab where you will receive an email. 
+Task #3: Test Application
 
-    5.  Click **Save and Close**.
+1. Start the application
 
-    6.  You should now see the created contact on the **Active Contacts** view.
+	0. Select **Play** to open your app in a new window.
 
-4.  Create new Visit
+2. Create new Contact
 
-    1.  Select **Visits** from the sitemap.
+	0. The app should open to the **My Active Contacts** view. If it does not, select Visits on the left.
 
-    2.  Click **New**.
+	1. Click **New** from the top menu.
 
-    3.  Enter the fields as following
+	2. Provide **First Name** as John and **Last Name** as Doe.
 
-        1.  **Name**: `New test visit`
+	3. Provide your personal email as **Email**. This will be used in a future lab where you will receive an email.
 
-        2.  **Visitor**: select John Doe
+	4. Click **Save and Close**.
 
-        3.  **Scheduled Start**: select tomorrow's date and 2:00 PM as start
-            time
+	5. You should now see the created contact on the **Active Contacts** view.
 
-        4.  **Scheduled End**: select tomorrow's date and 3:30 PM as end time
+3. Create new Visit
 
-    4.  Click **Save and Close**. This will create the Visit and you should be
-        able to see it on the Active Visits View.
+	0. Select **Visits** from the sitemap.
 
-    5.  Change view to **Today's Visits**. You should no longer see the new
-        visit in the view, since it is scheduled for tomorrow.
+	1. Click **New**.
 
-5.  You may add more test records.
+	2. Enter the fields as following
 
-    Your running app should look approximately like the following:
+		0. **Name**: New test visit
+
+		1. **Visitor**: select John Doe
+
+		2. **Scheduled Start**: select tomorrow’s date and 2:00 PM as start time
+
+		3. **Scheduled End**: select tomorrow’s date and 3:30 PM as end time
+
+- Click **Save and Close**. This will create the Visit and you should be able to see it on the Active Visits View.
+
+- Change view to **Today’s Visits**. You should no longer see the new visit in the view, since it is scheduled for tomorrow.
+
+4. You may add more test records.
+
+Your running app should look approximately like the following:
 
 ![](media/3-model-driven-app.png)
 
