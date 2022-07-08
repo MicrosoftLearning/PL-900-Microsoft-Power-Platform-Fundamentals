@@ -229,7 +229,7 @@ Task #3: Test Application
 
 2. Create new Contact
 
-	0. The app should open to the **My Active Contacts** view. If it does not, select Visits on the left.
+	0. The app should open to the **My Active Contacts** view. If it does not, select Contacts on the left.
 
 	1. Click **New** from the top menu.
 
