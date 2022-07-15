@@ -4,10 +4,9 @@ lab:
     module: 'Module 3: Get started with Power Apps'
 ---
 
-# Module 3: Get started with Power Apps
-## Lab: How to build a model-driven app
+# Lab 3: How to build a model-driven app
 
-# Scenario
+## Scenario
 
 Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
@@ -37,25 +36,20 @@ Both will be integrated to the model-driven app for a better user-experience.
 
 Prerequisites
 
-- Completion of **Module 0 Lab - Validate lab environment**
-
-- Completion of **Module 2 Lab - Data modeling**
-
-- Completion of **Module 3 Lab - How to build a canvas app**
+- Completion of **Module 0 Lab 0 - Validate lab environment**
+- Completion of **Module 2 Lab 1 - Data Modeling**
 
 Things to consider before you begin
 
 - What changes should we make to improve the user experience?
-
 - What should we include in a model-driven app based on the data model we have built?
-
 - What customizations can be made on the sitemap of a model-driven app?
 
-Exercise #1: Customize Views and Forms
+## Exercise 1: Customize Views and Forms
 
 **Objective:** In this exercise, you will customize views and forms of the custom created tables that will be used in the model-driven app.
 
-Task #1: Edit Visit Form
+### Task \#1: Edit Visit Form
 
 1. Sign in to [https://make.powerapps.com](https://make.powerapps.com/) if you are not already signed in.
 
@@ -65,23 +59,23 @@ Task #1: Edit Visit Form
 
 If you do not see the Visit table, make sure you are in the correct environment (step 2).
 
-4. Under the Data Experiences sections, select **Forms** and click to open the Information form with **Main** form type.
+4. Under the **Data experiences** section, select **Forms** and click to open the Information form with **Main** form type.
 
-**IMPORTANT:** Since by default all forms are named Information, make sure to verify that the form you select has a Form Type of **Main** and not something else. By default, the form has two fields: Name (Primary Field) and Owner.
+**IMPORTANT:** Since by default all forms are named Information, make sure to verify that the form you select has a Form Type of **Main** and not something else. By default, the form has two fields: Name and Owner.
 
 5. On the right side of the screen on the Properties panel, select the **Display Name** field, and change it to **Main Information**.
 
 6. Using the menu at top of the screen, select **+ Form field** and add the following fields below the **Owner** field by dragging columns to the form or simply clicking column names:
 
-	0. **Visitor**
+	1. **Visitor**
 
 	1. **Scheduled Start**
 
-	2. **Scheduled End**
+	1. **Scheduled End**
 
-	3. **Actual Start**
+	1. **Actual Start**
 
-	4. **Actual End**
+	1. **Actual End**
 
 7. Drag the **Code** column and drop it in the form header.
 
@@ -95,25 +89,25 @@ The header is the top right area of the form. You may need to collapse the Prope
 
 11. Click **Publish** at the top right and wait for the publishing to complete.
 
-12. If the edit view opened in a new browser tab or window, close it. Otherwise, click **Back** at the top left of the screen. You should now be back to the Visit tables Forms Tab.
+12. If the edit view opened in a new browser tab or window, close it. Otherwise, click **Back** at the top left of the screen. You should now be back to the Visit tables Forms.
 
-13. Using the breadcrumbs in the upper left (Tables>Visit>Forms). Select **Visit** to return to the **Visit** table main screen. 
+13. Using the breadcrumbs in the upper left (Tables>Visit>Forms). Select **Visit** to return to the **Visit** table main screen.
 
-Task #2: Edit Active Visits view
+### Task \#2: Edit Active Visits view
 
 In this task, we will modify the default Active Visits view and create a new view for today’s visits.
 
-1. Under the Data experiences section, select **Views** and click to open your **Active Visits** view.
+1. Under the **Data experiences** section, select **Views** and click to open your **Active Visits** view.
 
 2. Add the following fields to the view by either clicking or dragging and dropping the fields:
 
-	0. **Code**
+	1. **Code**
 
-	1. **Visitor**
+	2. **Visitor**
 
-	2. **Scheduled Start**
+	3. **Scheduled Start**
 
-	3. **Scheduled End**
+	4. **Scheduled End**
 
 3. Click the **Created On** column and select **Remove**. Field **Created On** will now be removed from the view.
 
@@ -123,11 +117,11 @@ In this task, we will modify the default Active Visits view and create a new vie
 
 6. Click **Publish** and wait for the publishing to complete.
 
-Task #3: Create new view for today’s visits
+### Task #3: Create new view for today’s visits
 
 Now, we will clone the view to create a new view for today’s visits.
 
-IMPORTANT: Make sure that you do not close the Active Visits view, as we will be leveraging it to create the new today’s visits view. 
+IMPORTANT: Make sure that you do not close the Active Visits view, as we will be leveraging it to create the new today’s visits view.
 
 1. Click on the **dropdown arrow** by the Save button (be careful not to press the button itself) and select **Save As**.
 
@@ -151,25 +145,27 @@ IMPORTANT: Make sure that you do not close the Active Visits view, as we will be
 
 2. Click **Publish** and wait for the publishing to complete.
 
-Exercise #2: Create Model-Driven Application
+## Exercise 2: Create Model-driven app
 
-**Objective:** In this exercise, you will create the model-driven app, customize the sitemap, and test the app.
+**Objective:** In this exercise, you will create a model-driven app, customize the sitemap, and test the app.
 
 For simplicity and time’s sake, we will not be addressing some of the Visit columns in this lab.
 
-Task #1: Create Application
+### Task \#1: Create app
 
 1. Sign into [https://make.powerapps.com](https://make.powerapps.com/) (if you are not already signed in).
 
 2. Select your **[my initials] Practice** environment at the top right if it is not already selected.
 
+3.  If necessary, click the **Home** icon on the left side of the screen.
+
 3. Create the Model-Driven Application:
 
-	0. Select **Blank app** in the **Start from** section of the Home screen.
+	1. Select **Blank app** in the **Start from** section of the Home screen.
 
 	1. Under **Blank app based on Dataverse**, select **Create**.
 
-	2. Enter **Bellows Campus Management** for Name and select **Create**.
+	1. Enter **Bellows Campus Management** for Name and select **Create**.
 
 4. After your new model-driven application loads, select the **+ Add Page** button.
 
@@ -177,7 +173,7 @@ Task #1: Create Application
 
 6. Add the following tables:
 
-	0. Visit
+	1. Visit
 
 	1. Contact
 
@@ -189,13 +185,13 @@ Task #1: Create Application
 
 10. On the right side of the screen, in the **Display Options** section, change the **Title** property to **Security**.
 
-Task #2: Edit your app
+### Task #2: Edit your app
 
 Now that we have all the necessary components added to your model-driven application, we will now organize items.
 
 1. In the Navigation Pane, under the security group, select **SubArea1**.
 
-2. Select the **Ellipsis**, and from the menu that appears, select remove **SubArea1**.
+2. Select the **Ellipsis**, and from the menu that appears, select **Remove SubArea1**.
 
 3. Using the navigation on the left side of the screen, select **Pages**.
 
@@ -221,43 +217,43 @@ Now that we have all the necessary components added to your model-driven applica
 
 14. Once the **Save** is complete, select the **Publish** button to publish your changes.
 
-Task #3: Test Application
+### Task #3: Test Application
 
 1. Start the application
 
-	0. Select **Play** to open your app in a new window.
+	1. Select **Play** to open your app in a new window.
 
 2. Create new Contact
 
-	0. The app should open to the **My Active Contacts** view. If it does not, select Contacts on the left.
+	1. The app should open to the **My Active Contacts** view. If it does not, select Contacts on the left-hand navigation.
 
 	1. Click **New** from the top menu.
 
-	2. Provide **First Name** as John and **Last Name** as Doe.
+	1. Provide **First Name** as John and **Last Name** as Doe.
 
-	3. Provide your personal email as **Email**. This will be used in a future lab where you will receive an email.
+	1. Provide your personal email as **Email**. This will be used in a future lab where you will receive an email.
 
-	4. Click **Save and Close**.
+	1. Click **Save & Close**.
 
-	5. You should now see the created contact on the **Active Contacts** view.
+	1. You should now see the created contact on the **My Active Contacts** view.
 
 3. Create new Visit
 
-	0. Select **Visits** from the sitemap.
+	1. Select **Visits** from the left-hand navigation of the sitemap.
 
-	1. Click **New**.
+	1. Click **+ New**.
 
-	2. Enter the fields as following
+	1. Enter the fields as following
 
-		0. **Name**: New test visit
+		1. **Name**: New test visit
 
 		1. **Visitor**: select John Doe
 
-		2. **Scheduled Start**: select tomorrow’s date and 2:00 PM as start time
+		1. **Scheduled Start**: select tomorrow’s date and 2:00 PM as start time
 
-		3. **Scheduled End**: select tomorrow’s date and 3:30 PM as end time
+		1. **Scheduled End**: select tomorrow’s date and 3:30 PM as end time
 
-- Click **Save and Close**. This will create the Visit and you should be able to see it on the Active Visits View.
+- Click **Save & Close**. This will create the Visit and you should be able to see it on the Active Visits View.
 
 - Change view to **Today’s Visits**. You should no longer see the new visit in the view, since it is scheduled for tomorrow.
 
@@ -269,6 +265,6 @@ Your running app should look approximately like the following:
 
 Congratulations! You have created and configured your first model-driven app.
 
-# Challenges
+## Challenges
 
--   Select specific views and forms for Contacts
+- Select specific views and forms for Contacts
