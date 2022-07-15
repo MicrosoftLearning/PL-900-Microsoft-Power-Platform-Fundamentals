@@ -74,7 +74,7 @@ You have now setup Power BI service to use for your labs.
 
 5.  Click on the report outside of the pie chart to deselect it and select stacked column chart in **Visualizations** pane.
 
-6.  Press the drop-down arrow beside **bc_Visit** in the Fields pane. Drag the **Visit** field and drop it into **Y-axis** box.
+6.  Press the drop-down arrow beside **bc_Visit** in the Fields pane. Drag the **Visit** field and drop it into **Y-axis** target box.
 
 7.  Drag **Start** field and drop it into **X-axis** target box.
 
