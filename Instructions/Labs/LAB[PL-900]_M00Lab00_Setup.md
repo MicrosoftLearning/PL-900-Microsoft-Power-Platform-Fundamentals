@@ -35,7 +35,7 @@ In this Module 0 lab, you will acquire a Power Platform trial and access the Pow
 
 1. Do not change country.
 
-1. For **Phone number**, enter 01234567890.
+1. For **Phone number**, enter 0123456789.
 
 1. Complete your account info and select **Get started** to sign up for your Microsoft Power Platform trial.
 
