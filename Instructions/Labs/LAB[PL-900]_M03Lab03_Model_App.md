@@ -20,7 +20,7 @@ High-level lab steps
 
 As part of creating the model-driven app, you will complete the following:
 
-- Create a new model-driven app named Campus Management
+- Create a new model-driven app named Bellows Campus Management
 
 - Edit the app navigation to reference the required tables
 
