@@ -141,9 +141,9 @@ IMPORTANT: Make sure that you do not close the Active Visits view, as we will be
 
 **Note:** Since we no longer filter on the view status, we will get all today’s visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
 
-1. Click **Save**.
+9. Click **Save**.
 
-2. Click **Publish** and wait for the publishing to complete.
+10. Click **Publish** and wait for the publishing to complete.
 
 ## Exercise 2: Create Model-driven app
 
@@ -181,7 +181,7 @@ For simplicity and time’s sake, we will not be addressing some of the Visit co
 
 8. Using the navigation icons on the left side of the screen, select **Navigation**.
 
-9. In the Navigation Pane, select **Group 1** below where it says Navigation bar.
+9. In the Navigation Pane, select **Group 1** below where it says Navigation bar. You may need to expand the menu on the left.
 
 10. On the right side of the screen, in the **Display Options** section, change the **Title** property to **Security**.
 
@@ -255,7 +255,7 @@ Now that we have all the necessary components added to your model-driven applica
 
 - Click **Save & Close**. This will create the Visit and you should be able to see it on the Active Visits View.
 
-- Change view to **Today’s Visits**. You should no longer see the new visit in the view, since it is scheduled for tomorrow.
+- Change view to **Today’s Visits** by using th drop down next to **Active Visits**. You should no longer see the new visit in the view, since it is scheduled for tomorrow.
 
 4. You may add more test records.
 
