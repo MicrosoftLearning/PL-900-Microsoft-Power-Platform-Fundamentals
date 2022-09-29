@@ -102,7 +102,7 @@ In this task, you will customize the header text on each of the three screens fo
 
 In this task, you will test out your new app.
 
-1.  With your application open in the App Designer, select **File**, update the name of your app to **Visits App** and select **Save**.
+1.  With your application open in the App Designer, select **Settings**, in the **General** section update the name of your app to **Visits App**, click the **X** to close the settings screen and then select **Save**.
 
 2.  Select the **back** arrow to return to your app.
 
