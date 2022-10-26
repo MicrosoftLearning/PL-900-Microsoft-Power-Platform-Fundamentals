@@ -164,9 +164,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 **Objective:** In this exercise you will import sample data into the Dataverse database.
 
-### Task \#1: Import the Visits.xlsx file
-
-In this task you will import a Visit data from an Excel file.
+### Task \#1.1: Load Excel file to OneDrive
 
 1. You should have the **Visits.xlsx** file stored on your Desktop. Download [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) if you do not.
 
@@ -174,42 +172,64 @@ In this task you will import a Visit data from an Excel file.
 
 3. Select your **[my initials] Practice** environment at the top right if it is not already selected.
 
-4. Using the navigation on the left, expand **Dataverse**, and select **Tables**.
+4. Click on the Waffle button in the upper left corner to change applications and select **OneDrive**. (It may take a moment for your OneDrive to be set up. Click Your OneDrive is ready when you see it on the screen.)
 
-5. Locate and open the **Visit** table you created in the previous exercise.
+5. Click **Upload** from the top menu and select **Files**.
 
-6. Using the menu at the top, select the drop-down arrow next to **Import**, select the **Import data from Excel**.
+6. Locate and select the **Visits.xlsx** file and click **Open**.
 
-7. From the menu that appears, select the **Upload** button.
+ **Note:** This file is located in the **All Files** folder on your machine.
+ 
+### Task \#1.2: Create a dataflow
 
-8. Locate and select the **Visits.xlsx** file you downloaded earlier. (Note it can take a minute or two for the file to upload. Do not worry if you get a message that mapping errors exist, we will fix those next.)
+1. If not already signed in, sign in to [https://make.powerapps.com](https://make.powerapps.com/).
 
-9. Click **Map columns** (Note you may need to scroll right to see the Map columns option).
+2. Select your **[my initials] Practice** environment at the top right if it is not already selected.
 
-10. Map the Columns as noted below:
+3. Using the navigation on the left, expand **Dataverse**, and select **Tables**.
 
-| Visit columns| Source values |
+4. Locate and open the **Visit** table you created in the previous exercise.
+
+5. Using the menu at the top, select the drop-down arrow next to **Import**, select the **Import data**.
+
+6. In the **Choose data source** dialog, select **Excel workbook**.
+
+7. Select **Link to File** option. Click **Browse OneDrive**. If prompted, sign in with your Microsoft 365 credentials.
+
+8. Select the **Visits.xlsx** file which has been uploaded in OneDrive and click **Select**.
+
+9. Click **Next**.
+
+10. Under **Choose Data** check the box next to the **Visits** Excel workbook.
+
+11. Click **Next**. Do not navigate away from this page.
+
+12. Click **Next**.
+
+13. On the **Map tables** section, select **Load to existing table** under the **Load settings**.
+
+14. On the **Destination table** drop-down menu, Select the table name starts with **crXXX_visit** (where XXX is a random set of letters and numbers)
+
+15. On the **Column Mapping**. Map the Columns to their corresponding destination columns.
+
+| Destination columns| Source values |
 | - | - |
-| Actual End| actual end |
-| Actual Start| actual start |
-| Code| code |
-| Name| name |
-| Scheduled End| scheduled end |
-| Scheduled Start| scheduled start |
+| crxxx_ActualEnd| actual end |
+| crxxx_ActualStart| actual start |
+| crxxx_Code| code |
+| crxxx_Name| name |
+| crxxx_ScheduledEnd| scheduled end |
+| crxxx_ScheduledStart| scheduled start |
 
-11. Leave all the rest of the fields to **Not Set**.
+16. Click **Next**.
 
-12. In the upper right corner of the screen, click **Save changes**.
+17. Select **Refresh manually**.
 
-13. On the **Import data** screen, verify that the mapping status says “Mapping was successful”.
-
-14. Click **Import** in the upper right corner to complete the data import.
+18. Click **Publish**.
 
 **Note:** It can take several minutes for your data to import into your table. Don’t worry if you get a few errors, that is normal, and will not impact the rest of the course.
 
-15. Click **X** to close the import data panel.
-
-### Task \#2: Verify Data Import
+### Task \#3: Verify Data Import
 
 1. After your data has been imported, use the navigation at the left of the screen to select the **Visit** table again.
 
