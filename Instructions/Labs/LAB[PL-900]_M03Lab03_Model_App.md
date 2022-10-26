@@ -65,7 +65,7 @@ If you do not see the Visit table, make sure you are in the correct environment 
 
 5. On the right side of the screen on the Properties panel, select the **Display Name** field, and change it to **Main Information**.
 
-6. Select the **Table Columns** from the left hand navigation pane and add the following fields below the **Owner** field by dragging columns to the form or simply clicking column names:
+6. Select the **Table Columns** from the left navigation pane and add the following fields below the **Owner** field by dragging columns to the form or simply clicking column names:
 
 	1. **Visitor**
 
