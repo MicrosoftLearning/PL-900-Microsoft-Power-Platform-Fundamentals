@@ -166,7 +166,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 ### Task \#1.1: Load Excel file to OneDrive
 
-1. You should have the **Visits.xlsx** file stored on your Desktop. Download [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) if you do not.
+1. You should have the **Visits.xlsx** file stored on your virtual machine in **C:/LabFiles**. Download [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) if you do not.
 
 2. If not already signed in, sign in to [https://make.powerapps.com](https://make.powerapps.com/).
 
