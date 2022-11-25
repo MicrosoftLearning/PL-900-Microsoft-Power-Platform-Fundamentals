@@ -70,7 +70,7 @@ Congratulations, you have successfully created a Power App from a Dataverse tabl
 
 In this task, you will customize the header text on each of the three screens for your app (Browse, Detail, and Edit) and change the app theme.
 
-1.  You are on the Browse screen. Select the **Visits** label on the screen.
+1.  You are on the Browse screen. Select the **LblAppName1** label using thre Tree view in the left-hand navigation.
 
 1.  On the right side of the screen, under the Properties tab, update the **Text** control property to **“Bellows College Visits”**.
 
@@ -80,7 +80,7 @@ In this task, you will customize the header text on each of the three screens fo
 
 1.  Using the Tree view in the left-hand navigation, select **DetailScreen1**.
 
-1.  Select the **Visits** label on the screen.
+1.  Select the **LblAppName2** label using thre Tree view in the left-hand navigation.
 
 1.  On the right side of the screen, under the properties tab, update the **Text** control property to **“Visit Details”**.
 
@@ -88,7 +88,7 @@ In this task, you will customize the header text on each of the three screens fo
 
 1.  Using the Tree view in the left-hand navigation, select **EditScreen1** (you may need to scroll down to see this on the Tree view).
 
-1.  Select the **Visits** label on the screen.
+1.  Select the **LblAppName3** label using thre Tree view in the left-hand navigation.
 
 1.  On the right side of the screen, under the properties tab, replace the text Table1 in the **Text** control property with **“Edit Details”**.
 
@@ -130,3 +130,5 @@ Congratulations! You have created and configured your first canvas app.
 ## Challenges
 
 - Add the following columns to the forms in DetailScreen1 and EditScreen1: Actual Start, Actual End, Code, Scheduled Start, & Scheduled End
+- Remove Created On field from the forms in DetailScreen1 and EditScreen1.
+- Arrange columns in DetailScreen1 and EditScreen1 as follows: Code, Name, Scheduled Start, Scheduled End, Actual Start, Actual End
