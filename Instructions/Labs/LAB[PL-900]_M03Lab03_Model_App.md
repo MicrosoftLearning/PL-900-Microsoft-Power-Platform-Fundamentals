@@ -129,21 +129,23 @@ IMPORTANT: Make sure that you do not close the Active Visits view, as we will be
 
 3. Click **Edit filters** link in the Properties panel.
 
-4. Click **Add**, select **Add row**.
+4. Click the **…** on the **Status** row and click **Delete** to delete that filter condition.
 
-5. Select **Scheduled Start** as a field, then select **Today** as the condition in the drop-down.
+5. Click **Add**, select **Add row**.
 
-6. Click the **…** on the **Status** row and click **Delete** to delete that filter condition.
+6. Select **Scheduled Start** as a field, then select **Today** as the condition in the drop-down.
 
-7. Press **Ok** to save the condition. The view is now filtered to show only records where the Scheduled Start date is today.
+7. Click the **…** on the **Status** row and click **Delete** to delete that filter condition.
 
-8. Add **Actual Start** and **Actual End** fields to the view.
+8. Press **Ok** to save the condition. The view is now filtered to show only records where the Scheduled Start date is today.
+
+9. Add **Actual Start** and **Actual End** fields to the view.
 
 **Note:** Since we no longer filter on the view status, we will get all today’s visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
 
-9. Click **Save**.
+10. Click **Save**.
 
-10. Click **Publish** and wait for the publishing to complete.
+11. Click **Publish** and wait for the publishing to complete.
 
 ## Exercise 2: Create Model-driven app
 
