@@ -233,7 +233,7 @@ Now that we have all the necessary components added to your model-driven applica
 
 	1. Provide **First Name** as John and **Last Name** as Doe.
 
-	1. Provide your personal email as **Email**. This will be used in a future lab where you will receive an email.
+	1. Provide your personal or work email as **Email**. This will be used in a future lab where you will receive an email.
 
 	1. Click **Save & Close**.
 
