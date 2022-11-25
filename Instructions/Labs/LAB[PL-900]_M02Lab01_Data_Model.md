@@ -172,7 +172,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 3. Select your **[my initials] Practice** environment at the top right if it is not already selected.
 
-4. Click on the Waffle button in the upper left corner to change applications and select **OneDrive**. (It may take a moment for your OneDrive to be set up. Click Your OneDrive is ready when you see it on the screen.)
+4. Click on the App Launcher button in the upper left corner to change applications and select **OneDrive**. (It may take a moment for your OneDrive to be set up. Click Your OneDrive is ready when you see it on the screen.)
 
 5. Click **Upload** from the top menu and select **Files**.
 
