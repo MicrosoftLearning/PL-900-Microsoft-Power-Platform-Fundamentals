@@ -30,7 +30,7 @@ complete the project:
 - Completion of **Module 0 Lab 0 - Validate lab environment**
 - Completion of **Module 2 Lab 1 - Data Modeling**
 - Completion of **Module 2 Lab 3 - How to build a model-driven app**
-- John Doe contact created with a personal email address populated
+- John Doe contact created with a personal email address populated.
 
 ## Exercise 1: Create Visit Notification flow
 
@@ -163,7 +163,7 @@ Leave this flow tab open for the next task. You flow should look approximately l
 
     -   **Scheduled End:** Tomorrow at 9:00 AM
 
-8. Select the **Save and Close** button.
+8. Select the **Save & Close** button.
 
 9. Navigate to the browser tab with your flow test running. After a short delay, you should see the flow running. This is where you can catch any issues in the flow or confirm that it ran successfully.
 
@@ -171,4 +171,4 @@ After a short delay, you should see an email in your inbox, since you populated 
 
 ## Challenges
 
-- Play around with the formatting on the email. How can you make it more professional looking?
+- Play around with the formatting on the email. How can you make it look more professional?
