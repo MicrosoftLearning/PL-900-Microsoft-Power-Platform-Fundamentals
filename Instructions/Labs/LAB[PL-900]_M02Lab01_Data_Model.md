@@ -172,7 +172,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 3. Select your **[my initials] Practice** environment at the top right if it is not already selected.
 
-4. Click on the Waffle button in the upper left corner to change applications and select **OneDrive**. (It may take a moment for your OneDrive to be set up. Click Your OneDrive is ready when you see it on the screen.)
+4. Click on the Waffle button in the upper left corner to change applications and select **OneDrive**. (It may take a moment for your OneDrive to be set up. Click **Your OneDrive is ready** when you see it on the screen.)
 
 5. Click **Upload** from the top menu and select **Files**.
 
@@ -212,14 +212,14 @@ We would like to assign each visit a unique number that can be easily entered an
 
 15. On the **Column Mapping**. Map the Columns to their corresponding destination columns.
 
-| Destination columns| Source values |
-| - | - |
-| crxxx_ActualEnd| actual end |
-| crxxx_ActualStart| actual start |
-| crxxx_Code| code |
-| crxxx_Name| name |
-| crxxx_ScheduledEnd| scheduled end |
-| crxxx_ScheduledStart| scheduled start |
+| Destination columns  | Source values   |
+|:---------------------|:----------------|
+| crxxx_ActualEnd      | actual end      |
+| crxxx_ActualStart    | actual start    |
+| crxxx_Code           | code            |
+| crxxx_Name           | name            |
+| crxxx_ScheduledEnd   | scheduled end   |
+| crxxx_ScheduledStart | scheduled start |
 
 16. Click **Next**.
 

@@ -141,7 +141,7 @@ IMPORTANT: Make sure that you do not close the Active Visits view, as we will be
 
 **Note:** Since we no longer filter on the view status, we will get all today’s visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
 
-9. Click **Save**.
+9. Click **Save** and wait until the changes are saved.
 
 10. Click **Publish** and wait for the publishing to complete.
 
@@ -169,7 +169,7 @@ For simplicity and time’s sake, we will not be addressing some of the Visit co
 
 4. After your new model-driven application loads, select the **+ Add Page** button.
 
-5. On the Add Page screen, choose **Table based view and form**, and then select the **Next** button.
+5. On the Add Page screen, choose **Dataverse table**, and then select the **Next** button.
 
 6. Add the following tables:
 
@@ -183,7 +183,7 @@ For simplicity and time’s sake, we will not be addressing some of the Visit co
 
 9. In the Navigation Pane, select **Group 1** below where it says Navigation bar. You may need to expand the menu on the left.
 
-10. On the right side of the screen, in the **Display Options** section, change the **Title** property to **Security**.
+10. On the right side of the screen, in the **Display options** section, change the **Title** property to **Security**.
 
 ### Task #2: Edit your app
 
@@ -213,7 +213,7 @@ Now that we have all the necessary components added to your model-driven applica
 
 12. Select the **Active Visits** view. 
 
-13. Select **Save**.
+13. Select **Save** and wait until the changes are saved.
 
 14. Once the **Save** is complete, select the **Publish** button to publish your changes.
 
@@ -227,7 +227,7 @@ Now that we have all the necessary components added to your model-driven applica
 
 	1. The app should open to the **My Active Contacts** view. If it does not, select Contacts on the left-hand navigation.
 
-	1. Click **New** from the top menu.
+	1. Click **+ New** from the top menu.
 
 	1. Provide **First Name** as John and **Last Name** as Doe.
 
@@ -255,7 +255,7 @@ Now that we have all the necessary components added to your model-driven applica
 
 - Click **Save & Close**. This will create the Visit and you should be able to see it on the Active Visits View.
 
-- Change view to **Today’s Visits** by using th drop down next to **Active Visits**. You should no longer see the new visit in the view, since it is scheduled for tomorrow.
+- Change view to **Today’s Visits** by using the drop down next to **Active Visits**. You should no longer see the new visit in the view, since it is scheduled for tomorrow.
 
 4. You may add more test records.
 
@@ -267,4 +267,4 @@ Congratulations! You have created and configured your first model-driven app.
 
 ## Challenges
 
-- Select specific views and forms for Contacts
+- Select specific views and forms for Contacts.

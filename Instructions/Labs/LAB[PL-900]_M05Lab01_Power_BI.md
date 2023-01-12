@@ -44,7 +44,7 @@ We will follow the below steps to design and create a Power BI dashboard:
 
 ### Task \#1: Prepare Power BI service
 
-1.  Download [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) and save on your computer.
+1.  You should have a visits.pbix file stored on your virtual machine in C:/LabFiles. Download [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) and save on your computer, if it's not already there.
 
 2.  Navigate to <https://app.powerbi.com/> and sign in if needed.
 
