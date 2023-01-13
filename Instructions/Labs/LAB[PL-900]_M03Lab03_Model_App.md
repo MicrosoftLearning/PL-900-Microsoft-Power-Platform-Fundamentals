@@ -57,7 +57,7 @@ Things to consider before you begin
 
 3. Using the navigation on the left, expand **Dataverse**, select **Tables**, and click to open your **Visit** table.
 
-If you do not see the Visit table, make sure you are in the correct environment (step 2).
+If you do not see the Visit table, make sure you are in the correct environment (Step 2).
 
 4. Under the **Data experiences** section, select **Forms** and click to open the Information form with **Main** form type.
 
@@ -113,9 +113,14 @@ In this task, we will modify the default Active Visits view and create a new vie
 
 4. Resize the individual column widths to fit the data.
 
-5. Click **Save** and wait until the changes are saved.
+5. Under **Sort by ...** select the X to remove **Name** and instead, select **Scheduled Start**.
 
-6. Click **Publish** and wait for the publishing to complete.
+6. Select **Scheduled Start** to change the sort to **Newer to Older**.
+
+7. Click **Save** and wait until the changes are saved.
+
+8. Click **Publish** and wait for the publishing to complete.
+
 
 ### Task #3: Create new view for today’s visits
 
@@ -145,11 +150,14 @@ IMPORTANT: Make sure that you do not close the Active Visits view, as we will be
 
 10. Click **Publish** and wait for the publishing to complete.
 
+
+
 ## Exercise 2: Create Model-driven app
 
 **Objective:** In this exercise, you will create a model-driven app, customize the sitemap, and test the app.
 
 For simplicity and time’s sake, we will not be addressing some of the Visit columns in this lab.
+
 
 ### Task \#1: Create app
 
@@ -185,43 +193,20 @@ For simplicity and time’s sake, we will not be addressing some of the Visit co
 
 10. On the right side of the screen, in the **Display options** section, change the **Title** property to **Security**.
 
-### Task #2: Edit your app
+11. In the Navigation Pane, under the Security group, select **SubArea1**. 
 
-Now that we have all the necessary components added to your model-driven application, we will now organize items.
+12. Select the **Ellipsis**, and from the menu that appears, select **Remove from navigation**. 
 
-1. In the Navigation Pane, under the security group, select **SubArea1**.
+13. Select **Save** and wait until the changes are saved. 
 
-2. Select the **Ellipsis**, and from the menu that appears, select **Remove SubArea1**.
+14. Once the **Save** is complete, select the **Publish** button to publish your changes. 
 
-3. Using the navigation on the left side of the screen, select **Pages**.
 
-4. Locate and expand **Visit** on the Pages pane.
-
-5. Select **Visit form**.
-
-6. On the right side of the screen, select **Add form**.
-
-7. Select the **Main Information** form.
-
-8. Under **Visit** on the Pages pane, select **Visit view**.
-
-9. On the right side of the screen, select **Add view**.
-
-10. Select the **Today’s Visits** view.
-
-11. Select **Add view** again. 
-
-12. Select the **Active Visits** view. 
-
-13. Select **Save** and wait until the changes are saved.
-
-14. Once the **Save** is complete, select the **Publish** button to publish your changes.
-
-### Task #3: Test Application
+### Task #2: Test app
 
 1. Start the application
 
-	1. Select **Play** to open your app in a new window.
+	1. Select the **Play** button, the new app will load in a new tab.
 
 2. Create new Contact
 
@@ -264,6 +249,7 @@ Your running app should look approximately like the following:
 ![](media/3-model-driven-app.png)
 
 Congratulations! You have created and configured your first model-driven app.
+
 
 ## Challenges
 
