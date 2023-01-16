@@ -57,7 +57,7 @@ Things to consider before you begin
 
 3. Using the navigation on the left, expand **Dataverse**, select **Tables**, and click to open your **Visit** table.
 
-If you do not see the Visit table, make sure you are in the correct environment (Step 2).
+   If you do not see the Visit table, make sure you are in the correct environment (Step 2).
 
 4. Under the **Data experiences** section, select **Forms** and click to open the Information form with **Main** form type.
 
@@ -115,7 +115,7 @@ In this task, we will modify the default Active Visits view and create a new vie
 
 5. Under **Sort by ...** select the X to remove **Name** and instead, select **Scheduled Start**.
 
-6. Select **Scheduled Start** to change the sort to **Newer to Older**.
+6. Select **Scheduled Start** to change the sort order to **Newer to Older**.
 
 7. Click **Save** and wait until the changes are saved.
 
@@ -149,7 +149,6 @@ IMPORTANT: Make sure that you do not close the Active Visits view, as we will be
 9. Click **Save** and wait until the changes are saved.
 
 10. Click **Publish** and wait for the publishing to complete.
-
 
 
 ## Exercise 2: Create Model-driven app
@@ -249,7 +248,6 @@ Your running app should look approximately like the following:
 ![](media/3-model-driven-app.png)
 
 Congratulations! You have created and configured your first model-driven app.
-
 
 ## Challenges
 
