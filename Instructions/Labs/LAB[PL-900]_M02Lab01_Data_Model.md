@@ -15,8 +15,7 @@ Campus administration would like to modernize their visitor registration system 
 
 Throughout this course, you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus.
 
-In this lab you will access your environment, create a Microsoft Dataverse
-database, and create a solution to track your changes. You will also create a data model to support the following requirements:
+In this lab you will access your environment, create a Microsoft Dataverse database. You will also create a data model to support the following requirements:
 
 - R1 – Track information for scheduled campus visits
 
@@ -25,6 +24,7 @@ database, and create a solution to track your changes. You will also create a da
 - R3 – Schedule, record, and manage visits
 
 Finally, you will import sample data into Microsoft Dataverse.
+
 
 ## High-level lab steps
 
@@ -42,9 +42,11 @@ To prepare your learning environments you will:
 
 - Naming conventions - type names carefully.
 
+
 ## Exercise 1: Create New Table
 
 **Objective:** In this exercise, you will create new custom table for Visits.
+
 
 ### Task \#1: Create Visit Table and Columns
 
