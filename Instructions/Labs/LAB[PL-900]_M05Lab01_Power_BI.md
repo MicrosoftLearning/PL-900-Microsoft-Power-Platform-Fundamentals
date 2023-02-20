@@ -46,21 +46,24 @@ We will follow the below steps to design and create a Power BI dashboard:
 
 1.  You should have a visits.pbix file stored on your virtual machine in C:/LabFiles. Download [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) and save on your computer, if it's not already there.
 
-2.  Navigate to <https://app.powerbi.com/> and sign in if needed.
+2.  Open a new tab and navigate to <https://app.powerbi.com/> and sign in if needed.
 
-3.  In the lower Left corner of the screen, select **Get Data**
+3.  Select **My workspace** from the left side navigation.
 
-4.  Select the **Get** button under **Files**, in the **Create new content** section.
+5.  Select **Upload** then **Browse**.
 
-5.  Select **Local File**.
+6.  Locate and select the **visits.pbix** file you have downloaded earlier. 
 
-6.  Locate and select **visits.pbix** file you've downloaded earlier.
+7.  Once the data load is complete, select the **visits** report.
 
-7.  Once data load is complete, expand **My workspace** and select **visits** report (notice that the Type is set to **Report**).
+    Note that the Type is set to **Report**, do not select the Dataset.
 
-8.  Click **Edit**. If **Edit** menu item is not visible click **...** and then select **Edit**.
+8.  Select **Edit**. 
+
+    If the **Edit** menu item is not visible, select the ellipsis **...** and then select **Edit**.
 
 You have now setup Power BI service to use for your labs.
+
 
 ### Task \#2: Create Chart and Time Visualizations
 
