@@ -40,11 +40,11 @@ We will follow the below outline to design the canvas app:
 
 ### Task \#1: Create the Visits app
 
-1.  Navigate to <https://make.powerapps.com>. You may need to reauthenticate - click **Sign in** and follow instructions if needed.
+1.  Navigate to <https://make.powerapps.com>. You may need to reauthenticate - select **Sign in** and follow instructions if needed.
 
 2.  Select your **[my initials] Practice** environment at the top right if it is not already selected.
 
-3.  If necessary, click the **Home** icon on the left side of the screen. Under the **Start from** section, select **Dataverse**.
+3.  If necessary, select the **Home** icon on the left side of the screen. Under the **Start from** section, select **Dataverse**.
 
 4.  Select your Dataverse connection.
 
