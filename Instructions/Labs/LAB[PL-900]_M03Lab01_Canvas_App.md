@@ -127,6 +127,4 @@ In this task, you will test out your new app.
 
 Congratulations! You have created and configured your first canvas app.
 
-## Challenges
 
-- Add the following columns to the forms in DetailScreen1 and EditScreen1: Actual Start, Actual End, Code, Scheduled Start, & Scheduled End
