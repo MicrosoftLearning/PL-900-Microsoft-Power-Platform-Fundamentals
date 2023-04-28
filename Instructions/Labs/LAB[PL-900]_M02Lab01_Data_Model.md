@@ -8,8 +8,7 @@ lab:
 
 ## Scenario
 
-Bellows College is an educational organization with multiple buildings on
-campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
 Campus administration would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
 
@@ -25,52 +24,51 @@ In this lab you will access your environment, create a Microsoft Dataverse datab
 
 Finally, you will import sample data into Microsoft Dataverse.
 
-
-## High-level lab steps
+High-level lab steps
 
 To prepare your learning environments you will:
 
-- Refer to the [data model document](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png) for the metadata description (tables and relationships). You can hold CTRL+click or right click the link to open the data model document in a new window.
-- Create Visit table
-- Import Visit data using an Excel spreadsheet
+- Refer to the [data model document](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus Management.png) for the metadata description (tables and relationships). You can hold CTRL+click or right click the link to open the data model document in a new window.
 
-## Prerequisites
+- create Visit table
+
+- import Visit data using an Excel spreadsheet
+
+Prerequisites
 
 - Completion of **Module 0 Lab 0 - Validate lab environment**
 
-## Things to consider before you begin
+Things to consider before you begin
 
 - Naming conventions - type names carefully.
 
-
-## Exercise 1: Create New Table
+Exercise 1: Create New Table
 
 **Objective:** In this exercise, you will create new custom table for Visits.
 
-
-### Task \#1: Create Visit Table and Columns
+Task #1: Create Visit Table and Columns
 
 The **Visit** table will contain information about the campus visits including the visitor, scheduled times and actual times of each visit.
 
 We would like to assign each visit a unique number that can be easily entered and interpreted by a visitor when asked during the visit check-in process.
 
-> We use **Time zone independent** behavior to record date and time information, because time of a visit is always local to the location of the  building and should not change when viewed from a different time zone.
+We use **Time zone independent** behavior to record date and time information, because time of a visit is always local to the location of the building and should not change when viewed from a different time zone.
 
 1. Sign into [https://make.powerapps.com](https://make.powerapps.com/) (if you are not already signed in)
 
-1. Select your **[my initials] Practice** environment at the top right if it is not already selected.
+2. Select your **[my initials] Practice** environment at the top right if it is not already selected.
 
-1. Using the navigation on the left, expand **Dataverse**, and select **Tables**.
+3. Using the navigation on the left, select **Tables**.
 
-1. Click **+ New table**.
+4. Click **+ New table**, From the menu that appears, select **New Table**. 
 
-1. Enter **Visit** for **Display Name**.
+5. Enter **Visit** for **Display Name**.
 
-1. Click **Save**.
+6. Click **Save**.
 
-1. Under the **Schema** section, select **Columns**.
+7. Under the **Schema** section, select **Columns**.
 
-1. Create  Scheduled Start column
+8. Create Scheduled Start column
 
 	- Select **+ New column**.
 
@@ -86,7 +84,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 	- Click **Save**.
 
-1. Create Scheduled End column
+9. Create Scheduled End column
 
 	- Click **+ New column**.
 
@@ -102,7 +100,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 	- Click **Save**.
 
-1. Create Actual Start column
+10. Create Actual Start column
 
 	- Click **+ New column**.
 
@@ -118,7 +116,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 	- Click **Save**.
 
-1. Create Actual End column
+11. Create Actual End column
 
 	- Click **+ New column**.
 
@@ -134,7 +132,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 	- Click **Save**.
 
-1. Create Code column
+12. Create Code column
 
 	- Click **+ New column**.
 
@@ -146,7 +144,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 	- Click **Save**.
 
-1. Create Visitor lookup column
+13. Create Visitor lookup column
 
 	- Click **+ New column**.
 
@@ -162,11 +160,11 @@ We would like to assign each visit a unique number that can be easily entered an
 
 	- Click **Save**.
 
-## Exercise 2: Import Data
+Exercise 2: Import Data
 
 **Objective:** In this exercise you will import sample data into the Dataverse database.
 
-### Task \#1.1: Load Excel file to OneDrive
+Task #1.1: Load Excel file to OneDrive
 
 1. You should have the **Visits.xlsx** file stored on your virtual machine in **C:/LabFiles**. Download [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) if you do not.
 
@@ -180,15 +178,15 @@ We would like to assign each visit a unique number that can be easily entered an
 
 6. Locate and select the **Visits.xlsx** file and click **Open**.
 
- **Note:** This file is located in the **All Files** folder on your machine.
- 
-### Task \#1.2: Create a dataflow
+**Note:** This file is located in the **All Files** folder on your machine.
+
+Task #1.2: Create a dataflow
 
 1. If not already signed in, sign in to [https://make.powerapps.com](https://make.powerapps.com/).
 
 2. Select your **[my initials] Practice** environment at the top right if it is not already selected.
 
-3. Using the navigation on the left, expand **Dataverse**, and select **Tables**.
+3. Using the navigation on the left, select **Tables**.
 
 4. Locate and open the **Visit** table you created in the previous exercise.
 
@@ -214,24 +212,27 @@ We would like to assign each visit a unique number that can be easily entered an
 
 15. On the **Column Mapping**. Map the Columns to their corresponding destination columns.
 
-| Destination columns  | Source values   |
-|:---------------------|:----------------|
-| crxxx_ActualEnd      | actual end      |
-| crxxx_ActualStart    | actual start    |
-| crxxx_Code           | code            |
-| crxxx_Name           | name            |
-| crxxx_ScheduledEnd   | scheduled end   |
-| crxxx_ScheduledStart | scheduled start |
+ 
 
-16. Click **Next**.
+| **Destination columns**| **Source values** |
+| - |
+| **crxxx_ActualEnd**| actual end |
+| **crxxx_ActualStart**| actual start |
+| **crxxx_Code**| code |
+| **crxxx_Name**| name |
+| **crxxx_ScheduledEnd**| scheduled end |
+| **crxxx_ScheduledStart**| scheduled start |
 
-17. Select **Refresh manually**.
 
-18. Click **Publish**.
+1. Click **Next**.
+
+2. Select **Refresh manually**.
+
+3. Click **Publish**.
 
 **Note:** It can take several minutes for your data to import into your table. Don’t worry if you get a few errors, that is normal, and will not impact the rest of the course.
 
-### Task \#3: Verify Data Import
+Task #3: Verify Data Import
 
 1. After your data has been imported, use the navigation at the left of the screen to select the **Visit** table again.
 
