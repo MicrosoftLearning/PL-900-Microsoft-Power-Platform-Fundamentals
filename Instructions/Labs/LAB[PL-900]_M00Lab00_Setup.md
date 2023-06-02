@@ -6,6 +6,11 @@ lab:
 
 # Lab 0: Validate lab environment
 
+**WWL Tenants - Terms of Use**
+If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training. 
+Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension. 
+Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time. 
+
 ## Scenario
 
 Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
@@ -19,7 +24,7 @@ In this Module 0 lab, you will acquire a Power Platform trial and access the Pow
 
 ## Exercise 1 – Setup
 
-### Task \#1 - Acquire your Microsoft Power Platform trial tenant
+Task #1 - Acquire your Microsoft Power Platform trial tenant
 
 1.  Copy your **Microsoft 365 credentials** from the Authorized Lab Hoster. 
 
@@ -42,7 +47,7 @@ In this Module 0 lab, you will acquire a Power Platform trial and access the Pow
 1.  If you see a prompt to enter contact details, click on **X** to close the pop-up window. 
 
 
-### Task \#2 – Create environment
+Task #2 – Create environment
 
 1.  Navigate to <https://admin.powerplatform.microsoft.com> and log in with your Microsoft 365 credentials if prompted. 
 
@@ -50,7 +55,7 @@ In this Module 0 lab, you will acquire a Power Platform trial and access the Pow
 
 1.  From the left navigation, select **Environments** and select **+ New**. 
 
-    1. For **Name**, enter **[My Initials] Practice** (Example: AJ Practice).
+1. For **Name**, enter **[My Initials] Practice** (Example: AJ Practice).
 
     1. For **Type**, choose **Trial** (Do not select the *Trial
         (subscription-based)* option).
@@ -64,3 +69,4 @@ In this Module 0 lab, you will acquire a Power Platform trial and access the Pow
 1.  Your **Practice** environment should now appear in the list of Environments. 
 
     > Your environment may take a few minutes to provision. Refresh the page if needed.
+

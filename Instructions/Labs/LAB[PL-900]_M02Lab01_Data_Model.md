@@ -6,10 +6,14 @@ lab:
 
 # Lab 1: Data Modeling
 
+**WWL Tenants - Terms of Use**
+If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training. 
+Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension. 
+Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time. 
+
 ## Scenario
 
-Bellows College is an educational organization with multiple buildings on
-campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
 Campus administration would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
 
@@ -25,8 +29,7 @@ In this lab you will create a data model to support the following requirements:
 
 Finally, you will import sample data into Microsoft Dataverse.
 
-
-## High-level lab steps
+High-level lab steps
 
 To prepare your learning environments you will:
 
@@ -39,17 +42,15 @@ To prepare your learning environments you will:
 
 - Completion of **Module 0 Lab 0 - Validate lab environment**
 
-## Things to consider before you begin
+Things to consider before you begin
 
 - Naming conventions - type names carefully.
 
-
-## Exercise 1: Create New Table
+Exercise 1: Create New Table
 
 **Objective:** In this exercise, you will create new custom table for Visits.
 
-
-### Task \#1: Create Visit Table and Columns
+Task #1: Create Visit Table and Columns
 
 The **Visit** table will contain information about the campus visits including the visitor, scheduled times and actual times of each visit.
 
@@ -139,7 +140,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 1.  Select **+ New column**.
 
-1.  Enter **Code** for **Display name**.
+1.  Enter `Code` for **Display name**.
 
 1.  Select **Autonumber** for **Data type**.
 
@@ -164,7 +165,7 @@ We would like to assign each visit a unique number that can be easily entered an
 1.  Select **Save**.
 
 
-## Exercise 2: Import Data
+Exercise 2: Import Data
 
 **Objective:** In this exercise you will import sample data into the Dataverse database.
 
@@ -235,7 +236,7 @@ We would like to assign each visit a unique number that can be easily entered an
     > **Note:** It can take several minutes for your data to import into your table. Don’t worry if you get a few errors, that is normal, and will not impact the rest of the course.
 
 
-### Task \#3: Verify Data Import
+Task #3: Verify Data Import
 
 1.  After your data has been imported, use the navigation at the left of the screen to select **Tables** and open the **Visit** table.
 
