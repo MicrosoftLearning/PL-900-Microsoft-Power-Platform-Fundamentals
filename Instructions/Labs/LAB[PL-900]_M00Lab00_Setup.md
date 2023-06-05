@@ -68,7 +68,7 @@ Task #2 – Create environment
 
 	6. Select **Next** and then edit **Security group.**
 
-	7. Under **Restricted access,** select All Copmany and then select **Done.**
+	7. Under **Restricted access,** select All Company and then select **Done.**
 
 	7. On the next tab, leave all selections as default and select **Save**.
 
