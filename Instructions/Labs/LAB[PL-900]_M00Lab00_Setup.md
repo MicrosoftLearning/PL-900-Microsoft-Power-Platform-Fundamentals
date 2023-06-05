@@ -53,7 +53,7 @@ Task #2 – Create environment
 
 1.  If you see a Welcome pop-up, select **Get Started**. 
 
-1.  From the left navigation, select **Environments** and select **+ New**. 
+3. Select **Environments** and select **+ New**.
 
 1. For **Name**, enter **[My Initials] Practice** (Example: AJ Practice).
 
@@ -66,7 +66,14 @@ Task #2 – Create environment
 
     1. On the next tab, leave all selections as default and select **Save**. 
 
+	6. Select **Next** and then edit **Security group.**
+
+	7. Under **Restricted access,** select All Company and then select **Done.**
+
+	7. On the next tab, leave all selections as default and select **Save**.
+
 1.  Your **Practice** environment should now appear in the list of Environments. 
 
     > Your environment may take a few minutes to provision. Refresh the page if needed.
+
 
