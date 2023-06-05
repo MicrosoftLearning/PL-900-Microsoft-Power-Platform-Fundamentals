@@ -54,7 +54,7 @@ Task #2 – Create environment
 
 2. If you see a Welcome popup, click **Get Started**.
 
-3. Select **Environments** and click **+ New**.
+3. Select **Environments** and select **+ New**.
 
 	1. For **Name**, enter **[My Initials] Practice** (Example: AJ Practice).
 
@@ -66,6 +66,10 @@ Task #2 – Create environment
 
 	5. Set **Deploy Sample apps and Data** to **Yes.**
 
-	6. On the next tab, leave all selections as default and click **Save**.
+	6. Select **Next** and then edit **Security group.**
+
+	7. Under **Restricted access,** select All Copmany and then select **Done.**
+
+	7. On the next tab, leave all selections as default and select **Save**.
 
 4. Your **Practice** environment should now show in the list of Environments.
