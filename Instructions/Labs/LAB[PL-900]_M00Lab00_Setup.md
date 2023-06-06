@@ -53,24 +53,21 @@ Task #2 – Create environment
 
 1.  If you see a Welcome pop-up, select **Get Started**. 
 
-3. Select **Environments** and select **+ New**.
+1.  Select **Environments** and select **+ New**.
 
-1. For **Name**, enter **[My Initials] Practice** (Example: AJ Practice).
+    1. For **Name**, enter **[My Initials] Practice** (Example: AJ Practice).
 
-    1. For **Type**, choose **Trial** (Do not select the *Trial
-        (subscription-based)* option).
+    1. For **Type**, choose **Trial** (Do not select the *Trial (subscription-based)* option).
 
     1. Change the toggle for **Add a Dataverse data store?** to **Yes**. 
 
     1. Leave all other selections as default and select **Next**. 
 
-    1. On the next tab, leave all selections as default and select **Save**. 
+    1. Click the **+ Select** button under the **Security group** heading.
 
-	6. Select **Next** and then edit **Security group.**
+    1. Select the checkbox for the **None** item under the **Open access** heading and then select **Done**.
 
-	7. Under **Restricted access,** select All Company and then select **Done.**
-
-	7. On the next tab, leave all selections as default and select **Save**.
+    1. Leave the remaining options at their defaults and select **Save**.
 
 1.  Your **Practice** environment should now appear in the list of Environments. 
 
