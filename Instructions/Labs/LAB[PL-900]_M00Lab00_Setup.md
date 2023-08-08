@@ -28,28 +28,20 @@ Task #1 - Acquire your Microsoft Power Platform trial tenant
 
 1.  Copy your **Microsoft 365 credentials** from the Authorized Lab Hoster. 
 
-1.  Navigate to <https://powerapps.microsoft.com> and click **Start free**.
+1.  Navigate to <https://powerapps.microsoft.com> and select **Start free**.
 
 1.  Under **Let's get started**, enter the email address provided by the Authorized Lab Hoster and select **Start your free trial**. 
 
 1.  If you see a prompt that you have an existing account with Microsoft. Select **Sign in**. 
 
-1.  Enter the password provided by the Authorized Lab Hoster and select **Sign in**.
+1.  Enter the password provided by the Authorized Lab Hoster and select **Sign in**. 
 
 1.  Select **Yes** to stay signed in. 
-
-1.  Do not change country. 
-
-1.  For **Phone number**, enter `0123456789` and select **Submit**. 
-
-1.  At the confirmation screen, select **Get Started**. 
-
-1.  If you see a prompt to enter contact details, click on **X** to close the pop-up window. 
 
 
 Task #2 – Create environment
 
-1.  Navigate to <https://admin.powerplatform.microsoft.com> and log in with your Microsoft 365 credentials if prompted. 
+1.  Navigate to <https://admin.powerplatform.microsoft.com> and log in with your Microsoft 365 credentials, if prompted. 
 
 1.  If you see a Welcome pop-up, select **Get Started**. 
 
@@ -63,14 +55,13 @@ Task #2 – Create environment
 
     1. Leave all other selections as default and select **Next**. 
 
-    1. Click the **+ Select** button under the **Security group** heading.
+    1. Under the the **Security group** heading, use the **+ Select** button.
 
-    1. Select the checkbox for the **None** item under the **Open access** heading and then select **Done**.
+    1. Select the checkbox for the **None** item, under the **Open access** heading and then select **Done**.
 
-    1. Leave the remaining options at their defaults and select **Save**.
+    1. Leave the remaining options at their defaults and select **Save**. 
 
 1.  Your **Practice** environment should now appear in the list of Environments. 
 
     > Your environment may take a few minutes to provision. Refresh the page if needed.
-
 

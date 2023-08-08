@@ -177,7 +177,7 @@ Exercise 2: Import Data
 
 3.  Select your **[my initials] Practice** environment at the top right if it is not already selected.
 
-4.  Select the Waffle button in the upper left corner to change applications and select **OneDrive**. (It may take a moment for your OneDrive to be set up. Click **Your OneDrive is ready** when you see it on the screen.)
+4.  Select the Waffle button in the upper left corner to change applications and select **OneDrive**. (It may take a moment for your OneDrive to be set up. Select **Your OneDrive is ready** when you see it on the screen.)
 
 5.  Select **Upload** from the top menu and select **Files**.
 
@@ -196,7 +196,7 @@ Exercise 2: Import Data
 
 4.  Open the **Visit** table created in the previous exercise. 
 
-5.  Using the menu at the top, select **Import** > Import data**.
+5.  Using the menu at the top, select **Import** > **Import data**.
 
 6.  In the **Choose data source** dialog, select **Excel workbook**.
 
@@ -206,7 +206,7 @@ Exercise 2: Import Data
 
 9.  Select **Next**. 
 
-10. Under **Choose Data** check the box next to the **Visits** Excel workbook. 
+10. On the **Power query** > **Choose data** screen, check the **Visits** Excel workbook. 
 
 11. Select **Next**. Do not navigate away from this page.
 
@@ -216,7 +216,7 @@ Exercise 2: Import Data
 
 14. On the **Destination table** drop-down menu, select the table **crXXX_Visit** (Where XXX is a random set of letters and numbers)
 
-15. On the **Column Mapping**. Map the Columns to their corresponding destination columns.
+15. On the **Column Mapping** section, map the Columns to their corresponding destination columns:
 
     | Destination columns  | Source values   |
     |:---------------------|:----------------|
@@ -243,3 +243,4 @@ Task #3: Verify Data Import
 2.  Verify that you see the imported data under the **Visit columns and data** section.
 
 Congratulations, you have successfully created a new table and imported data.
+
