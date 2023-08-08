@@ -84,29 +84,29 @@ In this task, you will customize the header text on each of the three screens fo
 
 1.  On the right side of the screen, under the Properties tab, update the **Text** control property to `Bellows College Visits`
 
-1.  In the properties, change the **Font size** to **24**. 
+1.  In the **Properties** tab, change the **Font size** to **24**. 
 
-1.  Click in the blank background of the screen to see the updated text on your Browse screen. 
+1.  Select the blank background of the screen to see the updated text on your Browse screen. 
 
-1.  Using the Tree view in the left-hand navigation, select **DetailScreen1**. 
+1.  Using the **Tree view** in the left navigation, select **DetailScreen1**. 
 
 1.  Select the **Visits** label on the screen.
 
-1.  On the right side of the screen, under the properties tab, update the **Text** control property to `Visit Details`
+1.  On the right side of the screen, under the **Properties** tab, update the **Text** control property to `Visit Details`
 
 1.  Click in the blank background of the screen to see the updated text on your Details screen.
 
-1.  Using the Tree view in the left-hand navigation, select **EditScreen1** (you may need to scroll down to see this on the Tree view).
+1.  Using the **Tree view** in the left navigation, select **EditScreen1** (You may need to scroll down to see this on the Tree view).
 
 1.  Select the **Visits** label on the screen.
 
-1.  On the right side of the screen, under the properties tab, replace the text in the **Text** control property with `Edit Details`
+1.  On the right side of the screen, on the **Properties** tab, replace the text in the **Text** control property with `Edit Details`
 
 1.  Click in the blank background of the screen to see the updated text on your Edit screen.
 
-1. Using the Tree view in the left-hand navigation, select the **BrowseScreen1**.
+1.  Using the **Tree view**, in the left navigation, select **BrowseScreen1**.
 
-1. On the command toolbar, select the **Theme** button and from the list that appears select the **Red** theme color.
+1.  On the command toolbar, select the **Theme** button and from the list that appears, select the **Red** theme color.
 
 
 ### Task \#3: Test your Visits app
@@ -115,11 +115,9 @@ In this task, you will test out your new app.
 
 1.  With your application open in the App Designer, select **Settings**, in the **General** section update the name of your app to `Visits App` select the **X** to close the settings screen and then select **Save**.
 
-2.  Select the **back** arrow to return to your app.
+2.  Using the navigation on the left, select **BrowseScreen1**.
 
-3.  Using the navigation on the left, select **BrowseScreen1**.
-
-4.  In the app designer, select the **preview the app** button (Play icon) on the command bar. *(You can also preview the app by pressing F5 on your keyboard.)*
+3.  In the app designer, select the **Preview the app** button (Play icon) on the command bar. *(You can also preview the app by pressing F5.)*
 
 4.  Once the app opens, in the **Search items** field, enter the text `Maria`
     *(Notice how the items in the gallery filter based on what is typed in the
@@ -136,5 +134,4 @@ In this task, you will test out your new app.
 8.  On the top right of the screen, select the **X** icon to close preview mode and return to the canvas app editor.
 
 Congratulations! You have created and configured your first canvas app.
-
 
