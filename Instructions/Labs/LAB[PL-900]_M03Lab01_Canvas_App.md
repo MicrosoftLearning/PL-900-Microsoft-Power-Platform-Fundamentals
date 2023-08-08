@@ -49,7 +49,7 @@ We will follow the below outline to design the canvas app:
 
 2.  Select your **[my initials] Practice** environment at the top right if it is not already selected.
 
-3.  If necessary, select the **Home** icon on the left side of the screen. Under the **Start from** section, select **Dataverse**.
+3.  Select **+ Create** from the left navigation of the screen. Under the **Start from** section, select **Dataverse**.
 
 4.  Select your Dataverse connection.
 
@@ -57,22 +57,23 @@ We will follow the below outline to design the canvas app:
     > - Select **+New connection**
     > - Locate **Microsoft Dataverse**
     > - Select **Create**
+    > - **Sign in** and select **Allow access**
 
 5.  Locate and select the **Visits** table you created in the previous lab.
 
 6.  Select the **Connect** button in the bottom right corner.
 
-7.  After your app is created, On the Welcome to Power Apps Studio screen, select the **Don’t show me this again** box, and then select **Skip**.
+7.  After your app is created, on the Welcome to Power Apps Studio screen, select **Don’t show me this again**, and then select **Skip**.
 
-8.  After creation has completed, is should look like the image below.
+8.  After creation has completed, the Canvas app should look like the image below:
 
     ![Canvas app created from Visit data.](media/2-canvas-app-from-data.png)
 
-9. In the app designer, select the **preview the app** button (Play icon) on the command bar. *(You can also preview the app by pressing F5 on your keyboard.)* Take a look around and see how your app looks out-of-the-box.
+9.  In the app designer, select the **Preview the app** button (Play icon) on the command bar. *(You can also preview the app by pressing F5.)* Take a look around and see how your app looks out-of-the-box.
 
 10. Close the app preview by selecting the **X** in the upper right of the screen.
 
-Congratulations, you have successfully created a Power App from a Dataverse table. The next step in the process is to tailor the app to match your college's branding. The next series of steps will walk you through providing some extra customization to the app.
+Congratulations, you have successfully created a Power App from a Dataverse table. The next step in the process is to tailor the app to match your Bellows College branding. The next series of steps will walk you through providing some extra customization to the app.
 
 
 ### Task \#2: Modify and theme the newly created app
