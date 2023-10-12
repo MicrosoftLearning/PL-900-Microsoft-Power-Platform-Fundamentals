@@ -21,7 +21,7 @@ Throughout this course, you will build applications and perform automation to en
 
 In this lab, you will build a Power Apps model-driven app to allow the backoffice campus staff to manage visit records across the entire campus.
 
-High-level lab steps
+## High-level lab steps
 
 As part of creating the model-driven app, you will complete the following:
 
@@ -39,7 +39,7 @@ We will work with the following components:
 
 Both will be integrated to the model-driven app for a better user-experience.
 
-Prerequisites
+## Prerequisites
 
 - Completion of **Module 0 Lab 0 - Validate lab environment**
 
@@ -53,11 +53,11 @@ Things to consider before you begin
 
 - What customizations can be made on the sitemap of a model-driven app?
 
-Exercise 1: Customize Views and Forms
+## Exercise 1: Customize Views and Forms
 
 **Objective:** In this exercise, you will customize views and forms of the custom created tables that will be used in the model-driven app.
 
-Task #1: Edit Visit Form
+### Task #1: Edit Visit Form
 
 1.  Sign in to <https://make.powerapps.com> if you are not already signed in.
 
@@ -100,7 +100,7 @@ Task #1: Edit Visit Form
 12. Using the breadcrumbs in the upper left (**Tables** > **Visit** > **Forms**). Select **Visit** to return to the **Visit** Table properties screen. 
 
 
-Task #2: Edit Active Visits view
+### Task #2: Edit Active Visits view
 
 In this task, we will modify the default Active Visits view and create a new view for today’s visits.
 
@@ -127,7 +127,7 @@ In this task, we will modify the default Active Visits view and create a new vie
 7.  Select the **Save and publish** button at the top right and wait for the publishing to complete.
 
 
-Task #3: Create new view for today’s visits
+### Task #3: Create new view for today’s visits
 
 Now, we will clone the view to create a new view for today’s visits.
 
@@ -154,13 +154,13 @@ IMPORTANT: Make sure that you do not close the Active Visits view, as we will be
 9.  Select the **Save and publish** button at the top right and wait for the publishing to complete.
 
 
-Exercise 2: Create Model-driven app
+## Exercise 2: Create Model-driven app
 
 **Objective:** In this exercise, you will create a model-driven app, customize the sitemap, and test the app.
 
 For simplicity and time’s sake, we will not be addressing some of the Visit columns in this lab.
 
-Task #1: Create app
+### Task #1: Create app
 
 1.  Sign into <https://make.powerapps.com>, if you are not already signed in.
 
@@ -199,7 +199,7 @@ Task #1: Create app
 13. Once the **Save** is complete, select the **Publish** button to publish your changes.
 
 
-Task #2: Test app
+### Task #2: Test app
 
 Start the application
 
