@@ -62,7 +62,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 1.  Using the navigation on the left, select **Tables**.
 
-1.  Select **+ New table** and choose **+ New table**. 
+1.  Select **+ New table** and choose **Set advanced properties**. 
 
 1.  For **Display name**, enter `Visit`
 
