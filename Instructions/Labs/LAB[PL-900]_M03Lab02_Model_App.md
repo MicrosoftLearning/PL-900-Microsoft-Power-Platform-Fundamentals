@@ -69,7 +69,8 @@ Things to consider before you begin
 
 4.  Under the **Data experiences** section, select **Forms** and open the **Information** form with **Main** Form type. (**Important:** Make sure you select the form with the form type of **Main**.) 
 
-    **IMPORTANT:** Since by default all forms are named Information, make sure to verify that the form you select has a Form Type of **Main** and not something else. By default, the form has two fields: Name and Owner.
+> [!IMPORTANT]
+> Since by default all forms are named Information, make sure to verify that the form you select has a Form Type of **Main** and not something else. By default, the form has two fields: Name and Owner.
 
 5.  On the right side of the screen on the **Properties** panel, select the **Display Name** field, and change it to `Main Information`
 
@@ -131,7 +132,8 @@ In this task, we will modify the default Active Visits view and create a new vie
 
 Now, we will clone the view to create a new view for today’s visits.
 
-IMPORTANT: Make sure that you do not close the Active Visits view, as we will be leveraging it to create the new today’s visits view.
+> [!IMPORTANT]
+> Make sure that you do not close the Active Visits view, as we will be leveraging it to create the new today’s visits view.
 
 1.  Select **Save As**.
 
@@ -149,7 +151,8 @@ IMPORTANT: Make sure that you do not close the Active Visits view, as we will be
 
 8.  Add **Actual Start** and **Actual End** fields to the view.
 
-    **Note:** Since we no longer filter on the view status, we will get all today’s visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
+> [!NOTE]
+>  Since we no longer filter on the view status, we will get all today’s visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
 
 9.  Select the **Save and publish** button at the top right and wait for the publishing to complete.
 
