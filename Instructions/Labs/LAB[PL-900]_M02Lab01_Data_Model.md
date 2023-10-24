@@ -46,11 +46,12 @@ Things to consider before you begin
 
 - Naming conventions - type names carefully.
 
-Exercise 1: Create New Table
+
+# Exercise 1: Create New Table
 
 **Objective:** In this exercise, you will create new custom table for Visits.
 
-Task #1: Create Visit Table and Columns
+## Task #1: Create Visit Table and Columns
 
 The **Visit** table will contain information about the campus visits including the visitor, scheduled times and actual times of each visit.
 
@@ -62,7 +63,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 1.  Using the navigation on the left, select **Tables**.
 
-1.  Select **+ New table** and choose **+ New table**. 
+1.  Select **+ New table** and choose **Set advanced properties**. 
 
 1.  For **Display name**, enter `Visit`
 
@@ -70,7 +71,8 @@ We would like to assign each visit a unique number that can be easily entered an
 
 1.  Under the **Schema** section, select **Columns**. 
 
-# Create Scheduled Start column
+
+## Create Scheduled Start column
 
 1.  Select **+ New column**. 
 
@@ -88,7 +90,8 @@ We would like to assign each visit a unique number that can be easily entered an
 
 1.  Select **Save**. 
 
-# Create Scheduled End column
+
+## Create Scheduled End column
 
 1.  Select **+ New column**. 
 
@@ -104,13 +107,14 @@ We would like to assign each visit a unique number that can be easily entered an
 
 1.  Select **Save**. 
 
-# Create Actual Start column
+
+## Create Actual Start column
 
 1.  Select **+ New column**. 
 
 1.  Enter `Actual Start` for **Display name**.
 
-1.  Select **Date and Time** for **Data type**.
+1.  Select **Date and time** for **Data type**.
 
 1.  In **Required**, leave this as **Optional**.
 
@@ -120,13 +124,14 @@ We would like to assign each visit a unique number that can be easily entered an
 
 1.  Select **Save**. 
 
-# Create Actual End column
+
+## Create Actual End column
 
 1.  Select **+ New column**.
 
-1.  Enter **Actual End** for **Display name**.
+1.  Enter `Actual End` for **Display name**.
 
-1.  Select **Date and Time** for **Data type**.
+1.  Select **Date and time** for **Data type**.
 
 1.  In **Required**, leave this as **Optional**.
 
@@ -136,7 +141,8 @@ We would like to assign each visit a unique number that can be easily entered an
 
 1.  Select **Save**.
 
-# Create Code column
+
+## Create Code column
 
 1.  Select **+ New column**.
 
@@ -148,15 +154,16 @@ We would like to assign each visit a unique number that can be easily entered an
 
 1.  Select **Save**. 
 
-# Create Visitor lookup column
+
+## Create Visitor lookup column
 
 1.  Select **+ New column**.
 
 1.  Enter `Visitor` for **Display name**.
 
-1.  Select **Lookup** for **Data type**. 
+1.  Select **Lookup** > **Lookup** for **Data type**. 
 
-1.  Select **Contact** for the **Related Table**. 
+1.  Select **Contact** for the **Related table**. 
 
 1.  Expand **Advanced options**. 
 
@@ -165,11 +172,11 @@ We would like to assign each visit a unique number that can be easily entered an
 1.  Select **Save**.
 
 
-Exercise 2: Import Data
+# Exercise 2: Import Data
 
 **Objective:** In this exercise you will import sample data into the Dataverse database.
 
-### Task \#1: Load Excel file to OneDrive
+## Task \#1: Load Excel file to OneDrive
 
 1.  You should have the **Visits.xlsx** file stored on your virtual machine in **C:/LabFiles**. Download [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) if you do not.
 
@@ -179,14 +186,14 @@ Exercise 2: Import Data
 
 4.  Select the Waffle button in the upper left corner to change applications and select **OneDrive**. (It may take a moment for your OneDrive to be set up. Select **Your OneDrive is ready** when you see it on the screen.)
 
-5.  Select **Upload** from the top menu and select **Files**.
+5.  Select **+Add new** from the menu and select **Files upload**.
 
 6.  Locate and select the **Visits.xlsx** file and select **Open**.
 
-    > **Note:** This file is located in the **All Files** folder on your machine.
+    > **Note:** The file should be located in the **Desktop** > **All Files** folder on your virtual machine.
 
 
-### Task \#2: Create a dataflow
+## Task \#2: Create a dataflow
 
 1.  If you are not already signed in, sign into <https://make.powerapps.com> 
 
@@ -236,7 +243,7 @@ Exercise 2: Import Data
     > **Note:** It can take several minutes for your data to import into your table. Don’t worry if you get a few errors, that is normal, and will not impact the rest of the course.
 
 
-Task #3: Verify Data Import
+## Task \#3: Verify Data Import
 
 1.  After your data has been imported, use the navigation at the left of the screen to select **Tables** and open the **Visit** table.
 
