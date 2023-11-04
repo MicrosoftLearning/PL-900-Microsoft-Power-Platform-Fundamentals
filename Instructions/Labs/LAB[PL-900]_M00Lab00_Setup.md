@@ -32,6 +32,8 @@ Task #1 - Acquire your Microsoft Power Platform trial tenant
 
 1.  Under **Let's get started**, enter the email address provided by the Authorized Lab Hoster and select **Start your free trial**. 
 
+1.  If an extra page appears with **Start building apps** and **Start using apps** buttons, then click **Start using apps** - not Start building apps.
+
 1.  If you see a prompt that you have an existing account with Microsoft. Select **Sign in**. 
 
 1.  Enter the password provided by the Authorized Lab Hoster and select **Sign in**. 
