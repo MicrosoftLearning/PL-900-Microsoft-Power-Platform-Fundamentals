@@ -46,7 +46,6 @@ Things to consider before you begin
 
 - Naming conventions - type names carefully.
 
-
 # Exercise 1: Create New Table
 
 **Objective:** In this exercise, you will create new custom table for Visits.
