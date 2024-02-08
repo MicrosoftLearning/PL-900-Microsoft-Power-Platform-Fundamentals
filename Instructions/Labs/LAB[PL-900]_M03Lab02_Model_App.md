@@ -59,9 +59,9 @@ Things to consider before you begin
 
 ### Task #1: Edit Visit Form
 
-1.  Sign in to <https://make.powerapps.com> if you are not already signed in.
+1.  If you are not already, sign in to `https://make.powerapps.com` 
 
-2.  Select your **[my initials] Practice** environment at the top right if it is not already selected.
+2.  Select the **Dev One** environment at the top right, if it is not already selected.
 
 3.  Using the navigation on the left, select **Tables**, and open your **Visit** table.
 
@@ -69,8 +69,8 @@ Things to consider before you begin
 
 4.  Under the **Data experiences** section, select **Forms** and open the **Information** form with **Main** Form type. (**Important:** Make sure you select the form with the form type of **Main**.) 
 
-> **IMPORTANT:**
-> Since by default all forms are named Information, make sure to verify that the form you select has a Form Type of **Main** and not something else. By default, the form has two fields: Name and Owner.
+    > **IMPORTANT:**
+    > Since by default all forms are named Information, make sure to verify that the form you select has a Form Type of **Main** and not something else. By default, the form has two fields: Name and Owner.
 
 5.  On the right side of the screen on the **Properties** panel, select the **Display Name** field, and change it to `Main Information`
 
@@ -165,9 +165,9 @@ For simplicity and time’s sake, we will not be addressing some of the Visit co
 
 ### Task #1: Create app
 
-1.  Sign into <https://make.powerapps.com>, if you are not already signed in.
+1.  If you are not already, sign in to `https://make.powerapps.com` 
 
-2.  Select your **[my initials] Practice** environment at the top right, if it is not already selected.
+2.  Select the **Dev One** environment at the top right, if it is not already selected.
 
 3.  Select **+ Create** on the left navigation.
 
@@ -199,7 +199,7 @@ For simplicity and time’s sake, we will not be addressing some of the Visit co
 
 12. Select **Save** and wait until the changes are saved.
 
-13. Once the **Save** is complete, select the **Publish** button to publish your changes.
+13. Once the **Save** is complete, select the **Publish** button to publish your changes. Wait for the publishing to complete.
 
 
 ### Task #2: Test app
@@ -210,7 +210,7 @@ Start the application
 
 Create a new Contact
 
-2.  The app should open to the **My Active Contacts** view. If it does not, select **Contacts** on the left-hand navigation.
+2.  The app should open to the **My Active Contacts** view. If it does not, select **Contacts** on the left navigation.
 
 3.  Select **+ New** from the command bar.
 
