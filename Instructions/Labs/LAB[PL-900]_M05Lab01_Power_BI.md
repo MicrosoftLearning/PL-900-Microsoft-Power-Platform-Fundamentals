@@ -51,7 +51,7 @@ We will follow the below steps to design and create a Power BI dashboard:
 
 1.  You should have a visits.pbix file stored on your virtual machine in the AllFiles folder on the Desktop. Download [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) and save to your computer, if it's not already there.
 
-2.  Open a new tab and navigate to <https://app.powerbi.com/> and sign in, if needed.
+2.  Open a new tab and navigate to `https://app.powerbi.com` and sign in, if needed.
 
 3.  Select **My workspace** from the left side navigation.
 
@@ -107,7 +107,7 @@ You have now setup Power BI service to use for your labs.
 
 1.  You should have the report open from the previous task.
 
-2.  Select **Pin to a dashboard** on the menu. Depending on the layout you may need to select **...** to show more options.
+2.  Select **Pin to a dashboard** on the menu. Depending on the layout you may need to select the ellipsis menu **...** to show more options.
 
 3.  Select **New dashboard** on **Pin to dashboard** prompt.
 
@@ -135,3 +135,4 @@ Your **Campus Management** dashboard should be displayed with three visuals on i
 Your dashboard should look similar to the following:
 
 ![](media/5-powerbi-result.png)
+
