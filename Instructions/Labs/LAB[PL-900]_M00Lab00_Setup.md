@@ -24,46 +24,21 @@ In this Module 0 lab, you will acquire a Power Platform trial and access the Pow
 
 ## Exercise 1 – Setup
 
-Task #1 - Acquire your Microsoft Power Platform trial tenant
+Task #1 - Verify your Microsoft Power Platform trial tenant
 
-1.  Copy your **Microsoft 365 credentials** from the Authorized Lab Hoster. 
+1.  Verify that you have your **Microsoft 365 credentials** from the Authorized Lab Host available. 
 
-1.  Navigate to <https://powerapps.microsoft.com> and select **Start free**.
+2.  In a new browser tab, navigate to `https://make.powerapps.com`
 
-1.  Under **Let's get started**, enter the email address provided by the Authorized Lab Hoster and select **Start your free trial**. 
+3.  Enter the `email address` provided by the Authorized Lab Host. 
 
-1.  If an extra page appears with **Start building apps** and **Start using apps** buttons, then click **Start using apps** - not Start building apps.
+4.  Select **Sign in**. 
 
-1.  If you see a prompt that you have an existing account with Microsoft. Select **Sign in**. 
+5.  Enter the `password` provided by the Authorized Lab Host. 
 
-1.  Enter the password provided by the Authorized Lab Hoster and select **Sign in**. 
+6.  Optionally, select **Yes** to stay signed in.
 
-1.  Select **Yes** to stay signed in. 
+7.  If prompted, enter `0123456789` for **Phone number** and select **Submit**.
 
-
-Task #2 – Create environment
-
-1.  Navigate to <https://admin.powerplatform.microsoft.com> and log in with your Microsoft 365 credentials, if prompted. 
-
-1.  If you see a Welcome pop-up, select **Get Started**. 
-
-1.  Select **Environments** and select **+ New**.
-
-    1. For **Name**, enter **[My Initials] Practice** (Example: AJ Practice).
-
-    1. For **Type**, choose **Trial** (Do not select the *Trial (subscription-based)* option).
-
-    1. Change the toggle for **Add a Dataverse data store?** to **Yes**. 
-
-    1. Leave all other selections as default and select **Next**. 
-
-    1. Under the the **Security group** heading, use the **+ Select** button.
-
-    1. Select the checkbox for the **None** item, under the **Open access** heading and then select **Done**.
-
-    1. Leave the remaining options at their defaults and select **Save**. 
-
-1.  Your **Practice** environment should now appear in the list of Environments. 
-
-    > Your environment may take a few minutes to provision. Refresh the page if needed.
+8.  **Refresh** the tab and verify the **Dev One** environment is selected under **Environment** in the top right. 
 
