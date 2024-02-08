@@ -45,13 +45,15 @@ We will follow the below outline to design the canvas app:
 
 ### Task \#1: Create the Visits app
 
-1.  Navigate to <https://make.powerapps.com>. You may need to reauthenticate - select **Sign in** and follow instructions if needed.
+1.  Navigate to `https://make.powerapps.com`
 
-2.  Select your **[my initials] Practice** environment at the top right if it is not already selected.
+2.  You may need to reauthenticate - select **Sign in** and follow instructions, if needed.
 
-3.  Select **+ Create** from the left navigation of the screen. Under the **Start from** section, select **Dataverse**.
+3.  Select the **Dev One** environment at the top right, if it is not already selected.
 
-4.  Select your Dataverse connection.
+4.  Select **+ Create** from the left navigation of the screen. Under the **Start from** section, select **Dataverse**.
+
+5.  Select your Dataverse connection.
 
     > **Note:** *If a Dataverse connection does not exist:*
     > - Select **+New connection**
@@ -59,19 +61,19 @@ We will follow the below outline to design the canvas app:
     > - Select **Create**
     > - **Sign in** and select **Allow access**
 
-5.  Locate and select the **Visits** table you created in the previous lab.
+6.  Locate and select the **Visits** table you created in the previous lab.
 
-6.  Select the **Connect** button in the bottom right corner.
+7.  Select the **Connect** button in the bottom right corner.
 
-7.  After your app is created, on the Welcome to Power Apps Studio screen, select **Don’t show me this again**, and then select **Skip**.
+8.  After your app is created, on the Welcome to Power Apps Studio screen, select **Don’t show me this again**, and then select **Skip**.
 
-8.  After creation has completed, the Canvas app should look like the image below:
+9.  After creation has completed, the Canvas app should look like the image below:
 
     ![Canvas app created from Visit data.](media/2-canvas-app-from-data.png)
 
-9.  In the app designer, select the **Preview the app** button (Play icon) on the command bar. *(You can also preview the app by pressing F5.)* Take a look around and see how your app looks out-of-the-box.
+10.  In the app designer, select the **Preview the app** button (Play icon) on the command bar. *(You can also preview the app by pressing F5.)* Take a look around and see how your app looks out-of-the-box.
 
-10. Close the app preview by selecting the **X** in the upper right of the screen.
+11. Close the app preview by selecting the **X** in the upper right of the screen.
 
 Congratulations, you have successfully created a Power App from a Dataverse table. The next step in the process is to tailor the app to match your Bellows College branding. The next series of steps will walk you through providing some extra customization to the app.
 
