@@ -44,7 +44,8 @@ To prepare your learning environments you will:
 
 Things to consider before you begin
 
-- Naming conventions - type names carefully.
+- Naming conventions - enter names carefully.
+
 
 # Exercise 1: Create New Table
 
@@ -56,9 +57,9 @@ The **Visit** table will contain information about the campus visits including t
 
 We would like to assign each visit a unique number that can be easily entered and interpreted by a visitor when asked during the visit check-in process.
 
-1.  If you are not already signed in, sign into <https://make.powerapps.com> 
+1.  If you are not already signed in, sign into `https://make.powerapps.com`
 
-1.  From the **Environment** menu in the top right, ensure your **Practice** environment is selected. 
+1.  From the **Environment** menu in the top right, ensure the **Dev One** environment is selected. 
 
 1.  Using the navigation on the left, select **Tables**.
 
@@ -179,11 +180,11 @@ We would like to assign each visit a unique number that can be easily entered an
 
 1.  You should have the **Visits.xlsx** file stored on your virtual machine in **C:/LabFiles**. Download [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) if you do not.
 
-2.  If not already signed in, sign in to [https://make.powerapps.com](https://make.powerapps.com/). 
+2.  If not already signed in, sign in to `https://make.powerapps.com`
 
-3.  Select your **[my initials] Practice** environment at the top right if it is not already selected.
+3.  Select the **Dev One** environment at the top right, if it is not already selected.
 
-4.  Select the Waffle button in the upper left corner to change applications and select **OneDrive**. (It may take a moment for your OneDrive to be set up. Select **Your OneDrive is ready** when you see it on the screen.)
+4.  Select the App launcher (Waffle button) in the top left corner to change applications and select **OneDrive**. (It may take a moment for your OneDrive to be set up. Select **Your OneDrive is ready** when you see it on the screen.)
 
 5.  Select **+Add new** from the menu and select **Files upload**.
 
@@ -194,9 +195,9 @@ We would like to assign each visit a unique number that can be easily entered an
 
 ## Task \#2: Create a dataflow
 
-1.  If you are not already signed in, sign into <https://make.powerapps.com> 
+1.  If you are not already signed in, sign into `https://make.powerapps.com`
 
-2.  From the **Environment** menu in the top right, ensure your **Practice** environment is selected. 
+2.  From the **Environment** menu in the top right, ensure the **Dev One** environment is selected. 
 
 3.  Using the navigation on the left, select **Tables**. 
 
@@ -249,4 +250,5 @@ We would like to assign each visit a unique number that can be easily entered an
 2.  Verify that you see the imported data under the **Visit columns and data** section.
 
 Congratulations, you have successfully created a new table and imported data.
+
 

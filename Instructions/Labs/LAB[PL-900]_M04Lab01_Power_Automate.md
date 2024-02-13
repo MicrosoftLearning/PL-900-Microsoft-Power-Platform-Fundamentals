@@ -45,24 +45,25 @@ the unique code assigned to the visit when a visit is created.
 
 ### Task \#1: Create a flow
 
-1.  Navigate to <https://make.powerapps.com>. You may need to reauthenticate, select **Sign in** and follow instructions if needed.
+1.  Navigate to `https://make.powerapps.com`
 
-2.  Select your **[my initials] Practice** environment at the top right if it is
-    not already selected.
+2.  You may need to reauthenticate, select **Sign in** and follow instructions, if needed.
 
-3.  In the left navigation, select **Flows**.
+3.  Select the **Dev One** environment at the top right, if it is not already selected.
 
-4.  If prompted, select **Get started**.
+4.  In the left navigation, select **Flows**.
 
-5.  Select **+ New flow** and select **Automated cloud flow**.
+5.  If prompted, select **Get started**.
 
-6.  Enter `Visit Notification` for **Flow name**.
+6.  Select **+ New flow** and select **Automated cloud flow**.
 
-7.  In **Choose your flow's trigger**, search for `Dataverse`
+7.  Enter `Visit Notification` for **Flow name**.
 
-8.  Choose the trigger **When a row is added, modified or deleted**, and then select **Create**.
+8.  In **Choose your flow's trigger**, search for `Dataverse`
 
-9.  Populate the trigger conditions for the flow:
+9.  Choose the trigger **When a row is added, modified or deleted**, and then select **Create**.
+
+10.  Populate the trigger conditions for the flow:
 
     1.  Select **Added** for **Change type**
 
@@ -140,10 +141,9 @@ Leave this flow tab open for the next task. You flow should look approximately l
 
 ### Task \#4: Validate and test the flow
 
-1.  Open a new tab in your browser and navigate to <https://make.powerapps.com>.
+1.  Open a new tab in your browser and navigate to `https://make.powerapps.com`
 
-2.  Select your **[my initials] Practice** environment at the top right if it is
-    not already selected.
+2.  Select the **Dev One** environment at the top right, if it is not already selected.
 
 3.  Select **Apps** and open the **Bellows Campus Management** model-driven app you created earlier.
 
