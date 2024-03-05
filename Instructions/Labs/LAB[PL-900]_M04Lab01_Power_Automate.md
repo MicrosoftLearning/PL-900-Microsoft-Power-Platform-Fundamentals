@@ -32,7 +32,7 @@ complete the project:
 
 ## Prerequisites
 
-- Completion of **Module 0 Lab 0 - Validate lab environment**
+- Completion of **Module 1 Lab 0 - Validate lab environment**
 - Completion of **Module 2 Lab 1 - Data Modeling**
 - Completion of **Module 2 Lab 3 - How to build a model-driven app**
 - John Doe contact created with a personal email address populated.
