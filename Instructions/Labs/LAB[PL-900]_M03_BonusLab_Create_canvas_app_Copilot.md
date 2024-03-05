@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab 6: Bonus Lab: Build a canvas app using Copilot'
+    title: 'Bonus Lab: Build a canvas app using Copilot'
     module: 'Module 3: Get started with Power Apps'
 ---
 
