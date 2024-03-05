@@ -33,7 +33,7 @@ We will follow the below steps to design and create a Power BI dashboard:
 
 ## Prerequisites
 
-- Completion of **Module 0 Lab 0 - Validate lab environment**
+- Completion of **Module 1 Lab 0 - Validate lab environment**
 - Completion of **Module 2 Lab 1 - Data Modeling**
 
 ## Things to consider before you begin
