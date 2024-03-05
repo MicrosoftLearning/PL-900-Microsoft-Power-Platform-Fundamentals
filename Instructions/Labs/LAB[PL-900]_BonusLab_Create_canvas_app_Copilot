@@ -35,7 +35,7 @@ We will follow the below outline to design the canvas app:
 
 **Objective:** In this exercise, you will create a canvas app by connecting to an Expense Reports table.
 
-### Task #1: Create the initial application
+### Task \#1: Create the initial application
 
 1. Navigate to https://make.powerapps.com
 
@@ -80,10 +80,6 @@ Initially, a field such as a **Purpose** field was formatted with a text data ty
 
 17. If necessary, On the **Welcome to Power Apps Studio** screen, select **Don’t show me this again**, and select the **Skip** button. 
 
- 
-
-![A screenshot of a computer
-
-Description automatically generated](../media/bonus-lab-copilot-01.png)
+![](media/bonus-lab-copilot-01.png)
 
 Congratulations, you have used Copilot to create a new app. 
