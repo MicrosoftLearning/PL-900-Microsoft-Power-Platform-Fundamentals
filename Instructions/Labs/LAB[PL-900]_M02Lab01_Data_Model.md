@@ -40,7 +40,7 @@ To prepare your learning environments you will:
 
 ## Prerequisites
 
-- Completion of **Module 0 Lab 0 - Validate lab environment**
+- Completion of **Module 1 Lab 0 - Validate lab environment**
 
 Things to consider before you begin
 
