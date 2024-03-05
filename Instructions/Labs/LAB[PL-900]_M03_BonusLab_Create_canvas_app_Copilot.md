@@ -29,7 +29,7 @@ We will follow the below outline to design the canvas app:
 
  ## Prerequisites
 
-- Completion of **Module 0 Lab 0 - Validate lab environment**
+- Completion of **Module 1 Lab 0 - Validate lab environment**
 
 ## Exercise 1: Use Copilot to build a college visits application.
 
