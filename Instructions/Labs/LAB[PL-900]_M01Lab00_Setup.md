@@ -13,13 +13,13 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 ## Scenario
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+Bellows College is an educational organization with multiple campuses and programs. Many of Bellow Colleges instructors and administrators need to attend events, and purchase items. Historically tracking these expenses has been a challenge.
 
 Campus administration would like to modernize their expense reporting system where employees submit expenses. 
 
-Throughout this course, you will build applications and perform automation to enable the Bellows College administration to manage and control access to the buildings on campus.
+Throughout this course, you will build applications and perform automation to enable Bellows College employees to manage expenses.
 
-In this Module 0 lab, you will acquire a Power Platform trial and access the Power Platform admin center. In the admin center, you will then create a **Practice** environment that you will perform the majority of your lab work in.
+In this Module 1 lab, you will acquire a Power Platform trial and access the Power Platform admin center. In the admin center, you will then create a **Practice** environment that you will perform the majority of your lab work in.
 
 
 ## Exercise 1 – Setup
