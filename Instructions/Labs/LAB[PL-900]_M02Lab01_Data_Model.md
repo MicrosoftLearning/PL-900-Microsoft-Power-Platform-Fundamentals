@@ -13,11 +13,11 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 ## Scenario
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+Bellows College is an educational organization with multiple campuses and programs. Many of Bellow Colleges instructors and administrators need to attend events, and purchase items. Historically tracking these expenses has been a challenge. 
 
-Campus administration would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
+Campus administration would like to modernize their expense reporting system by providing employees with a digital way to report expenses. 
 
-Throughout this course, you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus.
+Throughout this course, you will build applications and perform automation to enable the Bellows College employees to manage expenses.
 
 In this lab you will create a data model to support the following requirements:
 
@@ -29,226 +29,169 @@ In this lab you will create a data model to support the following requirements:
 
 Finally, you will import sample data into Microsoft Dataverse.
 
-High-level lab steps
+### High-level lab steps
 
 To prepare your learning environments you will:
 
-- Refer to the [data model document](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png) for the metadata description (tables and relationships). You can hold ctrl + left-click or right-click the link to open the data model document in a new window.
-- Create Visit table
-- Import Visit data using an Excel spreadsheet
+- Refer to the [data model document](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus Management.png) for the metadata description (tables and relationships). You can hold ctrl + left-click or right-click the link to open the data model document in a new window.
 
+- Create Expense table
 
-## Prerequisites
+- Add some sample data. 
 
-- Completion of **Module 1 Lab 0 - Validate lab environment**
+### Prerequisites
+
+- Completion of **Module 2 Lab 0 - Validate lab environment**
 
 Things to consider before you begin
 
 - Naming conventions - enter names carefully.
 
+## Exercise 1: Create New Table
 
-# Exercise 1: Create New Table
+**Objective:** In this exercise, you will create a new custom table for Expenses.
 
-**Objective:** In this exercise, you will create new custom table for Visits.
+### Task #1: Create Expenses Table and Columns
 
-## Task #1: Create Visit Table and Columns
+The **Expenses** table will contain information about individual expenses that an employee can submit including reason, type, date, and amount.
 
-The **Visit** table will contain information about the campus visits including the visitor, scheduled times and actual times of each visit.
+1. If you are not already signed in, sign into https://make.powerapps.com
 
-We would like to assign each visit a unique number that can be easily entered and interpreted by a visitor when asked during the visit check-in process.
+1. From the **Environment** menu in the top right, ensure the **Dev One** environment is selected.
 
-1.  If you are not already signed in, sign into `https://make.powerapps.com`
+1. Using the navigation on the left, select **Tables**.
 
-1.  From the **Environment** menu in the top right, ensure the **Dev One** environment is selected. 
+1. Select **+ New table** and choose **Set advanced properties**.
 
-1.  Using the navigation on the left, select **Tables**.
+1. For **Display name**, enter Expense
 
-1.  Select **+ New table** and choose **Set advanced properties**. 
+1. Select **Save**.
 
-1.  For **Display name**, enter `Visit`
+1. Under the **Schema** section, select **Columns**.
 
-1.  Select **Save**. 
+### Create Expense Date column
 
-1.  Under the **Schema** section, select **Columns**. 
+1. Select **+ New column**.
 
+1. Enter Expense Date for **Display name**.
 
-## Create Scheduled Start column
+1. Select **Date only** for **Data type**.
 
-1.  Select **+ New column**. 
+1. Change **Required**, to **Business required**.
 
-1.  Enter `Scheduled Start` for **Display name**. 
+1. Expand **Advanced options**.
 
-1.  Select **Date and time** for **Data type**. 
+1. In **Time zone adjustment**, select **Date Only**.
 
-1.  Change **Required**, to **Business required**. 
+>**Note:** We use **Date only** behavior to record date information, because date of the visit should not change when viewed from a different time zone.
 
-1.  Expand **Advanced options**. 
+1. Select **Save**.
 
-1.  In **Time zone adjustment**, select **Time zone independent**. 
+### Create Expense Type Column
 
-    > **Note:** We use **Time zone independent** behavior to record date and time information, because the time of a visit is always local to the location of the building and should not change when viewed from a different time zone. 
+1. Select **+ New column**.
 
-1.  Select **Save**. 
+1. Enter Expense Type for **Display name**.
 
+1. Select **Choice** for **Data type**.
 
-## Create Scheduled End column
+1. In **Required**, select **Optional**.
 
-1.  Select **+ New column**. 
+1. Set **Sync with global Choice** to **Yes (recommended)**
 
-1.  Enter `Scheduled End` for **Display name**.
+1. In **Sync this choice with** field, select **Expense Type**.
 
-1.  Select **Date and time** for **Data type**.
+1. Set the **Default** field to **None**.
 
-1.  In **Required**, select **Business required**.
+1. Select **Save**.
 
-1.  Expand **Advanced options**.
+### Create Expense Purpose Column
 
-1.  In **Time zone adjustment**, select **Time zone independent**.
+1. Select **+ New column**.
 
-1.  Select **Save**. 
+1. Enter Expense Purpose for **Display name**.
 
+1. Select **Choice** for **Data type**.
 
-## Create Actual Start column
+1. In **Required**, select **Optional**.
 
-1.  Select **+ New column**. 
+1. Set **Sync with global Choice** to **Yes (recommended)**
 
-1.  Enter `Actual Start` for **Display name**.
+1. In **Sync this choice with** field, select **Expense Purpose**.
 
-1.  Select **Date and time** for **Data type**.
+1. Set the **Default** field to **None**.
 
-1.  In **Required**, leave this as **Optional**.
+1. Select **Save**.
 
-1.  Expand **Advanced options**.
+### Create Item Description column
 
-1.  In **Time zone adjustment**, select **Time zone independent**. 
+1. Select **+ New column**.
 
-1.  Select **Save**. 
+1. Enter Item Description for **Display name**.
 
+1. Select **Multiple Lines of text &gt; Plain Text** for **Data type**.
 
-## Create Actual End column
+1. Select **Save**.
 
-1.  Select **+ New column**.
+### Create Expense Amount column
 
-1.  Enter `Actual End` for **Display name**.
+1. Select **+ New column**.
 
-1.  Select **Date and time** for **Data type**.
+1. Enter Expense Amount for **Display name**.
 
-1.  In **Required**, leave this as **Optional**.
+1. Select **Currency** for **Data type**.
 
-1.  Expand **Advanced options**.
+1. Select **Save**.
 
-1.  In **Time zone adjustment**, select **Time zone independent**.
+ 
+## Exercise 2: Enter data
 
-1.  Select **Save**.
+**Objective:** In this exercise, you manually enter some sample data into your new table. 
 
+### Task #1: Modify the columns displayed
 
-## Create Code column
+1. If not already signed in, sign in to https://make.powerapps.com
 
-1.  Select **+ New column**.
+1. Select the **Dev One** environment at the top right if it is not already selected.
 
-1.  Enter `Code` for **Display name**.
+1. Using the navigation on the left, select **Tables**.
 
-1.  Select **Autonumber** for **Data type**.
+1. Open the **Expense** table created in the previous exercise.
 
-1.  Select **Date prefixed number** for **Autonumber type**.
+1. Next to the **Name** column, select **+26 more**.
 
-1.  Select **Save**. 
+1. From the menu that appears, select the following columns.
 
+	1. Expense Date
 
-## Create Visitor lookup column
+	2. Expense Purpose 
 
-1.  Select **+ New column**.
+	3. Expense Type
 
-1.  Enter `Visitor` for **Display name**.
+	4. Expense Amount
 
-1.  Select **Lookup** > **Lookup** for **Data type**. 
+	5. Item Description
 
-1.  Select **Contact** for the **Related table**. 
+1. Select the **Save** button.
 
-1.  Expand **Advanced options**. 
+## Task #2: Add a sample record.
 
-1.  Enter `visitor_id` for **Relationship name**. 
+1. Select the **Arrow** next to **Edit**. From the menu that appears, select **Edit in new tab**.
 
-1.  Select **Save**.
+1. In the **Name** column, enter **John Doe**.
 
+1. In the **Expense Date** column, enter **xxx**.
 
-# Exercise 2: Import Data
+1. In the **Expense Purpose**, select **Conference**.
 
-**Objective:** In this exercise you will import sample data into the Dataverse database.
+1. In the **Expense Type** column, select **Travel**.
 
-## Task \#1: Load Excel file to OneDrive
+1. In the **Expense Amount** column, enter **750.00**.
 
-1.  You should have the **Visits.xlsx** file stored on your virtual machine in **C:/LabFiles**. Download [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) if you do not.
+1. In the **Item Description**, enter a short description.
 
-2.  If not already signed in, sign in to `https://make.powerapps.com`
+1. Hit the Tab button to advance to the next row and **save** the record.
 
-3.  Select the **Dev One** environment at the top right, if it is not already selected.
-
-4.  Select the App launcher (Waffle button) in the top left corner to change applications and select **OneDrive**. (It may take a moment for your OneDrive to be set up. Select **Your OneDrive is ready** when you see it on the screen.)
-
-5.  Select **+Add new** from the menu and select **Files upload**.
-
-6.  Locate and select the **Visits.xlsx** file and select **Open**.
-
-    > **Note:** The file should be located in the **Desktop** > **All Files** folder on your virtual machine.
-
-
-## Task \#2: Create a dataflow
-
-1.  If you are not already signed in, sign into `https://make.powerapps.com`
-
-2.  From the **Environment** menu in the top right, ensure the **Dev One** environment is selected. 
-
-3.  Using the navigation on the left, select **Tables**. 
-
-4.  Open the **Visit** table created in the previous exercise. 
-
-5.  Using the menu at the top, select **Import** > **Import data**.
-
-6.  In the **Choose data source** dialog, select **Excel workbook**.
-
-7.  Select **Link to File** option. Select **Browse OneDrive**. If prompted, sign in with your Microsoft 365 credentials. Configure the browser to always allow pop-ups. 
-
-8.  Select the **Visits.xlsx** file which was uploaded to OneDrive in the previous task. 
-
-9.  Select **Next**. 
-
-10. On the **Power query** > **Choose data** screen, check the **Visits** Excel workbook. 
-
-11. Select **Next**. Do not navigate away from this page.
-
-12. Select **Next**. 
-
-13. On the **Map tables** section, under **Load settings**, select **Load to existing table**. 
-
-14. On the **Destination table** drop-down menu, select the table **crXXX_Visit** (Where XXX is a random set of letters and numbers)
-
-15. On the **Column Mapping** section, map the Columns to their corresponding destination columns:
-
-    | Destination columns  | Source values   |
-    |:---------------------|:----------------|
-    | crxxx_ActualEnd      | actual end      |
-    | crxxx_ActualStart    | actual start    |
-    | crxxx_Code           | code            |
-    | crxxx_Name           | name            |
-    | crxxx_ScheduledEnd   | scheduled end   |
-    | crxxx_ScheduledStart | scheduled start |
-
-16. Select **Next**. 
-
-17. Select **Refresh manually**. 
-
-18. Select **Publish**. 
-
-    > **Note:** It can take several minutes for your data to import into your table. Don’t worry if you get a few errors, that is normal, and will not impact the rest of the course.
-
-
-## Task \#3: Verify Data Import
-
-1.  After your data has been imported, use the navigation at the left of the screen to select **Tables** and open the **Visit** table.
-
-2.  Verify that you see the imported data under the **Visit columns and data** section.
-
-Congratulations, you have successfully created a new table and imported data.
+Congratulations, you have successfully created a new table and added data.
 
 
