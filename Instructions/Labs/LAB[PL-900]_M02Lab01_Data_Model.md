@@ -83,7 +83,7 @@ The **Expenses** table will contain information about individual expenses that a
 
 1. In **Time zone adjustment**, select **Date Only**.
 
->**Note:** We use **Date only** behavior to record date information, because date of the visit should not change when viewed from a different time zone.
+	>**Note:** We use **Date only** behavior to record date information, because date of the visit should not change when viewed from a different time zone.
 
 1. Select **Save**.
 
