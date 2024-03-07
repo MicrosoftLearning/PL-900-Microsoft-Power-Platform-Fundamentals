@@ -24,7 +24,7 @@ In this Module 1 lab, you will acquire a Power Platform trial and access the Pow
 
 ## Exercise 1 – Setup
 
-Task #1 - Verify your Microsoft Power Platform trial tenant
+### Task #1 - Verify your Microsoft Power Platform trial tenant
 
 1.  Verify that you have your **Microsoft 365 credentials** from the Authorized Lab Host available. 
 
