@@ -15,9 +15,9 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
-Campus administration would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts. 
+Campus administration would like to modernize their expense reporting system where employees submit expenses. 
 
-Throughout this course, you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus.
+Throughout this course, you will build applications and perform automation to enable the Bellows College administration to manage and control access to the buildings on campus.
 
 In this Module 0 lab, you will acquire a Power Platform trial and access the Power Platform admin center. In the admin center, you will then create a **Practice** environment that you will perform the majority of your lab work in.
 
