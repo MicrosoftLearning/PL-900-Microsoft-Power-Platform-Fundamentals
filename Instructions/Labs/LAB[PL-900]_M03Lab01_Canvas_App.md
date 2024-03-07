@@ -8,16 +8,16 @@ lab:
 
 **WWL Tenants - Terms of Use**
 If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training. 
-Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension. 
+Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and is not eligible for extension. 
 Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time. 
 
 ## Scenario
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+Bellows College is an educational organization with multiple campuses and programs. Many of Bellow Colleges instructors and administrators need to attend events, and purchase items. Historically tracking these expenses has been a challenge. 
 
-Currently, campus administration is leveraging an Excel spreadsheet to track visitor registration. They would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
+Campus administration would like to modernize their expense reporting system by providing employees with a digital way to report expenses. 
 
-Throughout this course, you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus.
+Throughout this course, you will build applications and perform automation to enable the Bellows College employees to manage expenses. 
 
 
 ## High-level lab steps
@@ -35,8 +35,6 @@ We will follow the below outline to design the canvas app:
 ## Prerequisites
 
 - Completion of **Module 1 Lab 0 - Validate lab environment**
-- Completion of **Module 2 Lab 1 - Data Modeling**
-
 
 ## Exercise 1: Create Visits Canvas app
 
