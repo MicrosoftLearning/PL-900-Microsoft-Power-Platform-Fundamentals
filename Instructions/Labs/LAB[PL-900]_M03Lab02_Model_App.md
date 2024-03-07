@@ -227,6 +227,6 @@ For simplicity and time’s sake, we will not be addressing all of the Expense R
 
 Your running model-driven app should look approximately like the following:
 
-![Screenshot of model-driven app just created.](/media/lab-3-create-a-model-app-01.png)
+![Screenshot of model-driven app just created.](media/lab-3-create-a-model-app-01.png)
 
 Congratulations! You have created and configured your first model-driven app.
