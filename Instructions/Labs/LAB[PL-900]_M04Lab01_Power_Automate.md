@@ -120,7 +120,7 @@ Dynamic content needs to be placed where fields are named in brackets. It is rec
 
 Leave this flow tab open for the next task. Your flow should look like the following:
 
-![Screenshot of the flow just created](media/lab-4-create-an-automated-solution-updated-01.png)
+![Screenshot of the flow just created](media/lab-4-create-an-automated-solution-01.png)
 
 ### Task #4: Validate and test the flow
 
