@@ -29,7 +29,7 @@ In this lab you will create a data model to support the following requirements:
 
 Finally, you will import sample data into Microsoft Dataverse.
 
-### High-level lab steps
+## High-level lab steps
 
 To prepare your learning environments you will:
 
