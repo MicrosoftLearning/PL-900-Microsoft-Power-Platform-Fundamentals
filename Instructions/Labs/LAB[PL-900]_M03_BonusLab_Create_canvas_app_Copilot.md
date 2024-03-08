@@ -8,7 +8,7 @@ lab:
 
 **WWL Tenants - Terms of Use**
 If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training. 
-Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension. 
+Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and is not eligible for extension. 
 Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time. 
 
 ## Scenario
@@ -80,6 +80,6 @@ Initially, a field such as a **Purpose** field was formatted with a text data ty
 
 17. If necessary, On the **Welcome to Power Apps Studio** screen, select **Don’t show me this again**, and select the **Skip** button. 
 
-![](media/bonus-lab-copilot-01.png)
+![Screenshot of the app just created](media/bonus-lab-copilot-01.png)
 
 Congratulations, you have used Copilot to create a new app. 
