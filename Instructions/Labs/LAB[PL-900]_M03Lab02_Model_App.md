@@ -21,7 +21,7 @@ Throughout this course, you will build applications and perform automation to en
 
 In this lab, you will build a Power Apps model-driven app to allow the backoffice campus staff to manage visit records across the entire campus.
 
-**High-level lab steps**
+## High-level lab steps
 
 As part of creating the model-driven app, you will complete the following:
 
