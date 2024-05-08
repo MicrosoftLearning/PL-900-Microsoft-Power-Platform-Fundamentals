@@ -33,7 +33,7 @@ We will follow the below outline to design the canvas app:
 
 ## Exercise 1: Use Copilot to build a college visits application.
 
-**Objective:** In this exercise, you will create a canvas app by connecting to an Expense Reports table.
+**Objective:** In this exercise, you will create a canvas app by connecting to an Campus visits table.
 
 ### Task \#1: Create the initial application
 
