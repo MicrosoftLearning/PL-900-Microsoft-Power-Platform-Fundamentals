@@ -110,7 +110,7 @@ In this task, you will customize the header text on each of the three screens fo
 
 In this task, you will test out your new app.
 
-1. With your application open in the App Designer, select **Settings** (You might need to select … for the Setting Icon to display), in the **General** section update the name of your app to Visits App select the **X** to close the settings screen and then select **Save**.
+1. With your application open in the App Designer, select **Settings** (You might need to select … for the Setting Icon to display), in the **General** section update the name of your app to Expense Report App select the **X** to close the settings screen and then select **Save**.
 
 1. Using the navigation on the left, select **BrowseScreen1**.
 
