@@ -24,9 +24,9 @@ Throughout this course, you will build applications and perform automation to en
 
 We will follow the below outline to design the canvas app:
 
-- Create a canvas app from data in the Visit table
+- Create an expense report canvas app 
 
-- Configure how the visits are shown on the browse screen
+- Configure how expense reports are shown on the browse screen
 
 - Make some basic changes to the app
 
