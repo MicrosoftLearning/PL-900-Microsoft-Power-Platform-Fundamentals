@@ -19,14 +19,6 @@ Campus administration would like to modernize their expense reporting system by 
 
 Throughout this course, you will build applications and perform automation to enable the Bellows College employees to manage expenses.
 
-In this lab you will create a data model to support the following requirements:
-
-- R1 – Track information for scheduled campus visits.
-
-- R2 – Record basic information to identify and track the visitors.
-
-- R3 – Schedule, record, and manage visits.
-
 Finally, you will import sample data into Microsoft Dataverse.
 
 ## High-level lab steps
