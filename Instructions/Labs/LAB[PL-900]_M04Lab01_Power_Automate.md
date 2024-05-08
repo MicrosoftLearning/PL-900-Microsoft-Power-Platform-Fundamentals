@@ -69,7 +69,7 @@ This is good practice, so you and other flow editors can understand the purpose 
 
 ### Task #2: Create a step to get the Expense Report row
 
-1. Select **+ New step**. This step will retrieve Visitor information, including email address.
+1. Select **+ New step**. This step will retrieve Expense Report information, including email address.
 
 1. Search for Dataverse
 
@@ -85,9 +85,9 @@ This is good practice, so you and other flow editors can understand the purpose 
 
 This is good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
 
-### Task #3: Create a step to send an email to the visitor
+### Task #3: Create a step to send an email to confirm submission of an expense report
 
-1. Select **+ New step**. This is the step that will send an email to the visitor.
+1. Select **+ New step**. This is the step that will send an email to the individual who submitted an expense report.
 
 1. Search for mail, select the **Send an email (V2)** action from the **Office 365 Outlook** connector.
 
@@ -112,9 +112,9 @@ Dynamic content needs to be placed where fields are named in brackets. It is rec
 
 1. Highlight the **{First Name}** text. Replace it with the **First Name** field from the **Get the owner** step.
 
-1. Highlight the **{Report Total Amount}** text. Replace it with the **Report Total Amount** field **When a visit is added** step.
+1. Highlight the **{Report Total Amount}** text. Replace it with the **Report Total Amount** field **When an expense report is submitted** step.
 
-1. Highlight the **{Report Due Date}** text. Replace it with the **Report Due Date** field from the **When a visit is added** step.
+1. Highlight the **{Report Due Date}** text. Replace it with the **Report Due Date** field from the **When an expense report is submitted** step.
 
 1. Select **Save**.
 
