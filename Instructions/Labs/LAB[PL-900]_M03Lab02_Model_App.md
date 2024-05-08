@@ -93,7 +93,7 @@ The header is the top right area of the form. You may need to collapse the Prope
 
 1. Using the breadcrumbs in the upper left (**Tables** > **Expense Report** > **Forms**). Select **Expense Report** to return to the **Visit** Table properties screen.
 
-## Task #2: Edit Active Visits view
+## Task #2: Edit Active Expense Reports view
 
 In this task, we will modify the default Active Expense Reports view and create a new view for today’s visits.
 
@@ -213,15 +213,15 @@ For simplicity and time’s sake, we will not be addressing all of the Expense R
 
 1. Enter the fields as follows:
 
-	- **Report Name**: New test Report
+	- **Report Name**: new Test Report
 
 	- **Report Purpose**: select **Conference**
 
 	- **Report due date**: Select Todays date
 
-1. Select **Save &amp; Close**. This will create the Visit and you should be able to see it on the **Active Visits** view.
+1. Select **Save &amp; Close**. This will create the new Test Report and you should be able to see it on the **Active Expense Reports** view.
 
-1. Change view to **Expense Reports Due Today** by using the drop-down next to **Active Visits**. 
+1. Change view to **Expense Reports Due Today** by using the drop-down next to **Active Expense Reports**. 
 
 1. You may add some more test records.
 
