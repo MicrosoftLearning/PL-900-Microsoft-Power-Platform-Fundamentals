@@ -13,13 +13,11 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 ## Scenario
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+Bellows College is an educational organization with multiple campuses and programs. Many of Bellow Colleges instructors and administrators need to attend events, and purchase items. Historically tracking these expenses has been a challenge.
 
-Campus administration would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
+Campus administration would like to modernize their expense reporting system by providing employees with a digital way to report expenses.
 
-Throughout this course, you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus.
-
-In this lab, you will build a Power Apps model-driven app to allow the backoffice campus staff to manage visit records across the entire campus.
+Throughout this course, you will build applications and perform automation to enable the Bellows College employees to manage expenses.
 
 ## High-level lab steps
 
@@ -91,11 +89,11 @@ The header is the top right area of the form. You may need to collapse the Prope
 
 1. If the Edit view opened in a new browser tab or window, close it. Otherwise, select **🡠 Back** at the top left of the screen. You should now be back to the **Expense Report** table Forms.
 
-1. Using the breadcrumbs in the upper left (**Tables** > **Expense Report** > **Forms**). Select **Expense Report** to return to the **Visit** Table properties screen.
+1. Using the breadcrumbs in the upper left (**Tables** > **Expense Report** > **Forms**). Select **Expense Report** to return to the **Expense Report** Table properties screen.
 
 ## Task #2: Edit Active Expense Reports view
 
-In this task, we will modify the default Active Expense Reports view and create a new view for today’s visits.
+In this task, we will modify the default Active Expense Reports view and create a new view for expense reports due today.
 
 1. Under the **Data experiences** section, select **Views** and open your **Active Expense Reports** view.
 
