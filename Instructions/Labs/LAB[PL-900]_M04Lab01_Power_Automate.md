@@ -144,8 +144,6 @@ Leave this flow tab open for the next task. Your flow should look like the follo
 
 	- **Report Name:** Test Report
 
-	- **Report Total Amount:** $750.00
-
 	- **Report Due Date:** Tomorrow 
 
 1. Select the **Save &amp; Close** button.
