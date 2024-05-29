@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Lab 5: How to build a simple dashboard'
-    module: 'Module 5: Get Started with Power BI'
+    module: 'Module 5: Describe the capabilities of Microsoft Power BI'
 ---
 
 ## Lab 5: How to build a simple dashboard
