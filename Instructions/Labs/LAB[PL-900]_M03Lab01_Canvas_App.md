@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Lab 2: How to build a canvas app'
-    module: 'Module 3: Get started with Power Apps'
+    module: 'Module 3: Describe how to build applications with Microsoft Power Apps'
 ---
 
 # Lab 2: How to build a canvas app
