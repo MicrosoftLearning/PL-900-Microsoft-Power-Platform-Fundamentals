@@ -115,7 +115,7 @@ In this task, we will modify the default Active Expense Reports view and create 
 
 1. Select the **Save and publish** button at the top right and wait for the publishing to complete.
 
-### Task #3: Create new view for Reports due today
+### Task #3: Create a new view for Reports due today
 
 Now, we will clone the view to create a new view for reports due today.
 
@@ -139,13 +139,13 @@ Now, we will clone the view to create a new view for reports due today.
 
 1. Select the **Save and publish** button at the top right and wait for the publishing to complete.
 
-## Exercise 2: Create Model-driven app
+## Exercise 2: Create a model-driven app
 
 **Objective:** In this exercise, you will create a model-driven app, customize the sitemap, and test the app.
 
 For simplicity and time’s sake, we will not be addressing all of the Expense Report columns in this lab.
 
-### Task #1: Create app
+### Task #1: Create the app
 
 1. If you are not already, sign in to https://make.powerapps.com
 
@@ -153,7 +153,7 @@ For simplicity and time’s sake, we will not be addressing all of the Expense R
 
 1. Select **+ Create** on the left navigation.
 
-1. Create the Model-Driven Application:
+1. Create the model-driven application:
 
 	- Select **Blank app** in the **Start from** section of the **Create your app** screen.
 
@@ -183,7 +183,7 @@ For simplicity and time’s sake, we will not be addressing all of the Expense R
 
 1. Once the **Save** is complete, select the **Publish** button to publish your changes. Wait for the publishing to complete.
 
-## Task #2: Test app
+## Task #2: Test the app
 
 **Start the application**
 
