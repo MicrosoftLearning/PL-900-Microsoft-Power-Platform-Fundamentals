@@ -23,11 +23,11 @@ Throughout this course, you will build applications and perform automation to en
 
 As part of creating the model-driven app, you will complete the following:
 
-- Create a new model-driven app named Bellows Expense Management
+- Create a new model-driven app named Bellows Expense Management.
 
-- Edit the app navigation to reference the required tables
+- Edit the app navigation to reference the required tables.
 
-- Customize the forms and views of the required tables for the app
+- Customize the forms and views of the required tables for the app.
 
 We will work with the following components:
 
@@ -53,11 +53,11 @@ Both will be integrated to the model-driven app for a better user-experience.
 
 **Objective:** In this exercise, you will customize views and forms of the custom created tables that will be used in the model-driven app.
 
-### Task #1: Edit Expense Report Form
+### Task #1: Edit the Expense Report Form
 
 1. If you are not already, sign in to https://make.powerapps.com
 
-1. Select the **Dev One** environment at the top right if it is not already selected.
+1. Select the **Dev One** environment at the top right if it isn't already selected.
 
 1. Using the navigation on the left, select **Tables**, and open the **Expense Report** table.
 
@@ -83,7 +83,7 @@ If you do not see the Expense report table, make sure you are in the correct env
 
 The header is the top right area of the form. You may need to collapse the Properties panel on the right side of the screen to see the field on the form.
 
-1. Select **Owner** field. In the Properties panel, change the **Label** to Requestor
+1. Select **Owner** field. In the Properties panel, change the **Label** to Requestor.
 
 1. Select the **Save and publish** button at the top right and wait for the save and publish to complete.
 
@@ -91,7 +91,7 @@ The header is the top right area of the form. You may need to collapse the Prope
 
 1. Using the breadcrumbs in the upper left (**Tables** > **Expense Report** > **Forms**). Select **Expense Report** to return to the **Expense Report** Table properties screen.
 
-## Task #2: Edit Active Expense Reports view
+## Task #2: Edit the Active Expense Reports view
 
 In this task, we will modify the default Active Expense Reports view and create a new view for expense reports due today.
 
@@ -139,7 +139,7 @@ Now, we will clone the view to create a new view for reports due today.
 
 1. Select the **Save and publish** button at the top right and wait for the publishing to complete.
 
-## Exercise 2: Create a model-driven app
+## Exercise 2: Create the model-driven app
 
 **Objective:** In this exercise, you will create a model-driven app, customize the sitemap, and test the app.
 
@@ -177,7 +177,7 @@ For simplicity and time’s sake, we will not be addressing all of the Expense R
 
 1. On the Navigation Pane, select **New Group** below where it says Navigation. You may need to expand the menu on the left.
 
-1. On the right side of the screen, in the **Display options** section, change the **Title** property to Reports
+1. On the right side of the screen, in the **Display options** section, change the **Title** property to Reports.
 
 1. Select **Save** and wait until the changes are saved.
 
@@ -195,7 +195,7 @@ For simplicity and time’s sake, we will not be addressing all of the Expense R
 
 1. Select **+ New** from the command bar.
 
-1. Enter **First Name** as John and **Last Name** as Doe
+1. Enter **First Name** as John and **Last Name** as Doe.
 
 1. Provide your personal email as **Email**. This will be used in a future lab, where you will receive an email.
 
@@ -215,7 +215,7 @@ For simplicity and time’s sake, we will not be addressing all of the Expense R
 
 	- **Report Purpose**: select **Conference**
 
-	- **Report due date**: Select Todays date
+	- **Report due date**: Select Today's date
 
 1. Select **Save &amp; Close**. This will create the new Test Report and you should be able to see it on the **Active Expense Reports** view.
 
