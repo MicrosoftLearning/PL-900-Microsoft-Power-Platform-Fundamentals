@@ -88,6 +88,6 @@ Initially, a field such as a **Purpose** field was formatted with a text data ty
 
 17. If necessary, On the **Done working?** screen, select **Don’t ask me again**, and select the **Save and open app** button. 
 
-![Screenshot of the app just created](media/bonus-lab-copilot-01.png)
+![Screenshot of the app just created](media/bonus-lab-copilot-02.png)
 
 Congratulations, you have used Copilot to create a new app. 
