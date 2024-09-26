@@ -55,7 +55,7 @@ The **Expenses** table will contain information about individual expenses that a
 
 1. Select **+ New table** and choose **Set advanced properties**.
 
-1. For **Display name**, enter Expense
+1. For **Display name**, enter `Expense`
 
 1. Select **Save**.
 
@@ -65,7 +65,7 @@ The **Expenses** table will contain information about individual expenses that a
 
 1. Select **+ New column**.
 
-1. Enter Expense Date for **Display name**.
+1. Enter `Expense Date` for **Display name**.
 
 1. Select **Date only** for **Data type**.
 
@@ -73,7 +73,7 @@ The **Expenses** table will contain information about individual expenses that a
 
 1. Expand **Advanced options**.
 
-1. In **Time zone adjustment**, select **Date Only**.
+1. In **Time zone adjustment**, select **Date only**.
 
 	>**Note:** We use **Date only** behavior to record date information, because date of the expenses should not change when viewed from a different time zone.
 
@@ -83,13 +83,13 @@ The **Expenses** table will contain information about individual expenses that a
 
 1. Select **+ New column**.
 
-1. Enter Expense Type for **Display name**.
+1. Enter `Expense Type` for **Display name**.
 
 1. Select **Choice** for **Data type**.
 
 1. In **Required**, select **Optional**.
 
-1. Set **Sync with global Choice** to **Yes (recommended)**
+1. Set **Sync with global choice** to **Yes (recommended)**
 
 1. In **Sync this choice with** field, select **Expense Type**.
 
@@ -101,17 +101,17 @@ The **Expenses** table will contain information about individual expenses that a
 
 1. Select **+ New column**.
 
-1. Enter Expense Purpose for **Display name**.
+1. Enter `Expense Purpose` for **Display name**.
 
 1. Select **Choice** for **Data type**.
 
 1. In **Required**, select **Optional**.
 
-1. Set **Sync with global Choice** to **Yes (recommended)**
+1. Set **Sync with global choice** to **Yes (recommended)**
 
 1. In **Sync this choice with** field, select **Expense Purpose**.
 
-1. Set the **Default** field to **None**.
+1. Set the **Default choice** field to **None**.
 
 1. Select **Save**.
 
@@ -119,7 +119,7 @@ The **Expenses** table will contain information about individual expenses that a
 
 1. Select **+ New column**.
 
-1. Enter Item Description for **Display name**.
+1. Enter `Item Description` for **Display name**.
 
 1. Select **Multiple Lines of text &gt; Plain Text** for **Data type**.
 
@@ -129,7 +129,7 @@ The **Expenses** table will contain information about individual expenses that a
 
 1. Select **+ New column**.
 
-1. Enter Expense Amount for **Display name**.
+1. Enter `Expense Amount` for **Display name**.
 
 1. Select **Currency** for **Data type**.
 
@@ -170,7 +170,7 @@ The **Expenses** table will contain information about individual expenses that a
 
 1. Select the **Arrow** next to **Edit**. From the menu that appears, select **Edit in new tab**.
 
-1. In the **Name** column, enter **John Doe**.
+1. In the **Name** column, enter `John Doe`.
 
 1. In the **Expense Date** column, enter **xxx**.
 
@@ -178,7 +178,7 @@ The **Expenses** table will contain information about individual expenses that a
 
 1. In the **Expense Type** column, select **Travel**.
 
-1. In the **Expense Amount** column, enter **750.00**.
+1. In the **Expense Amount** column, enter `750.00`.
 
 1. In the **Item Description**, enter a short description.
 

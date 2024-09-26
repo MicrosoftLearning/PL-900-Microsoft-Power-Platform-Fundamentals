@@ -37,7 +37,7 @@ The following have been identified as requirements you must implement to complet
 
 ### Task #1: Create a flow
 
-1. Navigate to https://make.powerapps.com
+1. Navigate to `https://make.powerapps.com`
 
 1. You may need to reauthenticate, select **Sign in** and follow instructions, if needed.
 
@@ -49,7 +49,7 @@ The following have been identified as requirements you must implement to complet
 
 1. Select **+ New flow** and select **Automated cloud flow**.
 
-1. Enter Expense Notification for **Flow name**.
+1. Enter `Expense Notification` for **Flow name**.
 
 1. In **Choose your flow's trigger**, search for Dataverse
 
@@ -95,7 +95,7 @@ This is good practice, so you and other flow editors can understand the purpose 
 
 1. Select the **To** field and enter your personal email address. (There are many ways that we could dynamically populate an email address, but for this exercise we are going to manually assign it.)  
 
-1. In the **Subject** field, enter Your expense report was submitted
+1. In the **Subject** field, enter `Your expense report was submitted`
 
 1. Enter the following text in **Email Body**:
 
@@ -112,9 +112,9 @@ Dynamic content needs to be placed where fields are named in brackets. It is rec
 
 1. Highlight the **{First Name}** text. Replace it with the **First Name** field from the **Get the owner** step.
 
-1. Highlight the **{Report Total Amount}** text. Replace it with the **Report Total Amount** field **When an expense report is submitted** step.
+1. Highlight the **{Report Total Amount}** text. Replace it with the **Report Total Amount** field **When an Expense Report is added** step.
 
-1. Highlight the **{Report Due Date}** text. Replace it with the **Report Due Date** field from the **When an expense report is submitted** step.
+1. Highlight the **{Report Due Date}** text. Replace it with the **Report due date** field from the **When an Expense Report is added** step.
 
 1. Select **Save**.
 
@@ -144,7 +144,9 @@ Leave this flow tab open for the next task. Your flow should look like the follo
 
 	- **Report Name:** Test Report
 
-	- **Report Due Date:** Tomorrow 
+    - **Report Purpose:** Conference
+
+	- **Report due date:** Tomorrow
 
 1. Select the **Save &amp; Close** button.
 

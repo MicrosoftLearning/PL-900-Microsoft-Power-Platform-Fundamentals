@@ -42,7 +42,7 @@ We will follow the below outline to design the canvas app:
 
 ### Task #1: Create the Expense Reports app
 
-1. Navigate to https://make.powerapps.com
+1. Navigate to `https://make.powerapps.com`
 
 1. You may need to reauthenticate - select **Sign in** and follow instructions, if needed.
 
@@ -62,7 +62,7 @@ We will follow the below outline to design the canvas app:
 
     >	- **Sign in** and select **Allow access**
 
-1. Locate and select the **Expense reports** table.
+1. Locate and select the **Expense Reports** table.
 
 1. Select the **Connect** button in the bottom right corner.
 

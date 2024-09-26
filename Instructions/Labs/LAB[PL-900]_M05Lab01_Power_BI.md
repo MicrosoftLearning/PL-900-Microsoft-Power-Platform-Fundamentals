@@ -49,7 +49,7 @@ We will follow the below steps to design and create a Power BI dashboard:
 
 1. You should have a visits.pbix file stored on your virtual machine in the AllFiles folder on the Desktop. Download [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/visits.pbix) and save to your computer, if it's not already there.
 
-1. Open a new tab and navigate to https://app.powerbi.com and sign in, if needed.
+1. Open a new tab and navigate to `https://app.powerbi.com` and sign in, if needed.
 
 1. Select **My workspace** from the left side navigation.
 
@@ -59,7 +59,7 @@ We will follow the below steps to design and create a Power BI dashboard:
 
 1. Once the data load is complete, select the **visits** report.
 
-    >**Note:** The Type is set to **Report**, do not select the Dataset.
+    >**Note:** The Type is set to **Report**, do not select the Semantic Model.
 
 1. Select **Edit**.
 
@@ -71,7 +71,7 @@ You have now setup Power BI service to use for your labs.
 
 1. Select the **Pie chart** icon in the **Visualizations** panel to insert a chart.
 
-1. Expand **bc_Visit** in the **Fields** pane. Drag the **Building** field and drop it into the **Legend** box.
+1. Expand **bc_Visit** in the **Data** pane. Drag the **Building** field and drop it into the **Legend** box.
 
 1. Drag the **Visit** field and drop it into the **Values** box.
 
@@ -79,7 +79,7 @@ You have now setup Power BI service to use for your labs.
 
 1. Click on the report outside of the pie chart to deselect it and select the **Stacked column chart** icon in the **Visualizations** pane.
 
-1. Expand **bc_Visit** in the **Fields** pane if it is not already expanded. Drag the **Visit** field and drop it into **Y-axis** box.
+1. Expand **bc_Visit** in the **Data** pane if it is not already expanded. Drag the **Visit** field and drop it into **Y-axis** box.
 
 1. Drag **Start** field and drop it into **X-axis** box.
 
@@ -107,7 +107,7 @@ You have now setup Power BI service to use for your labs.
 
 1. Select **New dashboard** on **Pin to dashboard** prompt.
 
-1. Enter Campus Management as **Dashboard name** and select **Pin live**.
+1. Enter `Campus Management` as **Dashboard name** and select **Pin live**.
 
 1. A pop-up will prompt you that the dashboard has been created. Select **Go to dashboard**.
 
@@ -117,7 +117,7 @@ You have now setup Power BI service to use for your labs.
 
 1. Within your **Campus Management** dashboard, select **Ask a question about your data** bar at the top.
 
-1. Enter buildings by number of visits in Q&A area. A bar chart will be displayed.
+1. Enter `buildings by number of visits` in Q&A area. A bar chart will be displayed.
 
 1. Select **Pin visual**.
 
