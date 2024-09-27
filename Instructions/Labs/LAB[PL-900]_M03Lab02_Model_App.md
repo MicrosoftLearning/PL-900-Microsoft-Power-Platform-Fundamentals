@@ -61,7 +61,7 @@ Both will be integrated to the model-driven app for a better user-experience.
 
 1. Using the navigation on the left, select **Tables**, and open the **Expense Report** table.
 
-If you do not see the Expense report table, make sure you are in the correct environment (Step 2).
+	>If you do not see the Expense report table, make sure you are in the correct environment (Step 2).
 
 1. Under the **Data experiences** section, select **Forms** and open the **Information** form with **Main** Form type. (**Important:** Make sure you select the form with the form type of **Main**.)
 
@@ -75,13 +75,13 @@ If you do not see the Expense report table, make sure you are in the correct env
 
 	- **Report Purpose**
 
-	- **Report Due Date**
+	- **Report due date**
 
 	- **Report Total Amount**
 
 1. Drag the **Status Reason** column and drop it in the form header.
 
-The header is the top right area of the form. You may need to collapse the Properties panel on the right side of the screen to see the field on the form.
+	>The header is the top right area of the form. You may need to collapse the Properties panel on the right side of the screen to see the field on the form.
 
 1. Select **Owner** field. In the Properties panel, change the **Label** to Requestor.
 
@@ -101,17 +101,17 @@ In this task, we will modify the default Active Expense Reports view and create 
 
 	- **Report Purpose**
 
-	- **Report Due Date**
+	- **Report due date**
 
-	- **Report Total**
+	- **Report Total Amount**
 
 1. Select the drop-down menu on the **Created On** column and select **Remove**. The field **Created On** will now be removed from the view.
 
 1. Resize the individual column widths as suits to fit the data.
 
-1. Under **Sort by …** select the X to remove **Name** and instead, select **Report Total Amount**.
+1. Under **Sort by …** select the X to remove **Report Name** and instead, select **Report Total Amount**.
 
-1. Select **Report Total Amount** to change the sort order to **Larger to Smaller**.
+1. Select **Report Total Amount** to change the sort order to **Larger to smaller**.
 
 1. Select the **Save and publish** button at the top right and wait for the publishing to complete.
 
@@ -159,11 +159,11 @@ For simplicity and time’s sake, we will not be addressing all of the Expense R
 
 	- Under **Blank app based on Dataverse**, select **Create**.
 
-	- Enter Employee Expense Management for **Name** and select **Create**.
+	- Enter `Employee Expense Management` for **Name** and select **Create**.
 
-1. After your new model-driven application loads, select the **+ Add Page** button.
+1. After your new model-driven application loads, select the **+ Add page** button.
 
-1. On the **Add Page** screen, choose **Dataverse table**, and then select the **Next** button.
+1. On the **Add page** screen, choose **Dataverse table**.
 
 1. Select the following tables:
 
@@ -195,7 +195,7 @@ For simplicity and time’s sake, we will not be addressing all of the Expense R
 
 1. Select **+ New** from the command bar.
 
-1. Enter **First Name** as John and **Last Name** as Doe.
+1. Enter **First Name** as `John` and **Last Name** as `Doe`.
 
 1. Provide your personal email as **Email**. This will be used in a future lab, where you will receive an email.
 
@@ -211,7 +211,7 @@ For simplicity and time’s sake, we will not be addressing all of the Expense R
 
 1. Enter the fields as follows:
 
-	- **Report Name**: new Test Report
+	- **Report Name**: `New Test Report`
 
 	- **Report Purpose**: select **Conference**
 

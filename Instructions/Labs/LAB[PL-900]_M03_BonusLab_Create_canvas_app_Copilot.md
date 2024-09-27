@@ -43,7 +43,7 @@ We will follow the below outline to design the canvas app:
 
 3. Select the **Dev One** environment at the top right, if it is not already selected.
 
-4. In the **Describe the application you want to create** box, enter the following text. Create an application that logs visits to a college campus. 
+4. In the **Use everyday words to describe what your app should collect, track, list, or manage..** box, enter the following text. `Create an application that logs visits to a college campus`. 
 
 5. Select the **Go** button.
 
@@ -52,15 +52,19 @@ Copilot will begin to build a table structure to support your application.
 > **IMPORTANT:** 
 > When using generative AI, you will not always get the same exact results. It is possible that your table will not exactly match the table created for another student. 
 
-6. In the **Describe what to change** box, enter the text: Add two columns, Time in and Time out. Both should be date and time fields.  
+> To see the table structure, select the table and click on **View data** button 
+
+6. In the **What would you like to do next?** box, enter the text: Add two columns, Time in and Time out in the table that contains visit log information. Both should be date and time fields. 
 
 7. Select the **Go** button or press **Enter**. 
 
-8. Scroll to the side of the table and verify that the **Time in** and **Time out** columns were created. 
+8. Scroll to the side of the table and verify that the **Time in** and **Time out** columns are created. 
 
 Since we are logging the visitors in and out time, we no longer need any other visit date fields. 
 
-9. Locate the **Visit Date** field (or equivalent field) and in the **Describe what to change box**, enter the text Remove the Visit Date Field. 
+9. Locate the **Visit Date** field (or equivalent field) and in the **What would you like to do next?** box, enter the text: Remove the Visit Date Field (or equivalent field). 
+
+>If required, update the field name to be removed from relevant table name.
 
 10. Select the **Go** button. 
 
@@ -68,18 +72,22 @@ Since we are logging the visitors in and out time, we no longer need any other v
 
 Initially, a field such as a **Purpose** field was formatted with a text data type was added. We are going to have Copilot change it to a drop-down (Choice) menu. 
 
-12. In the **Describe what to change box,** enter the following text: Change the Purpose field to a choice menu with the following options: Campus Tour, Career Fair, Meet with Professor, Student Counseling, Other. 
+12. In the **What would you like to do next?** enter the following text: Change the Purpose field to a choice menu with the following choices: Campus Tour, Career Fair, Meet with Professor, Student Counseling, Other. 
+
+>If required, Update prompt to add relevant table name 
 
 13. Select the **Go** button. 
 
-14. Since we also want to capture the building number, in the **Describe what to change box**, enter: Add a building column. 
+14. Since we also want to capture the building number, in the **What would you like to do next?**, enter: Add a building column. 
+
+>If required, Update prompt to add relevant table name 
 
 15. Select the **Go** button. 
 
-16. Once you are happy with your table, select the **Create App** button. 
+16. Once you are happy with your table, select the **Save and open app** button. 
 
-17. If necessary, On the **Welcome to Power Apps Studio** screen, select **Don’t show me this again**, and select the **Skip** button. 
+17. If necessary, On the **Done working?** screen, select **Don’t ask me again**, and select the **Save and open app** button. 
 
-![Screenshot of the app just created](media/bonus-lab-copilot-01.png)
+![Screenshot of the app just created](media/bonus-lab-copilot-02.png)
 
 Congratulations, you have used Copilot to create a new app. 
