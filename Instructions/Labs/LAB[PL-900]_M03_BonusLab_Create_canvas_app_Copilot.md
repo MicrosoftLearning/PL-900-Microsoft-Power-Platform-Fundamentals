@@ -52,41 +52,44 @@ Copilot will begin to build a table structure to support your application.
 > **IMPORTANT:** 
 > When using generative AI, you will not always get the same exact results. It is possible that your table will not exactly match the table created for another student. 
 
+6. On right hand side, select table structure in Copilot window and then select **Table options**.
+
+7. Select **One table** option and then select **Apply**.
+ 
+    ![Screenshot of the Table structure just created](media/bonus-lab-tablestr.png)
+
+
 > To see the table structure, select the table and click on **View data** button 
 
-6. In the **What would you like to do next?** box, enter the text: Add two columns, Time in and Time out in the table that contains visit log information. Both should be date and time fields. 
+8. In the **What would you like to do next?** box, enter the text: Add two columns, Time in and Time out in the table. Both should be date and time fields. 
 
-7. Select the **Go** button or press **Enter**. 
+9. Select the **Go** button or press **Enter**. 
 
-8. Scroll to the side of the table and verify that the **Time in** and **Time out** columns are created. 
+10. Scroll to the side of the table and verify that the **Time in** and **Time out** columns are created. 
 
 Since we are logging the visitors in and out time, we no longer need any other visit date fields. 
 
-9. Locate the **Visit Date** field (or equivalent field) and in the **What would you like to do next?** box, enter the text: Remove the Visit Date Field (or equivalent field). 
+11. Locate the **Visit Date** field (or equivalent field) and in the **What would you like to do next?** box, enter the text: Remove the Visit Date Field (or equivalent field). 
 
 >If required, update the field name to be removed from relevant table name.
 
-10. Select the **Go** button. 
+12. Select the **Go** button. 
 
-11. Remove any additional date fields that might be present other than **Time in** and **Time out**. 
+13. Remove any additional date fields that might be present other than **Time in** and **Time out**. 
 
 Initially, a field such as a **Purpose** field was formatted with a text data type was added. We are going to have Copilot change it to a drop-down (Choice) menu. 
 
-12. In the **What would you like to do next?** enter the following text: Change the Purpose field to a choice menu with the following choices: Campus Tour, Career Fair, Meet with Professor, Student Counseling, Other. 
-
->If required, Update prompt to add relevant table name 
-
-13. Select the **Go** button. 
-
-14. Since we also want to capture the building number, in the **What would you like to do next?**, enter: Add a building column. 
-
->If required, Update prompt to add relevant table name 
+14. In the **What would you like to do next?** enter the following text: Change the Purpose field to a choice menu with the following choices: Campus Tour, Career Fair, Meet with Professor, Student Counseling, Other. 
 
 15. Select the **Go** button. 
 
-16. Once you are happy with your table, select the **Save and open app** button. 
+16. Since we also want to capture the building number, in the **What would you like to do next?**, enter: Add a building column. 
 
-17. If necessary, On the **Done working?** screen, select **Don’t ask me again**, and select the **Save and open app** button. 
+17. Select the **Go** button. 
+
+18. Once you are happy with your table, select the **Save and open app** button. 
+
+19. If necessary, On the **Done working?** screen, select **Don’t ask me again**, and select the **Save and open app** button. 
 
 ![Screenshot of the app just created](media/bonus-lab-copilot-02.png)
 
