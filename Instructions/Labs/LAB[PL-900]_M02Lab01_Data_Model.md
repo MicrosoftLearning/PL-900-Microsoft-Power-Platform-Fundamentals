@@ -53,7 +53,7 @@ The **Expenses** table will contain information about individual expenses that a
 
 1. Using the navigation on the left, select **Tables**.
 
-1. Select **+ New table** and choose **Set advanced properties**.
+1. Select **+ New table** and select **Table (advanced properties)** from the drop down menu.
 
 1. For **Display name**, enter `Expense`
 
