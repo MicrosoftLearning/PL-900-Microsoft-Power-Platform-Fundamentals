@@ -25,8 +25,6 @@ Finally, you will import sample data into Microsoft Dataverse.
 
 To prepare your learning environments you will:
 
-- Refer to the [data model document](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus Management.png) for the metadata description (tables and relationships). You can hold ctrl + left-click or right-click the link to open the data model document in a new window.
-
 - Create Expense table
 
 - Add some sample data. 
