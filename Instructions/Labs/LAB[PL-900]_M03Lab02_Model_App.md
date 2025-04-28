@@ -23,7 +23,7 @@ Throughout this course, you will build applications and perform automation to en
 
 As part of creating the model-driven app, you will complete the following:
 
-- Create a new model-driven app named Bellows Expense Management.
+- Create a new model-driven app named Employee Expense Management.
 
 - Edit the app navigation to reference the required tables.
 
@@ -67,7 +67,7 @@ Both will be integrated to the model-driven app for a better user-experience.
 
     >**IMPORTANT:** Since by default all forms are named Information, make sure to verify that the form you select has a Form Type of **Main** and not something else. By default, the form has two fields: Name and Owner.
 
-1. On the right side of the screen on the **Properties** panel, select the **Display Name** field, and change it to Report Information
+1. On the right side of the screen on the **Properties** panel, select the **Display Name** field, and change it to `Report Information`.
 
 1. Select **Table columns** from the left navigation pane and add the following fields below the **Owner** field by dragging columns to the form or simply clicking column names:
 
@@ -83,7 +83,7 @@ Both will be integrated to the model-driven app for a better user-experience.
 
 	>The header is the top right area of the form. You may need to collapse the Properties panel on the right side of the screen to see the field on the form.
 
-1. Select **Owner** field. In the Properties panel, change the **Label** to Requestor.
+1. Select **Owner** field. In the Properties panel, change the **Label** to `Requestor`.
 
 1. Select the **Save and publish** button at the top right and wait for the save and publish to complete.
 
@@ -123,7 +123,7 @@ Now, we will clone the view to create a new view for reports due today.
 
 1. Select **Save As**.
 
-1. Change the **Name** to Expense Reports Due Today and select **Save**.
+1. Change the **Name** to `Expense Reports Due Today` and select **Save**.
 
 1. Select **Edit filters**, in the Properties panel.
 
@@ -151,15 +151,13 @@ For simplicity and time’s sake, we will not be addressing all of the Expense R
 
 1. Select the **Dev One** environment at the top right, if it is not already selected.
 
-1. Select **+ Create** on the left navigation.
+1. Select **Solutions** on the left navigation.
 
-1. Create the model-driven application:
+1. Open **Expense Management** Solution.
 
-	- Select **Blank app** in the **Start from** section of the **Create your app** screen.
+1. Select **+New**, select **APP** and then select **Model-driven app**.
 
-	- Under **Blank app based on Dataverse**, select **Create**.
-
-	- Enter `Employee Expense Management` for **Name** and select **Create**.
+1. Enter `Employee Expense Management` for **Name** and select **Create**.
 
 1. After your new model-driven application loads, select the **+ Add page** button.
 
@@ -177,7 +175,7 @@ For simplicity and time’s sake, we will not be addressing all of the Expense R
 
 1. On the Navigation Pane, select **New Group** below where it says Navigation. You may need to expand the menu on the left.
 
-1. On the right side of the screen, in the **Display options** section, change the **Title** property to Reports.
+1. On the right side of the screen, in the **Display options** section, change the **Title** property to `Reports`.
 
 1. Select **Save** and wait until the changes are saved.
 

@@ -81,7 +81,7 @@ This is good practice, so you and other flow editors can understand the purpose 
 
 1. In the **Row ID** field, select **Owner (Value)** from the **Dynamic content** list. In this step, you are looking up the Owner for the Expense Report row that was created to trigger this flow. 
 
-1. On the **Get a row by ID** action, select the ellipsis (**...**) and select **Rename**. Rename this action Get the Owner
+1. On the **Get a row by ID** action, select the ellipsis (**...**) and select **Rename**. Rename this action `Get the Owner`.
 
 This is good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
 
@@ -124,7 +124,7 @@ Leave this flow tab open for the next task. Your flow should look like the follo
 
 ### Task #4: Validate and test the flow
 
-1. Open a new tab in your browser and navigate to https://make.powerapps.com
+1. Open a new tab in your browser and navigate to `https://make.powerapps.com`.
 
 1. Select the **Dev One** environment at the top right if it is not already selected.
 
@@ -142,7 +142,7 @@ Leave this flow tab open for the next task. Your flow should look like the follo
 
 1. Complete the **Expense Report record** as follows:
 
-	- **Report Name:** Test Report
+	- **Report Name:** `Test Report`
 
     - **Report Purpose:** Conference
 
