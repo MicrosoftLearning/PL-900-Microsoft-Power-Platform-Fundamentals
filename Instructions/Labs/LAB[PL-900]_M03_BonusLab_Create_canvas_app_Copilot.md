@@ -37,59 +37,61 @@ We will follow the below outline to design the canvas app:
 
 ### Task \#1: Create the initial application
 
-1. Navigate to https://make.powerapps.com
+1. Navigate to `https://make.powerapps.com`.
 
 2. You may need to reauthenticate - select **Sign in** and follow instructions, if needed.
 
 3. Select the **Dev One** environment at the top right, if it is not already selected.
 
-4. In the **Use everyday words to describe what your app should collect, track, list, or manage..** box, enter the following text. `Create an application that logs visits to a college campus`. 
+4. Select **+ Create** from the left navigation of the screen. Under the **Create your apps** section, select **Start with Copilot**.
 
-5. Select the **Go** button.
+5. In the **Get started with Copilot** box, enter the following text. `Create an application that logs visits to a college campus`. 
+
+6. Select the **Generate** button.
 
 Copilot will begin to build a table structure to support your application. 
 
 > **IMPORTANT:** 
 > When using generative AI, you will not always get the same exact results. It is possible that your table will not exactly match the table created for another student. 
 
-6. On right hand side, select table structure in Copilot window and then select **Table options**.
+7. On right hand side, select table structure in Copilot window and then select **Table options**.
 
-7. Select **One table** option and then select **Apply**.
+8. Select **One table** option and then select **Apply**.
  
     ![Screenshot of the Table structure just created](media/bonus-lab-tablestr.png)
 
 
 > To see the table structure, select the table and click on **View data** button 
 
-8. In the **What would you like to do next?** box, enter the text: Add two columns, Time in and Time out in the table. Both should be date and time fields. 
+9. In the **What would you like to do next?** box, enter the text: Add two columns, Time in and Time out in the table. Both should be date and time fields. 
 
-9. Select the **Go** button or press **Enter**. 
+10. Select the **Go** button or press **Enter**. 
 
-10. Scroll to the side of the table and verify that the **Time in** and **Time out** columns are created. 
+11. Scroll to the side of the table and verify that the **Time in** and **Time out** columns are created. 
 
 Since we are logging the visitors in and out time, we no longer need any other visit date fields. 
 
-11. Locate the **Visit Date** field (or equivalent field) and in the **What would you like to do next?** box, enter the text: Remove the Visit Date Field (or equivalent field). 
+12. Locate the **Visit Date** field (or equivalent field) and in the **What would you like to do next?** box, enter the text: Remove the Visit Date Field (or equivalent field). 
 
 >If required, update the field name to be removed from relevant table name.
 
-12. Select the **Go** button. 
+13. Select the **Go** button. 
 
-13. Remove any additional date fields that might be present other than **Time in** and **Time out**. 
+14. Remove any additional date fields that might be present other than **Time in** and **Time out**. 
 
 Initially, a field such as a **Purpose** field was formatted with a text data type was added. We are going to have Copilot change it to a drop-down (Choice) menu. 
 
-14. In the **What would you like to do next?** enter the following text: Change the Purpose field to a choice menu with the following choices: Campus Tour, Career Fair, Meet with Professor, Student Counseling, Other. 
+15. In the **What would you like to do next?** enter the following text: Change the Purpose field to a choice menu with the following choices: Campus Tour, Career Fair, Meet with Professor, Student Counseling, Other. 
 
-15. Select the **Go** button. 
+16. Select the **Go** button. 
 
-16. Since we also want to capture the building number, in the **What would you like to do next?**, enter: Add a building column. 
+17. Since we also want to capture the building number, in the **What would you like to do next?**, enter: Add a building column. 
 
-17. Select the **Go** button. 
+18. Select the **Go** button. 
 
-18. Once you are happy with your table, select the **Save and open app** button. 
+19. Once you are happy with your table, select the **Save and open app** button. 
 
-19. If necessary, On the **Done working?** screen, select **Don’t ask me again**, and select the **Save and open app** button. 
+20. If necessary, On the **Done working?** screen, select **Don’t ask me again**, and select the **Save and open app** button. 
 
 ![Screenshot of the app just created](media/bonus-lab-copilot-02.png)
 

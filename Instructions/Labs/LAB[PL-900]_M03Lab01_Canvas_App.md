@@ -48,25 +48,11 @@ We will follow the below outline to design the canvas app:
 
 1. Select the **Dev One** environment at the top right, if it is not already selected.
 
-1. Select **+ Create** from the left navigation of the screen. Under the **Start from** section, select **Dataverse**.
+1. Select **Apps** from the left navigation of the screen. Select **+ New app** and then **Start with an app template**.
 
-1. Select your Dataverse connection.
+1. Under **Data-centered mobile apps**, select **From Dataverse**.
 
-    >**Note**: If a Dataverse connection does not exist:
-
-    >	- Select **+New connection**
-
-    >	- Locate **Microsoft Dataverse**
-
-    >	- Select **Create**
-
-    >	- **Sign in** and select **Allow access**
-
-1. Locate and select the **Expense Reports** table.
-
-1. Select the **Connect** button in the bottom right corner.
-
-1. After your app is created, on the Welcome to Power Apps Studio screen, select **Don’t show me this again**, and then select **Skip**.
+1. Select **Expense Reports** Table on **Select the Dataverse data for your app** page and select **Create app**.
 
 1. In the app designer, select the **Preview the app** button (Play icon) on the command bar. (You can also preview the app by pressing F5.) Take a look around and see how your app looks out-of-the-box.
 
@@ -80,29 +66,29 @@ In this task, you will customize the header text on each of the three screens fo
 
 1. You are on the Browse screen. Select the **Expense Reports** label on the screen.
 
-1. On the right side of the screen, under the Properties tab, update the **Text** control property to My Expense Reports
+1. On the right side of the screen, under the Properties tab, update the **Text** control property to `My Expense Reports`.
 
 1. In the **Properties** tab, change the **Font size** to **24**.
 
 1. Select the blank background of the screen to see the updated text on your Browse screen.
 
-1. Using the **Tree view** in the left navigation, select **DetailScreen1**.
+1. Using the **Tree view** in the left navigation, select **DetailScreen**.
 
 1. Select the **Expense Reports** label on the screen.
 
-1. On the right side of the screen, under the **Properties** tab, update the **Text** control property to Report Details
+1. On the right side of the screen, under the **Properties** tab, update the **Text** control property to `Report Details`.
 
 1. Click in the blank background of the screen to see the updated text on your Details screen.
 
-1. Using the **Tree view** in the left navigation, select **EditScreen1** (You may need to scroll down to see this on the Tree view).
+1. Using the **Tree view** in the left navigation, select **EditScreen** (You may need to scroll down to see this on the Tree view).
 
 1. Select the **Expense Reports** label on the screen.
 
-1. On the right side of the screen, on the **Properties** tab, replace the text in the **Text** control property with Edit Details
+1. On the right side of the screen, on the **Properties** tab, replace the text in the **Text** control property with `Edit Details`.
 
 1. Click in the blank background of the screen to see the updated text on your Edit screen.
 
-1. Using the **Tree view**, in the left navigation, select **BrowseScreen1**.
+1. Using the **Tree view**, in the left navigation, select **BrowseScreen**.
 
 1. On the command toolbar, select the **Theme** button and from the list that appears, select the **Red** theme color.
 
@@ -110,13 +96,13 @@ In this task, you will customize the header text on each of the three screens fo
 
 In this task, you will test out your new app.
 
-1. With your application open in the App Designer, select **Settings** (You might need to select … for the Setting Icon to display), in the **General** section update the name of your app to Expense Report App select the **X** to close the settings screen and then select **Save**.
+1. With your application open in the App Designer, select **Settings** (You might need to select … for the Setting Icon to display), in the **General** section update the name of your app to `Expense Report App` select the **X** to close the settings screen and then select **Save**.
 
-1. Using the navigation on the left, select **BrowseScreen1**.
+1. Using the navigation on the left, select **BrowseScreen**.
 
 1. In the app designer, select the **Preview the app** button (Play icon) on the command bar. (You can also preview the app by pressing F5.)
 
-1. Once the app opens, in the **Search items** field, enter the text Trip (Notice how the items in the gallery filter based on what is typed in the search field).
+1. Once the app opens, in the **Search items** field, enter the text `Trip` (Notice how the items in the gallery filter based on what is typed in the search field).
 
 1. Once the **Trip to Power Platform Conference** record is displayed, select a row to navigate and open the Details screen for that Expense.
  
