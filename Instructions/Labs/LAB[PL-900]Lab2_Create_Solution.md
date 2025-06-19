@@ -40,13 +40,13 @@ Upon successful completion of this exercise, you will:
     - **Prefix:** mslearn
     - **Choice value prefix:** Leave the default
 
-    ![A screenshot of the Create New Publisher screen.](media/61fa62c324d424f7c73c8291a0724130.png)
+![A screenshot of the Create New Publisher screen.](media/61fa62c324d424f7c73c8291a0724130.png)
 
 7.  Select the **Save** button to save the publisher.
 8.  In the **Publisher** field, select the **EventMSlearn** publisher you just created.
 9.  Select **Set as your preferred solution**.
 
-    ![A screenshot of the completed solution](media/f968526926661bfa401f10742e6f376f.png)
+![A screenshot of the completed solution](media/f968526926661bfa401f10742e6f376f.png)
 
 10.  Select **Create**.
 
@@ -69,6 +69,6 @@ Now that we have the Account table, we are going to add the contact table.
 10.  On the **Select Tables** screen, select **Include all objects**
 11.  Select **Add**
 
-    ![A screenshot showing the Account and Contact tables in the solution.](media/a53817e242fca7371765583d9e565c36.png)
+![A screenshot showing the Account and Contact tables in the solution.](media/a53817e242fca7371765583d9e565c36.png)
 
 Congratulations, you have successfully created a new solution using Microsoft power Platform. We will continue to use the solution to add additional components to it.
