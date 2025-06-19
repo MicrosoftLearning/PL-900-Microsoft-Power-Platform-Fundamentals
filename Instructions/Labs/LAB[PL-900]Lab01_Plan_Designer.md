@@ -47,7 +47,7 @@ The estimated time to complete this exercise is **20 to 30** minutes.
 
 The **Requirements agent** built the user requirements based on the description you provided and should be considered as a starting point for your plan. You can modify the requirements as needed.
 
-    ![Screenshot of plan overview](media/6614c40776f6997ec0ad443a0ebaf318.png)
+    ![Screenshot of plan overview](../media/6614c40776f6997ec0ad443a0ebaf318.png)
 
 5. To change the requirements, select the **Edit** button.
 6. In the **Copilot** field under the **User requirements** heading, enter: “*Staff should be able to report if there is an issue with the equipment while they have it checked out*.”
@@ -60,7 +60,7 @@ A new issue reporting requirement will be added to your plan.
 
 Next, the **Data model agent** assists you in creating your data model. It will make suggestions on what tables should be created to store the data for your solution.
 
-    ![A screenshot of the Data Agent](media/d56d30ede28a710c51bd0600470796ca.png)
+    ![A screenshot of the Data Agent](../media/d56d30ede28a710c51bd0600470796ca.png)
 
 10.  To view the details of the model, select **Show Details**.
 
