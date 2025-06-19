@@ -9,7 +9,7 @@ lab:
 
 In this exercise, learners will use Plan designer to build a complete, targeted business solution that can include apps, workflows, agents and more. Copilot will guide you through the entire process of creating the solution.
 
-Upon successful completion of this lab, you will:**
+Upon successful completion of this lab, you will:
 
 - Use Plan designer to build a solution.
 - Use the Data agent to build a data model.
@@ -37,7 +37,7 @@ The estimated time to complete this exercise is **20 to 30** minutes.
 1. Open the [Power Apps maker](https://make.powerapps.com) portal and navigate to the **Home** screen.
 2. Under **Let’s make a plan**, enter the following text: “*I need my staff to check out equipment and be notified of due dates.*”
 
-    ![Screenshot of the Copilot screen where you can provide a description of the business challenge you are trying to solve.](media/50e9d4cd301f8a29f3583c49f6b45161.png)
+![Screenshot of the Copilot screen where you can provide a description of the business challenge you are trying to solve.](media/50e9d4cd301f8a29f3583c49f6b45161.png)
 
 3. Select the **Go** button.
 4. Plan Designer will generate a plan based on the description that you provided. The plan will include the following:
@@ -47,7 +47,7 @@ The estimated time to complete this exercise is **20 to 30** minutes.
 
 The **Requirements agent** built the user requirements based on the description you provided and should be considered as a starting point for your plan. You can modify the requirements as needed.
 
-    ![Screenshot of plan overview](media/6614c40776f6997ec0ad443a0ebaf318.png)
+![Screenshot of plan overview](media/6614c40776f6997ec0ad443a0ebaf318.png)
 
 5. To change the requirements, select the **Edit** button.
 6. In the **Copilot** field under the **User requirements** heading, enter: “*Staff should be able to report if there is an issue with the equipment while they have it checked out*.”
@@ -60,7 +60,7 @@ A new issue reporting requirement will be added to your plan.
 
 Next, the **Data model agent** assists you in creating your data model. It will make suggestions on what tables should be created to store the data for your solution.
 
-    ![A screenshot of the Data Agent](media/d56d30ede28a710c51bd0600470796ca.png)
+![A screenshot of the Data Agent](media/d56d30ede28a710c51bd0600470796ca.png)
 
 10.  To view the details of the model, select **Show Details**.
 
@@ -72,11 +72,12 @@ All the suggested tables, columns, and relationships will be displayed in the da
     - “Add a new choice column to the Equipment table called Equipment Type.”
     - “Add a new choice column to the Equipment table called Equipment Type. “
 
-    Your data model should look like the one listed below.
+Your data model should look like the one listed.
 
-**Remember:** It will likely not match exactly. And that is OK.
+> [!NOTE]
+> > It will likely not match exactly. And that is OK.
 
-    ![A screenshot of the data model.](media/7bbfdfe5d0ac44c7899924ab9dc6ce66.png)
+![A screenshot of the data model.](media/7bbfdfe5d0ac44c7899924ab9dc6ce66.png)
 
 13.  Using the navigation on the left, select the **Overview** icon. *(Located below the Back Arrow.)*
 14.  In the **Data Agent**, select **Looks good** to advance to the next step.
@@ -96,7 +97,7 @@ Plan designer builds solution files for all the plans you create. A solution is 
 
 21.  On the **Where do you want to save thigs** screen, set the Name of the solution to Equipment Checkout System and select the **Save** button.
 
-    ![Screenshot of the solution that will be created.](media/58f251e3404a38c6fd2905cd5f422ed4.png)
+![Screenshot of the solution that will be created.](media/58f251e3404a38c6fd2905cd5f422ed4.png)
 
 It can take between 1 to 3 minutes for all the items suggested by the Plan designer to be created. Once the message indicating your tables have been saved, select the **X** to close the display message.
 
@@ -108,7 +109,7 @@ Now that plan designer has created all the necessary tables, and provided sugges
 2.  In the **Plan Overview** pane is still displayed, select the collapse button to provide you with mode design space. *(Located in the upper right of the overview pane.)*
 3.  In the **Design** window, locate the **Equipment Checkout App** and select the **Create** button. *(Power Apps will quickly build the app.)*
 
-    ![Screenshot showing how to create an app.](media/88ea38999c67a0744553a82f8633a111.png)
+![Screenshot showing how to create an app.](media/88ea38999c67a0744553a82f8633a111.png)
 
 Once your application is created, we will make a few basic modifications to it. Before we do that, let’s look around the app.
 
@@ -145,7 +146,8 @@ Additional changes can be made as you want, but for now we will test the applica
 27.  On the **Command bar**, select the **Save** icon to save your app.
 28.  Close your **Browser** tab to return to **Design Planner**. (*Notice the button under your app has changed from create to edit.*)
 
-**Note:** If you want to repeat the above steps, you can create and modify the Equipment Management app as well.
+> [[!NOTE]
+> If you want to repeat the above steps, you can create and modify the Equipment Management app as well.
 
 ## Task 3: Create the suggested flow
 
@@ -160,7 +162,7 @@ The flow that is created is a recurring flow that will run daily, Identify and c
 4.  Select the **Recurrence** trigger.
 5.  Notice the trigger has automatically been configured to an **Interval** of **1** and a **Frequency** of Day. *(You could specify a specific time of day it should run as well.)*
 
-    ![Screenshot of the recurrence trigger](media/c2b4b1afa9756afd934fbe9e7a740a89.png)
+![Screenshot of the recurrence trigger](media/c2b4b1afa9756afd934fbe9e7a740a89.png)
 
 6.  Select the **List rows** step.
 
@@ -169,14 +171,15 @@ This step will look at the **Notification** table that was created as part of ou
 7.  If there is a value in the **Table Name** field, remove it.
 8.  In the **Table name** field, type **Notifications**, and select **Notifications [cX\#X\#_notifications]** or similarly named item in your environment.
 
-    ![Screenshot of the list rows action](media/5b246838ef6bbed257034637d80faccf.png)
+![Screenshot of the list rows action](media/5b246838ef6bbed257034637d80faccf.png)
 
 9.  Select the **For Each** step.
 10.  For each record identified in the **List Rows** step, the flow will send an email to the email address of the employee who has the item checked out to remind them that their item is due back today.
 
 ![Screenshot of the Send an email action](media/a7db1ebbf7ad0ed4cfc34e603d69b579.png)
     
-**Important:** Make sure that you email step has data in it. Failure to include data will result in an error. IF it is missing data, fill in the fields of the step to match the image above. You can enter your own email address in the To field if you want.
+> [!IMPORTANT]
+> Make sure that you email step has data in it. Failure to include data will result in an error. IF it is missing data, fill in the fields of the step to match the image above. You can enter your own email address in the To field if you want.
 
 You could make any additional changes that you see fit in the flow. For now, we will leave it as it is.
 
@@ -196,7 +199,7 @@ Finally, the Plan designer provided a suggestion for an Item Checkout agent that
 2.  In the **Test your agent** pane, enter the following: *“Does Bob Johnson have any overdue items checked out?”*
 3.  The agent will return a response based on the data in your tables.
 
-    ![Screenshot of the Item Checkout agent that was created.](media/8bf5e1378b4f10bdebe0b72c9867bd71.png)
+![Screenshot of the Item Checkout agent that was created.](media/8bf5e1378b4f10bdebe0b72c9867bd71.png)
 
 4.  In **Copilot Studio**, select the **Publish** button.
 5.  On the **Publish this agent** screen, select the **Publish** button.
