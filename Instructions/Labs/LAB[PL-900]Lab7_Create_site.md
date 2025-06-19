@@ -235,7 +235,7 @@ Now that we have defined the necessary forms we are going to use for managing re
         3.  **Display label:** Edit Event
     4.  Select **Done**.
 
-## Task 6: Update Permissions
+## Task 6: Update permissions
 
 To ensure that users are only seeing data relevant to them organizations can specify table permissions. In this task we are going to create very basic permissions that provide access to anyone.
 
