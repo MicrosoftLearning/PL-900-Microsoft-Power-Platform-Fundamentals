@@ -48,9 +48,9 @@ We want to send a registration confirmation to any newly registered users. We wi
 8.  Select Create flow.
 9.  Choose the trigger **When a row is added, modified, or deleted**.
 10. Populate the trigger conditions for the flow:
-    1.  Select **Added** for **Change type**
-    2.  Select **Session Registrations** for the **Table name**
-    3.  Select **Organization** for **Scope**
+    - Select **Added** for **Change type**
+    - Select **Session Registrations** for the **Table name**
+    - Select **Organization** for **Scope**
 11. Select the text **When a row is added, modified, or deleted** and rename the trigger step **When an Expense Report is added.**
 
 This is good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
@@ -90,16 +90,17 @@ Lastly, we are going to get the details of the person registered for the session
 5.  Enter the following text in **Email Body**:
 
 > [!NOTE]
-> Dynamic content needs to be placed where fields are named in brackets. It is recommended to copy & paste all text first and then add dynamic content in the correct places.*
+> Dynamic content needs to be placed where fields are named in brackets. It is recommended to copy & paste all text first and then add dynamic content in the correct places.
 
-    Dear {First Name},
-    Thank you for registering for our upcoming session {Session Name} on {Event Date}. Speaker {Value} will be your speaker in this session. Your session is scheduled to last {Duration (Hours)}.
-    Check out our other session at our {Event Name}
-    
-    Best regards,
-    
-    Events Administration
-    Contoso Consulting
+*Dear {First Name},
+Thank you for registering for our upcoming session {Session Name} on {Event Date}. Speaker {Value} will be your speaker in this session. Your session is scheduled to last {Duration (Hours)}.
+Check out our other session at our {Event Name}.*
+
+*Best regards,*
+
+*Events Administration*
+
+*Contoso Consulting*
 
 6.  Highlight the **{First Name}** text. Replace it with the **First Name** field from the **Get Participant Details** step.
 7.  Highlight the **{Session Name}** text. Replace it with the **Session Name** field from the **Get Event Session** step.
