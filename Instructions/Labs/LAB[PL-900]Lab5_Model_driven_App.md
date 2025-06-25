@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab 4: Create a model-driven app'
+    title: 'Lab 5: Create a model-driven app'
     learning path: 'Learning Path: Demonstrate the capabilities of Microsoft Power Apps'
     module: 'Module 3: Build a model-driven app'
 ---
@@ -26,7 +26,7 @@ In this exercise you are going to build a model-driven application to manage Con
 
 Before beginning this exercise, It is recommended that have completed:
 
--   **Lab 2– Create a Power Platform Solution**
+-   **Lab 2– Create a Solution**
 -   **Lab 3– Create a Data Model**
 
 The estimated time to complete this exercise is **20 to 30** minutes.
@@ -42,8 +42,8 @@ Contoso currently stores contact information in their Dataverse instance, so the
 5.  Select the **Create** section.
     -   **Name:** Contoso Event Management
     -   **Description:** Used to manage Events and Event Sessions.
-6.  Select the **Create** button**.**
-7.  Select the **Add Page** button, select **Dataverse Table.**
+6.  Select the **Create** button.
+7.  Select the **Add Page** button, select **Dataverse table.**
 8.  Select the following tables:
     -   Contact
     -   Event
@@ -72,7 +72,7 @@ Now that the app is created, we are going to make some changes to the way the ap
 5.  Choose **New group**.
 6.  In the **Properties** pane, change the name of the group from **New Group** to **Events.**
 7.  Hover over **Session Registrations view** on the left, select the **ellipsis**, and choose **Move down** to move **Sessions Registrations** into the **Events** group.
-8.  Hover over **Event Sessions** view on the left, select the **ellipsis**, and choose **Move down** to move **Event Sessions** into the **Events** group.
+8.  Hover over **Event Sessions view** on the left, select the **ellipsis**, and choose **Move down** to move **Event Sessions** into the **Events** group.
 9.  Hover over **Events view** on the left, select the **ellipsis**, and choose **Move down** to move **Events** into the **Events group**.
 
 Your app should resemble the image:
@@ -88,11 +88,11 @@ The model-drive application uses forms and views to present data to users in the
 
     If you are prompted to save your changes, select **Save and Continue.**
 
-3.  Under **Table Columns** on the left, select **New table column**.
+3.  Under **Table Columns** on the left, select **+ New table column**.
 4.  Configure the table column as follows:
-    -   **Display Name:** Contact Type
-    -   **Data Type:** Choice
-    -   **Synce with global choice:** No
+    -   **Display name:** Contact Type
+    -   **Data type:** Choice
+    -   **Sync with global choice:** No
 5.  Set the **Label** of the first choice to **Speaker.**
 6.  Select **+ New Choice** and set the label to **Participant.**
 7.  Select **+ New Choice** and set the label to **Support Staff**.
@@ -157,7 +157,7 @@ First we are going to add a couple of contacts.
 
 1.  Using the navigation on the left, select **Apps**.
 2.  Change the apps being displayed from **My apps** to **All**.
-3.  Hover the **Course Event Management** application that you just created and select the **Play** icon.
+3.  Hover the **Contoso Event Management** application that you just created and select the **Play** icon.
 4.  Using the navigation on the left, select **Contacts**.
 5.  On the command bar, select the **+ New** button.
 6.  In the **New Contact** screen, configure as follows:

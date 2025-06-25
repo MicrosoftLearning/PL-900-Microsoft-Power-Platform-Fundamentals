@@ -37,7 +37,7 @@ We want to send a registration confirmation to any newly registered users. We wi
 
 1.  Navigate to <https://make.powerautomate.com>.
 2.  You may need to reauthenticate, select **Sign in** and follow instructions, if needed.
-3.  In the Create you automation with Copilot screen, enter: *“When a new Session Registration is created in Dataverse, get the details of the session and the event the registration is for an send a confirmation email to registered person.”*
+3.  In the **Create you automation with Copilot** screen, enter: *“When a new Session Registration is created in Dataverse, get the details of the session and the event the registration is for an send a confirmation email to registered person.”*
 4.  Copilot will suggest a potential flow based on your description.
 5.  It should look like the image below:
 
@@ -45,7 +45,7 @@ We want to send a registration confirmation to any newly registered users. We wi
 
 6.  Select **Keep it and continue**.
 7.  Review the connections to ensure everything is correct.
-8.  Select Create flow.
+8.  Select **Create flow**.
 9.  Choose the trigger **When a row is added, modified, or deleted**.
 10. Populate the trigger conditions for the flow:
     - Select **Added** for **Change type**
@@ -114,7 +114,7 @@ Your completed step should resemble the image:
 
 11.  Select **Save**.
 
-Leave this flow tab open for the next task. Your flow should look like the following:
+Leave this flow tab open for the next task. 
 
 ### Task 4: Validate and test the flow
 
@@ -125,7 +125,7 @@ Leave this flow tab open for the next task. Your flow should look like the follo
 5.  On the command bar, select **Test**. Select **Manually** and then select **Test**.
 6.  Navigate to the browser tab with your model-driven app open.
 7.  Using the sitemap navigation on the left, select **Session Registration**.
-8.  Select the **+ New** button to add a new **Session Registration** record.
+8.  Select the **+ New** button to add a **New Session Registration** record.
 9.  Complete the **Session Registration record** as follows:
     -   **Report Name:** Test Report
     -   **Report Purpose:** Conference
@@ -149,10 +149,10 @@ In this exercise, you will create a Power Automate flow that will be run form an
 3.  Select **Automated cloud flow.**
 4.  Select the **Skip** button.
 5.  Select the **Add a trigger** box. Search for and select **When an agent calls the flow**.
-6.  Select **Add an Input**.
+6.  Select **Add an input**.
 7.  Select **Text** and change the name from **Input** to **Device Type**.
-8.  Select **Add an Input** again, choose **Text**, and change the name from **Input** to **Problem Type**.
-9.  Select **Add an Input** one last time, choose **Text**, and change the name from **Input** to **Problem Description.**
+8.  Select **Add an input** again, choose **Text**, and change the name from **Input** to **Problem Type**.
+9.  Select **Add an input** one last time, choose **Text**, and change the name from **Input** to **Problem Description.**
 
 Your completed trigger should resemble the following image:
 
@@ -163,8 +163,8 @@ Your completed trigger should resemble the following image:
 
 #### Specify an action
 
-1.  Under the **When an agent calls the flow** trigger, select **Insert a new step** (+).
-2.  In the add an action window, search for, and select **Run a prompt**.
+1.  Under the **When an agent calls the flow** trigger, select **Insert a new action** (+).
+2.  In the **Add an action window**, search for, and select **Run a prompt**.
 3.  In the **Run a prompt** window, set the **Prompt** field to **AI Summarize**.
 4.  In the **Input Text** field, select the **Dynamics value** *(Lightning bolt)* icon.
 5.  Under When an agent calls the flow, select the following dynamic values:

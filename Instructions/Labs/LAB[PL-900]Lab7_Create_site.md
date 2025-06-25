@@ -66,7 +66,7 @@ Now that you initial site is created, you can use the design studio to modify yo
 2.  Hover over the **Contoso Event management Site** text in the site header and select **Edit site header**.
 3.  Change the **Site title** to **Contoso Consulting**.
 4.  Select the **Upload image** button.
-5.  On the **Add an image** screen, select **Upload** image, choose the **Contoso Logo** from you class files, and choose **Open**.
+5.  On the **Add an image** screen, select **Upload image**, choose the **Contoso Logo** from you class files, and choose **Open**.
 6.  With the **Contoso Logo** image selected, select **OK**.
 7.  After you are finished with you changes, select the **X** to leave the **Edit site header** screen.
 8.  To change the site background image, click anywhere in the background image.
@@ -85,8 +85,8 @@ Now that we have made some basic changes to the home page, we are going to updat
 
 19.  Using the navigation on the left, select the **Styling** button.
 20.  Select the **Bright Blue** theme.
-21.  Under **brand colors**, select the **Gray** color circle.
-22.  Change the **Hex** color**: 101E2B**
+21.  Under **brand colors**, select the **Grey** color circle.
+22.  Change the **Hex** color **: 101E2B**
 23.  Select **OK**.
 24.  Select the **White** circle, and change the color to **Hex** code **e8e8e8**
 25.  Select **OK**
@@ -113,11 +113,11 @@ Next, we are going to create a form that will be used for viewing and editing ex
 
 8.  Select the **New Form** button.
 9.  Name the form **View Event** and select the **Create** button.
-10.  On the **Command bar**, select **Add Component**, and select **Subgrid**.
+10.  On the **Command bar**, select **Add component**, and select **Subgrid**.
 11.  Configure the Subgrid as follows:
     -   **Show Related Records:** Yes
     -   **Table:** Event Sessions
-    -   **Default:** Active Sessions
+    -   **Default:** Active Event Sessions
 12.  Select **Done**.
 13.  Select the **Save and Publish** button.
 14.  Select the **Back** button to return to the **Design Studio**.

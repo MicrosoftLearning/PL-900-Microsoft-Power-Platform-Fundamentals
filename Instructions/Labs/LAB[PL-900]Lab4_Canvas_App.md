@@ -33,8 +33,8 @@ The estimated time to complete this exercise is **45 to 60** minutes.
 1.  Open a web browser and navigate to the [Power Apps](https://make.powerapps.com/) maker portal.
 2.  Using the navigation on the left, select **Create**.
 3.  Under **Create your apps**, choose **Start with Copilot**.
-4.  In the **Describe the tables that you want copilot to build** screen, type: “ I want to store time off requests sent by employees. The table should identify the start and end times of the request.”
-5.  Select the **Table options** button. From the menu that appears, select **One Table**.
+4.  In the **Describe the tables you want Copilot to build** screen, type: “ I want to store time off requests sent by employees. The table should identify the start and end times of the request.”
+5.  Select the **Table options** button. From the menu that appears, select **One table**.
 
 ![Screenshot of getting started with Copilot screen](media/60a2ec72988f48c91df7c370532cb331.png)
 
@@ -56,14 +56,14 @@ Copilot should have created a **Time Off Request** table. Next, we will add more
 Next, we are going to add the user table to the data model so we can associate time off requests with specific users.
 
 9.  On the **Command bar**, select **+ Existing table**.
-10.  Switch from **Recommeded** to **All Tables**.
+10.  Switch from **Recommeded** to **All tables**.
 11.  In the **Search** field, enter **User**.
 12.  Select the **User** table and click the **Add Selected** button.
 13.  On the **Command bar**, select **Create relationships**.
 14.  Configure the relationship as follows:
     -   **One:** User
     -   **Many:** Time Off Request
-    -   **Display Name:** Requesting Employee
+    -   **Display name:** Requesting Employee
 15.  Select **Done**.
 
 Your completed data model should resemble the image below:
@@ -79,7 +79,7 @@ Your completed data model should resemble the image below:
 
 Now that your new app has been created we are going to make some modifications to it to best fit our needs. We are going to start by making some modifications to the Welcome screen.
 
-1.  With your new app open, Select the **Image** placeholder above the **Time Off Requests** text**.**
+1.  With your new app open, select the **Image** placeholder above the **Time Off Requests** text.
 2.  From the menu that appears, select **Edit** \> **Upload**.
 3.  Choose the **Time off** image in the class files folder, and then select **Open**.
 4.  Next, select the **Image** placeholder above **Users**.
@@ -91,7 +91,7 @@ Next, we are going to adjust the size of the images to make them easier for user
 7.  On the **Command bar**, select the **Properties** button. (*Located just to the right of the Editing button.*)
 8.  Select the **Time off** image you add earlier.
 9.  In the **Properties** panel, configure the image as follows:
-    -   **Image Position:** Fill
+    -   **Image position:** Fill
     -   **Width:** 300
     -   **Height:** 300
 10.  Repeat the earlier step to set the **Height** and **Width** of the **Employee** image to **300** x **300**.
@@ -101,10 +101,10 @@ Next, we are going to adjust the size of the images to make them easier for user
 14.  In the **Properties** pane on the right, select the **Logo** field.
 15.  From the menu that appears, select **Upload**.
 16. Select the **Contoso Logo** from your class files and select **Open**.
-17. In the **Properties** panel under the **Style** and theme group, select the **Fill** color icon.
+17. In the **Properties** panel under the **Style and theme** group, select the **Fill** color icon.
 18. Select the **Custom** tab
 19. Change the **Hex** color to: **101E2B**
-20. Make sure that you still have the **Header** selected, and change the **Title**, to Contoso Employee Hub
+20. Make sure that you still have the **Header** selected, and change the **Title** to **Contoso Employee Hub**.
 
 Your app will resemble the image.
 
@@ -114,11 +114,11 @@ Your app will resemble the image.
 
 As you are building the app, one of your managers reaches you to you and is wondering if employees could also use this app for checking out equipment. Contoso is already storing equipment checkout information in Dataverse, so it is just a matter of making the information available in the app.
 
-1.  With your app still open, If necessary, expand the **Copilot** pane. In Copilot enter the following: “*Add a new screen called Equipment Checkout.”*  Select **Send***.*
+1.  With your app still open, If necessary, expand the **Copilot** pane. In Copilot enter the following: “*Add a new screen called Equipment Checkout.”*  Select **Send**.
 2.  Select the **Keep it** button to accept the screen.
 3.  A new screen called **Equipment Checkout** is added to your app.
 4.  While on the **Equipment Checkout** screen, click **With layout**, and choose the **Sidebar** layout.
-5.  Expand the different containers until **SideBarContainer** is visible**.**
+5.  Expand the different containers until **SideBarContainer** is visible.
 
 ![Screenshot of tree view ](media/cde6257402b7a8786e679ab64ee0f882.png)
 
@@ -152,7 +152,7 @@ Next, we are going to add an additional container to the **EquipmentContiner1** 
     -   **Flexible height:** Off
     -   **Height:** 44
 23.  With **EquipSearchContainer** selected, select the **Open Insert menu** button.
-24. In the **Search** field, enter **Text**, and select **Text Input**.
+24. In the **Search** field, enter **Text**, and select **Text input**.
 25. Rename the **Text Input** field, to **EquipSearchInput**.
 26. With **EquipSearchInput** selected, in the **Properties** pane, configure as follows:
     -   **Default:** Blank (nothing)
@@ -161,7 +161,7 @@ Next, we are going to add an additional container to the **EquipmentContiner1** 
     -   **Font size:** 14
     -   **Padding**
         -   **Top:** 5
-        -   **Bottom:**5
+        -   **Bottom:** 5
         -   **Left:** 12
         -   **Right:** 5
     -   **Height:** 44
@@ -201,8 +201,8 @@ Finally, we are going to configure the **Equipment List** gallery to populate it
 When a user selects a record in the Equipment list, we want to open the record in another container to allow them to edit the selected record.
 
 1.  Select the **MainContainer**.
-2.  On the **MainContainer**, select the **Open Insert menu** button.
-3.  In the **Search** filed, enter **Container**, and choose **Vertical Container**.
+2.  On the **MainContainer**, select the **Open insert menu** button.
+3.  In the **Search** field, enter **Container**, and choose **Vertical container**.
 4.  Right-click and **Rename** the container to **RecordDetails**.
 5.  On the **RecordDetails** container, select the **Open Insert menu** button.
 6.  On the **Insert** menu, select **Edit form**.
@@ -211,7 +211,7 @@ When a user selects a record in the Equipment list, we want to open the record i
 9.  In the **Properties** pane, select the **Advanced** tab and set the **Item** property to: *'Equipment List'*.Selected. *(This will populate the form with the currently selected record.)*
 10. Select the **Display** tab, and configure the form as follows:
     -   **Columns:** 2
-    -   **Default Mode:** Edit
+    -   **Default mode:** Edit
 
 Now we are going to add another container that will be used to control the operations on the form.
 
@@ -226,7 +226,7 @@ Now we are going to add another container that will be used to control the opera
     -   **Height:** 50
 17.  With the **SelectedRecord1**container selected, select the **Open insert menu** button.
 18.  Select **Text Label.**
-19.  **Rename the label to** SelectedRecordTitle
+19.  Rename the label to **SelectedRecordTitle**.
 20. Select **Keep it**.
 21. Configure the **SelectedRecordTitle** as follows:
     1.  **Padding**
@@ -236,7 +236,7 @@ Now we are going to add another container that will be used to control the opera
         4.  **Height:** 40
     2.  **Flexible width:** On
     3.  **Minimum width:** 150
-22. Select the **SecondRecord1** container, Select the **Insert** button.
+22. Select the **SelectedRecord1** container, Select the **Insert** button.
 23. In the **Search** field, enter **Save**, and select the **Save** icon.
 24. Configure the **Save** button as follows:
     -   **Height:** 40
@@ -250,7 +250,7 @@ Now we are going to add another container that will be used to control the opera
 The last step in creating this screen is to populate the reader container with data.
 
 1.  Select the **HeaderContainer** at the top of the app.
-2.  Select the **Open Insert menu** button.
+2.  Select the **Open insert menu** button.
 3.  Select **Text label**.
 4.  Configure the **Text label** control as follows:
     -   **Text:** Equipment Checkout
@@ -267,7 +267,7 @@ The last step in creating this screen is to populate the reader container with d
         ![Screenshot of text label properties.](media/088cafeec651b099fa49ac1f151cd228.png)
 
 5.  Select the **HeaderContainer**, choose **Insert**, and select the **Home Icon**.
-6.  Set the **OnSelect** property of the home button to: Back()
+6.  Set the **OnSelect** property of the home button to: **Back()**.
 
 ![Screenshot of the Back navigation command.](media/38d0e5367ee41da58ac9902f8056b1af.png)
 
@@ -302,5 +302,5 @@ Upon review, we have decided that we do not need to have the ability to create u
 **Goal:** Save and publish the app to make it accessible across web browsers, mobile devices, or embedded platforms like SharePoint or Teams.
 
 1.  In Power Apps Studio, select the **Save** button.
-2.  In the **Save** as screen, set the **Name** to **Contoso Employee Hub**, select **Save**.
+2.  In the **Save as** screen, set the **Name** to **Contoso Employee Hub**, select **Save**.
 3.  Select the **Publish** button.

@@ -21,13 +21,13 @@ Contoso Consulting is a professional services organization specializing in IT an
 
 Contoso would like to use Power Platform to build an Event Management solution that they can use to manage the different events they host throughout the year.
 
-In this exercise you are going to create a data mode that will be used to store the different types of events, event registrations, and other data needed for Contoso to effectively manage their events.
+In this exercise you are going to create a data model that will be used to store the different types of events, event registrations, and other data needed for Contoso to effectively manage their events.
 
 ### Lab Details
 
 Before beginning this exercise, It is recommended that have completed:
 
-- **Lab 2 – Create a Power Platform Solution**
+- **Lab 2 – Create a Solution**
 
 > [!IMPORTANT]
 > This lab uses AI to build out the components. Since AI results can vary, it’s important to note that you results may be different (but similar) to what is defined in the lab. The basic concepts outlined in the lab will be the same no matter what was created or what it was named. If the tables and columns do not match exactly, you may need to adjust to what was created for you.
@@ -41,14 +41,14 @@ The estimated time to complete this exercise is **20 to 30** minutes.
 
 ## Task 1: Create a data model
 
-Contoso currently stores doner contact information in their Dataverse instance. They would like to use Dataverse to track the grants they are applying for and donations that they are receiving. You need to create the necessary tables to support the future application needs of Contoso.
+Contoso currently stores donor contact information in their Dataverse instance. They would like to use Dataverse to track the grants they are applying for and donations that they are receiving. You need to create the necessary tables to support the future application needs of Contoso.
 
 1.  If necessary, open a web browser and navigate to the [Power Apps](https://make.powerapps.com/) maker portal, and Sign in using your Microsoft account credentials.
 2.  Using the navigation on the left, select **Tables**.
-3.  Under **Tables**, select **Get Started with Copilot**.
-4.  In the **Describe the tables that you want copilot to build** screen, Enter: “*Create a table for managing Events. The table should identify the name of the event, event data, the maximum number of attendees, and event details.”*
+3.  Under **Tables**, select **Get started with Copilot**.
+4.  In the **Describe the tables you want Copilot to build** screen, Enter: “*Create a table for managing Events. The table should identify the name of the event, event data, the maximum number of attendees, and event details.”*
 5.  Next to the **Generate** button, select **Table Settings**, and configure as follows:
-    - **Table Options:** One table
+    - **Table options:** One table
     - Do **NOT** include relationships.
 
 ![Screenshot of the Copilot screen where you provide your description.](media/3ba587c2323ca2cf012f5e65530c69bc.png)
@@ -62,23 +62,23 @@ Contoso currently stores doner contact information in their Dataverse instance. 
 
 Now that we have created the table, we are going to add some additional columns to it. We will start by adding an event type column. Additionally, Contacts will attend our events. We want to add the existing Contact table to the data model and associate it with Event Registrations later.
 
-1.  In the **What would you like to do nex**t field, enter: “*Add a choice column named event type”*
+1.  In the **What would you like to do next?** field, enter: “*Add a choice column named event type”*
 2.  Add another column by entering the following text: ”*Add a choice column named registration required*”
 
 ![A screenshot of the Event table](media/caccce34fbd7091d59e0fbd4d9cac2b1.png)
 
 Next, Lets add the **Contact** table to the data model.
 
-3.  In the **Command bar** at the top, select **+ Existing Table.**
-4.  In the **Search** field, enter **Contact**, and choose **Add selected**.
+3.  In the **Command bar** at the top, select **+ Existing table.**
+4.  In the **Search** field, enter **Contact**, and choose **Add Selected**.
 
 Depending on the type of event, there might be one or more sessions. To manage the different sessions, we need to define what the session is and the event with which it is associated. Next we will use Copilot to create an Event Sessions table.
 
-5.  In the **What would you like to do next** field, Enter: “*Add a new table called event session.”*
+5.  In the **What would you like to do next?** field, Enter: “*Add a new table called event session.”*
 
 Copilot will likely create two tables, Event Session and Event Speaker. Since our Contacts will be speakers, we are going to remove the Event Speaker table.
 
-6.  If necessary, in the **What would you like to do next** field, Enter: “*Remove the Event Speaker table.”*
+6.  If necessary, in the **What would you like to do next?** field, Enter: “*Remove the Event Speaker table.”*
 7.  In Copilot, enter the following text: “*Add a new text column to the Event Session table called session description.”*
 
 ![Screenshot showing the Event Session table added](media/546162a8b040a7bdcdcd5c3e2be44b4d.png)
@@ -96,7 +96,7 @@ Now we are going to create relationships between our different tables. Since Con
 
 11.  On the Command bar, select **Create relationships**.
 12.  Configure the relationship as follows:
-    - **Relationship Type:** One-to-many
+    - **Relationship type:** One-to-many
     - **One:** Contact
     - **Many:** Event Session
     - **Display name:** Speaker
@@ -108,7 +108,7 @@ Since contacts can be registered for sessions in sessions, we are going to creat
 
 14.  On the **Command bar**, select **Create relationships**.
 15.  Configure the relationship as follows:
-    - **Relationship Type:** One-to-many
+    - **Relationship type:** One-to-many
     - **One:** Contact
     - **Many:** Session Registration
     - **Display name:** Participant
@@ -121,7 +121,7 @@ A single event can have multiple sessions associated with it, so we are going to
 
 17.  On the **Command bar**, select **Create relationships**.
 18.  Configure the relationship as follows:
-    - **Relationship Type:** One-to-many
+    - **Relationship type:** One-to-many
     - **One:** Event
     - **Many:** Event Session
     - **Display name:** Event
@@ -132,7 +132,7 @@ Finally, Participants register up for Event Sessions, so we will need to create 
 
 19.  On the **Command bar**, select **Create relationships**.
 20.  Configure the relationship as follows:
-    - **Relationship Type:** One-to-many
+    - **Relationship type:** One-to-many
     - **One:** Event Session
     - **Many:** Session Registrations
     - **Display name:** Event Session
@@ -159,6 +159,7 @@ Copilot is a wonderful way to create tables and columns very quickly. However, t
 6.  Locate and open the **Event Type** column.
 7.  Replace the Labels with the following:
     - Conference
+    - Trade Show
     - Webinar
     - Lunch and Learn
     - Launch
@@ -174,9 +175,9 @@ Next we will add a new column to the **Event Session** table to track the total 
 11.  In the **Search** field, enter **Event**.
 12.  Open the **Event Session** table.
 13.  Under the **Schema** heading select **Columns**.
-14.  On the command bar, select the **New Column** button.
+14.  On the command bar, select the **+ New column** button.
 15.  Configure the new column as follows:
-    - **Display Name:** Total Registrations
+    - **Display name:** Total Registrations
     - **Data type:** Whole Number
     - **Behavior**: Rollup
 
