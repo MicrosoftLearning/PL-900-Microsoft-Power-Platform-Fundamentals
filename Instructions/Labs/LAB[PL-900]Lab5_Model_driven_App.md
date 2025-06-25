@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab 4: Create a model-driven app'
+    title: 'Lab 5: Create a model-driven app'
     learning path: 'Learning Path: Demonstrate the capabilities of Microsoft Power Apps'
     module: 'Module 3: Build a model-driven app'
 ---
