@@ -62,7 +62,7 @@ Next, the **Data model agent** assists you in creating your data model. It will 
 
 ![A screenshot of the Data Agent](media/d56d30ede28a710c51bd0600470796ca.png)
 
-10.  To view the details of the model, select **Show Details**.
+10.  To view the details of the model, select **Show details**.
 
 All the suggested tables, columns, and relationships will be displayed in the data model designer. You can use the Copilot pane to make changes to the data model.
 
@@ -95,7 +95,7 @@ Next the **Solution Agent** will provide suggestions for different items. In our
 
 Plan designer builds solution files for all the plans you create. A solution is a critical component of Application lifecycle Management (ALM).
 
-21.  On the **Where do you want to save thigs** screen, set the Name of the solution to Equipment Checkout System and select the **Save** button.
+21.  On the **Where do you want to save things?** screen, set the Name of the solution to **Equipment Checkout System** and select the **Save** button.
 
 ![Screenshot of the solution that will be created.](media/58f251e3404a38c6fd2905cd5f422ed4.png)
 
@@ -118,16 +118,16 @@ Once your application is created, we will make a few basic modifications to it. 
 6.  Navigate to the additional screens such as **Extensions Requests** and **Notifications** *(Or whichever screens we created for your app)*.
 7.  Select the **Welcome screen.**
 8.  Select the image above **Reserve entities / checkouts.**
-9.  From the menu that appears, select **Edit** \> **Stock** Images.
+9.  From the menu that appears, select **Edit** \> **Stock images**.
 10.  In the **Search** box enter **Equipment**.
 11.  Select one of the suggested images from the list and select the **Insert** button. *(***OPTIONAL:** *Repeat as desired for the remaining images)*
 12.  Select the **description** below the Reserve entities / checkouts text.
 13. On the **Command bar**, select the **Properties** button. *(Located just to the right of the Editing button.)*
 14. Change the **Text** property to: “Start a new or view an existing reservation.”
-15. Select the **Reserve entities / Checkouts** text,
-16. Change the Text property to “Reserve Equipment.”
+15. Select the **Reserve entities / Checkouts** text.
+16. Change the Text property to **Reserve Equipment**.
 17. Select the **Welcome screen** text at the top of the screen.
-18. Change the **Text** property to “Contoso Equipment Checkout.”
+18. Change the **Title** property to **Contoso Equipment Checkout.**
 19. In the **Properties** pane, under **Style and theme**, change the fill color to **Dark Blue**. Select the image above **Staff**.
 
 Your apps **Welcome screen** will resemble the image shown:

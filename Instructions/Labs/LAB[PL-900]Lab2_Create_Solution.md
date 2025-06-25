@@ -31,12 +31,12 @@ Upon successful completion of this exercise, you will:
 2.  Navigate to **Solutions**.
 3.  On the command bar, select **New Solution.**
 4.  In the new solution screen configure as follows:
-    - **Display Name:** Event Management
+    - **Display name:** Event Management
     - **Name:** Event management
 5.  Under **Publisher**, select **+ New publisher**
 6.  Configure the new publisher as follows
-    - **Display name:** EventMSLEventMSLearnarn
-    - **Name:** EverntMSLearn
+    - **Display name:** EventMSLearnarn
+    - **Name:** EventMSLearn
     - **Prefix:** mslearn
     - **Choice value prefix:** Leave the default
 
@@ -58,15 +58,15 @@ Now that we have created a solution for storing our components, we are going to 
 2.  On the **Command bar**, Select **Add existing.**
 3.  From the menu that appears, select **Table**.
 4.  Select the **Account** table, then select **Next.**
-5.  On the **Select Tables** screen, select **Include all objects.**
+5.  On the **Selected tables** screen, select **Include all objects.**
 6.  Select **Add**
 
 Now that we have the Account table, we are going to add the contact table.
 
-7.  On the **Command bar**, Select the **Add existing** button again**.**
+7.  On the **Command bar**, Select the **Add existing** button again.
 8.  From the menu that appears, select **Table.**
 9.  Select the **Contact** table, then select **Next.**
-10.  On the **Select Tables** screen, select **Include all objects**
+10.  On the **Selected tables** screen, select **Include all objects**
 11.  Select **Add**
 
 ![A screenshot showing the Account and Contact tables in the solution.](media/a53817e242fca7371765583d9e565c36.png)
