@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab 7: Create a Power Pages site'
+    title: 'Lab 3: Create a Power Pages site'
     learning path: 'Learning Path: Demonstrate the capabilities of Microsoft Power Pages'
     module: 'Module 2: Create a Microsoft Power Pages site'
 ---
