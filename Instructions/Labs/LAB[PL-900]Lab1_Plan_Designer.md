@@ -68,8 +68,8 @@ All the suggested tables, columns, and relationships will be displayed in the da
 
 11.  In the **Copilot** pane on the right side of the screen, enter the following: “*Add a text column to the Equipment table called Item number.*”
 12.  After the column is added to the **Equipment** table, use **Copilot** to enter the following prompts individually:
-    - “Add a new text column to the Staff/Employee table called Manager.”
-    - “Add a new choice column to the Equipment table called Equipment Type.”
+- “Add a new text column to the Staff/Employee table called Manager.”
+- “Add a new choice column to the Equipment table called Equipment Type.”
 
 Your data model should look like the one listed.
 
