@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab 3: Create a data model'
+    title: 'Lab 2: Create a data model'
     learning path: 'Learning Path: Manage the Microsoft Power Platform environment'
     module: 'Module 1: Describe Microsoft Dataverse'
 ---
