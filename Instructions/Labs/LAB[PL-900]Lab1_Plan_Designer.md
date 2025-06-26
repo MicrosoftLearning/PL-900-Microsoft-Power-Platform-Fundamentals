@@ -114,7 +114,7 @@ Once your application is created, we will make a few basic modifications to it. 
 
 4.  Select the **Welcome screen**. *(Provides quick access to items such reservations, checkouts, and extensions.)*
 5.  Select the **Reserve entities / Checkouts** screen. *(Allows you to create new, view, edit, and delete reservations / checkouts.)*
-6.  Navigate to the additional screens such as **Extensions Requests** and **Notifications** *(Or whichever screens we created for your app)*.
+6.  Navigate to the additional screens such as **Extensions Requests** and **Notifications** *(Or whichever screens were created for your app)*.
 7.  Select the **Welcome screen.**
 8.  Select the image above **Reserve entities / checkouts.**
 9.  From the menu that appears, select **Edit** \> **Stock** Images.
