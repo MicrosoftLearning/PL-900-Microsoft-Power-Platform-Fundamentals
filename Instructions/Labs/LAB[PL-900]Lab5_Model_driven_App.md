@@ -132,7 +132,7 @@ If prompted to **Save** changes, select **Save and continue**.
 23.  Select the **Back arrow** button to return to the app designer.
 24.  Under **Navigation**, hover over the **Events** **form** and select **Edit**.
 
-    If prompted to save changes, select **Save and continue**.
+If prompted to save changes, select **Save and continue**.
 
 25.  Select **Event Details1** field and press the **Delete** key on your keyboard.
 
