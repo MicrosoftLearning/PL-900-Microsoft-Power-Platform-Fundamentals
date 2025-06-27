@@ -184,13 +184,13 @@ Next, we are going to add a new event.
 15.  Using the navigation on the left, select **Events**.
 16.  On the command bar, select the **+ New** button.
 17.  In the **New Event** screen, configure as follows:
-    -   **Event Name:** Spring conference.
-    -   **Event Date:** Tomorrow’s date.
-    -   **Max Attendees:** 500
-    -   **Event Details:** Spring conference to showcase newest products and services from our supported vendors.
-    -   **Event Type:** Conference
-    -   **Location:** Seattle
-    -   **Registration Required:** Yes/True
+- **Event Name:** Spring conference.
+- **Event Date:** Tomorrow’s date.
+- **Max Attendees:** 500
+- **Event Details:** Spring conference to showcase newest products and services from our supported vendors.
+- **Event Type:** Conference
+- **Location:** Seattle
+- **Registration Required:** Yes/True
 
 ![Screen shot of completed Event form. ](media/802f68c4c34c635eeff620a23d42acd8.png)
 
@@ -201,12 +201,12 @@ Next, we will add a new session for the Event.
 19.  Using the navigation on the left, select **Event Sessions**.
 20.  Select the **+ New** button.
 21.  Configure the **Event Session** as follows:
-    -   **Session Name:** Responsible AI
-    -   **Session Date:** Tomorrow’s Date
-    -   **Duration:** 1.5 Hours
-    -   **Session Description:** With all the new AI solutions, being responsible is important. We will discuss the challenges.
-    -   **Speaker:** Suzanne Diaz
-    -   **Event:** Spring Conference
+- **Session Name:** Responsible AI
+- **Session Date:** Tomorrow’s Date
+- **Duration:** 1.5 Hours
+- **Session Description:** With all the new AI solutions, being responsible is important. We will discuss the challenges.
+- **Speaker:** Suzanne Diaz
+- **Event:** Spring Conference
 
 ![Screenshot of completed Event session form. ](media/6e509e4a29e6f253b5db3b4c9f82e42e.png)
 
@@ -217,10 +217,10 @@ Finally, we are going to create a **Session Registration**.
 23.  Using the navigation on the left, select **Session Registrations.**
 24.  On the **Command bar**, select **+ New**.
 25.  Complete the session registration as follows:
-    -   **Name:** E, Swenson Registration.
-    -   **Registration Date:** Todays Date
-    -   **Participant:** Edgar Swenson
-    -   **Session:** Mark Jones
+- **Name:** E, Swenson Registration.
+- **Registration Date:** Todays Date
+- **Participant:** Edgar Swenson
+- **Session:** Mark Jones
 
 ![Screenshot of completed Session registration form.  ](media/16cccd9ebb949ba0f364211f1ee55d4d.png)
 
