@@ -44,7 +44,7 @@ In this exercise, you will verify that you can access Power Apps.
 
 1. At the top right of the screen, verify that the **Environment** is set to **Dev One**. This is where you will be working for the entirety of this lab. If it is not, select the **Dev One** environment.
 
-    ![Environment selector.](../media/select-dev-one-environment.png)
+    ![Environment selector.](media/select-dev-one-environment.png)
 
 1. Close the **Select environment** pane.
 
