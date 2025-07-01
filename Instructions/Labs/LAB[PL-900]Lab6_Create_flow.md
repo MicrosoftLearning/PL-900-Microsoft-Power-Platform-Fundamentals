@@ -52,12 +52,11 @@ We want to send a registration confirmation to any newly registered users. We wi
 
 8. Choose the trigger **When a row is added, modified, or deleted**, and then select **Create**.
 
-If you see an **Invalid Parameters** error, this is because you have not authenticated. Follow the steps below to create a connection. 
-
-- Select **Change Connection**.
-- Select **Add New.*
-- In the **Connection Name** field, enter MOD **Administrator**. Leave the **Authentication type** as **OAuth**, and **Select Sign in**.
-- Once signed in, move to **Step 9.** 
+	If you see an **Invalid Parameters** error, this is because you have not authenticated. Follow the steps below to create a connection. 
+	- Select **Change Connection**.
+	- Select **Add New.*
+	- In the **Connection Name** field, enter MOD **Administrator**. Leave the **Authentication type** as **OAuth**, and **Select Sign in**.
+	- Once signed in, move to **Step 9.** 
 
 9. Populate the trigger conditions for the flow:
 
@@ -67,7 +66,7 @@ If you see an **Invalid Parameters** error, this is because you have not authent
 
 10. Rename the trigger step **When a Session Registration is added.**
 
-![Screenshot of the when a session is added trigger configuration](../media/power-automate-01.png)
+![Screenshot of the when a session is added trigger configuration](media/power-automate-01.png)
 
 This is good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
 
@@ -88,7 +87,7 @@ This is good practice, so you and other flow editors can understand the purpose 
 
 7. On the **Get a row by ID** action, select the ellipsis (**...**) and select **Rename**. Rename this action **Get the Event Session**
 
-![Screenshot of the Get the Event Session action configuration](../media/power-automate-02.png)
+![Screenshot of the Get the Event Session action configuration](media/power-automate-02.png)
 
 Next, we are going to get the details of the Event the session is in.
 
@@ -106,7 +105,7 @@ Next, we are going to get the details of the Event the session is in.
 
 14. On the **Get a row by ID** action, select the ellipsis (**...**) and select **Rename**. Rename this action **Get the Event.**
 
-![Screenshot of the Get the Event action configuration](../media/power-automate-03.png)
+![Screenshot of the Get the Event action configuration](media/power-automate-03.png)
 
 Lastly, we are going to get the details of the person registered for the session.
 
@@ -124,7 +123,7 @@ Lastly, we are going to get the details of the person registered for the session
 
 21. Select the **Get a row by ID** text, and rename this action **Get** **Participant Details**.
 
-![Screenshot of the Get Participant Details action configuration](../media/power-automate-04.png)
+![Screenshot of the Get Participant Details action configuration](media/power-automate-04.png)
 
 ### Task 3: Create a step to send an email to confirm session registration
 
@@ -136,7 +135,7 @@ Lastly, we are going to get the details of the person registered for the session
 
 You may be prompted to create a connection to outlook, if so select the **Sign in** button, and login with the **Mod Administrator** account. 
 
-![A screenshot of the Create a Connection Screen](../media/power-automate-05.png)
+![A screenshot of the Create a Connection Screen](media/power-automate-05.png)
 
 4. Just above the **To** field, select the **Gear** icon. From the menu that appears, select **Use Dynamic content**.
 
@@ -144,7 +143,7 @@ You may be prompted to create a connection to outlook, if so select the **Sign i
 
 5. Using Dynamic values, in the **To** field, select **Email** under the **Get Participant Details**.
 
-![Screenshot of setting the to field to the email of the participant.](../media/power-automate-07.png)
+![Screenshot of setting the to field to the email of the participant.](media/power-automate-07.png)
 
 6. In the **Subject** field, make sure it says Registration Confirmation.
 
@@ -176,7 +175,7 @@ Next, we are going to replace the text in the brackets with the items outlined b
 
 Your completed step should resemble the image:
 
-[![Screenshot of completed email](../media/power-automate-08.png)](https://microsoftlearning.github.io/PL-900-Microsoft-Power-Platform-Fundamentals/Instructions/Labs/media/200fc8034321d31652e90f661001c8a5.png)
+[![Screenshot of completed email](media/power-automate-08.png)](https://microsoftlearning.github.io/PL-900-Microsoft-Power-Platform-Fundamentals/Instructions/Labs/media/200fc8034321d31652e90f661001c8a5.png)
 
 14. Select **Save**.
 
@@ -208,7 +207,7 @@ Note: If you completed Lab 5 – build a Model-Driven app, you can skip this tas
 
 8. Set the **Contact Type** to **Speaker**.
 
-[![Screenshot showing how to set the Contact Type field on a form.](../media/power-automate-09.png)](https://microsoftlearning.github.io/PL-900-Microsoft-Power-Platform-Fundamentals/Instructions/Labs/media/0860116a9b7df096c14728212b9977b1.png)
+[![Screenshot showing how to set the Contact Type field on a form.](media/power-automate-09.png)](https://microsoftlearning.github.io/PL-900-Microsoft-Power-Platform-Fundamentals/Instructions/Labs/media/0860116a9b7df096c14728212b9977b1.png)
 
 9. Select the **Save** button to save the contact and leave it open.
 
@@ -252,7 +251,7 @@ Next, we are going to add a new event.
 
 	- **Registration Required:** Yes/True
 
-[![Screen shot of completed Event form. ](../media/power-automate-10.png)](https://microsoftlearning.github.io/PL-900-Microsoft-Power-Platform-Fundamentals/Instructions/Labs/media/802f68c4c34c635eeff620a23d42acd8.png)
+[![Screen shot of completed Event form. ](media/power-automate-10.png)](https://microsoftlearning.github.io/PL-900-Microsoft-Power-Platform-Fundamentals/Instructions/Labs/media/802f68c4c34c635eeff620a23d42acd8.png)
 
 18. Select the **Save &amp; Close** button.
 
@@ -276,7 +275,7 @@ Next, we will add a new session for the Event.
 
 	- **Event:** Spring Conference
 
-[![Screenshot of completed Event session form. ](../media/power-automate-11.png)](https://microsoftlearning.github.io/PL-900-Microsoft-Power-Platform-Fundamentals/Instructions/Labs/media/6e509e4a29e6f253b5db3b4c9f82e42e.png)
+[![Screenshot of completed Event session form. ](media/power-automate-11.png)](https://microsoftlearning.github.io/PL-900-Microsoft-Power-Platform-Fundamentals/Instructions/Labs/media/6e509e4a29e6f253b5db3b4c9f82e42e.png)
 
 22. Select the **Save and close** button.
 
@@ -311,7 +310,7 @@ Finally, we are going to create a **Session Registration**.
 
 	- **Session:** Responsible AI
 
-[![Screenshot of completed Session registration form. ](../media/power-automate-12.png)](https://microsoftlearning.github.io/PL-900-Microsoft-Power-Platform-Fundamentals/Instructions/Labs/media/16cccd9ebb949ba0f364211f1ee55d4d.png)
+[![Screenshot of completed Session registration form. ](media/power-automate-12.png)](https://microsoftlearning.github.io/PL-900-Microsoft-Power-Platform-Fundamentals/Instructions/Labs/media/16cccd9ebb949ba0f364211f1ee55d4d.png)
 
 10. Select the **Save and Close** button.
 
