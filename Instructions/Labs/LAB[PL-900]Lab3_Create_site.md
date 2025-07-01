@@ -24,13 +24,13 @@ Before beginning this exercise, required that you have completed the following l
 
 - **Lab 2 – Create a data model**
 
-**Important:**
+> **Important:**
 This lab uses AI to build out the components. Since AI results can vary, it’s important to note that your results may be different (but similar) to what is defined in the lab. The basic concepts outlined in the lab will be the same no matter what was created or what it was named. If the tables and columns do not match exactly, you may need to adjust to what was created for you.
 
 The estimated time to complete this exercise is **30 to 45** minutes.
 
 **Before you begin:**
-If this is the first time you are accessing the Power Pages maker portal, you may need to run through some setup.  If so, follow the instructions below.  Otherwise, you can continue to Task 1.  
+If this is the first time you are accessing the Power Pages maker portal, you may need to run through some setup.  If so, follow the instructions below.  Otherwise, you can continue to **Task 1.**  
 
 1.	If necessary, navigate to [Microsoft Power Pages](https://make.powerpages.microsoft.com).
 2.	On the **Welcome to Power Pages** screen, select the **Get started** button.
@@ -67,7 +67,7 @@ Your new site will be created in the background, which can take several minutes.
 
 10.  After your site is created, open the it (If not already taken there.)
 
-**Note:**
+> **Note:**
 Sometimes when your site loads for the first time, you might see a Liquid object not found message. If this happens, Refresh (F5) the browser window to reload the site. The site should appear.
 
 ## Task 2: Modify the contents of your site
