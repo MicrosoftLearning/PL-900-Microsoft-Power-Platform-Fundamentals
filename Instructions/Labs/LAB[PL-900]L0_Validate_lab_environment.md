@@ -6,7 +6,7 @@ lab:
 
 # Practice Lab 0 - Validate lab environment
 
-**IMPORTANT:** 
+> **IMPORTANT:** 
 This lab provides you with a Microsoft 365 tenant and licenses for the Power Platform applications you will be using in this course. You will only be provided with one tenant for the practice labs in this course. The settings and actions you take within this tenant do not roll-back or reset, whereas the virtual machine you are provided with does reset each time you close the lab session. Please be aware that Microsoft 365 and Power Platform are evolving all the time. The instructions in this document may be different from what you experience in your actual tenant. It is also possible to experience a delay of several minutes before the virtual machine has network connectivity to begin the labs.
 
 ## WWL Tenants - Terms of Use
