@@ -22,12 +22,24 @@ Upon successful completion of this exercise, you will:
 
 Before beginning this exercise, required that you have completed the following lab:
 
-- **Lab 3 – Create a data model**
+- **Lab 2 – Create a data model**
 
-> [!IMPORTANT]
-> This lab uses AI to build out the components. Since AI results can vary, it’s important to note that your results may be different (but similar) to what is defined in the lab. The basic concepts outlined in the lab will be the same no matter what was created or what it was named. If the tables and columns do not match exactly, you may need to adjust to what was created for you.
+**Important:**
+This lab uses AI to build out the components. Since AI results can vary, it’s important to note that your results may be different (but similar) to what is defined in the lab. The basic concepts outlined in the lab will be the same no matter what was created or what it was named. If the tables and columns do not match exactly, you may need to adjust to what was created for you.
 
 The estimated time to complete this exercise is **30 to 45** minutes.
+
+**Before you begin:**
+If this is the first time you are accessing the Power Pages maker portal, you may need to run through some setup.  If so, follow the instructions below.  Otherwise, you can continue to Task 1.  
+
+1.	If necessary, navigate to [Microsoft Power Pages](https://make.powerpages.microsoft.com).
+2.	On the** Welcome to Power Pages** screen, select the **Get started** button.
+
+![Screenshot of the Power Pages welcome screen.](media/get-started.png)
+
+3. On the **Tell us a little about yourself** screen, select the **Skip** button.
+
+![Screenshot of the Power Pages welcome screen.](media/about-you.png)
 
 ## Task 1: Use Copilot to create a new Power pages site.
 
@@ -55,8 +67,8 @@ Your new site will be created in the background, which can take several minutes.
 
 10.  After your site is created, open the it (If not already taken there.)
 
-> [!NOTE:]
-> Sometimes when your site loads for the first time, you might see a Liquid object not found message. If this happens, Refresh (F5) the browser window to reload the site. The site should appear.
+**Note:**
+Sometimes when your site loads for the first time, you might see a Liquid object not found message. If this happens, Refresh (F5) the browser window to reload the site. The site should appear.
 
 ## Task 2: Modify the contents of your site
 
@@ -221,19 +233,19 @@ Now that we have defined the necessary forms we are going to use for managing re
     - **Select the data views:** Active Events, Inactive Events
     - **Name you list:** Events
 9.  Select the **Actions** tab and configure as follows:
-    1.  **Create a new record:** On
-        1. **Target Type:** Form
-        2. **Form:** Create Event
-        3. **Display label:** Create New Event
-    2.  **View details:** On
-        1.  **Target Type:** Form
-        2.  **Form:** View Event
-        3.  **Display label:** See Event Details
-    3.  **Edit record:** On
-        1.  **Target Type:** Form
-        2.  **Form:** Edit Event
-        3.  **Display label:** Edit Event
-    4.  Select **Done**.
+    - **Create a new record:** On
+        - **Target Type:** Form
+        - **Form:** Create Event
+        - **Display label:** Create New Event
+    - **View details:** On
+        - **Target Type:** Form
+        - **Form:** View Event
+        - **Display label:** See Event Details
+    - **Edit record:** On
+        - **Target Type:** Form
+        - **Form:** Edit Event
+        - **Display label:** Edit Event
+9. Select **Done**.
 
 ## Task 6: Update permissions
 
