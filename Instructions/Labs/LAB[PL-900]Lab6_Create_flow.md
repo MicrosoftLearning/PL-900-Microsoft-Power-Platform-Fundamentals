@@ -105,7 +105,7 @@ Next, we are going to get the details of the Event the session is in.
 
 14. On the **Get a row by ID** action, select the ellipsis (**...**) and select **Rename**. Rename this action **Get the Event.**
 
-![Screenshot of the Get the Event action configuration](media/power-automate-03.png)
+![Screenshot of the Get the Event action configuration](media/power-automate-03a.png)
 
 Lastly, we are going to get the details of the person registered for the session.
 
@@ -123,7 +123,7 @@ Lastly, we are going to get the details of the person registered for the session
 
 21. Select the **Get a row by ID** text, and rename this action **Get** **Participant Details**.
 
-![Screenshot of the Get Participant Details action configuration](media/power-automate-04.png)
+![Screenshot of the Get Participant Details action configuration](media/power-automate-04a.png)
 
 ### Task 3: Create a step to send an email to confirm session registration
 
