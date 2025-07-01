@@ -58,7 +58,7 @@ Contoso currently stores doner contact information in their Dataverse instance. 
 **Important:**
 Copilot should only create **ONE** table called Events. If more were created, you need to **DELETE** them by telling Copilot the name of the table to delete. **Failure to remove any extra tables will impact the next step.**
 
-![Screenshot of the the Event table created by Copilot.](media/event-checkpoint)
+![Screenshot of the the Event table created by Copilot.](media/event-checkpoint.png)
 
 **Edit the data model with Copilot**
 
