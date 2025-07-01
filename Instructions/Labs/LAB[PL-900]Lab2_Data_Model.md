@@ -29,14 +29,14 @@ Before beginning this exercise, it's recommended that have completed:
 
 - **Lab 1 – Create a solution**
 
-**Important:**
+> **Important:**
 This lab uses AI to build out the components. Since AI results can vary, it’s important to note that you results may be different (but similar) to what is defined in the lab. The basic concepts outlined in the lab will be the same no matter what was created or what it was named. If the tables and columns do not match exactly, you may need to adjust to what was created for you.
 
 ### Lab Timing
 
 The estimated time to complete this exercise is **30 to 45** minutes.
 
-**Note:**
+> **Note:**
 In the previous lab, we created an Event management solution and set it as the preferred solution in this environment. For that reason, we do not need to go directly to the solution to create our data model. The items we create will automatically be added to the solution.
 
 ## Task 1: Create a data model
@@ -69,7 +69,8 @@ Now that we have created the table, we are going to add some additional columns 
 
 ![A screenshot of the Event table](media/caccce34fbd7091d59e0fbd4d9cac2b1.png)
 
-**IMPORTANT:** Your event table does not have to match the above image exactly, but it should have at least the following columns:
+> **IMPORTANT:**
+Your event table does not have to match the above image exactly, but it should have at least the following columns:
 - Event Name
 - Event Date
 - Max Attendees
@@ -112,7 +113,7 @@ Your completed Session Registration table should look similar to the image below
 
 ![Screenshot showing the Session Registration table added.](media/session-registration-checkpoint.png)
 
-**Important** 
+> **Important** 
 While yours does not need to match exactly, it is important that you do not have a column named Participant.
 
 Now we are going to create relationships between our different tables. Since Contact records can be speakers in sessions, we are going to create a relationship between the Contact and Event Session tables.
@@ -208,7 +209,7 @@ Next we will add a new column to the **Event Session** table to track the total 
 
 16.  Select **Save and edit**.
 
-**Important:**
+> **Important:**
 If you have your pop-up blocker turned on, you may need to turn it off for the roll-up field to display.
 
 17.  Configure the Rollup Column as follows:
@@ -240,7 +241,7 @@ In addition to managing events, Contoso has an employee checkout program.  Next,
 
 5. Select the **Generate** button.
 
-**Important:**
+> **Important:**
 Copilot should only create one table called **Checkout Equipment**. If more were created, you can delete them, by telling Copilot the name of the table to delete.
 
 **Edit the data model with Copilot**
