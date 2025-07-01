@@ -75,7 +75,7 @@ Now that we have created the table, we are going to add some additional columns 
 - Max Attendees
 - Location
 - Event type
-- Registration Required.  
+- Registration Required.
 If you do not have all the above-mentioned columns, use Copilot to add them to the data model.  
 
 Next, let's add the **Contact** table to the data model.
@@ -85,7 +85,7 @@ Next, let's add the **Contact** table to the data model.
 
 Depending on the type of event, there might be one or more sessions. To manage the different sessions, we need to define what the session is and the event with which it is associated. Next we will use Copilot to create an Event Sessions table.
 
-11.  In the **What would you like to do next** field, Enter: “*Add a new table called event session.”*
+11.  In the **What would you like to do next** field, Enter: “*Add a new table called Event Session.”*
 
 Copilot will likely create two tables, Event Session and Event Speaker. Since our Contacts will be speakers, we are going to remove the Event Speaker table.
 
@@ -94,9 +94,9 @@ Copilot will likely create two tables, Event Session and Event Speaker. Since ou
 
 ![Screenshot showing the Event Session table added](media/546162a8b040a7bdcdcd5c3e2be44b4d.png)
 
-Next, we are going to add one last table called Session Registrations, This table will be used to manage the individuals who register for specific sessions.
+Next, we are going to add one last table called Session Registrations. This table will be used to manage the individuals who register for specific sessions.
 
-14.  In Copilot, enter the following text: *“Add a new table called session registrations.”*
+14.  In Copilot, enter the following text: *“Add a new table called Session Registrations.”*
 
 Copilot will likely create two tables, Session Registration, Session, or Participant (or something else). Since our Contacts can be participants, we are going to remove the Participant table. If any other tables (such as Session) other than Session Registration were created, remove them.
 
@@ -104,26 +104,33 @@ Copilot will likely create two tables, Session Registration, Session, or Partici
     
 Sometimes a Participant Name column will be added to the session registration table. We need to remove it as it can cause problems later when we try to save the data model. (We are going to replace it with a different participant column later.)  
 
-16.  In Copilot, enter the following text: “*Add a text column to the Session registration table called special instructions.”*
+16.	If necessary, in Copilot, enter the following text: “Remove the Participant Name column from the Session Registration table.”
+
+17.  In Copilot, enter the following text: “*Add a text column to the Session registration table called special instructions.”*
 
 Your completed Session Registration table should look similar to the image below:
 
+![Screenshot showing the Session Registration table added.](media/session-registration-checkpoint.png)
+
+**Important** 
+While yours does not need to match exactly, it is important that you do not have a column named Participant.
+
 Now we are going to create relationships between our different tables. Since Contact records can be speakers in sessions, we are going to create a relationship between the Contact and Event Session tables.
 
-17.  On the Command bar, select **Create relationships**.
-18.  Configure the relationship as follows:
+18.  On the Command bar, select **Create relationships**.
+19.  Configure the relationship as follows:
     - **Relationship Type:** One-to-many
     - **One:** Contact
     - **Many:** Event Session
     - **Display name:** Speaker
-19.  Select **Done.**
+20.  Select **Done.**
 
 ![Screenshot showing creating the Speaker relationship.](media/8bc16db2346cca311b20c83f34f46be6.png)
 
 Since contacts can be registered for sessions in sessions, we are going to create a relationship between the Contact and Session Registration tables.
 
-20.  On the **Command bar**, select **Create relationships**.
-21.  Configure the relationship as follows:
+21.  On the **Command bar**, select **Create relationships**.
+22.  Configure the relationship as follows:
     - **Relationship Type:** One-to-many
     - **One:** Contact
     - **Many:** Session Registration
