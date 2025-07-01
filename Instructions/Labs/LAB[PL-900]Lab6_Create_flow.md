@@ -53,18 +53,17 @@ We want to send a registration confirmation to any newly registered users. We wi
 8. Choose the trigger **When a row is added, modified, or deleted**, and then select **Create**.
 
 If you see an **Invalid Parameters** error, this is because you have not authenticated. Follow the steps below to create a connection. 
+
 - Select **Change Connection**.
-- Select **Add New.**
+- Select **Add New.*
 - In the **Connection Name** field, enter MOD **Administrator**. Leave the **Authentication type** as **OAuth**, and **Select Sign in**.
 - Once signed in, move to **Step 9.** 
 
 9. Populate the trigger conditions for the flow:
 
     - Select **Added** for **Change type**
-
-	- Select **Session Registrations** for **Table name.**
-
-	- Select **Organization** for **Scope** On the trigger step, select the ellipsis (**...**) and select **Rename**. 
+    - Select **Session Registrations** for **Table name.**
+    - Select **Organization** for **Scope** On the trigger step, select the ellipsis (**...**) and select **Rename**. 
 
 10. Rename the trigger step **When a Session Registration is added.**
 
@@ -180,7 +179,6 @@ Your completed step should resemble the image:
 [![Screenshot of completed email](../media/power-automate-08.png)](https://microsoftlearning.github.io/PL-900-Microsoft-Power-Platform-Fundamentals/Instructions/Labs/media/200fc8034321d31652e90f661001c8a5.png)
 
 14. Select **Save**.
-
 
 Leave this flow tab open for the next task. Your flow should look like the following:
 
