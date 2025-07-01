@@ -67,4 +67,4 @@ Applying the latest updates to the browser prevents issues in the next lab when 
 
 3. Open each image separately and download by selecting the **Download** icon.
 
-![Image download button.](media/down-load-image.png)
+![Image download button.](media/download-image.png)
