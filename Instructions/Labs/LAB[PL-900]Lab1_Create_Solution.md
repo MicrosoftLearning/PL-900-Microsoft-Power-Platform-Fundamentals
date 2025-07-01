@@ -71,4 +71,4 @@ Now that we have the Account table, we are going to add the Contact table.
 
 ![A screenshot showing the Account and Contact tables in the solution.](media/a53817e242fca7371765583d9e565c36.png)
 
-Congratulations. You have successfully created a new solution using Microsoft power Platform. We will continue to use the solution to add additional components to it.
+Congratulations. You have successfully created a new solution using Power Platform. We will continue to use the solution to add additional components to it.
