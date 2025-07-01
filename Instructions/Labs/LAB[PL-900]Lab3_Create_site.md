@@ -33,7 +33,7 @@ The estimated time to complete this exercise is **30 to 45** minutes.
 If this is the first time you are accessing the Power Pages maker portal, you may need to run through some setup.  If so, follow the instructions below.  Otherwise, you can continue to Task 1.  
 
 1.	If necessary, navigate to [Microsoft Power Pages](https://make.powerpages.microsoft.com).
-2.	On the** Welcome to Power Pages** screen, select the **Get started** button.
+2.	On the **Welcome to Power Pages** screen, select the **Get started** button.
 
 ![Screenshot of the Power Pages welcome screen.](media/get-started.png)
 
