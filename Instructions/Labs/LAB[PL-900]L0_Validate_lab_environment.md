@@ -16,7 +16,7 @@ Tenants should not be shared or used for purposes outside of hands-on labs. The 
 
 Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
 
-## Exercise 1 – Access Microsoft Power Platform
+## Exercise 1: Access Microsoft Power Platform
 
 In this exercise, you will verify that you can access Power Apps.
 
@@ -57,3 +57,14 @@ Applying the latest updates to the browser prevents issues in the next lab when 
 1. Select the **Commands (...)** in the top right of the browser, select **Help and feedback**, and select **About Microsoft Edge**.
 
 1. Apply updates and restart the browser if necessary.
+
+## Exercise 2: Download images
+
+1. Open a browser window in your tenant, and enter https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/tree/master/Allfiles.
+2. You will see the images in the screenshot.
+
+![Image files.](media/images.png)
+
+3. Open each image separately and download by selecting the **Download** icon.
+
+![Image download button.](media/down-load-image.png)
