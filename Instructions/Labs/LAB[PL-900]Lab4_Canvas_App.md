@@ -21,10 +21,10 @@ Contoso Consulting is a professional services organization specializing in IT an
 
 Before beginning this exercise, required that you have completed the following lab:
 
-- **Lab 1 – Create a solution with Plan Designer**
+- **Lab 2 – Create a data model**
 
-> [!IMPORTANT]
-> This lab uses AI to build out the components. Since AI results can vary, it’s important to note that your results may be different (but similar) to what is defined in the lab. The basic concepts outlined in the lab will be the same no matter what was created or what it was named. If the tables and columns do not match exactly, you may need to adjust to what was created for you.*
+**Important**
+This lab uses AI to build out the components. Since AI results can vary, it’s important to note that your results may be different (but similar) to what is defined in the lab. The basic concepts outlined in the lab will be the same no matter what was created or what it was named. If the tables and columns do not match exactly, you may need to adjust to what was created for you.*
 
 **You can find the images for this lab [here](https://myriumtechsolutions-my.sharepoint.com/:f:/p/derik_bormann/EnSzkatV6HlPvJBFUM8G6xkBd9flg9PfhBDKFW-yDZfPuw?e=v40ti4):**
 
