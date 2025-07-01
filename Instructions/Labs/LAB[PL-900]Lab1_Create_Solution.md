@@ -63,7 +63,7 @@ Now that we have created a solution for storing our components, we are going to 
 
 Now that we have the Account table, we are going to add the Contact table.
 
-7.  On the **Command bar**, Select the **Add existing** button again**.**
+7.  On the **Command bar**, Select the **Add existing** button again.
 8.  From the menu that appears, select **Table.**
 9.  Select the **Contact** table, then select **Next.**
 10.  On the **Select Tables** screen, select **Include all objects**
@@ -71,4 +71,4 @@ Now that we have the Account table, we are going to add the Contact table.
 
 ![A screenshot showing the Account and Contact tables in the solution.](media/a53817e242fca7371765583d9e565c36.png)
 
-Congratulations, you have successfully created a new solution using Microsoft power Platform. We will continue to use the solution to add additional components to it.
+Congratulations. You have successfully created a new solution using Microsoft power Platform. We will continue to use the solution to add additional components to it.
