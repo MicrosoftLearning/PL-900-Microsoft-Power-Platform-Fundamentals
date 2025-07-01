@@ -27,7 +27,7 @@ In this exercise you are going to create a data mode that will be used to store 
 
 Before beginning this exercise, It is recommended that have completed:
 
-- **Lab 2 – Create a Power Platform Solution**
+- **Lab 2 – Create a Power Platform solution**
 
 > [!IMPORTANT]
 > This lab uses AI to build out the components. Since AI results can vary, it’s important to note that you results may be different (but similar) to what is defined in the lab. The basic concepts outlined in the lab will be the same no matter what was created or what it was named. If the tables and columns do not match exactly, you may need to adjust to what was created for you.
