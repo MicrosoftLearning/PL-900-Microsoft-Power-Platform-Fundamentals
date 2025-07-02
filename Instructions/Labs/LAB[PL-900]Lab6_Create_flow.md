@@ -152,12 +152,13 @@ You may be prompted to create a connection to outlook, if so select the **Sign i
 > **Note:**
 Dynamic content needs to be placed where fields are named in brackets. It is recommended to copy & paste all text first and then add dynamic content in the correct places.
 
-  Dear {First Name}, Thank you for registering for our upcoming session {Session Name} on {Event Date}. {Speaker} will be your speaker in this session. Your session is scheduled to last {Duration (Hours)}. Check out our other session at our {Event Name}.
+  *Dear {First Name}, Thank you for registering for our upcoming session {Session Name} on {Event Date}. {Speaker} will be your speaker in this session. Your session is scheduled to last {Duration (Hours)}. Check out our other session at our {Event Name}.*
 
-  Best regards,
+  *Best regards,*
 
-  Events Administration
-  Contoso Consulting
+  *Events Administration*
+  
+  *Contoso Consulting*
 
 Next, we are going to replace the text in the brackets with the items outlined below.
 
@@ -175,7 +176,7 @@ Next, we are going to replace the text in the brackets with the items outlined b
 
 Your completed step should resemble the image:
 
-[![Screenshot of completed email](media/power-automate-08.png)](https://microsoftlearning.github.io/PL-900-Microsoft-Power-Platform-Fundamentals/Instructions/Labs/media/200fc8034321d31652e90f661001c8a5.png)
+![Screenshot of completed email](media/power-automate-08.png)
 
 14. Select **Save**.
 
@@ -183,7 +184,8 @@ Leave this flow tab open for the next task. Your flow should look like the follo
 
 ### Task 4: Enter some sample data
 
-Note: If you completed Lab 5 – build a Model-Driven app, you can skip this task and move directly to Task 5. 
+> **Note:**
+If you completed Lab 5 – Build a model-driven app, you can skip this task and move directly to Task 5. 
 
 1. Using the navigation on the left, select **Apps**.
 
@@ -199,7 +201,7 @@ Note: If you completed Lab 5 – build a Model-Driven app, you can skip this tas
 
 	- **First Name:** Suzanne
 
-	- **Last Name:** Diaz.
+	- **Last Name:** Diaz
 
 	- **Job Title:** Engineer
 
@@ -207,7 +209,7 @@ Note: If you completed Lab 5 – build a Model-Driven app, you can skip this tas
 
 8. Set the **Contact Type** to **Speaker**.
 
-[![Screenshot showing how to set the Contact Type field on a form.](media/power-automate-09.png)](https://microsoftlearning.github.io/PL-900-Microsoft-Power-Platform-Fundamentals/Instructions/Labs/media/0860116a9b7df096c14728212b9977b1.png)
+![Screenshot showing how to set the Contact Type field on a form.](media/power-automate-09.png)
 
 9. Select the **Save** button to save the contact and leave it open.
 
@@ -251,7 +253,7 @@ Next, we are going to add a new event.
 
 	- **Registration Required:** Yes/True
 
-[![Screen shot of completed Event form. ](media/power-automate-10.png)](https://microsoftlearning.github.io/PL-900-Microsoft-Power-Platform-Fundamentals/Instructions/Labs/media/802f68c4c34c635eeff620a23d42acd8.png)
+![Screen shot of completed Event form. ](media/power-automate-10.png)
 
 18. Select the **Save &amp; Close** button.
 
@@ -275,7 +277,7 @@ Next, we will add a new session for the Event.
 
 	- **Event:** Spring Conference
 
-[![Screenshot of completed Event session form. ](media/power-automate-11.png)](https://microsoftlearning.github.io/PL-900-Microsoft-Power-Platform-Fundamentals/Instructions/Labs/media/6e509e4a29e6f253b5db3b4c9f82e42e.png)
+![Screenshot of completed Event session form. ](media/power-automate-11.png)
 
 22. Select the **Save and close** button.
 
@@ -310,7 +312,7 @@ Finally, we are going to create a **Session Registration**.
 
 	- **Session:** Responsible AI
 
-[![Screenshot of completed Session registration form. ](media/power-automate-12.png)](https://microsoftlearning.github.io/PL-900-Microsoft-Power-Platform-Fundamentals/Instructions/Labs/media/16cccd9ebb949ba0f364211f1ee55d4d.png)
+![Screenshot of completed Session registration form. ](media/power-automate-12.png)
 
 10. Select the **Save and Close** button.
 
