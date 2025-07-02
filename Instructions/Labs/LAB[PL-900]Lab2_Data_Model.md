@@ -55,7 +55,7 @@ Contoso currently stores donor contact information in their Dataverse instance. 
 
 6.  Select the **Generate** button.
 
-**Important:**
+> **Important:**
 Copilot should only create **ONE** table called Events. If more were created, you need to **DELETE** them by telling Copilot the name of the table to delete. **Failure to remove any extra tables will impact the next step.**
 
 ![Screenshot of the the Event table created by Copilot.](media/event-checkpoint.png)
@@ -69,7 +69,7 @@ Now that we have created the table, we are going to add some additional columns 
 
 ![A screenshot of the Event table](media/caccce34fbd7091d59e0fbd4d9cac2b1.png)
 
-> **IMPORTANT:**
+> **Important:**
 Your event table does not have to match the above image exactly, but it should have at least the following columns:
 - Event Name
 - Event Date
@@ -99,7 +99,7 @@ Next, we are going to add one last table called Session Registrations. This tabl
 
 14.  In Copilot, enter the following text: *“Add a new table called Session Registrations.”*
 
-Copilot will likely create two tables, Session Registration, Session, or Participant (or something else). Since our Contacts can be participants, we are going to remove the Participant table. If any other tables (such as Session) other than Session Registration were created, remove them.
+Copilot will likely create two tables, Session Registration, Session, or Participant (or something else). Since our Contacts can be participants, we are going to remove the Participant table. If any other tables (such as Session or something else) other than Session Registration were created, remove them.
 
 15.  In Copilot, enter the following text: “*Remove the Participant table.”*
     
@@ -107,14 +107,19 @@ Sometimes a Participant Name column will be added to the session registration ta
 
 16.	If necessary, in Copilot, enter the following text: “Remove the Participant Name column from the Session Registration table.”
 
-17.  In Copilot, enter the following text: “*Add a text column to the Session registration table called Special Instructions.”*
+17.	If you now have a Primary Columnb field, enter the following text: *Rename the Primary Column to Registration Name.*
+
+18.  In Copilot, enter the following text: “*Add a text column to the Session registration table called Special Instructions.”*
 
 Your completed Session Registration table should look similar to the image below:
 
 ![Screenshot showing the Session Registration table added.](media/session-registration-checkpoint.png)
 
 > **Important** 
-While yours does not need to match exactly, it is important that you do not have a column named Participant.
+While yours does not need to match exactly, it is important that you do not have a column named Participant, and that you have at least the following:
+- Registration Name
+- Session Date
+- Special Instructions
 
 Now we are going to create relationships between our different tables. Since Contact records can be speakers in sessions, we are going to create a relationship between the Contact and Event Session tables.
 
@@ -152,10 +157,12 @@ A single event can have multiple sessions associated with it, so we are going to
 
 ![Screenshot showing creating the Event relationship.](media/f4b38602700ac25a17d57fa6841c7169.png)
 
+26. Select **Done.**
+
 Finally, Participants register for Event Sessions, so we will need to create a relationship between the Event Sessions and Session Registrations tables.
 
-26.  On the **Command bar**, select **Create relationships**.
-27.  Configure the relationship as follows:
+27.  On the **Command bar**, select **Create relationships**.
+28.  Configure the relationship as follows:
 - **Relationship Type:** One-to-many
 - **One:** Event Session
 - **Many:** Session Registrations
@@ -163,13 +170,13 @@ Finally, Participants register for Event Sessions, so we will need to create a r
 
 ![Screenshot showing creating the Event Session relationship.](media/9ef531da0c42f479e4cfde553ce617e3.png)
 
-28.  Select **Done.**
+29.  Select **Done.**
 
 Your newly created data model should resemble the image:
 
 ![Screenshot of completed data model.](media/813f56e609ff24c44562a9b54818c871.png)
 
-29.  Select **Save and exit.**
+30.  Select **Save and exit.**
 
 ## Task 2: Edit tables and columns directly
 
