@@ -139,7 +139,7 @@ You may be prompted to create a connection to outlook, if so select the **Sign i
 
 4. Just above the **To** field, select the **Gear** icon. From the menu that appears, select **Use Dynamic content**.
 
-![Screenshot of using Dynamic Content](../media/power-automate-06.png) 
+![Screenshot of using Dynamic Content](media/power-automate-06.png) 
 
 5. Using Dynamic values, in the **To** field, select **Email** under the **Get Participant Details**.
 
