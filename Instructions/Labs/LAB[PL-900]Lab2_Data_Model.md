@@ -27,6 +27,7 @@ In this exercise you are going to create a data mode that will be used to store 
 
 Before beginning this exercise, it's recommended that have completed:
 
+
 - **Lab 1 – Create a solution**
 
 > **Important:**
