@@ -201,7 +201,7 @@ Finally, we are going to configure the **Equipment List** gallery to populate it
 34.  Select the **Equipment List** gallery we created earlier.
 35.  In the **Items** property, enter the following formula: Search([@'Equipments'], *EquipSearchInput*.Text, 'Equipment Name',Category)
 
-![Screenshot of Items PowerFx Formula.](media/4fbff5852c0e1db6cece816734418e07.png)
+![Screenshot of Items PowerFx Formula.](media/powerfx-formula.png)
 
 36. On the **Command** bar, select the **Save** button to save your app.
 
@@ -212,13 +212,13 @@ If you copied and asted the formula into the formula bar, it is possible that th
 
 When a user selects a record in the Equipment list, we want to open the record in another container to allow them to edit the selected record.
 
-1.  Select the **MainContainer**.
-2.  On the **MainContainer**, select the **Open Insert menu** button.
+1.  Select the **MainContainer** and rename it to **DetailsContainer.**
+2.  On the **DetailsContainer**, select the **Insert** button.
 3.  In the **Search** filed, enter **Container**, and choose **Vertical Container**.
 4.  Right-click and **Rename** the container to **RecordDetails**.
-5.  On the **RecordDetails** container, select the **Open Insert menu** button.
+5.  On the **RecordDetails** container, select the **Insert** button.
 6.  On the **Insert** menu, select **Edit form**.
-7.  In the select data source screen, select **Equipment**. *(It can take up to 30 seconds for the data to populate.)*
+7.  In the select data source screen, select **Equipments**. *(It can take up to 30 seconds for the data to populate.)*
 8.  Right-click the form you just added and **Rename** it to **EquipmentForm**.
 9.  In the **Properties** pane, select the **Advanced** tab and set the **Item** property to: *'Equipment List'*.Selected. *(This will populate the form with the currently selected record.)*
 10. Select the **Display** tab, and configure the form as follows:
@@ -227,7 +227,7 @@ When a user selects a record in the Equipment list, we want to open the record i
 
 Now we are going to add another container that will be used to control the operations on the form.
 
-11.  Make sure that you have the **MainContainer** selected.
+11.  Make sure that you have the **DetailsContainer** selected.
 12.  Select the **Copilot** icon that appears. Enter the following: *“Insert a horizontal container.”*
 13.  Select **Keep it**.
 14.  Right-click the container, and **Rename** it to **SelectedRecord1**
@@ -236,11 +236,10 @@ Now we are going to add another container that will be used to control the opera
     -   **Minimum width:** 250
     -   **Flexible height:** Off
     -   **Height:** 50
-17.  With the **SelectedRecord1**container selected, select the **Open insert menu** button.
+17.  With the **SelectedRecord1**container selected, select the **Insert** button.
 18.  Select **Text Label.**
-19.  **Rename the label to** SelectedRecordTitle
-20. Select **Keep it**.
-21. Configure the **SelectedRecordTitle** as follows:
+19.  Rename the label to **SelectedRecordTitle**.
+20. Configure the **SelectedRecordTitle** as follows:
     1.  **Padding**
         1.  **Top:** 5
         2.  **Bottom:** 5
@@ -248,12 +247,12 @@ Now we are going to add another container that will be used to control the opera
         4.  **Height:** 40
     2.  **Flexible width:** On
     3.  **Minimum width:** 150
-22. Select the **SecondRecord1** container, Select the **Insert** button.
-23. In the **Search** field, enter **Save**, and select the **Save** icon.
-24. Configure the **Save** button as follows:
+21. Select the **SecondRecord1** container, Select the **Insert** button.
+22. In the **Search** field, enter **Save**, and select the **Save** icon.
+23. Configure the **Save** button as follows:
     -   **Height:** 40
     -   **Width:** 40
-25. Select the **OnSelect** property and enter the following formula. SubmitForm(EquipmentForm).
+24. Select the **OnSelect** property and enter the following formula: SubmitForm(EquipmentForm).
 
 ![Screenshot of OnSelect PowerFx formula.](media/e5b22c91a437e6918269d65e2616afc8.png)
 
@@ -262,7 +261,7 @@ Now we are going to add another container that will be used to control the opera
 The last step in creating this screen is to populate the reader container with data.
 
 1.  Select the **HeaderContainer** at the top of the app.
-2.  Select the **Open Insert menu** button.
+2.  Select the **Insert** button.
 3.  Select **Text label**.
 4.  Configure the **Text label** control as follows:
     -   **Text:** Equipment Checkout
@@ -297,6 +296,8 @@ Upon review, we have decided that we do not need to have the ability to create u
 
 ![A screenshot of a computer AI-generated content may be incorrect.](media/561d1e8cd023541761b6523138c2fde8.png)
 
+14. Select the **Save** button to save your app.
+
 ## Task 7: Test your application
 
 1.  On the **Command bar**, select the **Play** button.
@@ -314,5 +315,5 @@ Upon review, we have decided that we do not need to have the ability to create u
 **Goal:** Save and publish the app to make it accessible across web browsers, mobile devices, or embedded platforms like SharePoint or Teams.
 
 1.  In Power Apps Studio, select the **Save** button.
-2.  In the **Save** as screen, set the **Name** to **Contoso Employee Hub**, select **Save**.
-3.  Select the **Publish** button.
+2.  Select the **Publish** button.
+3.  Choose **Publish this version.**
