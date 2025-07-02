@@ -61,9 +61,11 @@ Next, we are going to add the user table to the data model so we can associate t
 12.  Select the **User** table and click the **Add Selected** button.
 13.  On the **Command bar**, select **Create relationships**.
 14.  Configure the relationship as follows:
+
 -   **One:** User
 -   **Many:** Time Off Request
 -   **Display Name:** Requesting Employee
+  
 15.  Select **Done**.
 
 Your completed data model should resemble the image:
@@ -91,22 +93,24 @@ Next, we are going to adjust the size of the images to make them easier for user
 7.  On the **Command bar**, select the **Properties** button. (*Located just to the right of the Editing button.*)
 8.  Select the **Time off** image you add earlier.
 9.  In the **Properties** panel, configure the image as follows:
+    
     -   **Image Position:** Fill
     -   **Width:** 300
     -   **Height:** 300
-10.  Repeat the earlier step to set the **Height** and **Width** of the **Employee** image to **300** x **300**.
-11.  Select the text below **Time Off Requests**.
-12.  In the **Properties** panel, select the **Text** field, and change the text to: *“Create, View, and Manage you time off requests.”*
-13.  Select the **Welcome Screen** text in the **Header**.
-14.  In the **Properties** pane on the right, select the **Logo** field.
-15.  From the menu that appears, select **Upload**.
-16. Select the **Contoso Logo** from your class files and select **Open**.
-17. In the **Properties** panel under the **Style** and theme group, select the **Fill** color icon.
-18. Select the **Custom** tab
-19. Change the **Hex** color to: **101E2B**
-20. Make sure that you still have the **Header** selected, and change the **Title** to **Contoso Employee Hub.**
-21. On the **Command** bar, select the **Save** button to save the app.
-22. In the **Save** screen, set the **Name** to **Contoso Employee Hub,** and select **Save.**
+      
+11.  Repeat the earlier step to set the **Height** and **Width** of the **Employee** image to **300** x **300**.
+12.  Select the text below **Time Off Requests**.
+13.  In the **Properties** panel, select the **Text** field, and change the text to: *“Create, View, and Manage you time off requests.”*
+14.  Select the **Welcome Screen** text in the **Header**.
+15.  In the **Properties** pane on the right, select the **Logo** field.
+16.  From the menu that appears, select **Upload**.
+17. Select the **Contoso Logo** from your class files and select **Open**.
+18. In the **Properties** panel under the **Style** and theme group, select the **Fill** color icon.
+19. Select the **Custom** tab
+20. Change the **Hex** color to: **101E2B**
+21. Make sure that you still have the **Header** selected, and change the **Title** to **Contoso Employee Hub.**
+22. On the **Command** bar, select the **Save** button to save the app.
+23. In the **Save** screen, set the **Name** to **Contoso Employee Hub,** and select **Save.**
 
 Your app will resemble the image.
 
@@ -134,6 +138,7 @@ As you are building the app, one of your managers reaches you to you and is wond
 13. Hover over the **Equipment List** gallery, on the toolbar that appears above the gallery, select **Layout**.
 14. Select the **Title and subtitle layout** option.
 15. With the **Equipment List** gallery selected, in the **Properties** pane, configure as follows:
+
     -   **Width:** 360
     -   **Flexible height:** On
     -   **Minimum height:** 287
@@ -151,13 +156,16 @@ Next, we are going to add an additional container to the **EquipmentContiner1** 
 21.  In the **Tree View**, click, hold, and drag the new container, and place it above the **Equipment List** gallery.
 22.  Rename the container to **EquipSearchContainer.**
 23.  With the **EquipSearchContainer** selected, in the **Properties** pane, configure as follows:
-    -   **Minimum width:** 0
-    -   **Flexible height:** Off
-    -   **Height:** 44
+    
+ -   **Minimum width:** 0
+ -   **Flexible height:** Off
+ -   **Height:** 44
+   
 24.  With **EquipSearchContainer** selected, select the **Open Insert menu** button.
 25. In the **Search** field, enter **Text**, and select **Text Input**.
 26. Rename the **Text Input** field, to **EquipSearchInput**.
 27. With **EquipSearchInput** selected, in the **Properties** pane, configure as follows:
+
     -   **Default:** Blank (nothing)
     -   **Hint text:** Search
     -   **Font:** Open Sans
@@ -181,6 +189,7 @@ Next, we are going to add an additional container to the **EquipmentContiner1** 
 If Coplot happends to add the wrong icon, remove it and insert the magnifying glass manually.
 
 31. With the **Search** icon selected, in the **Properties** pane, configure the control as follows:
+
     -   **Padding**
         -   **Top:** 10
         -   **Botton:** 10
@@ -193,6 +202,7 @@ If Coplot happends to add the wrong icon, remove it and insert the magnifying gl
 
 32. Using the **Tree view** on the left, select the **EquipSearchContainer.**
 33. In the **Properties** pane, configure the container as follows:
+
     -   **Minimum width:** 0
     -   **Height:** 44
 
@@ -222,6 +232,7 @@ When a user selects a record in the Equipment list, we want to open the record i
 8.  Right-click the form you just added and **Rename** it to **EquipmentForm**.
 9.  In the **Properties** pane, select the **Advanced** tab and set the **Item** property to: *'Equipment List'*.Selected. *(This will populate the form with the currently selected record.)*
 10. Select the **Display** tab, and configure the form as follows:
+
     -   **Columns:** 2
     -   **Default Mode:** Edit
 
@@ -233,13 +244,16 @@ Now we are going to add another container that will be used to control the opera
 14.  Right-click the container, and **Rename** it to **SelectedRecord1**
 15.  Using **Tree** view, move the **SelectedRecord1** container above the **RecordDetails** container.
 16.  Configure the **SelectedRecord1** container as follows:
-    -   **Minimum width:** 250
-    -   **Flexible height:** Off
-    -   **Height:** 50
-17.  With the **SelectedRecord1**container selected, select the **Insert** button.
-18.  Select **Text Label.**
-19.  Rename the label to **SelectedRecordTitle**.
-20. Configure the **SelectedRecordTitle** as follows:
+    
+-   **Minimum width:** 250
+-   **Flexible height:** Off
+-   **Height:** 50
+    
+18.  With the **SelectedRecord1**container selected, select the **Insert** button.
+19.  Select **Text Label.**
+20.  Rename the label to **SelectedRecordTitle**.
+21. Configure the **SelectedRecordTitle** as follows:
+
     1.  **Padding**
         1.  **Top:** 5
         2.  **Bottom:** 5
@@ -247,12 +261,15 @@ Now we are going to add another container that will be used to control the opera
         4.  **Height:** 40
     2.  **Flexible width:** On
     3.  **Minimum width:** 150
-21. Select the **SecondRecord1** container, Select the **Insert** button.
-22. In the **Search** field, enter **Save**, and select the **Save** icon.
-23. Configure the **Save** button as follows:
+       
+23. Select the **SecondRecord1** container, Select the **Insert** button.
+24. In the **Search** field, enter **Save**, and select the **Save** icon.
+25. Configure the **Save** button as follows:
+
     -   **Height:** 40
     -   **Width:** 40
-24. Select the **OnSelect** property and enter the following formula: SubmitForm(EquipmentForm).
+      
+27. Select the **OnSelect** property and enter the following formula: SubmitForm(EquipmentForm).
 
 ![Screenshot of OnSelect PowerFx formula.](media/e5b22c91a437e6918269d65e2616afc8.png)
 
@@ -264,6 +281,7 @@ The last step in creating this screen is to populate the reader container with d
 2.  Select the **Insert** button.
 3.  Select **Text label**.
 4.  Configure the **Text label** control as follows:
+   
     -   **Text:** Equipment Checkout
     -   **Font:** Open Sans
     -   **Font Size:** 16
@@ -277,12 +295,12 @@ The last step in creating this screen is to populate the reader container with d
 
         ![Screenshot of text label properties.](media/088cafeec651b099fa49ac1f151cd228.png)
 
-5.  Select the **HeaderContainer**, choose **Insert**, and select the **Home Icon**.
-6.  Set the **OnSelect** property of the home button to: Back()
+6.  Select the **HeaderContainer**, choose **Insert**, and select the **Home Icon**.
+7.  Set the **OnSelect** property of the home button to: Back()
 
 ![Screenshot of the Back navigation command.](media/38d0e5367ee41da58ac9902f8056b1af.png)
 
-## Task 6: Finish configuring that Welcome screen
+## Task 6: Finish configuring the Welcome screen
 
 Upon review, we have decided that we do not need to have the ability to create users in this app, so we are going to change the Welcome Screen to allow you to access equipment checkout.
 
