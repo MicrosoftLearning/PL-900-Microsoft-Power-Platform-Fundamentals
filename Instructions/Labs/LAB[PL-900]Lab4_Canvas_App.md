@@ -23,12 +23,10 @@ Before beginning this exercise, required that you have completed the following l
 
 - **Lab 2 – Create a data model**
 
-**Important**
+> **Important**
 This lab uses AI to build out the components. Since AI results can vary, it’s important to note that your results may be different (but similar) to what is defined in the lab. The basic concepts outlined in the lab will be the same no matter what was created or what it was named. If the tables and columns do not match exactly, you may need to adjust to what was created for you.*
 
-**You can find the images for this lab [here](https://myriumtechsolutions-my.sharepoint.com/:f:/p/derik_bormann/EnSzkatV6HlPvJBFUM8G6xkBd9flg9PfhBDKFW-yDZfPuw?e=v40ti4):**
-
-The estimated time to complete this exercise is **45 to 60** minutes.
+The estimated time to complete this exercise is **60 to 75** minutes.
 
 ## Task 1: Sign in to Power Apps and explore the interface
 
@@ -63,12 +61,12 @@ Next, we are going to add the user table to the data model so we can associate t
 12.  Select the **User** table and click the **Add Selected** button.
 13.  On the **Command bar**, select **Create relationships**.
 14.  Configure the relationship as follows:
-    -   **One:** User
-    -   **Many:** Time Off Request
-    -   **Display Name:** Requesting Employee
+-   **One:** User
+-   **Many:** Time Off Request
+-   **Display Name:** Requesting Employee
 15.  Select **Done**.
 
-Your completed data model should resemble the image below:
+Your completed data model should resemble the image:
 
 ![Screenshot of completed data model ](media/daa74d51e2ceada8e1e8b004cae9942a.png)
 
@@ -106,7 +104,9 @@ Next, we are going to adjust the size of the images to make them easier for user
 17. In the **Properties** panel under the **Style** and theme group, select the **Fill** color icon.
 18. Select the **Custom** tab
 19. Change the **Hex** color to: **101E2B**
-20. Make sure that you still have the **Header** selected, and change the **Title**, to Contoso Employee Hub
+20. Make sure that you still have the **Header** selected, and change the **Title** to **Contoso Employee Hub.**
+21. On the **Command** bar, select the **Save** button to save the app.
+22. In the **Save** screen, set the **Name** to **Contoso Employee Hub,** and select **Save.**
 
 Your app will resemble the image.
 
@@ -116,52 +116,53 @@ Your app will resemble the image.
 
 As you are building the app, one of your managers reaches you to you and is wondering if employees could also use this app for checking out equipment. Contoso is already storing equipment checkout information in Dataverse, so it is just a matter of making the information available in the app.
 
-1.  With your app still open, If necessary, expand the **Copilot** pane. In Copilot enter the following: “*Add a new screen called Equipment Checkout.”*  Select **Send***.*
-2.  Select the **Keep it** button to accept the screen.
-3.  A new screen called **Equipment Checkout** is added to your app.
-4.  While on the **Equipment Checkout** screen, click **With layout**, and choose the **Sidebar** layout.
-5.  Expand the different containers until **SideBarContainer** is visible**.**
+1.  With your app still open, expand the **Copilot** pane (if necessary). In Copilot, enter the following: “*Add a new screen called Equipment Checkout.”*
+2.  Select **Send**.
+3.  Select the **Keep it** button to accept the screen.
+4.  A new screen called **Equipment Checkout** is added to your app.
+5.  While on the **Equipment Checkout** screen, click **With layout**, and choose the **Sidebar** layout.
+6.  Expand the different containers until **SideBarContainer** is visible.
 
 ![Screenshot of tree view ](media/cde6257402b7a8786e679ab64ee0f882.png)
 
-6.  Right-click **SidebarContainer** and rename to **EquipContainer1**.
-7.  With the **EquipContainer1** container selected, click the **Open Insert menu** button.
-8.  In the **Search** window, enter **Gallery**, and select **Vertical gallery**.
-9.  In the **Search** field, enter **Equipment**, and select the **Equipment** table.
-10. In **Tree View** on the left side of the screen, select the **Gallery1** control you just added.
-11. Right-click the Gallery name, choose **Rename**, and rename to **Equipment List**.
-12. Hover over the **Equipment List** gallery, on the toolbar that appears above the gallery, select **Layout**.
-13. Select the **Title and subtitle layout** option.
-14. With the **Equipment List** gallery selected, in the **Properties** pane, configure as follows:
+7.  Right-click **SidebarContainer** and rename to **EquipContainer1**.
+8.  With the **EquipContainer1** container selected, click the **Open Insert menu** button.
+9.  In the **Search** window, enter **Gallery**, and select **Vertical gallery**.
+10.  When you are asked troi supply a data source in the **Search** field that appears, enter **Equipments**, and select the **Equipment*s* table.
+11. In **Tree View** on the left side of the screen, select the **Gallery1** control you just added.
+12. Right-click the Gallery name, choose **Rename**, and rename to **Equipment List**.
+13. Hover over the **Equipment List** gallery, on the toolbar that appears above the gallery, select **Layout**.
+14. Select the **Title and subtitle layout** option.
+15. With the **Equipment List** gallery selected, in the **Properties** pane, configure as follows:
     -   **Width:** 360
     -   **Flexible height:** On
     -   **Minimum height:** 287
 
 Next, we are going to add an additional container to the **EquipmentContiner1** container to store a search control that we will use to filter the contents of the **Equipment List** gallery.
 
-15.  In **Tree** view, select **EquipContainer1**.
-16.  Hover over the container and select the **Copilot** icon.
-17.  Enter the following text: “*Insert a Horizontal container.*”
+16.  In **Tree** view, select **EquipContainer1**.
+17.  Hover over the container and select the **Copilot** icon.
+18.  Enter the following text: “*Insert a Horizontal container.*”
 
 ![Screenshot of inserting a gallery into a container.](media/b9b784ea5625469c8785650b977f32d1.png)
 
-18.  Select the **Keep it** button.
-19.  A new container will be added to the bottom of the **EquipContainer1** container.
-20.  In the **Tree View**, click, hold, and drag the new container, and place it above the **Equipment List** gallery.
-21.  Rename the container to **EquipSearchContainer.**
-22.  With the **EquipSearchContainer** selected, in the **Properties** pane, configure as follows:
+19.  Select the **Keep it** button.
+20.  A new container will be added to the bottom of the **EquipContainer1** container.
+21.  In the **Tree View**, click, hold, and drag the new container, and place it above the **Equipment List** gallery.
+22.  Rename the container to **EquipSearchContainer.**
+23.  With the **EquipSearchContainer** selected, in the **Properties** pane, configure as follows:
     -   **Minimum width:** 0
     -   **Flexible height:** Off
     -   **Height:** 44
-23.  With **EquipSearchContainer** selected, select the **Open Insert menu** button.
-24. In the **Search** field, enter **Text**, and select **Text Input**.
-25. Rename the **Text Input** field, to **EquipSearchInput**.
-26. With **EquipSearchInput** selected, in the **Properties** pane, configure as follows:
+24.  With **EquipSearchContainer** selected, select the **Open Insert menu** button.
+25. In the **Search** field, enter **Text**, and select **Text Input**.
+26. Rename the **Text Input** field, to **EquipSearchInput**.
+27. With **EquipSearchInput** selected, in the **Properties** pane, configure as follows:
     -   **Default:** Blank (nothing)
     -   **Hint text:** Search
     -   **Font:** Open Sans
     -   **Font size:** 14
-    -   **Padding**
+    -   **Padding** (The values below may already be there.)
         -   **Top:** 5
         -   **Bottom:**5
         -   **Left:** 12
@@ -172,10 +173,14 @@ Next, we are going to add an additional container to the **EquipmentContiner1** 
 
         ![Screenshot of Search Input properties.](media/b0e092b4795edf58dad1153209639051.png)
 
-27. In **Tree View**, select the **EquipSearchContainer.**
-28. Hover over the container, select the **Copilot** Icon, and enter *“Add a Search Icon.”*
-29. Select **Keep it**.
-30. With the **Search** icon selected, in the **Properties** pane, configure the control as follows:
+28. In **Tree View**, select the **EquipSearchContainer.**
+29. Hover over the container, select the **Copilot** icon, and enter *“Add a Search Icon.”*
+30. Select **Keep it**.
+
+> **Note:**
+If Coplot happends to add the wrong icon, remove it and insert the magnifying glass manually.
+
+31. With the **Search** icon selected, in the **Properties** pane, configure the control as follows:
     -   **Padding**
         -   **Top:** 10
         -   **Botton:** 10
@@ -186,17 +191,22 @@ Next, we are going to add an additional container to the **EquipmentContiner1** 
 
 ![Screenshot of Search Icon properties](media/cb3305731a09bca0bbf166d55d9822a4.png)
 
-31. Using the **Tree view** on the left, select the **EquipSearchContainer.**
-32. In the **Properties** pane, configure the container as follows:
+32. Using the **Tree view** on the left, select the **EquipSearchContainer.**
+33. In the **Properties** pane, configure the container as follows:
     -   **Minimum width:** 0
     -   **Height:** 44
 
 Finally, we are going to configure the **Equipment List** gallery to populate its data based on the text entered in the search control field.
 
-33.  Select the **Equipment List** gallery we created earlier.
-34.  In the **Items** property, enter the following formula: Search([@'Equipment'], *EquipSearchInput*.Text, 'Equipment Name',Category)
+34.  Select the **Equipment List** gallery we created earlier.
+35.  In the **Items** property, enter the following formula: Search([@'Equipments'], *EquipSearchInput*.Text, 'Equipment Name',Category)
 
 ![Screenshot of Items PowerFx Formula.](media/4fbff5852c0e1db6cece816734418e07.png)
+
+36. On the **Command** bar, select the **Save** button to save your app.
+
+> **Important:**
+If you copied and asted the formula into the formula bar, it is possible that the '' are incorrect for Equipment and Equipment Name. If you are getting a formula error, try removing and retyping them.
 
 ## Task 4: Build a container to display record operations.
 
