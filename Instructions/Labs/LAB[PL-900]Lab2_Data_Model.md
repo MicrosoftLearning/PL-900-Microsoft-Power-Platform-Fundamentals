@@ -174,7 +174,7 @@ Finally, Participants register for Event Sessions, so we will need to create a r
 
 Your newly created data model should resemble the image:
 
-![Screenshot of completed data model.](media/813f56e609ff24c44562a9b54818c871.png)
+![Screenshot of completed data model.](media/completed-data-model.png)
 
 30.  Select **Save and exit.**
 
