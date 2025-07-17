@@ -1,5 +1,5 @@
 ---
-title: Online Hosted Instructions
+title: Online Hosted Instructions | PL-900: Introduction to Microsoft Power Platform
 permalink: index.html
 layout: home
 ---
