@@ -1,5 +1,5 @@
 ---
-title: PL-900: Introduction to Microsoft Power Platform
+title: PL-900-Introduction-to-Microsoft-Power-Platform
 permalink: index.html
 layout: home
 ---
