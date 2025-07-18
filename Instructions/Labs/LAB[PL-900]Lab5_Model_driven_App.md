@@ -149,6 +149,7 @@ The model-drive application uses forms and views to present data to users in the
 ## Task 4: Save and Publish (If you did not have the EventDetail1 field on you form, continue here.)
 
 1.  On the **Command** bar of the app, select the **Save and Publish** button.
+
 1.  Select the **Back** button to return to the **Event Management** solution.
 1.  Select **Back to solutions** arrow to return to the main **Power Apps** maker portal.
 1.  Select the **Back** arrow to return to the main **Power Apps** screen.

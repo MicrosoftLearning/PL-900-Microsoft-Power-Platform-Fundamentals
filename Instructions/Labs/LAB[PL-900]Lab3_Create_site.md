@@ -223,6 +223,7 @@ Select the **Send** button.
 Now that we have defined the necessary forms we are going to use for managing records, we are going to create a page view to display those records.
 
 1.  Select the **+ Page** button.
+
 1.  In the **Describe a page to create it** screen, enter: *`Add a blank page called events.`* Select the **Send** button.
 1.  Select **Keep it** to accept the new page.
 1.  At the top of the new page, select the **Add a Section** button.
@@ -291,6 +292,7 @@ To ensure that users are only seeing data relevant to them organizations can spe
 Now that we have our pages and Items formatted the way we want, we are going to adjust the site navigation accordingly.
 
 1.  Under **Main Navigation**, select the **Ellipsis** next to the **Event** page.
+
 1.  From the menu that appears, select **Move up**.
 1.  Repeat step until the **Event** page located below the **Contact Us** page.
 1.  Make sure the **New Event** page is located directly under the **Events** page. *(If not, move the New Event page until it is.)*
