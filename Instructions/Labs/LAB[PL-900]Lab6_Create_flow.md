@@ -28,6 +28,8 @@ Before beginning this exercise, you must have completed the following labs:
 - **Lab 2 – Create a data model**
 - **Lab 5 – Build a model-driven app**
 
+The estimated time to complete this exercise is 20 to 30 minutes.
+
 ## Exercise 1: Create Session Registration notification flow
 
 In this first exercise, you are going to be building a flow that will run automatically when a new Session Registration is created. It will get the details of the session, event, and contact who registered and send an email to this with their registration details.
