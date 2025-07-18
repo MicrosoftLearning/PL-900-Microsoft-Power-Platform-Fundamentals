@@ -62,10 +62,10 @@ Applying the latest updates to the browser prevents issues in the next lab when 
 ## Exercise 2: Download images
 
 1. Open a browser window in your tenant, and enter https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/tree/master/Allfiles.
-2. You will see the images in the screenshot.
+1. You will see the images in the screenshot.
 
 ![Image files.](media/images.png)
 
-3. Open each image separately and download by selecting the **Download** icon.
+1. Open each image separately and download by selecting the **Download** icon.
 
 ![Image download button.](media/download-image.png)
