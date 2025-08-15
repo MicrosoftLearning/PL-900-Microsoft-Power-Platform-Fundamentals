@@ -12,6 +12,7 @@ plugins:
   - jekyll-mentions
   - jemoji
 markdown: kramdown
+title: PL-900-Introduction-to-Microsoft-Power-Platform
 kramdown:
    syntax_highlighter_opts:
       disable : true

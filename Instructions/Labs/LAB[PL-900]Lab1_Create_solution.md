@@ -36,7 +36,7 @@ Upon successful completion of this exercise, you will:
 1.  Under **Publisher**, select **+ New publisher**
 1.  Configure the new publisher as follows
     - **Display name:** EventMSLearn
-    - **Name:** EverntMSLearn
+    - **Name:** EventMSLearn
     - **Prefix:** mslearn
     - **Choice value prefix:** Leave the default
 
