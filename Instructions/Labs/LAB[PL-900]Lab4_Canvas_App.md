@@ -134,7 +134,7 @@ As you are building the app, one of your managers reaches you to you and is wond
 1.  Right-click **SidebarContainer** and rename to **EquipContainer1**.
 1.  With the **EquipContainer1** container selected, click the **Open insert menu** button.
 1.  In the **Search** window, enter **Gallery**, and select **Vertical gallery**.
-1.  When you are asked troi supply a data source in the **Search** field that appears, enter **Equipments**, and select the **Equipments** table.
+1.  When you are asked to supply a data source in the **Search** field that appears, enter **Equipment**, and select the **Equipment** table.
 1. In **Tree View** on the left side of the screen, select the **Gallery1** control you just added.
 1. Right-click the Gallery name, choose **Rename**, and rename to `Equipment List`.
 1. Hover over the **Equipment List** gallery, on the toolbar that appears above the gallery, select **Layout**.
@@ -202,7 +202,7 @@ If Copilot happends to add the wrong icon, remove it and insert the magnifying g
 
     ![Screenshot of Search Icon properties](media/cb3305731a09bca0bbf166d55d9822a4.png)
 
-1. Using the **Tree view** on the left, select the **EquipSearchContainer.**
+
 
     Finally, we are going to configure the **Equipment List** gallery to populate its data based on the text entered in the search control field.
 
@@ -226,7 +226,7 @@ When a user selects a record in the Equipment list, we want to open the record i
 1.  Right-click and **Rename** the container to `RecordDetails`.
 1.  On the **RecordDetails** container, select the **Insert** button.
 1.  On the **Insert** menu, select **Edit form**.
-1.  In the select data source screen, select **Equipments**. *(It can take up to 30 seconds for the data to populate.)*
+1.  In the select data source screen, select **Equipment**. *(It can take up to 30 seconds for the data to populate.)*
 1.  Right-click the form you just added and **Rename** it to `EquipmentForm`.
 1.  In the **Properties** pane, select the **Advanced** tab and set the **Item** property to: `'Equipment List'.Selected` *(This will populate the form with the currently selected record.)*
 1. Select the **Display** tab, and configure the form as follows:
