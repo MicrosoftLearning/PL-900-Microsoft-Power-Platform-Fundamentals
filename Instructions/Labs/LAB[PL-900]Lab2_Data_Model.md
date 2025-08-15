@@ -45,7 +45,7 @@ In the previous lab, we created an Event management solution and set it as the p
 Contoso currently stores donor contact information in their Dataverse instance. They would like to use Dataverse to track the grants they are applying for and donations that they are receiving. You need to create the necessary tables to support the future application needs of Contoso.
 
 1.  If necessary, open a web browser and navigate to the [Power Apps](https://make.powerapps.com/) maker portal, and Sign in using your Microsoft account credentials.
-1.  While on the Power Pages home screen, using the navigation on the left, select **Tables**.
+1.  While on the Power Apps home screen, using the navigation on the left, select **Tables**.
 1.  Under **Tables**, select **Get started with Copilot**.
 1.  In the **Describe the tables you want copilot to build** screen, enter: “*Create a table for managing events. The table should identify the name of the event, event data, location, the maximum number of attendees, and event details.”*
 1.  Next to the **Generate** button, select **Table Settings**, and configure as follows:
