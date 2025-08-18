@@ -27,6 +27,10 @@ Before beginning this exercise, required that you have completed the following l
 This lab uses AI to build out the components. Since AI results can vary, it’s important to note that your results may be different (but similar) to what is defined in the lab. The basic concepts outlined in the lab will be the same no matter what was created or what it was named. If the tables and columns do not match exactly, you may need to adjust to what was created for you.
 
 The estimated time to complete this exercise is **60 to 75** minutes.
+> **Note:**
+If you encounter a **Needs Attention** error message on the table while creating a choice column with Copilot, you can create the column manually by following the steps below:
+1. Select **View options**, then choose **View data**. The table structure will become visible.
+1. Click on **+ New column** to add a new column.
 
 ## Task 1: Sign in to Power Apps and explore the interface
 
