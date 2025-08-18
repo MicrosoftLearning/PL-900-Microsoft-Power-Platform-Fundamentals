@@ -40,6 +40,12 @@ The estimated time to complete this exercise is **30 to 45** minutes.
 > **Note:**
 In the previous lab, we created an Event management solution and set it as the preferred solution in this environment. For that reason, we do not need to go directly to the solution to create our data model. The items we create will automatically be added to the solution.
 
+> **Note:**
+If you encounter a **Needs Attention** error message on the table while creating a choice column with Copilot, you can create the column manually by following the steps below:
+1. Select **View options**, then choose **View data**. The table structure will become visible.
+1. Click on **+ New column** to add a new column.
+
+
 ## Task 1: Create a data model
 
 Contoso currently stores donor contact information in their Dataverse instance. They would like to use Dataverse to track the grants they are applying for and donations that they are receiving. You need to create the necessary tables to support the future application needs of Contoso.
