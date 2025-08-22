@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Lab 4: Create a canvas app'
+    title: 'Lab 5: Create a canvas app'
     learning path: 'Learning Path: Demonstrate the capabilities of Microsoft Power Apps'
     module: 'Module 2: Build a canvas app'
 ---
@@ -339,5 +339,6 @@ Upon review, we have decided that we do not need to have the ability to create u
 1.  In Power Apps Studio, select the **Save** button.
 1.  Select the **Publish** button.
 1.  Choose **Publish this version.**
+
 
 
