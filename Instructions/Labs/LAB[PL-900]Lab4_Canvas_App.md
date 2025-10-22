@@ -211,7 +211,7 @@ If Copilot happends to add the wrong icon, remove it and insert the magnifying g
     Finally, we are going to configure the **Equipment List** gallery to populate its data based on the text entered in the search control field.
 
 1.  Select the **Equipment List** gallery we created earlier.
-1.  In the **Items** property, enter the following formula: `Search([@'Equipments'], EquipSearchInput.Text, 'Equipment Name',Category)`
+1.  In the **Items** property, enter the following formula: `Search([@'Equipment'], EquipSearchInput.Text, 'Equipment Name',Category)`
 
     ![Screenshot of Items PowerFx Formula.](media/powerfx-formula.png)
 
@@ -339,6 +339,7 @@ Upon review, we have decided that we do not need to have the ability to create u
 1.  In Power Apps Studio, select the **Save** button.
 1.  Select the **Publish** button.
 1.  Choose **Publish this version.**
+
 
 
 
