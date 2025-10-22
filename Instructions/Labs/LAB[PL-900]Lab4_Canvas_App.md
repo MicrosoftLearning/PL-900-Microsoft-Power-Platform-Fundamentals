@@ -265,7 +265,7 @@ When a user selects a record in the Equipment list, we want to open the record i
     3.  **Minimum width:** 150
     4.  **Height:** 40
        
-1. Select the **SecondRecord1** container, Select the **Insert** button.
+1. Select the **SelectedRecord1** container, Select the **Insert** button.
 1. In the **Search** field, enter **Save**, and select the **Save** icon.
 1. Configure the **Save** button as follows:
 
@@ -339,6 +339,7 @@ Upon review, we have decided that we do not need to have the ability to create u
 1.  In Power Apps Studio, select the **Save** button.
 1.  Select the **Publish** button.
 1.  Choose **Publish this version.**
+
 
 
 
