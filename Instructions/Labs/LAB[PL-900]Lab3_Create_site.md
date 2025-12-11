@@ -37,15 +37,14 @@ If this is the first time you are accessing the Power Pages maker portal, you ma
 
     ![Screenshot of the Power Pages welcome screen.](media/get-started.png)
 
-1. On the **Tell us a little about yourself** screen, select the **Skip** button.
+1. On the **Tell us a little about yourself** screen, select the **Skip** button. **Do not** navigate away from this page.
 
     ![Screenshot of the Power Pages welcome screen.](media/about-you.png)
 
 ## Task 1: Use Copilot to create a new Power pages site.
 
-1.  If necessary, navigate to <https://make.powerpages.microsoft.com>
-1.  On the **Power Pages design studio** home page, enter the following text: “*Build a site to manage events our organization hosts.”*
-1.  Select the **Send** button.
+1.  On the page, enter the following text: “*Build a site to manage events our organization hosts.”* to `Describe the site you want and let AI create the first draft` input box. 
+1.  Select the **Build my site** button.
 1.  In the **Check the basic site details** screen, configure as follows:
     - **Give your site a name:** `Contoso Event Management`
     - **Create a web address:** Accept the default address provided
@@ -323,6 +322,7 @@ Once your site is created, you will want to review it to ensure it meets your bu
     - Layout and navigation.
     - Branding elements such as colors, fonts, and logos.
 1. Once you have finished testing, close the browser tab to return to the site.
+
 
 
 
