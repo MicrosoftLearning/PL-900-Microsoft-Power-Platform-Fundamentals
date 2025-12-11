@@ -42,9 +42,6 @@ In the previous lab, we created an Event management solution and set it as the p
 
 > **Note:**
 If you encounter a **Needs Attention** error message on the table while creating a choice column with Copilot, you can create the column manually by following the steps below:
-1. Select **View options**, then choose **View data**. The table structure will become visible.
-1. Click on **+ New column** to add a new column.
-
 
 ## Task 1: Create a data model
 
@@ -295,4 +292,5 @@ Now that we have created the table, we are going to add some additional columns 
 1.	Select the Save button. (If the column fails to save, the first time, try again.)
 
 Congratulations, you have successfully created a data model in Microsoft Dataverse.
+
 
