@@ -28,6 +28,7 @@ Upon successful completion of this exercise, you will:
 ## Task 1: Create an Event management solution
 
 1.  Open the [Power Apps maker portal](https://make.powerapps.com).
+1.  Make sure you're in **Dev One** environment.
 1.  Navigate to **Solutions**.
 1.  On the command bar, select **+New solution.**
 1.  In the new solution screen configure as follows:
@@ -72,3 +73,4 @@ Now that we have created a solution for storing our components, we are going to 
     ![A screenshot showing the Account and Contact tables in the solution.](media/a53817e242fca7371765583d9e565c36.png)
 
 Congratulations. You have successfully created a new solution using Power Platform. We will continue to use the solution to add additional components to it.
+
