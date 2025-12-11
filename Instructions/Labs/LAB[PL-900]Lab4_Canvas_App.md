@@ -28,13 +28,14 @@ This lab uses AI to build out the components. Since AI results can vary, it’s 
 
 The estimated time to complete this exercise is **60 to 75** minutes.
 > **Note:**
-If you encounter a **Needs Attention** error message on the table while creating a choice column with Copilot, you can create the column manually by following the steps below:
-1. Select **View options**, then choose **View data**. The table structure will become visible.
-1. Click on **+ New column** to add a new column.
+> If you encounter a **Needs Attention** error message on the table while creating a choice column with Copilot, you can create the column manually by following the steps below:
+> 1. Select **View options**, then choose **View data**. The table structure will become visible.
+> 1. Click on **+ New column** to add a new column.
 
 ## Task 1: Sign in to Power Apps and explore the interface
 
 1.  Open a web browser and navigate to the [Power Apps](https://make.powerapps.com/) maker portal.
+1.  Make sure you're in the **Dev One** environment.
 1.  Using the navigation on the left, select **Create**.
 1.  Under **Create your apps**, choose **Start with Copilot**.
 1.  In the **Describe the tables you want copilot to build** screen, type: *` I want to store time off requests sent by employees. The table should identify the start and end times of the request.`*
@@ -339,6 +340,7 @@ Upon review, we have decided that we do not need to have the ability to create u
 1.  In Power Apps Studio, select the **Save** button.
 1.  Select the **Publish** button.
 1.  Choose **Publish this version.**
+
 
 
 
