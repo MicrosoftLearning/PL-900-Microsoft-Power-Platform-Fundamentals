@@ -74,10 +74,10 @@ Sometimes when your site loads for the first time, you might see a Liquid object
 Now that your initial site is created, you can use the design studio to modify you site by adding pages, text, images, forms, and more.
 
 1.  **Main navigation**, select **Home** to open the **Home** page.
-1.  Hover over the **Contoso Event management Site** text in the site header and select **Edit site header**.
+1.  Hover over the **Contoso Event management** text in the site header and select **Edit site header**.
 1.  Change the **Site title** to **Contoso Consulting**.
 1.  Select the **Upload image** button.
-1.  On the **Add an image** screen, select **Upload image**, choose the **Contoso Logo** from your class files, and choose **Open**.
+1.  On the **Add an image** screen, select **Upload image**, choose the **Contoso Logo** from your downloaded files, and choose **Open**.
 1.  With the **Contoso Logo** image selected, select **OK**.
 1.  After you are finished with your changes, select the **X** to leave the **Edit site header** screen.
 1.  To change the site background image, click anywhere in the background image.
@@ -192,7 +192,7 @@ Select the **Send** button.
 1. From the menu that appears, select **Page settings**.
 1. Configure the page settings as follows:
     - **Name:** View Event
-    - **Partial URL:** View-Events
+    - **Partial URL:** View-Event
 1. Select the **OK** button.
 
     Finally, let’s create one more webpage form that we can use to edit an event.
@@ -279,7 +279,7 @@ To ensure that users are only seeing data relevant to them organizations can spe
 1.  Under **Main Navigation**, select the **Edit Event** page.
 1.  Select the **Update permission** button.
 1.  Configure the permission as follows:
-    -   **Name:** Create Events
+    -   **Name:** Edit Events
     -   **Table:** Event
     -   **Access Type:** Global access
 1.  Set the **Permission** to **Read** and **Update**.
@@ -290,15 +290,15 @@ To ensure that users are only seeing data relevant to them organizations can spe
 
 Now that we have our pages and Items formatted the way we want, we are going to adjust the site navigation accordingly.
 
-1.  Under **Main Navigation**, select the **Ellipsis** next to the **Event** page.
+1.  Under **Main Navigation**, select the **Ellipsis** next to the **Events** page.
 
 1.  From the menu that appears, select **Move up**.
 1.  Repeat step until the **Event** page located below the **Contact Us** page.
 1.  Make sure the **New Event** page is located directly under the **Events** page. *(If not, move the New Event page until it is.)*
 1.  On the **New Event** page, select the **Ellipsis** button.
 1.  From the menu that appears, select **Make this a sub-page**.
-1.  Select the Ellipsis next to **View Event** and select **Move to Other Pages**.
-1.  Select the Ellipsis next to **Edit Event** and select **Move to Other Pages**.
+1.  Select the Ellipsis next to **View Event** and select **Move to "Other pages"**.
+1.  Select the Ellipsis next to **Edit Event** and select **Move to "Other pages"**.
 1.  On the **Command bar**, select the **Sync** button.
 
 ## Task 8: Preview and refine your site
@@ -322,6 +322,7 @@ Once your site is created, you will want to review it to ensure it meets your bu
     - Layout and navigation.
     - Branding elements such as colors, fonts, and logos.
 1. Once you have finished testing, close the browser tab to return to the site.
+
 
 
 
