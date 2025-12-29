@@ -41,10 +41,9 @@ The estimated time to complete this exercise is **30 to 45** minutes.
 In the previous lab, we created an Event management solution and set it as the preferred solution in this environment. For that reason, we do not need to go directly to the solution to create our data model. The items we create will automatically be added to the solution.
 
 > **Note:**
-If you encounter a **Needs Attention** error message on the table while creating a choice column with Copilot, you can create the column manually by following the steps below:
-1. Select **View options**, then choose **View data**. The table structure will become visible.
-1. Click on **+ New column** to add a new column.
-
+> If you encounter a **Needs Attention** error message on the table while creating a choice column with Copilot, you can create the column manually by following the steps below:
+> 1. Select **View options**, then choose **View data**. The table structure will become visible.
+> 1. Click on **+ New column** to add a new column.
 
 ## Task 1: Create a data model
 
@@ -99,25 +98,25 @@ Now that we have created the table, we are going to add some additional columns 
     Copilot will likely create two tables, Event Session and Event Speaker. Since our Contacts will be speakers, we are going to remove the Event Speaker table.
 
 1.  If necessary, in the **What would you like to do next?** field, enter: *`Remove the Event Speaker table.`*
-1.  In Copilot, enter the following text: *`Add a new text column to the Event Session table called Session Description.`*
+1.  In **What would you like to do next?**, enter the following text: *`Add a new text column to the Event Session table called Session Description.`*
 
     ![Screenshot showing the Event Session table added](media/546162a8b040a7bdcdcd5c3e2be44b4d.png)
 
     Next, we are going to add one last table called **Session Registrations**. This table will be used to manage the individuals who register for specific sessions.
 
-1.  In Copilot, enter the following text: *`Add a new table called Session Registrations.`*
+1.  In **What would you like to do next?**, enter the following text: *`Add a new table called Session Registrations.`*
 
     Copilot will likely create two tables, Session Registration, Session, or Participant (or something else). Since our Contacts can be participants, we are going to remove the Participant table. If any other tables (such as Session or something else) other than Session Registration were created, remove them.
 
-1.  If necessary, in Copilot, enter the following text: *`Remove the Participant table.`*
+1.  If necessary, in **What would you like to do next?**, enter the following text: *`Remove the Participant table.`*
     
     Sometimes a Participant Name column will be added to the session registration table. We need to remove it as it can cause problems later when we try to save the data model. (We are going to replace it with a different participant column later.)  
 
-1.	If necessary, in Copilot, enter the following text: *`Remove the Participant Name column from the Session Registration table.`*
+1.	If necessary, in **What would you like to do next?**, enter the following text: *`Remove the Participant Name column from the Session Registration table.`*
 
 1.	If you now have a Primary Column field, enter the following text: *`Rename the Primary Column to Registration Name in Session Registration table.`*
 
-1.  In Copilot, enter the following text: *`Add a text column to the Session registration table called Special Instructions.`*
+1.  In **What would you like to do next?**, enter the following text: *`Add a text column to the Session registration table called Special Instructions.`*
 
     Your completed Session Registration table should look similar to the image below:
 
@@ -295,4 +294,7 @@ Now that we have created the table, we are going to add some additional columns 
 1.	Select the Save button. (If the column fails to save, the first time, try again.)
 
 Congratulations, you have successfully created a data model in Microsoft Dataverse.
+
+
+
 
