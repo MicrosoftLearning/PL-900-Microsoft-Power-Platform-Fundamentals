@@ -5,6 +5,7 @@ lab:
     module: 'Module 1: Describe Microsoft Dataverse'
 ---
 
+# Practice Lab 2 - Create a data model
 
 ## Learning Objective
 
@@ -294,6 +295,7 @@ Now that we have created the table, we are going to add some additional columns 
 1.	Select the Save button. (If the column fails to save, the first time, try again.)
 
 Congratulations, you have successfully created a data model in Microsoft Dataverse.
+
 
 
 
