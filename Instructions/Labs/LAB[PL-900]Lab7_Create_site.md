@@ -1,11 +1,11 @@
 ---
 lab:
-    title: 'Lab 3: Create a Power Pages site'
+    title: 'Lab 7: Create a Power Pages site'
     learning path: 'Learning Path: Demonstrate the capabilities of Microsoft Power Pages'
     module: 'Module 2: Create a Microsoft Power Pages site'
 ---
 
-# Practice Lab 3 - Create a Power Pages site
+# Practice Lab 7 - Create a Power Pages site
 
 ## Learning Objective
 
@@ -325,6 +325,7 @@ Once your site is created, you will want to review it to ensure it meets your bu
     - Layout and navigation.
     - Branding elements such as colors, fonts, and logos.
 1. Once you have finished testing, close the browser tab to return to the site.
+
 
 
 
