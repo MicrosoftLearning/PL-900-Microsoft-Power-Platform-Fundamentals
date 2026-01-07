@@ -4,6 +4,8 @@ lab:
     learning path: 'Learning Path: Demonstrate the capabilities of Microsoft Power Apps'
     module: 'Module 2: Build a canvas app'
 ---
+# Practice Lab 4 - Create a canvas app
+
 ## Learning Objective
 
 In this exercise, you will use Copilot to create a canvas application that employees can use for requesting and managing time off and equipment checkout requests. Once the app is created, you will use Copilot and Power Apps designer to amend the app.
@@ -340,6 +342,7 @@ Upon review, we have decided that we do not need to have the ability to create u
 1.  In Power Apps Studio, select the **Save** button.
 1.  Select the **Publish** button.
 1.  Choose **Publish this version.**
+
 
 
 
