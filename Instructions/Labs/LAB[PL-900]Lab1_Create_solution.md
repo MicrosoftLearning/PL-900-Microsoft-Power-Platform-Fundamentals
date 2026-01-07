@@ -1,11 +1,11 @@
 ---
 lab:
-    title: 'Lab 1: Create a solution'
+    title: 'Lab 2: Create a solution'
     learning path: 'Learning Path: Manage the Microsoft Power Platform environment'
     module: 'Module 1: Describe Microsoft Dataverse'
 ---
 
-# Practice Lab 1 - Create a solution
+# Practice Lab 2 - Create a solution
 
 ## Learning Objective
 
@@ -75,5 +75,6 @@ Now that we have created a solution for storing our components, we are going to 
     ![A screenshot showing the Account and Contact tables in the solution.](media/a53817e242fca7371765583d9e565c36.png)
 
 Congratulations. You have successfully created a new solution using Power Platform. We will continue to use the solution to add additional components to it.
+
 
 
