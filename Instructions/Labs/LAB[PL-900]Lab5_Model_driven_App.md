@@ -112,7 +112,7 @@ The model-drive application uses forms and views to present data to users in the
 1. On the forms **Command bar**, select the **Save and publish** button.
 1. Select the **Back arrow** button to return to the model-driven application designer
 1. Under **Navigation** on the left, hover over **Contacts view**, and select the **Edit** icon. (If prompted to save, select **Save and continue.**)
-1. Select **+ View Column**.
+1. If the table columns are not displayed, select **+ View Column**.
 1. Search for and add the **Contact Type** column to the view.
 1. Select the **Save and Publish** button.
 1. Select the **Back arrow** button to return to the model-driven applicaton designer.
@@ -235,6 +235,7 @@ First we are going to add a couple of contacts.
     ![Screenshot of completed Session registration form.  ](media/Session-registration-form.png)
 
 1.  Select the **Save and Close** button.
+
 
 
 
