@@ -126,7 +126,7 @@ Now that your new app has been created we are going to make some modifications t
 
     ![Screenshot of Canvas app welcome screen.](media/533c80cc861941b6a353b56bfc0dbc0f.png)
    
-1. Select the **Save** button on the **Command** bar to save your app.
+1. Select the **Save** button on the **Command bar** to save your app.
 
 ## Task 3: Add a new screen to you app.
 
@@ -219,7 +219,7 @@ As you are building the app, one of your managers reaches you to you and is wond
 
     ![Screenshot of Items PowerFx Formula.](media/powerfx-formula.png)
 
-34. On the **Command** bar, select the **Save** button to save your app.
+34. On the **Command bar**, select the **Save** button to save your app.
 
 > [!IMPORTANT]
 > If you copied and pasted the formula into the formula bar, it is possible that the '' are incorrect for Equipment and Equipment Name. If you are getting a formula error, try removing and retyping them.
@@ -280,7 +280,7 @@ When a user selects a record in the Equipment list, we want to open the record i
 
     ![Screenshot of OnSelect PowerFx formula.](media/e5b22c91a437e6918269d65e2616afc8.png)
    
-1. Select the **Save** button on the **Command** bar to save your app.
+1. Select the **Save** button on the **Command bar** to save your app.
 
 ## Task 5: Modify the Header on the Page
 
@@ -310,7 +310,7 @@ The last step in creating this screen is to populate the reader container with d
 
     ![Screenshot of the Back navigation command.](media/38d0e5367ee41da58ac9902f8056b1af.png)
     
-1. Select the **Save** button on the **Command** bar to save your app.
+1. Select the **Save** button on the **Command bar** to save your app.
 
 ## Task 6: Finish configuring the Welcome screen
 
@@ -326,7 +326,7 @@ Upon review, we have decided that we do not need to have the ability to create u
 
     ![A screenshot of a computer AI-generated content may be incorrect.](media/561d1e8cd023541761b6523138c2fde8.png)
 
-1. Select the **Save** button on the **Command** bar to save your app.
+1. Select the **Save** button on the **Command bar** to save your app.
 
 ## Task 7: Test your application
 
@@ -339,7 +339,7 @@ Upon review, we have decided that we do not need to have the ability to create u
 1.  Notice how the category of the **Laptop** changes to **Furniture**.
 1.  Select the **Home** button.
 1.  Select the **Purple X** to leave **Preview** mode.
-1.  Select the **Save** button on the **Command** bar to save your app.
+1.  Select the **Save** button on the **Command bar** to save your app.
 
 ## Task 8: Save and publish the app
 
@@ -348,6 +348,7 @@ Upon review, we have decided that we do not need to have the ability to create u
 1.  In Power Apps Studio, select the **Save** button.
 1.  Select the **Publish** button.
 1.  Choose **Publish this version.**
+
 
 
 
