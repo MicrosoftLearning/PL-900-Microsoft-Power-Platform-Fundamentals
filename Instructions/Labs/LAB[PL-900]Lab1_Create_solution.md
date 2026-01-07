@@ -5,6 +5,8 @@ lab:
     module: 'Module 1: Describe Microsoft Dataverse'
 ---
 
+# Practice Lab 1 - Create a solution
+
 ## Learning Objective
 
 In this exercise, you will be creating a Power Platform solution to store the different components you build. In Power Platform, solutions are used to group different components together, and to provide transportability. The solution you create in this exercise will be used throughout the remainder of the course.
@@ -73,4 +75,5 @@ Now that we have created a solution for storing our components, we are going to 
     ![A screenshot showing the Account and Contact tables in the solution.](media/a53817e242fca7371765583d9e565c36.png)
 
 Congratulations. You have successfully created a new solution using Power Platform. We will continue to use the solution to add additional components to it.
+
 
