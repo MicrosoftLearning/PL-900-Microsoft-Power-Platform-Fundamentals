@@ -197,10 +197,10 @@ As you are building the app, one of your managers reaches you to you and is wond
 1. Hover over the container, select the **Copilot** icon, and enter *`Add a Search Icon.`*
 1. Select **Keep it**.
 
-> !NOTE]
+> [!NOTE]
 > If Copilot happends to add the wrong icon, remove it and insert the magnifying glass manually.
 
-1. With the **Search** icon selected, in the **Properties** pane, configure the control as follows:
+31. With the **Search** icon selected, in the **Properties** pane, configure the control as follows:
 
     -   **Padding**
         -   **Top:** 10
@@ -214,12 +214,12 @@ As you are building the app, one of your managers reaches you to you and is wond
 
     Finally, we are going to configure the **Equipment List** gallery to populate its data based on the text entered in the search control field.
 
-1.  Select the **Equipment List** gallery we created earlier.
-1.  In the **Items** property, enter the following formula: `Search([@'Equipment'], EquipSearchInput.Text, 'Equipment Name',Category)`
+32.  Select the **Equipment List** gallery we created earlier.
+33.  In the **Items** property, enter the following formula: `Search([@'Equipments'], EquipSearchInput.Text, 'Equipment Name',Category)`
 
     ![Screenshot of Items PowerFx Formula.](media/powerfx-formula.png)
 
-1. On the **Command** bar, select the **Save** button to save your app.
+34. On the **Command** bar, select the **Save** button to save your app.
 
 > [!IMPORTANT]
 > If you copied and pasted the formula into the formula bar, it is possible that the '' are incorrect for Equipment and Equipment Name. If you are getting a formula error, try removing and retyping them.
@@ -348,6 +348,7 @@ Upon review, we have decided that we do not need to have the ability to create u
 1.  In Power Apps Studio, select the **Save** button.
 1.  Select the **Publish** button.
 1.  Choose **Publish this version.**
+
 
 
 
