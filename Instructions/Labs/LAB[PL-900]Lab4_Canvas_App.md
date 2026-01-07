@@ -121,9 +121,12 @@ Now that your new app has been created we are going to make some modifications t
 1. On the **Command** bar, select the **Save** button to save the app.
 1. In the **Save** screen, set the **Name** to `Contoso Employee Hub`, and select **Save.**
 
+
     Your app will resemble the image.
 
     ![Screenshot of Canvas app welcome screen.](media/533c80cc861941b6a353b56bfc0dbc0f.png)
+   
+1. Select the **Save** button on the **Command** bar to save your app.
 
 ## Task 3: Add a new screen to you app.
 
@@ -194,8 +197,8 @@ As you are building the app, one of your managers reaches you to you and is wond
 1. Hover over the container, select the **Copilot** icon, and enter *`Add a Search Icon.`*
 1. Select **Keep it**.
 
-    > **Note:**
-If Copilot happends to add the wrong icon, remove it and insert the magnifying glass manually.
+> !NOTE]
+> If Copilot happends to add the wrong icon, remove it and insert the magnifying glass manually.
 
 1. With the **Search** icon selected, in the **Properties** pane, configure the control as follows:
 
@@ -209,8 +212,6 @@ If Copilot happends to add the wrong icon, remove it and insert the magnifying g
 
     ![Screenshot of Search Icon properties](media/cb3305731a09bca0bbf166d55d9822a4.png)
 
-
-
     Finally, we are going to configure the **Equipment List** gallery to populate its data based on the text entered in the search control field.
 
 1.  Select the **Equipment List** gallery we created earlier.
@@ -220,8 +221,8 @@ If Copilot happends to add the wrong icon, remove it and insert the magnifying g
 
 1. On the **Command** bar, select the **Save** button to save your app.
 
-> **Important:**
-If you copied and pasted the formula into the formula bar, it is possible that the '' are incorrect for Equipment and Equipment Name. If you are getting a formula error, try removing and retyping them.
+> [!IMPORTANT]
+> If you copied and pasted the formula into the formula bar, it is possible that the '' are incorrect for Equipment and Equipment Name. If you are getting a formula error, try removing and retyping them.
 
 ## Task 4: Build a container to display record operations.
 
@@ -257,7 +258,7 @@ When a user selects a record in the Equipment list, we want to open the record i
 1.  With the **SelectedRecord1**container selected, select the **Insert** button.
 1.  Select **Text Label.**
 1.  Rename the label to `SelectedRecordTitle`.
-1. Configure the **SelectedRecordTitle** as follows:
+1.  Configure the **SelectedRecordTitle** as follows:
 
     1.  **Padding**
         1.  **Top:** 5
@@ -278,6 +279,8 @@ When a user selects a record in the Equipment list, we want to open the record i
 1. Select the **OnSelect** property and enter the following formula: `SubmitForm(EquipmentForm)`.
 
     ![Screenshot of OnSelect PowerFx formula.](media/e5b22c91a437e6918269d65e2616afc8.png)
+   
+1. Select the **Save** button on the **Command** bar to save your app.
 
 ## Task 5: Modify the Header on the Page
 
@@ -306,6 +309,8 @@ The last step in creating this screen is to populate the reader container with d
 1.  Set the **OnSelect** property of the home button to: `Back()`
 
     ![Screenshot of the Back navigation command.](media/38d0e5367ee41da58ac9902f8056b1af.png)
+    
+1. Select the **Save** button on the **Command** bar to save your app.
 
 ## Task 6: Finish configuring the Welcome screen
 
@@ -321,7 +326,7 @@ Upon review, we have decided that we do not need to have the ability to create u
 
     ![A screenshot of a computer AI-generated content may be incorrect.](media/561d1e8cd023541761b6523138c2fde8.png)
 
-1. Select the **Save** button to save your app.
+1. Select the **Save** button on the **Command** bar to save your app.
 
 ## Task 7: Test your application
 
@@ -334,6 +339,7 @@ Upon review, we have decided that we do not need to have the ability to create u
 1.  Notice how the category of the **Laptop** changes to **Furniture**.
 1.  Select the **Home** button.
 1.  Select the **Purple X** to leave **Preview** mode.
+1.  Select the **Save** button on the **Command** bar to save your app.
 
 ## Task 8: Save and publish the app
 
@@ -342,6 +348,7 @@ Upon review, we have decided that we do not need to have the ability to create u
 1.  In Power Apps Studio, select the **Save** button.
 1.  Select the **Publish** button.
 1.  Choose **Publish this version.**
+
 
 
 
