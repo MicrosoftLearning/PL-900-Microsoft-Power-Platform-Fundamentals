@@ -4,6 +4,7 @@ lab:
     learning path: 'Learning Path: Demonstrate the capabilities of Microsoft Power Automate'
     module: 'Module 2: Build a Microsoft Power Automate flow'
 ---
+# Practice Lab 6 - Create a Power Automate flow
 
 ## Learning Objective
 
@@ -323,5 +324,6 @@ After a short delay, you should see an email in your inbox.
 
 > **Note:**
 It may go to your Junk email folder.
+
 
 
