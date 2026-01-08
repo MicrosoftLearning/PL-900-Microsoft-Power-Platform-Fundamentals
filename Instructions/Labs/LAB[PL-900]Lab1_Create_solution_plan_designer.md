@@ -37,7 +37,7 @@ The estimated time to complete this exercise is **20 to 30** minutes.
 Use Plan designer
 
 1.  Open the [Power Apps maker](https://make.powerapps.com) portal and navigate to the **Home** screen.
-2.  Under **Let’s make a plan**, enter the following text: “*I need my staff to check out equipment and be notified of due dates.*”
+2.  Under **Let’s make a plan**, enter the following text: `I need my staff to check out equipment and be notified of due dates.`
 
     ![Screenshot of the Copilot screen where you can provide a description of the business challenge you are trying to solve.](media/50e9d4cd301f8a29f3583c49f6b45161.png)
 
@@ -52,7 +52,7 @@ The **Requirements agent** built the user requirements based on the description 
 ![Screenshot of plan overview](media/6614c40776f6997ec0ad443a0ebaf318.png)
 
 5.  To change the requirements, select the **Edit** button.
-6.  In the **Copilot** field under the **User requirements** heading, enter: “*Staff should be able to report if there is an issue with the equipment while they have it checked out*.”
+6.  In the **Copilot** field under the **User requirements** heading, enter: `Staff should be able to report if there is an issue with the equipment while they have it checked out`
 7.  Select the **Go** button.
 
 A new issue reporting requirement will be added to your plan.
@@ -68,11 +68,11 @@ Next, the **Data Model Agent** assists you in creating your data model. It will 
 
 All the suggested tables, columns, and relationships will be displayed in the data model designer. You can use the Copilot pane to make changes to the data model.
 
-11.  In the **Copilot** pane on the right side of the screen, enter the following: “*Add a text column to the Equipment table called Item number.*”
+11.  In the **Copilot** pane on the right side of the screen, enter the following: `Add a text column to the Equipment table called Item number.`
 12.  After the column is added to the **Equipment** table, use **Copilot** to enter the following prompts individually:
-    1.  “Add a new text column to the Staff/Employee table called Manager.”
-    2.  “Add a new choice column to the Equipment table called Equipment Type.”
-    3.  “Add a new choice column to the Equipment table called Equipment Type. “
+    1.  `Add a new text column to the Staff/Employee table called Manager.`
+    2.  `Add a new choice column to the Equipment table called Equipment Type.`
+    3.  `Add a new choice column to the Equipment table called Equipment Type.`
 
         Your data model should look like the one listed below. *(Remember it will likely not match exactly. And that is OK)*
 
@@ -86,7 +86,7 @@ Next the **Solution Agent** will provide suggestions for different items. In our
 ![Screenshot of the components suggested by the solution agent. ](media/1eb4f7964fec7944d571d635080c63b6.png)
 
 15.  In the **Solution Agent**, select the **Edit** button.
-16.  In the **Copilot** field, under the Technology heading, enter the following: *“Create an item checkout agent to answer employee questions.”*
+16.  In the **Copilot** field, under the Technology heading, enter the following: `Create an item checkout agent to answer employee questions.`
 17.  Select the **Go** button.
 18.  An **Item Checkout Agent** will be added. Select **Keep**.
 19.  If you are happy with the suggestions from the **Solution Agent**, select **Looks good**.
@@ -122,11 +122,11 @@ Once your application is created, we will make a few basic modifications to it. 
 11.  Select one of the suggested images from the list and select the **Insert** button. *(***OPTIONAL:** *Repeat as desired for the remaining images)*
 12.  Select the **description** below the Reserve entities / checkouts text.
 13. On the **Command bar**, select the **Properties** button. *(Located just to the right of the Editing button.)*
-14. Change the **Text** property to: “Start a new or view an existing reservation.”
+14. Change the **Text** property to: `Start a new or view an existing reservation.`
 15. Select the **Reserve entities / Checkouts** text,
-16. Change the Text property to “Reserve Equipment.”
+16. Change the Text property to `Reserve Equipment.`
 17. Select the **Welcome screen** text at the top of the screen.
-18. Change the **Text** property to “Contoso Equipment Checkout.”
+18. Change the **Text** property to `Contoso Equipment Checkout.`
 19. In the **Properties** pane, under **Style and theme**, change the fill color to **Dark Blue**. Select the image above **Staff**.
 
 Your apps **Welcome screen** will resemble the image below:
@@ -195,7 +195,7 @@ Finally, the Plan designer provided a suggestion for an Item Checkout agent that
 
     Copilot studio will add knowledge to the agent based the tables in your solution. Additional knowledge can be added as needed. For today, we are going to leave the Agent as is.
 
-2.  In the **Test your agent** pane, enter the following: *“Does Bob Johnson have any overdue items checked out?”*
+2.  In the **Test your agent** pane, enter the following: `Does Bob Johnson have any overdue items checked out?`
 3.  The agent will return a response based on the data in your tables.
 
     ![Screenshot of the Item Checkout agent that was created.](media/8bf5e1378b4f10bdebe0b72c9867bd71.png)
@@ -211,4 +211,5 @@ Finally, the Plan designer provided a suggestion for an Item Checkout agent that
 3.  Using the navigation on the left, select **Plans**.
 4.  Notice your **Equipment Checkout System** plan is now listed.
 5.  Select the **Equipment Checkout System** plan to open the plan back up in the editor.
+
 
