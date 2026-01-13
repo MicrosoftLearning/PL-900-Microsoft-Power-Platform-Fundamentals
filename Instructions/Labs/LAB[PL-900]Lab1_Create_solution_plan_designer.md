@@ -2,7 +2,7 @@
 lab:
     title: 'Lab 1: Create a solution with Plan Designer'
     learning path: 'Learning Path: Describe the business value of Microsoft Power Platform'
-    module: 'Module 1: Describe the business value of extending business solutions by using Microsoft Power Platform'
+    module: 'Module 2: Describe the business value of extending business solutions by using Microsoft Power Platform'
 ---
 
 # Practice Lab 1 - Create a solution with Plan Designer 
@@ -211,5 +211,6 @@ Finally, the Plan designer provided a suggestion for an Item Checkout agent that
 3.  Using the navigation on the left, select **Plans**.
 4.  Notice your **Equipment Checkout System** plan is now listed.
 5.  Select the **Equipment Checkout System** plan to open the plan back up in the editor.
+
 
 
