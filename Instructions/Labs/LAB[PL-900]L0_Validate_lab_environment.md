@@ -17,7 +17,7 @@ Tenants should not be shared or used for purposes outside of hands-on labs. The 
 
 Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
 
-## Exercise 1: Access Microsoft Power Platform
+## Exercise 1: Access [Microsoft Power Platform](/power-apps/maker/signup-for-powerapps)
 
 In this exercise, you will verify that you can access Power Apps.
 
