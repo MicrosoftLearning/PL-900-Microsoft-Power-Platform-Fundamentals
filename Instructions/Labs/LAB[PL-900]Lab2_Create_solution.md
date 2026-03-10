@@ -1,8 +1,15 @@
 ---
 lab:
-    title: 'Lab 2: Create a solution'
-    learning path: 'Learning Path: Manage the Microsoft Power Platform environment'
-    module: 'Module 1: Describe Microsoft Dataverse'
+  title: 'Lab 2: Create a solution'
+  learning path: 'Learning Path: Manage the Microsoft Power Platform environment'
+  module: 'Module 1: Describe Microsoft Dataverse'
+  description: In this exercise, you will be creating a Power Platform solution to
+    store the different components you build. In Power Platform, solutions are used
+    to group different components together, and to provide transportability. The solution
+    you create in this exercise will be used throughout the remainder of the course.
+  duration: 62 minutes
+  level: 100
+  islab: true
 ---
 
 # Practice Lab 2 - Create a solution
