@@ -1,9 +1,20 @@
 ---
 lab:
-    title: 'Lab 6: Create a Power Automate flow'
-    learning path: 'Learning Path: Demonstrate the capabilities of Microsoft Power Automate'
-    module: 'Module 2: Build a Microsoft Power Automate flow'
+  title: 'Lab 6: Create a Power Automate flow'
+  learning path: 'Learning Path: Demonstrate the capabilities of Microsoft Power Automate'
+  module: 'Module 2: Build a Microsoft Power Automate flow'
+  description: In this exercise, learners will create a series of different cloud
+    flows using Microsoft Copilot in Power Automate. You will use different creation
+    methods such as Copilot and from scratch to become familiar with the different
+    options available.
+  duration: 30 minutes
+  level: 100
+  islab: true
+  primarytopics:
+  - Microsoft Copilot
+  - Power Automate
 ---
+
 # Practice Lab 6 - Create a Power Automate flow
 
 ## Learning Objective
