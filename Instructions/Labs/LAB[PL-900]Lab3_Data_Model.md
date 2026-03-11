@@ -1,8 +1,12 @@
 ---
 lab:
-    title: 'Lab 3: Create a data model'
-    learning path: 'Learning Path: Manage the Microsoft Power Platform environment'
-    module: 'Module 1: Describe Microsoft Dataverse'
+  title: 'Lab 3: Create a data model'
+  learning path: 'Learning Path: Manage the Microsoft Power Platform environment'
+  module: 'Module 1: Describe Microsoft Dataverse'
+  description: In this exercise, learners will be using Copilot to build a data model. You will provide a description of the type of tables you want to build and use the designer to make changes as needed such as adding additional columns.
+  duration: 146 minutes
+  level: 100
+  islab: true
 ---
 
 # Practice Lab 3 - Create a data model
