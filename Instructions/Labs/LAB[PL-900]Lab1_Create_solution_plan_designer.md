@@ -72,7 +72,6 @@ All the suggested tables, columns, and relationships will be displayed in the da
 12.  After the column is added to the **Equipment** table, use **Copilot** to enter the following prompts individually:
     1.  `Add a new text column to the Staff/Employee table called Manager.`
     2.  `Add a new choice column to the Equipment table called Equipment Type.`
-    3.  `Add a new choice column to the Equipment table called Equipment Type.`
 
         Your data model should look like the one listed below. *(Remember it will likely not match exactly. And that is OK)*
 
@@ -90,13 +89,13 @@ Next the **Solution Agent** will provide suggestions for different items. In our
 17.  Select the **Go** button.
 18.  An **Item Checkout Agent** will be added. Select **Keep**.
 19.  If you are happy with the suggestions from the **Solution Agent**, select **Looks good**.
-20.  Select **Save Tables** build the data model that is suggested.
+20. Select the **Save** icon in the upper-right corner of the page to build the suggested data model.
 
 Plan designer builds solution files for all the plans you create. A solution is a critical component of Application lifecycle Management (ALM).
 
-21.  On the **Where do you want to save thigs** screen, set the Name of the solution to Equipment Checkout System and select the **Save** button.
+21.  On the **Where do you want to save thigs** screen, expand Advanced section, Select **Save items to a new solution**, set the **Name** of the solution to **Equipment Checkout System** and then select the **Save** button.
 
-    ![Screenshot of the solution that will be created.](media/58f251e3404a38c6fd2905cd5f422ed4.png)
+![Screenshot of the solution that will be created. ](media/58f251e3404a38c6fd2905cd5f422ed4.png)
 
 It can take between 1 to 3 minutes for all the items suggested by the Plan designer to be created. Once the message indicating your tables have been saved, select the **X** to close the display message.
 
@@ -105,29 +104,32 @@ It can take between 1 to 3 minutes for all the items suggested by the Plan desig
 Now that plan designer has created all the necessary tables, and provided suggestions for objects to create, we are going to build out the what was suggested. We will start by building out the Equipment Checkout App.
 
 1.  Ensure that you have the **Equipment Checkout System** plan open.
-2.  In the **Plan Overview** pane is still displayed, select the collapse button to provide you with mode design space. *(Located in the upper right of the overview pane.)*
+2. With the **Plan Overview** pane displayed, select the **Collapse** arrow on the right 
+side of the pane to expand the design workspace, then select the **View** dropdown 
+(the connected nodes icon) and select **Overview**.
 3.  In the **Design** window, locate the **Equipment Checkout App** and select the **Create** button. *(Power Apps will quickly build the app.)*
 
     ![Screenshot showing how to create an app.](media/88ea38999c67a0744553a82f8633a111.png)
 
 Once your application is created, we will make a few basic modifications to it. Before we do that, let’s look around the app.
 
-4.  Select the **Welcome screen**. *(Provides quick access to items such reservations, checkouts, and extensions.)*
-5.  Select the **Reserve entities / Checkouts** screen. *(Allows you to create new, view, edit, and delete reservations / checkouts.)*
-6.  Navigate to the additional screens such as **Extensions Requests** and **Notifications** *(Or whichever screens we created for your app)*.
-7.  Select the **Welcome screen.**
-8.  Select the image above **Reserve entities / checkouts.**
-9.  From the menu that appears, select **Edit** \> **Stock** Images.
-10.  In the **Search** box enter **Equipment**.
-11.  Select one of the suggested images from the list and select the **Insert** button. *(***OPTIONAL:** *Repeat as desired for the remaining images)*
-12.  Select the **description** below the Reserve entities / checkouts text.
-13. On the **Command bar**, select the **Properties** button. *(Located just to the right of the Editing button.)*
-14. Change the **Text** property to: `Start a new or view an existing reservation.`
-15. Select the **Reserve entities / Checkouts** text,
-16. Change the Text property to `Reserve Equipment.`
-17. Select the **Welcome screen** text at the top of the screen.
-18. Change the **Text** property to `Contoso Equipment Checkout.`
-19. In the **Properties** pane, under **Style and theme**, change the fill color to **Dark Blue**. Select the image above **Staff**.
+4. If the **Welcome to Power Apps Studio** dialog appears, select **Skip**.
+5.  Select the **Welcome screen**. *(Provides quick access to items such reservations, checkouts, and extensions.)*
+6.  Select the **Reserve entities / Checkouts** screen. *(Allows you to create new, view, edit, and delete reservations / checkouts.)*
+7.  Navigate to the additional screens such as **Extensions Requests** and **Notifications** *(Or whichever screens were created for your app)*.
+8.  Select the **Welcome screen.**
+9.  Select the image above **Reserve entities / checkouts.**
+10.  From the menu that appears, select **Edit** \> **Stock** Images.
+11.  In the **Search** box enter **Equipment**.
+12.  Select one of the suggested images from the list and select the **Insert** button. *(***OPTIONAL:** *Repeat as desired for the remaining images)*
+13.  Select the **description** below the Reserve entities / checkouts text.
+14. On the **Command bar**, select the **Properties** button. *(Located just to the right of the Editing button.)*
+15. Change the **Text** property to: `Start a new or view an existing reservation.`
+16. Select the **Reserve entities / Checkouts** text,
+17. Change the Text property to `Reserve Equipment.`
+18. Select the **Welcome screen** text at the top of the screen.
+19. Change the **Title** property to `Contoso Equipment Checkout.`
+20. In the **Properties** pane, under **Style and theme**, change the fill color to **Dark Blue**. Select the image above **Staff**.
 
 Your apps **Welcome screen** will resemble the image below:
 
@@ -135,15 +137,15 @@ Your apps **Welcome screen** will resemble the image below:
 
 Additional changes can be made as you want, but for now we will test the application.
 
-20.  On the command bar, select the **Play** icon. (*Notice the layout of the app will change based on your screen size*)
-21.  Select the **Reserve Equipment** image.
-22.  To edit the record, select the **Edit** button.
-23.  Change the **Name** of the record.
-24.  Select the **Check mark** icon to save your changes.
-25.  Select the **Home** button to return to **Welcome Screen**.
-26.  In the upper right corner of the app, select the **Purple X** to return to the designer.
-27.  On the **Command bar**, select the **Save** icon to save your app.
-28.  Close your **Browser** tab to return to **Design Planner**. (*Notice the button under your app has changed from create to edit.*)
+21.  On the command bar, select the **Play** icon. (*Notice the layout of the app will change based on your screen size*)
+22.  Select the **Reserve Equipment** image.
+23.  To edit the record, select the **Edit** button.
+24.  Change the **Name** of the record.
+25.  Select the **Check mark** icon to save your changes.
+26.  Select the **Home** button to return to **Welcome Screen**.
+27.  In the upper right corner of the app, select the **Purple X** to return to the designer.
+28.  On the **Command bar**, select the **Save** icon to save your app.
+29.  Close your **Browser** tab to return to **Design Planner**. (*Notice the button under your app has changed from create to edit.*)
 
 > [!NOTE]
 > If you want to repeat the above steps, you can create and modify the Equipment Management app as well.
