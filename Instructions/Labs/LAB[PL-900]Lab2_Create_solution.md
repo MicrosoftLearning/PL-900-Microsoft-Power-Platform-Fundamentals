@@ -1,8 +1,12 @@
 ---
 lab:
-    title: 'Lab 2: Create a solution'
-    learning path: 'Learning Path: Manage the Microsoft Power Platform environment'
-    module: 'Module 1: Describe Microsoft Dataverse'
+  title: 'Lab 2: Create a solution'
+  learning path: 'Learning Path: Manage the Microsoft Power Platform environment'
+  module: 'Module 1: Describe Microsoft Dataverse'
+  description: In this exercise you create a solution that will be used for Application Lifecycle Management (ALM), and to group all the different apps, sites, and flow we create together so they can be easily managed and transported.
+  duration: 62 minutes
+  level: 100
+  islab: true
 ---
 
 # Practice Lab 2 - Create a solution
