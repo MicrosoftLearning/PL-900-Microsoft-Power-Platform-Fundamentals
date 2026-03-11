@@ -37,11 +37,11 @@ The estimated time to complete this exercise is **20 to 30** minutes.
 Use Plan designer
 
 1.  Open the [Power Apps maker](https://make.powerapps.com) portal and navigate to the **Home** screen.
-2.  Under **Let’s make a plan**, enter the following text: `I need my staff to check out equipment and be notified of due dates.`
+2.  Select **Start with a plan**, select **Create a plan** ,then enter the following text: `I need my staff to check out equipment and be notified of due dates.`
 
-    ![Screenshot of the Copilot screen where you can provide a description of the business challenge you are trying to solve.](media/50e9d4cd301f8a29f3583c49f6b45161.png)
+    ![Screenshot of the Copilot screen where you can provide a description of the business challenge you are trying to solve.](media/Create-Plan.png)
 
-3.  Select the **Go** button.
+3.  Select the **Generate** button.
 4.  Plan Designer will generate a plan based on the description that you provided. The plan will include the following:
     -   Business Problem
     -   Purpose of this plan
