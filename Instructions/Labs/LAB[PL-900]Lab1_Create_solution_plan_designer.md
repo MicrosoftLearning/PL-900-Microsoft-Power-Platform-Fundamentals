@@ -1,8 +1,12 @@
 ---
 lab:
-    title: 'Lab 1: Create a solution with Plan Designer'
-    learning path: 'Learning Path: Describe the business value of Microsoft Power Platform'
-    module: 'Module 2: Describe the business value of extending business solutions by using Microsoft Power Platform'
+  title: 'Lab 1: Create a solution with Plan Designer'
+  learning path: 'Learning Path: Describe the business value of Microsoft Power Platform'
+  module: 'Module 2: Describe the business value of extending business solutions by using Microsoft Power Platform'
+  description: In this exercise, learners will be using Plan designer to build a complete targeted business solution that can include apps, workflows, agents and more. Copilot will guide you through the entire process of creating the solution.
+  duration: 5 minutes
+  level: 100
+  islab: true
 ---
 
 # Practice Lab 1 - Create a solution with Plan Designer 
