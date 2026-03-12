@@ -1,9 +1,16 @@
 ---
 lab:
-    title: 'Lab 5: Create a model-driven app'
-    learning path: 'Learning Path: Demonstrate the capabilities of Microsoft Power Apps'
-    module: 'Module 3: Build a model-driven app'
+  title: 'Lab 5: Create a model-driven app'
+  learning path: 'Learning Path: Demonstrate the capabilities of Microsoft Power Apps'
+  module: 'Module 3: Build a model-driven app'
+  description: In this exercise, learners will be creating a model-driven app in Power Apps using Copilot. You will define the data model, modify forms and views, and create the application.
+  duration: 15 minutes
+  level: 100
+  islab: true
+  primarytopics:
+    - Power Apps
 ---
+
 # Practice Lab 5 - Create a model-driven app
 
 ## Learning Objective
@@ -235,6 +242,7 @@ First we are going to add a couple of contacts.
     ![Screenshot of completed Session registration form.  ](media/Session-registration-form.png)
 
 1.  Select the **Save and Close** button.
+
 
 
 

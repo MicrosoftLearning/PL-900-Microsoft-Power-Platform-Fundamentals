@@ -1,8 +1,12 @@
 ---
 lab:
-    title: 'Lab 7: Create a Power Pages site'
-    learning path: 'Learning Path: Demonstrate the capabilities of Microsoft Power Pages'
-    module: 'Module 2: Create a Microsoft Power Pages site'
+  title: 'Lab 7: Create a Power Pages site'
+  learning path: 'Learning Path: Demonstrate the capabilities of Microsoft Power Pages'
+  module: 'Module 2: Create a Microsoft Power Pages site'
+  description: In this exercise, learners will be using Copilot to build a Power Pages site. Once the site is created, you will be using Power Pages Design Studio to perform tasks such as adding and modifying content, as well as changing themes.
+  duration: 30 minutes
+  level: 100
+  islab: true
 ---
 
 # Practice Lab 7 - Create a Power Pages site
@@ -325,6 +329,7 @@ Once your site is created, you will want to review it to ensure it meets your bu
     - Layout and navigation.
     - Branding elements such as colors, fonts, and logos.
 1. Once you have finished testing, close the browser tab to return to the site.
+
 
 
 
