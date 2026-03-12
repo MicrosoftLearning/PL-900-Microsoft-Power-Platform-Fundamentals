@@ -7,6 +7,8 @@ lab:
 
 # Practice Lab 1 - Create a data model
 
+**Estimated time:** 30 minutes
+
 ## Introduction
 
 Welcome to the PL-900: Microsoft Power Platform Foundations hands-on lab guide. These labs are designed to give you practical, introductory experience with the core components of the Microsoft Power Platform.
@@ -203,6 +205,7 @@ Next, we are going to add a lookup column to the Facility Request table, that wi
         ![Screenshot showing a new column.](media/598a2ef98951783cd5f79e363286b725.png)
 
 1.  Select the **Save** button****
+
 
 
 
