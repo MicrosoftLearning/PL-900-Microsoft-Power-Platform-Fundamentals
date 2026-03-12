@@ -158,29 +158,29 @@ In addition to the apps that were suggested by the Plan designer, there likely a
 2.  You will be provided with a **Suggested flow**, select **Keep it and continue**.
 3.  On the **Review your connected apps and services** screen, verify that all the connections have a green check mark, and select the **Create Flow** button.
 
-The flow that is created is a recurring flow that will run daily, Identify and checkouts due today, and for each one send an email to the individual who checked out the item.
+The flow that is created is a recurring flow that will run daily, identifies items that are due today, and sends an email to each invididual who has checked out an item.
 
 4.  Select the **Recurrence** trigger.
 5.  Notice the trigger has automatically been configured to an **Interval** of **1** and a **Frequency** of Day. *(You could specify a specific time of day it should run as well.)*
 
     ![Screenshot of the recurrence trigger](media/c2b4b1afa9756afd934fbe9e7a740a89.png)
 
-6.  Select the **List rows** step.
+6.  Select the **List rows** action.
 
-This step will look at the **Notification** table that was created as part of our data model and identify any records with a **DueDate** of **Today**.
+This action will look at the **Notification** table that was created as part of our data model and identify any records with a **DueDate** of **Today**.
 
 7.  If there is a value in the **Table Name** field, remove it.
-8.  In the **Table name** field, type **Notifications**, and select **Notifications [cX\#X\#_notifications]** or similarly named item in your environment.
+8.  In the **Table name** field, enter Notifications, and then select **Notifications** (cX#X#_notifications or a similarly named table) from the list.
 
     ![Screenshot of the list rows action](media/5b246838ef6bbed257034637d80faccf.png)
 
-9.  Select the **For Each** step.
-10.  For each record identified in the **List Rows** step, the flow will send an email to the email address of the employee who has the item checked out to remind them that their item is due back today.
+9.  Select the **For Each** action.
+10. For each record identified in the **List Rows** action, the flow will send an email to the email address of the employee who has the item checked out to remind them that their item is due back today.
 
     ![Screenshot of the Send an email action](media/a7db1ebbf7ad0ed4cfc34e603d69b579.png)
 
 > [!IMPORTANT]
-> Make sure that you email step has data in it. Failure to include data will result in an error. IF it is missing data, fill in the fields of the step to match the image above. You can enter your own email address in the To field if you want.
+> Make sure that your email step has data in it. Failure to include data will result in an error. If it is missing data, fill in the fields of the step to match the image above. You can enter your own email address in the To field if you want.
 
 You could make any additional changes that you see fit in the flow. For now, we will leave it as it is.
 
