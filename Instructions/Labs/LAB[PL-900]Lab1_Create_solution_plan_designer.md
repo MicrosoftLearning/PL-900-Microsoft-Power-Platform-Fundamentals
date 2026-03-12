@@ -219,12 +219,13 @@ Finally, the Plan designer provided a suggestion for an Item Checkout agent that
 
 ## Task 5: Save your plan
 
-1.  In your Plan, select **Save** in the upper-right corner of the page
+1.  In your Plan, select **Save** in the upper-right corner of the page.
 2.  On the **Where do you want to save thigs** screen, select **Select an existing solution**, choose **Equipment Checkout System**, and then select the **Save** button.
 2.  After the save is complete, select the **Back arrow** button to return to the **Power Apps** maker portal.
 3.  Using the navigation on the left, select **Plans**.
 4.  Notice your **Equipment Checkout System** plan is now listed.
 5.  Select the **Equipment Checkout System** plan to open the plan back up in the editor.
+
 
 
 
