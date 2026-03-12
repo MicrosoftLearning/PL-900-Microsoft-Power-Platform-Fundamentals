@@ -1,13 +1,15 @@
 ---
 lab:
-    title: 'Lab 7: Create a Power Pages site'
+    title: 'Lab 5: Create a Power Pages site'
     learning path: 'Learning Path: Demonstrate the capabilities of Microsoft Power Pages'
-    module: 'Module 2: Create a Microsoft Power Pages site'
+    module: 'Create a Microsoft Power Pages site'
 ---
 
-# Practice Lab 7 - Create a Power Pages site
+# Practice Lab 5 - Create a Power Pages site
 
-## Learning Objective
+**Estimated time:** 30 minutes
+
+## Learning objective
 
 In this exercise, learners will be using Copilot to build a Power Pages site. Once the site is created, you will be using Power Pages Design Studio to perform tasks such as adding and modifying content, as well as changing themes.
 
@@ -21,7 +23,7 @@ Upon successful completion of this exercise, you will:
 -   Add new content to your site.
 -   Preview your new Power Pages site of different types of devices.
 
-**Lab Details:**
+**Lab details:**
 
 Before beginning this exercise, required that you have completed the following lab:
 
@@ -70,7 +72,7 @@ If this is the first time you are accessing the Power Pages maker portal, you ma
 1.  After your site is created, open the it (If not already taken there.)
 
     > **Note:**
-Sometimes when your site loads for the first time, you might see a Liquid object not found message. If this happens, Refresh (F5) the browser window to reload the site. The site should appear.
+    > Sometimes when your site loads for the first time, you might see a Liquid object not found message. If this happens, Refresh (F5) the browser window to reload the site. The site should appear.
 
 ## Task 2: Modify the contents of your site
 
@@ -325,6 +327,7 @@ Once your site is created, you will want to review it to ensure it meets your bu
     - Layout and navigation.
     - Branding elements such as colors, fonts, and logos.
 1. Once you have finished testing, close the browser tab to return to the site.
+
 
 
 
