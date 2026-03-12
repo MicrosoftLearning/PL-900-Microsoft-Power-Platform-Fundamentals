@@ -4,7 +4,7 @@ lab:
   learning path: 'Learning Path: Describe the business value of Microsoft Power Platform'
   module: 'Module 2: Describe the business value of extending business solutions by using Microsoft Power Platform'
   description: In this exercise, learners will be using Plan designer to build a complete targeted business solution that can include apps, workflows, agents and more. Copilot will guide you through the entire process of creating the solution.
-  duration: 5 minutes
+  duration: 30 minutes
   level: 100
   islab: true
 ---
@@ -215,6 +215,7 @@ Finally, the Plan designer provided a suggestion for an Item Checkout agent that
 3.  Using the navigation on the left, select **Plans**.
 4.  Notice your **Equipment Checkout System** plan is now listed.
 5.  Select the **Equipment Checkout System** plan to open the plan back up in the editor.
+
 
 
 
