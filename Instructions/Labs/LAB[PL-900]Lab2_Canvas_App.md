@@ -6,10 +6,6 @@ lab:
 ---
 # Practice Lab 2 - Create a canvas app
 
-## Scenario
-
-Contoso wants a mobile-friendly app that employees can use to view and submit facilities requests. You will first explore an app built from a template to understand how canvas apps work, and then build a simple request submission app from scratch.
-
 **Estimated Time:** 45 minutes
 
 ## Lab objectives
@@ -21,6 +17,10 @@ In this lab, you will learn to:
 -   Build a simple canvas app from a blank screen
 -   Add controls such as galleries, forms, labels, and buttons
 -   Connect a canvas app to a Dataverse table as a data source
+-   
+## Scenario
+
+Contoso wants a mobile-friendly app that employees can use to view and submit facilities requests. You will first explore an app built from a template to understand how canvas apps work, and then build a simple request submission app from scratch.
 
 # Exercise 1: Create an app from a template
 
@@ -167,4 +167,5 @@ The first thing we want to do is to customize the main screen to include a welco
     -   You can fill in a new request and click Submit to save it.
     -   Clicking an existing record in the gallery navigates to the detail screen.
 1.  Close the preview and **Save** your app as **Facility Request App** (File \> Save or Ctrl+S).
+
 
