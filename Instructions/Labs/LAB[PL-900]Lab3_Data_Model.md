@@ -7,300 +7,201 @@ lab:
 
 # Practice Lab 3 - Create a data model
 
-## Learning Objective
+# Introduction
 
-In this exercise, learners will be using Copilot to build a data model. You will provide a description of the type of tables you want to build and use the designer to make changes as needed such as adding additional columns.
+Welcome to the PL-900: Microsoft Power Platform Foundations hands-on lab guide. These labs are designed to give you practical, introductory experience with the core components of the Microsoft Power Platform.
 
-Upon successful completion of this lab, you will:
+## Lab Scenario: Contoso facilities requests
 
-- Use Copilot to assist you in creating a data model.
-- Add and edit columns to tables.
+Throughout these labs, you will work within a common business scenario: Contoso Corporation needs a simple system for employees to submit facilities and maintenance requests (such as broken equipment, room setup, or supply orders). The facilities team needs to track, prioritize, and resolve these requests.
 
-### Scenario
+Each lab builds a different part of this solution using a different Power Platform component. While the labs are thematically related, each lab is self-contained and can be completed independently in any order.
 
-Contoso Consulting is a professional services organization specializing in IT and AI consulting services. Throughout the year, they offer many different events to their customers. Some of these are trade shows style events where they have many partners come in and provide details on new products, market trends, and services. Others occur throughout the year and are quick webinars that are used to provide details about individual products.
+## Prerequisites
 
-Contoso would like to use Power Platform to build an Event management solution that they can use to manage the different events they host throughout the year. Additionally, Contoso is looking to build out some applications to support their Employee Equipment Check Out program. 
+Before starting these labs, ensure you have the following:
 
-In this exercise you are going to create a data mode that will be used to store the different types of events, event registrations, and other data needed for Contoso to effectively manage their events. You are also going to create an Equipment table that will be used in their other applications.  
+-   A Microsoft 365 account with Power Platform access (a trial environment is acceptable)
+-   A Power Platform environment with Dataverse provisioned
+-   A modern web browser (Microsoft Edge or Google Chrome recommended)
+-   Maker-level permissions in your Power Platform environment
 
-### Lab Details
+# Lab 1: Building a data model in Dataverse
 
-Before beginning this exercise, it's recommended that have completed:
+**Estimated Time:** 30 minutes
 
+## Lab Objectives
 
-- **Lab 1 – Create a solution**
+In this lab, you will learn to:
 
-> **Important:**
-This lab uses AI to build out the components. Since AI results can vary, it’s important to note that you results may be different (but similar) to what is defined in the lab. The basic concepts outlined in the lab will be the same no matter what was created or what it was named. If the tables and columns do not match exactly, you may need to adjust to what was created for you.
+-   Navigate the Dataverse environment within the Power Apps Maker portal
+-   Create a custom table to store facilities request data
+-   Add columns of various data types to the table
+-   Create a simple Choice column
+-   Enter sample data into your new table
 
-### Lab Timing
+## Scenario
 
-The estimated time to complete this exercise is **30 to 45** minutes.
+Contoso needs a central place to store facilities request data. You will create a Dataverse table called Facility Request that captures the key information needed to track each request: a title, description, category, priority, status, and the date the request was submitted.
 
-> **Note:**
-In the previous lab, we created an Event management solution and set it as the preferred solution in this environment. For that reason, we do not need to go directly to the solution to create our data model. The items we create will automatically be added to the solution.
+# Exercise 1: Build a data model from scratch
 
-> **Note:**
-> If you encounter a **Needs Attention** error message on the table while creating a choice column with Copilot, you can create the column manually by following the steps below:
-> 1. Select **View options**, then choose **View data**. The table structure will become visible.
-> 1. Click on **+ New column** to add a new column.
+## Task 1: Create the Facility Request table
 
-## Task 1: Create a data model
+1.  Navigate to <https://make.powerapps.com> and sign in with the credentials you were provided with (*Available from the Resources tab of your lab environment. Use* **Administrative Username** *and* **Administrative Password**).
+1.  Ensure you are in the correct environment (**Dev One**) by checking the Environment picker in the upper-right corner of the screen.
+1.  In the left navigation pane, select **Tables**.
+1.  Select **+ New table** drop down, and from the menu that appears choose **Table (advanced properties)**
+1.  In the table **Properties** panel, set the **Display name** to **Facility Request**. (Note: The plural name will auto-populate.)
+1.  Select the **Primary Column** tab, and set the **Display name** to **Request Title**
 
-Contoso currently stores donor contact information in their Dataverse instance. They would like to use Dataverse to track the grants they are applying for and donations that they are receiving. You need to create the necessary tables to support the future application needs of Contoso.
+    ![New Table Screen](media/4054a73fdf8eba3bb76e50bf2345b338.png)
 
-1.  If necessary, open a web browser and navigate to the [Power Apps](https://make.powerapps.com/) maker portal, and Sign in using your Microsoft account credentials.
-1.  While on the Power Apps home screen, using the navigation on the left, select **Tables**.
-1.  Under **Tables**, select **Get started with Copilot**.
-1.  In the **Describe the tables you want copilot to build** screen, enter: “*Create a table for managing events. The table should identify the name of the event, event data, location, the maximum number of attendees, and event details.”*
-1.  Next to the **Generate** button, select **Table Settings**, and configure as follows:
-    - **Table options:** One table
-    - Do **NOT** include relationships.
+1.  Select the **Save** button to create your new table.
 
-    ![Screenshot of the Copilot screen where you provide your description.](media/3ba587c2323ca2cf012f5e65530c69bc.png)
+## Task 2: Add columns to the table
 
-1.  Select the **Generate** button.
+Next, we will need to create some columns to store information from each request. We are going to add the columns below:
 
-    > **Important:**
-Copilot should only create **ONE** table called **Events**. If more were created, you need to **DELETE** them by telling Copilot the name of the table to delete. **Failure to remove any extra tables will impact the next step.**
+| **Column Display Name** | **Data Type**          | **Additional Settings**                                        |
+|-------------------------|------------------------|----------------------------------------------------------------|
+| Description             | Multiple Lines of Text | Max length: 2000                                               |
+| Date Requested          | Date Only              | Behavior: User Local                                           |
+| Estimated Cost          | Currency               | Leave defaults                                                 |
+| Category                | Choice                 | Choices: Maintenance, Equipment, Supplies, Room Setup, Other   |
+| Priority                | Choice                 | Choices: Low, Medium, High, Urgent                             |
+| Status                  | Choice                 | Choices: New, In Progress, Completed, Cancelled (Default: New) |
 
-    ![Screenshot of the the Event table created by Copilot.](media/event-checkpoint.png)
+1.  Ensure that your **Facility Request** table is open in the maker portal.
+1.  Under **Facility Request columns and data** select the **+** button.
+1.  Configure your new column as follows:
+    - **Display name:** Description
+    - **Data Type:** Multiple Lines of Text (Plain Text)
 
-**Edit the data model with Copilot**
+   	![Screenshot showing formatting as Multi Line Text](media/8a3bbc5eacb16419f57788e468a64fcc.png)
 
-Now that we have created the table, we are going to add some additional columns to it. We will start by adding an event type column. Additionally, Contacts will attend our events. We want to add the existing Contact table to the data model and associate it with Event Registrations later.
+1.  Expand **Advanced options** and ensure the **Maximum character count** is **2000**.
+1.  Select the **Save** button.
+1.  Under **Facility Request columns and data** select the **+** button again.
+1.  Configure your new column as follows:
+    - **Display name:** Date Requested
+    - **Data Type:** Date and time
+    - **Format:** Date Only
+1.  Expand **Advanced Options** and set **Time Zone adjustment** to **User Local**.
+1.  Select the **Save** button.
 
-7.  In the **What would you like to do next?** field, enter: *`Add a choice column named Event Type to Event table.`*
-1.  Add another column by entering the following text: *`Add a choice column named Registration Required to Event table.`*
+    ![Screen shot showing Advanced Date Options](media/38a5e902e3c70c7324af36c9ee610287.png)
 
-    ![A screenshot of the Event table](media/caccce34fbd7091d59e0fbd4d9cac2b1.png)
+1.  Under **Facility Request columns and data** select the **+** button again.
+1.  Configure your new column as follows:
+	- **Display name:** Estimated Cost
+    - **Data Type:** Currency
+1.  Select the **Save** button.
 
-    > **Important:**
-    Your event table does not have to match the above image exactly, but it should have at least the following columns:
-    - Event Name
-    - Event Date
-    - Max Attendees
-    - Location
-    - Event type
-    - Registration Required.
+	![Screenshot showing creating a currency column](media/4427d39adbbe4bbf4fab7d7b982f6c8b.png)
 
-    If you do not have all the above-mentioned columns, use Copilot to add them to the data model.  
+1.  Under **Facility Request columns and data** select the **+** button again.
+1.  Configure your new column as follows:
+    - **Display name:** Category
+    - **Data Type:** Choice (Choice)
+1.  Under **Sync with Global Choice**, select **No**.
+1.  Under **Choices**, set the **Label** to **Maintenance.**
+1.  Select **+ New Choice** and set the label to **Equipment**.
+1.  Repeat the last step until you have added the following labels:
+    - Supplies
+    - Room Setup
+    - Other
+1.  Set **Default Choice** to **None**
+1.  Select the **Save** button.
 
-    Next, let's add the **Contact** table to the data model.
+	![Screenshot showing Choice Column](media/3e25a1f222488af40533dbd0137f54de.png)
 
-1.  In the **Command bar** at the top, select **+ Existing table.**
-1.  In the **Search** field, enter **Contact**, and choose **Add Selected**.
+1.  Repeat steps 13 – 20 to add the following choice columns with values:
 
-    Depending on the type of event, there might be one or more sessions. To manage the different sessions, we need to define what the session is and the event with which it is associated. Next we will use Copilot to create an Event Sessions table.
+| **Column Display Name** | **Data Type** | **Additional Settings**                                        |
+|-------------------------|---------------|----------------------------------------------------------------|
+| Priority                | Choice        | Choices: Low, Medium, High, Urgent                             |
+| Status                  | Choice        | Choices: New, In Progress, Completed, Cancelled (Default: New) |
 
-1.  In the **What would you like to do next?** field, enter: *`Add a new table called Event Session. `*
+## Task 3: Enter sample data
 
-    Copilot will likely create two tables, Event Session and Event Speaker. Since our Contacts will be speakers, we are going to remove the Event Speaker table.
+Next, we are going to add some sample data so when we build apps from the tables, there will be data to display.
 
-1.  If necessary, in the **What would you like to do next?** field, enter: *`Remove the Event Speaker table.`*
-1.  In **What would you like to do next?**, enter the following text: *`Add a new text column to the Event Session table called Session Description.`*
+1.  Ensure that you still have the Facility Request table editor open.
+1.  Select **+ New** row (or click into the first empty row) and enter the following sample records:
 
-    ![Screenshot showing the Event Session table added](media/546162a8b040a7bdcdcd5c3e2be44b4d.png)
+| **Request Title**                | **Category** | **Priority** | **Status**  |
+|----------------------------------|--------------|--------------|-------------|
+| Broken printer in Room 201       | Equipment    | High         | New         |
+| Order paper supplies for Floor 3 | Supplies     | Low          | New         |
+| Conference room setup for Monday | Room Setup   | Medium       | In Progress |
 
-    Next, we are going to add one last table called **Session Registrations**. This table will be used to manage the individuals who register for specific sessions.
+1.  Fill in reasonable values for the **Description**, **Date Requested**, and **Estimated Cost** columns for each record.
+1.  After entering all records, verify your data appears correctly in the grid view.
 
-1.  In **What would you like to do next?**, enter the following text: *`Add a new table called Session Registrations.`*
+# Exercise 2: Build a data model with Copilot assistance
 
-    Copilot will likely create two tables, Session Registration, Session, or Participant (or something else). Since our Contacts can be participants, we are going to remove the Participant table. If any other tables (such as Session or something else) other than Session Registration were created, remove them.
+There are many ways that you can build tables in Dataverse. In addition to the manual way we just did, you can also use tools like Copilot to assist you.
 
-1.  If necessary, in **What would you like to do next?**, enter the following text: *`Remove the Participant table.`*
-    
-    Sometimes a Participant Name column will be added to the session registration table. We need to remove it as it can cause problems later when we try to save the data model. (We are going to replace it with a different participant column later.)  
+> [!IMPORTANT]
+> When using Copilot your results can sometimes vary. For that reason, we are going to provide more guidance than specific step by steps to reflect the actual experience a bit more.
 
-1.	If necessary, in **What would you like to do next?**, enter the following text: *`Remove the Participant Name column from the Session Registration table.`*
+## Task 1: Create the Room table
 
-1.	If you now have a Primary Column field, enter the following text: *`Rename the Primary Column to Registration Name in Session Registration table.`*
+1.  In the left navigation pane, select **Tables**.
+1.  Under **Table**, select **Start with a blank table**
+1.  Change the name of the table from **Table1** to **Room**
 
-1.  In **What would you like to do next?**, enter the following text: *`Add a text column to the Session registration table called Special Instructions.`*
+    ![Screenshot showing renaming a table](media/f43bbdbb9e05fe968b5f6cd301ad6b46.png)
 
-    Your completed Session Registration table should look similar to the image below:
+1.  Next we are going to rename the **New Column** to **Room Name**:
+	- **HINT:** In the Copilot pane, enter the text “*Rename New Column in the Room table to Room Name*”.
 
-    ![Screenshot showing the Session Registration table added.](media/session-registration-checkpoint.png)
+Next, we need to add some additional new columns to the table.
 
-    > **Important** 
-    While yours does not need to match exactly, it is important that you do not have a column named Participant, and that you have at least the following:
-    - Registration Name
-    - Session Date
-    - Special Instructions
+We are going to add the following:
 
-    Now we are going to create relationships between our different tables. Since Contact records can be speakers in sessions, we are going to create a relationship between the Contact and Event Session tables.
+| **Column Display Name** | **Data Type** |
+|-------------------------|---------------|
+| Campus                  | Text          |
+| Building                | Text          |
+| Floor                   | Text          |
+| Conference Room         | Yes/No        |
 
-1.  On the Command bar, select **Create relationships**.
-1.  Configure the relationship as follows:
-    - **Relationship Type:** One-to-many
-    - **One:** Contact
-    - **Many:** Event Session
-    - **Display name:** `Speaker`
-1.  Select **Done.**
+1.  Using the Copilot pane, add all the text columns above.
+    - **HINT:** Enter the text: “*Add new columns named Campus, Building, and Floor to the room table.*”
 
-    ![Screenshot showing creating the Speaker relationship.](media/8bc16db2346cca311b20c83f34f46be6.png)
+        ![Screenshot showing using Copilot to Add items](media/712f56af13c331924442a04dce14cddb.png)
 
-    Since contacts can be registered for sessions in sessions, we are going to create a relationship between the Contact and Session Registration tables.
+1.  Using the Copilot Pane, add the **Conference Room** **Yes/No** column
+    - **HINT**: Enter the text: “*Add a new yes/no column named Conference Room to the Room table.*”
+1.  Your completed **Room** table will resemble the image below:
 
-1.  On the **Command bar**, select **Create relationships**.
-1.  Configure the relationship as follows:
-    - **Relationship Type:** One-to-many
-    - **One:** Contact
-    - **Many:** Session Registration
-    - **Display name:** `Participant`
+    ![Screenshot showing a completed Room table.](media/16a509f2184ec41488ab59fbc124847f.png)
 
-    ![Screenshot showing creating the Participant relationship.](media/27b3c6a8c1e01e1aa5d7f09ea8c30be0.png)
+Now that your table is created, add the following sample data to your table:
 
-1.  Select **Done.**
+| **Room** | **Campus** | **Building**  | **Floor** | **Conference Room** |
+|----------|------------|---------------|-----------|---------------------|
+| 301 A    | North      | HighPoint     | 3         | Yes                 |
+| 233      | South      | Seirra        | 2         | No                  |
+| 401 B    | East       | Jacobson      | 4         | Yes                 |
 
-    A single event can have multiple sessions associated with it, so we are going to create a relationship between the Event and Event Session tables.
+1.  Select the **Save and Exit** button to create your new Room table.
 
-1.  On the **Command bar**, select **Create relationships**.
-1.  Configure the relationship as follows:
-    - **Relationship Type:** One-to-many
-    - **One:** Event
-    - **Many:** Event Session
-    - **Display name:** `Event`
+## Task 2: Create a Room Lookup field in the Facility Request table.
 
-    ![Screenshot showing creating the Event relationship.](media/f4b38602700ac25a17d57fa6841c7169.png)
+Next, we are going to add a lookup column to the Facility Request table, that will allow you to select a room from the Rooms table.
 
-1. Select **Done.**
+1.  Using the left navigation select **Tables**
+1.  Select **All**, and in the **Search** field, enter **Facility.**
+1.  Open the **Facility Request** Table
+1.  Under **Schema**, select **Columns**
+1.  Select **+ New Column**, and configure as follows:
+    - **Display Name:** Room    -
+    - **Data Type**: Lookup
+    - **Related Table:** Room
 
-    Finally, Participants register for Event Sessions, so we will need to create a relationship between the Event Sessions and Session Registrations tables.
+        ![Screenshot showing a new column.](media/598a2ef98951783cd5f79e363286b725.png)
 
-1.  On the **Command bar**, select **Create relationships**.
-1.  Configure the relationship as follows:
-    - **Relationship Type:** One-to-many
-    - **One:** Event Session
-    - **Many:** Session Registrations
-    - **Display name:** `Event Session`
-
-    ![Screenshot showing creating the Event Session relationship.](media/9ef531da0c42f479e4cfde553ce617e3.png)
-
-1.  Select **Done.**
-
-    Your newly created data model should resemble the image:
-
-    ![Screenshot of completed data model.](media/completed-data-model.png)
-
-1.  Select **Save and exit.**
-
-## Task 2: Edit tables and columns directly
-
-Copilot is a wonderful way to create tables and columns very quickly. However, there may be times when you need to make modifications to tables and columns directly. For example, in this task we are going to update some existing columns, as well keep track of how many participants are registered for a specific session.
-
-1.  If necessary, open a web browser and navigate to the [Power Apps](https://make.powerapps.com/) maker portal, and Sign in using your Microsoft account credentials.
-1.  Using the navigation on the left, select **Tables**.
-1.  In the **Search** field, enter **Event**.
-1.  Open the **Event** table.
-1.  Under the **Schema** heading, select **Columns**.
-1.  Locate and open the **Event Type** column.
-1.  Replace the Labels with the following:
-    - Conference
-    - Trade Show
-    - Webinar
-    - Lunch and Learn
-    - Launch
-1.  Set the **Default choice** to **None**.
-
-    ![Screenshot of updated Event Type choices. ](media/3fb723bad1c0fced1e3705124a2d4594.png)
-
-1.  Select the **Save** button. (*If the column fails to save, the first time, try again.*)
-
-    Next we will add a new column to the **Event Session** table to track the total number of session registrations.
-
-1.  Using the navigation on the left, select **Tables** to leave the **Event** table.
-1.  In the **Search** field, enter **Event**.
-1.  Open the **Event Session** table.
-1.  Under the **Schema** heading select **Columns**.
-1.  On the command bar, select the **New column** button.
-1.  Configure the new column as follows:
-    - **Display name:** `Total Registrations`
-    - **Data type:** Whole Number
-    - **Behavior**: Rollup
-
-    ![Screenshot of Total Registrations column.](media/3e0921e5b887c7b68fe406d750b5f7d2.png)
-
-1.  Select **Save and edit**.
-
-    > **Important:**
-    If you have your pop-up blocker turned on, you may need to turn it off for the roll-up field to display.
-
-1.  Configure the Rollup Column as follows:
-    - Under **Related Entity**, select **Add related entity**.
-    - Choose the **Session Registration** table.
-    - Select the **Save your changes** button (*Check mark*)
-    - Under **Aggregation**, select **Add aggregation**.
-    - Under **Aggregate Function**, choose **Count**.
-    - For **Aggregated Related Entity Field**, select **Session Registration**.
-    - Select the **Save your changes** button *(Check mark)*
-
-    ![Screenshot of Total Registrations rollup field configuration.](media/54857f151ec4bd67bb1a1578c02b726a.png)
-
-1.  Select the **Save and close** button.
-
-    You have now successfully created the data model that will be used to support the event management application. 
-
-## Task 3: Create an equipment table
-
-In addition to managing events, Contoso has an employee checkout program.  Next, we will create the table to store the equipment. 
-1.	Using the navigation on the left, select **Tables.**
-1.	Under **Tables**, select **Get started with Copilot.**
-1.	In the **Describe the tables you want Copilot to build** screen, enter: *`Create a table for checking out equipment. The table should include the Equipment Name, Due Date, and Item number.`*
-1.	Next to the **Generate** button, select **Table Settings**, and configure as follows:
-    - **Table options:** One table
-    - Do **NOT** include relationships.
-
-    ![Screenshot of the guidance provided to Copilot to create the Equipment table.](media/create-equipment-table.png)
-
-1. Select the **Generate** button.
-
-    > **Important:**
-    Copilot should only create one table called **Checkout Equipment**. If more were created, you can delete them, by telling Copilot the name of the table to delete.
-
-**Edit the data model with Copilot**
-
-Now that we have created the table, we are going to add some additional columns to it. We will start by adding an event type column. Additionally, Contacts will attend our events. We want to add the existing Contact table to the data model and associate it with Event Registrations later.
-
-6.	In the **What would you like to do next?** field, enter: *`Rename the table to Equipment.`*
-1.	In the **What would you like to do next?** field, enter: *`Add a choice column named Equipment type.`*
-1.	Add another column by entering the following text: *`Add a text column named Category.`*
-1.	Add another column by entering the following text: *`Add a text column named Status.`*
-
-    Your completed table should resemble the image below:
-
-    ![Screenshot of the Equipment table.](media/Equipment-table-checkpoint.png)
-
-1.	If your table includes extra columns, remove those columns by entering *`Delete the [column name] column.`*
-1.	Once your table matches the image, select **Save and exit**.
-
-## Task 4: Modify the Equipment table directly
-
-1.	If necessary, open a web browser and navigate to the Power Apps maker portal, and Sign in using your Microsoft account credentials.
-1.	Using the navigation on the left, select **Tables.**
-1.	In the **Search** field, enter **Equipment.**
-1.	Open the **Equipment** table.
-1.	Under the **Schema** heading, select **Columns.**
-1.	Locate and open the **Equipment Type** column.
-1.	If necessary, replace the Labels with the following:
-    - Electronics
-    - Furniture
-    - Tools
-    - Accessories
-1.	Set the **Default choice** to **None.**
-
-    ![Screenshot of the choice options.](media/category-choice-options.png)
-
-1.	Select the Save button. (If the column fails to save, the first time, try again.)
-
-Congratulations, you have successfully created a data model in Microsoft Dataverse.
-
-
-
-
-
-
-
-
-
+1.  Select the **Save** button****
