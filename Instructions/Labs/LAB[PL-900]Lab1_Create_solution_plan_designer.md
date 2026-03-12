@@ -180,12 +180,12 @@ This action will look at the **Notification** table that was created as part of 
     ![Screenshot of the Send an email action](media/a7db1ebbf7ad0ed4cfc34e603d69b579.png)
 
 > [!IMPORTANT]
-> Make sure that your email step has data in it. Failure to include data will result in an error. If it is missing data, fill in the fields of the step to match the image above. You can enter your own email address in the To field if you want.
+> Make sure that your email step has data in it. Failure to include data will result in an error. If it is missing data, fill in the fields of the step to match the image above. You can enter your own email address in the **To** field if you want.
 
 You could make any additional changes that you see fit in the flow. For now, we will leave it as it is.
 
-11.  On the **Command bar**, select the **Save Draft** button.
-12.  Select the **Publish** button.
+11.  On the **Command bar**, select the **Save** button.
+12.  Confirm that the message **Your flow is ready to go.We recommend you test it** appears.
 13.  Close the **Browser** tab to return to **Plan designer** tab.
 14.  Notice the **Reminder Notification Flow** now has an **Edit** icon next to it.
 
