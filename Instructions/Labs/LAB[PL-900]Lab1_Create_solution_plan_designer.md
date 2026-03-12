@@ -199,14 +199,18 @@ Finally, the Plan designer provided a suggestion for an Item Checkout agent that
 
     Copilot studio will add knowledge to the agent based the tables in your solution. Additional knowledge can be added as needed. For today, we are going to leave the Agent as is.
 
-2.  In the **Test your agent** pane, enter the following: `Does Bob Johnson have any overdue items checked out?`
-3.  The agent will return a response based on the data in your tables.
+2. If the Welcome to Microsoft Copilot Studio screen appears, leave the country as United States and select the **Start free trial** button.
 
-    ![Screenshot of the Item Checkout agent that was created.](media/8bf5e1378b4f10bdebe0b72c9867bd71.png)
+3. Select **Skip**
 
-4.  In **Copilot Studio**, select the **Publish** button.
-5.  On the **Publish this agent** screen, select the **Publish** button.
-6.  Close the **Browser** tab, to return to **Plan designer**.
+4.  In the **Test your agent** pane, enter the following: `Does Bob Johnson have any overdue items checked out?`
+5.  The agent will return a response based on the data in your tables.
+
+    ![Screenshot of the Item Checkout agent that was created.](media/Item-Checkout-Agent.png)
+
+6.  In **Copilot Studio**, select the **Publish** button.
+7.  On the **Publish this agent** screen, select the **Publish** button.
+8.  Close the **Browser** tab, to return to **Plan designer**.
 
 ## Task 5: Save your plan
 
