@@ -7,7 +7,7 @@ lab:
 
 # Practice Lab 1 - Create a data model
 
-# Introduction
+## Introduction
 
 Welcome to the PL-900: Microsoft Power Platform Foundations hands-on lab guide. These labs are designed to give you practical, introductory experience with the core components of the Microsoft Power Platform.
 
@@ -26,11 +26,9 @@ Before starting these labs, ensure you have the following:
 -   A modern web browser (Microsoft Edge or Google Chrome recommended)
 -   Maker-level permissions in your Power Platform environment
 
-# Lab 1: Building a data model in Dataverse
-
 **Estimated Time:** 30 minutes
 
-## Lab Objectives
+## Lab objectives
 
 In this lab, you will learn to:
 
@@ -205,4 +203,5 @@ Next, we are going to add a lookup column to the Facility Request table, that wi
         ![Screenshot showing a new column.](media/598a2ef98951783cd5f79e363286b725.png)
 
 1.  Select the **Save** button****
+
 
