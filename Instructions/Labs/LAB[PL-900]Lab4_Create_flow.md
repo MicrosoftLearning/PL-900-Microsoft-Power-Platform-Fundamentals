@@ -4,327 +4,110 @@ lab:
     learning path: 'Learning Path: Demonstrate the capabilities of Microsoft Power Automate'
     module: 'Build a Power Automate flow'
 ---
-# Practice Lab 6 - Create a Power Automate flow
+# Practice Lab 4 - Create a Power Automate flow
 
-## Learning Objective
+**Estimated time:** 30 minutes
 
-In this exercise, learners will create a series of different cloud flows using Microsoft Copilot in Power Automate. You will use different creation methods such as Copilot and from scratch to become familiar with the different options available.
+## Lab objectives
 
-Upon successful completion of this exercise, you will:
+In this lab, you will learn to:
 
-- Use natural language prompts to design workflows
-- Configure triggers and actions
-- Test the automation for practical use.
+-   Navigate the Power Automate maker experience
+-   Create an automated cloud flow triggered by a Dataverse event
+-   Add conditions and actions to a flow
+-   Send an email notification using a built-in connector
+-   Test and monitor a flow
 
-### Scenario
+## Scenario
 
-Contoso Consulting is a professional services organization specializing in IT and AI consulting services. Throughout the year, they offer many different events to their customers. Some of these are trade shows style events where they have many partners come in and provide details on new products, market trends, and services. Others occur throughout the year and are quick webinars that are used to provide details about individual products. Additionally, Contoso is beginning to use automated Agents to assist customers with questions.
+Contoso wants to automatically notify the facilities team whenever a new high-priority facilities request is submitted. You will create an automated cloud flow that triggers when a new row is added to the Facility Request table and sends an email notification if the priority is High or Urgent.
 
-Contoso would like to use Power Automate to build a registration confirmation flow that will send an automated email to a customer when they register for an event. 
+## Exercise 1: Create an automated cloud flow
 
-In this exercise you are going to build a series of power Automate flows based on specific criteria.
+1.  In a new Browser window, navigate to <Https://make.powerautomate.com> (or select Power Automate from the app launcher) and sign in.
+1.  Change the Environment from **Contoso (default)** to **Dev One**
+1.  Select **+ Create** from the left navigation.
+1.  Select **Automated cloud flow**.
 
-Before beginning this exercise, you must have completed the following labs:
+    ![Create new Flow](media/ba0e6b83a2ffc2f7e72f595d42b5f04f.png)
 
-- **Lab 2 – Create a data model**
-- **Lab 5 – Build a model-driven app**
+1.  Name the flow **Notify on High Priority Request**.
+1.  In the trigger search box, search for **"When a row is added"** and select **When a row is added, modified or deleted (Microsoft Dataverse)**.
+1.  Click **Create**.
 
-The estimated time to complete this exercise is 20 to 30 minutes.
+    ![Screenshot showing trigger configuration](media/d47c16506bc5f8a9d20614e431f03e9b.png)
 
-## Exercise 1: Create Session Registration notification flow
+## Exercise 2: Configure the flow
 
-In this first exercise, you are going to be building a flow that will run automatically when a new Session Registration is created. It will get the details of the session, event, and contact who registered and send an email to this with their registration details.
+> [!NOTE]
+> It’s possible that your trigger step will say Invalid Parameters, if that is the case, it means that you need to configure a new connection. If your trigger says Invalid Parameters, follow the steps below:
 
-### Task 1: Create a flow
+1.  Select the **when a row is added, modified, or deleted** trigger.
+1.  In the **Parameters** pane, select **Change connection reference.**
 
-We want to send a registration confirmation to any newly registered users. We will create a flow that will capture details of a registration and send a confirmation email to the registered user.
+    ![Screenshot showing changing the connection](media/8975ac740e75136572207db551e66e13.png)
 
-1. Navigate to [https://make.powerautomate.com](https://make.powerautomate.com/).
+1.  Select **Add New**.
+1.  Configure the connection as follows:
+    -   **Connection name:** Dataverse
+    -   **Authentication Type:** Oauth
+1.  Select the **Sign in** button.
 
-1. You may need to reauthenticate, select **Sign in** and follow instructions, if needed.
+    ![screenshot showing signing to Dataverse](media/6d4c8fa2fa2b5cab89394b15c0a28e40.png)
 
-1. Select the **Dev One** environment at the top right if it is not already selected. (Important, do forget to do this step).
+1.  Choose the **MoD Administrator** account.
 
-1. In the left navigation, select **+ Create**. (If prompted, select **Get started**.)
+Once you have configured the connection reference, we can configure the trigger.
 
-1. Select  **Automated cloud flow**.
+1.  In the trigger step, configure the following settings:
+    -   **Change type:** Select **Added**.
+    -   **Table name:** Select **Facility Requests** (the table you created earlier).
+    -   **Scope:** Select **Organization** (to trigger for all users).
 
-1. Enter `Registration Notification` for **Flow name**.
+        ![Screenshot showing configuring the Dataverse trigger](media/d94a58dbdd9440493fd10ff2f97479c0.png)
 
-1. In **Choose your flow's trigger**, search for `Dataverse`.
+1.  In the **Copilot** Pane on the Right, enter the following command. "Add a condition to see if the Priority is equal to high."
 
-1. Choose the trigger **When a row is added, modified, or deleted**, and then select **Create**.
+We only want to send a notification for high-priority requests. Add a condition to check the priority value.
 
-	If you see an **Invalid Parameters** error, this is because you have not authenticated. Follow the steps below to create a connection. 
-	- Select **Change Connection**.
-	- Select **Add new.**
-	- In the **Connection name** field, enter **MOD Administrator**. Leave the **Authentication type** as **OAuth**, and Select **Sign in**.
-	- Once signed in, move to **Step 9.** 
+1.  Select the Newley added condition, and configure as follows:
+    -   In the left box, click in the field and select **Priority** (from Dynamic content – this comes from the trigger output).
+    -   Set the operator to is equal to.
+    -   In the right box, type the value for High (this is typically the numeric value of the choice — you may need to enter the integer value, such as 3, depending on your choice setup). Repeat by adding an Or condition for Urgent.
 
-1. Populate the trigger conditions for the flow:
+        Your completed condition should be **Priority is equal to High**.
 
-    - Select **Added** for **Change type**
-    - Select **Session Registrations** for **Table name.**
-    - Select **Organization** for **Scope** On the trigger step. 
+        ![Screenshot showing Check Priority Condition](media/9be0df58efa20aa59b3e1c6d12289b8e.png)
 
-1. Rename the trigger step `When a Session Registration is added`.
+Now that we have our condition, we are going to configure the Notification email
 
-	![Screenshot of the when a session is added trigger configuration](media/power-automate-01.png)
+1.  In the If **True/Yes** branch of the condition, click **Add an action**.
+1.  Search for **"Send an email"** and select **Send an email (V2)** from the **Office 365 Outlook** connector.
 
-This is good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
+    ![Screenshot showing configuring Outlook](media/90a78880d424996acdc268aa22b2935a.png)
 
+1.  Select the **Mod Administrator** account
 
-### Task 2: Create a step to get the details of the Event Session the Registration is for.
+    **NOTE:** You may need to select the **Sign in** button. *(You may receive a browser had blocked the connection authentication popup window. If so, select the Popup icon in the address bar and choose Always allow pop-ups and redirects from https://make.powerautomate.com)*
 
-1. Select **+ New step**. 
+1.  Configure the email:
+    -   **To:** Enter your own email address (for testing purposes).
+    -   **Subject:** Type "High Priority Facility Request: " and then insert the **Request Title** dynamic content from the trigger.
+    -   **Body:** enter "A new high-priority facilities request has been submitted."
+    -   Add dynamic content for Category, Priority, and Description on separate lines.
 
-1. Search for **Get a row by ID**. 
+        Your completed email should resemble the image below:
 
-1. Select the **Get a row by ID** action.
+        ![Screenshot showing Configured email](media/77924a98504e3df64c1bb6a8031437a6.png)
 
-1. Select **Event Sessions** as **Table name**
+1.  Leave the If no branch empty (no action needed for non-high-priority requests).
 
-1. Select the **Row ID** field. Notice that icons appear to select **Dynamic content** or **Expressions**.
+## Exercise 3: Save and test
 
-1. In the **Row ID** field, select **Event Session (Value)** from the **Dynamic content** list. In this step, you are looking up the **Event Session** for the **Session Registration** that was created to trigger this flow.
-
-1. On the **Get a row by ID** action. Rename this action `Get the Event Session`
-
-	![Screenshot of the Get the Event Session action configuration](media/power-automate-02.png)
-
-	Next, we are going to get the details of the Event the session is in.
-
-1. Under the **Get Event Session** step, select **+ Insert Action.**
-
-1. Search for **Get a row by ID**. 
-
-1. Select the **Get a row by ID** action.
-
-1. Select **Events** as **Table name**
-
-1. Select the **Row ID** field. Notice that icons appear to select **Dynamic content** or **Expressions**.
-
-1. In the **Row ID** field, select **Event (Value)** from the **Dynamic content** list. In this step, you are looking up the **Event** for the **Event Session** that was captured in the previous step.
-
-1. On the **Get a row by ID** action. Rename this action `Get the Event`.
-
-	![Screenshot of the Get the Event action configuration](media/power-automate-03a.png)
-
-	Lastly, we are going to get the details of the person registered for the session.
-
-1. Under the Get Event Details, set select **Insert new Action**.
-
-1. In the search field enter **Get a row by ID**.
-
-1. Select **Get a row by ID**.
-
-1. Select **Contacts** as **Table name**
-
-1. Select the **Row ID** field. Notice that a window pops up to select **Dynamic content** or **Expressions**.
-
-1. In the **Row ID** field, select the **Participant (Value)** field from the **When a session registration is added** trigger from the **Dynamic content** list.
-
-1. Select the **Get a row by ID** text, and rename this action `Get Participant Details`.
-
-	![Screenshot of the Get Participant Details action configuration](media/power-automate-04a.png)
-
-### Task 3: Create a step to send an email to confirm session registration
-
-1. Under the **Get Participant Details** step, select **Insert new Action**.
-
-1. In the search field enter **Send an email**.
-
-1. Select **Send an email (V2)**.
-
-	You may be prompted to create a connection to outlook, if so select the **Sign in** button, and login with the **Mod Administrator** account. 
-
-	![A screenshot of the Create a Connection Screen](media/power-automate-05.png)
-
-1. Just above the **To** field, select the **Gear** icon. From the menu that appears, select **Use dynamic content**.
-
-	![Screenshot of using Dynamic Content](media/power-automate-06.png) 
-
-1. Using Dynamic values, in the **To** field, select **Email** under the **Get Participant Details**.
-
-	![Screenshot of setting the to field to the email of the participant.](media/power-automate-07.png)
-
-1. In the **Subject** field, make sure it says `Registration Confirmation`.
-
-1. Enter the following text in **Email Body**:
-
-	> **Note:**
-	Dynamic content needs to be placed where fields are named in brackets. It is recommended to copy & paste all text first and then add dynamic content in the correct places.
-
-	*`Dear {First Name}, Thank you for registering for our upcoming session {Session Name} on {Event Date}. {Speaker} will be your speaker in this session. Your session is scheduled to last {Duration (Hours)}. Check out our other session at our {Event Name}.`*
-
-	*`Best regards,`*
-
-	*`Events Administration`*
-	
-	*`Contoso Consulting`*
-
-	Next, we are going to replace the text in the brackets with the items outlined below.
-
-1. Highlight the **{First Name}** text. Replace it with the **First Name** field from the **Get Participant Details** step.
-
-1. Highlight the **{Session Name}** text. Replace it with the **Session Name** field from the **Get Event Session** step.
-
-1. Highlight the **{Event Date}** text. Replace it with the **Event Date** field from the **Get Event Details** step.
-
-1. Highlight the **{Speaker}** text. Replace it with the **Speaker (Value)** field from the **Get Event Session** step.
-
-1. Highlight the **{Duration (Hours)}** text. Replace it with the **Duration (Hours)** field from the **Get Event Session** step.
-
-1. Highlight the **{Event Name}** text. Replace it with the **Event Name** field from the **Get Event Details** step.
-
-	Your completed step should resemble the image:
-
-	![Screenshot of completed email](media/power-automate-08.png)
-
-1. Select **Save**.
-
-	Leave this flow tab open for the next task. Your flow should look like the following:
-
-### Task 4: Enter some sample data
-
-> **Note:**
-If you completed Lab 5 – Build a model-driven app, you can skip this task and move directly to Task 5. 
-
-1. Using the navigation on the left, select **Apps**.
-
-1. Change the apps being displayed from **My apps** to **All**.
-
-1. Hover the **Event Management** application and select the **Play** icon.
-
-1. Using the navigation on the left, select **Contacts**.
-
-1. On the command bar, select the **+ New** button.
-
-1. In the **New Contact** screen, configure as follows:
-
-	- **First Name:** Suzanne
-
-	- **Last Name:** Diaz
-
-	- **Job Title:** Engineer
-
-1. In the form header, select the down arrow next to **Contact Type**.
-
-1. Set the **Contact Type** to **Speaker**.
-	![Screenshot showing how to set the Contact Type field on a form.](media/power-automate-09.png)
-
-1. Select the **Save** button to save the contact and leave it open.
-
-1. Select the **+ New** button.
-
-1. In the **New Contact** screen, configure as follows:
-
-	- **First Name:** Edgar
-
-	- **Last Name:** Swenson
-
-	- **Job Title:** Architect
-
-	- **Email:** Enter your email address (IMPORTANT or your flow will not run)
-
-1. In the form header, select the down arrow next to **Contact Type**.
-
-1. Set the **Contact Type** to **Participant**.
-
-1. Select the **Save &amp; Close** button.
-
-	Next, we are going to add a new event.
-
-1. Using the navigation on the left, select **Events**.
-
-1. On the command bar, select the **+ New** button.
-
-1. In the **New Event** screen, configure as follows:
-
-	- **Event Name:** Spring conference.
-
-	- **Event Date:** Tomorrow’s date.
-
-	- **Max Attendees:** 500
-
-	- **Event Details:** Spring conference to showcase newest products and services from our supported vendors.
-
-	- **Event Type:** Conference
-
-	- **Location:** Seattle
-
-	- **Registration Required:** Yes/True
-
-	![Screen shot of completed Event form. ](media/power-automate-10.png)
-
-1. Select the **Save &amp; Close** button.
-
-	Next, we will add a new session for the Event.
-
-1. Using the navigation on the left, select **Event Sessions**.
-
-1. Select the **+ New** button.
-
-1. Configure the **Event Session** as follows:
-
-	- **Session Name:** Responsible AI
-
-	- **Session Date:** Tomorrow’s Date
-
-	- **Duration:** 1.5 Hours
-
-	- **Session Description:** With all the new AI solutions, being responsible is important. We will discuss the challenges.
-
-	- **Speaker:** Suzanne Diaz
-
-	- **Event:** Spring Conference
-
-	![Screenshot of completed Event session form. ](media/power-automate-11.png)
-
-1. Select the **Save and close** button.
-
- 
-### Task 5: Validate and test the flow
-
-1. If necessary, open a new tab in your browser and navigate to [https://make.powerapps.com](https://make.powerapps.com/). 
-
-1. Select the **Dev One** environment at the top right if it is not already selected.
-
-1. Select **Apps** and open the **Contoso Event Management App**.
-
-1. Leaving this browser tab open, navigate back to the previous tab with your flow.
-
-1. On the command bar, select **Test**. Select **Manually** and then select **Test**.
-
-1. Navigate to the browser tab with your model-driven app open.
-
-	Finally, we are going to create a **Session Registration**.
-
-1. Using the navigation on the left, select **Session Registrations.**
-
-1. On the **Command bar**, select **+ New**.
-
-1. Complete the session registration as follows:
-
-	- **Name:** `E, Swenson Registration`.
-
-	- **Registration Date:** Todays Date
-
-	- **Participant:** `Edgar Swenson`
-
-	- **Session:** `Responsible AI`
-
-	![Screenshot of completed Session registration form. ](media/power-automate-12.png)
-
-1. Select the **Save and Close** button.
-
-1. Navigate to the browser tab where your Flow test is running. After a short delay, you should see the flow running. This is where you can catch any issues in the flow or confirm that it ran successfully.
-
-After a short delay, you should see an email in your inbox.
-
-> **Note:**
-It may go to your Junk email folder.
-
-
-
-
+1.  Click Save in the upper right.
+1.  Test the flow:
+    -   Open your **Facility Request** table (in make.powerapps.com \> **Tables** or through the model-driven app).
+    -   Add a new row with **Priority** set to **High**.
+    -   Return to Power Automate and click on the flow run history (under the 28-day run history section) to verify the flow ran successfully.
+    -   Check your email inbox for the **notification**.
+1.  If the flow did not trigger or failed, click on the run entry to see step-by-step details and identify where the error occurred.
