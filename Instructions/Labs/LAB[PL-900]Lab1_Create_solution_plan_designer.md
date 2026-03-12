@@ -209,6 +209,11 @@ Finally, the Plan designer provided a suggestion for an Item Checkout agent that
     ![Screenshot of the Item Checkout agent that was created.](media/Item-Checkout-Agent.png)
 
 6.  In **Copilot Studio**, select the **Publish** button.
+
+> [!NOTE] 
+> Publishing the agent requires a Copilot Studio license, which is not available in the lab environment.  
+> For this lab, testing the agent and confirming it returns data is sufficient. You can proceed without publishing.
+
 7.  On the **Publish this agent** screen, select the **Publish** button.
 8.  Close the **Browser** tab, to return to **Plan designer**.
 
