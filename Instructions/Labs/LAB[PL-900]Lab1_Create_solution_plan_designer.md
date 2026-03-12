@@ -189,7 +189,7 @@ You could make any additional changes that you see fit in the flow. For now, we 
 >If you encounter a Dataverse connection error when saving the flow, open the **List rows** action, select **Change connection reference**, choose **Add new**, create a new connection, and save the flow.
 12.  Confirm that the message **Your flow is ready to go.We recommend you test it** appears.
 13.  Close the **Browser** tab to return to **Plan designer** tab.
-14.  Notice the **Reminder Notification Flow** now has an **Edit** icon next to it.
+14.  Notice the **Reminder Notification Flow** now has an **Edit** icon next to it. *(If the Edit icon doesn’t appear, select Replace, and then select the flow.)*
 
 ## Task 4: Create the Item Checkout Agent
 
