@@ -4,7 +4,7 @@ lab:
   learning path: 'Learning Path: Manage the Microsoft Power Platform environment'
   module: 'Module 1: Describe Microsoft Dataverse'
   description: In this exercise, learners will be using Copilot to build a data model. You will provide a description of the type of tables you want to build and use the designer to make changes as needed such as adding additional columns.
-  duration: 146 minutes
+  duration: 30 minutes
   level: 100
   islab: true
 ---
@@ -299,6 +299,7 @@ Now that we have created the table, we are going to add some additional columns 
 1.	Select the Save button. (If the column fails to save, the first time, try again.)
 
 Congratulations, you have successfully created a data model in Microsoft Dataverse.
+
 
 
 
