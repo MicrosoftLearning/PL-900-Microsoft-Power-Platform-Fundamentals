@@ -35,8 +35,8 @@ In this exercise, you will create a canvas app from one of the built-in template
 
     ![Build App from File](media/2ffacbe70d4a8f250e7f98423ad280d3.png)
 
-> [!NOTE]
-> If you are presented with the Welcome to Power Apps Studio screen, select Don’t show me this again, and choose the **Skip** button.
+    > [!NOTE]
+    > If you are presented with the Welcome to Power Apps Studio screen, select Don’t show me this again, and choose the **Skip** button.
 
 1.  To test the App select the **Play** button (*Located to the left of the Save button*.)
 1.  To add a new record, select the **+ New** button.
@@ -167,3 +167,4 @@ The first thing we want to do is to customize the main screen to include a welco
     -   You can fill in a new request and click Submit to save it.
     -   Clicking an existing record in the gallery navigates to the detail screen.
 1.  Close the preview and **Save** your app as **Facility Request App** (File \> Save or Ctrl+S).
+
