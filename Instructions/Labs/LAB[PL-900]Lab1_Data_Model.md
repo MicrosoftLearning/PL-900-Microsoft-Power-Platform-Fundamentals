@@ -2,7 +2,7 @@
 lab:
     title: 'Lab 1: Create a data model'
     learning path: 'Learning Path: Manage the Microsoft Power Platform environment'
-    module: 'Describe Microsoft Dataverse'
+    module: 'Module 2: Describe Microsoft Dataverse'
 ---
 
 # Practice Lab 1 - Create a data model
@@ -203,5 +203,6 @@ Next, we are going to add a lookup column to the Facility Request table, that wi
         ![Screenshot showing a new column.](media/598a2ef98951783cd5f79e363286b725.png)
 
 1.  Select the **Save** button****
+
 
 
