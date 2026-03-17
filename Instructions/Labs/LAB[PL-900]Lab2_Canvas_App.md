@@ -3,6 +3,12 @@ lab:
     title: 'Lab 2: Create a canvas app'
     learning path: 'Learning Path: Demonstrate the capabilities of Microsoft Power Apps'
     module: 'Build a canvas app'
+    description: In this lab, you will create a canvas application in Power Apps. First, you will explore an app built from a template, then build a Facility Request app from scratch connected to a Dataverse data source and customize it with screens, galleries, and navigation.
+    duration: 45 minutes
+    level: 100
+    islab: true
+    primarytopics:
+        - Power Apps
 ---
 # Practice Lab 2 - Create a canvas app
 

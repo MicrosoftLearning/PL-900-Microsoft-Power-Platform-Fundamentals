@@ -3,6 +3,12 @@ lab:
     title: 'Lab 4: Create a Power Automate flow'
     learning path: 'Learning Path: Demonstrate the capabilities of Microsoft Power Automate'
     module: 'Build a Power Automate flow'
+    description: In this lab, learners will create an automated cloud flow in Power Automate triggered by a Dataverse event. You will configure a condition and send an email notification when a high-priority facilities request is submitted.
+    duration: 30 minutes
+    level: 100
+    islab: true
+    primarytopics:
+        - Power Automate
 ---
 # Practice Lab 4 - Create a Power Automate flow
 

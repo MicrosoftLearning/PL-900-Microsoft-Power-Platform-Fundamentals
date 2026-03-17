@@ -3,6 +3,10 @@ lab:
     title: 'Lab 1: Create a data model'
     learning path: 'Learning Path: Manage the Microsoft Power Platform environment'
     module: 'Describe Microsoft Dataverse'
+    description: In this lab, learners will create a data model in Microsoft Dataverse. You will create a custom Facility Request table with various column types, and use Copilot to build a Room table and add a lookup relationship.
+    duration: 30 minutes
+    level: 100
+    islab: true
 ---
 
 # Practice Lab 1 - Create a data model

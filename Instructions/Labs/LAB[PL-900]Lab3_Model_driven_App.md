@@ -3,6 +3,12 @@ lab:
     title: 'Lab 3: Create a model-driven app'
     learning path: 'Learning Path: Demonstrate the capabilities of Microsoft Power Apps'
     module: 'Build a model-driven app'
+    description: In this lab, learners will create a model-driven app in Power Apps using the modern app designer. You will add Dataverse tables to the app, configure navigation groups, and publish and test the application.
+    duration: 30 minutes
+    level: 100
+    islab: true
+    primarytopics:
+        - Power Apps
 ---
 # Practice Lab 3 - Create a model-driven app
 
