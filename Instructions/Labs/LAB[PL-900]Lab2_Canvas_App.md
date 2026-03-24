@@ -36,8 +36,12 @@ In this exercise, you will create a canvas app from one of the built-in template
 1.  From the **Home** screen, select **+ Create** from the left navigation pane.
 1.  In the **Start from data** section, select **Upload file**.
 1.  On the **Upload an Excel File** screen, click the **Select from device** button.
-1.  Locate the **Room Reservations.xlsx** file that from the Class Files, select **Open**.
-1.  Ensure that **Use first row as column headers** is selected, and select **Create app**.
+1.  From the **Class Files**, locate and open **Room Reservations.xlsx**.
+
+>[!NOTE]
+>If you only see **Room Reservations.zip**, select the ZIP file, select **Extract All**, open the extracted folder, and then select **Room Reservations.xlsx**.
+
+6.  Ensure that **Use first row as column headers** is selected, and select **Create app**.
 
     ![Build App from File](media/2ffacbe70d4a8f250e7f98423ad280d3.png)
 
