@@ -96,8 +96,8 @@ While employees submit requests using a mobile canvas app, the Contoso facilitie
 1.  **Close** the view designer.
 1.  Select **Done**
 
-# Exercise 3: Publish and test the Model-driven-App
-## Task 1: Publish and test
+
+## Task 3: Publish and test
 
 1.  Navigate to the Power Apps Maker portal `https://make.powerapps.com`
 1.  In the left navigation pane, select **Apps**.
