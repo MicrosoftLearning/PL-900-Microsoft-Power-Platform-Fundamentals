@@ -158,7 +158,8 @@ The first thing we want to do is to customize the main screen to include a welco
 11.  Select the **Footer** at the bottom of the form.
 1.  Click **+ Insert** and choose **Button**.
     -   Set its Text to **"Submit"**
-    -   Set the button's **OnSelect** property to: **SubmitForm(Form2); Navigate(Facility Requests screen)**
+    -   Set the button's **OnSelect** property to the following formula:
+    `SubmitForm(Form2); Navigate('Facility Requests screen')`
 
 ![screenshot showing the submitform Power FX formula](media/40d18e3c6f18a739815dfa3cf182c029.png)
 
