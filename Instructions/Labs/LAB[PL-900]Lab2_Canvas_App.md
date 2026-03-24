@@ -152,7 +152,10 @@ The first thing we want to do is to customize the main screen to include a welco
 
     ![Screenshot of form after fields have been removed.  ](media/452752d064cc0d5150f5d29c194738ff.png)
 
-1.  Select the **Footer** at the bottom of the form.
+> [!NOTE]
+> If a field is missing from the form, select **(x) selected** under **Fields** in the form properties pane, select **+Add field**, and then select the missing column to the form.
+
+11.  Select the **Footer** at the bottom of the form.
 1.  Click **+ Insert** and choose **Button**.
     -   Set its Text to **"Submit"**
     -   Set the button's **OnSelect** property to: **SubmitForm(Form2); Navigate(Facility Requests screen)**
