@@ -36,8 +36,12 @@ In this exercise, you will create a canvas app from one of the built-in template
 1.  From the **Home** screen, select **+ Create** from the left navigation pane.
 1.  In the **Start from data** section, select **Upload file**.
 1.  On the **Upload an Excel File** screen, click the **Select from device** button.
-1.  Locate the **Room Reservations.xlsx** file that from the Class Files, select **Open**.
-1.  Ensure that **Use first row as column headers** is selected, and select **Create app**.
+1.  From the **Class Files**, locate and open **Room Reservations.xlsx**.
+
+>[!NOTE]
+>If you only see **Room Reservations.zip**, select the ZIP file, select **Extract All**, open the extracted folder, and then select **Room Reservations.xlsx**.
+
+6.  Ensure that **Use first row as column headers** is selected, and select **Create app**.
 
     ![Build App from File](media/2ffacbe70d4a8f250e7f98423ad280d3.png)
 
@@ -62,6 +66,7 @@ In this exercise, you will create a canvas app from one of the built-in template
 1.  Close the App from Preview mode (X button)
 1.  Select the **Save** button.
 1.  Select the **Publish** button.
+1.  Select the **Publish this version** button
 
 # Exercise 2: Build and edit a canvas app
 
@@ -143,21 +148,27 @@ The first thing we want to do is to customize the main screen to include a welco
 1.  Remove the following fields from the form: (*Select and press Delete*)
     -   Import Sequence Number
     -   Time Zone Rule Version Number
+
+1.  In the form **Properties** pane, set the **Default mode** to **New**.
 1.  Your form should resemble the image below:
 
     ![Screenshot of form after fields have been removed.  ](media/452752d064cc0d5150f5d29c194738ff.png)
 
-1.  Select the **Footer** at the bottom of the form.
+> [!NOTE]
+> If a field is missing from the form, select **(x) selected** under **Fields** in the form properties pane, select **+Add field**, and then select the missing column to the form.
+
+11.  Select the **Footer** at the bottom of the form.
 1.  Click **+ Insert** and choose **Button**.
     -   Set its Text to **"Submit"**
-    -   Set the button's **OnSelect** property to: **SubmitForm(Form2); Navigate(Facility Requests screen)**
+    -   Set the button's **OnSelect** property to the following formula:
+    `SubmitForm(Form2); Navigate('Facility Requests screen')`
 
 ![screenshot showing the submitform Power FX formula](media/40d18e3c6f18a739815dfa3cf182c029.png)
 
 ## Task 4: Add navigation between screens
 
 1.  Go back to the **Facility Requests screen.**
-1.  Select the **RecordGallery1** Gallery
+1.  Select the **RecordsGallery1** Gallery
 1.  On the **Command bar**, select **Insert** and choose **Button**.
     -   Set the buttons text to **"New Room"**.
     -   Set its **OnSelect** property to: **Navigate('New Room Screen')**
