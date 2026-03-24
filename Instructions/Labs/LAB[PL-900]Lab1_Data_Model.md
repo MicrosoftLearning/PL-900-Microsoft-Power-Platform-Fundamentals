@@ -159,7 +159,8 @@ There are many ways that you can build tables in Dataverse. In addition to the m
     ![Screenshot showing renaming a table](media/f43bbdbb9e05fe968b5f6cd301ad6b46.png)
 
 1.  Next we are going to rename the **New Column** to **Room Name**:
-	- **HINT:** In the Copilot pane, enter the text “*Rename New Column in the Room table to Room Name*”.
+	- **HINT:** In the Copilot pane, enter the text: 
+    > *Rename New Column in the Room table to Room Name*.
 
 Next, we need to add some additional new columns to the table.
 
@@ -173,12 +174,14 @@ We are going to add the following:
 | Conference Room         | Yes/No        |
 
 1.  Using the Copilot pane, add all the text columns above.
-    - **HINT:** Enter the text: “*Add new columns named Campus, Building, and Floor to the room table.*”
+    - **HINT:** Enter the text: 
+    > *Add new columns named Campus, Building, and Floor to the room table.*
 
         ![Screenshot showing using Copilot to Add items](media/712f56af13c331924442a04dce14cddb.png)
 
 1.  Using the Copilot Pane, add the **Conference Room** **Yes/No** column
-    - **HINT**: Enter the text: “*Add a new yes/no column named Conference Room to the Room table.*”
+    - **HINT**: Enter the text: 
+    > *Add a new yes/no column named Conference Room to the Room table.*
 1.  Your completed **Room** table will resemble the image below:
 
     ![Screenshot showing a completed Room table.](media/16a509f2184ec41488ab59fbc124847f.png)
@@ -202,8 +205,8 @@ Next, we are going to add a lookup column to the Facility Request table, that wi
 1.  Open the **Facility Request** Table
 1.  Under **Schema**, select **Columns**
 1.  Select **+ New Column**, and configure as follows:
-    - **Display Name:** Room    -
-    - **Data Type**: Lookup
+    - **Display Name:** Room    
+    - **Data Type:** Lookup
     - **Related Table:** Room
 
         ![Screenshot showing a new column.](media/598a2ef98951783cd5f79e363286b725.png)
