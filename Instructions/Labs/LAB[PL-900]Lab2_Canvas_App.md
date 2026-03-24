@@ -66,6 +66,7 @@ In this exercise, you will create a canvas app from one of the built-in template
 1.  Close the App from Preview mode (X button)
 1.  Select the **Save** button.
 1.  Select the **Publish** button.
+1.  Select the **Publish this version** button
 
 # Exercise 2: Build and edit a canvas app
 
