@@ -182,6 +182,7 @@ We are going to add the following:
 1.  Using the Copilot Pane, add the **Conference Room** **Yes/No** column
     - **HINT**: Enter the text: 
     > *Add a new yes/no column named Conference Room to the Room table.*
+
 1.  Your completed **Room** table will resemble the image below:
 
     ![Screenshot showing a completed Room table.](media/16a509f2184ec41488ab59fbc124847f.png)
@@ -206,12 +207,12 @@ Next, we are going to add a lookup column to the Facility Request table, that wi
 1.  Under **Schema**, select **Columns**
 1.  Select **+ New Column**, and configure as follows:
     - **Display Name:** Room    
-    - **Data Type:** Lookup
+    - **Data Type**: Lookup
     - **Related Table:** Room
 
         ![Screenshot showing a new column.](media/598a2ef98951783cd5f79e363286b725.png)
 
-1.  Select the **Save** button****
+1.  Select the **Save** button.
 
 
 
