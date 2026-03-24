@@ -153,7 +153,7 @@ There are many ways that you can build tables in Dataverse. In addition to the m
 ## Task 1: Create the Room table
 
 1.  In the left navigation pane, select **Tables**.
-1.  Under **Table**, select **Start with a blank table**
+1.  Under **Tables**, select **Start with a blank table**
 1.  Change the name of the table from **Table1** to **Room**
 
     ![Screenshot showing renaming a table](media/f43bbdbb9e05fe968b5f6cd301ad6b46.png)
