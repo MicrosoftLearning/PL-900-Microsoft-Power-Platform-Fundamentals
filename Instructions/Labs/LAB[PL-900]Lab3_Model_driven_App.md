@@ -39,9 +39,9 @@ While employees submit requests using a mobile canvas app, the Contoso facilitie
 
 ## Task 2: Add the Facility Request table
 
-1.  In the **App Designer**, Click **+ New page (or + Add page)** and select **Dataverse** table.
-1.  Search for and select both the **Facility Request** and **Rooms** tables (if you completed Lab 1) additionally choose the **Account** and **Contact** tables.
-1.  Make sure Show in navigation is selected and select **Add**. The tables will now appear in your app's navigation.
+1.  In the **App Designer**, select **+ Add page** or **+ New**, and choose **Dataverse table**.
+1.  Search for and select both the **Facility Request** and **Rooms** tables (if you completed Lab 1), additionally choose the **Account** and **Contact** tables.
+1.  Make sure the **Show in navigation** checkbox is selected and select **Add**. The tables will now appear in your app's navigation.
 
     ![Screenshot of Navigation](media/9444e25f3cc06dcda4d636224bc7a949.png)
 
