@@ -132,7 +132,7 @@ Next, we will need to create some columns to store information from each request
 Next, we are going to add some sample data so when we build apps from the tables, there will be data to display.
 
 1.  Ensure that you still have the Facility Request table editor open.
-1.  Select **+ New** row (or click into the first empty row) and enter the following sample records:
+1.  Select **Edit**, then select **+ New** row (or click into the first empty row) and enter the following sample records:
 
 | **Request Title**                | **Category** | **Priority** | **Status**  |
 |----------------------------------|--------------|--------------|-------------|
