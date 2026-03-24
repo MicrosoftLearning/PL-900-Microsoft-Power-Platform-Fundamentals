@@ -148,6 +148,8 @@ The first thing we want to do is to customize the main screen to include a welco
 1.  Remove the following fields from the form: (*Select and press Delete*)
     -   Import Sequence Number
     -   Time Zone Rule Version Number
+
+1.  In the form **Properties** pane, set the **Default mode** to **New**.
 1.  Your form should resemble the image below:
 
     ![Screenshot of form after fields have been removed.  ](media/452752d064cc0d5150f5d29c194738ff.png)
