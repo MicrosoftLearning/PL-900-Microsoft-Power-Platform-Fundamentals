@@ -37,7 +37,7 @@ While employees submit requests using a mobile canvas app, the Contoso facilitie
 1.  Name the app **Contoso Facilities Management** and click **Create**.
 1.  The modern App Designer will open.
 
-## Task 3: Add the Facility Request table
+## Task 2: Add the Facility Request table
 
 1.  In the **App Designer**, Click **+ New page (or + Add page)** and select **Dataverse** table.
 1.  Search for and select both the **Facility Request** and **Rooms** tables (if you completed Lab 1) additionally choose the **Account** and **Contact** tables.
