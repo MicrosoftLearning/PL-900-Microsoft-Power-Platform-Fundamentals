@@ -166,7 +166,7 @@ The first thing we want to do is to customize the main screen to include a welco
 ## Task 4: Add navigation between screens
 
 1.  Go back to the **Facility Requests screen.**
-1.  Select the **RecordGallery1** Gallery
+1.  Select the **RecordsGallery1** Gallery
 1.  On the **Command bar**, select **Insert** and choose **Button**.
     -   Set the buttons text to **"New Room"**.
     -   Set its **OnSelect** property to: **Navigate('New Room Screen')**
