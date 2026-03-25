@@ -92,7 +92,7 @@ Now that we have our condition, we are going to configure the Notification email
 
     ![Screenshot showing configuring Outlook](media/90a78880d424996acdc268aa22b2935a.png)
 
-1.  Select the **Mod Administrator** account
+1.  Select the **MOD Administrator** account
 
     **NOTE:** You may need to select the **Sign in** button. *(You may receive a browser had blocked the connection authentication popup window. If so, select the Popup icon in the address bar and choose Always allow pop-ups and redirects from https://make.powerautomate.com)*
 
