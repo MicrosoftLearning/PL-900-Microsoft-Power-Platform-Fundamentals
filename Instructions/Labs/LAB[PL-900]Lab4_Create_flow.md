@@ -77,17 +77,19 @@ Once you have configured the connection reference, we can configure the trigger.
 We only want to send a notification for high-priority requests. Add a condition to check the priority value.
 
 1.  Select the newly added condition, and configure as follows:
-    -   In the left box, click in the field and select **Priority** (from Dynamic content – this comes from the trigger output).
-    -   Set the operator to is equal to.
-    -   In the right box, type the value for High (this is typically the numeric value of the choice — you may need to enter the integer value, such as 3, depending on your choice setup). Repeat by adding an Or condition for Urgent.
+    -   In the left box, select the field to choose a value, and select **Priority** from Dynamic content.
+    -   Set the operator to **is equal to**.
+    -   In the right box, enter the integer value for **High**. To find this value, navigate to the **Priority** column in the **Facility Request** table and check the choice values.
+    -   Repeat the configuration for the **Urgent** value
+    -   Change the **And** dropdown to **Or**.
 
-        Your completed condition should be **Priority is equal to High**.
+        Your completed condition should be **Priority is equal to High** and **Priority is equal to Urgent**
 
-        ![Screenshot showing Check Priority Condition](media/9be0df58efa20aa59b3e1c6d12289b8e.png)
+        ![Screenshot showing Check Priority Condition](media/check-priority-condition.png)
 
 Now that we have our condition, we are going to configure the Notification email
 
-1.  In the If **True/Yes** branch of the condition, click **Add an action**.
+1.  In the If **True/Yes** branch of the condition, select the **+** button to **Add an action**.
 1.  Search for **"Send an email"** and select **Send an email (V2)** from the **Office 365 Outlook** connector.
 
     ![Screenshot showing configuring Outlook](media/90a78880d424996acdc268aa22b2935a.png)
