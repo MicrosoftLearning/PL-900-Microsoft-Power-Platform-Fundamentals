@@ -65,7 +65,7 @@ Contoso wants to automatically notify the facilities team whenever a new high-pr
 
 Once you have configured the connection reference, we can configure the trigger.
 
-1.  In the trigger step, configure the following settings:
+7.  In the trigger step, configure the following settings:
     -   **Change type:** Select **Added**.
     -   **Table name:** Select **Facility Requests** (the table you created earlier).
     -   **Scope:** Select **Organization** (to trigger for all users).
@@ -76,7 +76,7 @@ Once you have configured the connection reference, we can configure the trigger.
 
 We only want to send a notification for high-priority requests. Add a condition to check the priority value.
 
-1.  Select the newly added condition, and configure as follows:
+9.  Select the newly added condition, and configure as follows:
     -   In the left box, select the field to choose a value, and select **Priority** from Dynamic content.
     -   Set the operator to **is equal to**.
     -   In the right box, enter the integer value for **High**. To find this value, navigate to the **Priority** column in the **Facility Request** table and check the choice values.
@@ -89,16 +89,16 @@ We only want to send a notification for high-priority requests. Add a condition 
 
 Now that we have our condition, we are going to configure the Notification email
 
-1.  In the If **True/Yes** branch of the condition, select the **+** button to **Add an action**.
+10.  In the If **True/Yes** branch of the condition, select the **+** button to **Add an action**.
 1.  Search for **"Send an email"** and select **Send an email (V2)** from the **Office 365 Outlook** connector.
 
     ![Screenshot showing configuring Outlook](media/90a78880d424996acdc268aa22b2935a.png)
 
 1.  Select the **MOD Administrator** account
+> [!NOTE]
+> You may need to select the **Sign in** button. *(You may receive a browser had blocked the connection authentication popup window. If so, select the Popup icon in the address bar and choose Always allow pop-ups and redirects from https://make.powerautomate.com)*
 
-    **NOTE:** You may need to select the **Sign in** button. *(You may receive a browser had blocked the connection authentication popup window. If so, select the Popup icon in the address bar and choose Always allow pop-ups and redirects from https://make.powerautomate.com)*
-
-1.  Configure the email:
+13.  Configure the email:
     -   **To:** Enter your own email address (for testing purposes).
     -   **Subject:** Enter **High Priority Facility Request:** and insert the **Request Title** from Dynamic content.
     -   **Body:** Enter **A new high-priority facilities request has been submitted.** and add the following fields from Dynamic content on separate lines:
