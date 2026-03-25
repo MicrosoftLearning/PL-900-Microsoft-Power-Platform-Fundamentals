@@ -61,7 +61,7 @@ Contoso wants to automatically notify the facilities team whenever a new high-pr
 
     ![screenshot showing signing to Dataverse](media/6d4c8fa2fa2b5cab89394b15c0a28e40.png)
 
-1.  Choose the **MoD Administrator** account.
+1.  Choose the **MOD Administrator** account.
 
 Once you have configured the connection reference, we can configure the trigger.
 
@@ -72,7 +72,7 @@ Once you have configured the connection reference, we can configure the trigger.
 
         ![Screenshot showing configuring the Dataverse trigger](media/d94a58dbdd9440493fd10ff2f97479c0.png)
 
-1.  In the **Copilot** Pane on the Right, enter the following command. "Add a condition to see if the Priority is equal to high."
+1.  In the **Copilot** pane on the right, enter the following command: `Add a condition to see if the Priority is equal to high`.
 
 We only want to send a notification for high-priority requests. Add a condition to check the priority value.
 
