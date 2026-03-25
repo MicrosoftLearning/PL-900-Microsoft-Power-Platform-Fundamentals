@@ -72,7 +72,7 @@ While employees submit requests using a mobile canvas app, the Contoso facilitie
 1.  Drag the **Estimated Cost** column below **Date Requested**.
 1.  Drag the **Category** column below **Estimated Cost**.
 1.  Drag the **Priority** column below **Category**.
-1.  Drag the **Status** column below **Priority**.
+1.  Drag the **Status** column into the Header area.
 1.  Select **Save and publish**.
 1.  **Close** the form designer.
 1.  Select **Done**
