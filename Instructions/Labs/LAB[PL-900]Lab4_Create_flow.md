@@ -100,9 +100,11 @@ Now that we have our condition, we are going to configure the Notification email
 
 1.  Configure the email:
     -   **To:** Enter your own email address (for testing purposes).
-    -   **Subject:** Type "High Priority Facility Request: " and then insert the **Request Title** dynamic content from the trigger.
-    -   **Body:** enter "A new high-priority facilities request has been submitted."
-    -   Add dynamic content for Category, Priority, and Description on separate lines.
+    -   **Subject:** Enter **High Priority Facility Request:** and insert the **Request Title** from Dynamic content.
+    -   **Body:** Enter **A new high-priority facilities request has been submitted.** and add the following fields from Dynamic content on separate lines:
+        -   **Category**
+        -   **Priority**
+        -   **Description**
 
         Your completed email should resemble the image below:
 
