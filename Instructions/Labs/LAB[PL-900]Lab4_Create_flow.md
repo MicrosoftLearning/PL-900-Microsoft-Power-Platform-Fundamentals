@@ -110,7 +110,7 @@ Now that we have our condition, we are going to configure the Notification email
 
         ![Screenshot showing Configured email](media/77924a98504e3df64c1bb6a8031437a6.png)
 
-1.  Leave the If no branch empty (no action needed for non-high-priority requests).
+1.  Leave the If **False/No** branch empty (no action needed for non-high-priority requests).
 
 ## Exercise 3: Save and test
 
