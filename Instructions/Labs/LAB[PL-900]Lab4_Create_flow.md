@@ -76,7 +76,7 @@ Once you have configured the connection reference, we can configure the trigger.
 
 We only want to send a notification for high-priority requests. Add a condition to check the priority value.
 
-1.  Select the Newley added condition, and configure as follows:
+1.  Select the newly added condition, and configure as follows:
     -   In the left box, click in the field and select **Priority** (from Dynamic content – this comes from the trigger output).
     -   Set the operator to is equal to.
     -   In the right box, type the value for High (this is typically the numeric value of the choice — you may need to enter the integer value, such as 3, depending on your choice setup). Repeat by adding an Or condition for Urgent.
