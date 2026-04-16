@@ -25,7 +25,7 @@ Tenants must not be converted to a paid subscription. Tenants obtained as a part
 
 ## Exercise 1: Access Microsoft Power Platform
 
-In this exercise, you verify that you can access Power Apps.
+In this exercise, you will verify that you can access Power Apps.
 
 ### Task 1.1 – Sign in to Power Apps
 
