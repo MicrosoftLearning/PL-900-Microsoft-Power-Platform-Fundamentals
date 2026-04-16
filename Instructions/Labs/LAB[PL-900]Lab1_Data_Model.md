@@ -52,7 +52,7 @@ Contoso needs a central place to store facilities request data. You will create 
 
 ## Task 1: Create the Facility Request table
 
-1.  Navigate to <https://make.powerapps.com> and sign in with the credentials you were provided with (*Available from the Resources tab of your lab environment. Use* **Administrative Username** *and* **Administrative Password**).
+1.  Navigate to <https://make.powerapps.com> and sign in with the credentials provided (*Available from the Resources tab of your lab environment. Use* **Administrative Username** *and* **Administrative Password**).
 1.  Ensure you are in the correct environment (**Dev One**) by checking the Environment picker in the upper-right corner of the screen.
 1.  In the left navigation pane, select **Tables**.
 1.  Select **+ New table** drop down, and from the menu that appears choose **Table (advanced properties)**
@@ -92,34 +92,34 @@ Next, we will need to create some columns to store information from each request
     - **Data Type:** Date and time
     - **Format:** Date Only
 1.  Expand **Advanced Options** and set **Time Zone adjustment** to **User Local**.
+
+    ![Screenshot showing Advanced Date Options](media/38a5e902e3c70c7324af36c9ee610287.png)
+
 1.  Select the **Save** button.
-
-    ![Screen shot showing Advanced Date Options](media/38a5e902e3c70c7324af36c9ee610287.png)
-
 1.  Under **Facility Request columns and data** select the **+** button again.
 1.  Configure your new column as follows:
 	- **Display name:** Estimated Cost
     - **Data Type:** Currency
+
+    ![Screenshot showing creating a currency column](media/4427d39adbbe4bbf4fab7d7b982f6c8b.png)
+
 1.  Select the **Save** button.
-
-	![Screenshot showing creating a currency column](media/4427d39adbbe4bbf4fab7d7b982f6c8b.png)
-
 1.  Under **Facility Request columns and data** select the **+** button again.
 1.  Configure your new column as follows:
     - **Display name:** Category
     - **Data Type:** Choice (Choice)
 1.  Under **Sync with Global Choice**, select **No**.
-1.  Under **Choices**, set the **Label** to **Maintenance.**
+1.  Under **Choices**, set the **Label** to **Maintenance**.
 1.  Select **+ New Choice** and set the label to **Equipment**.
 1.  Repeat the last step until you have added the following labels:
     - Supplies
     - Room Setup
     - Other
 1.  Set **Default Choice** to **None**
+
+    ![Screenshot showing Choice Column](media/3e25a1f222488af40533dbd0137f54de.png)
+
 1.  Select the **Save** button.
-
-	![Screenshot showing Choice Column](media/3e25a1f222488af40533dbd0137f54de.png)
-
 1.  Repeat steps 13 – 20 to add the following choice columns with values:
 
 | **Column Display Name** | **Data Type** | **Additional Settings**                                        |
