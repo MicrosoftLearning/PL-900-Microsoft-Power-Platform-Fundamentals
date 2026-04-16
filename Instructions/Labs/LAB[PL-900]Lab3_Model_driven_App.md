@@ -32,16 +32,16 @@ While employees submit requests using a mobile canvas app, the Contoso facilitie
 
 ## Task 1: Create a model-driven app
 
-1.  Navigate to <https://make.powerapps.com> and sign in.
+1.  Navigate to Power Apps Maker portal `https://make.powerapps.com` and sign in.
 1.  Select **+ Create** from the left navigation, then select **Blank Page with navigation**.
 1.  Name the app **Contoso Facilities Management** and click **Create**.
 1.  The modern App Designer will open.
 
 ## Task 2: Add the Facility Request table
 
-1.  In the **App Designer**, Click **+ New page (or + Add page)** and select **Dataverse** table.
-1.  Search for and select both the **Facility Request** and **Rooms** tables (if you completed Lab 1) additionally choose the **Account** and **Contact** tables.
-1.  Make sure Show in navigation is selected and select **Add**. The tables will now appear in your app's navigation.
+1.  In the **App Designer**, select **+ Add page** or **+ New**, and choose **Dataverse table**.
+1.  Search for and select both the **Facility Request** and **Rooms** tables (if you completed Lab 1), additionally choose the **Account** and **Contact** tables.
+1.  Make sure the **Show in navigation** checkbox is selected and select **Add**. The tables will now appear in your app's navigation.
 
     ![Screenshot of Navigation](media/9444e25f3cc06dcda4d636224bc7a949.png)
 
@@ -52,13 +52,57 @@ While employees submit requests using a mobile canvas app, the Contoso facilitie
 1.  Change the **Name** of the **New Group** to **Facilities**.
 1.  Under **Navigation** select the **Facility Requests** view, select **Move Down** until it is in the **Facilities Group**.
 1.  Select the **Rooms** view and **Move** it down below **Facility Requests**.
-1.  You completed App should resemble the image below:
+1.  Select the **Save** button.
+1.  Your completed App should resemble the image below:
 
     ![Screenshot of updated navigation ](media/cde7b0696e4a49f586820351b404c066.png)
 
+# Exercise 2: Edit Facility Request form and Facility Request public view
+## Task 1: Modify the Facility Request main form
+
+1.  Open a new tab and navigate to the Power Apps Maker portal `https://make.powerapps.com`
+1.  Make sure you are in the Dev One environment.
+1.  In the left navigation pane, select **Tables**. 
+1.  In the search bar at the top-right, type **Facility Request**, and then select the **Facility Request** table from the results.
+1.  Under **Data experiences**, select **Forms**.
+1.  Select the **Information** form where the Form type is Main, select the Commands menu (...), and select Edit > Edit in new tab.
+1.  Drag the **Owner** column into the Header area.
+1.  Drag the **Description** column below **Request Title**.
+1.  Drag the **Date Requested** column below **Description**.
+1.  Drag the **Estimated Cost** column below **Date Requested**.
+1.  Drag the **Category** column below **Estimated Cost**.
+1.  Drag the **Priority** column below **Category**.
+1.  Drag the **Status** column into the Header area.
+1.  Select **Save and publish**.
+1.  **Close** the form designer.
+1.  Select **Done**
+
+## Task 2: Modify the Facility Request public view
+
+1.  Navigate to the Power Apps Maker portal `https://make.powerapps.com`
+1.  Make sure you are in the Dev One environment.
+1.  In the left navigation pane, select **Tables**. 
+1.  In the search bar at the top-right, type **Facility Request**, and then select the **Facility Request** table from the results.
+1.  Under **Data experiences**, select **Views**.
+1.  Select the Active Facility Requests view, select the Commands menu (...), and select Edit > Edit in new tab.
+1.  Select the caret next to the **Created On** column and select **Remove**.
+1.  Select the **Description** column to add to the view.
+1.  Select the **Date Requested** column to add to the view.
+1.  Select the **Estimated Cost** column to add to the view.
+1.  Select the **Category** column to add to the view.
+1.  Select the **Priority** column to add to the view..
+1.  Select the **Status** column to add to the view.
+1.  Select **Save and publish**.
+1.  **Close** the view designer.
+1.  Select **Done**
+
+
 ## Task 3: Publish and test
 
-1.  Click **Save and then Publish** in the upper right.
+1.  Navigate to the Power Apps Maker portal `https://make.powerapps.com`
+1.  In the left navigation pane, select **Apps**.
+1.  Select **Contoso Facilities Management** Model-driven app, select the Commands menu (...), and select Edit.
+1.  Click **Save and Publish** in the upper right.
 1.  Click Play to open the app in a new browser tab.
 1.  Verify the following:
     -   The navigation menu shows your Facility Request table.
