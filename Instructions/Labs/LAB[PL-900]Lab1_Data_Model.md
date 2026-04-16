@@ -153,18 +153,15 @@ There are many ways that you can build tables in Dataverse. In addition to the m
 ## Task 1: Create the Room table
 
 1.  In the left navigation pane, select **Tables**.
-1.  Under **Tables**, select **Start with a blank table**
-1.  Change the name of the table from **Table1** to **Room**
+1.  Under **Tables**, select **Start with a blank table**.
+1.  Change the name of the table from **Table1** to **Room**.
 
     ![Screenshot showing renaming a table](media/f43bbdbb9e05fe968b5f6cd301ad6b46.png)
 
-1.  Next we are going to rename the **New Column** to **Room Name**:
-	- **HINT:** In the Copilot pane, enter the text: 
-    > *Rename New Column in the Room table to Room Name*.
+1. Next, we are going to rename the **New Column** to **Room Name**.
+   - In the Copilot pane, enter the text: `Rename New Column in the Room table to Room Name`.
 
-Next, we need to add some additional new columns to the table.
-
-We are going to add the following:
+Next, we need to add some additional new columns to the table:
 
 | **Column Display Name** | **Data Type** |
 |-------------------------|---------------|
@@ -173,15 +170,14 @@ We are going to add the following:
 | Floor                   | Text          |
 | Conference Room         | Yes/No        |
 
-1.  Using the Copilot pane, add all the text columns above.
-    - **HINT:** Enter the text: 
-    > *Add new columns named Campus, Building, and Floor to the room table.*
+5.  In the **Copilot** pane, add the text columns listed above.
+    - Enter the text: `Add new columns named Campus, Building, and Floor to the room table.`
 
-        ![Screenshot showing using Copilot to Add items](media/712f56af13c331924442a04dce14cddb.png)
+    ![Screenshot showing using Copilot to Add items](media/712f56af13c331924442a04dce14cddb.png)
 
-1.  Using the Copilot Pane, add the **Conference Room** **Yes/No** column
-    - **HINT**: Enter the text: 
-    > *Add a new yes/no column named Conference Room to the Room table.*
+1.  In the **Copilot** pane, add the **Conference Room** **Yes/No** column.
+    
+    - Enter the text: `Add a new yes/no column named Conference Room to the Room table`
 
 1.  Your completed **Room** table will resemble the image below:
 
@@ -195,14 +191,14 @@ Now that your table is created, add the following sample data to your table:
 | 233      | South      | Seirra        | 2         | No                  |
 | 401 B    | East       | Jacobson      | 4         | Yes                 |
 
-1.  Select the **Save and Exit** button to create your new Room table.
+8. Select the **Save and Exit** button to create your new Room table.
 
 ## Task 2: Create a Room Lookup field in the Facility Request table.
 
 Next, we are going to add a lookup column to the Facility Request table, that will allow you to select a room from the Rooms table.
 
 1.  Using the left navigation select **Tables**
-1.  Select **All**, and in the **Search** field, enter **Facility.**
+1.  Select **All**, and in the **Search** field, enter `Facility`.
 1.  Open the **Facility Request** Table
 1.  Under **Schema**, select **Columns**
 1.  Select **+ New Column**, and configure as follows:
