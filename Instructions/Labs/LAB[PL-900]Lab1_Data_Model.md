@@ -108,7 +108,7 @@ Next, we will need to create some columns to store information from each request
 1.  Configure your new column as follows:
     - **Display name:** Category
     - **Data Type:** Choice (Choice)
-1.  Under **Sync with Global Choice**, select **No**.
+1.  Under **Sync with global choice?**, select **No**.
 1.  Under **Choices**, set the **Label** to **Maintenance**.
 1.  Select **+ New Choice** and set the label to **Equipment**.
 1.  Repeat the last step until you have added the following labels:
@@ -132,7 +132,7 @@ Next, we will need to create some columns to store information from each request
 Next, we are going to add some sample data so when we build apps from the tables, there will be data to display.
 
 1.  Ensure that you still have the Facility Request table editor open.
-1.  Select **Edit**, then select **+ New** row (or click into the first empty row) and enter the following sample records:
+1.  Select **Edit**, then select **+ New row** (or select the first empty row) and enter the following sample records:
 
 | **Request Title**                | **Category** | **Priority** | **Status**  |
 |----------------------------------|--------------|--------------|-------------|
