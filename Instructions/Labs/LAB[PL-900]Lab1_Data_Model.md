@@ -131,8 +131,8 @@ Next, we will need to create some columns to store information from each request
 
 Next, we are going to add some sample data so when we build apps from the tables, there will be data to display.
 
-1.  Ensure that you still have the Facility Request table editor open.
-1.  Select **Edit**, then select **+ New row** (or select the first empty row) and enter the following sample records:
+1. Ensure that you still have the Facility Request table editor open.
+1. Select **Edit**, then select **+ New row** (or select the first empty row) and enter the following sample records:
 
 | **Request Title**                | **Category** | **Priority** | **Status**  |
 |----------------------------------|--------------|--------------|-------------|
@@ -191,13 +191,16 @@ Now that your table is created, add the following sample data to your table:
 | 233      | South      | Seirra        | 2         | No                  |
 | 401 B    | East       | Jacobson      | 4         | Yes                 |
 
-8. Select the **Save and Exit** button to create your new Room table.
+8. Select the **Save and exit** button to create your new Room table.
+
+1. In the **Done working?** dialog, select **Save and exit**.
+
 
 ## Task 2: Create a Room Lookup field in the Facility Request table.
 
 Next, we are going to add a lookup column to the Facility Request table, that will allow you to select a room from the Rooms table.
 
-1.  Using the left navigation select **Tables**
+1.  In the left navigation pane, select **Tables**.
 1.  Select **All**, and in the **Search** field, enter `Facility`.
 1.  Open the **Facility Request** Table
 1.  Under **Schema**, select **Columns**
