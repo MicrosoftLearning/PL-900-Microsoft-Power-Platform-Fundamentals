@@ -34,8 +34,8 @@ While employees submit requests using a mobile canvas app, the Contoso facilitie
 
 1.  Navigate to Power Apps Maker portal `https://make.powerapps.com` and sign in.
 1.  Select **+ Create** from the left navigation, then select **Blank Page with navigation**.
-1.  Name the app **Contoso Facilities Management** and click **Create**.
-1.  The modern App Designer will open.
+1.  Name the app **Contoso Facilities Management**.
+1.  Select **Create**. The modern app designer will open.
 
 ## Task 2: Add the Facility Request table
 
