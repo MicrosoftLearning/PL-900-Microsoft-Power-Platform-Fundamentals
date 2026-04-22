@@ -121,12 +121,12 @@ The first thing we want to do is to customize the main screen to include a welco
 
 ## Task 3: Build the New Room Screen
 
-1.  From the command bar, select the **New screen** button, and choose the **Header and Footer** screen.
+1.  From the command bar, select the **New screen** button, and then select the **Header and Footer** screen.
 1.  In **Tree view**, select **Screen1**, and rename it to **New Room Screen**.
 
     ![screenshot of renaming the new screen](media/d8241a9019a5a371120e0e6da8c5ab27.png)
 
-1.  Select the **+** in the form header container and choose **Text label**.
+1.  Select the **+** in the form header container and select **Text label**.
 1.  Set the **Text** property to **"Add New Room"**
 1.  Format **Text Value** Field as follows
     -   **Font Size:** 16
@@ -135,18 +135,16 @@ The first thing we want to do is to customize the main screen to include a welco
     -   **Alignment:** Right
     -   **Height:** 52
     -   **Width:** 225
-1.  Select the **Header** container, change the **background** color to **Blue**.
+1.  Select the **Header** container, and set the **Background color** to **Blue**.
 
     ![Screenshot of the new room header ](media/40b5bb0485ba84be18d381b81dce8fd5.png)
 
-1.  In the Main Container, Select **+ Insert** and choose **Edit** form.
+1.  In the Main Container, select **+ Insert**, and then select **Edit form**.
 1.  In the **Search** field, enter **Room**, and select the **Rooms** table.
 
     ![screenshot of adding a new dataverse table to the app](media/5727a4acc3fbe7c85435e60eab9da92e.png)
 
-1.  Remove the following fields from the form: (*Select and press Delete*)
-    -   Import Sequence Number
-    -   Time Zone Rule Version Number
+1.  If the form includes **Import Sequence Number**, **Time Zone Rule Version Number**, or **Record Created On**, select each field in **Tree view** and press **Delete**.
 
 1.  In the form **Properties** pane, set the **Default mode** to **New**.
 1.  Your form should resemble the image below:
@@ -156,11 +154,13 @@ The first thing we want to do is to customize the main screen to include a welco
 > [!NOTE]
 > If a field is missing from the form, select **(x) selected** under **Fields** in the form properties pane, select **+Add field**, and then select the missing column to the form.
 
-11.  Select the **Footer** at the bottom of the form.
-1.  Click **+ Insert** and choose **Button**.
-    -   Set its Text to **"Submit"**
+12. Select the **Footer** at the bottom of the form.
+1.  Select **+ Insert**, and then select **Button**.
+    -   Set the button's **Text** property to `"Submit"`.
     -   Set the button's **OnSelect** property to the following formula:
-    `SubmitForm(Form2); Navigate('Facility Requests screen')`
+    ```powerfx
+    SubmitForm(Form2); Navigate('Facility Requests screen')
+    ```
 
 ![screenshot showing the submitform Power FX formula](media/40d18e3c6f18a739815dfa3cf182c029.png)
 
