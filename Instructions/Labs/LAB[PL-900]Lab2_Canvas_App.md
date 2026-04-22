@@ -168,9 +168,12 @@ The first thing we want to do is to customize the main screen to include a welco
 
 1.  Go back to the **Facility Requests screen.**
 1.  Select the **RecordsGallery1** Gallery
-1.  On the **Command bar**, select **Insert** and choose **Button**.
-    -   Set the buttons text to **"New Room"**.
-    -   Set its **OnSelect** property to: **Navigate('New Room Screen')**
+1.  On the **Command bar**, select **+ Insert**, and then select **Button**.
+    -   Set the button's **Text** property to `"New Room"`.
+    -   Set the button's **OnSelect** property to the following formula:
+        ```powerfx
+        Navigate('New Room Screen')
+        ```
 
     ![Screenshot showing Navigate Formula](media/5eb1b1da01b62bb251f6c5a878a43fe1.png)
 
