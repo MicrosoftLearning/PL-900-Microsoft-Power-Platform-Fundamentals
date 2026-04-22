@@ -35,7 +35,7 @@ In this exercise, you will create a canvas app from one of the built-in template
 1.  Navigate to <Https://make.powerapps.com> and sign in.
 1.  From the **Home** screen, select **+ Create** from the left navigation pane.
 1.  In the **Start from data** section, select **Upload file**.
-1.  On the **Upload an Excel File** screen, click the **Select from device** button.
+1.  On the **Upload an Excel File** screen, select **Select from device**.
 1.  From the **Class Files**, locate and open **Room Reservations.xlsx**.
 
 >[!NOTE]
