@@ -98,17 +98,17 @@ In this task, you will:
 The first thing we want to do is to customize the main screen to include a welcome message that includes the logged in users name.
 
 1.  On the **Facility Request screen** (the default screen), select the **Facility Requests** header.
-1.  Select the **+ Insert** dropdown menu and choose **Text Label.**
+1.  Select the **+ Insert** dropdown menu, and then select **Text Label**.
 1.  Set the **Value** of the **Text Label** field to **"Welcome"**
-1.  Format **Text Value** field as follows
+1.  Format **Text Value** field as follows:
     -   **Font Size:** 16
     -   **Font Color:** White
     -   **Background Color:** Blue
-    -   **Alignment:** Right
+    -   **Text alignment:** Right
     -   **Height:** 52
 1.  With the same item selected, insert another **Text Label** field.
 1.  Set the **Text** property to **User().FullName**
-1.  Format Text Value Field as follows
+1.  Format Text Value Field as follows:
     -   **Font Size:** 16
     -   **Font Color:** White
     -   **Background Color:** Blue
