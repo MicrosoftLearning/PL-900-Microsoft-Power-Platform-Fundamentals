@@ -179,7 +179,7 @@ The first thing we want to do is to customize the main screen to include a welco
 
 ## Task 5: Test your app
 
-1.  Select the Play button (▶) to preview your app.
+1.  Select the **Play** button (▶) to preview your app.
 1.  Test the following:
     -   The gallery displays your sample data.
     -   Selecting **+ New** opens a blank form.
