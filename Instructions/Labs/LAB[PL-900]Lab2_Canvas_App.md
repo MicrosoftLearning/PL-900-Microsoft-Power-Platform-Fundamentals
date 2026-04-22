@@ -93,8 +93,7 @@ In this task, you will:
 -   Modify an existing Form.
 -   Add a new screen for adding new rooms.
 -   Add a button to navigate to the new rooms screen.
-
-**Add a Welcome User Prompt on the right-hand side of the screen**
+-   Add a Welcome User Prompt on the right-hand side of the screen**
 
 The first thing we want to do is to customize the main screen to include a welcome message that includes the logged in users name.
 
