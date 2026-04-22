@@ -78,7 +78,7 @@ Now you will build a simple Facility Request app from a blank canvas connected t
 1.  From the **Home** screen, select **+ Create** from the left navigation pane.
 1.  In the **Start from data** section, select **Dataverse**.
 1.  In the **Search** field, enter the text **Facility**.
-1.  Select the **Facility Requests** table, and choose **Create** app.
+1.  Select the **Facility Requests** table, and choose **Create app**.
 
     ![Screenshot of Selecting the table you want to you want to include in your app.   ](media/e0558370f12be606e988c4f8bafeeac1.png)
 
