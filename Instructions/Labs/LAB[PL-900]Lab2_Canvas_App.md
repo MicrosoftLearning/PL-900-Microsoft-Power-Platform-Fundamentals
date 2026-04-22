@@ -48,7 +48,7 @@ In this exercise, you will create a canvas app from one of the built-in template
     > [!NOTE]
     > If you are presented with the Welcome to Power Apps Studio screen, select Don’t show me this again, and choose the **Skip** button.
 
-1.  To test the App select the **Play** button (*Located to the left of the Save button*.)
+1.  To test the App select the **Play** button (*Located to the left of the **Save** button*.)
 1.  To add a new record, select the **+ New** button.
 1.  Enter a new record with the following details:
     -   **Date Needed:** Tomorrows Date
