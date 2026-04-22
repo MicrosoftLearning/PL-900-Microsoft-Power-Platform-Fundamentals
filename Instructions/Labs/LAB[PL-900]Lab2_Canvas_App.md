@@ -172,19 +172,19 @@ The first thing we want to do is to customize the main screen to include a welco
     -   Set the button's **Text** property to `"New Room"`.
     -   Set the button's **OnSelect** property to the following formula:
         ```powerfx
-        Navigate('New Room Screen')
+        NewForm(Form2); Navigate('New Room Screen')
         ```
 
     ![Screenshot showing Navigate Formula](media/5eb1b1da01b62bb251f6c5a878a43fe1.png)
 
 ## Task 5: Test your app
 
-1.  Click the Play button (▶) to preview your app.
+1.  Select the Play button (▶) to preview your app.
 1.  Test the following:
     -   The gallery displays your sample data.
-    -   Clicking "+  New Request" opens a blank form.
+    -   Selecting **+ New** opens a blank form.
     -   You can fill in a new request and click Submit to save it.
-    -   Clicking an existing record in the gallery navigates to the detail screen.
+    -   Selecting a record in the gallery displays its details in the form on the right.
 1.  Close the preview and **Save** your app as **Facility Request App** (File \> Save or Ctrl+S).
 
 
