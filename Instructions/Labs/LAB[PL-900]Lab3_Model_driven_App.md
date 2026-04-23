@@ -58,10 +58,11 @@ While employees submit requests using a mobile canvas app, the Contoso facilitie
     ![Screenshot of updated navigation ](media/cde7b0696e4a49f586820351b404c066.png)
 
 # Exercise 2: Edit Facility Request form and Facility Request public view
+
 ## Task 1: Modify the Facility Request main form
 
 1.  Open a new tab and navigate to the Power Apps Maker portal `https://make.powerapps.com`
-1.  Make sure you are in the Dev One environment.
+1.  Make sure you are in the **Dev One** environment.
 1.  In the left navigation pane, select **Tables**. 
 1.  In the search bar at the top-right, type **Facility Request**, and then select the **Facility Request** table from the results.
 1.  Under **Data experiences**, select **Forms**.
@@ -80,11 +81,11 @@ While employees submit requests using a mobile canvas app, the Contoso facilitie
 ## Task 2: Modify the Facility Request public view
 
 1.  Navigate to the Power Apps Maker portal `https://make.powerapps.com`
-1.  Make sure you are in the Dev One environment.
+1.  Make sure you are in the **Dev One** environment.
 1.  In the left navigation pane, select **Tables**. 
 1.  In the search bar at the top-right, type **Facility Request**, and then select the **Facility Request** table from the results.
 1.  Under **Data experiences**, select **Views**.
-1.  Select the Active Facility Requests view, select the Commands menu (...), and select Edit > Edit in new tab.
+1.  Select the **Active Facility Requests** view, select the **Commands** menu (...), and select **Edit** > **Edit in new tab**.
 1.  Select the caret next to the **Created On** column and select **Remove**.
 1.  Select the **Description** column to add to the view.
 1.  Select the **Date Requested** column to add to the view.
@@ -101,14 +102,14 @@ While employees submit requests using a mobile canvas app, the Contoso facilitie
 
 1.  Navigate to the Power Apps Maker portal `https://make.powerapps.com`
 1.  In the left navigation pane, select **Apps**.
-1.  Select **Contoso Facilities Management** Model-driven app, select the Commands menu (...), and select Edit.
-1.  Click **Save and Publish** in the upper right.
-1.  Click Play to open the app in a new browser tab.
+1.  Select **Contoso Facilities Management** Model-driven app, select the **Commands** menu (...), and select **Edit**.
+1.  Select **Save and Publish** in the upper right.
+1.  Select **Play** to open the app in a new browser tab.
 1.  Verify the following:
-    -   The navigation menu shows your Facility Request table.
-    -   Clicking the table name shows the list view with the columns you configured.
-    -   Clicking on a record opens the form with the layout you customized.
-    -   You can create a new record by clicking + New.
+    -   The navigation menu shows your **Facility Request** table.
+    -   Selecting the table name shows the list view with the columns you configured.
+    -   Selecting a record opens the form with the layout you customized.
+    -   You can create a new record by selecting **+ New**.
 ****
 
 
