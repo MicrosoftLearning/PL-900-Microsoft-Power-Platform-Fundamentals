@@ -47,11 +47,11 @@ While employees submit requests using a mobile canvas app, the Contoso facilitie
 
 1.  Under **Navigation**, select **New Group**.
 1.  On the right side of the screen, expand the **New Group** pane.
-1.  Change the title from **New Group** to **Customers.**
-1.  Select the **three dots** next to the **Customers** group and choose **New group**.
-1.  Change the **Name** of the **New Group** to **Facilities**.
+1.  Change the **Title** from **New Group** to **Customers.**
+1.  Select the **three dots** next to the **Customers** group and select **New group**.
+1.  Change the **Title** of the **New Group** to **Facilities**.
 1.  Under **Navigation** select the **Facility Requests** view, select **Move Down** until it is in the **Facilities Group**.
-1.  Select the **Rooms** view and **Move** it down below **Facility Requests**.
+1.  Repeat for **Rooms view**, selecting **Move down** until **Rooms** appears below **Facility Requests**.
 1.  Select the **Save** button.
 1.  Your completed App should resemble the image below:
 
