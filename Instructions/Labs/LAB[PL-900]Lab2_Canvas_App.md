@@ -35,7 +35,7 @@ In this exercise, you will create a canvas app from one of the built-in template
 1.  Navigate to <Https://make.powerapps.com> and sign in.
 1.  From the **Home** screen, select **+ Create** from the left navigation pane.
 1.  In the **Start from data** section, select **Upload file**.
-1.  On the **Upload an Excel File** screen, click the **Select from device** button.
+1.  On the **Upload an Excel File** screen, select **Select from device**.
 1.  From the **Class Files**, locate and open **Room Reservations.xlsx**.
 
 >[!NOTE]
@@ -48,7 +48,7 @@ In this exercise, you will create a canvas app from one of the built-in template
     > [!NOTE]
     > If you are presented with the Welcome to Power Apps Studio screen, select Don’t show me this again, and choose the **Skip** button.
 
-1.  To test the App select the **Play** button (*Located to the left of the Save button*.)
+1.  To test the App select the **Play** button (*Located to the left of the **Save** button*.)
 1.  To add a new record, select the **+ New** button.
 1.  Enter a new record with the following details:
     -   **Date Needed:** Tomorrows Date
@@ -78,7 +78,7 @@ Now you will build a simple Facility Request app from a blank canvas connected t
 1.  From the **Home** screen, select **+ Create** from the left navigation pane.
 1.  In the **Start from data** section, select **Dataverse**.
 1.  In the **Search** field, enter the text **Facility**.
-1.  Select the **Facility Requests** table, and choose **Create** app.
+1.  Select the **Facility Requests** table, and choose **Create app**.
 
     ![Screenshot of Selecting the table you want to you want to include in your app.   ](media/e0558370f12be606e988c4f8bafeeac1.png)
 
@@ -93,23 +93,22 @@ In this task, you will:
 -   Modify an existing Form.
 -   Add a new screen for adding new rooms.
 -   Add a button to navigate to the new rooms screen.
-
-**Add a Welcome User Prompt on the right-hand side of the screen**
+-   Add a Welcome User Prompt on the right-hand side of the screen.
 
 The first thing we want to do is to customize the main screen to include a welcome message that includes the logged in users name.
 
 1.  On the **Facility Request screen** (the default screen), select the **Facility Requests** header.
-1.  Select the **+ Insert** dropdown menu and choose **Text Label.**
+1.  Select the **+ Insert** dropdown menu, and then select **Text Label**.
 1.  Set the **Value** of the **Text Label** field to **"Welcome"**
-1.  Format **Text Value** field as follows
+1.  Format **Text Value** field as follows:
     -   **Font Size:** 16
     -   **Font Color:** White
     -   **Background Color:** Blue
-    -   **Alignment:** Right
+    -   **Text alignment:** Right
     -   **Height:** 52
 1.  With the same item selected, insert another **Text Label** field.
 1.  Set the **Text** property to **User().FullName**
-1.  Format Text Value Field as follows
+1.  Format Text Value Field as follows:
     -   **Font Size:** 16
     -   **Font Color:** White
     -   **Background Color:** Blue
@@ -122,12 +121,12 @@ The first thing we want to do is to customize the main screen to include a welco
 
 ## Task 3: Build the New Room Screen
 
-1.  From the command bar, select the **New screen** button, and choose the **Header and Footer** screen.
+1.  From the command bar, select the **New screen** button, and then select the **Header and Footer** screen.
 1.  In **Tree view**, select **Screen1**, and rename it to **New Room Screen**.
 
     ![screenshot of renaming the new screen](media/d8241a9019a5a371120e0e6da8c5ab27.png)
 
-1.  Select the **+** in the form header container and choose **Text label**.
+1.  Select the **+** in the form header container and select **Text label**.
 1.  Set the **Text** property to **"Add New Room"**
 1.  Format **Text Value** Field as follows
     -   **Font Size:** 16
@@ -136,18 +135,16 @@ The first thing we want to do is to customize the main screen to include a welco
     -   **Alignment:** Right
     -   **Height:** 52
     -   **Width:** 225
-1.  Select the **Header** container, change the **background** color to **Blue**.
+1.  Select the **Header** container, and set the **Background color** to **Blue**.
 
     ![Screenshot of the new room header ](media/40b5bb0485ba84be18d381b81dce8fd5.png)
 
-1.  In the Main Container, Select **+ Insert** and choose **Edit** form.
+1.  In the Main Container, select **+ Insert**, and then select **Edit form**.
 1.  In the **Search** field, enter **Room**, and select the **Rooms** table.
 
     ![screenshot of adding a new dataverse table to the app](media/5727a4acc3fbe7c85435e60eab9da92e.png)
 
-1.  Remove the following fields from the form: (*Select and press Delete*)
-    -   Import Sequence Number
-    -   Time Zone Rule Version Number
+1.  If the form includes **Import Sequence Number**, **Time Zone Rule Version Number**, or **Record Created On**, select each field in **Tree view** and press **Delete**.
 
 1.  In the form **Properties** pane, set the **Default mode** to **New**.
 1.  Your form should resemble the image below:
@@ -157,11 +154,13 @@ The first thing we want to do is to customize the main screen to include a welco
 > [!NOTE]
 > If a field is missing from the form, select **(x) selected** under **Fields** in the form properties pane, select **+Add field**, and then select the missing column to the form.
 
-11.  Select the **Footer** at the bottom of the form.
-1.  Click **+ Insert** and choose **Button**.
-    -   Set its Text to **"Submit"**
+12. Select the **Footer** at the bottom of the form.
+1.  Select **+ Insert**, and then select **Button**.
+    -   Set the button's **Text** property to `"Submit"`.
     -   Set the button's **OnSelect** property to the following formula:
-    `SubmitForm(Form2); Navigate('Facility Requests screen')`
+    ```powerfx
+    SubmitForm(Form2); Navigate('Facility Requests screen')
+    ```
 
 ![screenshot showing the submitform Power FX formula](media/40d18e3c6f18a739815dfa3cf182c029.png)
 
@@ -169,20 +168,23 @@ The first thing we want to do is to customize the main screen to include a welco
 
 1.  Go back to the **Facility Requests screen.**
 1.  Select the **RecordsGallery1** Gallery
-1.  On the **Command bar**, select **Insert** and choose **Button**.
-    -   Set the buttons text to **"New Room"**.
-    -   Set its **OnSelect** property to: **Navigate('New Room Screen')**
+1.  On the **Command bar**, select **+ Insert**, and then select **Button**.
+    -   Set the button's **Text** property to `"New Room"`.
+    -   Set the button's **OnSelect** property to the following formula:
+        ```powerfx
+        NewForm(Form2); Navigate('New Room Screen')
+        ```
 
     ![Screenshot showing Navigate Formula](media/5eb1b1da01b62bb251f6c5a878a43fe1.png)
 
 ## Task 5: Test your app
 
-1.  Click the Play button (▶) to preview your app.
+1.  Select the **Play** button (▶) to preview your app.
 1.  Test the following:
     -   The gallery displays your sample data.
-    -   Clicking "+  New Request" opens a blank form.
+    -   Selecting **+ New** opens a blank form.
     -   You can fill in a new request and click Submit to save it.
-    -   Clicking an existing record in the gallery navigates to the detail screen.
+    -   Selecting a record in the gallery displays its details in the form on the right.
 1.  Close the preview and **Save** your app as **Facility Request App** (File \> Save or Ctrl+S).
 
 
