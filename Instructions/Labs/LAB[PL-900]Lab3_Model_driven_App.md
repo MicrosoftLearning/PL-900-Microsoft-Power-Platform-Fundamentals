@@ -50,7 +50,7 @@ While employees submit requests using a mobile canvas app, the Contoso facilitie
 1.  Change the **Title** from **New Group** to **Customers.**
 1.  Select the **three dots** next to the **Customers** group and select **New group**.
 1.  Change the **Title** of the **New Group** to **Facilities**.
-1.  Under **Navigation** select the **Facility Requests** view, select **Move Down** until it is in the **Facilities Group**.
+1.  Under **Navigation** select the **Facility Requests** view, and select **Move Down** until it is in the **Facilities Group**.
 1.  Repeat for **Rooms view**, selecting **Move down** until **Rooms** appears below **Facility Requests**.
 1.  Select the **Save** button.
 1.  Your completed App should resemble the image below:
@@ -65,7 +65,7 @@ While employees submit requests using a mobile canvas app, the Contoso facilitie
 1.  In the left navigation pane, select **Tables**. 
 1.  In the search bar at the top-right, type **Facility Request**, and then select the **Facility Request** table from the results.
 1.  Under **Data experiences**, select **Forms**.
-1.  Select the **Information** form where the Form type is Main, select the Commands menu (...), and select Edit > Edit in new tab.
+1.  Select the **Information** form where the **Form type** is **Main**, select the **Commands** menu (...), and select **Edit** > **Edit in new tab**.
 1.  Drag the **Owner** column into the Header area.
 1.  Drag the **Description** column below **Request Title**.
 1.  Drag the **Date Requested** column below **Description**.
